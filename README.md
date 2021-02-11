@@ -10,7 +10,7 @@ This tool enables the CPACS file format to be used natively within Java. The CPA
 Additionally, use the built-in functions to read CPACS files and turn them into JAVA objects and save CPACS objects back to an xml file. 
 
 ## Example
-You can use the following code to import a CPACS file: 
+1. You can use the following code to import a CPACS file: 
 
 ```java
 // Import 
@@ -20,7 +20,7 @@ File inputFile = new File("C:/cpacs.xml");
 CpacsType cpacs = CPACSInitializer.run(inputFile);
 ```
 
-Then, access the CPACS object doing the following: 
+2. Then, access the CPACS object doing the following: 
 
 ```java
 // Create a CPACS string object
@@ -33,7 +33,7 @@ name.setValue("Marc Engelmann");
 cpacs.getHeader().setCreator(name);
 ```
 
-Lastly, save the CPACS object back to xml:
+3. Lastly, save the CPACS object back to xml:
 
 ```java
 String exportPath = "C:/cpacs_new.xml";
