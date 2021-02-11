@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Functions
+Bundle-SymbolicName: net.bhl.cpacs.functions
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: net.bhl.cpacs.functions
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.jface;bundle-version="3.17.0",
+ net.bhl.cpacs.model
+Export-Package: net.bhl.cpacs.functions
+Import-Package: net.bhl.toolbox.emf,
+ org.apache.commons.io
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: Bauhaus Luftfahrt e.V.
