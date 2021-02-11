@@ -14,8 +14,21 @@ You can use the following code to import a CPACS file:
 
 ```java
 // Import 
-File inputFile = new File(C:/cpacs.xml);
+File inputFile = new File("C:/cpacs.xml");
 
 // Load the CPACS file
 CpacsType cpacs = CPACSInitializer.run(inputFile);
+```
+
+Then, access the CPACS object doing the following: 
+
+```java
+// Create a CPACS string object
+StringBaseType name = CpacsFactory.eINSTANCE.createStringBaseType();
+
+// Apply a value 
+name.setValue("Marc Engelmann");
+
+// Set the string object at the desired location.
+cpacs.getHeader().setCreator(name);
 ```
