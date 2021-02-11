@@ -9,6 +9,11 @@ Common Parametric Aircraft Configuration Schema (CPACS) is an open-source data e
 This tool enables the CPACS file format to be used natively within Java. The CPACS structure has been transformed into a EMF ecore model which can be used to build with CPACS natively with auto-completion witout the need to use specific paths. 
 Additionally, use the built-in functions to read CPACS files and turn them into JAVA objects and save CPACS objects back to an xml file. 
 
+## Usage
+* Download the latest Eclipse Modelling Tools version from www.eclipse.org and install it.
+* Make sure to have at least Java 1.8 installed
+* Checkout this repository, import the projects and you are ready to go.
+
 ## Example
 1. You can use the following code to import a CPACS file: 
 
