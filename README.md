@@ -11,7 +11,7 @@ Additionally, use the built-in functions to read CPACS files and turn them into 
 
 ## Usage
 * Download the latest Eclipse Modelling Tools version from www.eclipse.org and install it.
-* Make sure to have at least Java 1.8 installed
+* Make sure to have at least Java 1.8 installed.
 * Checkout this repository, import the projects and you are ready to go.
 
 ## Example
