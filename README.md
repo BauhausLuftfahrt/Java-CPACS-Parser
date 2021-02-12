@@ -45,4 +45,4 @@ CPACSWriter.run(exportPath, cpacs);
 
 ## About
 
-Copyright (c) 2018-2021 [Bauhaus Luftfahrt e.V.](http://www.bauhaus-luftfahrt.net/?set_language=en) All rights reserved. Java CPACS parser and the accompanying materials are made available under the terms of the Eclipse Public License (EPL) v2.0 which accompanies this distribution. CPACS is created by Deutsches Zentrum für Luft- und Raumfahrt e.V. Institute of System Architectures in Aeronautics, [www.cpacs.de](www.cpacs.de).
+Copyright (c) 2018-2021 [Bauhaus Luftfahrt e.V.](http://www.bauhaus-luftfahrt.net/?set_language=en). All rights reserved. CPACS is created by Deutsches Zentrum für Luft- und Raumfahrt e.V. Institute of System Architectures in Aeronautics, [www.cpacs.de](www.cpacs.de).
