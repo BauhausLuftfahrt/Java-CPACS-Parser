@@ -11,6 +11,7 @@ This tool enables the CPACS file format to be used natively within Java. The CPA
 * Download the latest Eclipse Modelling Tools version from www.eclipse.org and install it.
 * Make sure to have at least Java 1.8 installed.
 * Checkout this repository, import the projects and you are ready to go.
+* You can find a demo use case below and under the functions plugin at the **Demo.java** file.
 
 ## Example
 1. You can use the following code to import a CPACS file: 
@@ -45,4 +46,4 @@ CPACSWriter.run(exportPath, cpacs);
 
 ## About
 
-Copyright (c) 2018-2021 [Bauhaus Luftfahrt e.V.](http://www.bauhaus-luftfahrt.net/?set_language=en). All rights reserved. CPACS is created by Deutsches Zentrum für Luft- und Raumfahrt e.V. Institute of System Architectures in Aeronautics, [www.cpacs.de](www.cpacs.de).
+Copyright (c) 2018-2021 [Bauhaus Luftfahrt e.V.](http://www.bauhaus-luftfahrt.net/?set_language=en). All rights reserved. CPACS is developed by Deutsches Zentrum für Luft- und Raumfahrt e.V., Institute of System Architectures in Aeronautics, [www.cpacs.de](www.cpacs.de).
