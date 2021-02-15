@@ -46,4 +46,6 @@ CPACSWriter.run(exportPath, cpacs);
 
 ## About
 
-Copyright (c) 2018-2021 [Bauhaus Luftfahrt e.V.](http://www.bauhaus-luftfahrt.net/?set_language=en). All rights reserved. CPACS is developed by Deutsches Zentrum für Luft- und Raumfahrt e.V., Institute of System Architectures in Aeronautics, [www.cpacs.de](www.cpacs.de).
+Copyright (c) 2021 [Bauhaus Luftfahrt e.V.](http://www.bauhaus-luftfahrt.net/?set_language=en). All rights reserved. This program and the accompanying materials are made available under the terms of the Apache License v2.0 which accompanies this distribution,and is available at http://www.apache.org/licenses/LICENSE-2.0. All rights reserved. 
+
+CPACS: (c) Deutsches Zentrum für Luft- und Raumfahrt e.V., Institute of System Architectures in Aeronautics, [www.cpacs.de](www.cpacs.de).
