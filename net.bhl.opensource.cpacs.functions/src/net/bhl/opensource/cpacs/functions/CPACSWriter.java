@@ -1,30 +1,8 @@
 /*******************************************************************************
- * <copyright>
- * This software  was developed at Bauhaus Luftfahrt e.V. by Marc Engelmann
- *
- * http://www.bauhaus-luftfahrt.net
- *
- * All rights reserved. Copyright (C) 2014-2021.
- *
- * Permission is hereby granted, free of charge, to use and/or copy this software
- * for non-commercial research and education purposes if the authors of this
- * software and their research papers are properly cited.
- *
- * Further rights are not granted. Contact us if you need another license or
- * specific rights.
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
-
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- * </copyright>
- ***************************************************************************************/
+ * <copyright> Copyright (c) 2021 Bauhaus Luftfahrt e.V.. All rights reserved. This program and the accompanying
+ * materials are made available under the terms of the Apache License v1.0 which accompanies this distribution,
+ * and is available at http://www.apache.org/licenses/LICENSE-2.0 </copyright>
+ *******************************************************************************/
 package net.bhl.opensource.cpacs.functions;
 
 import java.io.File;
