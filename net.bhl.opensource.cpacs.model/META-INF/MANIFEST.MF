@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: BHL CPACS Model
-Bundle-SymbolicName: net.bhl.cpacs.model;singleton:=true
+Bundle-SymbolicName: net.bhl.opensource.cpacs.model;singleton:=true
 Automatic-Module-Name: net.bhl.cpacs.model
 Bundle-Version: 0.1.0.qualifier
 Bundle-ClassPath: .
