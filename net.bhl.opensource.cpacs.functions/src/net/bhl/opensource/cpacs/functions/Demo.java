@@ -9,6 +9,7 @@ import java.io.File;
 
 import Cpacs.CpacsFactory;
 import Cpacs.CpacsType;
+import net.bhl.opensource.cpacs.model.extensions.header.HeaderExtensions;
 
 /**
  * Java CPACS parser demo import, editing and export.
@@ -48,16 +49,12 @@ public class Demo {
 		}
 
 		// Create a header object and set it
-		cpacs.setHeader(CpacsFactory.eINSTANCE.createHeaderType());
-
-		// Create the creator object and set it
-		cpacs.getHeader().setCreator(CpacsFactory.eINSTANCE.createStringBaseType());
-
-		// Apply a value to the creator object
-		cpacs.getHeader().getCreator().setValue(System.getProperty("user.name"));
+		cpacs.setHeader(HeaderExtensions.init("Demo CPACS created with Java CPACS parser by Bauhaus Luftfahrt", 1.0));
 
 		// Save the CPACS file to a path
 		CPACSWriter.run(filePathSave, cpacs);
-	}
 
+		System.out.println("CPACS output completed.");
+
+	}
 }

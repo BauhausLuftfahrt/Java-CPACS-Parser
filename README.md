@@ -24,17 +24,13 @@ File inputFile = new File("C:/cpacs.xml");
 CpacsType cpacs = CPACSInitializer.run(inputFile);
 ```
 
-2. Then, access the CPACS object doing the following: 
+2. Then, access the CPACS object with functions from the **model extensions plugin** doing the following: 
 
 ```java
-// Create a CPACS string object
-StringBaseType name = CpacsFactory.eINSTANCE.createStringBaseType();
-
-// Apply a value 
-name.setValue("Marc Engelmann");
-
 // Set the string object at the desired location.
-cpacs.getHeader().setCreator(name);
+String cpacsFileTitle = "Demo CPACS created with Java CPACS parser by Bauhaus Luftfahrt";
+double fileVersionNumber = 1.0;
+cpacs.setHeader(HeaderExtensions.init(cpacsFileTitle, fileVersionNumber);
 ```
 
 3. Lastly, save the CPACS object back to xml:
@@ -42,6 +38,21 @@ cpacs.getHeader().setCreator(name);
 ```java
 String exportPath = "C:/cpacs_new.xml";
 CPACSWriter.run(exportPath, cpacs);
+```
+
+4. The output will look like this:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<cpacs>
+    <header>
+        <name>Demo CPACS created with Java CPACS parser by Bauhaus Luftfahrt</name>
+        <creator>Marc Engelmann</creator>
+        <timestamp>2021-02-16T10:02:03.670</timestamp>
+        <version>1.0</version>
+        <cpacsVersion>3.2</cpacsVersion>
+    </header>
+</cpacs>
 ```
 
 ## About

@@ -6,7 +6,8 @@ Bundle-Version: 1.0.0.qualifier
 Automatic-Module-Name: net.bhl.cpacs.functions
 Require-Bundle: org.eclipse.emf.ecore,
  org.eclipse.jface;bundle-version="3.17.0",
- net.bhl.opensource.cpacs.model
+ net.bhl.opensource.cpacs.model,
+ net.bhl.opensource.cpacs.model.extensions
 Export-Package: net.bhl.opensource.cpacs.functions
 Import-Package: net.bhl.toolbox.emf,
  org.apache.commons.io

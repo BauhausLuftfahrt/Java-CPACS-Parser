@@ -45,8 +45,6 @@ import Cpacs.StringVectorBaseType;
 public interface CPACSWriter {
 
 	boolean SHOW_DOUBLE_ATTRIBUTES = false;
-	int MAXIMUM_DOUBLE_VALUE_DIGITS = 6;
-
 	List<String> BLOCKED_ATTRIBUTES_LIST = Arrays.asList("uncertaintyFunctionName", "a", "mu", "b", "c", "delta", "v",
 			"w");
 
@@ -240,8 +238,7 @@ public interface CPACSWriter {
 			element.setTextContent(((DateTimeBaseType) obj).getValue().toXMLFormat());
 
 		} else if (obj instanceof DoubleBaseType) {
-			element.setTextContent(
-					String.valueOf(round(((DoubleBaseType) obj).getValue(), MAXIMUM_DOUBLE_VALUE_DIGITS)));
+			element.setTextContent(String.valueOf(((DoubleBaseType) obj).getValue()));
 
 		} else if (obj instanceof IntegerBaseType) {
 			element.setTextContent(String.valueOf(((IntegerBaseType) obj).getValue()));
@@ -255,14 +252,5 @@ public interface CPACSWriter {
 		} else {
 			element.setTextContent(obj.toString());
 		}
-	}
-
-	/**
-	 * @param value
-	 * @param digits
-	 * @return
-	 */
-	static double round(double value, int digits) {
-		return Math.round(value * Math.pow(10.0, digits)) / Math.pow(10.0, digits);
 	}
 }
