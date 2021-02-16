@@ -10627,7 +10627,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCabGeometryType_Y() {
+	public EReference getCabGeometryType_YZ1() {
 		return (EReference) getCabGeometryType().getEStructuralFeatures().get(4);
 	}
 
@@ -10637,8 +10637,48 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getCabGeometryType_YZ2() {
+		return (EReference) getCabGeometryType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCabGeometryType_YZ3() {
+		return (EReference) getCabGeometryType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCabGeometryType_YZ4() {
+		return (EReference) getCabGeometryType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCabGeometryType_YZ5() {
+		return (EReference) getCabGeometryType().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getCabGeometryType_UID() {
-		return (EAttribute) getCabGeometryType().getEStructuralFeatures().get(5);
+		return (EAttribute) getCabGeometryType().getEStructuralFeatures().get(9);
 	}
 
 	/**

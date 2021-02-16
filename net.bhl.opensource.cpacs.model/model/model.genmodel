@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
-    modelDirectory="/net.bhl.cpacs.model/src-gen" creationIcons="false"
-    editDirectory="/net.bhl.cpacs.model.edit/src-gen" editorDirectory="/net.bhl.cpacs.model.editor/src-gen"
-    modelPluginID="net.bhl.cpacs.model" modelName="Model" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    modelDirectory="/net.bhl.opensource.cpacs.model/src-gen" creationIcons="false"
+    editDirectory="/net.bhl.opensource.cpacs.model.edit/src-gen" editorDirectory="/net.bhl.opensource.cpacs.model.editor/src-gen"
+    modelPluginID="net.bhl.opensource.cpacs.model" modelName="Model" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     codeFormatting="true" importerID="org.eclipse.xsd.ecore.importer" complianceLevel="10.0"
-    copyrightFields="false" operationReflection="true" importOrganizing="true">
+    copyrightFields="false" editPluginID="net.bhl.opensource.cpacs.model.edit" editorPluginID="net.bhl.opensource.cpacs.model.editor"
+    testsPluginID="net.bhl.opensource.cpacs.model.tests" operationReflection="true"
+    importOrganizing="true">
   <foreignModel>file:/C:/Users/marc.engelmann/git/cpacs/BHL_schema/cpacs.xsd</foreignModel>
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="Cpacs" resource="XML" disposableProviderFactory="true" loadInitialization="true"
@@ -605,7 +607,11 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/description"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/x"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/z"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/y"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/yZ1"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/yZ2"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/yZ3"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/yZ4"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/yZ5"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cpacs.ecore#//CabGeometryType/uID"/>
     </genClasses>
     <genClasses ecoreClass="Cpacs.ecore#//CabinAislesType">

@@ -4,7 +4,6 @@ package Cpacs.impl;
 
 import Cpacs.CabGeometryType;
 import Cpacs.CpacsPackage;
-import Cpacs.StringArrayBaseType;
 import Cpacs.StringBaseType;
 import Cpacs.StringVectorBaseType;
 
@@ -28,7 +27,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.CabGeometryTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link Cpacs.impl.CabGeometryTypeImpl#getX <em>X</em>}</li>
  *   <li>{@link Cpacs.impl.CabGeometryTypeImpl#getZ <em>Z</em>}</li>
- *   <li>{@link Cpacs.impl.CabGeometryTypeImpl#getY <em>Y</em>}</li>
+ *   <li>{@link Cpacs.impl.CabGeometryTypeImpl#getYZ1 <em>YZ1</em>}</li>
+ *   <li>{@link Cpacs.impl.CabGeometryTypeImpl#getYZ2 <em>YZ2</em>}</li>
+ *   <li>{@link Cpacs.impl.CabGeometryTypeImpl#getYZ3 <em>YZ3</em>}</li>
+ *   <li>{@link Cpacs.impl.CabGeometryTypeImpl#getYZ4 <em>YZ4</em>}</li>
+ *   <li>{@link Cpacs.impl.CabGeometryTypeImpl#getYZ5 <em>YZ5</em>}</li>
  *   <li>{@link Cpacs.impl.CabGeometryTypeImpl#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -76,14 +79,54 @@ public class CabGeometryTypeImpl extends ComplexBaseTypeImpl implements CabGeome
 	protected StringVectorBaseType z;
 
 	/**
-	 * The cached value of the '{@link #getY() <em>Y</em>}' containment reference.
+	 * The cached value of the '{@link #getYZ1() <em>YZ1</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getY()
+	 * @see #getYZ1()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringArrayBaseType y;
+	protected StringVectorBaseType yZ1;
+
+	/**
+	 * The cached value of the '{@link #getYZ2() <em>YZ2</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getYZ2()
+	 * @generated
+	 * @ordered
+	 */
+	protected StringVectorBaseType yZ2;
+
+	/**
+	 * The cached value of the '{@link #getYZ3() <em>YZ3</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getYZ3()
+	 * @generated
+	 * @ordered
+	 */
+	protected StringVectorBaseType yZ3;
+
+	/**
+	 * The cached value of the '{@link #getYZ4() <em>YZ4</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getYZ4()
+	 * @generated
+	 * @ordered
+	 */
+	protected StringVectorBaseType yZ4;
+
+	/**
+	 * The cached value of the '{@link #getYZ5() <em>YZ5</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getYZ5()
+	 * @generated
+	 * @ordered
+	 */
+	protected StringVectorBaseType yZ5;
 
 	/**
 	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
@@ -336,8 +379,8 @@ public class CabGeometryTypeImpl extends ComplexBaseTypeImpl implements CabGeome
 	 * @generated
 	 */
 	@Override
-	public StringArrayBaseType getY() {
-		return y;
+	public StringVectorBaseType getYZ1() {
+		return yZ1;
 	}
 
 	/**
@@ -345,12 +388,12 @@ public class CabGeometryTypeImpl extends ComplexBaseTypeImpl implements CabGeome
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetY(StringArrayBaseType newY, NotificationChain msgs) {
-		StringArrayBaseType oldY = y;
-		y = newY;
+	public NotificationChain basicSetYZ1(StringVectorBaseType newYZ1, NotificationChain msgs) {
+		StringVectorBaseType oldYZ1 = yZ1;
+		yZ1 = newYZ1;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CAB_GEOMETRY_TYPE__Y, oldY, newY);
+					CpacsPackage.CAB_GEOMETRY_TYPE__YZ1, oldYZ1, newYZ1);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -365,20 +408,224 @@ public class CabGeometryTypeImpl extends ComplexBaseTypeImpl implements CabGeome
 	 * @generated
 	 */
 	@Override
-	public void setY(StringArrayBaseType newY) {
-		if (newY != y) {
+	public void setYZ1(StringVectorBaseType newYZ1) {
+		if (newYZ1 != yZ1) {
 			NotificationChain msgs = null;
-			if (y != null)
-				msgs = ((InternalEObject) y).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CAB_GEOMETRY_TYPE__Y, null, msgs);
-			if (newY != null)
-				msgs = ((InternalEObject) newY).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CAB_GEOMETRY_TYPE__Y, null, msgs);
-			msgs = basicSetY(newY, msgs);
+			if (yZ1 != null)
+				msgs = ((InternalEObject) yZ1).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CAB_GEOMETRY_TYPE__YZ1, null, msgs);
+			if (newYZ1 != null)
+				msgs = ((InternalEObject) newYZ1).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CAB_GEOMETRY_TYPE__YZ1, null, msgs);
+			msgs = basicSetYZ1(newYZ1, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CAB_GEOMETRY_TYPE__Y, newY, newY));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CAB_GEOMETRY_TYPE__YZ1, newYZ1, newYZ1));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StringVectorBaseType getYZ2() {
+		return yZ2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetYZ2(StringVectorBaseType newYZ2, NotificationChain msgs) {
+		StringVectorBaseType oldYZ2 = yZ2;
+		yZ2 = newYZ2;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CAB_GEOMETRY_TYPE__YZ2, oldYZ2, newYZ2);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setYZ2(StringVectorBaseType newYZ2) {
+		if (newYZ2 != yZ2) {
+			NotificationChain msgs = null;
+			if (yZ2 != null)
+				msgs = ((InternalEObject) yZ2).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CAB_GEOMETRY_TYPE__YZ2, null, msgs);
+			if (newYZ2 != null)
+				msgs = ((InternalEObject) newYZ2).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CAB_GEOMETRY_TYPE__YZ2, null, msgs);
+			msgs = basicSetYZ2(newYZ2, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CAB_GEOMETRY_TYPE__YZ2, newYZ2, newYZ2));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StringVectorBaseType getYZ3() {
+		return yZ3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetYZ3(StringVectorBaseType newYZ3, NotificationChain msgs) {
+		StringVectorBaseType oldYZ3 = yZ3;
+		yZ3 = newYZ3;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CAB_GEOMETRY_TYPE__YZ3, oldYZ3, newYZ3);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setYZ3(StringVectorBaseType newYZ3) {
+		if (newYZ3 != yZ3) {
+			NotificationChain msgs = null;
+			if (yZ3 != null)
+				msgs = ((InternalEObject) yZ3).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CAB_GEOMETRY_TYPE__YZ3, null, msgs);
+			if (newYZ3 != null)
+				msgs = ((InternalEObject) newYZ3).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CAB_GEOMETRY_TYPE__YZ3, null, msgs);
+			msgs = basicSetYZ3(newYZ3, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CAB_GEOMETRY_TYPE__YZ3, newYZ3, newYZ3));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StringVectorBaseType getYZ4() {
+		return yZ4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetYZ4(StringVectorBaseType newYZ4, NotificationChain msgs) {
+		StringVectorBaseType oldYZ4 = yZ4;
+		yZ4 = newYZ4;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CAB_GEOMETRY_TYPE__YZ4, oldYZ4, newYZ4);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setYZ4(StringVectorBaseType newYZ4) {
+		if (newYZ4 != yZ4) {
+			NotificationChain msgs = null;
+			if (yZ4 != null)
+				msgs = ((InternalEObject) yZ4).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CAB_GEOMETRY_TYPE__YZ4, null, msgs);
+			if (newYZ4 != null)
+				msgs = ((InternalEObject) newYZ4).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CAB_GEOMETRY_TYPE__YZ4, null, msgs);
+			msgs = basicSetYZ4(newYZ4, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CAB_GEOMETRY_TYPE__YZ4, newYZ4, newYZ4));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StringVectorBaseType getYZ5() {
+		return yZ5;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetYZ5(StringVectorBaseType newYZ5, NotificationChain msgs) {
+		StringVectorBaseType oldYZ5 = yZ5;
+		yZ5 = newYZ5;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CAB_GEOMETRY_TYPE__YZ5, oldYZ5, newYZ5);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setYZ5(StringVectorBaseType newYZ5) {
+		if (newYZ5 != yZ5) {
+			NotificationChain msgs = null;
+			if (yZ5 != null)
+				msgs = ((InternalEObject) yZ5).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CAB_GEOMETRY_TYPE__YZ5, null, msgs);
+			if (newYZ5 != null)
+				msgs = ((InternalEObject) newYZ5).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CAB_GEOMETRY_TYPE__YZ5, null, msgs);
+			msgs = basicSetYZ5(newYZ5, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CAB_GEOMETRY_TYPE__YZ5, newYZ5, newYZ5));
 	}
 
 	/**
@@ -420,8 +667,16 @@ public class CabGeometryTypeImpl extends ComplexBaseTypeImpl implements CabGeome
 			return basicSetX(null, msgs);
 		case CpacsPackage.CAB_GEOMETRY_TYPE__Z:
 			return basicSetZ(null, msgs);
-		case CpacsPackage.CAB_GEOMETRY_TYPE__Y:
-			return basicSetY(null, msgs);
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ1:
+			return basicSetYZ1(null, msgs);
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ2:
+			return basicSetYZ2(null, msgs);
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ3:
+			return basicSetYZ3(null, msgs);
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ4:
+			return basicSetYZ4(null, msgs);
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ5:
+			return basicSetYZ5(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -442,8 +697,16 @@ public class CabGeometryTypeImpl extends ComplexBaseTypeImpl implements CabGeome
 			return getX();
 		case CpacsPackage.CAB_GEOMETRY_TYPE__Z:
 			return getZ();
-		case CpacsPackage.CAB_GEOMETRY_TYPE__Y:
-			return getY();
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ1:
+			return getYZ1();
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ2:
+			return getYZ2();
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ3:
+			return getYZ3();
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ4:
+			return getYZ4();
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ5:
+			return getYZ5();
 		case CpacsPackage.CAB_GEOMETRY_TYPE__UID:
 			return getUID();
 		}
@@ -470,8 +733,20 @@ public class CabGeometryTypeImpl extends ComplexBaseTypeImpl implements CabGeome
 		case CpacsPackage.CAB_GEOMETRY_TYPE__Z:
 			setZ((StringVectorBaseType) newValue);
 			return;
-		case CpacsPackage.CAB_GEOMETRY_TYPE__Y:
-			setY((StringArrayBaseType) newValue);
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ1:
+			setYZ1((StringVectorBaseType) newValue);
+			return;
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ2:
+			setYZ2((StringVectorBaseType) newValue);
+			return;
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ3:
+			setYZ3((StringVectorBaseType) newValue);
+			return;
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ4:
+			setYZ4((StringVectorBaseType) newValue);
+			return;
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ5:
+			setYZ5((StringVectorBaseType) newValue);
 			return;
 		case CpacsPackage.CAB_GEOMETRY_TYPE__UID:
 			setUID((String) newValue);
@@ -500,8 +775,20 @@ public class CabGeometryTypeImpl extends ComplexBaseTypeImpl implements CabGeome
 		case CpacsPackage.CAB_GEOMETRY_TYPE__Z:
 			setZ((StringVectorBaseType) null);
 			return;
-		case CpacsPackage.CAB_GEOMETRY_TYPE__Y:
-			setY((StringArrayBaseType) null);
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ1:
+			setYZ1((StringVectorBaseType) null);
+			return;
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ2:
+			setYZ2((StringVectorBaseType) null);
+			return;
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ3:
+			setYZ3((StringVectorBaseType) null);
+			return;
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ4:
+			setYZ4((StringVectorBaseType) null);
+			return;
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ5:
+			setYZ5((StringVectorBaseType) null);
 			return;
 		case CpacsPackage.CAB_GEOMETRY_TYPE__UID:
 			setUID(UID_EDEFAULT);
@@ -526,8 +813,16 @@ public class CabGeometryTypeImpl extends ComplexBaseTypeImpl implements CabGeome
 			return x != null;
 		case CpacsPackage.CAB_GEOMETRY_TYPE__Z:
 			return z != null;
-		case CpacsPackage.CAB_GEOMETRY_TYPE__Y:
-			return y != null;
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ1:
+			return yZ1 != null;
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ2:
+			return yZ2 != null;
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ3:
+			return yZ3 != null;
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ4:
+			return yZ4 != null;
+		case CpacsPackage.CAB_GEOMETRY_TYPE__YZ5:
+			return yZ5 != null;
 		case CpacsPackage.CAB_GEOMETRY_TYPE__UID:
 			return UID_EDEFAULT == null ? uID != null : !UID_EDEFAULT.equals(uID);
 		}
