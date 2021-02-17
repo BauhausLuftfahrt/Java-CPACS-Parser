@@ -11,7 +11,7 @@ Due to issues regarding the CPACS schema definition, a list of modifications to 
 
 ## Usage
 * Download the latest Eclipse Modelling Tools version from www.eclipse.org and install it.
-* Make sure to have at least Java 1.8 installed.
+* Make sure to have at least Java JDK 8 installed.
 * Checkout this repository, import the projects and you are ready to go.
 * You can find a demo use case below and under the functions plugin at the **Demo.java** file.
 
