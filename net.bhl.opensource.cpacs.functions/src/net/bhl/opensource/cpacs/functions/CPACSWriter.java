@@ -27,12 +27,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import Cpacs.CpacsType;
-import Cpacs.DateTimeBaseType;
-import Cpacs.DoubleBaseType;
-import Cpacs.IntegerBaseType;
-import Cpacs.StringBaseType;
-import Cpacs.StringUIDBaseType;
-import Cpacs.StringVectorBaseType;
 
 /**
  * Loop through an ECORE model of the CPACS file schema and write it to an XML
@@ -134,28 +128,33 @@ public interface CPACSWriter {
 					element.appendChild(subElement);
 				}
 
-			} else if (eObj.eGet(feature) instanceof EObject) {
 				// Check if the feature is an EOBJECT itself
+			} else if (eObj.eGet(feature) instanceof EObject) {
 
 				// Create a sub element
 				Element subElement = doc.createElement(feature.getName());
 
+				// Initialize the object
+				EObject eObject = (EObject) eObj.eGet(feature);
+
+				// Try to initialize a base object value
+				EStructuralFeature valueFeature = eObject.eClass().getEStructuralFeature("value");
+
 				// Check if it is a base type
-				if (((EObject) eObj.eGet(feature)).eClass().getEStructuralFeature("value") != null) {
+				if (valueFeature != null) {
 
 					// If so, apply the value to the element
-					setTextContent(subElement, eObj.eGet(feature));
+					subElement.setTextContent(eObject.eGet(valueFeature).toString());
 
 					// Then apply the attribute values to the element
-					for (EStructuralFeature baseObjectFeature : ((EObject) eObj.eGet(feature)).eClass()
-							.getEStructuralFeatures()) {
+					for (EStructuralFeature baseObjectFeature : eObject.eClass().getEStructuralFeatures()) {
 
-						applyAsAttribute(baseObjectFeature, subElement, (EObject) eObj.eGet(feature));
+						applyAsAttribute(baseObjectFeature, subElement, eObject);
 					}
 
 				} else {
 					// If not, go one level deeper
-					writeContent(doc, (EObject) eObj.eGet(feature), subElement);
+					writeContent(doc, eObject, subElement);
 				}
 
 				// Append the sub element
@@ -222,35 +221,5 @@ public interface CPACSWriter {
 		}
 
 		return false;
-	}
-
-	/**
-	 * Turn the four base types into a string object
-	 *
-	 * @param obj
-	 */
-	static void setTextContent(Element element, Object obj) {
-
-		if (obj instanceof StringBaseType) {
-			element.setTextContent(((StringBaseType) obj).getValue());
-
-		} else if (obj instanceof DateTimeBaseType) {
-			element.setTextContent(((DateTimeBaseType) obj).getValue().toXMLFormat());
-
-		} else if (obj instanceof DoubleBaseType) {
-			element.setTextContent(String.valueOf(((DoubleBaseType) obj).getValue()));
-
-		} else if (obj instanceof IntegerBaseType) {
-			element.setTextContent(String.valueOf(((IntegerBaseType) obj).getValue()));
-
-		} else if (obj instanceof StringUIDBaseType) {
-			element.setTextContent(String.valueOf(((StringUIDBaseType) obj).getValue()));
-
-		} else if (obj instanceof StringVectorBaseType) {
-			element.setTextContent(String.valueOf(((StringVectorBaseType) obj).getValue()));
-
-		} else {
-			element.setTextContent(obj.toString());
-		}
 	}
 }

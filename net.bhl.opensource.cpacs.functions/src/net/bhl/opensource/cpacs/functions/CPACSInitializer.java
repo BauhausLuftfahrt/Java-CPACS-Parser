@@ -22,6 +22,7 @@ import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EStructuralFeature;
+import org.eclipse.emf.ecore.util.FeatureMap;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -29,13 +30,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import Cpacs.CpacsFactory;
-import Cpacs.CpacsPackage;
 import Cpacs.CpacsType;
-import Cpacs.DateTimeBaseType;
-import Cpacs.DoubleBaseType;
-import Cpacs.IntegerBaseType;
-import Cpacs.StringBaseType;
-import Cpacs.StringUIDBaseType;
 
 /**
  * This class loads a XML file and turns it into an EOBJECT.
@@ -47,14 +42,14 @@ import Cpacs.StringUIDBaseType;
 public interface CPACSInitializer {
 
 	/**
-	 * Run the main function
+	 * Run the main function with toolspecific node included
 	 *
 	 * @param file
 	 * @return
 	 */
-	static CpacsType run(File file) {
+	static CpacsType runWithToolspecific(File file, EObject toolspecific) {
 
-		// Initialize the cpacs object
+		// Initialize the CPACS object
 		CpacsType cpacs = CpacsFactory.eINSTANCE.createCpacsType();
 
 		try {
@@ -65,7 +60,7 @@ public interface CPACSInitializer {
 			NodeList nodeList = (NodeList) expression.evaluate(doc, XPathConstants.NODESET);
 
 			// Loop through the node
-			readNode(cpacs, nodeList.item(0));
+			readNode(cpacs, nodeList.item(0), toolspecific);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -75,12 +70,22 @@ public interface CPACSInitializer {
 	}
 
 	/**
+	 * Run the main function
+	 *
+	 * @param file
+	 * @return
+	 */
+	static CpacsType run(File file) {
+		return runWithToolspecific(file, null);
+	}
+
+	/**
 	 * Initialize all CPACS elements
 	 *
 	 * @param object
 	 * @param superObject
 	 */
-	static void readNode(EObject object, Node superNode) {
+	static void readNode(EObject object, Node superNode, EObject toolspecific) {
 
 		// Loop through all attributes of top level node
 		for (int i = 0; i < superNode.getAttributes().getLength(); i++) {
@@ -124,10 +129,50 @@ public interface CPACSInitializer {
 				// Check if the feature exists
 				if (feature == null) {
 
-					// If not, this means that there is a string in the XML file which is not
-					// part of the CPACS schema.
-					System.out.println(
-							"Foreign element detected: " + superNode.getNodeName() + " -> " + node.getNodeName());
+					// Check if a search for tool specific node should be made
+					if (toolspecific != null) {
+
+						// Get the any feature from the tool specific node
+						EStructuralFeature anyFeature = object.eClass().getEStructuralFeature("any");
+
+						// Get the top level feature of the tool specific object which matches the name
+						EStructuralFeature toolspecificFeature = toolspecific.eClass()
+								.getEStructuralFeature(node.getNodeName());
+
+						if (toolspecificFeature != null) {
+
+							// Initialize the value of the tool specific feature
+							EObject newToolValue = toolspecific.eClass().getEPackage().getEFactoryInstance()
+									.create((EClass) toolspecific.eClass().getEPackage()
+											.getEClassifier(toolspecificFeature.getEType().getName()));
+
+							// Add it to the feature map of the "any" node of the original object
+							((FeatureMap) object.eGet(anyFeature)).add(toolspecificFeature, newToolValue);
+
+							// Recursively parse the whole data structure of the tool specific
+							readNode(newToolValue, node, toolspecificFeature);
+
+							// If not, this means that there is a string in the XML file which is not
+							// part of the CPACS schema.
+							System.out.println("Tool specific match detected: " + superNode.getNodeName() + " -> "
+									+ node.getNodeName());
+
+						} else {
+
+							// If not, this means that there is a string in the XML file which is not
+							// part of the CPACS schema.
+							System.out.println("Unknown tool specific element detected: " + superNode.getNodeName()
+									+ " -> " + node.getNodeName());
+						}
+
+					} else {
+
+						// If not, this means that there is a string in the XML file which is not
+						// part of the CPACS schema.
+						System.out.println(
+								"Foreign element detected: " + superNode.getNodeName() + " -> " + node.getNodeName());
+					}
+
 					continue;
 				}
 
@@ -140,11 +185,11 @@ public interface CPACSInitializer {
 				} else {
 
 					// Initialize an object corresponding to the class name
-					EObject newValue = CpacsPackage.eINSTANCE.getEFactoryInstance()
-							.create((EClass) CpacsPackage.eINSTANCE.getEClassifier(feature.getEType().getName()));
+					EObject newValue = object.eClass().getEPackage().getEFactoryInstance().create(
+							(EClass) object.eClass().getEPackage().getEClassifier(feature.getEType().getName()));
 
 					// Initiate all child content
-					readNode(newValue, node);
+					readNode(newValue, node, toolspecific);
 
 					// Apply object to super object, depending on type of relation
 					if (object.eGet(feature) instanceof Collection<?>) {
@@ -178,27 +223,30 @@ public interface CPACSInitializer {
 		}
 
 		// Try to apply one of the base types
-		if (EClass.class.isInstance(CpacsPackage.eINSTANCE.getEClassifier(eClass))) {
+		if (EClass.class.isInstance(parentObject.eClass().getEPackage().getEClassifier(eClass))) {
 
 			// Create an EObject
-			EObject baseTypeObject = CpacsPackage.eINSTANCE.getEFactoryInstance()
-					.create((EClass) CpacsPackage.eINSTANCE.getEClassifier(eClass));
+			EObject baseTypeObject = parentObject.eClass().getEPackage().getEFactoryInstance()
+					.create((EClass) parentObject.eClass().getEPackage().getEClassifier(eClass));
 
-			// Apply value to base types
-			if (baseTypeObject instanceof StringBaseType) {
-				((StringBaseType) baseTypeObject).setValue(textContent);
+			// Get the value feature of the object
+			EStructuralFeature valueFeature = baseTypeObject.eClass().getEStructuralFeature("value");
 
-			} else if (baseTypeObject instanceof IntegerBaseType) {
-				((IntegerBaseType) baseTypeObject).setValue(BigInteger.valueOf((long) Double.parseDouble(textContent)));
+			// Get the class type of the value feature, hence determine the base type class
+			Class<?> clazz = valueFeature.getEType().getInstanceClass();
 
-			} else if (baseTypeObject instanceof DoubleBaseType) {
-				((DoubleBaseType) baseTypeObject).setValue(Double.parseDouble(textContent));
+			// Apply feature value depending on class type
+			if (clazz.equals(double.class)) {
+				baseTypeObject.eSet(valueFeature, Double.valueOf(textContent));
 
-			} else if (baseTypeObject instanceof DateTimeBaseType) {
-				((DateTimeBaseType) baseTypeObject).setValue(getXMLGregorianCalendar(textContent));
+			} else if (clazz.equals(String.class)) {
+				baseTypeObject.eSet(valueFeature, textContent);
 
-			} else if (baseTypeObject instanceof StringUIDBaseType) {
-				((StringUIDBaseType) baseTypeObject).setValue(textContent);
+			} else if (clazz.equals(BigInteger.class)) {
+				baseTypeObject.eSet(valueFeature, BigInteger.valueOf((long) Double.parseDouble(textContent)));
+
+			} else if (clazz.equals(XMLGregorianCalendar.class)) {
+				baseTypeObject.eSet(valueFeature, getXMLGregorianCalendar(textContent));
 
 			} else {
 				System.err.println("CPACSInitializer: Missing class in implementation: " + baseTypeObject.getClass());
