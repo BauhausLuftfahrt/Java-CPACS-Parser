@@ -248,6 +248,9 @@ public interface CPACSInitializer {
 			} else if (clazz.equals(XMLGregorianCalendar.class)) {
 				baseTypeObject.eSet(valueFeature, getXMLGregorianCalendar(textContent));
 
+			} else if (clazz.equals(boolean.class)) {
+
+				baseTypeObject.eSet(valueFeature, Boolean.valueOf(textContent));
 			} else {
 				System.err.println("CPACSInitializer: Missing class in implementation: " + baseTypeObject.getClass());
 			}
