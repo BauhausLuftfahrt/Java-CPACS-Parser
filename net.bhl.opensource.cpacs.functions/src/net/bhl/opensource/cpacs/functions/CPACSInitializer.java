@@ -232,6 +232,12 @@ public interface CPACSInitializer {
 			// Get the value feature of the object
 			EStructuralFeature valueFeature = baseTypeObject.eClass().getEStructuralFeature("value");
 
+			if (valueFeature == null) {
+				System.err.println("CPACSInitializer: Could not get value for " + baseTypeObject.eClass().getName()
+						+ " in " + feature.getName());
+				return;
+			}
+
 			// Get the class type of the value feature, hence determine the base type class
 			Class<?> clazz = valueFeature.getEType().getInstanceClass();
 
