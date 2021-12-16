@@ -29,13 +29,12 @@ public interface FuselageSectionExtensions {
 	 * @param customID
 	 * @return
 	 */
-	static FuselageSectionType init(double fuselageWidth, double fuselageHeight, ProfileGeometryType profile, double z,
-			String customIDSuffix, int customIDIndex) {
+	static FuselageSectionType init(String fuselageUID, double fuselageWidth, double fuselageHeight,
+			ProfileGeometryType profile, double z, int index) {
 
 		FuselageSectionType section = CpacsFactory.eINSTANCE.createFuselageSectionType();
 
-		String sectionName = "fuselage" + (customIDSuffix.length() == 0 ? "" : "_") + customIDSuffix + "_section_"
-				+ customIDIndex;
+		String sectionName = fuselageUID + "_section_" + index;
 		String sectionElementSuffix = "_element_1";
 
 		section.setUID(sectionName);
@@ -57,18 +56,5 @@ public interface FuselageSectionExtensions {
 		sectionElement.getTransformation().getTranslation().setZ(DoubleExtensions.init(z));
 
 		return section;
-	}
-
-	/**
-	 * @param fuselageWidth
-	 * @param fuselageHeight
-	 * @param profile
-	 * @param z0
-	 * @param customIDSuffix
-	 * @return
-	 */
-	static FuselageSectionType init(double fuselageWidth, double fuselageHeight, ProfileGeometryType profile,
-			String customIDSuffix, int customIDIndex) {
-		return init(fuselageWidth, fuselageHeight, profile, 0.0, customIDSuffix, customIDIndex);
 	}
 }

@@ -23,9 +23,10 @@ public interface FuselageSegmentExtensions {
 	 * @param toElement
 	 * @return
 	 */
-	static FuselageSegmentType init(FuselageElementType fromElement, FuselageElementType toElement) {
+	static FuselageSegmentType init(String fuselageUID, FuselageElementType fromElement,
+			FuselageElementType toElement) {
 
-		String name = "fuselage_segment_from_" + fromElement.getUID() + "_to_" + toElement.getUID();
+		String name = fuselageUID + "_segment_from_" + fromElement.getUID() + "_to_" + toElement.getUID();
 
 		FuselageSegmentType segment = CpacsFactory.eINSTANCE.createFuselageSegmentType();
 		segment.setUID(name);

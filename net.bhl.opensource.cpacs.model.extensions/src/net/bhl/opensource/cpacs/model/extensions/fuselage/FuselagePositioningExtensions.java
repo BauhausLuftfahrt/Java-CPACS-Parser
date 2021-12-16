@@ -1,6 +1,8 @@
-/**
- *
- */
+/*******************************************************************************
+ * <copyright> Copyright (c) 2021 Bauhaus Luftfahrt e.V.. All rights reserved. This program and the accompanying
+ * materials are made available under the terms of the GNU General Public License v3.0 which accompanies this distribution,
+ * and is available at https://www.gnu.org/licenses/gpl-3.0.html.en </copyright>
+ *******************************************************************************/
 package net.bhl.opensource.cpacs.model.extensions.fuselage;
 
 import java.util.Optional;
@@ -25,15 +27,11 @@ public interface FuselagePositioningExtensions {
 	 * @param toSection
 	 * @return
 	 */
-	static PositioningType init(double length, Optional<FuselageSectionType> fromSection,
+	static PositioningType init(String fuselageUID, double length, Optional<FuselageSectionType> fromSection,
 			FuselageSectionType toSection) {
 
-		String name = "fuselage_positioning_from_" + (fromSection.isPresent() ? fromSection.get().getUID() : "origin")
-				+ "_to_" + toSection.getUID();
-
-		if (name.contains("_nose_") && name.contains("_aft_")) {
-			name = "fuselage_positioning_constant_section";
-		}
+		String name = fuselageUID + "_positioning_from_"
+				+ (fromSection.isPresent() ? fromSection.get().getUID() : "origin") + "_to_" + toSection.getUID();
 
 		PositioningType positioning = CpacsFactory.eINSTANCE.createPositioningType();
 		positioning.setUID(name);
