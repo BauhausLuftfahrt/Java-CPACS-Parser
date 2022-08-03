@@ -6,6 +6,7 @@
 package net.bhl.opensource.cpacs.functions;
 
 import java.io.File;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -49,6 +50,16 @@ public interface CPACSWriter {
 	 * @param cpacs    the CPACS object being saved
 	 */
 	static void run(String filePath, CpacsType cpacs) {
+		runTransformation(new StreamResult(new File(filePath)), cpacs);
+	}
+
+	/**
+	 * Execute the cpacs object transformation
+	 *
+	 * @param result The stream result target
+	 * @param cpacs  The cpacs element
+	 */
+	static void runTransformation(StreamResult result, CpacsType cpacs) {
 
 		try {
 
@@ -69,11 +80,25 @@ public interface CPACSWriter {
 			transformer.setOutputProperty(OutputKeys.DOCTYPE_PUBLIC, "yes");
 			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
 
-			transformer.transform(new DOMSource(doc), new StreamResult(new File(filePath)));
+			transformer.transform(new DOMSource(doc), result);
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	/**
+	 * Loop through a CPACS object and save it as a string.
+	 *
+	 * @param cpacs the CPACS object being saved
+	 */
+	static String toString(CpacsType cpacs) {
+
+		StringWriter writer = new StringWriter();
+		runTransformation(new StreamResult(writer), cpacs);
+
+		return writer.getBuffer().toString();
+
 	}
 
 	/**

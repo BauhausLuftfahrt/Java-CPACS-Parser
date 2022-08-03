@@ -6,6 +6,7 @@
 package net.bhl.opensource.cpacs.functions;
 
 import java.io.File;
+import java.io.StringReader;
 import java.math.BigInteger;
 import java.util.Collection;
 
@@ -28,6 +29,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
 
 import Cpacs.CpacsFactory;
 import Cpacs.CpacsType;
@@ -67,6 +69,28 @@ public interface CPACSInitializer {
 		}
 
 		return cpacs;
+	}
+
+	static EObject initFromString(EObject parentObject, String parentName, String content) {
+
+		try {
+
+			// Load the XML structure into a node
+
+			InputSource inputSource = new InputSource(new StringReader(content));
+			Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(inputSource);
+			XPathExpression expression = XPathFactory.newInstance().newXPath().compile(parentName);
+			NodeList nodeList = (NodeList) expression.evaluate(doc, XPathConstants.NODESET);
+
+			// Loop through the node
+			readNode(parentObject, nodeList.item(0), null);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return parentObject;
+
 	}
 
 	/**
@@ -280,7 +304,22 @@ public interface CPACSInitializer {
 			}
 
 		} else {
-			System.err.println("CPACSInitializer: Unknown basetype at " + feature.getName() + " -> " + textContent);
+
+			if (feature.getEType().getInstanceClass().equals(double.class)) {
+
+				parentObject.eSet(feature, Double.valueOf(textContent));
+
+			} else if (feature.getEType().getInstanceClass().equals(int.class)) {
+
+				parentObject.eSet(feature, Integer.valueOf(textContent));
+
+			} else if (feature.getEType().getInstanceClass().equals(String.class)) {
+
+				parentObject.eSet(feature, textContent);
+
+			} else {
+				System.err.println("CPACSInitializer: Unknown basetype at " + feature.getName() + " -> " + textContent);
+			}
 		}
 	}
 
