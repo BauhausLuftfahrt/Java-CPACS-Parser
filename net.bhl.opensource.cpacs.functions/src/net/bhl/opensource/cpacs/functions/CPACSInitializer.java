@@ -74,8 +74,6 @@ public interface CPACSInitializer {
 			e.printStackTrace();
 		}
 
-		System.out.println(cpacs.getToolspecific().getTool().get(0).getAny().size());
-
 		return cpacs;
 	}
 
