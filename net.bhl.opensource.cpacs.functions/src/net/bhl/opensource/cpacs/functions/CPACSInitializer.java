@@ -23,7 +23,12 @@ import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EStructuralFeature;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.emf.ecore.util.BasicExtendedMetaData;
+import org.eclipse.emf.ecore.util.ExtendedMetaData;
 import org.eclipse.emf.ecore.util.FeatureMap;
+import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -33,6 +38,7 @@ import org.xml.sax.InputSource;
 
 import Cpacs.CpacsFactory;
 import Cpacs.CpacsType;
+import Cpacs.StringBaseType;
 
 /**
  * This class loads a XML file and turns it into an EOBJECT.
@@ -44,7 +50,7 @@ import Cpacs.CpacsType;
 public interface CPACSInitializer {
 
 	/**
-	 * Run the main function with toolspecific node included
+	 * Load a cpacs object from xml file with a toolspecific node included
 	 *
 	 * @param file
 	 * @return
@@ -68,22 +74,34 @@ public interface CPACSInitializer {
 			e.printStackTrace();
 		}
 
+		System.out.println(cpacs.getToolspecific().getTool().get(0).getAny().size());
+
 		return cpacs;
 	}
 
-	static EObject initFromString(EObject parentObject, String parentName, String content) {
+	/**
+	 * Initialize a cpacs object structure from a string. Do not include the <?xml
+	 * ...> info. Include toolspecific node.
+	 *
+	 * @param parentObject
+	 * @param content
+	 * @return
+	 */
+	static EObject initFromStringWithToolspecific(EObject parentObject, String content, EObject toolspecific) {
 
 		try {
+
+			String firstNodeName = content.split(">")[0].replace(">", "").replace("<", "");
 
 			// Load the XML structure into a node
 
 			InputSource inputSource = new InputSource(new StringReader(content));
 			Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(inputSource);
-			XPathExpression expression = XPathFactory.newInstance().newXPath().compile(parentName);
+			XPathExpression expression = XPathFactory.newInstance().newXPath().compile(firstNodeName);
 			NodeList nodeList = (NodeList) expression.evaluate(doc, XPathConstants.NODESET);
 
 			// Loop through the node
-			readNode(parentObject, nodeList.item(0), null);
+			readNode(parentObject, nodeList.item(0), toolspecific);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -91,6 +109,18 @@ public interface CPACSInitializer {
 
 		return parentObject;
 
+	}
+
+	/**
+	 * Initialize a cpacs object structure from a string. Do not include the <?xml
+	 * ...> info.
+	 *
+	 * @param parentObject
+	 * @param content
+	 * @return
+	 */
+	static EObject initFromString(EObject parentObject, String content) {
+		return initFromStringWithToolspecific(parentObject, content, null);
 	}
 
 	/**
@@ -128,8 +158,8 @@ public interface CPACSInitializer {
 
 					// If not, this means that there is a string in the XML file which is not
 					// part of the CPACS schema.
-					System.out.println("Foreign attribute detected: " + superNode.getNodeName() + " -> "
-							+ attribute.getNodeName());
+					System.out.println("CPACSInitializer: Foreign attribute detected: " + superNode.getNodeName()
+							+ " -> " + attribute.getNodeName());
 					continue;
 				}
 
@@ -159,42 +189,41 @@ public interface CPACSInitializer {
 						// Get the any feature from the tool specific node
 						EStructuralFeature anyFeature = object.eClass().getEStructuralFeature("any");
 
-						// Get the top level feature of the tool specific object which matches the name
-						EStructuralFeature toolspecificFeature = toolspecific.eClass()
-								.getEStructuralFeature(node.getNodeName());
+						// Get the name feature from the tool specific node
+						EStructuralFeature nameFeature = object.eClass().getEStructuralFeature("name");
 
-						if (toolspecificFeature != null) {
+						// Check if the name space matches the tool name and if the any feature exists.
+						if (anyFeature != null && ((StringBaseType) object.eGet(nameFeature)).getValue()
+								.contentEquals(toolspecific.eClass().getEPackage().getName())) {
 
-							// Initialize the value of the tool specific feature
-							EObject newToolValue = toolspecific.eClass().getEPackage().getEFactoryInstance()
-									.create((EClass) toolspecific.eClass().getEPackage()
-											.getEClassifier(toolspecificFeature.getEType().getName()));
+							// Load the extended meta data set in order to apply the AnyType.
+							ResourceSet res = new ResourceSetImpl();
+							ExtendedMetaData meta = new BasicExtendedMetaData(res.getPackageRegistry());
+							res.getLoadOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, meta);
 
-							// Add it to the feature map of the "any" node of the original object
-							((FeatureMap) object.eGet(anyFeature)).add(toolspecificFeature, newToolValue);
+							EStructuralFeature entryFeature = meta.demandFeature(
+									toolspecific.eClass().getEPackage().getName(), node.getNodeName(), true);
+
+							// Assign the toolspecific node to the any feature.
+							((FeatureMap) object.eGet(anyFeature)).add(entryFeature, toolspecific);
 
 							// Recursively parse the whole data structure of the tool specific
-							readNode(newToolValue, node, toolspecificFeature);
-
-							// If not, this means that there is a string in the XML file which is not
-							// part of the CPACS schema.
-							System.out.println("Tool specific match detected: " + superNode.getNodeName() + " -> "
-									+ node.getNodeName());
+							readNode(toolspecific, node, null);
 
 						} else {
 
 							// If not, this means that there is a string in the XML file which is not
 							// part of the CPACS schema.
-							System.out.println("Unknown tool specific element detected: " + superNode.getNodeName()
-									+ " -> " + node.getNodeName());
+							System.out.println("CPACSInitializer: Unknown tool specific element detected: "
+									+ superNode.getNodeName() + " -> " + node.getNodeName());
 						}
 
 					} else {
 
 						// If not, this means that there is a string in the XML file which is not
 						// part of the CPACS schema.
-						System.out.println(
-								"Foreign element detected: " + superNode.getNodeName() + " -> " + node.getNodeName());
+						System.out.println("CPACSInitializer: Foreign element detected: " + superNode.getNodeName()
+								+ " -> " + node.getNodeName());
 					}
 
 					continue;
@@ -203,8 +232,14 @@ public interface CPACSInitializer {
 				// Check if the lowest (local!) level has been reached.
 				if (getNumberOfElements(node) == 0) {
 
-					// If so, apply the base type
-					tryBaseType(object, node.getTextContent(), feature);
+					if (node.getTextContent().isEmpty()) {
+						System.out.println("CPACSInitializer: Empty content detected: " + superNode.getNodeName()
+								+ " -> " + feature.getName());
+						continue;
+					} else {
+						// If so, apply the base type
+						tryBaseType(object, node.getTextContent(), feature);
+					}
 
 				} else {
 

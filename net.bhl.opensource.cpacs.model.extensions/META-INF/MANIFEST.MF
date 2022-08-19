@@ -11,4 +11,5 @@ Export-Package: net.bhl.opensource.cpacs.model.extensions.basetype,
  net.bhl.opensource.cpacs.model.extensions.fuselage,
  net.bhl.opensource.cpacs.model.extensions.header,
  net.bhl.opensource.cpacs.model.extensions.mass
-Require-Bundle: net.bhl.opensource.cpacs.model
+Require-Bundle: net.bhl.opensource.cpacs.model,
+ net.bhl.opensource.toolbox

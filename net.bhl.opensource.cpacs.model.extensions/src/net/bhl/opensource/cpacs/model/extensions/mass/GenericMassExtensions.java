@@ -9,6 +9,7 @@ import Cpacs.CpacsFactory;
 import Cpacs.GenericMassType;
 import net.bhl.opensource.cpacs.model.extensions.basetype.DoubleExtensions;
 import net.bhl.opensource.cpacs.model.extensions.basetype.StringUIDExtensions;
+import net.bhl.opensource.toolbox.math.vector.DoubleVector;
 
 /**
  * @author Marc.Engelmann
@@ -21,8 +22,21 @@ public interface GenericMassExtensions {
 	 * @param mass
 	 * @return
 	 */
-	static GenericMassType init(double mass) {
-		return init(mass, 0, 0, 0, null, 0, 0, 0);
+	static GenericMassType init(double mass, String uID) {
+		return init(mass, 0, 0, 0, uID, null, 0, 0, 0);
+	}
+
+	/**
+	 * @param mass
+	 * @param xLocation
+	 * @param yLocation
+	 * @param zLocation
+	 * @param uID
+	 * @param parentUID
+	 * @return
+	 */
+	static GenericMassType init(double mass, DoubleVector location, String uID, String parentUID) {
+		return init(mass, location.getX(), location.getY(), location.getZ(), uID, parentUID, 0, 0, 0);
 	}
 
 	/**
@@ -41,9 +55,7 @@ public interface GenericMassExtensions {
 		genericMassType.getLocation().setY(DoubleExtensions.init(yLocation + yTranslation));
 		genericMassType.getLocation().setZ(DoubleExtensions.init(zLocation + zTranslation));
 
-		if (uID != null) {
-			genericMassType.setUID(uID);
-		}
+		genericMassType.setUID(uID);
 
 		if (parentUID != null) {
 			genericMassType.setParentUID(StringUIDExtensions.init(parentUID, false));
@@ -60,14 +72,14 @@ public interface GenericMassExtensions {
 		return genericMassType;
 	}
 
-	/**
-	 * @param mass
-	 * @param location
-	 * @return
-	 */
-	static GenericMassType init(double mass, double xLocation, double yLocation, double zLocation, String parentUID,
-			double xTranslation, double yTranslation, double zTranslation) {
-		return init(mass, xLocation, yLocation, zLocation, null, parentUID, xTranslation, yTranslation, zTranslation);
-
-	}
+//	/**
+//	 * @param mass
+//	 * @param location
+//	 * @return
+//	 */
+//	static GenericMassType init(double mass, double xLocation, double yLocation, double zLocation, String parentUID,
+//			double xTranslation, double yTranslation, double zTranslation) {
+//		return init(mass, xLocation, yLocation, zLocation, null, parentUID, xTranslation, yTranslation, zTranslation);
+//
+//	}
 }

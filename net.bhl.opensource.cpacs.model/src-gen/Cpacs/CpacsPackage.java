@@ -6770,49 +6770,13 @@ public interface CpacsPackage extends EPackage {
 	int CAB_GEOMETRY_TYPE__Z = COMPLEX_BASE_TYPE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>YZ1</b></em>' containment reference.
+	 * The feature id for the '<em><b>Y</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CAB_GEOMETRY_TYPE__YZ1 = COMPLEX_BASE_TYPE_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>YZ2</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAB_GEOMETRY_TYPE__YZ2 = COMPLEX_BASE_TYPE_FEATURE_COUNT + 5;
-
-	/**
-	 * The feature id for the '<em><b>YZ3</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAB_GEOMETRY_TYPE__YZ3 = COMPLEX_BASE_TYPE_FEATURE_COUNT + 6;
-
-	/**
-	 * The feature id for the '<em><b>YZ4</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAB_GEOMETRY_TYPE__YZ4 = COMPLEX_BASE_TYPE_FEATURE_COUNT + 7;
-
-	/**
-	 * The feature id for the '<em><b>YZ5</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAB_GEOMETRY_TYPE__YZ5 = COMPLEX_BASE_TYPE_FEATURE_COUNT + 8;
+	int CAB_GEOMETRY_TYPE__Y = COMPLEX_BASE_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>UID</b></em>' attribute.
@@ -6821,7 +6785,7 @@ public interface CpacsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAB_GEOMETRY_TYPE__UID = COMPLEX_BASE_TYPE_FEATURE_COUNT + 9;
+	int CAB_GEOMETRY_TYPE__UID = COMPLEX_BASE_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Cab Geometry Type</em>' class.
@@ -6830,7 +6794,7 @@ public interface CpacsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAB_GEOMETRY_TYPE_FEATURE_COUNT = COMPLEX_BASE_TYPE_FEATURE_COUNT + 10;
+	int CAB_GEOMETRY_TYPE_FEATURE_COUNT = COMPLEX_BASE_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of operations of the '<em>Cab Geometry Type</em>' class.
@@ -82150,59 +82114,15 @@ public interface CpacsPackage extends EPackage {
 	EReference getCabGeometryType_Z();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link Cpacs.CabGeometryType#getYZ1 <em>YZ1</em>}'.
+	 * Returns the meta object for the containment reference '{@link Cpacs.CabGeometryType#getY <em>Y</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>YZ1</em>'.
-	 * @see Cpacs.CabGeometryType#getYZ1()
+	 * @return the meta object for the containment reference '<em>Y</em>'.
+	 * @see Cpacs.CabGeometryType#getY()
 	 * @see #getCabGeometryType()
 	 * @generated
 	 */
-	EReference getCabGeometryType_YZ1();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link Cpacs.CabGeometryType#getYZ2 <em>YZ2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>YZ2</em>'.
-	 * @see Cpacs.CabGeometryType#getYZ2()
-	 * @see #getCabGeometryType()
-	 * @generated
-	 */
-	EReference getCabGeometryType_YZ2();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link Cpacs.CabGeometryType#getYZ3 <em>YZ3</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>YZ3</em>'.
-	 * @see Cpacs.CabGeometryType#getYZ3()
-	 * @see #getCabGeometryType()
-	 * @generated
-	 */
-	EReference getCabGeometryType_YZ3();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link Cpacs.CabGeometryType#getYZ4 <em>YZ4</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>YZ4</em>'.
-	 * @see Cpacs.CabGeometryType#getYZ4()
-	 * @see #getCabGeometryType()
-	 * @generated
-	 */
-	EReference getCabGeometryType_YZ4();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link Cpacs.CabGeometryType#getYZ5 <em>YZ5</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>YZ5</em>'.
-	 * @see Cpacs.CabGeometryType#getYZ5()
-	 * @see #getCabGeometryType()
-	 * @generated
-	 */
-	EReference getCabGeometryType_YZ5();
+	EReference getCabGeometryType_Y();
 
 	/**
 	 * Returns the meta object for the attribute '{@link Cpacs.CabGeometryType#getUID <em>UID</em>}'.

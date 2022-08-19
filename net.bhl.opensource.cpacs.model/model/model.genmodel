@@ -607,11 +607,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/description"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/x"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/z"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/yZ1"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/yZ2"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/yZ3"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/yZ4"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/yZ5"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cpacs.ecore#//CabGeometryType/y"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cpacs.ecore#//CabGeometryType/uID"/>
     </genClasses>
     <genClasses ecoreClass="Cpacs.ecore#//CabinAislesType">
