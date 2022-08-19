@@ -352,6 +352,10 @@ public interface CPACSInitializer {
 
 				parentObject.eSet(feature, textContent);
 
+			} else if (feature.getEType().getInstanceClass().equals(boolean.class)) {
+
+				parentObject.eSet(feature, Boolean.valueOf(textContent));
+
 			} else {
 				System.err.println("CPACSInitializer: Unknown basetype at " + feature.getName() + " -> " + textContent);
 			}
