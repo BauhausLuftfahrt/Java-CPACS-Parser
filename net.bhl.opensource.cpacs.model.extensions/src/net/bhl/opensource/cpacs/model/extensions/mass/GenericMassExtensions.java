@@ -8,6 +8,7 @@ package net.bhl.opensource.cpacs.model.extensions.mass;
 import Cpacs.CpacsFactory;
 import Cpacs.GenericMassType;
 import net.bhl.opensource.cpacs.model.extensions.basetype.DoubleExtensions;
+import net.bhl.opensource.cpacs.model.extensions.basetype.StringExtensions;
 import net.bhl.opensource.cpacs.model.extensions.basetype.StringUIDExtensions;
 import net.bhl.opensource.toolbox.math.vector.DoubleVector;
 
@@ -51,11 +52,13 @@ public interface GenericMassExtensions {
 		genericMassType.setMass(DoubleExtensions.init(mass));
 
 		genericMassType.setLocation(CpacsFactory.eINSTANCE.createPointType());
+		genericMassType.getLocation().setUID(uID + "_location");
 		genericMassType.getLocation().setX(DoubleExtensions.init(xLocation + xTranslation));
 		genericMassType.getLocation().setY(DoubleExtensions.init(yLocation + yTranslation));
 		genericMassType.getLocation().setZ(DoubleExtensions.init(zLocation + zTranslation));
 
 		genericMassType.setUID(uID);
+		genericMassType.setName(StringExtensions.init(uID));
 
 		if (parentUID != null) {
 			genericMassType.setParentUID(StringUIDExtensions.init(parentUID, false));

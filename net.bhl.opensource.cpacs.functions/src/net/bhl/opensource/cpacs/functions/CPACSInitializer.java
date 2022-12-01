@@ -49,6 +49,8 @@ import Cpacs.StringBaseType;
  */
 public interface CPACSInitializer {
 
+	boolean DEBUG_MODE = false;
+
 	/**
 	 * Load a cpacs object from xml file with a toolspecific node included
 	 *
@@ -156,8 +158,10 @@ public interface CPACSInitializer {
 
 					// If not, this means that there is a string in the XML file which is not
 					// part of the CPACS schema.
-					System.out.println("CPACSInitializer: Foreign attribute detected: " + superNode.getNodeName()
-							+ " -> " + attribute.getNodeName());
+					if (DEBUG_MODE) {
+						System.out.println("CPACSInitializer: Foreign attribute detected: " + superNode.getNodeName()
+								+ " -> " + attribute.getNodeName());
+					}
 					continue;
 				}
 
@@ -212,16 +216,20 @@ public interface CPACSInitializer {
 
 							// If not, this means that there is a string in the XML file which is not
 							// part of the CPACS schema.
-							System.out.println("CPACSInitializer: Unknown tool specific element detected: "
-									+ superNode.getNodeName() + " -> " + node.getNodeName());
+							if (DEBUG_MODE) {
+								System.out.println("CPACSInitializer: Unknown tool specific element detected: "
+										+ superNode.getNodeName() + " -> " + node.getNodeName());
+							}
 						}
 
 					} else {
 
 						// If not, this means that there is a string in the XML file which is not
 						// part of the CPACS schema.
-						System.out.println("CPACSInitializer: Foreign element detected: " + superNode.getNodeName()
-								+ " -> " + node.getNodeName());
+						if (DEBUG_MODE) {
+							System.out.println("CPACSInitializer: Foreign element detected: " + superNode.getNodeName()
+									+ " -> " + node.getNodeName());
+						}
 					}
 
 					continue;
@@ -231,8 +239,10 @@ public interface CPACSInitializer {
 				if (getNumberOfElements(node) == 0) {
 
 					if (node.getTextContent().isEmpty()) {
-						System.out.println("CPACSInitializer: Empty content detected: " + superNode.getNodeName()
-								+ " -> " + feature.getName());
+						if (DEBUG_MODE) {
+							System.out.println("CPACSInitializer: Empty content detected: " + superNode.getNodeName()
+									+ " -> " + feature.getName());
+						}
 						continue;
 					} else {
 						// If so, apply the base type
@@ -290,8 +300,10 @@ public interface CPACSInitializer {
 			EStructuralFeature valueFeature = baseTypeObject.eClass().getEStructuralFeature("value");
 
 			if (valueFeature == null) {
-				System.err.println("CPACSInitializer: Could not get value for " + baseTypeObject.eClass().getName()
-						+ " in " + feature.getName());
+				if (DEBUG_MODE) {
+					System.err.println("CPACSInitializer: Could not get value for " + baseTypeObject.eClass().getName()
+							+ " in " + feature.getName());
+				}
 				return;
 			}
 
@@ -315,14 +327,19 @@ public interface CPACSInitializer {
 
 				baseTypeObject.eSet(valueFeature, Boolean.valueOf(textContent));
 			} else {
-				System.err.println("CPACSInitializer: Missing class in implementation: " + baseTypeObject.getClass());
+				if (DEBUG_MODE) {
+					System.err
+							.println("CPACSInitializer: Missing class in implementation: " + baseTypeObject.getClass());
+				}
 			}
 
 			// Then apply the EObject to the feature
 			try {
 				parentObject.eSet(feature, baseTypeObject);
 			} catch (ClassCastException e) {
-				System.err.println("CPACSInitializer: Could not cast to class for " + feature.getName());
+				if (DEBUG_MODE) {
+					System.err.println("CPACSInitializer: Could not cast to class for " + feature.getName());
+				}
 			}
 
 		} else if (feature.getEType() instanceof EEnum) {
@@ -331,7 +348,9 @@ public interface CPACSInitializer {
 			EEnumLiteral eEnumLiteral = eenum.getEEnumLiteralByLiteral(textContent);
 
 			if (eEnumLiteral == null) {
-				System.err.println("CPACSInitializer: Could not initialize enum " + feature.getName());
+				if (DEBUG_MODE) {
+					System.err.println("CPACSInitializer: Could not initialize enum " + feature.getName());
+				}
 			} else {
 				parentObject.eSet(feature, eEnumLiteral.getInstance());
 			}
@@ -355,7 +374,10 @@ public interface CPACSInitializer {
 				parentObject.eSet(feature, Boolean.valueOf(textContent));
 
 			} else {
-				System.err.println("CPACSInitializer: Unknown basetype at " + feature.getName() + " -> " + textContent);
+				if (DEBUG_MODE) {
+					System.err.println(
+							"CPACSInitializer: Unknown basetype at " + feature.getName() + " -> " + textContent);
+				}
 			}
 		}
 	}

@@ -22,25 +22,29 @@ public interface TransformationExtensions {
 	 * @param parentUID
 	 * @return
 	 */
-	static TransformationType init(RefTypeType referenceType) {
+	static TransformationType init(RefTypeType referenceType, String parentUID) {
 
 		TransformationType transformer = CpacsFactory.eINSTANCE.createTransformationType();
 
-		transformer.setScaling(CpacsFactory.eINSTANCE.createPointType());
+		String transformationUID = parentUID + "_transformation";
 
+		transformer.setUID(transformationUID);
+
+		transformer.setScaling(CpacsFactory.eINSTANCE.createPointType());
+		transformer.getScaling().setUID(transformationUID + "_scaling");
 		transformer.getScaling().setX(DoubleExtensions.init(1));
 		transformer.getScaling().setY(DoubleExtensions.init(1));
 		transformer.getScaling().setZ(DoubleExtensions.init(1));
 
 		transformer.setRotation(CpacsFactory.eINSTANCE.createPointType());
-
+		transformer.getRotation().setUID(transformationUID + "_rotation");
 		transformer.getRotation().setX(DoubleExtensions.init(0));
 		transformer.getRotation().setY(DoubleExtensions.init(0));
 		transformer.getRotation().setZ(DoubleExtensions.init(0));
 
 		transformer.setTranslation(CpacsFactory.eINSTANCE.createPointAbsRelType());
 		transformer.getTranslation().setRefType(referenceType);
-
+		transformer.getTranslation().setUID(transformationUID + "_translation");
 		transformer.getTranslation().setX(DoubleExtensions.init(0));
 		transformer.getTranslation().setY(DoubleExtensions.init(0));
 		transformer.getTranslation().setZ(DoubleExtensions.init(0));
@@ -52,7 +56,7 @@ public interface TransformationExtensions {
 	/**
 	 * @return
 	 */
-	static TransformationType initGlobal() {
-		return init(RefTypeType.ABS_GLOBAL);
+	static TransformationType initGlobal(String parentUID) {
+		return init(RefTypeType.ABS_GLOBAL, parentUID);
 	}
 }

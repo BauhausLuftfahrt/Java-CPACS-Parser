@@ -41,7 +41,7 @@ public interface FuselageSectionExtensions {
 		section.setName(StringExtensions.init(sectionName));
 		section.setDescription(StringExtensions.init(sectionName));
 		section.setElements(CpacsFactory.eINSTANCE.createFuselageElementsType());
-		section.setTransformation(TransformationExtensions.initGlobal());
+		section.setTransformation(TransformationExtensions.initGlobal(section.getUID()));
 
 		FuselageElementType sectionElement = CpacsFactory.eINSTANCE.createFuselageElementType();
 		section.getElements().getElement().add(sectionElement);
@@ -49,7 +49,7 @@ public interface FuselageSectionExtensions {
 		sectionElement.setDescription(StringExtensions.init(sectionName + sectionElementSuffix));
 		sectionElement.setUID(sectionName + sectionElementSuffix);
 		sectionElement.setProfileUID(StringUIDExtensions.init(profile.getUID(), true));
-		sectionElement.setTransformation(TransformationExtensions.initGlobal());
+		sectionElement.setTransformation(TransformationExtensions.initGlobal(sectionElement.getUID()));
 
 		sectionElement.getTransformation().getScaling().setY(DoubleExtensions.init(fuselageWidth / 2.0));
 		sectionElement.getTransformation().getScaling().setZ(DoubleExtensions.init(fuselageHeight / 2.0));

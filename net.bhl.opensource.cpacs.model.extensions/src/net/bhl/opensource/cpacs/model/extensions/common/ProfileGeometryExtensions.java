@@ -39,11 +39,11 @@ public interface ProfileGeometryExtensions {
 
 		for (int i = 0; i <= CIRCULAR_DATA_POINT_SIZE; i++) {
 
-			xValues += "0.0";
-			yValues += String
+			xValues += " 0.0";
+			yValues += " " + String
 					.valueOf(Math.round(Math.cos(2.0 * Math.PI * i / CIRCULAR_DATA_POINT_SIZE) * Math.pow(10.0, DIGITS))
 							/ Math.pow(10.0, DIGITS));
-			zValues += String
+			zValues += " " + String
 					.valueOf(Math.round(Math.sin(2.0 * Math.PI * i / CIRCULAR_DATA_POINT_SIZE) * Math.pow(10.0, DIGITS))
 							/ Math.pow(10.0, DIGITS));
 

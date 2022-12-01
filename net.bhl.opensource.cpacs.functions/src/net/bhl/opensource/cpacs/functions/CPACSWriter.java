@@ -143,6 +143,8 @@ public interface CPACSWriter {
 					// Create sub element
 					Element subElement = doc.createElement(entry.getEStructuralFeature().getName());
 
+					subElement.setAttribute("xmlns", ((EObject) entry.getValue()).eClass().getEPackage().getName());
+
 					// Depending on type of list elements, apply content
 					if (entry.getValue() instanceof EObject) {
 						writeContent(doc, (EObject) entry.getValue(), subElement);
@@ -168,6 +170,10 @@ public interface CPACSWriter {
 
 				// Check if it is a base type
 				if (valueFeature != null) {
+
+					if (eObject.eGet(valueFeature) == null) {
+						continue;
+					}
 
 					// If so, apply the value to the element
 					subElement.setTextContent(eObject.eGet(valueFeature).toString());
@@ -237,6 +243,24 @@ public interface CPACSWriter {
 		for (EAnnotation annotation : feature.getEAnnotations()) {
 
 			if (annotation.getDetails().get("kind").contentEquals("attribute")) {
+
+				if (feature.getName().contentEquals("isLink")) {
+					if (eObj.eGet(feature).toString().contentEquals("True")) {
+						return true;
+					}
+				}
+
+				if (feature.getName().contentEquals("refType")) {
+					if (eObj.eGet(feature).toString().contentEquals("absGlobal")) {
+						return true;
+					}
+				}
+
+				if (feature.getName().contentEquals("symmetry")) {
+					if (eObj.eGet(feature).toString().contentEquals("full")) {
+						return true;
+					}
+				}
 
 				if (!BLOCKED_ATTRIBUTES_LIST.contains(feature.getName())) {
 					element.setAttribute(feature.getName(), eObj.eGet(feature).toString());
