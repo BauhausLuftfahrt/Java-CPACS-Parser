@@ -312,7 +312,18 @@ public interface CPACSInitializer {
 
 			// Apply feature value depending on class type
 			if (clazz.equals(double.class)) {
-				baseTypeObject.eSet(valueFeature, Double.valueOf(textContent));
+				if (textContent.toLowerCase().contentEquals("nan")) {
+					baseTypeObject.eSet(valueFeature, Double.NaN);
+				} else {
+					try {
+						baseTypeObject.eSet(valueFeature, Double.valueOf(textContent));
+					} catch (NumberFormatException e) {
+						if (DEBUG_MODE) {
+							System.err.println("CPACSInitializer: Illegal value in " + baseTypeObject.eClass().getName()
+									+ " for double type " + feature.getName());
+						}
+					}
+				}
 
 			} else if (clazz.equals(String.class)) {
 				baseTypeObject.eSet(valueFeature, textContent);

@@ -28,7 +28,7 @@ public class Demo {
 	public static void main(String[] args) {
 
 		// Define the CPACS .xml file paths
-		String filePathLoad = System.getProperty("user.home") + "\\Desktop\\example_input.xml";
+		String filePathLoad = System.getProperty("user.home") + "\\Desktop\\demo.xml";
 		String filePathSave = System.getProperty("user.home") + "\\Desktop\\example_output.xml";
 
 		// Define the CPACS input file
