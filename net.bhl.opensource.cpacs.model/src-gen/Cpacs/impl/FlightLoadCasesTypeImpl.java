@@ -3,8 +3,8 @@
 package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
-import Cpacs.FlightLoadCaseType;
 import Cpacs.FlightLoadCasesType;
+import Cpacs.LoadCaseType;
 
 import java.util.Collection;
 
@@ -40,7 +40,7 @@ public class FlightLoadCasesTypeImpl extends ComplexBaseTypeImpl implements Flig
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<FlightLoadCaseType> flightLoadCase;
+	protected EList<LoadCaseType> flightLoadCase;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,9 +67,9 @@ public class FlightLoadCasesTypeImpl extends ComplexBaseTypeImpl implements Flig
 	 * @generated
 	 */
 	@Override
-	public EList<FlightLoadCaseType> getFlightLoadCase() {
+	public EList<LoadCaseType> getFlightLoadCase() {
 		if (flightLoadCase == null) {
-			flightLoadCase = new EObjectContainmentEList<FlightLoadCaseType>(FlightLoadCaseType.class, this,
+			flightLoadCase = new EObjectContainmentEList<LoadCaseType>(LoadCaseType.class, this,
 					CpacsPackage.FLIGHT_LOAD_CASES_TYPE__FLIGHT_LOAD_CASE);
 		}
 		return flightLoadCase;
@@ -114,7 +114,7 @@ public class FlightLoadCasesTypeImpl extends ComplexBaseTypeImpl implements Flig
 		switch (featureID) {
 		case CpacsPackage.FLIGHT_LOAD_CASES_TYPE__FLIGHT_LOAD_CASE:
 			getFlightLoadCase().clear();
-			getFlightLoadCase().addAll((Collection<? extends FlightLoadCaseType>) newValue);
+			getFlightLoadCase().addAll((Collection<? extends LoadCaseType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

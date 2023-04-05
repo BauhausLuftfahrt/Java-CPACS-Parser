@@ -14,15 +14,22 @@ package Cpacs;
  *   <li>{@link Cpacs.DeckType#getName <em>Name</em>}</li>
  *   <li>{@link Cpacs.DeckType#getDescription <em>Description</em>}</li>
  *   <li>{@link Cpacs.DeckType#getParentUID <em>Parent UID</em>}</li>
- *   <li>{@link Cpacs.DeckType#getX0 <em>X0</em>}</li>
- *   <li>{@link Cpacs.DeckType#getZ0 <em>Z0</em>}</li>
- *   <li>{@link Cpacs.DeckType#getType <em>Type</em>}</li>
- *   <li>{@link Cpacs.DeckType#getCabGeometry <em>Cab Geometry</em>}</li>
+ *   <li>{@link Cpacs.DeckType#getFloorStructureUID <em>Floor Structure UID</em>}</li>
+ *   <li>{@link Cpacs.DeckType#getTransformation <em>Transformation</em>}</li>
+ *   <li>{@link Cpacs.DeckType#getDeckType <em>Deck Type</em>}</li>
+ *   <li>{@link Cpacs.DeckType#getCabinGeometry <em>Cabin Geometry</em>}</li>
+ *   <li>{@link Cpacs.DeckType#getSeatModules <em>Seat Modules</em>}</li>
  *   <li>{@link Cpacs.DeckType#getAisles <em>Aisles</em>}</li>
  *   <li>{@link Cpacs.DeckType#getSpaces <em>Spaces</em>}</li>
- *   <li>{@link Cpacs.DeckType#getDoors <em>Doors</em>}</li>
- *   <li>{@link Cpacs.DeckType#getSeatElements <em>Seat Elements</em>}</li>
- *   <li>{@link Cpacs.DeckType#getFloorElements <em>Floor Elements</em>}</li>
+ *   <li>{@link Cpacs.DeckType#getSidewallPanels <em>Sidewall Panels</em>}</li>
+ *   <li>{@link Cpacs.DeckType#getLuggageCompartments <em>Luggage Compartments</em>}</li>
+ *   <li>{@link Cpacs.DeckType#getCeilingPanels <em>Ceiling Panels</em>}</li>
+ *   <li>{@link Cpacs.DeckType#getGalleys <em>Galleys</em>}</li>
+ *   <li>{@link Cpacs.DeckType#getGenericFloorModules <em>Generic Floor Modules</em>}</li>
+ *   <li>{@link Cpacs.DeckType#getLavatories <em>Lavatories</em>}</li>
+ *   <li>{@link Cpacs.DeckType#getClassDividers <em>Class Dividers</em>}</li>
+ *   <li>{@link Cpacs.DeckType#getCargoContainers <em>Cargo Containers</em>}</li>
+ *   <li>{@link Cpacs.DeckType#getDeckDoors <em>Deck Doors</em>}</li>
  *   <li>{@link Cpacs.DeckType#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -36,7 +43,7 @@ public interface DeckType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Name of the deck
+	 * Name
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(StringBaseType)
@@ -62,7 +69,7 @@ public interface DeckType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Description of the deck
+	 * Description
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(StringBaseType)
@@ -87,6 +94,9 @@ public interface DeckType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Parent UID</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * UID of the object used as parent coordinate system (typically the fuselage uID)
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Parent UID</em>' containment reference.
 	 * @see #setParentUID(StringUIDBaseType)
 	 * @see Cpacs.CpacsPackage#getDeckType_ParentUID()
@@ -107,115 +117,143 @@ public interface DeckType extends ComplexBaseType {
 	void setParentUID(StringUIDBaseType value);
 
 	/**
-	 * Returns the value of the '<em><b>X0</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Floor Structure UID</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * The starting point of the deck/cabin. In a
-	 *                                 conventional aircraft like the A320, it would be the rear wall
-	 *                                 of the cockpit. The coordinate is relative to the parent object
-	 *                                 defined by “parentUID”, which should be the fuselage.
-	 *                             
+	 * UID of the floor structure which supports this deck
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>X0</em>' containment reference.
-	 * @see #setX0(DoubleBaseType)
-	 * @see Cpacs.CpacsPackage#getDeckType_X0()
-	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='x0' namespace='##targetNamespace'"
+	 * @return the value of the '<em>Floor Structure UID</em>' containment reference.
+	 * @see #setFloorStructureUID(StringUIDBaseType)
+	 * @see Cpacs.CpacsPackage#getDeckType_FloorStructureUID()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='floorStructureUID' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleBaseType getX0();
+	StringUIDBaseType getFloorStructureUID();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.DeckType#getX0 <em>X0</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.DeckType#getFloorStructureUID <em>Floor Structure UID</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>X0</em>' containment reference.
-	 * @see #getX0()
+	 * @param value the new value of the '<em>Floor Structure UID</em>' containment reference.
+	 * @see #getFloorStructureUID()
 	 * @generated
 	 */
-	void setX0(DoubleBaseType value);
+	void setFloorStructureUID(StringUIDBaseType value);
 
 	/**
-	 * Returns the value of the '<em><b>Z0</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Transformation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * The starting point of the deck/cabin. In a
+	 * The reference point of the deck/cabin. In a
 	 *                                 conventional aircraft like the A320, it would be the rear wall
-	 *                                 of the cockpit. The coordinate is relative to the parent object
+	 *                                 of the cockpit. The transformation is relative to the parent object
 	 *                                 defined by “parentUID”, which should be the fuselage.
 	 *                             
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Z0</em>' containment reference.
-	 * @see #setZ0(DoubleBaseType)
-	 * @see Cpacs.CpacsPackage#getDeckType_Z0()
+	 * @return the value of the '<em>Transformation</em>' containment reference.
+	 * @see #setTransformation(TransformationType)
+	 * @see Cpacs.CpacsPackage#getDeckType_Transformation()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='z0' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='transformation' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleBaseType getZ0();
+	TransformationType getTransformation();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.DeckType#getZ0 <em>Z0</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.DeckType#getTransformation <em>Transformation</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Z0</em>' containment reference.
-	 * @see #getZ0()
+	 * @param value the new value of the '<em>Transformation</em>' containment reference.
+	 * @see #getTransformation()
 	 * @generated
 	 */
-	void setZ0(DoubleBaseType value);
+	void setTransformation(TransformationType value);
 
 	/**
-	 * Returns the value of the '<em><b>Type</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Deck Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Type</em>' containment reference.
-	 * @see #setType(TypeType7)
-	 * @see Cpacs.CpacsPackage#getDeckType_Type()
+	 * <!-- begin-model-doc -->
+	 * Deck type: passanger, VIP, cargo or livestock
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Deck Type</em>' containment reference.
+	 * @see #setDeckType(DeckTypeType)
+	 * @see Cpacs.CpacsPackage#getDeckType_DeckType()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='type' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='deckType' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	TypeType7 getType();
+	DeckTypeType getDeckType();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.DeckType#getType <em>Type</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.DeckType#getDeckType <em>Deck Type</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Type</em>' containment reference.
-	 * @see #getType()
+	 * @param value the new value of the '<em>Deck Type</em>' containment reference.
+	 * @see #getDeckType()
 	 * @generated
 	 */
-	void setType(TypeType7 value);
+	void setDeckType(DeckTypeType value);
 
 	/**
-	 * Returns the value of the '<em><b>Cab Geometry</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Cabin Geometry</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cab Geometry</em>' containment reference.
-	 * @see #setCabGeometry(CabGeometryType)
-	 * @see Cpacs.CpacsPackage#getDeckType_CabGeometry()
-	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='cabGeometry' namespace='##targetNamespace'"
+	 * @return the value of the '<em>Cabin Geometry</em>' containment reference.
+	 * @see #setCabinGeometry(CabinGeometryType)
+	 * @see Cpacs.CpacsPackage#getDeckType_CabinGeometry()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='cabinGeometry' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	CabGeometryType getCabGeometry();
+	CabinGeometryType getCabinGeometry();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.DeckType#getCabGeometry <em>Cab Geometry</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.DeckType#getCabinGeometry <em>Cabin Geometry</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cab Geometry</em>' containment reference.
-	 * @see #getCabGeometry()
+	 * @param value the new value of the '<em>Cabin Geometry</em>' containment reference.
+	 * @see #getCabinGeometry()
 	 * @generated
 	 */
-	void setCabGeometry(CabGeometryType value);
+	void setCabinGeometry(CabinGeometryType value);
+
+	/**
+	 * Returns the value of the '<em><b>Seat Modules</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Seat modules
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Seat Modules</em>' containment reference.
+	 * @see #setSeatModules(SeatModulesType)
+	 * @see Cpacs.CpacsPackage#getDeckType_SeatModules()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='seatModules' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	SeatModulesType getSeatModules();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.DeckType#getSeatModules <em>Seat Modules</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Seat Modules</em>' containment reference.
+	 * @see #getSeatModules()
+	 * @generated
+	 */
+	void setSeatModules(SeatModulesType value);
 
 	/**
 	 * Returns the value of the '<em><b>Aisles</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Aisles
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Aisles</em>' containment reference.
 	 * @see #setAisles(CabinAislesType)
 	 * @see Cpacs.CpacsPackage#getDeckType_Aisles()
@@ -239,6 +277,9 @@ public interface DeckType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Spaces</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Spaces
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Spaces</em>' containment reference.
 	 * @see #setSpaces(CabinSpacesType)
 	 * @see Cpacs.CpacsPackage#getDeckType_Spaces()
@@ -259,73 +300,238 @@ public interface DeckType extends ComplexBaseType {
 	void setSpaces(CabinSpacesType value);
 
 	/**
-	 * Returns the value of the '<em><b>Doors</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Sidewall Panels</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Doors</em>' containment reference.
-	 * @see #setDoors(CabinDoorsType)
-	 * @see Cpacs.CpacsPackage#getDeckType_Doors()
+	 * <!-- begin-model-doc -->
+	 * Sidewall panels
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Sidewall Panels</em>' containment reference.
+	 * @see #setSidewallPanels(SidewallPanelsType)
+	 * @see Cpacs.CpacsPackage#getDeckType_SidewallPanels()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='doors' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='sidewallPanels' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	CabinDoorsType getDoors();
+	SidewallPanelsType getSidewallPanels();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.DeckType#getDoors <em>Doors</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.DeckType#getSidewallPanels <em>Sidewall Panels</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Doors</em>' containment reference.
-	 * @see #getDoors()
+	 * @param value the new value of the '<em>Sidewall Panels</em>' containment reference.
+	 * @see #getSidewallPanels()
 	 * @generated
 	 */
-	void setDoors(CabinDoorsType value);
+	void setSidewallPanels(SidewallPanelsType value);
 
 	/**
-	 * Returns the value of the '<em><b>Seat Elements</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Luggage Compartments</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Seat Elements</em>' containment reference.
-	 * @see #setSeatElements(CabinSeatElementsType)
-	 * @see Cpacs.CpacsPackage#getDeckType_SeatElements()
+	 * <!-- begin-model-doc -->
+	 * Luggage compartments
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Luggage Compartments</em>' containment reference.
+	 * @see #setLuggageCompartments(LuggageCompartmentsType)
+	 * @see Cpacs.CpacsPackage#getDeckType_LuggageCompartments()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='seatElements' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='luggageCompartments' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	CabinSeatElementsType getSeatElements();
+	LuggageCompartmentsType getLuggageCompartments();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.DeckType#getSeatElements <em>Seat Elements</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.DeckType#getLuggageCompartments <em>Luggage Compartments</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Seat Elements</em>' containment reference.
-	 * @see #getSeatElements()
+	 * @param value the new value of the '<em>Luggage Compartments</em>' containment reference.
+	 * @see #getLuggageCompartments()
 	 * @generated
 	 */
-	void setSeatElements(CabinSeatElementsType value);
+	void setLuggageCompartments(LuggageCompartmentsType value);
 
 	/**
-	 * Returns the value of the '<em><b>Floor Elements</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Ceiling Panels</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Floor Elements</em>' containment reference.
-	 * @see #setFloorElements(CabinFloorElementsType)
-	 * @see Cpacs.CpacsPackage#getDeckType_FloorElements()
+	 * <!-- begin-model-doc -->
+	 * Ceiling panels
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Ceiling Panels</em>' containment reference.
+	 * @see #setCeilingPanels(CeilingPanelsType)
+	 * @see Cpacs.CpacsPackage#getDeckType_CeilingPanels()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='floorElements' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='ceilingPanels' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	CabinFloorElementsType getFloorElements();
+	CeilingPanelsType getCeilingPanels();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.DeckType#getFloorElements <em>Floor Elements</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.DeckType#getCeilingPanels <em>Ceiling Panels</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Floor Elements</em>' containment reference.
-	 * @see #getFloorElements()
+	 * @param value the new value of the '<em>Ceiling Panels</em>' containment reference.
+	 * @see #getCeilingPanels()
 	 * @generated
 	 */
-	void setFloorElements(CabinFloorElementsType value);
+	void setCeilingPanels(CeilingPanelsType value);
+
+	/**
+	 * Returns the value of the '<em><b>Galleys</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Galleys
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Galleys</em>' containment reference.
+	 * @see #setGalleys(GalleysType)
+	 * @see Cpacs.CpacsPackage#getDeckType_Galleys()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='galleys' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	GalleysType getGalleys();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.DeckType#getGalleys <em>Galleys</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Galleys</em>' containment reference.
+	 * @see #getGalleys()
+	 * @generated
+	 */
+	void setGalleys(GalleysType value);
+
+	/**
+	 * Returns the value of the '<em><b>Generic Floor Modules</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Generic floor modules
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Generic Floor Modules</em>' containment reference.
+	 * @see #setGenericFloorModules(GenericFloorModulesType)
+	 * @see Cpacs.CpacsPackage#getDeckType_GenericFloorModules()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='genericFloorModules' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	GenericFloorModulesType getGenericFloorModules();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.DeckType#getGenericFloorModules <em>Generic Floor Modules</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Generic Floor Modules</em>' containment reference.
+	 * @see #getGenericFloorModules()
+	 * @generated
+	 */
+	void setGenericFloorModules(GenericFloorModulesType value);
+
+	/**
+	 * Returns the value of the '<em><b>Lavatories</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Lavatories
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Lavatories</em>' containment reference.
+	 * @see #setLavatories(LavatoriesType)
+	 * @see Cpacs.CpacsPackage#getDeckType_Lavatories()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='lavatories' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	LavatoriesType getLavatories();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.DeckType#getLavatories <em>Lavatories</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Lavatories</em>' containment reference.
+	 * @see #getLavatories()
+	 * @generated
+	 */
+	void setLavatories(LavatoriesType value);
+
+	/**
+	 * Returns the value of the '<em><b>Class Dividers</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Class dividers
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Class Dividers</em>' containment reference.
+	 * @see #setClassDividers(ClassDividersType)
+	 * @see Cpacs.CpacsPackage#getDeckType_ClassDividers()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='classDividers' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	ClassDividersType getClassDividers();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.DeckType#getClassDividers <em>Class Dividers</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Class Dividers</em>' containment reference.
+	 * @see #getClassDividers()
+	 * @generated
+	 */
+	void setClassDividers(ClassDividersType value);
+
+	/**
+	 * Returns the value of the '<em><b>Cargo Containers</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Cargo containers
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Cargo Containers</em>' containment reference.
+	 * @see #setCargoContainers(CargoContainersType)
+	 * @see Cpacs.CpacsPackage#getDeckType_CargoContainers()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='cargoContainers' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	CargoContainersType getCargoContainers();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.DeckType#getCargoContainers <em>Cargo Containers</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Cargo Containers</em>' containment reference.
+	 * @see #getCargoContainers()
+	 * @generated
+	 */
+	void setCargoContainers(CargoContainersType value);
+
+	/**
+	 * Returns the value of the '<em><b>Deck Doors</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Doors
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Deck Doors</em>' containment reference.
+	 * @see #setDeckDoors(DeckDoorsType)
+	 * @see Cpacs.CpacsPackage#getDeckType_DeckDoors()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='deckDoors' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	DeckDoorsType getDeckDoors();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.DeckType#getDeckDoors <em>Deck Doors</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Deck Doors</em>' containment reference.
+	 * @see #getDeckDoors()
+	 * @generated
+	 */
+	void setDeckDoors(DeckDoorsType value);
 
 	/**
 	 * Returns the value of the '<em><b>UID</b></em>' attribute.

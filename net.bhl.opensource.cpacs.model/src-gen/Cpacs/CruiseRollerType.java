@@ -112,8 +112,8 @@ public interface CruiseRollerType extends ComplexBaseType {
 	 * <!-- begin-model-doc -->
 	 * Degree of freedom that is blocked by the
 	 *                                 cruise roller if the flap is in retracted position. Positive =
-	 *                                 cruise roller blockes bending in the direction of the upper skin
-	 *                                 of the parent. Negative = cruise roller blockes bending in the
+	 *                                 cruise roller blocks bending in the direction of the upper skin
+	 *                                 of the parent. Negative = cruise roller blocks bending in the
 	 *                                 direction of the lower skin of the parent.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Blocked DOF</em>' containment reference.

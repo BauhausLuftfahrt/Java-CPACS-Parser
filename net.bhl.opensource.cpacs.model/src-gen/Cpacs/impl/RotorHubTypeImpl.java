@@ -6,7 +6,7 @@ import Cpacs.CpacsPackage;
 import Cpacs.RotorBladeAttachmentsType;
 import Cpacs.RotorHubType;
 import Cpacs.StringBaseType;
-import Cpacs.TypeType3;
+import Cpacs.TypeType2;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -62,7 +62,7 @@ public class RotorHubTypeImpl extends ComplexBaseTypeImpl implements RotorHubTyp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final TypeType3 TYPE_EDEFAULT = TypeType3.SEMI_RIGID;
+	protected static final TypeType2 TYPE_EDEFAULT = TypeType2.SEMI_RIGID;
 
 	/**
 	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
@@ -72,7 +72,7 @@ public class RotorHubTypeImpl extends ComplexBaseTypeImpl implements RotorHubTyp
 	 * @generated
 	 * @ordered
 	 */
-	protected TypeType3 type = TYPE_EDEFAULT;
+	protected TypeType2 type = TYPE_EDEFAULT;
 
 	/**
 	 * This is true if the Type attribute has been set.
@@ -241,7 +241,7 @@ public class RotorHubTypeImpl extends ComplexBaseTypeImpl implements RotorHubTyp
 	 * @generated
 	 */
 	@Override
-	public TypeType3 getType() {
+	public TypeType2 getType() {
 		return type;
 	}
 
@@ -251,8 +251,8 @@ public class RotorHubTypeImpl extends ComplexBaseTypeImpl implements RotorHubTyp
 	 * @generated
 	 */
 	@Override
-	public void setType(TypeType3 newType) {
-		TypeType3 oldType = type;
+	public void setType(TypeType2 newType) {
+		TypeType2 oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
 		typeESet = true;
@@ -268,7 +268,7 @@ public class RotorHubTypeImpl extends ComplexBaseTypeImpl implements RotorHubTyp
 	 */
 	@Override
 	public void unsetType() {
-		TypeType3 oldType = type;
+		TypeType2 oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
 		typeESet = false;
@@ -419,7 +419,7 @@ public class RotorHubTypeImpl extends ComplexBaseTypeImpl implements RotorHubTyp
 			setDescription((StringBaseType) newValue);
 			return;
 		case CpacsPackage.ROTOR_HUB_TYPE__TYPE:
-			setType((TypeType3) newValue);
+			setType((TypeType2) newValue);
 			return;
 		case CpacsPackage.ROTOR_HUB_TYPE__ROTOR_BLADE_ATTACHMENTS:
 			setRotorBladeAttachments((RotorBladeAttachmentsType) newValue);

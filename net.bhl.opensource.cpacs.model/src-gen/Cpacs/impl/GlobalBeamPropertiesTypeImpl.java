@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link Cpacs.impl.GlobalBeamPropertiesTypeImpl#getMaterialUID <em>Material UID</em>}</li>
  *   <li>{@link Cpacs.impl.GlobalBeamPropertiesTypeImpl#getSource <em>Source</em>}</li>
- *   <li>{@link Cpacs.impl.GlobalBeamPropertiesTypeImpl#getConsistancy <em>Consistancy</em>}</li>
+ *   <li>{@link Cpacs.impl.GlobalBeamPropertiesTypeImpl#getConsistency <em>Consistency</em>}</li>
  *   <li>{@link Cpacs.impl.GlobalBeamPropertiesTypeImpl#getBeamCrossSection <em>Beam Cross Section</em>}</li>
  *   <li>{@link Cpacs.impl.GlobalBeamPropertiesTypeImpl#getBeamCOG <em>Beam COG</em>}</li>
  *   <li>{@link Cpacs.impl.GlobalBeamPropertiesTypeImpl#getBeamShearCenter <em>Beam Shear Center</em>}</li>
@@ -63,14 +63,14 @@ public class GlobalBeamPropertiesTypeImpl extends ComplexBaseTypeImpl implements
 	protected StringBaseType source;
 
 	/**
-	 * The cached value of the '{@link #getConsistancy() <em>Consistancy</em>}' containment reference.
+	 * The cached value of the '{@link #getConsistency() <em>Consistency</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsistancy()
+	 * @see #getConsistency()
 	 * @generated
 	 * @ordered
 	 */
-	protected BooleanBaseType consistancy;
+	protected BooleanBaseType consistency;
 
 	/**
 	 * The cached value of the '{@link #getBeamCrossSection() <em>Beam Cross Section</em>}' containment reference.
@@ -271,8 +271,8 @@ public class GlobalBeamPropertiesTypeImpl extends ComplexBaseTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public BooleanBaseType getConsistancy() {
-		return consistancy;
+	public BooleanBaseType getConsistency() {
+		return consistency;
 	}
 
 	/**
@@ -280,12 +280,12 @@ public class GlobalBeamPropertiesTypeImpl extends ComplexBaseTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetConsistancy(BooleanBaseType newConsistancy, NotificationChain msgs) {
-		BooleanBaseType oldConsistancy = consistancy;
-		consistancy = newConsistancy;
+	public NotificationChain basicSetConsistency(BooleanBaseType newConsistency, NotificationChain msgs) {
+		BooleanBaseType oldConsistency = consistency;
+		consistency = newConsistency;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTANCY, oldConsistancy, newConsistancy);
+					CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTENCY, oldConsistency, newConsistency);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -300,21 +300,21 @@ public class GlobalBeamPropertiesTypeImpl extends ComplexBaseTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setConsistancy(BooleanBaseType newConsistancy) {
-		if (newConsistancy != consistancy) {
+	public void setConsistency(BooleanBaseType newConsistency) {
+		if (newConsistency != consistency) {
 			NotificationChain msgs = null;
-			if (consistancy != null)
-				msgs = ((InternalEObject) consistancy).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTANCY, null, msgs);
-			if (newConsistancy != null)
-				msgs = ((InternalEObject) newConsistancy).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTANCY, null, msgs);
-			msgs = basicSetConsistancy(newConsistancy, msgs);
+			if (consistency != null)
+				msgs = ((InternalEObject) consistency).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTENCY, null, msgs);
+			if (newConsistency != null)
+				msgs = ((InternalEObject) newConsistency).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTENCY, null, msgs);
+			msgs = basicSetConsistency(newConsistency, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTANCY,
-					newConsistancy, newConsistancy));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTENCY,
+					newConsistency, newConsistency));
 	}
 
 	/**
@@ -626,8 +626,8 @@ public class GlobalBeamPropertiesTypeImpl extends ComplexBaseTypeImpl implements
 			return basicSetMaterialUID(null, msgs);
 		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__SOURCE:
 			return basicSetSource(null, msgs);
-		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTANCY:
-			return basicSetConsistancy(null, msgs);
+		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTENCY:
+			return basicSetConsistency(null, msgs);
 		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__BEAM_CROSS_SECTION:
 			return basicSetBeamCrossSection(null, msgs);
 		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__BEAM_COG:
@@ -654,8 +654,8 @@ public class GlobalBeamPropertiesTypeImpl extends ComplexBaseTypeImpl implements
 			return getMaterialUID();
 		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__SOURCE:
 			return getSource();
-		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTANCY:
-			return getConsistancy();
+		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTENCY:
+			return getConsistency();
 		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__BEAM_CROSS_SECTION:
 			return getBeamCrossSection();
 		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__BEAM_COG:
@@ -686,8 +686,8 @@ public class GlobalBeamPropertiesTypeImpl extends ComplexBaseTypeImpl implements
 		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__SOURCE:
 			setSource((StringBaseType) newValue);
 			return;
-		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTANCY:
-			setConsistancy((BooleanBaseType) newValue);
+		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTENCY:
+			setConsistency((BooleanBaseType) newValue);
 			return;
 		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__BEAM_CROSS_SECTION:
 			setBeamCrossSection((BeamCrossSectionType) newValue);
@@ -725,8 +725,8 @@ public class GlobalBeamPropertiesTypeImpl extends ComplexBaseTypeImpl implements
 		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__SOURCE:
 			setSource((StringBaseType) null);
 			return;
-		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTANCY:
-			setConsistancy((BooleanBaseType) null);
+		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTENCY:
+			setConsistency((BooleanBaseType) null);
 			return;
 		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__BEAM_CROSS_SECTION:
 			setBeamCrossSection((BeamCrossSectionType) null);
@@ -762,8 +762,8 @@ public class GlobalBeamPropertiesTypeImpl extends ComplexBaseTypeImpl implements
 			return materialUID != null;
 		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__SOURCE:
 			return source != null;
-		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTANCY:
-			return consistancy != null;
+		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__CONSISTENCY:
+			return consistency != null;
 		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__BEAM_CROSS_SECTION:
 			return beamCrossSection != null;
 		case CpacsPackage.GLOBAL_BEAM_PROPERTIES_TYPE__BEAM_COG:

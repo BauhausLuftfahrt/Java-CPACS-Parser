@@ -3,11 +3,11 @@
 package Cpacs.impl;
 
 import Cpacs.AlignmentStringFrameType;
-import Cpacs.ContinuityType1;
+import Cpacs.ContinuityType2;
 import Cpacs.CpacsPackage;
 import Cpacs.DoubleBaseType;
 import Cpacs.GeneralStructuralMemberPositionType;
-import Cpacs.InterpolationType;
+import Cpacs.InterpolationType1;
 import Cpacs.StringUIDBaseType;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -164,7 +164,7 @@ public class GeneralStructuralMemberPositionTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 * @ordered
 	 */
-	protected ContinuityType1 continuity;
+	protected ContinuityType2 continuity;
 
 	/**
 	 * The cached value of the '{@link #getInterpolation() <em>Interpolation</em>}' containment reference.
@@ -174,7 +174,7 @@ public class GeneralStructuralMemberPositionTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 * @ordered
 	 */
-	protected InterpolationType interpolation;
+	protected InterpolationType1 interpolation;
 
 	/**
 	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
@@ -830,7 +830,7 @@ public class GeneralStructuralMemberPositionTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public ContinuityType1 getContinuity() {
+	public ContinuityType2 getContinuity() {
 		return continuity;
 	}
 
@@ -839,8 +839,8 @@ public class GeneralStructuralMemberPositionTypeImpl extends ComplexBaseTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContinuity(ContinuityType1 newContinuity, NotificationChain msgs) {
-		ContinuityType1 oldContinuity = continuity;
+	public NotificationChain basicSetContinuity(ContinuityType2 newContinuity, NotificationChain msgs) {
+		ContinuityType2 oldContinuity = continuity;
 		continuity = newContinuity;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -859,7 +859,7 @@ public class GeneralStructuralMemberPositionTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public void setContinuity(ContinuityType1 newContinuity) {
+	public void setContinuity(ContinuityType2 newContinuity) {
 		if (newContinuity != continuity) {
 			NotificationChain msgs = null;
 			if (continuity != null)
@@ -884,7 +884,7 @@ public class GeneralStructuralMemberPositionTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public InterpolationType getInterpolation() {
+	public InterpolationType1 getInterpolation() {
 		return interpolation;
 	}
 
@@ -893,8 +893,8 @@ public class GeneralStructuralMemberPositionTypeImpl extends ComplexBaseTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetInterpolation(InterpolationType newInterpolation, NotificationChain msgs) {
-		InterpolationType oldInterpolation = interpolation;
+	public NotificationChain basicSetInterpolation(InterpolationType1 newInterpolation, NotificationChain msgs) {
+		InterpolationType1 oldInterpolation = interpolation;
 		interpolation = newInterpolation;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -914,7 +914,7 @@ public class GeneralStructuralMemberPositionTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public void setInterpolation(InterpolationType newInterpolation) {
+	public void setInterpolation(InterpolationType1 newInterpolation) {
 		if (newInterpolation != interpolation) {
 			NotificationChain msgs = null;
 			if (interpolation != null)
@@ -1078,10 +1078,10 @@ public class GeneralStructuralMemberPositionTypeImpl extends ComplexBaseTypeImpl
 			setAlignment((AlignmentStringFrameType) newValue);
 			return;
 		case CpacsPackage.GENERAL_STRUCTURAL_MEMBER_POSITION_TYPE__CONTINUITY:
-			setContinuity((ContinuityType1) newValue);
+			setContinuity((ContinuityType2) newValue);
 			return;
 		case CpacsPackage.GENERAL_STRUCTURAL_MEMBER_POSITION_TYPE__INTERPOLATION:
-			setInterpolation((InterpolationType) newValue);
+			setInterpolation((InterpolationType1) newValue);
 			return;
 		case CpacsPackage.GENERAL_STRUCTURAL_MEMBER_POSITION_TYPE__UID:
 			setUID((String) newValue);
@@ -1132,10 +1132,10 @@ public class GeneralStructuralMemberPositionTypeImpl extends ComplexBaseTypeImpl
 			setAlignment((AlignmentStringFrameType) null);
 			return;
 		case CpacsPackage.GENERAL_STRUCTURAL_MEMBER_POSITION_TYPE__CONTINUITY:
-			setContinuity((ContinuityType1) null);
+			setContinuity((ContinuityType2) null);
 			return;
 		case CpacsPackage.GENERAL_STRUCTURAL_MEMBER_POSITION_TYPE__INTERPOLATION:
-			setInterpolation((InterpolationType) null);
+			setInterpolation((InterpolationType1) null);
 			return;
 		case CpacsPackage.GENERAL_STRUCTURAL_MEMBER_POSITION_TYPE__UID:
 			setUID(UID_EDEFAULT);

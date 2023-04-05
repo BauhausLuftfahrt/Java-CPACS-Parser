@@ -7,8 +7,8 @@ package net.bhl.opensource.cpacs.functions;
 
 import java.io.File;
 
-import Cpacs.CpacsFactory;
 import Cpacs.CpacsType;
+import Cpacs.CpacsFactory;
 import net.bhl.opensource.cpacs.model.extensions.header.HeaderExtensions;
 
 /**
@@ -28,7 +28,7 @@ public class Demo {
 	public static void main(String[] args) {
 
 		// Define the CPACS .xml file paths
-		String filePathLoad = System.getProperty("user.home") + "\\Desktop\\demo.xml";
+		String filePathLoad = System.getProperty("user.home") + "\\git\\cpacs\\cpacs\\demo\\ATR72-500_in.xml";
 		String filePathSave = System.getProperty("user.home") + "\\Desktop\\example_output.xml";
 
 		// Define the CPACS input file
@@ -49,7 +49,7 @@ public class Demo {
 		}
 
 		// Create a header object and set it
-		cpacs.setHeader(HeaderExtensions.init("Demo CPACS created with Java CPACS parser by Bauhaus Luftfahrt", 1.0));
+		cpacs.setHeader(HeaderExtensions.init("Demo CPACS created with Java CPACS parser by Bauhaus Luftfahrt", "1.0"));
 
 		// Save the CPACS file to a path
 		CPACSWriter.run(filePathSave, cpacs);

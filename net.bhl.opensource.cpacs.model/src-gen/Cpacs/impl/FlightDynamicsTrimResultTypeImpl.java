@@ -22,9 +22,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.FlightDynamicsTrimResultTypeImpl#getMach <em>Mach</em>}</li>
- *   <li>{@link Cpacs.impl.FlightDynamicsTrimResultTypeImpl#getVTAS <em>VTAS</em>}</li>
- *   <li>{@link Cpacs.impl.FlightDynamicsTrimResultTypeImpl#getAlpha <em>Alpha</em>}</li>
+ *   <li>{@link Cpacs.impl.FlightDynamicsTrimResultTypeImpl#getMachNumber <em>Mach Number</em>}</li>
+ *   <li>{@link Cpacs.impl.FlightDynamicsTrimResultTypeImpl#getTrueAirSpeed <em>True Air Speed</em>}</li>
+ *   <li>{@link Cpacs.impl.FlightDynamicsTrimResultTypeImpl#getAngleOfAttack <em>Angle Of Attack</em>}</li>
  *   <li>{@link Cpacs.impl.FlightDynamicsTrimResultTypeImpl#getAltitude <em>Altitude</em>}</li>
  * </ul>
  *
@@ -32,34 +32,34 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implements FlightDynamicsTrimResultType {
 	/**
-	 * The cached value of the '{@link #getMach() <em>Mach</em>}' containment reference.
+	 * The cached value of the '{@link #getMachNumber() <em>Mach Number</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMach()
+	 * @see #getMachNumber()
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleBaseType mach;
+	protected DoubleBaseType machNumber;
 
 	/**
-	 * The cached value of the '{@link #getVTAS() <em>VTAS</em>}' containment reference.
+	 * The cached value of the '{@link #getTrueAirSpeed() <em>True Air Speed</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVTAS()
+	 * @see #getTrueAirSpeed()
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleBaseType vTAS;
+	protected DoubleBaseType trueAirSpeed;
 
 	/**
-	 * The cached value of the '{@link #getAlpha() <em>Alpha</em>}' containment reference.
+	 * The cached value of the '{@link #getAngleOfAttack() <em>Angle Of Attack</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAlpha()
+	 * @see #getAngleOfAttack()
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleBaseType alpha;
+	protected DoubleBaseType angleOfAttack;
 
 	/**
 	 * The cached value of the '{@link #getAltitude() <em>Altitude</em>}' containment reference.
@@ -96,8 +96,8 @@ public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public DoubleBaseType getMach() {
-		return mach;
+	public DoubleBaseType getMachNumber() {
+		return machNumber;
 	}
 
 	/**
@@ -105,12 +105,12 @@ public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMach(DoubleBaseType newMach, NotificationChain msgs) {
-		DoubleBaseType oldMach = mach;
-		mach = newMach;
+	public NotificationChain basicSetMachNumber(DoubleBaseType newMachNumber, NotificationChain msgs) {
+		DoubleBaseType oldMachNumber = machNumber;
+		machNumber = newMachNumber;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH, oldMach, newMach);
+					CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH_NUMBER, oldMachNumber, newMachNumber);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -125,21 +125,23 @@ public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setMach(DoubleBaseType newMach) {
-		if (newMach != mach) {
+	public void setMachNumber(DoubleBaseType newMachNumber) {
+		if (newMachNumber != machNumber) {
 			NotificationChain msgs = null;
-			if (mach != null)
-				msgs = ((InternalEObject) mach).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH, null, msgs);
-			if (newMach != null)
-				msgs = ((InternalEObject) newMach).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH, null, msgs);
-			msgs = basicSetMach(newMach, msgs);
+			if (machNumber != null)
+				msgs = ((InternalEObject) machNumber).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH_NUMBER, null,
+						msgs);
+			if (newMachNumber != null)
+				msgs = ((InternalEObject) newMachNumber).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH_NUMBER, null,
+						msgs);
+			msgs = basicSetMachNumber(newMachNumber, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH,
-					newMach, newMach));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH_NUMBER, newMachNumber, newMachNumber));
 	}
 
 	/**
@@ -148,8 +150,8 @@ public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public DoubleBaseType getVTAS() {
-		return vTAS;
+	public DoubleBaseType getTrueAirSpeed() {
+		return trueAirSpeed;
 	}
 
 	/**
@@ -157,12 +159,12 @@ public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVTAS(DoubleBaseType newVTAS, NotificationChain msgs) {
-		DoubleBaseType oldVTAS = vTAS;
-		vTAS = newVTAS;
+	public NotificationChain basicSetTrueAirSpeed(DoubleBaseType newTrueAirSpeed, NotificationChain msgs) {
+		DoubleBaseType oldTrueAirSpeed = trueAirSpeed;
+		trueAirSpeed = newTrueAirSpeed;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__VTAS, oldVTAS, newVTAS);
+					CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__TRUE_AIR_SPEED, oldTrueAirSpeed, newTrueAirSpeed);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -177,21 +179,23 @@ public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setVTAS(DoubleBaseType newVTAS) {
-		if (newVTAS != vTAS) {
+	public void setTrueAirSpeed(DoubleBaseType newTrueAirSpeed) {
+		if (newTrueAirSpeed != trueAirSpeed) {
 			NotificationChain msgs = null;
-			if (vTAS != null)
-				msgs = ((InternalEObject) vTAS).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__VTAS, null, msgs);
-			if (newVTAS != null)
-				msgs = ((InternalEObject) newVTAS).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__VTAS, null, msgs);
-			msgs = basicSetVTAS(newVTAS, msgs);
+			if (trueAirSpeed != null)
+				msgs = ((InternalEObject) trueAirSpeed).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__TRUE_AIR_SPEED, null,
+						msgs);
+			if (newTrueAirSpeed != null)
+				msgs = ((InternalEObject) newTrueAirSpeed).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__TRUE_AIR_SPEED, null,
+						msgs);
+			msgs = basicSetTrueAirSpeed(newTrueAirSpeed, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__VTAS,
-					newVTAS, newVTAS));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__TRUE_AIR_SPEED, newTrueAirSpeed, newTrueAirSpeed));
 	}
 
 	/**
@@ -200,8 +204,8 @@ public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public DoubleBaseType getAlpha() {
-		return alpha;
+	public DoubleBaseType getAngleOfAttack() {
+		return angleOfAttack;
 	}
 
 	/**
@@ -209,12 +213,12 @@ public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAlpha(DoubleBaseType newAlpha, NotificationChain msgs) {
-		DoubleBaseType oldAlpha = alpha;
-		alpha = newAlpha;
+	public NotificationChain basicSetAngleOfAttack(DoubleBaseType newAngleOfAttack, NotificationChain msgs) {
+		DoubleBaseType oldAngleOfAttack = angleOfAttack;
+		angleOfAttack = newAngleOfAttack;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ALPHA, oldAlpha, newAlpha);
+					CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ANGLE_OF_ATTACK, oldAngleOfAttack, newAngleOfAttack);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -229,21 +233,24 @@ public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setAlpha(DoubleBaseType newAlpha) {
-		if (newAlpha != alpha) {
+	public void setAngleOfAttack(DoubleBaseType newAngleOfAttack) {
+		if (newAngleOfAttack != angleOfAttack) {
 			NotificationChain msgs = null;
-			if (alpha != null)
-				msgs = ((InternalEObject) alpha).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ALPHA, null, msgs);
-			if (newAlpha != null)
-				msgs = ((InternalEObject) newAlpha).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ALPHA, null, msgs);
-			msgs = basicSetAlpha(newAlpha, msgs);
+			if (angleOfAttack != null)
+				msgs = ((InternalEObject) angleOfAttack).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ANGLE_OF_ATTACK, null,
+						msgs);
+			if (newAngleOfAttack != null)
+				msgs = ((InternalEObject) newAngleOfAttack).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ANGLE_OF_ATTACK, null,
+						msgs);
+			msgs = basicSetAngleOfAttack(newAngleOfAttack, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ALPHA,
-					newAlpha, newAlpha));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ANGLE_OF_ATTACK, newAngleOfAttack,
+					newAngleOfAttack));
 	}
 
 	/**
@@ -306,12 +313,12 @@ public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implem
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH:
-			return basicSetMach(null, msgs);
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__VTAS:
-			return basicSetVTAS(null, msgs);
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ALPHA:
-			return basicSetAlpha(null, msgs);
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH_NUMBER:
+			return basicSetMachNumber(null, msgs);
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__TRUE_AIR_SPEED:
+			return basicSetTrueAirSpeed(null, msgs);
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ANGLE_OF_ATTACK:
+			return basicSetAngleOfAttack(null, msgs);
 		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ALTITUDE:
 			return basicSetAltitude(null, msgs);
 		}
@@ -326,12 +333,12 @@ public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implem
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH:
-			return getMach();
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__VTAS:
-			return getVTAS();
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ALPHA:
-			return getAlpha();
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH_NUMBER:
+			return getMachNumber();
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__TRUE_AIR_SPEED:
+			return getTrueAirSpeed();
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ANGLE_OF_ATTACK:
+			return getAngleOfAttack();
 		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ALTITUDE:
 			return getAltitude();
 		}
@@ -346,14 +353,14 @@ public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implem
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH:
-			setMach((DoubleBaseType) newValue);
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH_NUMBER:
+			setMachNumber((DoubleBaseType) newValue);
 			return;
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__VTAS:
-			setVTAS((DoubleBaseType) newValue);
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__TRUE_AIR_SPEED:
+			setTrueAirSpeed((DoubleBaseType) newValue);
 			return;
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ALPHA:
-			setAlpha((DoubleBaseType) newValue);
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ANGLE_OF_ATTACK:
+			setAngleOfAttack((DoubleBaseType) newValue);
 			return;
 		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ALTITUDE:
 			setAltitude((DoubleBaseType) newValue);
@@ -370,14 +377,14 @@ public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implem
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH:
-			setMach((DoubleBaseType) null);
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH_NUMBER:
+			setMachNumber((DoubleBaseType) null);
 			return;
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__VTAS:
-			setVTAS((DoubleBaseType) null);
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__TRUE_AIR_SPEED:
+			setTrueAirSpeed((DoubleBaseType) null);
 			return;
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ALPHA:
-			setAlpha((DoubleBaseType) null);
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ANGLE_OF_ATTACK:
+			setAngleOfAttack((DoubleBaseType) null);
 			return;
 		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ALTITUDE:
 			setAltitude((DoubleBaseType) null);
@@ -394,12 +401,12 @@ public class FlightDynamicsTrimResultTypeImpl extends ComplexBaseTypeImpl implem
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH:
-			return mach != null;
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__VTAS:
-			return vTAS != null;
-		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ALPHA:
-			return alpha != null;
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__MACH_NUMBER:
+			return machNumber != null;
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__TRUE_AIR_SPEED:
+			return trueAirSpeed != null;
+		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ANGLE_OF_ATTACK:
+			return angleOfAttack != null;
 		case CpacsPackage.FLIGHT_DYNAMICS_TRIM_RESULT_TYPE__ALTITUDE:
 			return altitude != null;
 		}

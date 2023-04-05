@@ -3,6 +3,7 @@
 package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
+import Cpacs.DoubleVectorBaseType;
 import Cpacs.FlightPathType;
 import Cpacs.StringVectorBaseType;
 import Cpacs.WayPointTypeType;
@@ -50,7 +51,7 @@ public class FlightPathTypeImpl extends ComplexBaseTypeImpl implements FlightPat
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType latitude;
+	protected DoubleVectorBaseType latitude;
 
 	/**
 	 * The cached value of the '{@link #getLongitude() <em>Longitude</em>}' containment reference.
@@ -60,7 +61,7 @@ public class FlightPathTypeImpl extends ComplexBaseTypeImpl implements FlightPat
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType longitude;
+	protected DoubleVectorBaseType longitude;
 
 	/**
 	 * The cached value of the '{@link #getWayPointType() <em>Way Point Type</em>}' containment reference.
@@ -149,7 +150,7 @@ public class FlightPathTypeImpl extends ComplexBaseTypeImpl implements FlightPat
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getLatitude() {
+	public DoubleVectorBaseType getLatitude() {
 		return latitude;
 	}
 
@@ -158,8 +159,8 @@ public class FlightPathTypeImpl extends ComplexBaseTypeImpl implements FlightPat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLatitude(StringVectorBaseType newLatitude, NotificationChain msgs) {
-		StringVectorBaseType oldLatitude = latitude;
+	public NotificationChain basicSetLatitude(DoubleVectorBaseType newLatitude, NotificationChain msgs) {
+		DoubleVectorBaseType oldLatitude = latitude;
 		latitude = newLatitude;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -178,7 +179,7 @@ public class FlightPathTypeImpl extends ComplexBaseTypeImpl implements FlightPat
 	 * @generated
 	 */
 	@Override
-	public void setLatitude(StringVectorBaseType newLatitude) {
+	public void setLatitude(DoubleVectorBaseType newLatitude) {
 		if (newLatitude != latitude) {
 			NotificationChain msgs = null;
 			if (latitude != null)
@@ -201,7 +202,7 @@ public class FlightPathTypeImpl extends ComplexBaseTypeImpl implements FlightPat
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getLongitude() {
+	public DoubleVectorBaseType getLongitude() {
 		return longitude;
 	}
 
@@ -210,8 +211,8 @@ public class FlightPathTypeImpl extends ComplexBaseTypeImpl implements FlightPat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLongitude(StringVectorBaseType newLongitude, NotificationChain msgs) {
-		StringVectorBaseType oldLongitude = longitude;
+	public NotificationChain basicSetLongitude(DoubleVectorBaseType newLongitude, NotificationChain msgs) {
+		DoubleVectorBaseType oldLongitude = longitude;
 		longitude = newLongitude;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -230,7 +231,7 @@ public class FlightPathTypeImpl extends ComplexBaseTypeImpl implements FlightPat
 	 * @generated
 	 */
 	@Override
-	public void setLongitude(StringVectorBaseType newLongitude) {
+	public void setLongitude(DoubleVectorBaseType newLongitude) {
 		if (newLongitude != longitude) {
 			NotificationChain msgs = null;
 			if (longitude != null)
@@ -351,10 +352,10 @@ public class FlightPathTypeImpl extends ComplexBaseTypeImpl implements FlightPat
 			setWayPoints((StringVectorBaseType) newValue);
 			return;
 		case CpacsPackage.FLIGHT_PATH_TYPE__LATITUDE:
-			setLatitude((StringVectorBaseType) newValue);
+			setLatitude((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.FLIGHT_PATH_TYPE__LONGITUDE:
-			setLongitude((StringVectorBaseType) newValue);
+			setLongitude((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.FLIGHT_PATH_TYPE__WAY_POINT_TYPE:
 			setWayPointType((WayPointTypeType) newValue);
@@ -375,10 +376,10 @@ public class FlightPathTypeImpl extends ComplexBaseTypeImpl implements FlightPat
 			setWayPoints((StringVectorBaseType) null);
 			return;
 		case CpacsPackage.FLIGHT_PATH_TYPE__LATITUDE:
-			setLatitude((StringVectorBaseType) null);
+			setLatitude((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.FLIGHT_PATH_TYPE__LONGITUDE:
-			setLongitude((StringVectorBaseType) null);
+			setLongitude((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.FLIGHT_PATH_TYPE__WAY_POINT_TYPE:
 			setWayPointType((WayPointTypeType) null);

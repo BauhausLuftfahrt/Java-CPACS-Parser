@@ -11,9 +11,9 @@ package Cpacs;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.PerformanceRequirementsType#getRequiredPerformanceCases <em>Required Performance Cases</em>}</li>
- *   <li>{@link Cpacs.PerformanceRequirementsType#getOptionalPerformanceCases <em>Optional Performance Cases</em>}</li>
- *   <li>{@link Cpacs.PerformanceRequirementsType#getPerformanceCases <em>Performance Cases</em>}</li>
+ *   <li>{@link Cpacs.PerformanceRequirementsType#getFlightPerformanceRequirements <em>Flight Performance Requirements</em>}</li>
+ *   <li>{@link Cpacs.PerformanceRequirementsType#getControllabilityRequirements <em>Controllability Requirements</em>}</li>
+ *   <li>{@link Cpacs.PerformanceRequirementsType#getTrimRequirements <em>Trim Requirements</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getPerformanceRequirementsType()
@@ -22,72 +22,72 @@ package Cpacs;
  */
 public interface PerformanceRequirementsType extends ComplexBaseType {
 	/**
-	 * Returns the value of the '<em><b>Required Performance Cases</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Flight Performance Requirements</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Required Performance Cases</em>' containment reference.
-	 * @see #setRequiredPerformanceCases(StringVectorBaseType)
-	 * @see Cpacs.CpacsPackage#getPerformanceRequirementsType_RequiredPerformanceCases()
+	 * @return the value of the '<em>Flight Performance Requirements</em>' containment reference.
+	 * @see #setFlightPerformanceRequirements(FlightPerformanceRequirementsType)
+	 * @see Cpacs.CpacsPackage#getPerformanceRequirementsType_FlightPerformanceRequirements()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='requiredPerformanceCases' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='flightPerformanceRequirements' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getRequiredPerformanceCases();
+	FlightPerformanceRequirementsType getFlightPerformanceRequirements();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.PerformanceRequirementsType#getRequiredPerformanceCases <em>Required Performance Cases</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.PerformanceRequirementsType#getFlightPerformanceRequirements <em>Flight Performance Requirements</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Required Performance Cases</em>' containment reference.
-	 * @see #getRequiredPerformanceCases()
+	 * @param value the new value of the '<em>Flight Performance Requirements</em>' containment reference.
+	 * @see #getFlightPerformanceRequirements()
 	 * @generated
 	 */
-	void setRequiredPerformanceCases(StringVectorBaseType value);
+	void setFlightPerformanceRequirements(FlightPerformanceRequirementsType value);
 
 	/**
-	 * Returns the value of the '<em><b>Optional Performance Cases</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Controllability Requirements</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Optional Performance Cases</em>' containment reference.
-	 * @see #setOptionalPerformanceCases(StringVectorBaseType)
-	 * @see Cpacs.CpacsPackage#getPerformanceRequirementsType_OptionalPerformanceCases()
+	 * @return the value of the '<em>Controllability Requirements</em>' containment reference.
+	 * @see #setControllabilityRequirements(ControllabilityReqsType)
+	 * @see Cpacs.CpacsPackage#getPerformanceRequirementsType_ControllabilityRequirements()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='optionalPerformanceCases' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='controllabilityRequirements' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getOptionalPerformanceCases();
+	ControllabilityReqsType getControllabilityRequirements();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.PerformanceRequirementsType#getOptionalPerformanceCases <em>Optional Performance Cases</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.PerformanceRequirementsType#getControllabilityRequirements <em>Controllability Requirements</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Optional Performance Cases</em>' containment reference.
-	 * @see #getOptionalPerformanceCases()
+	 * @param value the new value of the '<em>Controllability Requirements</em>' containment reference.
+	 * @see #getControllabilityRequirements()
 	 * @generated
 	 */
-	void setOptionalPerformanceCases(StringVectorBaseType value);
+	void setControllabilityRequirements(ControllabilityReqsType value);
 
 	/**
-	 * Returns the value of the '<em><b>Performance Cases</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Trim Requirements</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Performance Cases</em>' containment reference.
-	 * @see #setPerformanceCases(PerformanceCasesType)
-	 * @see Cpacs.CpacsPackage#getPerformanceRequirementsType_PerformanceCases()
-	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='performanceCases' namespace='##targetNamespace'"
+	 * @return the value of the '<em>Trim Requirements</em>' containment reference.
+	 * @see #setTrimRequirements(TrimRequirementsType)
+	 * @see Cpacs.CpacsPackage#getPerformanceRequirementsType_TrimRequirements()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='trimRequirements' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	PerformanceCasesType getPerformanceCases();
+	TrimRequirementsType getTrimRequirements();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.PerformanceRequirementsType#getPerformanceCases <em>Performance Cases</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.PerformanceRequirementsType#getTrimRequirements <em>Trim Requirements</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Performance Cases</em>' containment reference.
-	 * @see #getPerformanceCases()
+	 * @param value the new value of the '<em>Trim Requirements</em>' containment reference.
+	 * @see #getTrimRequirements()
 	 * @generated
 	 */
-	void setPerformanceCases(PerformanceCasesType value);
+	void setTrimRequirements(TrimRequirementsType value);
 
 } // PerformanceRequirementsType

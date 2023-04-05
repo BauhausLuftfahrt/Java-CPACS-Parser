@@ -147,13 +147,13 @@ public interface GuideCurveType extends ComplexBaseType {
 	 *                                     
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Continuity</em>' containment reference.
-	 * @see #setContinuity(ContinuityType3)
+	 * @see #setContinuity(ContinuityType4)
 	 * @see Cpacs.CpacsPackage#getGuideCurveType_Continuity()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='continuity' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	ContinuityType3 getContinuity();
+	ContinuityType4 getContinuity();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.GuideCurveType#getContinuity <em>Continuity</em>}' containment reference.
@@ -163,7 +163,7 @@ public interface GuideCurveType extends ComplexBaseType {
 	 * @see #getContinuity()
 	 * @generated
 	 */
-	void setContinuity(ContinuityType3 value);
+	void setContinuity(ContinuityType4 value);
 
 	/**
 	 * Returns the value of the '<em><b>From Relative Circumference</b></em>' containment reference.
@@ -227,7 +227,7 @@ public interface GuideCurveType extends ComplexBaseType {
 	 * <!-- begin-model-doc -->
 	 * The relative circumference
 	 *                                     position at which the guide curve shall end. Valid values
-	 *                                     are in the interval -1.0...1.0.
+	 *                                     are in the interval -1,..,1.
 	 *                                 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>To Relative Circumference</em>' containment reference.

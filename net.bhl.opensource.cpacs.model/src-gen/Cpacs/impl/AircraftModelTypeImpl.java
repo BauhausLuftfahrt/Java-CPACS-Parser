@@ -10,11 +10,12 @@ import Cpacs.EnginePositionsType;
 import Cpacs.EnginePylonsType;
 import Cpacs.FuselagesType;
 import Cpacs.GenericGeometryComponentsType;
-import Cpacs.LandingGearType;
+import Cpacs.LandingGearsType;
 import Cpacs.PerformanceRequirementsType;
 import Cpacs.ReferenceType;
 import Cpacs.StringBaseType;
 import Cpacs.SystemsType;
+import Cpacs.VehicleConfigurationsType;
 import Cpacs.WingsType;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -40,12 +41,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.AircraftModelTypeImpl#getWings <em>Wings</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftModelTypeImpl#getEngines <em>Engines</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftModelTypeImpl#getEnginePylons <em>Engine Pylons</em>}</li>
- *   <li>{@link Cpacs.impl.AircraftModelTypeImpl#getLandingGear <em>Landing Gear</em>}</li>
+ *   <li>{@link Cpacs.impl.AircraftModelTypeImpl#getLandingGears <em>Landing Gears</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftModelTypeImpl#getSystems <em>Systems</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftModelTypeImpl#getGenericGeometryComponents <em>Generic Geometry Components</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftModelTypeImpl#getGlobal <em>Global</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftModelTypeImpl#getAnalyses <em>Analyses</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftModelTypeImpl#getPerformanceRequirements <em>Performance Requirements</em>}</li>
+ *   <li>{@link Cpacs.impl.AircraftModelTypeImpl#getConfigurations <em>Configurations</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftModelTypeImpl#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -123,14 +125,14 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 	protected EnginePylonsType enginePylons;
 
 	/**
-	 * The cached value of the '{@link #getLandingGear() <em>Landing Gear</em>}' containment reference.
+	 * The cached value of the '{@link #getLandingGears() <em>Landing Gears</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getLandingGear()
+	 * @see #getLandingGears()
 	 * @generated
 	 * @ordered
 	 */
-	protected LandingGearType landingGear;
+	protected LandingGearsType landingGears;
 
 	/**
 	 * The cached value of the '{@link #getSystems() <em>Systems</em>}' containment reference.
@@ -181,6 +183,16 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 	 * @ordered
 	 */
 	protected PerformanceRequirementsType performanceRequirements;
+
+	/**
+	 * The cached value of the '{@link #getConfigurations() <em>Configurations</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConfigurations()
+	 * @generated
+	 * @ordered
+	 */
+	protected VehicleConfigurationsType configurations;
 
 	/**
 	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
@@ -591,8 +603,8 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 	 * @generated
 	 */
 	@Override
-	public LandingGearType getLandingGear() {
-		return landingGear;
+	public LandingGearsType getLandingGears() {
+		return landingGears;
 	}
 
 	/**
@@ -600,12 +612,12 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLandingGear(LandingGearType newLandingGear, NotificationChain msgs) {
-		LandingGearType oldLandingGear = landingGear;
-		landingGear = newLandingGear;
+	public NotificationChain basicSetLandingGears(LandingGearsType newLandingGears, NotificationChain msgs) {
+		LandingGearsType oldLandingGears = landingGears;
+		landingGears = newLandingGears;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEAR, oldLandingGear, newLandingGear);
+					CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEARS, oldLandingGears, newLandingGears);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -620,21 +632,21 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 	 * @generated
 	 */
 	@Override
-	public void setLandingGear(LandingGearType newLandingGear) {
-		if (newLandingGear != landingGear) {
+	public void setLandingGears(LandingGearsType newLandingGears) {
+		if (newLandingGears != landingGears) {
 			NotificationChain msgs = null;
-			if (landingGear != null)
-				msgs = ((InternalEObject) landingGear).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEAR, null, msgs);
-			if (newLandingGear != null)
-				msgs = ((InternalEObject) newLandingGear).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEAR, null, msgs);
-			msgs = basicSetLandingGear(newLandingGear, msgs);
+			if (landingGears != null)
+				msgs = ((InternalEObject) landingGears).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEARS, null, msgs);
+			if (newLandingGears != null)
+				msgs = ((InternalEObject) newLandingGears).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEARS, null, msgs);
+			msgs = basicSetLandingGears(newLandingGears, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEAR,
-					newLandingGear, newLandingGear));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEARS,
+					newLandingGears, newLandingGears));
 	}
 
 	/**
@@ -913,6 +925,59 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 	 * @generated
 	 */
 	@Override
+	public VehicleConfigurationsType getConfigurations() {
+		return configurations;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetConfigurations(VehicleConfigurationsType newConfigurations,
+			NotificationChain msgs) {
+		VehicleConfigurationsType oldConfigurations = configurations;
+		configurations = newConfigurations;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.AIRCRAFT_MODEL_TYPE__CONFIGURATIONS, oldConfigurations, newConfigurations);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setConfigurations(VehicleConfigurationsType newConfigurations) {
+		if (newConfigurations != configurations) {
+			NotificationChain msgs = null;
+			if (configurations != null)
+				msgs = ((InternalEObject) configurations).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_MODEL_TYPE__CONFIGURATIONS, null, msgs);
+			if (newConfigurations != null)
+				msgs = ((InternalEObject) newConfigurations).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_MODEL_TYPE__CONFIGURATIONS, null, msgs);
+			msgs = basicSetConfigurations(newConfigurations, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AIRCRAFT_MODEL_TYPE__CONFIGURATIONS,
+					newConfigurations, newConfigurations));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getUID() {
 		return uID;
 	}
@@ -952,8 +1017,8 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 			return basicSetEngines(null, msgs);
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__ENGINE_PYLONS:
 			return basicSetEnginePylons(null, msgs);
-		case CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEAR:
-			return basicSetLandingGear(null, msgs);
+		case CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEARS:
+			return basicSetLandingGears(null, msgs);
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__SYSTEMS:
 			return basicSetSystems(null, msgs);
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__GENERIC_GEOMETRY_COMPONENTS:
@@ -964,6 +1029,8 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 			return basicSetAnalyses(null, msgs);
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__PERFORMANCE_REQUIREMENTS:
 			return basicSetPerformanceRequirements(null, msgs);
+		case CpacsPackage.AIRCRAFT_MODEL_TYPE__CONFIGURATIONS:
+			return basicSetConfigurations(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -990,8 +1057,8 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 			return getEngines();
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__ENGINE_PYLONS:
 			return getEnginePylons();
-		case CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEAR:
-			return getLandingGear();
+		case CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEARS:
+			return getLandingGears();
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__SYSTEMS:
 			return getSystems();
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__GENERIC_GEOMETRY_COMPONENTS:
@@ -1002,6 +1069,8 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 			return getAnalyses();
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__PERFORMANCE_REQUIREMENTS:
 			return getPerformanceRequirements();
+		case CpacsPackage.AIRCRAFT_MODEL_TYPE__CONFIGURATIONS:
+			return getConfigurations();
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__UID:
 			return getUID();
 		}
@@ -1037,8 +1106,8 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__ENGINE_PYLONS:
 			setEnginePylons((EnginePylonsType) newValue);
 			return;
-		case CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEAR:
-			setLandingGear((LandingGearType) newValue);
+		case CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEARS:
+			setLandingGears((LandingGearsType) newValue);
 			return;
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__SYSTEMS:
 			setSystems((SystemsType) newValue);
@@ -1054,6 +1123,9 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 			return;
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__PERFORMANCE_REQUIREMENTS:
 			setPerformanceRequirements((PerformanceRequirementsType) newValue);
+			return;
+		case CpacsPackage.AIRCRAFT_MODEL_TYPE__CONFIGURATIONS:
+			setConfigurations((VehicleConfigurationsType) newValue);
 			return;
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__UID:
 			setUID((String) newValue);
@@ -1091,8 +1163,8 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__ENGINE_PYLONS:
 			setEnginePylons((EnginePylonsType) null);
 			return;
-		case CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEAR:
-			setLandingGear((LandingGearType) null);
+		case CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEARS:
+			setLandingGears((LandingGearsType) null);
 			return;
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__SYSTEMS:
 			setSystems((SystemsType) null);
@@ -1108,6 +1180,9 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 			return;
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__PERFORMANCE_REQUIREMENTS:
 			setPerformanceRequirements((PerformanceRequirementsType) null);
+			return;
+		case CpacsPackage.AIRCRAFT_MODEL_TYPE__CONFIGURATIONS:
+			setConfigurations((VehicleConfigurationsType) null);
 			return;
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__UID:
 			setUID(UID_EDEFAULT);
@@ -1138,8 +1213,8 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 			return engines != null;
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__ENGINE_PYLONS:
 			return enginePylons != null;
-		case CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEAR:
-			return landingGear != null;
+		case CpacsPackage.AIRCRAFT_MODEL_TYPE__LANDING_GEARS:
+			return landingGears != null;
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__SYSTEMS:
 			return systems != null;
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__GENERIC_GEOMETRY_COMPONENTS:
@@ -1150,6 +1225,8 @@ public class AircraftModelTypeImpl extends ComplexBaseTypeImpl implements Aircra
 			return analyses != null;
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__PERFORMANCE_REQUIREMENTS:
 			return performanceRequirements != null;
+		case CpacsPackage.AIRCRAFT_MODEL_TYPE__CONFIGURATIONS:
+			return configurations != null;
 		case CpacsPackage.AIRCRAFT_MODEL_TYPE__UID:
 			return UID_EDEFAULT == null ? uID != null : !UID_EDEFAULT.equals(uID);
 		}

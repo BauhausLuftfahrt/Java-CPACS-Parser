@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.LoadBreakdownTypeImpl#getAeroLoads <em>Aero Loads</em>}</li>
  *   <li>{@link Cpacs.impl.LoadBreakdownTypeImpl#getPropulsionLoads <em>Propulsion Loads</em>}</li>
  *   <li>{@link Cpacs.impl.LoadBreakdownTypeImpl#getLandingGearLoads <em>Landing Gear Loads</em>}</li>
- *   <li>{@link Cpacs.impl.LoadBreakdownTypeImpl#getCalibrationLoads <em>Calibration Loads</em>}</li>
+ *   <li>{@link Cpacs.impl.LoadBreakdownTypeImpl#getRemainingLoads <em>Remaining Loads</em>}</li>
  * </ul>
  *
  * @generated
@@ -73,14 +73,14 @@ public class LoadBreakdownTypeImpl extends ComplexBaseTypeImpl implements LoadBr
 	protected SubLoadType landingGearLoads;
 
 	/**
-	 * The cached value of the '{@link #getCalibrationLoads() <em>Calibration Loads</em>}' containment reference.
+	 * The cached value of the '{@link #getRemainingLoads() <em>Remaining Loads</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCalibrationLoads()
+	 * @see #getRemainingLoads()
 	 * @generated
 	 * @ordered
 	 */
-	protected SubLoadType calibrationLoads;
+	protected SubLoadType remainingLoads;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -315,8 +315,8 @@ public class LoadBreakdownTypeImpl extends ComplexBaseTypeImpl implements LoadBr
 	 * @generated
 	 */
 	@Override
-	public SubLoadType getCalibrationLoads() {
-		return calibrationLoads;
+	public SubLoadType getRemainingLoads() {
+		return remainingLoads;
 	}
 
 	/**
@@ -324,12 +324,12 @@ public class LoadBreakdownTypeImpl extends ComplexBaseTypeImpl implements LoadBr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCalibrationLoads(SubLoadType newCalibrationLoads, NotificationChain msgs) {
-		SubLoadType oldCalibrationLoads = calibrationLoads;
-		calibrationLoads = newCalibrationLoads;
+	public NotificationChain basicSetRemainingLoads(SubLoadType newRemainingLoads, NotificationChain msgs) {
+		SubLoadType oldRemainingLoads = remainingLoads;
+		remainingLoads = newRemainingLoads;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.LOAD_BREAKDOWN_TYPE__CALIBRATION_LOADS, oldCalibrationLoads, newCalibrationLoads);
+					CpacsPackage.LOAD_BREAKDOWN_TYPE__REMAINING_LOADS, oldRemainingLoads, newRemainingLoads);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -344,21 +344,21 @@ public class LoadBreakdownTypeImpl extends ComplexBaseTypeImpl implements LoadBr
 	 * @generated
 	 */
 	@Override
-	public void setCalibrationLoads(SubLoadType newCalibrationLoads) {
-		if (newCalibrationLoads != calibrationLoads) {
+	public void setRemainingLoads(SubLoadType newRemainingLoads) {
+		if (newRemainingLoads != remainingLoads) {
 			NotificationChain msgs = null;
-			if (calibrationLoads != null)
-				msgs = ((InternalEObject) calibrationLoads).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.LOAD_BREAKDOWN_TYPE__CALIBRATION_LOADS, null, msgs);
-			if (newCalibrationLoads != null)
-				msgs = ((InternalEObject) newCalibrationLoads).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.LOAD_BREAKDOWN_TYPE__CALIBRATION_LOADS, null, msgs);
-			msgs = basicSetCalibrationLoads(newCalibrationLoads, msgs);
+			if (remainingLoads != null)
+				msgs = ((InternalEObject) remainingLoads).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.LOAD_BREAKDOWN_TYPE__REMAINING_LOADS, null, msgs);
+			if (newRemainingLoads != null)
+				msgs = ((InternalEObject) newRemainingLoads).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.LOAD_BREAKDOWN_TYPE__REMAINING_LOADS, null, msgs);
+			msgs = basicSetRemainingLoads(newRemainingLoads, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.LOAD_BREAKDOWN_TYPE__CALIBRATION_LOADS,
-					newCalibrationLoads, newCalibrationLoads));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.LOAD_BREAKDOWN_TYPE__REMAINING_LOADS,
+					newRemainingLoads, newRemainingLoads));
 	}
 
 	/**
@@ -377,8 +377,8 @@ public class LoadBreakdownTypeImpl extends ComplexBaseTypeImpl implements LoadBr
 			return basicSetPropulsionLoads(null, msgs);
 		case CpacsPackage.LOAD_BREAKDOWN_TYPE__LANDING_GEAR_LOADS:
 			return basicSetLandingGearLoads(null, msgs);
-		case CpacsPackage.LOAD_BREAKDOWN_TYPE__CALIBRATION_LOADS:
-			return basicSetCalibrationLoads(null, msgs);
+		case CpacsPackage.LOAD_BREAKDOWN_TYPE__REMAINING_LOADS:
+			return basicSetRemainingLoads(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -399,8 +399,8 @@ public class LoadBreakdownTypeImpl extends ComplexBaseTypeImpl implements LoadBr
 			return getPropulsionLoads();
 		case CpacsPackage.LOAD_BREAKDOWN_TYPE__LANDING_GEAR_LOADS:
 			return getLandingGearLoads();
-		case CpacsPackage.LOAD_BREAKDOWN_TYPE__CALIBRATION_LOADS:
-			return getCalibrationLoads();
+		case CpacsPackage.LOAD_BREAKDOWN_TYPE__REMAINING_LOADS:
+			return getRemainingLoads();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -425,8 +425,8 @@ public class LoadBreakdownTypeImpl extends ComplexBaseTypeImpl implements LoadBr
 		case CpacsPackage.LOAD_BREAKDOWN_TYPE__LANDING_GEAR_LOADS:
 			setLandingGearLoads((SubLoadType) newValue);
 			return;
-		case CpacsPackage.LOAD_BREAKDOWN_TYPE__CALIBRATION_LOADS:
-			setCalibrationLoads((SubLoadType) newValue);
+		case CpacsPackage.LOAD_BREAKDOWN_TYPE__REMAINING_LOADS:
+			setRemainingLoads((SubLoadType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -452,8 +452,8 @@ public class LoadBreakdownTypeImpl extends ComplexBaseTypeImpl implements LoadBr
 		case CpacsPackage.LOAD_BREAKDOWN_TYPE__LANDING_GEAR_LOADS:
 			setLandingGearLoads((SubLoadType) null);
 			return;
-		case CpacsPackage.LOAD_BREAKDOWN_TYPE__CALIBRATION_LOADS:
-			setCalibrationLoads((SubLoadType) null);
+		case CpacsPackage.LOAD_BREAKDOWN_TYPE__REMAINING_LOADS:
+			setRemainingLoads((SubLoadType) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -475,8 +475,8 @@ public class LoadBreakdownTypeImpl extends ComplexBaseTypeImpl implements LoadBr
 			return propulsionLoads != null;
 		case CpacsPackage.LOAD_BREAKDOWN_TYPE__LANDING_GEAR_LOADS:
 			return landingGearLoads != null;
-		case CpacsPackage.LOAD_BREAKDOWN_TYPE__CALIBRATION_LOADS:
-			return calibrationLoads != null;
+		case CpacsPackage.LOAD_BREAKDOWN_TYPE__REMAINING_LOADS:
+			return remainingLoads != null;
 		}
 		return super.eIsSet(featureID);
 	}

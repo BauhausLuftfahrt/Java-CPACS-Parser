@@ -26,6 +26,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.CellPositioningChordwiseTypeImpl#getXsi1 <em>Xsi1</em>}</li>
  *   <li>{@link Cpacs.impl.CellPositioningChordwiseTypeImpl#getXsi2 <em>Xsi2</em>}</li>
  *   <li>{@link Cpacs.impl.CellPositioningChordwiseTypeImpl#getSparUID <em>Spar UID</em>}</li>
+ *   <li>{@link Cpacs.impl.CellPositioningChordwiseTypeImpl#getContourCoordinate <em>Contour Coordinate</em>}</li>
  * </ul>
  *
  * @generated
@@ -60,6 +61,16 @@ public class CellPositioningChordwiseTypeImpl extends ComplexBaseTypeImpl implem
 	 * @ordered
 	 */
 	protected StringUIDBaseType sparUID;
+
+	/**
+	 * The cached value of the '{@link #getContourCoordinate() <em>Contour Coordinate</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getContourCoordinate()
+	 * @generated
+	 * @ordered
+	 */
+	protected DoubleBaseType contourCoordinate;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -242,6 +253,62 @@ public class CellPositioningChordwiseTypeImpl extends ComplexBaseTypeImpl implem
 	 * @generated
 	 */
 	@Override
+	public DoubleBaseType getContourCoordinate() {
+		return contourCoordinate;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetContourCoordinate(DoubleBaseType newContourCoordinate, NotificationChain msgs) {
+		DoubleBaseType oldContourCoordinate = contourCoordinate;
+		contourCoordinate = newContourCoordinate;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__CONTOUR_COORDINATE, oldContourCoordinate,
+					newContourCoordinate);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContourCoordinate(DoubleBaseType newContourCoordinate) {
+		if (newContourCoordinate != contourCoordinate) {
+			NotificationChain msgs = null;
+			if (contourCoordinate != null)
+				msgs = ((InternalEObject) contourCoordinate).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__CONTOUR_COORDINATE, null,
+						msgs);
+			if (newContourCoordinate != null)
+				msgs = ((InternalEObject) newContourCoordinate).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__CONTOUR_COORDINATE, null,
+						msgs);
+			msgs = basicSetContourCoordinate(newContourCoordinate, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__CONTOUR_COORDINATE, newContourCoordinate,
+					newContourCoordinate));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__XSI1:
@@ -250,6 +317,8 @@ public class CellPositioningChordwiseTypeImpl extends ComplexBaseTypeImpl implem
 			return basicSetXsi2(null, msgs);
 		case CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__SPAR_UID:
 			return basicSetSparUID(null, msgs);
+		case CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__CONTOUR_COORDINATE:
+			return basicSetContourCoordinate(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -268,6 +337,8 @@ public class CellPositioningChordwiseTypeImpl extends ComplexBaseTypeImpl implem
 			return getXsi2();
 		case CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__SPAR_UID:
 			return getSparUID();
+		case CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__CONTOUR_COORDINATE:
+			return getContourCoordinate();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -288,6 +359,9 @@ public class CellPositioningChordwiseTypeImpl extends ComplexBaseTypeImpl implem
 			return;
 		case CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__SPAR_UID:
 			setSparUID((StringUIDBaseType) newValue);
+			return;
+		case CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__CONTOUR_COORDINATE:
+			setContourCoordinate((DoubleBaseType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -310,6 +384,9 @@ public class CellPositioningChordwiseTypeImpl extends ComplexBaseTypeImpl implem
 		case CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__SPAR_UID:
 			setSparUID((StringUIDBaseType) null);
 			return;
+		case CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__CONTOUR_COORDINATE:
+			setContourCoordinate((DoubleBaseType) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -328,6 +405,8 @@ public class CellPositioningChordwiseTypeImpl extends ComplexBaseTypeImpl implem
 			return xsi2 != null;
 		case CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__SPAR_UID:
 			return sparUID != null;
+		case CpacsPackage.CELL_POSITIONING_CHORDWISE_TYPE__CONTOUR_COORDINATE:
+			return contourCoordinate != null;
 		}
 		return super.eIsSet(featureID);
 	}

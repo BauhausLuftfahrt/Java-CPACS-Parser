@@ -23,7 +23,7 @@ import org.eclipse.emf.common.util.EList;
 public interface GroundLoadCasesType extends ComplexBaseType {
 	/**
 	 * Returns the value of the '<em><b>Ground Load Case</b></em>' containment reference list.
-	 * The list contents are of type {@link Cpacs.GroundLoadCaseType}.
+	 * The list contents are of type {@link Cpacs.LoadCaseType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ground Load Case</em>' containment reference list.
@@ -32,6 +32,6 @@ public interface GroundLoadCasesType extends ComplexBaseType {
 	 *        extendedMetaData="kind='element' name='groundLoadCase' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<GroundLoadCaseType> getGroundLoadCase();
+	EList<LoadCaseType> getGroundLoadCase();
 
 } // GroundLoadCasesType

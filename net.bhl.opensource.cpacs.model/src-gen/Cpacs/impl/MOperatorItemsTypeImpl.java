@@ -4,14 +4,21 @@ package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
 import Cpacs.GenericMassType;
+import Cpacs.MAdditionalCenterTanksType;
 import Cpacs.MCateringsType;
 import Cpacs.MCrewMembersType;
 import Cpacs.MDocumentsToolsType;
 import Cpacs.MEmergencyEquipmentsType;
+import Cpacs.MEngineAPUOilsType;
 import Cpacs.MFixedGalleysType;
 import Cpacs.MIFESystemsType;
 import Cpacs.MOperatorItemsType;
+import Cpacs.MRemovableCrewRestsType;
 import Cpacs.MSeatsType;
+import Cpacs.MToiletFluidsType;
+import Cpacs.MUnusableFuelsType;
+import Cpacs.MWaterReservoirsType;
+import Cpacs.SingleGenericMassType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -37,6 +44,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.MOperatorItemsTypeImpl#getMEmergencyEquipments <em>MEmergency Equipments</em>}</li>
  *   <li>{@link Cpacs.impl.MOperatorItemsTypeImpl#getMCaterings <em>MCaterings</em>}</li>
  *   <li>{@link Cpacs.impl.MOperatorItemsTypeImpl#getMCrewMembers <em>MCrew Members</em>}</li>
+ *   <li>{@link Cpacs.impl.MOperatorItemsTypeImpl#getMAdditionalCenterTanks <em>MAdditional Center Tanks</em>}</li>
+ *   <li>{@link Cpacs.impl.MOperatorItemsTypeImpl#getMEngineAPUOils <em>MEngine APU Oils</em>}</li>
+ *   <li>{@link Cpacs.impl.MOperatorItemsTypeImpl#getMRemovableCrewRests <em>MRemovable Crew Rests</em>}</li>
+ *   <li>{@link Cpacs.impl.MOperatorItemsTypeImpl#getMToiletFluids <em>MToilet Fluids</em>}</li>
+ *   <li>{@link Cpacs.impl.MOperatorItemsTypeImpl#getMUnusableFuels <em>MUnusable Fuels</em>}</li>
+ *   <li>{@link Cpacs.impl.MOperatorItemsTypeImpl#getMWaterReservoirs <em>MWater Reservoirs</em>}</li>
+ *   <li>{@link Cpacs.impl.MOperatorItemsTypeImpl#getMMiscellaneous <em>MMiscellaneous</em>}</li>
  * </ul>
  *
  * @generated
@@ -121,6 +135,76 @@ public class MOperatorItemsTypeImpl extends ComplexBaseTypeImpl implements MOper
 	 * @ordered
 	 */
 	protected MCrewMembersType mCrewMembers;
+
+	/**
+	 * The cached value of the '{@link #getMAdditionalCenterTanks() <em>MAdditional Center Tanks</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMAdditionalCenterTanks()
+	 * @generated
+	 * @ordered
+	 */
+	protected MAdditionalCenterTanksType mAdditionalCenterTanks;
+
+	/**
+	 * The cached value of the '{@link #getMEngineAPUOils() <em>MEngine APU Oils</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMEngineAPUOils()
+	 * @generated
+	 * @ordered
+	 */
+	protected MEngineAPUOilsType mEngineAPUOils;
+
+	/**
+	 * The cached value of the '{@link #getMRemovableCrewRests() <em>MRemovable Crew Rests</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMRemovableCrewRests()
+	 * @generated
+	 * @ordered
+	 */
+	protected MRemovableCrewRestsType mRemovableCrewRests;
+
+	/**
+	 * The cached value of the '{@link #getMToiletFluids() <em>MToilet Fluids</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMToiletFluids()
+	 * @generated
+	 * @ordered
+	 */
+	protected MToiletFluidsType mToiletFluids;
+
+	/**
+	 * The cached value of the '{@link #getMUnusableFuels() <em>MUnusable Fuels</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMUnusableFuels()
+	 * @generated
+	 * @ordered
+	 */
+	protected MUnusableFuelsType mUnusableFuels;
+
+	/**
+	 * The cached value of the '{@link #getMWaterReservoirs() <em>MWater Reservoirs</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMWaterReservoirs()
+	 * @generated
+	 * @ordered
+	 */
+	protected MWaterReservoirsType mWaterReservoirs;
+
+	/**
+	 * The cached value of the '{@link #getMMiscellaneous() <em>MMiscellaneous</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMMiscellaneous()
+	 * @generated
+	 * @ordered
+	 */
+	protected SingleGenericMassType mMiscellaneous;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -566,6 +650,379 @@ public class MOperatorItemsTypeImpl extends ComplexBaseTypeImpl implements MOper
 	 * @generated
 	 */
 	@Override
+	public MAdditionalCenterTanksType getMAdditionalCenterTanks() {
+		return mAdditionalCenterTanks;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetMAdditionalCenterTanks(MAdditionalCenterTanksType newMAdditionalCenterTanks,
+			NotificationChain msgs) {
+		MAdditionalCenterTanksType oldMAdditionalCenterTanks = mAdditionalCenterTanks;
+		mAdditionalCenterTanks = newMAdditionalCenterTanks;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MOPERATOR_ITEMS_TYPE__MADDITIONAL_CENTER_TANKS, oldMAdditionalCenterTanks,
+					newMAdditionalCenterTanks);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMAdditionalCenterTanks(MAdditionalCenterTanksType newMAdditionalCenterTanks) {
+		if (newMAdditionalCenterTanks != mAdditionalCenterTanks) {
+			NotificationChain msgs = null;
+			if (mAdditionalCenterTanks != null)
+				msgs = ((InternalEObject) mAdditionalCenterTanks).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MOPERATOR_ITEMS_TYPE__MADDITIONAL_CENTER_TANKS, null,
+						msgs);
+			if (newMAdditionalCenterTanks != null)
+				msgs = ((InternalEObject) newMAdditionalCenterTanks).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MOPERATOR_ITEMS_TYPE__MADDITIONAL_CENTER_TANKS, null,
+						msgs);
+			msgs = basicSetMAdditionalCenterTanks(newMAdditionalCenterTanks, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MOPERATOR_ITEMS_TYPE__MADDITIONAL_CENTER_TANKS, newMAdditionalCenterTanks,
+					newMAdditionalCenterTanks));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MEngineAPUOilsType getMEngineAPUOils() {
+		return mEngineAPUOils;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetMEngineAPUOils(MEngineAPUOilsType newMEngineAPUOils, NotificationChain msgs) {
+		MEngineAPUOilsType oldMEngineAPUOils = mEngineAPUOils;
+		mEngineAPUOils = newMEngineAPUOils;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MOPERATOR_ITEMS_TYPE__MENGINE_APU_OILS, oldMEngineAPUOils, newMEngineAPUOils);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMEngineAPUOils(MEngineAPUOilsType newMEngineAPUOils) {
+		if (newMEngineAPUOils != mEngineAPUOils) {
+			NotificationChain msgs = null;
+			if (mEngineAPUOils != null)
+				msgs = ((InternalEObject) mEngineAPUOils).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MOPERATOR_ITEMS_TYPE__MENGINE_APU_OILS, null, msgs);
+			if (newMEngineAPUOils != null)
+				msgs = ((InternalEObject) newMEngineAPUOils).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MOPERATOR_ITEMS_TYPE__MENGINE_APU_OILS, null, msgs);
+			msgs = basicSetMEngineAPUOils(newMEngineAPUOils, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MOPERATOR_ITEMS_TYPE__MENGINE_APU_OILS,
+					newMEngineAPUOils, newMEngineAPUOils));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MRemovableCrewRestsType getMRemovableCrewRests() {
+		return mRemovableCrewRests;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetMRemovableCrewRests(MRemovableCrewRestsType newMRemovableCrewRests,
+			NotificationChain msgs) {
+		MRemovableCrewRestsType oldMRemovableCrewRests = mRemovableCrewRests;
+		mRemovableCrewRests = newMRemovableCrewRests;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MOPERATOR_ITEMS_TYPE__MREMOVABLE_CREW_RESTS, oldMRemovableCrewRests,
+					newMRemovableCrewRests);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMRemovableCrewRests(MRemovableCrewRestsType newMRemovableCrewRests) {
+		if (newMRemovableCrewRests != mRemovableCrewRests) {
+			NotificationChain msgs = null;
+			if (mRemovableCrewRests != null)
+				msgs = ((InternalEObject) mRemovableCrewRests).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MOPERATOR_ITEMS_TYPE__MREMOVABLE_CREW_RESTS, null, msgs);
+			if (newMRemovableCrewRests != null)
+				msgs = ((InternalEObject) newMRemovableCrewRests).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MOPERATOR_ITEMS_TYPE__MREMOVABLE_CREW_RESTS, null, msgs);
+			msgs = basicSetMRemovableCrewRests(newMRemovableCrewRests, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MOPERATOR_ITEMS_TYPE__MREMOVABLE_CREW_RESTS, newMRemovableCrewRests,
+					newMRemovableCrewRests));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MToiletFluidsType getMToiletFluids() {
+		return mToiletFluids;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetMToiletFluids(MToiletFluidsType newMToiletFluids, NotificationChain msgs) {
+		MToiletFluidsType oldMToiletFluids = mToiletFluids;
+		mToiletFluids = newMToiletFluids;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MOPERATOR_ITEMS_TYPE__MTOILET_FLUIDS, oldMToiletFluids, newMToiletFluids);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMToiletFluids(MToiletFluidsType newMToiletFluids) {
+		if (newMToiletFluids != mToiletFluids) {
+			NotificationChain msgs = null;
+			if (mToiletFluids != null)
+				msgs = ((InternalEObject) mToiletFluids).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MOPERATOR_ITEMS_TYPE__MTOILET_FLUIDS, null, msgs);
+			if (newMToiletFluids != null)
+				msgs = ((InternalEObject) newMToiletFluids).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MOPERATOR_ITEMS_TYPE__MTOILET_FLUIDS, null, msgs);
+			msgs = basicSetMToiletFluids(newMToiletFluids, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MOPERATOR_ITEMS_TYPE__MTOILET_FLUIDS,
+					newMToiletFluids, newMToiletFluids));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MUnusableFuelsType getMUnusableFuels() {
+		return mUnusableFuels;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetMUnusableFuels(MUnusableFuelsType newMUnusableFuels, NotificationChain msgs) {
+		MUnusableFuelsType oldMUnusableFuels = mUnusableFuels;
+		mUnusableFuels = newMUnusableFuels;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MOPERATOR_ITEMS_TYPE__MUNUSABLE_FUELS, oldMUnusableFuels, newMUnusableFuels);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMUnusableFuels(MUnusableFuelsType newMUnusableFuels) {
+		if (newMUnusableFuels != mUnusableFuels) {
+			NotificationChain msgs = null;
+			if (mUnusableFuels != null)
+				msgs = ((InternalEObject) mUnusableFuels).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MOPERATOR_ITEMS_TYPE__MUNUSABLE_FUELS, null, msgs);
+			if (newMUnusableFuels != null)
+				msgs = ((InternalEObject) newMUnusableFuels).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MOPERATOR_ITEMS_TYPE__MUNUSABLE_FUELS, null, msgs);
+			msgs = basicSetMUnusableFuels(newMUnusableFuels, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MOPERATOR_ITEMS_TYPE__MUNUSABLE_FUELS,
+					newMUnusableFuels, newMUnusableFuels));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MWaterReservoirsType getMWaterReservoirs() {
+		return mWaterReservoirs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetMWaterReservoirs(MWaterReservoirsType newMWaterReservoirs,
+			NotificationChain msgs) {
+		MWaterReservoirsType oldMWaterReservoirs = mWaterReservoirs;
+		mWaterReservoirs = newMWaterReservoirs;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MOPERATOR_ITEMS_TYPE__MWATER_RESERVOIRS, oldMWaterReservoirs, newMWaterReservoirs);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMWaterReservoirs(MWaterReservoirsType newMWaterReservoirs) {
+		if (newMWaterReservoirs != mWaterReservoirs) {
+			NotificationChain msgs = null;
+			if (mWaterReservoirs != null)
+				msgs = ((InternalEObject) mWaterReservoirs).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MOPERATOR_ITEMS_TYPE__MWATER_RESERVOIRS, null, msgs);
+			if (newMWaterReservoirs != null)
+				msgs = ((InternalEObject) newMWaterReservoirs).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MOPERATOR_ITEMS_TYPE__MWATER_RESERVOIRS, null, msgs);
+			msgs = basicSetMWaterReservoirs(newMWaterReservoirs, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MOPERATOR_ITEMS_TYPE__MWATER_RESERVOIRS,
+					newMWaterReservoirs, newMWaterReservoirs));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SingleGenericMassType getMMiscellaneous() {
+		return mMiscellaneous;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetMMiscellaneous(SingleGenericMassType newMMiscellaneous, NotificationChain msgs) {
+		SingleGenericMassType oldMMiscellaneous = mMiscellaneous;
+		mMiscellaneous = newMMiscellaneous;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MOPERATOR_ITEMS_TYPE__MMISCELLANEOUS, oldMMiscellaneous, newMMiscellaneous);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMMiscellaneous(SingleGenericMassType newMMiscellaneous) {
+		if (newMMiscellaneous != mMiscellaneous) {
+			NotificationChain msgs = null;
+			if (mMiscellaneous != null)
+				msgs = ((InternalEObject) mMiscellaneous).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MOPERATOR_ITEMS_TYPE__MMISCELLANEOUS, null, msgs);
+			if (newMMiscellaneous != null)
+				msgs = ((InternalEObject) newMMiscellaneous).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MOPERATOR_ITEMS_TYPE__MMISCELLANEOUS, null, msgs);
+			msgs = basicSetMMiscellaneous(newMMiscellaneous, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MOPERATOR_ITEMS_TYPE__MMISCELLANEOUS,
+					newMMiscellaneous, newMMiscellaneous));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MASS_DESCRIPTION:
@@ -584,6 +1041,20 @@ public class MOperatorItemsTypeImpl extends ComplexBaseTypeImpl implements MOper
 			return basicSetMCaterings(null, msgs);
 		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MCREW_MEMBERS:
 			return basicSetMCrewMembers(null, msgs);
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MADDITIONAL_CENTER_TANKS:
+			return basicSetMAdditionalCenterTanks(null, msgs);
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MENGINE_APU_OILS:
+			return basicSetMEngineAPUOils(null, msgs);
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MREMOVABLE_CREW_RESTS:
+			return basicSetMRemovableCrewRests(null, msgs);
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MTOILET_FLUIDS:
+			return basicSetMToiletFluids(null, msgs);
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MUNUSABLE_FUELS:
+			return basicSetMUnusableFuels(null, msgs);
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MWATER_RESERVOIRS:
+			return basicSetMWaterReservoirs(null, msgs);
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MMISCELLANEOUS:
+			return basicSetMMiscellaneous(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -612,6 +1083,20 @@ public class MOperatorItemsTypeImpl extends ComplexBaseTypeImpl implements MOper
 			return getMCaterings();
 		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MCREW_MEMBERS:
 			return getMCrewMembers();
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MADDITIONAL_CENTER_TANKS:
+			return getMAdditionalCenterTanks();
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MENGINE_APU_OILS:
+			return getMEngineAPUOils();
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MREMOVABLE_CREW_RESTS:
+			return getMRemovableCrewRests();
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MTOILET_FLUIDS:
+			return getMToiletFluids();
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MUNUSABLE_FUELS:
+			return getMUnusableFuels();
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MWATER_RESERVOIRS:
+			return getMWaterReservoirs();
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MMISCELLANEOUS:
+			return getMMiscellaneous();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -647,6 +1132,27 @@ public class MOperatorItemsTypeImpl extends ComplexBaseTypeImpl implements MOper
 			return;
 		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MCREW_MEMBERS:
 			setMCrewMembers((MCrewMembersType) newValue);
+			return;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MADDITIONAL_CENTER_TANKS:
+			setMAdditionalCenterTanks((MAdditionalCenterTanksType) newValue);
+			return;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MENGINE_APU_OILS:
+			setMEngineAPUOils((MEngineAPUOilsType) newValue);
+			return;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MREMOVABLE_CREW_RESTS:
+			setMRemovableCrewRests((MRemovableCrewRestsType) newValue);
+			return;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MTOILET_FLUIDS:
+			setMToiletFluids((MToiletFluidsType) newValue);
+			return;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MUNUSABLE_FUELS:
+			setMUnusableFuels((MUnusableFuelsType) newValue);
+			return;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MWATER_RESERVOIRS:
+			setMWaterReservoirs((MWaterReservoirsType) newValue);
+			return;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MMISCELLANEOUS:
+			setMMiscellaneous((SingleGenericMassType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -684,6 +1190,27 @@ public class MOperatorItemsTypeImpl extends ComplexBaseTypeImpl implements MOper
 		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MCREW_MEMBERS:
 			setMCrewMembers((MCrewMembersType) null);
 			return;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MADDITIONAL_CENTER_TANKS:
+			setMAdditionalCenterTanks((MAdditionalCenterTanksType) null);
+			return;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MENGINE_APU_OILS:
+			setMEngineAPUOils((MEngineAPUOilsType) null);
+			return;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MREMOVABLE_CREW_RESTS:
+			setMRemovableCrewRests((MRemovableCrewRestsType) null);
+			return;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MTOILET_FLUIDS:
+			setMToiletFluids((MToiletFluidsType) null);
+			return;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MUNUSABLE_FUELS:
+			setMUnusableFuels((MUnusableFuelsType) null);
+			return;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MWATER_RESERVOIRS:
+			setMWaterReservoirs((MWaterReservoirsType) null);
+			return;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MMISCELLANEOUS:
+			setMMiscellaneous((SingleGenericMassType) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -712,6 +1239,20 @@ public class MOperatorItemsTypeImpl extends ComplexBaseTypeImpl implements MOper
 			return mCaterings != null;
 		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MCREW_MEMBERS:
 			return mCrewMembers != null;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MADDITIONAL_CENTER_TANKS:
+			return mAdditionalCenterTanks != null;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MENGINE_APU_OILS:
+			return mEngineAPUOils != null;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MREMOVABLE_CREW_RESTS:
+			return mRemovableCrewRests != null;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MTOILET_FLUIDS:
+			return mToiletFluids != null;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MUNUSABLE_FUELS:
+			return mUnusableFuels != null;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MWATER_RESERVOIRS:
+			return mWaterReservoirs != null;
+		case CpacsPackage.MOPERATOR_ITEMS_TYPE__MMISCELLANEOUS:
+			return mMiscellaneous != null;
 		}
 		return super.eIsSet(featureID);
 	}

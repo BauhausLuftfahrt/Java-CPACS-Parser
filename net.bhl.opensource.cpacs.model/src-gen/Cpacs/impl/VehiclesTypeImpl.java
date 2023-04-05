@@ -4,8 +4,11 @@ package Cpacs.impl;
 
 import Cpacs.AircraftType;
 import Cpacs.CpacsPackage;
+import Cpacs.DeckElementsType;
 import Cpacs.EnginesType;
+import Cpacs.FlightPointsType;
 import Cpacs.FuelsType;
+import Cpacs.GlobalPerformanceCasesType;
 import Cpacs.MaterialsType;
 import Cpacs.ProfilesType;
 import Cpacs.RotorcraftType;
@@ -30,9 +33,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link Cpacs.impl.VehiclesTypeImpl#getAircraft <em>Aircraft</em>}</li>
  *   <li>{@link Cpacs.impl.VehiclesTypeImpl#getRotorcraft <em>Rotorcraft</em>}</li>
+ *   <li>{@link Cpacs.impl.VehiclesTypeImpl#getPerformanceCases <em>Performance Cases</em>}</li>
+ *   <li>{@link Cpacs.impl.VehiclesTypeImpl#getFlightPoints <em>Flight Points</em>}</li>
  *   <li>{@link Cpacs.impl.VehiclesTypeImpl#getEngines <em>Engines</em>}</li>
  *   <li>{@link Cpacs.impl.VehiclesTypeImpl#getProfiles <em>Profiles</em>}</li>
  *   <li>{@link Cpacs.impl.VehiclesTypeImpl#getStructuralElements <em>Structural Elements</em>}</li>
+ *   <li>{@link Cpacs.impl.VehiclesTypeImpl#getDeckElements <em>Deck Elements</em>}</li>
  *   <li>{@link Cpacs.impl.VehiclesTypeImpl#getMaterials <em>Materials</em>}</li>
  *   <li>{@link Cpacs.impl.VehiclesTypeImpl#getFuels <em>Fuels</em>}</li>
  * </ul>
@@ -59,6 +65,26 @@ public class VehiclesTypeImpl extends ComplexBaseTypeImpl implements VehiclesTyp
 	 * @ordered
 	 */
 	protected RotorcraftType rotorcraft;
+
+	/**
+	 * The cached value of the '{@link #getPerformanceCases() <em>Performance Cases</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPerformanceCases()
+	 * @generated
+	 * @ordered
+	 */
+	protected GlobalPerformanceCasesType performanceCases;
+
+	/**
+	 * The cached value of the '{@link #getFlightPoints() <em>Flight Points</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFlightPoints()
+	 * @generated
+	 * @ordered
+	 */
+	protected FlightPointsType flightPoints;
 
 	/**
 	 * The cached value of the '{@link #getEngines() <em>Engines</em>}' containment reference.
@@ -89,6 +115,16 @@ public class VehiclesTypeImpl extends ComplexBaseTypeImpl implements VehiclesTyp
 	 * @ordered
 	 */
 	protected StructuralElementsType structuralElements;
+
+	/**
+	 * The cached value of the '{@link #getDeckElements() <em>Deck Elements</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDeckElements()
+	 * @generated
+	 * @ordered
+	 */
+	protected DeckElementsType deckElements;
 
 	/**
 	 * The cached value of the '{@link #getMaterials() <em>Materials</em>}' containment reference.
@@ -231,6 +267,111 @@ public class VehiclesTypeImpl extends ComplexBaseTypeImpl implements VehiclesTyp
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.VEHICLES_TYPE__ROTORCRAFT, newRotorcraft,
 					newRotorcraft));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlobalPerformanceCasesType getPerformanceCases() {
+		return performanceCases;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetPerformanceCases(GlobalPerformanceCasesType newPerformanceCases,
+			NotificationChain msgs) {
+		GlobalPerformanceCasesType oldPerformanceCases = performanceCases;
+		performanceCases = newPerformanceCases;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.VEHICLES_TYPE__PERFORMANCE_CASES, oldPerformanceCases, newPerformanceCases);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPerformanceCases(GlobalPerformanceCasesType newPerformanceCases) {
+		if (newPerformanceCases != performanceCases) {
+			NotificationChain msgs = null;
+			if (performanceCases != null)
+				msgs = ((InternalEObject) performanceCases).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.VEHICLES_TYPE__PERFORMANCE_CASES, null, msgs);
+			if (newPerformanceCases != null)
+				msgs = ((InternalEObject) newPerformanceCases).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.VEHICLES_TYPE__PERFORMANCE_CASES, null, msgs);
+			msgs = basicSetPerformanceCases(newPerformanceCases, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.VEHICLES_TYPE__PERFORMANCE_CASES,
+					newPerformanceCases, newPerformanceCases));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FlightPointsType getFlightPoints() {
+		return flightPoints;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetFlightPoints(FlightPointsType newFlightPoints, NotificationChain msgs) {
+		FlightPointsType oldFlightPoints = flightPoints;
+		flightPoints = newFlightPoints;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.VEHICLES_TYPE__FLIGHT_POINTS, oldFlightPoints, newFlightPoints);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFlightPoints(FlightPointsType newFlightPoints) {
+		if (newFlightPoints != flightPoints) {
+			NotificationChain msgs = null;
+			if (flightPoints != null)
+				msgs = ((InternalEObject) flightPoints).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.VEHICLES_TYPE__FLIGHT_POINTS, null, msgs);
+			if (newFlightPoints != null)
+				msgs = ((InternalEObject) newFlightPoints).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.VEHICLES_TYPE__FLIGHT_POINTS, null, msgs);
+			msgs = basicSetFlightPoints(newFlightPoints, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.VEHICLES_TYPE__FLIGHT_POINTS,
+					newFlightPoints, newFlightPoints));
 	}
 
 	/**
@@ -396,6 +537,58 @@ public class VehiclesTypeImpl extends ComplexBaseTypeImpl implements VehiclesTyp
 	 * @generated
 	 */
 	@Override
+	public DeckElementsType getDeckElements() {
+		return deckElements;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetDeckElements(DeckElementsType newDeckElements, NotificationChain msgs) {
+		DeckElementsType oldDeckElements = deckElements;
+		deckElements = newDeckElements;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.VEHICLES_TYPE__DECK_ELEMENTS, oldDeckElements, newDeckElements);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDeckElements(DeckElementsType newDeckElements) {
+		if (newDeckElements != deckElements) {
+			NotificationChain msgs = null;
+			if (deckElements != null)
+				msgs = ((InternalEObject) deckElements).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.VEHICLES_TYPE__DECK_ELEMENTS, null, msgs);
+			if (newDeckElements != null)
+				msgs = ((InternalEObject) newDeckElements).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.VEHICLES_TYPE__DECK_ELEMENTS, null, msgs);
+			msgs = basicSetDeckElements(newDeckElements, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.VEHICLES_TYPE__DECK_ELEMENTS,
+					newDeckElements, newDeckElements));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public MaterialsType getMaterials() {
 		return materials;
 	}
@@ -506,12 +699,18 @@ public class VehiclesTypeImpl extends ComplexBaseTypeImpl implements VehiclesTyp
 			return basicSetAircraft(null, msgs);
 		case CpacsPackage.VEHICLES_TYPE__ROTORCRAFT:
 			return basicSetRotorcraft(null, msgs);
+		case CpacsPackage.VEHICLES_TYPE__PERFORMANCE_CASES:
+			return basicSetPerformanceCases(null, msgs);
+		case CpacsPackage.VEHICLES_TYPE__FLIGHT_POINTS:
+			return basicSetFlightPoints(null, msgs);
 		case CpacsPackage.VEHICLES_TYPE__ENGINES:
 			return basicSetEngines(null, msgs);
 		case CpacsPackage.VEHICLES_TYPE__PROFILES:
 			return basicSetProfiles(null, msgs);
 		case CpacsPackage.VEHICLES_TYPE__STRUCTURAL_ELEMENTS:
 			return basicSetStructuralElements(null, msgs);
+		case CpacsPackage.VEHICLES_TYPE__DECK_ELEMENTS:
+			return basicSetDeckElements(null, msgs);
 		case CpacsPackage.VEHICLES_TYPE__MATERIALS:
 			return basicSetMaterials(null, msgs);
 		case CpacsPackage.VEHICLES_TYPE__FUELS:
@@ -532,12 +731,18 @@ public class VehiclesTypeImpl extends ComplexBaseTypeImpl implements VehiclesTyp
 			return getAircraft();
 		case CpacsPackage.VEHICLES_TYPE__ROTORCRAFT:
 			return getRotorcraft();
+		case CpacsPackage.VEHICLES_TYPE__PERFORMANCE_CASES:
+			return getPerformanceCases();
+		case CpacsPackage.VEHICLES_TYPE__FLIGHT_POINTS:
+			return getFlightPoints();
 		case CpacsPackage.VEHICLES_TYPE__ENGINES:
 			return getEngines();
 		case CpacsPackage.VEHICLES_TYPE__PROFILES:
 			return getProfiles();
 		case CpacsPackage.VEHICLES_TYPE__STRUCTURAL_ELEMENTS:
 			return getStructuralElements();
+		case CpacsPackage.VEHICLES_TYPE__DECK_ELEMENTS:
+			return getDeckElements();
 		case CpacsPackage.VEHICLES_TYPE__MATERIALS:
 			return getMaterials();
 		case CpacsPackage.VEHICLES_TYPE__FUELS:
@@ -560,6 +765,12 @@ public class VehiclesTypeImpl extends ComplexBaseTypeImpl implements VehiclesTyp
 		case CpacsPackage.VEHICLES_TYPE__ROTORCRAFT:
 			setRotorcraft((RotorcraftType) newValue);
 			return;
+		case CpacsPackage.VEHICLES_TYPE__PERFORMANCE_CASES:
+			setPerformanceCases((GlobalPerformanceCasesType) newValue);
+			return;
+		case CpacsPackage.VEHICLES_TYPE__FLIGHT_POINTS:
+			setFlightPoints((FlightPointsType) newValue);
+			return;
 		case CpacsPackage.VEHICLES_TYPE__ENGINES:
 			setEngines((EnginesType) newValue);
 			return;
@@ -568,6 +779,9 @@ public class VehiclesTypeImpl extends ComplexBaseTypeImpl implements VehiclesTyp
 			return;
 		case CpacsPackage.VEHICLES_TYPE__STRUCTURAL_ELEMENTS:
 			setStructuralElements((StructuralElementsType) newValue);
+			return;
+		case CpacsPackage.VEHICLES_TYPE__DECK_ELEMENTS:
+			setDeckElements((DeckElementsType) newValue);
 			return;
 		case CpacsPackage.VEHICLES_TYPE__MATERIALS:
 			setMaterials((MaterialsType) newValue);
@@ -593,6 +807,12 @@ public class VehiclesTypeImpl extends ComplexBaseTypeImpl implements VehiclesTyp
 		case CpacsPackage.VEHICLES_TYPE__ROTORCRAFT:
 			setRotorcraft((RotorcraftType) null);
 			return;
+		case CpacsPackage.VEHICLES_TYPE__PERFORMANCE_CASES:
+			setPerformanceCases((GlobalPerformanceCasesType) null);
+			return;
+		case CpacsPackage.VEHICLES_TYPE__FLIGHT_POINTS:
+			setFlightPoints((FlightPointsType) null);
+			return;
 		case CpacsPackage.VEHICLES_TYPE__ENGINES:
 			setEngines((EnginesType) null);
 			return;
@@ -601,6 +821,9 @@ public class VehiclesTypeImpl extends ComplexBaseTypeImpl implements VehiclesTyp
 			return;
 		case CpacsPackage.VEHICLES_TYPE__STRUCTURAL_ELEMENTS:
 			setStructuralElements((StructuralElementsType) null);
+			return;
+		case CpacsPackage.VEHICLES_TYPE__DECK_ELEMENTS:
+			setDeckElements((DeckElementsType) null);
 			return;
 		case CpacsPackage.VEHICLES_TYPE__MATERIALS:
 			setMaterials((MaterialsType) null);
@@ -624,12 +847,18 @@ public class VehiclesTypeImpl extends ComplexBaseTypeImpl implements VehiclesTyp
 			return aircraft != null;
 		case CpacsPackage.VEHICLES_TYPE__ROTORCRAFT:
 			return rotorcraft != null;
+		case CpacsPackage.VEHICLES_TYPE__PERFORMANCE_CASES:
+			return performanceCases != null;
+		case CpacsPackage.VEHICLES_TYPE__FLIGHT_POINTS:
+			return flightPoints != null;
 		case CpacsPackage.VEHICLES_TYPE__ENGINES:
 			return engines != null;
 		case CpacsPackage.VEHICLES_TYPE__PROFILES:
 			return profiles != null;
 		case CpacsPackage.VEHICLES_TYPE__STRUCTURAL_ELEMENTS:
 			return structuralElements != null;
+		case CpacsPackage.VEHICLES_TYPE__DECK_ELEMENTS:
+			return deckElements != null;
 		case CpacsPackage.VEHICLES_TYPE__MATERIALS:
 			return materials != null;
 		case CpacsPackage.VEHICLES_TYPE__FUELS:

@@ -3,7 +3,7 @@
 package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
-import Cpacs.MainGearType;
+import Cpacs.LandingGearBaseType;
 import Cpacs.MainGearsType;
 
 import java.util.Collection;
@@ -40,7 +40,7 @@ public class MainGearsTypeImpl extends ComplexBaseTypeImpl implements MainGearsT
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<MainGearType> mainGear;
+	protected EList<LandingGearBaseType> mainGear;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,9 +67,9 @@ public class MainGearsTypeImpl extends ComplexBaseTypeImpl implements MainGearsT
 	 * @generated
 	 */
 	@Override
-	public EList<MainGearType> getMainGear() {
+	public EList<LandingGearBaseType> getMainGear() {
 		if (mainGear == null) {
-			mainGear = new EObjectContainmentEList<MainGearType>(MainGearType.class, this,
+			mainGear = new EObjectContainmentEList<LandingGearBaseType>(LandingGearBaseType.class, this,
 					CpacsPackage.MAIN_GEARS_TYPE__MAIN_GEAR);
 		}
 		return mainGear;
@@ -114,7 +114,7 @@ public class MainGearsTypeImpl extends ComplexBaseTypeImpl implements MainGearsT
 		switch (featureID) {
 		case CpacsPackage.MAIN_GEARS_TYPE__MAIN_GEAR:
 			getMainGear().clear();
-			getMainGear().addAll((Collection<? extends MainGearType>) newValue);
+			getMainGear().addAll((Collection<? extends LandingGearBaseType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

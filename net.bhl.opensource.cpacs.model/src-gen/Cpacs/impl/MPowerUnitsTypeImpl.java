@@ -10,6 +10,7 @@ import Cpacs.MEquippedEnginesType;
 import Cpacs.MFuelSystemType;
 import Cpacs.MInterGasSystemType;
 import Cpacs.MPowerUnitsType;
+import Cpacs.SingleGenericMassType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -33,6 +34,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.MPowerUnitsTypeImpl#getMEngineControl <em>MEngine Control</em>}</li>
  *   <li>{@link Cpacs.impl.MPowerUnitsTypeImpl#getMFuelSystem <em>MFuel System</em>}</li>
  *   <li>{@link Cpacs.impl.MPowerUnitsTypeImpl#getMInterGasSystem <em>MInter Gas System</em>}</li>
+ *   <li>{@link Cpacs.impl.MPowerUnitsTypeImpl#getMMiscellaneous <em>MMiscellaneous</em>}</li>
  * </ul>
  *
  * @generated
@@ -97,6 +99,16 @@ public class MPowerUnitsTypeImpl extends ComplexBaseTypeImpl implements MPowerUn
 	 * @ordered
 	 */
 	protected MInterGasSystemType mInterGasSystem;
+
+	/**
+	 * The cached value of the '{@link #getMMiscellaneous() <em>MMiscellaneous</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMMiscellaneous()
+	 * @generated
+	 * @ordered
+	 */
+	protected SingleGenericMassType mMiscellaneous;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -435,6 +447,58 @@ public class MPowerUnitsTypeImpl extends ComplexBaseTypeImpl implements MPowerUn
 	 * @generated
 	 */
 	@Override
+	public SingleGenericMassType getMMiscellaneous() {
+		return mMiscellaneous;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetMMiscellaneous(SingleGenericMassType newMMiscellaneous, NotificationChain msgs) {
+		SingleGenericMassType oldMMiscellaneous = mMiscellaneous;
+		mMiscellaneous = newMMiscellaneous;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MPOWER_UNITS_TYPE__MMISCELLANEOUS, oldMMiscellaneous, newMMiscellaneous);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMMiscellaneous(SingleGenericMassType newMMiscellaneous) {
+		if (newMMiscellaneous != mMiscellaneous) {
+			NotificationChain msgs = null;
+			if (mMiscellaneous != null)
+				msgs = ((InternalEObject) mMiscellaneous).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MPOWER_UNITS_TYPE__MMISCELLANEOUS, null, msgs);
+			if (newMMiscellaneous != null)
+				msgs = ((InternalEObject) newMMiscellaneous).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MPOWER_UNITS_TYPE__MMISCELLANEOUS, null, msgs);
+			msgs = basicSetMMiscellaneous(newMMiscellaneous, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MPOWER_UNITS_TYPE__MMISCELLANEOUS,
+					newMMiscellaneous, newMMiscellaneous));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case CpacsPackage.MPOWER_UNITS_TYPE__MASS_DESCRIPTION:
@@ -449,6 +513,8 @@ public class MPowerUnitsTypeImpl extends ComplexBaseTypeImpl implements MPowerUn
 			return basicSetMFuelSystem(null, msgs);
 		case CpacsPackage.MPOWER_UNITS_TYPE__MINTER_GAS_SYSTEM:
 			return basicSetMInterGasSystem(null, msgs);
+		case CpacsPackage.MPOWER_UNITS_TYPE__MMISCELLANEOUS:
+			return basicSetMMiscellaneous(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -473,6 +539,8 @@ public class MPowerUnitsTypeImpl extends ComplexBaseTypeImpl implements MPowerUn
 			return getMFuelSystem();
 		case CpacsPackage.MPOWER_UNITS_TYPE__MINTER_GAS_SYSTEM:
 			return getMInterGasSystem();
+		case CpacsPackage.MPOWER_UNITS_TYPE__MMISCELLANEOUS:
+			return getMMiscellaneous();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -502,6 +570,9 @@ public class MPowerUnitsTypeImpl extends ComplexBaseTypeImpl implements MPowerUn
 			return;
 		case CpacsPackage.MPOWER_UNITS_TYPE__MINTER_GAS_SYSTEM:
 			setMInterGasSystem((MInterGasSystemType) newValue);
+			return;
+		case CpacsPackage.MPOWER_UNITS_TYPE__MMISCELLANEOUS:
+			setMMiscellaneous((SingleGenericMassType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -533,6 +604,9 @@ public class MPowerUnitsTypeImpl extends ComplexBaseTypeImpl implements MPowerUn
 		case CpacsPackage.MPOWER_UNITS_TYPE__MINTER_GAS_SYSTEM:
 			setMInterGasSystem((MInterGasSystemType) null);
 			return;
+		case CpacsPackage.MPOWER_UNITS_TYPE__MMISCELLANEOUS:
+			setMMiscellaneous((SingleGenericMassType) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -557,6 +631,8 @@ public class MPowerUnitsTypeImpl extends ComplexBaseTypeImpl implements MPowerUn
 			return mFuelSystem != null;
 		case CpacsPackage.MPOWER_UNITS_TYPE__MINTER_GAS_SYSTEM:
 			return mInterGasSystem != null;
+		case CpacsPackage.MPOWER_UNITS_TYPE__MMISCELLANEOUS:
+			return mMiscellaneous != null;
 		}
 		return super.eIsSet(featureID);
 	}

@@ -187,7 +187,7 @@ public interface CrashLoadcaseType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Initial rotational velocities aroud axes
+	 * Initial rotational velocities around axes
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Crash Initial Rotational Velocity</em>' containment reference.

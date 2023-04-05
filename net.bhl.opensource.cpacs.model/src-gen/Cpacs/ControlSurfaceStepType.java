@@ -114,7 +114,7 @@ public interface ControlSurfaceStepType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Positve rotation around the hinge line,
+	 * Positive rotation around the hinge line,
 	 *                                 heading from the inner to the outer border. Defaults to zero.
 	 *                             
 	 * <!-- end-model-doc -->

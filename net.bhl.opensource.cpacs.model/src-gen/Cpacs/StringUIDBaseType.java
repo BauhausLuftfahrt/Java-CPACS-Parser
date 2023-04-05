@@ -51,6 +51,17 @@ public interface StringUIDBaseType extends EObject {
 	 * The default value is <code>"True"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * 
+	 *                               
+	 *   <ddue:legacyBold xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">DEPRECATED</ddue:legacyBold>
+	 *   : The 
+	 *   <ddue:codeInline xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">isLink</ddue:codeInline>
+	 *    attribute is set to optional to ensure the compatibility of older data records. However, since the linking character is explicitly defined by the 
+	 *   <ddue:legacyBold xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">stringUIDBaseType</ddue:legacyBold>
+	 *   , the attribute is superfluous and will therefore be completely omitted in future versions.
+	 * 
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Is Link</em>' attribute.
 	 * @see #isSetIsLink()
 	 * @see #unsetIsLink()
@@ -99,33 +110,33 @@ public interface StringUIDBaseType extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Symmetry</b></em>' attribute.
-	 * The literals are from the enumeration {@link Cpacs.SymmetryType14}.
+	 * The literals are from the enumeration {@link Cpacs.SymmetryType1}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Symmetry</em>' attribute.
-	 * @see Cpacs.SymmetryType14
+	 * @see Cpacs.SymmetryType1
 	 * @see #isSetSymmetry()
 	 * @see #unsetSymmetry()
-	 * @see #setSymmetry(SymmetryType14)
+	 * @see #setSymmetry(SymmetryType1)
 	 * @see Cpacs.CpacsPackage#getStringUIDBaseType_Symmetry()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='attribute' name='symmetry' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	SymmetryType14 getSymmetry();
+	SymmetryType1 getSymmetry();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.StringUIDBaseType#getSymmetry <em>Symmetry</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Symmetry</em>' attribute.
-	 * @see Cpacs.SymmetryType14
+	 * @see Cpacs.SymmetryType1
 	 * @see #isSetSymmetry()
 	 * @see #unsetSymmetry()
 	 * @see #getSymmetry()
 	 * @generated
 	 */
-	void setSymmetry(SymmetryType14 value);
+	void setSymmetry(SymmetryType1 value);
 
 	/**
 	 * Unsets the value of the '{@link Cpacs.StringUIDBaseType#getSymmetry <em>Symmetry</em>}' attribute.
@@ -133,7 +144,7 @@ public interface StringUIDBaseType extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetSymmetry()
 	 * @see #getSymmetry()
-	 * @see #setSymmetry(SymmetryType14)
+	 * @see #setSymmetry(SymmetryType1)
 	 * @generated
 	 */
 	void unsetSymmetry();
@@ -145,7 +156,7 @@ public interface StringUIDBaseType extends EObject {
 	 * @return whether the value of the '<em>Symmetry</em>' attribute is set.
 	 * @see #unsetSymmetry()
 	 * @see #getSymmetry()
-	 * @see #setSymmetry(SymmetryType14)
+	 * @see #setSymmetry(SymmetryType1)
 	 * @generated
 	 */
 	boolean isSetSymmetry();

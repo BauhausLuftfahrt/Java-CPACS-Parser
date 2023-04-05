@@ -144,7 +144,7 @@ public interface WingStringerType extends ComplexBaseType {
 	 * If the reference of the stringer angle shall
 	 *                                         be different from the default implementation then this
 	 *                                         parameter may be set. Allowed values include: leadingEdge,
-	 *                                         trailingEdge and globalY. Furthremore, it is possible to
+	 *                                         trailingEdge and globalY. Furthermore, it is possible to
 	 *                                         provide the UID of a spar.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Angle Reference</em>' containment reference.
@@ -233,7 +233,7 @@ public interface WingStringerType extends ComplexBaseType {
 	 * If the reference of the stringer angle shall
 	 *                                         be different from the default implementation then this
 	 *                                         parameter may be set. Allowed values include: leadingEdge,
-	 *                                         trailingEdge and globalY. Furthremore, it is possible to
+	 *                                         trailingEdge and globalY. Furthermore, it is possible to
 	 *                                         provide the UID of a spar.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Angle Reference1</em>' containment reference.

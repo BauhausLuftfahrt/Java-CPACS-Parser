@@ -23,7 +23,7 @@ import org.eclipse.emf.common.util.EList;
 public interface FlightLoadCasesType extends ComplexBaseType {
 	/**
 	 * Returns the value of the '<em><b>Flight Load Case</b></em>' containment reference list.
-	 * The list contents are of type {@link Cpacs.FlightLoadCaseType}.
+	 * The list contents are of type {@link Cpacs.LoadCaseType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Flight Load Case</em>' containment reference list.
@@ -32,6 +32,6 @@ public interface FlightLoadCasesType extends ComplexBaseType {
 	 *        extendedMetaData="kind='element' name='flightLoadCase' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<FlightLoadCaseType> getFlightLoadCase();
+	EList<LoadCaseType> getFlightLoadCase();
 
 } // FlightLoadCasesType

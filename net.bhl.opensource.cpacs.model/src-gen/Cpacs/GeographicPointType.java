@@ -107,7 +107,7 @@ public interface GeographicPointType extends ComplexBaseType {
 	 * @return the value of the '<em>UID</em>' attribute.
 	 * @see #setUID(String)
 	 * @see Cpacs.CpacsPackage#getGeographicPointType_UID()
-	 * @model id="true" dataType="org.eclipse.emf.ecore.xml.type.ID" required="true"
+	 * @model id="true" dataType="org.eclipse.emf.ecore.xml.type.ID"
 	 *        extendedMetaData="kind='attribute' name='uID' namespace='##targetNamespace'"
 	 * @generated
 	 */

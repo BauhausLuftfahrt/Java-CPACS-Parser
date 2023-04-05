@@ -7,7 +7,6 @@ import Cpacs.MissionDefinitionsType;
 import Cpacs.MissionSegmentBlocksType;
 import Cpacs.MissionSegmentsType;
 import Cpacs.MissionsType;
-import Cpacs.PointPerformancesType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -25,25 +24,14 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.MissionDefinitionsTypeImpl#getSegments <em>Segments</em>}</li>
  *   <li>{@link Cpacs.impl.MissionDefinitionsTypeImpl#getMissions <em>Missions</em>}</li>
- *   <li>{@link Cpacs.impl.MissionDefinitionsTypeImpl#getPointPerformances <em>Point Performances</em>}</li>
  *   <li>{@link Cpacs.impl.MissionDefinitionsTypeImpl#getSegmentBlocks <em>Segment Blocks</em>}</li>
+ *   <li>{@link Cpacs.impl.MissionDefinitionsTypeImpl#getSegments <em>Segments</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class MissionDefinitionsTypeImpl extends ComplexBaseTypeImpl implements MissionDefinitionsType {
-	/**
-	 * The cached value of the '{@link #getSegments() <em>Segments</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSegments()
-	 * @generated
-	 * @ordered
-	 */
-	protected MissionSegmentsType segments;
-
 	/**
 	 * The cached value of the '{@link #getMissions() <em>Missions</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -55,16 +43,6 @@ public class MissionDefinitionsTypeImpl extends ComplexBaseTypeImpl implements M
 	protected MissionsType missions;
 
 	/**
-	 * The cached value of the '{@link #getPointPerformances() <em>Point Performances</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPointPerformances()
-	 * @generated
-	 * @ordered
-	 */
-	protected PointPerformancesType pointPerformances;
-
-	/**
 	 * The cached value of the '{@link #getSegmentBlocks() <em>Segment Blocks</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -73,6 +51,16 @@ public class MissionDefinitionsTypeImpl extends ComplexBaseTypeImpl implements M
 	 * @ordered
 	 */
 	protected MissionSegmentBlocksType segmentBlocks;
+
+	/**
+	 * The cached value of the '{@link #getSegments() <em>Segments</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSegments()
+	 * @generated
+	 * @ordered
+	 */
+	protected MissionSegmentsType segments;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,58 +79,6 @@ public class MissionDefinitionsTypeImpl extends ComplexBaseTypeImpl implements M
 	@Override
 	protected EClass eStaticClass() {
 		return CpacsPackage.eINSTANCE.getMissionDefinitionsType();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public MissionSegmentsType getSegments() {
-		return segments;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetSegments(MissionSegmentsType newSegments, NotificationChain msgs) {
-		MissionSegmentsType oldSegments = segments;
-		segments = newSegments;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS, oldSegments, newSegments);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSegments(MissionSegmentsType newSegments) {
-		if (newSegments != segments) {
-			NotificationChain msgs = null;
-			if (segments != null)
-				msgs = ((InternalEObject) segments).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS, null, msgs);
-			if (newSegments != null)
-				msgs = ((InternalEObject) newSegments).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS, null, msgs);
-			msgs = basicSetSegments(newSegments, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS,
-					newSegments, newSegments));
 	}
 
 	/**
@@ -203,61 +139,6 @@ public class MissionDefinitionsTypeImpl extends ComplexBaseTypeImpl implements M
 	 * @generated
 	 */
 	@Override
-	public PointPerformancesType getPointPerformances() {
-		return pointPerformances;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetPointPerformances(PointPerformancesType newPointPerformances,
-			NotificationChain msgs) {
-		PointPerformancesType oldPointPerformances = pointPerformances;
-		pointPerformances = newPointPerformances;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.MISSION_DEFINITIONS_TYPE__POINT_PERFORMANCES, oldPointPerformances,
-					newPointPerformances);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPointPerformances(PointPerformancesType newPointPerformances) {
-		if (newPointPerformances != pointPerformances) {
-			NotificationChain msgs = null;
-			if (pointPerformances != null)
-				msgs = ((InternalEObject) pointPerformances).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_DEFINITIONS_TYPE__POINT_PERFORMANCES, null, msgs);
-			if (newPointPerformances != null)
-				msgs = ((InternalEObject) newPointPerformances).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_DEFINITIONS_TYPE__POINT_PERFORMANCES, null, msgs);
-			msgs = basicSetPointPerformances(newPointPerformances, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.MISSION_DEFINITIONS_TYPE__POINT_PERFORMANCES, newPointPerformances,
-					newPointPerformances));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public MissionSegmentBlocksType getSegmentBlocks() {
 		return segmentBlocks;
 	}
@@ -310,16 +191,66 @@ public class MissionDefinitionsTypeImpl extends ComplexBaseTypeImpl implements M
 	 * @generated
 	 */
 	@Override
+	public MissionSegmentsType getSegments() {
+		return segments;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetSegments(MissionSegmentsType newSegments, NotificationChain msgs) {
+		MissionSegmentsType oldSegments = segments;
+		segments = newSegments;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS, oldSegments, newSegments);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSegments(MissionSegmentsType newSegments) {
+		if (newSegments != segments) {
+			NotificationChain msgs = null;
+			if (segments != null)
+				msgs = ((InternalEObject) segments).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS, null, msgs);
+			if (newSegments != null)
+				msgs = ((InternalEObject) newSegments).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS, null, msgs);
+			msgs = basicSetSegments(newSegments, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS,
+					newSegments, newSegments));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS:
-			return basicSetSegments(null, msgs);
 		case CpacsPackage.MISSION_DEFINITIONS_TYPE__MISSIONS:
 			return basicSetMissions(null, msgs);
-		case CpacsPackage.MISSION_DEFINITIONS_TYPE__POINT_PERFORMANCES:
-			return basicSetPointPerformances(null, msgs);
 		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENT_BLOCKS:
 			return basicSetSegmentBlocks(null, msgs);
+		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS:
+			return basicSetSegments(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -332,14 +263,12 @@ public class MissionDefinitionsTypeImpl extends ComplexBaseTypeImpl implements M
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS:
-			return getSegments();
 		case CpacsPackage.MISSION_DEFINITIONS_TYPE__MISSIONS:
 			return getMissions();
-		case CpacsPackage.MISSION_DEFINITIONS_TYPE__POINT_PERFORMANCES:
-			return getPointPerformances();
 		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENT_BLOCKS:
 			return getSegmentBlocks();
+		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS:
+			return getSegments();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -352,17 +281,14 @@ public class MissionDefinitionsTypeImpl extends ComplexBaseTypeImpl implements M
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS:
-			setSegments((MissionSegmentsType) newValue);
-			return;
 		case CpacsPackage.MISSION_DEFINITIONS_TYPE__MISSIONS:
 			setMissions((MissionsType) newValue);
 			return;
-		case CpacsPackage.MISSION_DEFINITIONS_TYPE__POINT_PERFORMANCES:
-			setPointPerformances((PointPerformancesType) newValue);
-			return;
 		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENT_BLOCKS:
 			setSegmentBlocks((MissionSegmentBlocksType) newValue);
+			return;
+		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS:
+			setSegments((MissionSegmentsType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -376,17 +302,14 @@ public class MissionDefinitionsTypeImpl extends ComplexBaseTypeImpl implements M
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS:
-			setSegments((MissionSegmentsType) null);
-			return;
 		case CpacsPackage.MISSION_DEFINITIONS_TYPE__MISSIONS:
 			setMissions((MissionsType) null);
 			return;
-		case CpacsPackage.MISSION_DEFINITIONS_TYPE__POINT_PERFORMANCES:
-			setPointPerformances((PointPerformancesType) null);
-			return;
 		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENT_BLOCKS:
 			setSegmentBlocks((MissionSegmentBlocksType) null);
+			return;
+		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS:
+			setSegments((MissionSegmentsType) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -400,14 +323,12 @@ public class MissionDefinitionsTypeImpl extends ComplexBaseTypeImpl implements M
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS:
-			return segments != null;
 		case CpacsPackage.MISSION_DEFINITIONS_TYPE__MISSIONS:
 			return missions != null;
-		case CpacsPackage.MISSION_DEFINITIONS_TYPE__POINT_PERFORMANCES:
-			return pointPerformances != null;
 		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENT_BLOCKS:
 			return segmentBlocks != null;
+		case CpacsPackage.MISSION_DEFINITIONS_TYPE__SEGMENTS:
+			return segments != null;
 		}
 		return super.eIsSet(featureID);
 	}

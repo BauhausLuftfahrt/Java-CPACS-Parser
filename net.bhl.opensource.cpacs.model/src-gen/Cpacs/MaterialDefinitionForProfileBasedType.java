@@ -12,6 +12,8 @@ package Cpacs;
  * </p>
  * <ul>
  *   <li>{@link Cpacs.MaterialDefinitionForProfileBasedType#getSheetUID <em>Sheet UID</em>}</li>
+ *   <li>{@link Cpacs.MaterialDefinitionForProfileBasedType#getStandardProfileSheetID <em>Standard Profile Sheet ID</em>}</li>
+ *   <li>{@link Cpacs.MaterialDefinitionForProfileBasedType#getLength <em>Length</em>}</li>
  *   <li>{@link Cpacs.MaterialDefinitionForProfileBasedType#getCompositeUID <em>Composite UID</em>}</li>
  *   <li>{@link Cpacs.MaterialDefinitionForProfileBasedType#getOrthotropyDirection <em>Orthotropy Direction</em>}</li>
  *   <li>{@link Cpacs.MaterialDefinitionForProfileBasedType#getThicknessScaling <em>Thickness Scaling</em>}</li>
@@ -29,13 +31,13 @@ public interface MaterialDefinitionForProfileBasedType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * uID of the sheet to which the material
-	 *                                 properties shall be applied.
+	 * UID of the sheet to which the material
+	 *                                     properties shall be applied
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Sheet UID</em>' containment reference.
 	 * @see #setSheetUID(StringUIDBaseType)
 	 * @see Cpacs.CpacsPackage#getMaterialDefinitionForProfileBasedType_SheetUID()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='sheetUID' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -50,6 +52,58 @@ public interface MaterialDefinitionForProfileBasedType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setSheetUID(StringUIDBaseType value);
+
+	/**
+	 * Returns the value of the '<em><b>Standard Profile Sheet ID</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Predefined ID of the sheet of a standard profile
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Standard Profile Sheet ID</em>' containment reference.
+	 * @see #setStandardProfileSheetID(StandardProfileSheetIDType)
+	 * @see Cpacs.CpacsPackage#getMaterialDefinitionForProfileBasedType_StandardProfileSheetID()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='standardProfileSheetID' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	StandardProfileSheetIDType getStandardProfileSheetID();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MaterialDefinitionForProfileBasedType#getStandardProfileSheetID <em>Standard Profile Sheet ID</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Standard Profile Sheet ID</em>' containment reference.
+	 * @see #getStandardProfileSheetID()
+	 * @generated
+	 */
+	void setStandardProfileSheetID(StandardProfileSheetIDType value);
+
+	/**
+	 * Returns the value of the '<em><b>Length</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Length of the sheet of a standard profile [m]
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Length</em>' containment reference.
+	 * @see #setLength(DoubleBaseType)
+	 * @see Cpacs.CpacsPackage#getMaterialDefinitionForProfileBasedType_Length()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='length' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	DoubleBaseType getLength();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MaterialDefinitionForProfileBasedType#getLength <em>Length</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Length</em>' containment reference.
+	 * @see #getLength()
+	 * @generated
+	 */
+	void setLength(DoubleBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Composite UID</b></em>' containment reference.
@@ -164,7 +218,7 @@ public interface MaterialDefinitionForProfileBasedType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Absolute thickness of the material.
+	 * Absolute thickness of the material [m]
 	 *                                     
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Thickness</em>' containment reference.

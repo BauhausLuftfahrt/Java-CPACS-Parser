@@ -7,6 +7,8 @@ package net.bhl.opensource.cpacs.model.extensions.basetype;
 
 import Cpacs.CpacsFactory;
 import Cpacs.StringBaseType;
+import Cpacs.StringUIDBaseType;
+import Cpacs.SymmetryType1;
 
 /**
  * @author Marc.Engelmann
@@ -25,4 +27,14 @@ public interface StringExtensions {
 		return stringType;
 	}
 
+	/**
+	 * @param content
+	 * @return
+	 */
+	static StringUIDBaseType initUID(String content) {
+		StringUIDBaseType stringType = CpacsFactory.eINSTANCE.createStringUIDBaseType();
+		stringType.setValue(content);
+		stringType.setSymmetry(SymmetryType1.FULL);
+		return stringType;
+	}
 }

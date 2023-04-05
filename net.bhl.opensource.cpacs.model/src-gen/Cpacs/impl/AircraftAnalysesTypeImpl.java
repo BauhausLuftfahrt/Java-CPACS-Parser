@@ -4,13 +4,11 @@ package Cpacs.impl;
 
 import Cpacs.AeroPerformanceType;
 import Cpacs.AeroelasticsType;
+import Cpacs.AircraftAnalysesGlobalType;
 import Cpacs.AircraftAnalysesType;
 import Cpacs.CpacsPackage;
-import Cpacs.DynamicAircraftModelAnalysisType;
 import Cpacs.FlightDynamicsAnalysisType;
-import Cpacs.FlightPerformanceType;
 import Cpacs.FlightSystemsType;
-import Cpacs.FlyingQualitiesType;
 import Cpacs.LandingGearPositionSafetyMarginsType;
 import Cpacs.LoadAnalysisType;
 import Cpacs.MassBreakdownType;
@@ -35,12 +33,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link Cpacs.impl.AircraftAnalysesTypeImpl#getGlobal <em>Global</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftAnalysesTypeImpl#getAeroPerformance <em>Aero Performance</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftAnalysesTypeImpl#getAeroelastics <em>Aeroelastics</em>}</li>
- *   <li>{@link Cpacs.impl.AircraftAnalysesTypeImpl#getDynamicAircraftModel <em>Dynamic Aircraft Model</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftAnalysesTypeImpl#getFlightDynamics <em>Flight Dynamics</em>}</li>
- *   <li>{@link Cpacs.impl.AircraftAnalysesTypeImpl#getFlyingQualities <em>Flying Qualities</em>}</li>
- *   <li>{@link Cpacs.impl.AircraftAnalysesTypeImpl#getFlightPerformance <em>Flight Performance</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftAnalysesTypeImpl#getFlightSystems <em>Flight Systems</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftAnalysesTypeImpl#getLandingGearPositionSafetyMargins <em>Landing Gear Position Safety Margins</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftAnalysesTypeImpl#getLoadAnalysis <em>Load Analysis</em>}</li>
@@ -49,12 +45,21 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.AircraftAnalysesTypeImpl#getNoise <em>Noise</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftAnalysesTypeImpl#getTrajectories <em>Trajectories</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftAnalysesTypeImpl#getWeightAndBalance <em>Weight And Balance</em>}</li>
- *   <li>{@link Cpacs.impl.AircraftAnalysesTypeImpl#getPaxFlow <em>Pax Flow</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements AircraftAnalysesType {
+	/**
+	 * The cached value of the '{@link #getGlobal() <em>Global</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getGlobal()
+	 * @generated
+	 * @ordered
+	 */
+	protected AircraftAnalysesGlobalType global;
+
 	/**
 	 * The cached value of the '{@link #getAeroPerformance() <em>Aero Performance</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -76,16 +81,6 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 	protected AeroelasticsType aeroelastics;
 
 	/**
-	 * The cached value of the '{@link #getDynamicAircraftModel() <em>Dynamic Aircraft Model</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDynamicAircraftModel()
-	 * @generated
-	 * @ordered
-	 */
-	protected DynamicAircraftModelAnalysisType dynamicAircraftModel;
-
-	/**
 	 * The cached value of the '{@link #getFlightDynamics() <em>Flight Dynamics</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -94,26 +89,6 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 	 * @ordered
 	 */
 	protected FlightDynamicsAnalysisType flightDynamics;
-
-	/**
-	 * The cached value of the '{@link #getFlyingQualities() <em>Flying Qualities</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getFlyingQualities()
-	 * @generated
-	 * @ordered
-	 */
-	protected FlyingQualitiesType flyingQualities;
-
-	/**
-	 * The cached value of the '{@link #getFlightPerformance() <em>Flight Performance</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getFlightPerformance()
-	 * @generated
-	 * @ordered
-	 */
-	protected FlightPerformanceType flightPerformance;
 
 	/**
 	 * The cached value of the '{@link #getFlightSystems() <em>Flight Systems</em>}' containment reference.
@@ -196,26 +171,6 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 	protected WeightAndBalanceType weightAndBalance;
 
 	/**
-	 * The default value of the '{@link #getPaxFlow() <em>Pax Flow</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPaxFlow()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String PAX_FLOW_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getPaxFlow() <em>Pax Flow</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPaxFlow()
-	 * @generated
-	 * @ordered
-	 */
-	protected String paxFlow = PAX_FLOW_EDEFAULT;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -232,6 +187,58 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 	@Override
 	protected EClass eStaticClass() {
 		return CpacsPackage.eINSTANCE.getAircraftAnalysesType();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AircraftAnalysesGlobalType getGlobal() {
+		return global;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetGlobal(AircraftAnalysesGlobalType newGlobal, NotificationChain msgs) {
+		AircraftAnalysesGlobalType oldGlobal = global;
+		global = newGlobal;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.AIRCRAFT_ANALYSES_TYPE__GLOBAL, oldGlobal, newGlobal);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlobal(AircraftAnalysesGlobalType newGlobal) {
+		if (newGlobal != global) {
+			NotificationChain msgs = null;
+			if (global != null)
+				msgs = ((InternalEObject) global).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_ANALYSES_TYPE__GLOBAL, null, msgs);
+			if (newGlobal != null)
+				msgs = ((InternalEObject) newGlobal).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_ANALYSES_TYPE__GLOBAL, null, msgs);
+			msgs = basicSetGlobal(newGlobal, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AIRCRAFT_ANALYSES_TYPE__GLOBAL,
+					newGlobal, newGlobal));
 	}
 
 	/**
@@ -344,63 +351,6 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 	 * @generated
 	 */
 	@Override
-	public DynamicAircraftModelAnalysisType getDynamicAircraftModel() {
-		return dynamicAircraftModel;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetDynamicAircraftModel(DynamicAircraftModelAnalysisType newDynamicAircraftModel,
-			NotificationChain msgs) {
-		DynamicAircraftModelAnalysisType oldDynamicAircraftModel = dynamicAircraftModel;
-		dynamicAircraftModel = newDynamicAircraftModel;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.AIRCRAFT_ANALYSES_TYPE__DYNAMIC_AIRCRAFT_MODEL, oldDynamicAircraftModel,
-					newDynamicAircraftModel);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDynamicAircraftModel(DynamicAircraftModelAnalysisType newDynamicAircraftModel) {
-		if (newDynamicAircraftModel != dynamicAircraftModel) {
-			NotificationChain msgs = null;
-			if (dynamicAircraftModel != null)
-				msgs = ((InternalEObject) dynamicAircraftModel).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_ANALYSES_TYPE__DYNAMIC_AIRCRAFT_MODEL, null,
-						msgs);
-			if (newDynamicAircraftModel != null)
-				msgs = ((InternalEObject) newDynamicAircraftModel).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_ANALYSES_TYPE__DYNAMIC_AIRCRAFT_MODEL, null,
-						msgs);
-			msgs = basicSetDynamicAircraftModel(newDynamicAircraftModel, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.AIRCRAFT_ANALYSES_TYPE__DYNAMIC_AIRCRAFT_MODEL, newDynamicAircraftModel,
-					newDynamicAircraftModel));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public FlightDynamicsAnalysisType getFlightDynamics() {
 		return flightDynamics;
 	}
@@ -446,113 +396,6 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_DYNAMICS,
 					newFlightDynamics, newFlightDynamics));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FlyingQualitiesType getFlyingQualities() {
-		return flyingQualities;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetFlyingQualities(FlyingQualitiesType newFlyingQualities, NotificationChain msgs) {
-		FlyingQualitiesType oldFlyingQualities = flyingQualities;
-		flyingQualities = newFlyingQualities;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLYING_QUALITIES, oldFlyingQualities, newFlyingQualities);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFlyingQualities(FlyingQualitiesType newFlyingQualities) {
-		if (newFlyingQualities != flyingQualities) {
-			NotificationChain msgs = null;
-			if (flyingQualities != null)
-				msgs = ((InternalEObject) flyingQualities).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLYING_QUALITIES, null, msgs);
-			if (newFlyingQualities != null)
-				msgs = ((InternalEObject) newFlyingQualities).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLYING_QUALITIES, null, msgs);
-			msgs = basicSetFlyingQualities(newFlyingQualities, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLYING_QUALITIES,
-					newFlyingQualities, newFlyingQualities));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FlightPerformanceType getFlightPerformance() {
-		return flightPerformance;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetFlightPerformance(FlightPerformanceType newFlightPerformance,
-			NotificationChain msgs) {
-		FlightPerformanceType oldFlightPerformance = flightPerformance;
-		flightPerformance = newFlightPerformance;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_PERFORMANCE, oldFlightPerformance,
-					newFlightPerformance);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFlightPerformance(FlightPerformanceType newFlightPerformance) {
-		if (newFlightPerformance != flightPerformance) {
-			NotificationChain msgs = null;
-			if (flightPerformance != null)
-				msgs = ((InternalEObject) flightPerformance).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_PERFORMANCE, null, msgs);
-			if (newFlightPerformance != null)
-				msgs = ((InternalEObject) newFlightPerformance).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_PERFORMANCE, null, msgs);
-			msgs = basicSetFlightPerformance(newFlightPerformance, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_PERFORMANCE, newFlightPerformance,
-					newFlightPerformance));
 	}
 
 	/**
@@ -987,44 +830,16 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 	 * @generated
 	 */
 	@Override
-	public String getPaxFlow() {
-		return paxFlow;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaxFlow(String newPaxFlow) {
-		String oldPaxFlow = paxFlow;
-		paxFlow = newPaxFlow;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AIRCRAFT_ANALYSES_TYPE__PAX_FLOW,
-					oldPaxFlow, paxFlow));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__GLOBAL:
+			return basicSetGlobal(null, msgs);
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__AERO_PERFORMANCE:
 			return basicSetAeroPerformance(null, msgs);
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__AEROELASTICS:
 			return basicSetAeroelastics(null, msgs);
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			return basicSetDynamicAircraftModel(null, msgs);
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_DYNAMICS:
 			return basicSetFlightDynamics(null, msgs);
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLYING_QUALITIES:
-			return basicSetFlyingQualities(null, msgs);
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_PERFORMANCE:
-			return basicSetFlightPerformance(null, msgs);
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_SYSTEMS:
 			return basicSetFlightSystems(null, msgs);
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__LANDING_GEAR_POSITION_SAFETY_MARGINS:
@@ -1053,18 +868,14 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__GLOBAL:
+			return getGlobal();
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__AERO_PERFORMANCE:
 			return getAeroPerformance();
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__AEROELASTICS:
 			return getAeroelastics();
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			return getDynamicAircraftModel();
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_DYNAMICS:
 			return getFlightDynamics();
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLYING_QUALITIES:
-			return getFlyingQualities();
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_PERFORMANCE:
-			return getFlightPerformance();
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_SYSTEMS:
 			return getFlightSystems();
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__LANDING_GEAR_POSITION_SAFETY_MARGINS:
@@ -1081,8 +892,6 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 			return getTrajectories();
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__WEIGHT_AND_BALANCE:
 			return getWeightAndBalance();
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__PAX_FLOW:
-			return getPaxFlow();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -1095,23 +904,17 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__GLOBAL:
+			setGlobal((AircraftAnalysesGlobalType) newValue);
+			return;
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__AERO_PERFORMANCE:
 			setAeroPerformance((AeroPerformanceType) newValue);
 			return;
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__AEROELASTICS:
 			setAeroelastics((AeroelasticsType) newValue);
 			return;
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			setDynamicAircraftModel((DynamicAircraftModelAnalysisType) newValue);
-			return;
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_DYNAMICS:
 			setFlightDynamics((FlightDynamicsAnalysisType) newValue);
-			return;
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLYING_QUALITIES:
-			setFlyingQualities((FlyingQualitiesType) newValue);
-			return;
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_PERFORMANCE:
-			setFlightPerformance((FlightPerformanceType) newValue);
 			return;
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_SYSTEMS:
 			setFlightSystems((FlightSystemsType) newValue);
@@ -1137,9 +940,6 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__WEIGHT_AND_BALANCE:
 			setWeightAndBalance((WeightAndBalanceType) newValue);
 			return;
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__PAX_FLOW:
-			setPaxFlow((String) newValue);
-			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -1152,23 +952,17 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__GLOBAL:
+			setGlobal((AircraftAnalysesGlobalType) null);
+			return;
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__AERO_PERFORMANCE:
 			setAeroPerformance((AeroPerformanceType) null);
 			return;
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__AEROELASTICS:
 			setAeroelastics((AeroelasticsType) null);
 			return;
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			setDynamicAircraftModel((DynamicAircraftModelAnalysisType) null);
-			return;
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_DYNAMICS:
 			setFlightDynamics((FlightDynamicsAnalysisType) null);
-			return;
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLYING_QUALITIES:
-			setFlyingQualities((FlyingQualitiesType) null);
-			return;
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_PERFORMANCE:
-			setFlightPerformance((FlightPerformanceType) null);
 			return;
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_SYSTEMS:
 			setFlightSystems((FlightSystemsType) null);
@@ -1194,9 +988,6 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__WEIGHT_AND_BALANCE:
 			setWeightAndBalance((WeightAndBalanceType) null);
 			return;
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__PAX_FLOW:
-			setPaxFlow(PAX_FLOW_EDEFAULT);
-			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -1209,18 +1000,14 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__GLOBAL:
+			return global != null;
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__AERO_PERFORMANCE:
 			return aeroPerformance != null;
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__AEROELASTICS:
 			return aeroelastics != null;
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			return dynamicAircraftModel != null;
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_DYNAMICS:
 			return flightDynamics != null;
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLYING_QUALITIES:
-			return flyingQualities != null;
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_PERFORMANCE:
-			return flightPerformance != null;
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__FLIGHT_SYSTEMS:
 			return flightSystems != null;
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__LANDING_GEAR_POSITION_SAFETY_MARGINS:
@@ -1237,27 +1024,8 @@ public class AircraftAnalysesTypeImpl extends ComplexBaseTypeImpl implements Air
 			return trajectories != null;
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__WEIGHT_AND_BALANCE:
 			return weightAndBalance != null;
-		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE__PAX_FLOW:
-			return PAX_FLOW_EDEFAULT == null ? paxFlow != null : !PAX_FLOW_EDEFAULT.equals(paxFlow);
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy())
-			return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (paxFlow: ");
-		result.append(paxFlow);
-		result.append(')');
-		return result.toString();
 	}
 
 } //AircraftAnalysesTypeImpl

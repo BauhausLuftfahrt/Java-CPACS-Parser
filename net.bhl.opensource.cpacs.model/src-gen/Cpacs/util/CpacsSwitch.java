@@ -120,38 +120,72 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.ADDITIONAL_PARAMETERS_TYPE: {
-			AdditionalParametersType additionalParametersType = (AdditionalParametersType) theEObject;
-			T result = caseAdditionalParametersType(additionalParametersType);
+		case CpacsPackage.AERO_CASE_AERO_DATA_TYPE: {
+			AeroCaseAeroDataType aeroCaseAeroDataType = (AeroCaseAeroDataType) theEObject;
+			T result = caseAeroCaseAeroDataType(aeroCaseAeroDataType);
 			if (result == null)
-				result = caseComplexBaseType(additionalParametersType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.ADDITIONAL_PARAMETER_TYPE: {
-			AdditionalParameterType additionalParameterType = (AdditionalParameterType) theEObject;
-			T result = caseAdditionalParameterType(additionalParameterType);
-			if (result == null)
-				result = caseComplexBaseType(additionalParameterType);
+				result = caseComplexBaseType(aeroCaseAeroDataType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.AERO_DATA_SET_FOR_LOADS_TYPE: {
-			AeroDataSetForLoadsType aeroDataSetForLoadsType = (AeroDataSetForLoadsType) theEObject;
-			T result = caseAeroDataSetForLoadsType(aeroDataSetForLoadsType);
+		case CpacsPackage.AERO_CASE_COEFFICIENTS_TYPE: {
+			AeroCaseCoefficientsType aeroCaseCoefficientsType = (AeroCaseCoefficientsType) theEObject;
+			T result = caseAeroCaseCoefficientsType(aeroCaseCoefficientsType);
 			if (result == null)
-				result = caseComplexBaseType(aeroDataSetForLoadsType);
+				result = caseComplexBaseType(aeroCaseCoefficientsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.AERO_DATA_SETS_FOR_LOADS_TYPE: {
-			AeroDataSetsForLoadsType aeroDataSetsForLoadsType = (AeroDataSetsForLoadsType) theEObject;
-			T result = caseAeroDataSetsForLoadsType(aeroDataSetsForLoadsType);
+		case CpacsPackage.AERO_CASE_SPECIFICATION_TYPE: {
+			AeroCaseSpecificationType aeroCaseSpecificationType = (AeroCaseSpecificationType) theEObject;
+			T result = caseAeroCaseSpecificationType(aeroCaseSpecificationType);
 			if (result == null)
-				result = caseComplexBaseType(aeroDataSetsForLoadsType);
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.AERO_CASES_TYPE: {
+			AeroCasesType aeroCasesType = (AeroCasesType) theEObject;
+			T result = caseAeroCasesType(aeroCasesType);
+			if (result == null)
+				result = caseComplexBaseType(aeroCasesType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.AERO_CASE_TYPE: {
+			AeroCaseType aeroCaseType = (AeroCaseType) theEObject;
+			T result = caseAeroCaseType(aeroCaseType);
+			if (result == null)
+				result = caseComplexBaseType(aeroCaseType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.AERO_DATA_COMPONENTS_TYPE: {
+			AeroDataComponentsType aeroDataComponentsType = (AeroDataComponentsType) theEObject;
+			T result = caseAeroDataComponentsType(aeroDataComponentsType);
+			if (result == null)
+				result = caseComplexBaseType(aeroDataComponentsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.AERO_DATA_COMPONENT_TYPE: {
+			AeroDataComponentType aeroDataComponentType = (AeroDataComponentType) theEObject;
+			T result = caseAeroDataComponentType(aeroDataComponentType);
+			if (result == null)
+				result = caseComplexBaseType(aeroDataComponentType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.AERO_DATA_VEHICLE_TYPE: {
+			AeroDataVehicleType aeroDataVehicleType = (AeroDataVehicleType) theEObject;
+			T result = caseAeroDataVehicleType(aeroDataVehicleType);
+			if (result == null)
+				result = caseComplexBaseType(aeroDataVehicleType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -192,6 +226,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.AERO_LIMITS_INCREMENT_MAP_TYPE: {
+			AeroLimitsIncrementMapType aeroLimitsIncrementMapType = (AeroLimitsIncrementMapType) theEObject;
+			T result = caseAeroLimitsIncrementMapType(aeroLimitsIncrementMapType);
+			if (result == null)
+				result = caseComplexBaseType(aeroLimitsIncrementMapType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE: {
 			AeroLimitsMapType aeroLimitsMapType = (AeroLimitsMapType) theEObject;
 			T result = caseAeroLimitsMapType(aeroLimitsMapType);
@@ -224,24 +267,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseAeroPerformanceBoundaryConditionsType(aeroPerformanceBoundaryConditionsType);
 			if (result == null)
 				result = caseComplexBaseType(aeroPerformanceBoundaryConditionsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.AERO_PERFORMANCE_CONTROL_ELEMENTS_TYPE: {
-			AeroPerformanceControlElementsType aeroPerformanceControlElementsType = (AeroPerformanceControlElementsType) theEObject;
-			T result = caseAeroPerformanceControlElementsType(aeroPerformanceControlElementsType);
-			if (result == null)
-				result = caseComplexBaseType(aeroPerformanceControlElementsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.AERO_PERFORMANCE_CONTROL_ELEMENT_TYPE: {
-			AeroPerformanceControlElementType aeroPerformanceControlElementType = (AeroPerformanceControlElementType) theEObject;
-			T result = caseAeroPerformanceControlElementType(aeroPerformanceControlElementType);
-			if (result == null)
-				result = caseComplexBaseType(aeroPerformanceControlElementType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -309,11 +334,38 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.AIRCRAFT_ANALYSES_GLOBAL_TYPE: {
+			AircraftAnalysesGlobalType aircraftAnalysesGlobalType = (AircraftAnalysesGlobalType) theEObject;
+			T result = caseAircraftAnalysesGlobalType(aircraftAnalysesGlobalType);
+			if (result == null)
+				result = caseComplexBaseType(aircraftAnalysesGlobalType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.AIRCRAFT_ANALYSES_TYPE: {
 			AircraftAnalysesType aircraftAnalysesType = (AircraftAnalysesType) theEObject;
 			T result = caseAircraftAnalysesType(aircraftAnalysesType);
 			if (result == null)
 				result = caseComplexBaseType(aircraftAnalysesType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.AIRCRAFT_CONTROL_ELEMENTS_TYPE: {
+			AircraftControlElementsType aircraftControlElementsType = (AircraftControlElementsType) theEObject;
+			T result = caseAircraftControlElementsType(aircraftControlElementsType);
+			if (result == null)
+				result = caseComplexBaseType(aircraftControlElementsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.AIRCRAFT_CONTROL_ELEMENT_TYPE: {
+			AircraftControlElementType aircraftControlElementType = (AircraftControlElementType) theEObject;
+			T result = caseAircraftControlElementType(aircraftControlElementType);
+			if (result == null)
+				result = caseComplexBaseType(aircraftControlElementType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -453,20 +505,13 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.ANGLE_ACCELERATION_TYPE: {
-			AngleAccelerationType angleAccelerationType = (AngleAccelerationType) theEObject;
-			T result = caseAngleAccelerationType(angleAccelerationType);
+		case CpacsPackage.ALTITUDE_TYPE: {
+			AltitudeType altitudeType = (AltitudeType) theEObject;
+			T result = caseAltitudeType(altitudeType);
 			if (result == null)
-				result = caseComplexBaseType(angleAccelerationType);
+				result = caseDoubleConstraintBaseType(altitudeType);
 			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.ANGLE_DISPLACEMENT_TYPE: {
-			AngleDisplacementType angleDisplacementType = (AngleDisplacementType) theEObject;
-			T result = caseAngleDisplacementType(angleDisplacementType);
-			if (result == null)
-				result = caseComplexBaseType(angleDisplacementType);
+				result = caseDoubleBaseType(altitudeType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -485,15 +530,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseAnisotropicSolidPropertiesType(anisotropicSolidPropertiesType);
 			if (result == null)
 				result = caseComplexBaseType(anisotropicSolidPropertiesType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.ATMOSPHERIC_CONDITIONS_TYPE: {
-			AtmosphericConditionsType atmosphericConditionsType = (AtmosphericConditionsType) theEObject;
-			T result = caseAtmosphericConditionsType(atmosphericConditionsType);
-			if (result == null)
-				result = caseComplexBaseType(atmosphericConditionsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -543,20 +579,20 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.ATTITUDE_AND_MOTION_TYPE: {
-			AttitudeAndMotionType attitudeAndMotionType = (AttitudeAndMotionType) theEObject;
-			T result = caseAttitudeAndMotionType(attitudeAndMotionType);
+		case CpacsPackage.AXLE_ASSEMBLIES_TYPE: {
+			AxleAssembliesType axleAssembliesType = (AxleAssembliesType) theEObject;
+			T result = caseAxleAssembliesType(axleAssembliesType);
 			if (result == null)
-				result = caseComplexBaseType(attitudeAndMotionType);
+				result = caseComplexBaseType(axleAssembliesType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.AXLES_TYPE: {
-			AxlesType axlesType = (AxlesType) theEObject;
-			T result = caseAxlesType(axlesType);
+		case CpacsPackage.AXLE_ASSEMBLY_TYPE: {
+			AxleAssemblyType axleAssemblyType = (AxleAssemblyType) theEObject;
+			T result = caseAxleAssemblyType(axleAssemblyType);
 			if (result == null)
-				result = caseComplexBaseType(axlesType);
+				result = caseComplexBaseType(axleAssemblyType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -597,29 +633,9 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.BOGIE_AXLES_TYPE: {
-			BogieAxlesType bogieAxlesType = (BogieAxlesType) theEObject;
-			T result = caseBogieAxlesType(bogieAxlesType);
-			if (result == null)
-				result = caseComplexBaseType(bogieAxlesType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.BOGIE_AXLE_TYPE: {
-			BogieAxleType bogieAxleType = (BogieAxleType) theEObject;
-			T result = caseBogieAxleType(bogieAxleType);
-			if (result == null)
-				result = caseComplexBaseType(bogieAxleType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.BOGIE_TYPE: {
 			BogieType bogieType = (BogieType) theEObject;
 			T result = caseBogieType(bogieType);
-			if (result == null)
-				result = caseStrutType(bogieType);
 			if (result == null)
 				result = caseComplexBaseType(bogieType);
 			if (result == null)
@@ -633,20 +649,20 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.BOUNDING_BOX_TYPE: {
+			BoundingBoxType boundingBoxType = (BoundingBoxType) theEObject;
+			T result = caseBoundingBoxType(boundingBoxType);
+			if (result == null)
+				result = caseComplexBaseType(boundingBoxType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.BOUNDING_ELEMENT_UI_DS_TYPE: {
 			BoundingElementUIDsType boundingElementUIDsType = (BoundingElementUIDsType) theEObject;
 			T result = caseBoundingElementUIDsType(boundingElementUIDsType);
 			if (result == null)
 				result = caseComplexBaseType(boundingElementUIDsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.CAB_GEOMETRY_TYPE: {
-			CabGeometryType cabGeometryType = (CabGeometryType) theEObject;
-			T result = caseCabGeometryType(cabGeometryType);
-			if (result == null)
-				result = caseComplexBaseType(cabGeometryType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -669,56 +685,29 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.CABIN_DOORS_TYPE: {
-			CabinDoorsType cabinDoorsType = (CabinDoorsType) theEObject;
-			T result = caseCabinDoorsType(cabinDoorsType);
+		case CpacsPackage.CABIN_GEOMETRY_CONTOURS_TYPE: {
+			CabinGeometryContoursType cabinGeometryContoursType = (CabinGeometryContoursType) theEObject;
+			T result = caseCabinGeometryContoursType(cabinGeometryContoursType);
 			if (result == null)
-				result = caseComplexBaseType(cabinDoorsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.CABIN_DOOR_TYPE: {
-			CabinDoorType cabinDoorType = (CabinDoorType) theEObject;
-			T result = caseCabinDoorType(cabinDoorType);
-			if (result == null)
-				result = caseComplexBaseType(cabinDoorType);
+				result = caseComplexBaseType(cabinGeometryContoursType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.CABIN_FLOOR_ELEMENTS_TYPE: {
-			CabinFloorElementsType cabinFloorElementsType = (CabinFloorElementsType) theEObject;
-			T result = caseCabinFloorElementsType(cabinFloorElementsType);
+		case CpacsPackage.CABIN_GEOMETRY_CONTOUR_TYPE: {
+			CabinGeometryContourType cabinGeometryContourType = (CabinGeometryContourType) theEObject;
+			T result = caseCabinGeometryContourType(cabinGeometryContourType);
 			if (result == null)
-				result = caseComplexBaseType(cabinFloorElementsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.CABIN_FLOOR_ELEMENT_TYPE: {
-			CabinFloorElementType cabinFloorElementType = (CabinFloorElementType) theEObject;
-			T result = caseCabinFloorElementType(cabinFloorElementType);
-			if (result == null)
-				result = caseComplexBaseType(cabinFloorElementType);
+				result = caseComplexBaseType(cabinGeometryContourType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.CABIN_SEAT_ELEMENTS_TYPE: {
-			CabinSeatElementsType cabinSeatElementsType = (CabinSeatElementsType) theEObject;
-			T result = caseCabinSeatElementsType(cabinSeatElementsType);
+		case CpacsPackage.CABIN_GEOMETRY_TYPE: {
+			CabinGeometryType cabinGeometryType = (CabinGeometryType) theEObject;
+			T result = caseCabinGeometryType(cabinGeometryType);
 			if (result == null)
-				result = caseComplexBaseType(cabinSeatElementsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.CABIN_SEAT_ELEMENT_TYPE: {
-			CabinSeatElementType cabinSeatElementType = (CabinSeatElementType) theEObject;
-			T result = caseCabinSeatElementType(cabinSeatElementType);
-			if (result == null)
-				result = caseComplexBaseType(cabinSeatElementType);
+				result = caseComplexBaseType(cabinGeometryType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -741,11 +730,58 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.CALIBRATED_AIR_SPEED_TYPE: {
+			CalibratedAirSpeedType calibratedAirSpeedType = (CalibratedAirSpeedType) theEObject;
+			T result = caseCalibratedAirSpeedType(calibratedAirSpeedType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(calibratedAirSpeedType);
+			if (result == null)
+				result = caseDoubleBaseType(calibratedAirSpeedType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.CAP_TYPE: {
 			CapType capType = (CapType) theEObject;
 			T result = caseCapType(capType);
 			if (result == null)
 				result = caseComplexBaseType(capType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.CARGO_CONTAINER_ELEMENTS_TYPE: {
+			CargoContainerElementsType cargoContainerElementsType = (CargoContainerElementsType) theEObject;
+			T result = caseCargoContainerElementsType(cargoContainerElementsType);
+			if (result == null)
+				result = caseComplexBaseType(cargoContainerElementsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.CARGO_CONTAINER_ELEMENT_TYPE: {
+			CargoContainerElementType cargoContainerElementType = (CargoContainerElementType) theEObject;
+			T result = caseCargoContainerElementType(cargoContainerElementType);
+			if (result == null)
+				result = caseComplexBaseType(cargoContainerElementType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.CARGO_CONTAINERS_TYPE: {
+			CargoContainersType cargoContainersType = (CargoContainersType) theEObject;
+			T result = caseCargoContainersType(cargoContainersType);
+			if (result == null)
+				result = caseComplexBaseType(cargoContainersType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.CARGO_CONTAINER_TYPE: {
+			CargoContainerType cargoContainerType = (CargoContainerType) theEObject;
+			T result = caseCargoContainerType(cargoContainerType);
+			if (result == null)
+				result = caseComplexBaseType(cargoContainerType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -773,6 +809,24 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseCargoDoorsAssemblyType(cargoDoorsAssemblyType);
 			if (result == null)
 				result = caseComplexBaseType(cargoDoorsAssemblyType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.CEILING_PANEL_ELEMENTS_TYPE: {
+			CeilingPanelElementsType ceilingPanelElementsType = (CeilingPanelElementsType) theEObject;
+			T result = caseCeilingPanelElementsType(ceilingPanelElementsType);
+			if (result == null)
+				result = caseComplexBaseType(ceilingPanelElementsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.CEILING_PANELS_TYPE: {
+			CeilingPanelsType ceilingPanelsType = (CeilingPanelsType) theEObject;
+			T result = caseCeilingPanelsType(ceilingPanelsType);
+			if (result == null)
+				result = caseComplexBaseType(ceilingPanelsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -894,11 +948,56 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.CHANGE_LOG_TYPE: {
+			ChangeLogType changeLogType = (ChangeLogType) theEObject;
+			T result = caseChangeLogType(changeLogType);
+			if (result == null)
+				result = caseComplexBaseType(changeLogType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.CHARGES_COST_TYPE: {
 			ChargesCostType chargesCostType = (ChargesCostType) theEObject;
 			T result = caseChargesCostType(chargesCostType);
 			if (result == null)
 				result = caseComplexBaseType(chargesCostType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.CHORDWISE_PARTS_TYPE: {
+			ChordwisePartsType chordwisePartsType = (ChordwisePartsType) theEObject;
+			T result = caseChordwisePartsType(chordwisePartsType);
+			if (result == null)
+				result = caseComplexBaseType(chordwisePartsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.CHORDWISE_PART_TYPE: {
+			ChordwisePartType chordwisePartType = (ChordwisePartType) theEObject;
+			T result = caseChordwisePartType(chordwisePartType);
+			if (result == null)
+				result = caseComplexBaseType(chordwisePartType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.CLASS_DIVIDER_ELEMENTS_TYPE: {
+			ClassDividerElementsType classDividerElementsType = (ClassDividerElementsType) theEObject;
+			T result = caseClassDividerElementsType(classDividerElementsType);
+			if (result == null)
+				result = caseComplexBaseType(classDividerElementsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.CLASS_DIVIDERS_TYPE: {
+			ClassDividersType classDividersType = (ClassDividersType) theEObject;
+			T result = caseClassDividersType(classDividersType);
+			if (result == null)
+				result = caseComplexBaseType(classDividersType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -921,11 +1020,92 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.COEFFICIENTS_TYPE: {
-			CoefficientsType coefficientsType = (CoefficientsType) theEObject;
-			T result = caseCoefficientsType(coefficientsType);
+		case CpacsPackage.COEFFICIENT_REFERENCE_TYPE: {
+			CoefficientReferenceType coefficientReferenceType = (CoefficientReferenceType) theEObject;
+			T result = caseCoefficientReferenceType(coefficientReferenceType);
 			if (result == null)
-				result = caseComplexBaseType(coefficientsType);
+				result = caseComplexBaseType(coefficientReferenceType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.COEFFICIENTS_BREAKDOWN_COMPONENTS_TYPE: {
+			CoefficientsBreakdownComponentsType coefficientsBreakdownComponentsType = (CoefficientsBreakdownComponentsType) theEObject;
+			T result = caseCoefficientsBreakdownComponentsType(coefficientsBreakdownComponentsType);
+			if (result == null)
+				result = caseComplexBaseType(coefficientsBreakdownComponentsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.COEFFICIENTS_BREAKDOWN_COMPONENT_TYPE: {
+			CoefficientsBreakdownComponentType coefficientsBreakdownComponentType = (CoefficientsBreakdownComponentType) theEObject;
+			T result = caseCoefficientsBreakdownComponentType(coefficientsBreakdownComponentType);
+			if (result == null)
+				result = caseComplexBaseType(coefficientsBreakdownComponentType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.COEFFICIENTS_BREAKDOWN_SEGMENT_TYPE: {
+			CoefficientsBreakdownSegmentType coefficientsBreakdownSegmentType = (CoefficientsBreakdownSegmentType) theEObject;
+			T result = caseCoefficientsBreakdownSegmentType(coefficientsBreakdownSegmentType);
+			if (result == null)
+				result = caseComplexBaseType(coefficientsBreakdownSegmentType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.COEFFICIENTS_BREAKDOWN_STRIPS_TYPE: {
+			CoefficientsBreakdownStripsType coefficientsBreakdownStripsType = (CoefficientsBreakdownStripsType) theEObject;
+			T result = caseCoefficientsBreakdownStripsType(coefficientsBreakdownStripsType);
+			if (result == null)
+				result = caseComplexBaseType(coefficientsBreakdownStripsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.COEFFICIENTS_BREAKDOWN_STRIP_TYPE: {
+			CoefficientsBreakdownStripType coefficientsBreakdownStripType = (CoefficientsBreakdownStripType) theEObject;
+			T result = caseCoefficientsBreakdownStripType(coefficientsBreakdownStripType);
+			if (result == null)
+				result = caseComplexBaseType(coefficientsBreakdownStripType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.COEFFICIENTS_BREAKDOWN_TYPE: {
+			CoefficientsBreakdownType coefficientsBreakdownType = (CoefficientsBreakdownType) theEObject;
+			T result = caseCoefficientsBreakdownType(coefficientsBreakdownType);
+			if (result == null)
+				result = caseComplexBaseType(coefficientsBreakdownType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.COEFFICIENTS_BREAKDOWN_WING_SEGMENTS_TYPE: {
+			CoefficientsBreakdownWingSegmentsType coefficientsBreakdownWingSegmentsType = (CoefficientsBreakdownWingSegmentsType) theEObject;
+			T result = caseCoefficientsBreakdownWingSegmentsType(coefficientsBreakdownWingSegmentsType);
+			if (result == null)
+				result = caseComplexBaseType(coefficientsBreakdownWingSegmentsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.COEFFICIENTS_BREAKDOWN_WINGS_TYPE: {
+			CoefficientsBreakdownWingsType coefficientsBreakdownWingsType = (CoefficientsBreakdownWingsType) theEObject;
+			T result = caseCoefficientsBreakdownWingsType(coefficientsBreakdownWingsType);
+			if (result == null)
+				result = caseComplexBaseType(coefficientsBreakdownWingsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.COEFFICIENTS_BREAKDOWN_WING_TYPE: {
+			CoefficientsBreakdownWingType coefficientsBreakdownWingType = (CoefficientsBreakdownWingType) theEObject;
+			T result = caseCoefficientsBreakdownWingType(coefficientsBreakdownWingType);
+			if (result == null)
+				result = caseComplexBaseType(coefficientsBreakdownWingType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -996,15 +1176,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseComponentCostType(componentCostType);
 			if (result == null)
 				result = caseComplexBaseType(componentCostType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.COMPONENT_CUT_LOADS_ENVELOPE_TYPE: {
-			ComponentCutLoadsEnvelopeType componentCutLoadsEnvelopeType = (ComponentCutLoadsEnvelopeType) theEObject;
-			T result = caseComponentCutLoadsEnvelopeType(componentCutLoadsEnvelopeType);
-			if (result == null)
-				result = caseComplexBaseType(componentCutLoadsEnvelopeType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -1081,6 +1252,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.CONFIGURATION_TYPE: {
+			ConfigurationType configurationType = (ConfigurationType) theEObject;
+			T result = caseConfigurationType(configurationType);
+			if (result == null)
+				result = caseComplexBaseType(configurationType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.CONNECTIVITIES_TYPE: {
 			ConnectivitiesType connectivitiesType = (ConnectivitiesType) theEObject;
 			T result = caseConnectivitiesType(connectivitiesType);
@@ -1099,20 +1279,20 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.CONSTRAINT_SETTINGS_POINT_PERFORMANCE_TYPE: {
-			ConstraintSettingsPointPerformanceType constraintSettingsPointPerformanceType = (ConstraintSettingsPointPerformanceType) theEObject;
-			T result = caseConstraintSettingsPointPerformanceType(constraintSettingsPointPerformanceType);
-			if (result == null)
-				result = caseComplexBaseType(constraintSettingsPointPerformanceType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE: {
 			ConstraintSettingsType constraintSettingsType = (ConstraintSettingsType) theEObject;
 			T result = caseConstraintSettingsType(constraintSettingsType);
 			if (result == null)
 				result = caseComplexBaseType(constraintSettingsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.CONSTRAINTS_TYPE: {
+			ConstraintsType constraintsType = (ConstraintsType) theEObject;
+			T result = caseConstraintsType(constraintsType);
+			if (result == null)
+				result = caseComplexBaseType(constraintsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -1171,11 +1351,29 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.CONTINUITY_TYPE4: {
+			ContinuityType4 continuityType4 = (ContinuityType4) theEObject;
+			T result = caseContinuityType4(continuityType4);
+			if (result == null)
+				result = caseStringBaseType(continuityType4);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.CONTOUR_REFERENCE_TYPE: {
 			ContourReferenceType contourReferenceType = (ContourReferenceType) theEObject;
 			T result = caseContourReferenceType(contourReferenceType);
 			if (result == null)
 				result = caseComplexBaseType(contourReferenceType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.CONTOUR_TYPE: {
+			ContourType contourType = (ContourType) theEObject;
+			T result = caseContourType(contourType);
+			if (result == null)
+				result = caseStringBaseType(contourType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -1234,20 +1432,20 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.CONTROL_INPUTS_TYPE: {
-			ControlInputsType controlInputsType = (ControlInputsType) theEObject;
-			T result = caseControlInputsType(controlInputsType);
+		case CpacsPackage.CONTROLLABILITY_REQS_TYPE: {
+			ControllabilityReqsType controllabilityReqsType = (ControllabilityReqsType) theEObject;
+			T result = caseControllabilityReqsType(controllabilityReqsType);
 			if (result == null)
-				result = caseComplexBaseType(controlInputsType);
+				result = caseComplexBaseType(controllabilityReqsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.CONTROL_INPUT_TYPE: {
-			ControlInputType controlInputType = (ControlInputType) theEObject;
-			T result = caseControlInputType(controlInputType);
+		case CpacsPackage.CONTROLLABILITY_REQUIREMENT_TYPE: {
+			ControllabilityRequirementType controllabilityRequirementType = (ControllabilityRequirementType) theEObject;
+			T result = caseControllabilityRequirementType(controllabilityRequirementType);
 			if (result == null)
-				result = caseComplexBaseType(controlInputType);
+				result = caseComplexBaseType(controllabilityRequirementType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -1338,24 +1536,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseControlSurfaceContoursType(controlSurfaceContoursType);
 			if (result == null)
 				result = caseComplexBaseType(controlSurfaceContoursType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.CONTROL_SURFACE_DEFLECTIONS_TYPE: {
-			ControlSurfaceDeflectionsType controlSurfaceDeflectionsType = (ControlSurfaceDeflectionsType) theEObject;
-			T result = caseControlSurfaceDeflectionsType(controlSurfaceDeflectionsType);
-			if (result == null)
-				result = caseComplexBaseType(controlSurfaceDeflectionsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.CONTROL_SURFACE_DEFLECTION_TYPE: {
-			ControlSurfaceDeflectionType controlSurfaceDeflectionType = (ControlSurfaceDeflectionType) theEObject;
-			T result = caseControlSurfaceDeflectionType(controlSurfaceDeflectionType);
-			if (result == null)
-				result = caseComplexBaseType(controlSurfaceDeflectionType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -1527,6 +1707,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseControlSurfaceWingCutOutType(controlSurfaceWingCutOutType);
 			if (result == null)
 				result = caseComplexBaseType(controlSurfaceWingCutOutType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.CORNER_RADIUS_TYPE: {
+			CornerRadiusType cornerRadiusType = (CornerRadiusType) theEObject;
+			T result = caseCornerRadiusType(cornerRadiusType);
+			if (result == null)
+				result = caseDoubleBaseType(cornerRadiusType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -1891,38 +2080,11 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.CUT_LOAD_INTEGRATION_POINTS_TYPE: {
-			CutLoadIntegrationPointsType cutLoadIntegrationPointsType = (CutLoadIntegrationPointsType) theEObject;
-			T result = caseCutLoadIntegrationPointsType(cutLoadIntegrationPointsType);
+		case CpacsPackage.CUT_LOAD_POINTS_TYPE: {
+			CutLoadPointsType cutLoadPointsType = (CutLoadPointsType) theEObject;
+			T result = caseCutLoadPointsType(cutLoadPointsType);
 			if (result == null)
-				result = caseComplexBaseType(cutLoadIntegrationPointsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.CUT_LOADS_ENVELOPE_TYPE: {
-			CutLoadsEnvelopeType cutLoadsEnvelopeType = (CutLoadsEnvelopeType) theEObject;
-			T result = caseCutLoadsEnvelopeType(cutLoadsEnvelopeType);
-			if (result == null)
-				result = caseComplexBaseType(cutLoadsEnvelopeType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.CUT_LOADS_TYPE: {
-			CutLoadsType cutLoadsType = (CutLoadsType) theEObject;
-			T result = caseCutLoadsType(cutLoadsType);
-			if (result == null)
-				result = caseComplexBaseType(cutLoadsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.CUT_LOAD_TYPE: {
-			CutLoadType cutLoadType = (CutLoadType) theEObject;
-			T result = caseCutLoadType(cutLoadType);
-			if (result == null)
-				result = caseComplexBaseType(cutLoadType);
+				result = caseComplexBaseType(cutLoadPointsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -2049,6 +2211,96 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.DECK_COMPONENT2_DBASE_TYPE: {
+			DeckComponent2DBaseType deckComponent2DBaseType = (DeckComponent2DBaseType) theEObject;
+			T result = caseDeckComponent2DBaseType(deckComponent2DBaseType);
+			if (result == null)
+				result = caseComplexBaseType(deckComponent2DBaseType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DECK_COMPONENT_BASE_TYPE: {
+			DeckComponentBaseType deckComponentBaseType = (DeckComponentBaseType) theEObject;
+			T result = caseDeckComponentBaseType(deckComponentBaseType);
+			if (result == null)
+				result = caseComplexBaseType(deckComponentBaseType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DECK_DOORS_TYPE: {
+			DeckDoorsType deckDoorsType = (DeckDoorsType) theEObject;
+			T result = caseDeckDoorsType(deckDoorsType);
+			if (result == null)
+				result = caseComplexBaseType(deckDoorsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DECK_DOOR_TYPE: {
+			DeckDoorType deckDoorType = (DeckDoorType) theEObject;
+			T result = caseDeckDoorType(deckDoorType);
+			if (result == null)
+				result = caseComplexBaseType(deckDoorType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DECK_ELEMENT_BASE_TYPE: {
+			DeckElementBaseType deckElementBaseType = (DeckElementBaseType) theEObject;
+			T result = caseDeckElementBaseType(deckElementBaseType);
+			if (result == null)
+				result = caseComplexBaseType(deckElementBaseType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DECK_ELEMENT_GEOMETRY_TYPE: {
+			DeckElementGeometryType deckElementGeometryType = (DeckElementGeometryType) theEObject;
+			T result = caseDeckElementGeometryType(deckElementGeometryType);
+			if (result == null)
+				result = caseComplexBaseType(deckElementGeometryType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DECK_ELEMENT_MASS_TYPE: {
+			DeckElementMassType deckElementMassType = (DeckElementMassType) theEObject;
+			T result = caseDeckElementMassType(deckElementMassType);
+			if (result == null)
+				result = caseComplexBaseType(deckElementMassType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DECK_ELEMENTS_TYPE: {
+			DeckElementsType deckElementsType = (DeckElementsType) theEObject;
+			T result = caseDeckElementsType(deckElementsType);
+			if (result == null)
+				result = caseComplexBaseType(deckElementsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DECK_STRUCTURAL_MOUNTS_TYPE: {
+			DeckStructuralMountsType deckStructuralMountsType = (DeckStructuralMountsType) theEObject;
+			T result = caseDeckStructuralMountsType(deckStructuralMountsType);
+			if (result == null)
+				result = caseComplexBaseType(deckStructuralMountsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DECK_STRUCTURAL_MOUNT_TYPE: {
+			DeckStructuralMountType deckStructuralMountType = (DeckStructuralMountType) theEObject;
+			T result = caseDeckStructuralMountType(deckStructuralMountType);
+			if (result == null)
+				result = caseComplexBaseType(deckStructuralMountType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.DECKS_TYPE: {
 			DecksType decksType = (DecksType) theEObject;
 			T result = caseDecksType(decksType);
@@ -2063,6 +2315,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseDeckType(deckType);
 			if (result == null)
 				result = caseComplexBaseType(deckType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DECK_TYPE_TYPE: {
+			DeckTypeType deckTypeType = (DeckTypeType) theEObject;
+			T result = caseDeckTypeType(deckTypeType);
+			if (result == null)
+				result = caseStringBaseType(deckTypeType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -2108,15 +2369,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseDesignSpaceType(designSpaceType);
 			if (result == null)
 				result = caseComplexBaseType(designSpaceType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.DESIGN_SPEED_TYPE: {
-			DesignSpeedType designSpeedType = (DesignSpeedType) theEObject;
-			T result = caseDesignSpeedType(designSpeedType);
-			if (result == null)
-				result = caseStringBaseType(designSpeedType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -2191,6 +2443,24 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.DOOR_OPENING_LEGACY_TYPE: {
+			DoorOpeningLegacyType doorOpeningLegacyType = (DoorOpeningLegacyType) theEObject;
+			T result = caseDoorOpeningLegacyType(doorOpeningLegacyType);
+			if (result == null)
+				result = caseComplexBaseType(doorOpeningLegacyType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DOOR_OPENING_TYPE: {
+			DoorOpeningType doorOpeningType = (DoorOpeningType) theEObject;
+			T result = caseDoorOpeningType(doorOpeningType);
+			if (result == null)
+				result = caseComplexBaseType(doorOpeningType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.DOORS_TYPE: {
 			DoorsType doorsType = (DoorsType) theEObject;
 			T result = caseDoorsType(doorsType);
@@ -2227,6 +2497,26 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.DOOR_TYPE_TYPE1: {
+			DoorTypeType1 doorTypeType1 = (DoorTypeType1) theEObject;
+			T result = caseDoorTypeType1(doorTypeType1);
+			if (result == null)
+				result = caseStringBaseType(doorTypeType1);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DOUBLE_ARRAY_BASE_TYPE: {
+			DoubleArrayBaseType doubleArrayBaseType = (DoubleArrayBaseType) theEObject;
+			T result = caseDoubleArrayBaseType(doubleArrayBaseType);
+			if (result == null)
+				result = caseStringArrayBaseType(doubleArrayBaseType);
+			if (result == null)
+				result = caseStringBaseType(doubleArrayBaseType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.DOUBLE_BASE_TYPE: {
 			DoubleBaseType doubleBaseType = (DoubleBaseType) theEObject;
 			T result = caseDoubleBaseType(doubleBaseType);
@@ -2239,6 +2529,39 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseDoubleConstraintBaseType(doubleConstraintBaseType);
 			if (result == null)
 				result = caseDoubleBaseType(doubleConstraintBaseType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DOUBLE_VECTOR_BASE_TYPE: {
+			DoubleVectorBaseType doubleVectorBaseType = (DoubleVectorBaseType) theEObject;
+			T result = caseDoubleVectorBaseType(doubleVectorBaseType);
+			if (result == null)
+				result = caseStringVectorBaseType(doubleVectorBaseType);
+			if (result == null)
+				result = caseStringBaseType(doubleVectorBaseType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DOUBLE_VECTOR_CONSTRAINT_BASE_TYPE: {
+			DoubleVectorConstraintBaseType doubleVectorConstraintBaseType = (DoubleVectorConstraintBaseType) theEObject;
+			T result = caseDoubleVectorConstraintBaseType(doubleVectorConstraintBaseType);
+			if (result == null)
+				result = caseDoubleVectorBaseType(doubleVectorConstraintBaseType);
+			if (result == null)
+				result = caseStringVectorBaseType(doubleVectorConstraintBaseType);
+			if (result == null)
+				result = caseStringBaseType(doubleVectorConstraintBaseType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.DRAG_CONTRIBUTIONS_TYPE: {
+			DragContributionsType dragContributionsType = (DragContributionsType) theEObject;
+			T result = caseDragContributionsType(dragContributionsType);
+			if (result == null)
+				result = caseComplexBaseType(dragContributionsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -2261,6 +2584,17 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.DURATION_TYPE: {
+			DurationType durationType = (DurationType) theEObject;
+			T result = caseDurationType(durationType);
+			if (result == null)
+				result = caseTimeConstraintBaseType(durationType);
+			if (result == null)
+				result = caseTimeBaseType(durationType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.DYNAMIC_AIRCRAFT_MODEL_ANALYSIS_TYPE: {
 			DynamicAircraftModelAnalysisType dynamicAircraftModelAnalysisType = (DynamicAircraftModelAnalysisType) theEObject;
 			T result = caseDynamicAircraftModelAnalysisType(dynamicAircraftModelAnalysisType);
@@ -2270,29 +2604,22 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.DYNAMIC_AIRCRAFT_MODEL_POINTS_TYPE: {
-			DynamicAircraftModelPointsType dynamicAircraftModelPointsType = (DynamicAircraftModelPointsType) theEObject;
-			T result = caseDynamicAircraftModelPointsType(dynamicAircraftModelPointsType);
-			if (result == null)
-				result = caseComplexBaseType(dynamicAircraftModelPointsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.DYNAMIC_AIRCRAFT_MODEL_TYPE: {
-			DynamicAircraftModelType dynamicAircraftModelType = (DynamicAircraftModelType) theEObject;
-			T result = caseDynamicAircraftModelType(dynamicAircraftModelType);
-			if (result == null)
-				result = caseComplexBaseType(dynamicAircraftModelType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.EMISSIVITY_MAP_TYPE: {
 			EmissivityMapType emissivityMapType = (EmissivityMapType) theEObject;
 			T result = caseEmissivityMapType(emissivityMapType);
 			if (result == null)
 				result = caseComplexBaseType(emissivityMapType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.END_TIME_UTC_TYPE: {
+			EndTimeUTCType endTimeUTCType = (EndTimeUTCType) theEObject;
+			T result = caseEndTimeUTCType(endTimeUTCType);
+			if (result == null)
+				result = caseTimeConstraintBaseType(endTimeUTCType);
+			if (result == null)
+				result = caseTimeBaseType(endTimeUTCType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -2423,15 +2750,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.ENGINE_SETTING_TYPE: {
-			EngineSettingType engineSettingType = (EngineSettingType) theEObject;
-			T result = caseEngineSettingType(engineSettingType);
-			if (result == null)
-				result = caseComplexBaseType(engineSettingType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.ENGINE_SPINNER_TYPE: {
 			EngineSpinnerType engineSpinnerType = (EngineSpinnerType) theEObject;
 			T result = caseEngineSpinnerType(engineSpinnerType);
@@ -2455,6 +2773,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseEngineType(engineType);
 			if (result == null)
 				result = caseComplexBaseType(engineType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.ENVIRONMENT_TYPE: {
+			EnvironmentType environmentType = (EnvironmentType) theEObject;
+			T result = caseEnvironmentType(environmentType);
+			if (result == null)
+				result = caseComplexBaseType(environmentType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -2531,38 +2858,11 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.FLIGHT_DYNAMICS_FLIGHT_CASES_TYPE: {
-			FlightDynamicsFlightCasesType flightDynamicsFlightCasesType = (FlightDynamicsFlightCasesType) theEObject;
-			T result = caseFlightDynamicsFlightCasesType(flightDynamicsFlightCasesType);
-			if (result == null)
-				result = caseComplexBaseType(flightDynamicsFlightCasesType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.FLIGHT_DYNAMICS_FLIGHT_CASE_TYPE: {
-			FlightDynamicsFlightCaseType flightDynamicsFlightCaseType = (FlightDynamicsFlightCaseType) theEObject;
-			T result = caseFlightDynamicsFlightCaseType(flightDynamicsFlightCaseType);
-			if (result == null)
-				result = caseComplexBaseType(flightDynamicsFlightCaseType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.FLIGHT_DYNAMICS_LINEAR_MODEL_TYPE: {
 			FlightDynamicsLinearModelType flightDynamicsLinearModelType = (FlightDynamicsLinearModelType) theEObject;
 			T result = caseFlightDynamicsLinearModelType(flightDynamicsLinearModelType);
 			if (result == null)
 				result = caseComplexBaseType(flightDynamicsLinearModelType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.FLIGHT_DYNAMICS_MODEL_TYPE: {
-			FlightDynamicsModelType flightDynamicsModelType = (FlightDynamicsModelType) theEObject;
-			T result = caseFlightDynamicsModelType(flightDynamicsModelType);
-			if (result == null)
-				result = caseComplexBaseType(flightDynamicsModelType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -2576,6 +2876,33 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.FLIGHT_ENVELOPE_SPEED_TYPE: {
+			FlightEnvelopeSpeedType flightEnvelopeSpeedType = (FlightEnvelopeSpeedType) theEObject;
+			T result = caseFlightEnvelopeSpeedType(flightEnvelopeSpeedType);
+			if (result == null)
+				result = caseComplexBaseType(flightEnvelopeSpeedType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.FLIGHT_ENVELOPES_TYPE: {
+			FlightEnvelopesType flightEnvelopesType = (FlightEnvelopesType) theEObject;
+			T result = caseFlightEnvelopesType(flightEnvelopesType);
+			if (result == null)
+				result = caseComplexBaseType(flightEnvelopesType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.FLIGHT_ENVELOPE_TYPE: {
+			FlightEnvelopeType flightEnvelopeType = (FlightEnvelopeType) theEObject;
+			T result = caseFlightEnvelopeType(flightEnvelopeType);
+			if (result == null)
+				result = caseComplexBaseType(flightEnvelopeType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.FLIGHT_LOAD_CASES_TYPE: {
 			FlightLoadCasesType flightLoadCasesType = (FlightLoadCasesType) theEObject;
 			T result = caseFlightLoadCasesType(flightLoadCasesType);
@@ -2585,11 +2912,31 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.FLIGHT_LOAD_CASE_TYPE: {
-			FlightLoadCaseType flightLoadCaseType = (FlightLoadCaseType) theEObject;
-			T result = caseFlightLoadCaseType(flightLoadCaseType);
+		case CpacsPackage.FLIGHT_LOAD_CONDITIONS_TYPE: {
+			FlightLoadConditionsType flightLoadConditionsType = (FlightLoadConditionsType) theEObject;
+			T result = caseFlightLoadConditionsType(flightLoadConditionsType);
 			if (result == null)
-				result = caseComplexBaseType(flightLoadCaseType);
+				result = caseComplexBaseType(flightLoadConditionsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.FLIGHT_LOAD_DATA_TYPE: {
+			FlightLoadDataType flightLoadDataType = (FlightLoadDataType) theEObject;
+			T result = caseFlightLoadDataType(flightLoadDataType);
+			if (result == null)
+				result = caseComplexBaseType(flightLoadDataType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.FLIGHT_PATH_ANGLE_TYPE: {
+			FlightPathAngleType flightPathAngleType = (FlightPathAngleType) theEObject;
+			T result = caseFlightPathAngleType(flightPathAngleType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(flightPathAngleType);
+			if (result == null)
+				result = caseDoubleBaseType(flightPathAngleType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -2630,6 +2977,33 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.FLIGHT_PERFORMANCE_LEVEL_TYPE: {
+			FlightPerformanceLevelType flightPerformanceLevelType = (FlightPerformanceLevelType) theEObject;
+			T result = caseFlightPerformanceLevelType(flightPerformanceLevelType);
+			if (result == null)
+				result = caseComplexBaseType(flightPerformanceLevelType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.FLIGHT_PERFORMANCE_REQUIREMENTS_TYPE: {
+			FlightPerformanceRequirementsType flightPerformanceRequirementsType = (FlightPerformanceRequirementsType) theEObject;
+			T result = caseFlightPerformanceRequirementsType(flightPerformanceRequirementsType);
+			if (result == null)
+				result = caseComplexBaseType(flightPerformanceRequirementsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.FLIGHT_PERFORMANCE_REQUIREMENT_TYPE: {
+			FlightPerformanceRequirementType flightPerformanceRequirementType = (FlightPerformanceRequirementType) theEObject;
+			T result = caseFlightPerformanceRequirementType(flightPerformanceRequirementType);
+			if (result == null)
+				result = caseComplexBaseType(flightPerformanceRequirementType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.FLIGHT_PERFORMANCE_TAKEOFF_TYPE: {
 			FlightPerformanceTakeoffType flightPerformanceTakeoffType = (FlightPerformanceTakeoffType) theEObject;
 			T result = caseFlightPerformanceTakeoffType(flightPerformanceTakeoffType);
@@ -2639,11 +3013,20 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.FLIGHT_PERFORMANCE_TYPE: {
-			FlightPerformanceType flightPerformanceType = (FlightPerformanceType) theEObject;
-			T result = caseFlightPerformanceType(flightPerformanceType);
+		case CpacsPackage.FLIGHT_PERFORMANCE_TURN_TYPE: {
+			FlightPerformanceTurnType flightPerformanceTurnType = (FlightPerformanceTurnType) theEObject;
+			T result = caseFlightPerformanceTurnType(flightPerformanceTurnType);
 			if (result == null)
-				result = caseComplexBaseType(flightPerformanceType);
+				result = caseComplexBaseType(flightPerformanceTurnType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.FLIGHT_POINTS_TYPE: {
+			FlightPointsType flightPointsType = (FlightPointsType) theEObject;
+			T result = caseFlightPointsType(flightPointsType);
+			if (result == null)
+				result = caseComplexBaseType(flightPointsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -2702,29 +3085,20 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.FLOW_CONDITION_TYPE: {
-			FlowConditionType flowConditionType = (FlowConditionType) theEObject;
-			T result = caseFlowConditionType(flowConditionType);
+		case CpacsPackage.FLYING_QUALITIES_CASES_TYPE: {
+			FlyingQualitiesCasesType flyingQualitiesCasesType = (FlyingQualitiesCasesType) theEObject;
+			T result = caseFlyingQualitiesCasesType(flyingQualitiesCasesType);
 			if (result == null)
-				result = caseComplexBaseType(flowConditionType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.FLYING_QUALITIES_TYPE: {
-			FlyingQualitiesType flyingQualitiesType = (FlyingQualitiesType) theEObject;
-			T result = caseFlyingQualitiesType(flyingQualitiesType);
-			if (result == null)
-				result = caseComplexBaseType(flyingQualitiesType);
+				result = caseComplexBaseType(flyingQualitiesCasesType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.FQ_CASE_TYPE: {
-			FqCaseType fqCaseType = (FqCaseType) theEObject;
-			T result = caseFqCaseType(fqCaseType);
+		case CpacsPackage.FLYING_QUALITIES_CASE_TYPE: {
+			FlyingQualitiesCaseType flyingQualitiesCaseType = (FlyingQualitiesCaseType) theEObject;
+			T result = caseFlyingQualitiesCaseType(flyingQualitiesCaseType);
 			if (result == null)
-				result = caseComplexBaseType(fqCaseType);
+				result = caseComplexBaseType(flyingQualitiesCaseType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -2846,6 +3220,28 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.FUEL_CONSUMED_TYPE: {
+			FuelConsumedType fuelConsumedType = (FuelConsumedType) theEObject;
+			T result = caseFuelConsumedType(fuelConsumedType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(fuelConsumedType);
+			if (result == null)
+				result = caseDoubleBaseType(fuelConsumedType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.FUEL_FRACTION_TYPE: {
+			FuelFractionType fuelFractionType = (FuelFractionType) theEObject;
+			T result = caseFuelFractionType(fuelFractionType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(fuelFractionType);
+			if (result == null)
+				result = caseDoubleBaseType(fuelFractionType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.FUEL_IN_TANK_TYPE: {
 			FuelInTankType fuelInTankType = (FuelInTankType) theEObject;
 			T result = caseFuelInTankType(fuelInTankType);
@@ -2855,11 +3251,31 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.FUEL_MASS_FRACTION_TYPE: {
+			FuelMassFractionType fuelMassFractionType = (FuelMassFractionType) theEObject;
+			T result = caseFuelMassFractionType(fuelMassFractionType);
+			if (result == null)
+				result = caseComplexBaseType(fuelMassFractionType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.FUEL_PLANNING_TYPE_TYPE: {
 			FuelPlanningTypeType fuelPlanningTypeType = (FuelPlanningTypeType) theEObject;
 			T result = caseFuelPlanningTypeType(fuelPlanningTypeType);
 			if (result == null)
 				result = caseStringBaseType(fuelPlanningTypeType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.FUEL_REMAINING_TYPE: {
+			FuelRemainingType fuelRemainingType = (FuelRemainingType) theEObject;
+			T result = caseFuelRemainingType(fuelRemainingType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(fuelRemainingType);
+			if (result == null)
+				result = caseDoubleBaseType(fuelRemainingType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -2896,15 +3312,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseFuselageAeroPerformanceType(fuselageAeroPerformanceType);
 			if (result == null)
 				result = caseComplexBaseType(fuselageAeroPerformanceType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.FUSELAGE_COEFFICIENTS_TYPE: {
-			FuselageCoefficientsType fuselageCoefficientsType = (FuselageCoefficientsType) theEObject;
-			T result = caseFuselageCoefficientsType(fuselageCoefficientsType);
-			if (result == null)
-				result = caseComplexBaseType(fuselageCoefficientsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -2981,15 +3388,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.FUSELAGES_COEFFICIENTS_TYPE: {
-			FuselagesCoefficientsType fuselagesCoefficientsType = (FuselagesCoefficientsType) theEObject;
-			T result = caseFuselagesCoefficientsType(fuselagesCoefficientsType);
-			if (result == null)
-				result = caseComplexBaseType(fuselagesCoefficientsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.FUSELAGE_SECTIONS_TYPE: {
 			FuselageSectionsType fuselageSectionsType = (FuselageSectionsType) theEObject;
 			T result = caseFuselageSectionsType(fuselageSectionsType);
@@ -3004,33 +3402,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseFuselageSectionType(fuselageSectionType);
 			if (result == null)
 				result = caseComplexBaseType(fuselageSectionType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.FUSELAGE_SEGMENT_COEFFICIENTS_TYPE: {
-			FuselageSegmentCoefficientsType fuselageSegmentCoefficientsType = (FuselageSegmentCoefficientsType) theEObject;
-			T result = caseFuselageSegmentCoefficientsType(fuselageSegmentCoefficientsType);
-			if (result == null)
-				result = caseComplexBaseType(fuselageSegmentCoefficientsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.FUSELAGE_SEGMENTS_COEFFICIENTS_TYPE: {
-			FuselageSegmentsCoefficientsType fuselageSegmentsCoefficientsType = (FuselageSegmentsCoefficientsType) theEObject;
-			T result = caseFuselageSegmentsCoefficientsType(fuselageSegmentsCoefficientsType);
-			if (result == null)
-				result = caseComplexBaseType(fuselageSegmentsCoefficientsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.FUSELAGE_SEGMENT_STRIP_COEFFICIENTS_TYPE: {
-			FuselageSegmentStripCoefficientsType fuselageSegmentStripCoefficientsType = (FuselageSegmentStripCoefficientsType) theEObject;
-			T result = caseFuselageSegmentStripCoefficientsType(fuselageSegmentStripCoefficientsType);
-			if (result == null)
-				result = caseComplexBaseType(fuselageSegmentStripCoefficientsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3080,11 +3451,29 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.GEAR_COMPONENTS_TYPE: {
-			GearComponentsType gearComponentsType = (GearComponentsType) theEObject;
-			T result = caseGearComponentsType(gearComponentsType);
+		case CpacsPackage.GALLEY_ELEMENTS_TYPE: {
+			GalleyElementsType galleyElementsType = (GalleyElementsType) theEObject;
+			T result = caseGalleyElementsType(galleyElementsType);
 			if (result == null)
-				result = caseComplexBaseType(gearComponentsType);
+				result = caseComplexBaseType(galleyElementsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.GALLEY_ELEMENT_TYPE: {
+			GalleyElementType galleyElementType = (GalleyElementType) theEObject;
+			T result = caseGalleyElementType(galleyElementType);
+			if (result == null)
+				result = caseComplexBaseType(galleyElementType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.GALLEYS_TYPE: {
+			GalleysType galleysType = (GalleysType) theEObject;
+			T result = caseGalleysType(galleysType);
+			if (result == null)
+				result = caseComplexBaseType(galleysType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3134,29 +3523,29 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.GENERIC_COMPONENT_COEFFICIENTS_TYPE: {
-			GenericComponentCoefficientsType genericComponentCoefficientsType = (GenericComponentCoefficientsType) theEObject;
-			T result = caseGenericComponentCoefficientsType(genericComponentCoefficientsType);
-			if (result == null)
-				result = caseComplexBaseType(genericComponentCoefficientsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.GENERIC_COMPONENTS_COEFFICIENTS_TYPE: {
-			GenericComponentsCoefficientsType genericComponentsCoefficientsType = (GenericComponentsCoefficientsType) theEObject;
-			T result = caseGenericComponentsCoefficientsType(genericComponentsCoefficientsType);
-			if (result == null)
-				result = caseComplexBaseType(genericComponentsCoefficientsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.GENERIC_COST_TYPE: {
 			GenericCostType genericCostType = (GenericCostType) theEObject;
 			T result = caseGenericCostType(genericCostType);
 			if (result == null)
 				result = caseComplexBaseType(genericCostType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.GENERIC_FLOOR_ELEMENTS_TYPE: {
+			GenericFloorElementsType genericFloorElementsType = (GenericFloorElementsType) theEObject;
+			T result = caseGenericFloorElementsType(genericFloorElementsType);
+			if (result == null)
+				result = caseComplexBaseType(genericFloorElementsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.GENERIC_FLOOR_MODULES_TYPE: {
+			GenericFloorModulesType genericFloorModulesType = (GenericFloorModulesType) theEObject;
+			T result = caseGenericFloorModulesType(genericFloorModulesType);
+			if (result == null)
+				result = caseComplexBaseType(genericFloorModulesType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3175,6 +3564,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseGenericGeometryComponentsType(genericGeometryComponentsType);
 			if (result == null)
 				result = caseComplexBaseType(genericGeometryComponentsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.GENERIC_GEOMETRY_COMPONENT_TYPE: {
+			GenericGeometryComponentType genericGeometryComponentType = (GenericGeometryComponentType) theEObject;
+			T result = caseGenericGeometryComponentType(genericGeometryComponentType);
+			if (result == null)
+				result = caseComplexBaseType(genericGeometryComponentType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3202,15 +3600,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseGenericSystemType(genericSystemType);
 			if (result == null)
 				result = caseComplexBaseType(genericSystemType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.GEOGEN_WING_OUTPUT_OPTIONS_TYPE: {
-			GeogenWingOutputOptionsType geogenWingOutputOptionsType = (GeogenWingOutputOptionsType) theEObject;
-			T result = caseGeogenWingOutputOptionsType(geogenWingOutputOptionsType);
-			if (result == null)
-				result = caseComplexBaseType(geogenWingOutputOptionsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3251,20 +3640,29 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.GLOBAL_FLIGHT_POINT_TYPE: {
+			GlobalFlightPointType globalFlightPointType = (GlobalFlightPointType) theEObject;
+			T result = caseGlobalFlightPointType(globalFlightPointType);
+			if (result == null)
+				result = caseComplexBaseType(globalFlightPointType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.GLOBAL_PERFORMANCE_CASES_TYPE: {
+			GlobalPerformanceCasesType globalPerformanceCasesType = (GlobalPerformanceCasesType) theEObject;
+			T result = caseGlobalPerformanceCasesType(globalPerformanceCasesType);
+			if (result == null)
+				result = caseComplexBaseType(globalPerformanceCasesType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.GROUND_LOAD_CASES_TYPE: {
 			GroundLoadCasesType groundLoadCasesType = (GroundLoadCasesType) theEObject;
 			T result = caseGroundLoadCasesType(groundLoadCasesType);
 			if (result == null)
 				result = caseComplexBaseType(groundLoadCasesType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.GROUND_LOAD_CASE_TYPE: {
-			GroundLoadCaseType groundLoadCaseType = (GroundLoadCaseType) theEObject;
-			T result = caseGroundLoadCaseType(groundLoadCaseType);
-			if (result == null)
-				result = caseComplexBaseType(groundLoadCaseType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3305,29 +3703,11 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.HANDBOOK_AERO_LAST_TRANSITION_REGION_TYPE: {
-			HandbookAeroLastTransitionRegionType handbookAeroLastTransitionRegionType = (HandbookAeroLastTransitionRegionType) theEObject;
-			T result = caseHandbookAeroLastTransitionRegionType(handbookAeroLastTransitionRegionType);
+		case CpacsPackage.GUST_SHAPE_TYPE: {
+			GustShapeType gustShapeType = (GustShapeType) theEObject;
+			T result = caseGustShapeType(gustShapeType);
 			if (result == null)
-				result = caseComplexBaseType(handbookAeroLastTransitionRegionType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.HANDBOOK_AERO_POLYNOMIAL_COEFFICIENTS_TYPE: {
-			HandbookAeroPolynomialCoefficientsType handbookAeroPolynomialCoefficientsType = (HandbookAeroPolynomialCoefficientsType) theEObject;
-			T result = caseHandbookAeroPolynomialCoefficientsType(handbookAeroPolynomialCoefficientsType);
-			if (result == null)
-				result = caseComplexBaseType(handbookAeroPolynomialCoefficientsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.HANDBOOK_AERO_TRANSITION_REGION_TYPE: {
-			HandbookAeroTransitionRegionType handbookAeroTransitionRegionType = (HandbookAeroTransitionRegionType) theEObject;
-			T result = caseHandbookAeroTransitionRegionType(handbookAeroTransitionRegionType);
-			if (result == null)
-				result = caseComplexBaseType(handbookAeroTransitionRegionType);
+				result = caseStringBaseType(gustShapeType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3337,6 +3717,17 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseHeaderType(headerType);
 			if (result == null)
 				result = caseComplexBaseType(headerType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.HEADING_TYPE: {
+			HeadingType headingType = (HeadingType) theEObject;
+			T result = caseHeadingType(headingType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(headingType);
+			if (result == null)
+				result = caseDoubleBaseType(headingType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3373,15 +3764,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseHtpStructElemDefType(htpStructElemDefType);
 			if (result == null)
 				result = caseComplexBaseType(htpStructElemDefType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.IDENTIFIER_TYPE: {
-			IdentifierType identifierType = (IdentifierType) theEObject;
-			T result = caseIdentifierType(identifierType);
-			if (result == null)
-				result = caseStringBaseType(identifierType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3465,6 +3847,24 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.INTERNAL_PRESSURES_TYPE: {
+			InternalPressuresType internalPressuresType = (InternalPressuresType) theEObject;
+			T result = caseInternalPressuresType(internalPressuresType);
+			if (result == null)
+				result = caseComplexBaseType(internalPressuresType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.INTERNAL_PRESSURE_TYPE: {
+			InternalPressureType internalPressureType = (InternalPressureType) theEObject;
+			T result = caseInternalPressureType(internalPressureType);
+			if (result == null)
+				result = caseComplexBaseType(internalPressureType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.INTERPOLATION_TYPE: {
 			InterpolationType interpolationType = (InterpolationType) theEObject;
 			T result = caseInterpolationType(interpolationType);
@@ -3497,6 +3897,59 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseIsotropicPropertiesType(isotropicPropertiesType);
 			if (result == null)
 				result = caseComplexBaseType(isotropicPropertiesType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LANDING_GEAR_BASE_TYPE: {
+			LandingGearBaseType landingGearBaseType = (LandingGearBaseType) theEObject;
+			T result = caseLandingGearBaseType(landingGearBaseType);
+			if (result == null)
+				result = caseComplexBaseType(landingGearBaseType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LANDING_GEAR_BRAKING_STATE_TYPE: {
+			LandingGearBrakingStateType landingGearBrakingStateType = (LandingGearBrakingStateType) theEObject;
+			T result = caseLandingGearBrakingStateType(landingGearBrakingStateType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LANDING_GEAR_COMPONENT_ASSEMBLY_TYPE: {
+			LandingGearComponentAssemblyType landingGearComponentAssemblyType = (LandingGearComponentAssemblyType) theEObject;
+			T result = caseLandingGearComponentAssemblyType(landingGearComponentAssemblyType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LANDING_GEAR_CONTROL_FUNCTIONS_TYPE: {
+			LandingGearControlFunctionsType landingGearControlFunctionsType = (LandingGearControlFunctionsType) theEObject;
+			T result = caseLandingGearControlFunctionsType(landingGearControlFunctionsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LANDING_GEAR_CONTROL_TYPE: {
+			LandingGearControlType landingGearControlType = (LandingGearControlType) theEObject;
+			T result = caseLandingGearControlType(landingGearControlType);
+			if (result == null)
+				result = caseComplexBaseType(landingGearControlType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LANDING_GEAR_EXTENSION_FUNCTION_STEP_TYPE: {
+			LandingGearExtensionFunctionStepType landingGearExtensionFunctionStepType = (LandingGearExtensionFunctionStepType) theEObject;
+			T result = caseLandingGearExtensionFunctionStepType(landingGearExtensionFunctionStepType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LANDING_GEAR_EXTENSION_FUNCTION_TYPE: {
+			LandingGearExtensionFunctionType landingGearExtensionFunctionType = (LandingGearExtensionFunctionType) theEObject;
+			T result = caseLandingGearExtensionFunctionType(landingGearExtensionFunctionType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3574,11 +4027,43 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.LANDING_GEAR_SETTING_TYPE: {
-			LandingGearSettingType landingGearSettingType = (LandingGearSettingType) theEObject;
-			T result = caseLandingGearSettingType(landingGearSettingType);
+		case CpacsPackage.LANDING_GEAR_STEERING_FUNCTION_STEP_TYPE: {
+			LandingGearSteeringFunctionStepType landingGearSteeringFunctionStepType = (LandingGearSteeringFunctionStepType) theEObject;
+			T result = caseLandingGearSteeringFunctionStepType(landingGearSteeringFunctionStepType);
 			if (result == null)
-				result = caseComplexBaseType(landingGearSettingType);
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LANDING_GEAR_STEERING_FUNCTION_TYPE: {
+			LandingGearSteeringFunctionType landingGearSteeringFunctionType = (LandingGearSteeringFunctionType) theEObject;
+			T result = caseLandingGearSteeringFunctionType(landingGearSteeringFunctionType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LANDING_GEAR_STRUT_ATTACHMENT_TYPE: {
+			LandingGearStrutAttachmentType landingGearStrutAttachmentType = (LandingGearStrutAttachmentType) theEObject;
+			T result = caseLandingGearStrutAttachmentType(landingGearStrutAttachmentType);
+			if (result == null)
+				result = caseComplexBaseType(landingGearStrutAttachmentType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LANDING_GEARS_TYPE: {
+			LandingGearsType landingGearsType = (LandingGearsType) theEObject;
+			T result = caseLandingGearsType(landingGearsType);
+			if (result == null)
+				result = caseComplexBaseType(landingGearsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LANDING_GEAR_SUPPORT_BEAM_POSITION_TYPE: {
+			LandingGearSupportBeamPositionType landingGearSupportBeamPositionType = (LandingGearSupportBeamPositionType) theEObject;
+			T result = caseLandingGearSupportBeamPositionType(landingGearSupportBeamPositionType);
+			if (result == null)
+				result = caseComplexBaseType(landingGearSupportBeamPositionType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3599,6 +4084,35 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = caseCapType(lateralCapType);
 			if (result == null)
 				result = caseComplexBaseType(lateralCapType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LATITUDE_TYPE: {
+			LatitudeType latitudeType = (LatitudeType) theEObject;
+			T result = caseLatitudeType(latitudeType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(latitudeType);
+			if (result == null)
+				result = caseDoubleBaseType(latitudeType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LAVATORIES_TYPE: {
+			LavatoriesType lavatoriesType = (LavatoriesType) theEObject;
+			T result = caseLavatoriesType(lavatoriesType);
+			if (result == null)
+				result = caseComplexBaseType(lavatoriesType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LAVATORY_ELEMENTS_TYPE: {
+			LavatoryElementsType lavatoryElementsType = (LavatoryElementsType) theEObject;
+			T result = caseLavatoryElementsType(lavatoryElementsType);
+			if (result == null)
+				result = caseComplexBaseType(lavatoryElementsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3666,6 +4180,33 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.LOAD_APPLICATION_POINT_SETS_TYPE: {
+			LoadApplicationPointSetsType loadApplicationPointSetsType = (LoadApplicationPointSetsType) theEObject;
+			T result = caseLoadApplicationPointSetsType(loadApplicationPointSetsType);
+			if (result == null)
+				result = caseComplexBaseType(loadApplicationPointSetsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LOAD_APPLICATION_POINT_SET_TYPE: {
+			LoadApplicationPointSetType loadApplicationPointSetType = (LoadApplicationPointSetType) theEObject;
+			T result = caseLoadApplicationPointSetType(loadApplicationPointSetType);
+			if (result == null)
+				result = caseComplexBaseType(loadApplicationPointSetType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LOAD_APPLICATION_POINTS_TYPE: {
+			LoadApplicationPointsType loadApplicationPointsType = (LoadApplicationPointsType) theEObject;
+			T result = caseLoadApplicationPointsType(loadApplicationPointsType);
+			if (result == null)
+				result = caseComplexBaseType(loadApplicationPointsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.LOAD_BREAKDOWN_TYPE: {
 			LoadBreakdownType loadBreakdownType = (LoadBreakdownType) theEObject;
 			T result = caseLoadBreakdownType(loadBreakdownType);
@@ -3675,65 +4216,38 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.LOAD_CASE_ENGINES_TYPE: {
-			LoadCaseEnginesType loadCaseEnginesType = (LoadCaseEnginesType) theEObject;
-			T result = caseLoadCaseEnginesType(loadCaseEnginesType);
+		case CpacsPackage.LOAD_CASE_ACCELERATIONS_TYPE: {
+			LoadCaseAccelerationsType loadCaseAccelerationsType = (LoadCaseAccelerationsType) theEObject;
+			T result = caseLoadCaseAccelerationsType(loadCaseAccelerationsType);
 			if (result == null)
-				result = caseComplexBaseType(loadCaseEnginesType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.LOAD_CASE_LANDING_GEARS_TYPE: {
-			LoadCaseLandingGearsType loadCaseLandingGearsType = (LoadCaseLandingGearsType) theEObject;
-			T result = caseLoadCaseLandingGearsType(loadCaseLandingGearsType);
-			if (result == null)
-				result = caseComplexBaseType(loadCaseLandingGearsType);
+				result = caseComplexBaseType(loadCaseAccelerationsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.LOAD_CASE_MASS_TYPE: {
-			LoadCaseMassType loadCaseMassType = (LoadCaseMassType) theEObject;
-			T result = caseLoadCaseMassType(loadCaseMassType);
+		case CpacsPackage.LOAD_CASE_GUST_TYPE: {
+			LoadCaseGustType loadCaseGustType = (LoadCaseGustType) theEObject;
+			T result = caseLoadCaseGustType(loadCaseGustType);
 			if (result == null)
-				result = caseComplexBaseType(loadCaseMassType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.LOAD_CASE_ROTATION_TYPE: {
-			LoadCaseRotationType loadCaseRotationType = (LoadCaseRotationType) theEObject;
-			T result = caseLoadCaseRotationType(loadCaseRotationType);
-			if (result == null)
-				result = caseComplexBaseType(loadCaseRotationType);
+				result = caseComplexBaseType(loadCaseGustType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.LOAD_CASE_ROTATION_VELOCITY_TYPE: {
-			LoadCaseRotationVelocityType loadCaseRotationVelocityType = (LoadCaseRotationVelocityType) theEObject;
-			T result = caseLoadCaseRotationVelocityType(loadCaseRotationVelocityType);
+		case CpacsPackage.LOAD_CASE_LOAD_FACTORS_TYPE: {
+			LoadCaseLoadFactorsType loadCaseLoadFactorsType = (LoadCaseLoadFactorsType) theEObject;
+			T result = caseLoadCaseLoadFactorsType(loadCaseLoadFactorsType);
 			if (result == null)
-				result = caseComplexBaseType(loadCaseRotationVelocityType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.LOAD_CASE_SETTINGS_TYPE: {
-			LoadCaseSettingsType loadCaseSettingsType = (LoadCaseSettingsType) theEObject;
-			T result = caseLoadCaseSettingsType(loadCaseSettingsType);
-			if (result == null)
-				result = caseComplexBaseType(loadCaseSettingsType);
+				result = caseComplexBaseType(loadCaseLoadFactorsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.LOAD_CASE_STATE_TYPE: {
-			LoadCaseStateType loadCaseStateType = (LoadCaseStateType) theEObject;
-			T result = caseLoadCaseStateType(loadCaseStateType);
+		case CpacsPackage.LOAD_CASE_SPECIFICATION_TYPE: {
+			LoadCaseSpecificationType loadCaseSpecificationType = (LoadCaseSpecificationType) theEObject;
+			T result = caseLoadCaseSpecificationType(loadCaseSpecificationType);
 			if (result == null)
-				result = caseComplexBaseType(loadCaseStateType);
+				result = caseComplexBaseType(loadCaseSpecificationType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3747,74 +4261,83 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.LOAD_CASE_TRANSLATION_ACCELERATION_TYPE: {
-			LoadCaseTranslationAccelerationType loadCaseTranslationAccelerationType = (LoadCaseTranslationAccelerationType) theEObject;
-			T result = caseLoadCaseTranslationAccelerationType(loadCaseTranslationAccelerationType);
+		case CpacsPackage.LOAD_CASE_SUPERPOSITION_TYPE: {
+			LoadCaseSuperpositionType loadCaseSuperpositionType = (LoadCaseSuperpositionType) theEObject;
+			T result = caseLoadCaseSuperpositionType(loadCaseSuperpositionType);
 			if (result == null)
-				result = caseComplexBaseType(loadCaseTranslationAccelerationType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.LOAD_CASE_TRANSLATION_TYPE: {
-			LoadCaseTranslationType loadCaseTranslationType = (LoadCaseTranslationType) theEObject;
-			T result = caseLoadCaseTranslationType(loadCaseTranslationType);
-			if (result == null)
-				result = caseComplexBaseType(loadCaseTranslationType);
+				result = caseComplexBaseType(loadCaseSuperpositionType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.LOAD_CASE_TRANSLATION_VELOCITY_TYPE: {
-			LoadCaseTranslationVelocityType loadCaseTranslationVelocityType = (LoadCaseTranslationVelocityType) theEObject;
-			T result = caseLoadCaseTranslationVelocityType(loadCaseTranslationVelocityType);
+		case CpacsPackage.LOAD_CASE_TYPE: {
+			LoadCaseType loadCaseType = (LoadCaseType) theEObject;
+			T result = caseLoadCaseType(loadCaseType);
 			if (result == null)
-				result = caseComplexBaseType(loadCaseTranslationVelocityType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.LOAD_CONDITION_TYPE: {
-			LoadConditionType loadConditionType = (LoadConditionType) theEObject;
-			T result = caseLoadConditionType(loadConditionType);
-			if (result == null)
-				result = caseComplexBaseType(loadConditionType);
+				result = caseComplexBaseType(loadCaseType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.LOAD_REFERENCE_AXIS_POINTS_TYPE: {
-			LoadReferenceAxisPointsType loadReferenceAxisPointsType = (LoadReferenceAxisPointsType) theEObject;
-			T result = caseLoadReferenceAxisPointsType(loadReferenceAxisPointsType);
+		case CpacsPackage.LOAD_ENVELOPES_TYPE: {
+			LoadEnvelopesType loadEnvelopesType = (LoadEnvelopesType) theEObject;
+			T result = caseLoadEnvelopesType(loadEnvelopesType);
 			if (result == null)
-				result = caseComplexBaseType(loadReferenceAxisPointsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.LOAD_REFERENCE_AXIS_POINT_TYPE: {
-			LoadReferenceAxisPointType loadReferenceAxisPointType = (LoadReferenceAxisPointType) theEObject;
-			T result = caseLoadReferenceAxisPointType(loadReferenceAxisPointType);
-			if (result == null)
-				result = caseComplexBaseType(loadReferenceAxisPointType);
+				result = caseComplexBaseType(loadEnvelopesType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.LOAD_REFERENCE_TYPE: {
-			LoadReferenceType loadReferenceType = (LoadReferenceType) theEObject;
-			T result = caseLoadReferenceType(loadReferenceType);
+		case CpacsPackage.LOAD_ENVELOPE_TYPE: {
+			LoadEnvelopeType loadEnvelopeType = (LoadEnvelopeType) theEObject;
+			T result = caseLoadEnvelopeType(loadEnvelopeType);
 			if (result == null)
-				result = caseComplexBaseType(loadReferenceType);
+				result = caseComplexBaseType(loadEnvelopeType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.LOADS_ENVELOPE_TYPE: {
-			LoadsEnvelopeType loadsEnvelopeType = (LoadsEnvelopeType) theEObject;
-			T result = caseLoadsEnvelopeType(loadsEnvelopeType);
+		case CpacsPackage.LOAD_REFERENCE_LINE_TYPE: {
+			LoadReferenceLineType loadReferenceLineType = (LoadReferenceLineType) theEObject;
+			T result = caseLoadReferenceLineType(loadReferenceLineType);
 			if (result == null)
-				result = caseComplexBaseType(loadsEnvelopeType);
+				result = caseComplexBaseType(loadReferenceLineType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LOAD_REFERENCE_POINT_TYPE: {
+			LoadReferencePointType loadReferencePointType = (LoadReferencePointType) theEObject;
+			T result = caseLoadReferencePointType(loadReferencePointType);
+			if (result == null)
+				result = caseComplexBaseType(loadReferencePointType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LOAD_SETS_TYPE: {
+			LoadSetsType loadSetsType = (LoadSetsType) theEObject;
+			T result = caseLoadSetsType(loadSetsType);
+			if (result == null)
+				result = caseComplexBaseType(loadSetsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LOAD_SET_TYPE: {
+			LoadSetType loadSetType = (LoadSetType) theEObject;
+			T result = caseLoadSetType(loadSetType);
+			if (result == null)
+				result = caseComplexBaseType(loadSetType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LOG_ENTRY_TYPE: {
+			LogEntryType logEntryType = (LogEntryType) theEObject;
+			T result = caseLogEntryType(logEntryType);
+			if (result == null)
+				result = caseComplexBaseType(logEntryType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3846,6 +4369,64 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.LONGITUDE_TYPE: {
+			LongitudeType longitudeType = (LongitudeType) theEObject;
+			T result = caseLongitudeType(longitudeType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(longitudeType);
+			if (result == null)
+				result = caseDoubleBaseType(longitudeType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LOWER_HEIGHT_FRACTION_TYPE: {
+			LowerHeightFractionType lowerHeightFractionType = (LowerHeightFractionType) theEObject;
+			T result = caseLowerHeightFractionType(lowerHeightFractionType);
+			if (result == null)
+				result = caseDoubleBaseType(lowerHeightFractionType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LUGGAGE_COMPARTMENT_ELEMENTS_TYPE: {
+			LuggageCompartmentElementsType luggageCompartmentElementsType = (LuggageCompartmentElementsType) theEObject;
+			T result = caseLuggageCompartmentElementsType(luggageCompartmentElementsType);
+			if (result == null)
+				result = caseComplexBaseType(luggageCompartmentElementsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.LUGGAGE_COMPARTMENTS_TYPE: {
+			LuggageCompartmentsType luggageCompartmentsType = (LuggageCompartmentsType) theEObject;
+			T result = caseLuggageCompartmentsType(luggageCompartmentsType);
+			if (result == null)
+				result = caseComplexBaseType(luggageCompartmentsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.MACH_NUMBER_TYPE: {
+			MachNumberType machNumberType = (MachNumberType) theEObject;
+			T result = caseMachNumberType(machNumberType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(machNumberType);
+			if (result == null)
+				result = caseDoubleBaseType(machNumberType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.MADDITIONAL_CENTER_TANKS_TYPE: {
+			MAdditionalCenterTanksType mAdditionalCenterTanksType = (MAdditionalCenterTanksType) theEObject;
+			T result = caseMAdditionalCenterTanksType(mAdditionalCenterTanksType);
+			if (result == null)
+				result = caseComplexBaseType(mAdditionalCenterTanksType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.MAIN_ACTUATOR_TYPE: {
 			MainActuatorType mainActuatorType = (MainActuatorType) theEObject;
 			T result = caseMainActuatorType(mainActuatorType);
@@ -3855,56 +4436,11 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.MAIN_GEAR_GLOBAL_TYPE: {
-			MainGearGlobalType mainGearGlobalType = (MainGearGlobalType) theEObject;
-			T result = caseMainGearGlobalType(mainGearGlobalType);
-			if (result == null)
-				result = caseComplexBaseType(mainGearGlobalType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.MAIN_GEARS_TYPE: {
 			MainGearsType mainGearsType = (MainGearsType) theEObject;
 			T result = caseMainGearsType(mainGearsType);
 			if (result == null)
 				result = caseComplexBaseType(mainGearsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.MAIN_GEAR_SUPPORT_BEAM_POSITION_TYPE: {
-			MainGearSupportBeamPositionType mainGearSupportBeamPositionType = (MainGearSupportBeamPositionType) theEObject;
-			T result = caseMainGearSupportBeamPositionType(mainGearSupportBeamPositionType);
-			if (result == null)
-				result = caseComplexBaseType(mainGearSupportBeamPositionType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.MAIN_GEAR_SUPPORT_BEAM_TYPE: {
-			MainGearSupportBeamType mainGearSupportBeamType = (MainGearSupportBeamType) theEObject;
-			T result = caseMainGearSupportBeamType(mainGearSupportBeamType);
-			if (result == null)
-				result = caseComplexBaseType(mainGearSupportBeamType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.MAIN_GEAR_TYPE: {
-			MainGearType mainGearType = (MainGearType) theEObject;
-			T result = caseMainGearType(mainGearType);
-			if (result == null)
-				result = caseComplexBaseType(mainGearType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.MAIN_GEAR_WING_ATTACHMENT_TYPE: {
-			MainGearWingAttachmentType mainGearWingAttachmentType = (MainGearWingAttachmentType) theEObject;
-			T result = caseMainGearWingAttachmentType(mainGearWingAttachmentType);
-			if (result == null)
-				result = caseComplexBaseType(mainGearWingAttachmentType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -3958,7 +4494,9 @@ public class CpacsSwitch<T> extends Switch<T> {
 			MassFractionType massFractionType = (MassFractionType) theEObject;
 			T result = caseMassFractionType(massFractionType);
 			if (result == null)
-				result = caseComplexBaseType(massFractionType);
+				result = caseDoubleConstraintBaseType(massFractionType);
+			if (result == null)
+				result = caseDoubleBaseType(massFractionType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -4341,6 +4879,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.MENGINE_APU_OILS_TYPE: {
+			MEngineAPUOilsType mEngineAPUOilsType = (MEngineAPUOilsType) theEObject;
+			T result = caseMEngineAPUOilsType(mEngineAPUOilsType);
+			if (result == null)
+				result = caseComplexBaseType(mEngineAPUOilsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.MENGINE_CONTROL_TYPE: {
 			MEngineControlType mEngineControlType = (MEngineControlType) theEObject;
 			T result = caseMEngineControlType(mEngineControlType);
@@ -4575,6 +5122,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.MISSION_END_RUNWAY_TYPE: {
+			MissionEndRunwayType missionEndRunwayType = (MissionEndRunwayType) theEObject;
+			T result = caseMissionEndRunwayType(missionEndRunwayType);
+			if (result == null)
+				result = caseComplexBaseType(missionEndRunwayType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.MISSION_PERFORMANCE_MAP_DEFINITION_TYPE: {
 			MissionPerformanceMapDefinitionType missionPerformanceMapDefinitionType = (MissionPerformanceMapDefinitionType) theEObject;
 			T result = caseMissionPerformanceMapDefinitionType(missionPerformanceMapDefinitionType);
@@ -4643,6 +5199,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseMissionStartConditionType(missionStartConditionType);
 			if (result == null)
 				result = caseComplexBaseType(missionStartConditionType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.MISSION_START_RUNWAY_TYPE: {
+			MissionStartRunwayType missionStartRunwayType = (MissionStartRunwayType) theEObject;
+			T result = caseMissionStartRunwayType(missionStartRunwayType);
+			if (result == null)
+				result = caseComplexBaseType(missionStartRunwayType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -4728,15 +5293,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.MMISCELLANEOUS_TYPE: {
-			MMiscellaneousType mMiscellaneousType = (MMiscellaneousType) theEObject;
-			T result = caseMMiscellaneousType(mMiscellaneousType);
-			if (result == null)
-				result = caseComplexBaseType(mMiscellaneousType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.MMOVEABLE_LEADING_EDGES_TYPE: {
 			MMoveableLeadingEdgesType mMoveableLeadingEdgesType = (MMoveableLeadingEdgesType) theEObject;
 			T result = caseMMoveableLeadingEdgesType(mMoveableLeadingEdgesType);
@@ -4787,15 +5343,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseMNoseGearsType(mNoseGearsType);
 			if (result == null)
 				result = caseComplexBaseType(mNoseGearsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.MODEL_TYPE: {
-			ModelType modelType = (ModelType) theEObject;
-			T result = caseModelType(modelType);
-			if (result == null)
-				result = caseStringBaseType(modelType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -4899,6 +5446,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.MREMOVABLE_CREW_RESTS_TYPE: {
+			MRemovableCrewRestsType mRemovableCrewRestsType = (MRemovableCrewRestsType) theEObject;
+			T result = caseMRemovableCrewRestsType(mRemovableCrewRestsType);
+			if (result == null)
+				result = caseComplexBaseType(mRemovableCrewRestsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.MRIBS_TYPE: {
 			MRibsType mRibsType = (MRibsType) theEObject;
 			T result = caseMRibsType(mRibsType);
@@ -4964,11 +5520,38 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.MSPAR_CELLS_TYPE: {
+			MSparCellsType mSparCellsType = (MSparCellsType) theEObject;
+			T result = caseMSparCellsType(mSparCellsType);
+			if (result == null)
+				result = caseComplexBaseType(mSparCellsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.MSPAR_SKINS_TYPE: {
+			MSparSkinsType mSparSkinsType = (MSparSkinsType) theEObject;
+			T result = caseMSparSkinsType(mSparSkinsType);
+			if (result == null)
+				result = caseComplexBaseType(mSparSkinsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.MSPARS_TYPE: {
 			MSparsType mSparsType = (MSparsType) theEObject;
 			T result = caseMSparsType(mSparsType);
 			if (result == null)
 				result = caseComplexBaseType(mSparsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.MSPAR_TYPE: {
+			MSparType mSparType = (MSparType) theEObject;
+			T result = caseMSparType(mSparType);
+			if (result == null)
+				result = caseComplexBaseType(mSparType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -5018,6 +5601,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.MTOILET_FLUIDS_TYPE: {
+			MToiletFluidsType mToiletFluidsType = (MToiletFluidsType) theEObject;
+			T result = caseMToiletFluidsType(mToiletFluidsType);
+			if (result == null)
+				result = caseComplexBaseType(mToiletFluidsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.MTRAILING_EDGE_DEVICES_TYPE: {
 			MTrailingEdgeDevicesType mTrailingEdgeDevicesType = (MTrailingEdgeDevicesType) theEObject;
 			T result = caseMTrailingEdgeDevicesType(mTrailingEdgeDevicesType);
@@ -5054,6 +5646,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.MUNUSABLE_FUELS_TYPE: {
+			MUnusableFuelsType mUnusableFuelsType = (MUnusableFuelsType) theEObject;
+			T result = caseMUnusableFuelsType(mUnusableFuelsType);
+			if (result == null)
+				result = caseComplexBaseType(mUnusableFuelsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.MVACUUM_WASTE_SYSTEMS_TYPE: {
 			MVacuumWasteSystemsType mVacuumWasteSystemsType = (MVacuumWasteSystemsType) theEObject;
 			T result = caseMVacuumWasteSystemsType(mVacuumWasteSystemsType);
@@ -5063,11 +5664,29 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.MWALLS_TYPE: {
+			MWallsType mWallsType = (MWallsType) theEObject;
+			T result = caseMWallsType(mWallsType);
+			if (result == null)
+				result = caseComplexBaseType(mWallsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.MWASTE_WATER_SYSTEMS_TYPE: {
 			MWasteWaterSystemsType mWasteWaterSystemsType = (MWasteWaterSystemsType) theEObject;
 			T result = caseMWasteWaterSystemsType(mWasteWaterSystemsType);
 			if (result == null)
 				result = caseComplexBaseType(mWasteWaterSystemsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.MWATER_RESERVOIRS_TYPE: {
+			MWaterReservoirsType mWaterReservoirsType = (MWaterReservoirsType) theEObject;
+			T result = caseMWaterReservoirsType(mWaterReservoirsType);
+			if (result == null)
+				result = caseComplexBaseType(mWaterReservoirsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -5171,20 +5790,20 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.NODAL_LOADS_TYPE: {
-			NodalLoadsType nodalLoadsType = (NodalLoadsType) theEObject;
-			T result = caseNodalLoadsType(nodalLoadsType);
+		case CpacsPackage.NAME_TYPE: {
+			NameType nameType = (NameType) theEObject;
+			T result = caseNameType(nameType);
 			if (result == null)
-				result = caseComplexBaseType(nodalLoadsType);
+				result = caseStringBaseType(nameType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.NODAL_LOAD_TYPE: {
-			NodalLoadType nodalLoadType = (NodalLoadType) theEObject;
-			T result = caseNodalLoadType(nodalLoadType);
+		case CpacsPackage.NAME_TYPE1: {
+			NameType1 nameType1 = (NameType1) theEObject;
+			T result = caseNameType1(nameType1);
 			if (result == null)
-				result = caseComplexBaseType(nodalLoadType);
+				result = caseStringBaseType(nameType1);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -5198,29 +5817,11 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.NOSE_GEAR_GLOBAL_TYPE: {
-			NoseGearGlobalType noseGearGlobalType = (NoseGearGlobalType) theEObject;
-			T result = caseNoseGearGlobalType(noseGearGlobalType);
-			if (result == null)
-				result = caseComplexBaseType(noseGearGlobalType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.NOSE_GEARS_TYPE: {
 			NoseGearsType noseGearsType = (NoseGearsType) theEObject;
 			T result = caseNoseGearsType(noseGearsType);
 			if (result == null)
 				result = caseComplexBaseType(noseGearsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.NOSE_GEAR_TYPE: {
-			NoseGearType noseGearType = (NoseGearType) theEObject;
-			T result = caseNoseGearType(noseGearType);
-			if (result == null)
-				result = caseComplexBaseType(noseGearType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -5257,15 +5858,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseOperationLimitIncrementsType(operationLimitIncrementsType);
 			if (result == null)
 				result = caseComplexBaseType(operationLimitIncrementsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.ORIENTATION_TYPE: {
-			OrientationType orientationType = (OrientationType) theEObject;
-			T result = caseOrientationType(orientationType);
-			if (result == null)
-				result = caseComplexBaseType(orientationType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -5351,29 +5943,20 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.PERFORMANCE_CASES_TYPE: {
-			PerformanceCasesType performanceCasesType = (PerformanceCasesType) theEObject;
-			T result = casePerformanceCasesType(performanceCasesType);
-			if (result == null)
-				result = caseComplexBaseType(performanceCasesType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.PERFORMANCE_CASE_TYPE: {
-			PerformanceCaseType performanceCaseType = (PerformanceCaseType) theEObject;
-			T result = casePerformanceCaseType(performanceCaseType);
-			if (result == null)
-				result = caseComplexBaseType(performanceCaseType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.PERFORMANCE_MAP_SELECTION_TYPE: {
 			PerformanceMapSelectionType performanceMapSelectionType = (PerformanceMapSelectionType) theEObject;
 			T result = casePerformanceMapSelectionType(performanceMapSelectionType);
 			if (result == null)
 				result = caseComplexBaseType(performanceMapSelectionType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.PERFORMANCE_REQUIREMENT_CONFIGURATIONS_TYPE: {
+			PerformanceRequirementConfigurationsType performanceRequirementConfigurationsType = (PerformanceRequirementConfigurationsType) theEObject;
+			T result = casePerformanceRequirementConfigurationsType(performanceRequirementConfigurationsType);
+			if (result == null)
+				result = caseComplexBaseType(performanceRequirementConfigurationsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -5405,11 +5988,16 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.PINTLE_STRUTS_TYPE: {
+			PintleStrutsType pintleStrutsType = (PintleStrutsType) theEObject;
+			T result = casePintleStrutsType(pintleStrutsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.PISTON_TYPE: {
 			PistonType pistonType = (PistonType) theEObject;
 			T result = casePistonType(pistonType);
-			if (result == null)
-				result = caseStrutType(pistonType);
 			if (result == null)
 				result = caseComplexBaseType(pistonType);
 			if (result == null)
@@ -5513,20 +6101,38 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.POINT_PERFORMANCES_TYPE: {
-			PointPerformancesType pointPerformancesType = (PointPerformancesType) theEObject;
-			T result = casePointPerformancesType(pointPerformancesType);
+		case CpacsPackage.POINT_PERFORMANCE_CONSTRAINTS_TYPE: {
+			PointPerformanceConstraintsType pointPerformanceConstraintsType = (PointPerformanceConstraintsType) theEObject;
+			T result = casePointPerformanceConstraintsType(pointPerformanceConstraintsType);
 			if (result == null)
-				result = caseComplexBaseType(pointPerformancesType);
+				result = caseComplexBaseType(pointPerformanceConstraintsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.POINT_PERFORMANCE_TYPE: {
-			PointPerformanceType pointPerformanceType = (PointPerformanceType) theEObject;
-			T result = casePointPerformanceType(pointPerformanceType);
+		case CpacsPackage.POINT_PERFORMANCE_DEFINITIONS_TYPE: {
+			PointPerformanceDefinitionsType pointPerformanceDefinitionsType = (PointPerformanceDefinitionsType) theEObject;
+			T result = casePointPerformanceDefinitionsType(pointPerformanceDefinitionsType);
 			if (result == null)
-				result = caseComplexBaseType(pointPerformanceType);
+				result = caseComplexBaseType(pointPerformanceDefinitionsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.POINT_PERFORMANCE_DEFINITION_TYPE: {
+			PointPerformanceDefinitionType pointPerformanceDefinitionType = (PointPerformanceDefinitionType) theEObject;
+			T result = casePointPerformanceDefinitionType(pointPerformanceDefinitionType);
+			if (result == null)
+				result = caseComplexBaseType(pointPerformanceDefinitionType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.POINT_PERFORMANCE_REQUIREMENTS_TYPE: {
+			PointPerformanceRequirementsType pointPerformanceRequirementsType = (PointPerformanceRequirementsType) theEObject;
+			T result = casePointPerformanceRequirementsType(pointPerformanceRequirementsType);
+			if (result == null)
+				result = caseComplexBaseType(pointPerformanceRequirementsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -5603,6 +6209,35 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.POS_EXCL0_DOUBLE_BASE_TYPE: {
+			PosExcl0DoubleBaseType posExcl0DoubleBaseType = (PosExcl0DoubleBaseType) theEObject;
+			T result = casePosExcl0DoubleBaseType(posExcl0DoubleBaseType);
+			if (result == null)
+				result = caseDoubleBaseType(posExcl0DoubleBaseType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.POS_EXCL0_INT_BASE_TYPE: {
+			PosExcl0IntBaseType posExcl0IntBaseType = (PosExcl0IntBaseType) theEObject;
+			T result = casePosExcl0IntBaseType(posExcl0IntBaseType);
+			if (result == null)
+				result = caseIntegerBaseType(posExcl0IntBaseType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.POS_INT_VECTOR_BASE_TYPE: {
+			PosIntVectorBaseType posIntVectorBaseType = (PosIntVectorBaseType) theEObject;
+			T result = casePosIntVectorBaseType(posIntVectorBaseType);
+			if (result == null)
+				result = caseStringVectorBaseType(posIntVectorBaseType);
+			if (result == null)
+				result = caseStringBaseType(posIntVectorBaseType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.POSITIONINGS_TYPE: {
 			PositioningsType positioningsType = (PositioningsType) theEObject;
 			T result = casePositioningsType(positioningsType);
@@ -5617,6 +6252,39 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = casePositioningType(positioningType);
 			if (result == null)
 				result = caseComplexBaseType(positioningType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.POWER_CONSUMED_TYPE: {
+			PowerConsumedType powerConsumedType = (PowerConsumedType) theEObject;
+			T result = casePowerConsumedType(powerConsumedType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(powerConsumedType);
+			if (result == null)
+				result = caseDoubleBaseType(powerConsumedType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.POWER_FRACTION_TYPE: {
+			PowerFractionType powerFractionType = (PowerFractionType) theEObject;
+			T result = casePowerFractionType(powerFractionType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(powerFractionType);
+			if (result == null)
+				result = caseDoubleBaseType(powerFractionType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.POWER_REMAINING_TYPE: {
+			PowerRemainingType powerRemainingType = (PowerRemainingType) theEObject;
+			T result = casePowerRemainingType(powerRemainingType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(powerRemainingType);
+			if (result == null)
+				result = caseDoubleBaseType(powerRemainingType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -5660,6 +6328,8 @@ public class CpacsSwitch<T> extends Switch<T> {
 		case CpacsPackage.PRIORITY_SETTING_TYPE: {
 			PrioritySettingType prioritySettingType = (PrioritySettingType) theEObject;
 			T result = casePrioritySettingType(prioritySettingType);
+			if (result == null)
+				result = caseStringVectorBaseType(prioritySettingType);
 			if (result == null)
 				result = caseStringBaseType(prioritySettingType);
 			if (result == null)
@@ -5828,20 +6498,42 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.QUASI_STEADY_ROTATION_TYPE: {
-			QuasiSteadyRotationType quasiSteadyRotationType = (QuasiSteadyRotationType) theEObject;
-			T result = caseQuasiSteadyRotationType(quasiSteadyRotationType);
-			if (result == null)
-				result = caseComplexBaseType(quasiSteadyRotationType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.RADIATIVE_FORCING_TYPE: {
 			RadiativeForcingType radiativeForcingType = (RadiativeForcingType) theEObject;
 			T result = caseRadiativeForcingType(radiativeForcingType);
 			if (result == null)
 				result = caseComplexBaseType(radiativeForcingType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.RANGE_TYPE: {
+			RangeType rangeType = (RangeType) theEObject;
+			T result = caseRangeType(rangeType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(rangeType);
+			if (result == null)
+				result = caseDoubleBaseType(rangeType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.RATE_OF_CLIMB_TYPE: {
+			RateOfClimbType rateOfClimbType = (RateOfClimbType) theEObject;
+			T result = caseRateOfClimbType(rateOfClimbType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(rateOfClimbType);
+			if (result == null)
+				result = caseDoubleBaseType(rateOfClimbType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.RECTANGLE_PROFILE_TYPE: {
+			RectangleProfileType rectangleProfileType = (RectangleProfileType) theEObject;
+			T result = caseRectangleProfileType(rectangleProfileType);
+			if (result == null)
+				result = caseComplexBaseType(rectangleProfileType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -5860,6 +6552,58 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseReferenceType(referenceType);
 			if (result == null)
 				result = caseComplexBaseType(referenceType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.RELATIVE_STRUT_POSITION_TYPE: {
+			RelativeStrutPositionType relativeStrutPositionType = (RelativeStrutPositionType) theEObject;
+			T result = caseRelativeStrutPositionType(relativeStrutPositionType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.RELEASED_STORES_TYPE: {
+			ReleasedStoresType releasedStoresType = (ReleasedStoresType) theEObject;
+			T result = caseReleasedStoresType(releasedStoresType);
+			if (result == null)
+				result = caseComplexBaseType(releasedStoresType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.RELEASED_STORE_TYPE: {
+			ReleasedStoreType releasedStoreType = (ReleasedStoreType) theEObject;
+			T result = caseReleasedStoreType(releasedStoreType);
+			if (result == null)
+				result = caseComplexBaseType(releasedStoreType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.REMAINING_CONTRIBUTIONS_TYPE: {
+			RemainingContributionsType remainingContributionsType = (RemainingContributionsType) theEObject;
+			T result = caseRemainingContributionsType(remainingContributionsType);
+			if (result == null)
+				result = caseComplexBaseType(remainingContributionsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.REMAINING_CONTRIBUTION_TYPE: {
+			RemainingContributionType remainingContributionType = (RemainingContributionType) theEObject;
+			T result = caseRemainingContributionType(remainingContributionType);
+			if (result == null)
+				result = caseComplexBaseType(remainingContributionType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.REQUIREMENT_CLASSIFICATION_TYPE: {
+			RequirementClassificationType requirementClassificationType = (RequirementClassificationType) theEObject;
+			T result = caseRequirementClassificationType(requirementClassificationType);
+			if (result == null)
+				result = caseStringBaseType(requirementClassificationType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -6132,6 +6876,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.RUNWAY_START_POSITION_TYPE: {
+			RunwayStartPositionType runwayStartPositionType = (RunwayStartPositionType) theEObject;
+			T result = caseRunwayStartPositionType(runwayStartPositionType);
+			if (result == null)
+				result = caseComplexBaseType(runwayStartPositionType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.RUNWAYS_TYPE: {
 			RunwaysType runwaysType = (RunwaysType) theEObject;
 			T result = caseRunwaysType(runwaysType);
@@ -6150,29 +6903,40 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.RUNWAY_TYPE1: {
+			RunwayType1 runwayType1 = (RunwayType1) theEObject;
+			T result = caseRunwayType1(runwayType1);
+			if (result == null)
+				result = caseMissionEndRunwayType(runwayType1);
+			if (result == null)
+				result = caseComplexBaseType(runwayType1);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.SEAT_ELEMENTS_TYPE: {
+			SeatElementsType seatElementsType = (SeatElementsType) theEObject;
+			T result = caseSeatElementsType(seatElementsType);
+			if (result == null)
+				result = caseComplexBaseType(seatElementsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.SEAT_ELEMENT_TYPE: {
+			SeatElementType seatElementType = (SeatElementType) theEObject;
+			T result = caseSeatElementType(seatElementType);
+			if (result == null)
+				result = caseComplexBaseType(seatElementType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.SEAT_MODULES_TYPE: {
 			SeatModulesType seatModulesType = (SeatModulesType) theEObject;
 			T result = caseSeatModulesType(seatModulesType);
 			if (result == null)
 				result = caseComplexBaseType(seatModulesType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.SEAT_MODULE_TYPE: {
-			SeatModuleType seatModuleType = (SeatModuleType) theEObject;
-			T result = caseSeatModuleType(seatModuleType);
-			if (result == null)
-				result = caseComplexBaseType(seatModuleType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.SECTION_DISTRIBUTION_MODE_TYPE: {
-			SectionDistributionModeType sectionDistributionModeType = (SectionDistributionModeType) theEObject;
-			T result = caseSectionDistributionModeType(sectionDistributionModeType);
-			if (result == null)
-				result = caseStringBaseType(sectionDistributionModeType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -6289,8 +7053,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 			SideStrutsType sideStrutsType = (SideStrutsType) theEObject;
 			T result = caseSideStrutsType(sideStrutsType);
 			if (result == null)
-				result = caseComplexBaseType(sideStrutsType);
-			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
@@ -6299,6 +7061,24 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseSideType(sideType);
 			if (result == null)
 				result = caseStringBaseType(sideType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.SIDEWALL_PANEL_ELEMENTS_TYPE: {
+			SidewallPanelElementsType sidewallPanelElementsType = (SidewallPanelElementsType) theEObject;
+			T result = caseSidewallPanelElementsType(sidewallPanelElementsType);
+			if (result == null)
+				result = caseComplexBaseType(sidewallPanelElementsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.SIDEWALL_PANELS_TYPE: {
+			SidewallPanelsType sidewallPanelsType = (SidewallPanelsType) theEObject;
+			T result = caseSidewallPanelsType(sidewallPanelsType);
+			if (result == null)
+				result = caseComplexBaseType(sidewallPanelsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -6312,38 +7092,11 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.SIZING_TYPE_TYPE: {
-			SizingTypeType sizingTypeType = (SizingTypeType) theEObject;
-			T result = caseSizingTypeType(sizingTypeType);
-			if (result == null)
-				result = caseStringBaseType(sizingTypeType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.SKID_GEAR_GLOBAL_TYPE: {
-			SkidGearGlobalType skidGearGlobalType = (SkidGearGlobalType) theEObject;
-			T result = caseSkidGearGlobalType(skidGearGlobalType);
-			if (result == null)
-				result = caseComplexBaseType(skidGearGlobalType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.SKID_GEARS_TYPE: {
 			SkidGearsType skidGearsType = (SkidGearsType) theEObject;
 			T result = caseSkidGearsType(skidGearsType);
 			if (result == null)
 				result = caseComplexBaseType(skidGearsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.SKID_GEAR_TYPE: {
-			SkidGearType skidGearType = (SkidGearType) theEObject;
-			T result = caseSkidGearType(skidGearType);
-			if (result == null)
-				result = caseComplexBaseType(skidGearType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -6447,6 +7200,53 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.SPECIFIC_CONFIGURATION_SEGMENTS_TYPE: {
+			SpecificConfigurationSegmentsType specificConfigurationSegmentsType = (SpecificConfigurationSegmentsType) theEObject;
+			T result = caseSpecificConfigurationSegmentsType(specificConfigurationSegmentsType);
+			if (result == null)
+				result = caseComplexBaseType(specificConfigurationSegmentsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.SPECIFIC_CONFIGURATION_SEGMENT_TYPE: {
+			SpecificConfigurationSegmentType specificConfigurationSegmentType = (SpecificConfigurationSegmentType) theEObject;
+			T result = caseSpecificConfigurationSegmentType(specificConfigurationSegmentType);
+			if (result == null)
+				result = caseComplexBaseType(specificConfigurationSegmentType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.SPECIFIC_CONFIGURATION_UI_DS_TYPE: {
+			SpecificConfigurationUIDsType specificConfigurationUIDsType = (SpecificConfigurationUIDsType) theEObject;
+			T result = caseSpecificConfigurationUIDsType(specificConfigurationUIDsType);
+			if (result == null)
+				result = caseComplexBaseType(specificConfigurationUIDsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.SPECIFIC_CONFIGURATION_UID_TYPE: {
+			SpecificConfigurationUIDType specificConfigurationUIDType = (SpecificConfigurationUIDType) theEObject;
+			T result = caseSpecificConfigurationUIDType(specificConfigurationUIDType);
+			if (result == null)
+				result = caseComplexBaseType(specificConfigurationUIDType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.SPECIFIC_EXCESS_POWER_TYPE: {
+			SpecificExcessPowerType specificExcessPowerType = (SpecificExcessPowerType) theEObject;
+			T result = caseSpecificExcessPowerType(specificExcessPowerType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(specificExcessPowerType);
+			if (result == null)
+				result = caseDoubleBaseType(specificExcessPowerType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.SPECIFIC_HEAT_MAP_TYPE: {
 			SpecificHeatMapType specificHeatMapType = (SpecificHeatMapType) theEObject;
 			T result = caseSpecificHeatMapType(specificHeatMapType);
@@ -6474,6 +7274,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.SPEED_DESIGNATORS_TYPE: {
+			SpeedDesignatorsType speedDesignatorsType = (SpeedDesignatorsType) theEObject;
+			T result = caseSpeedDesignatorsType(speedDesignatorsType);
+			if (result == null)
+				result = caseStringBaseType(speedDesignatorsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.SPOILERS_TYPE: {
 			SpoilersType spoilersType = (SpoilersType) theEObject;
 			T result = caseSpoilersType(spoilersType);
@@ -6488,6 +7297,24 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseSpoilerType(spoilerType);
 			if (result == null)
 				result = caseComplexBaseType(spoilerType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.STANDARD_PROFILE_SHEET_ID_TYPE: {
+			StandardProfileSheetIDType standardProfileSheetIDType = (StandardProfileSheetIDType) theEObject;
+			T result = caseStandardProfileSheetIDType(standardProfileSheetIDType);
+			if (result == null)
+				result = caseStringBaseType(standardProfileSheetIDType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.STANDARD_PROFILE_TYPE: {
+			StandardProfileType standardProfileType = (StandardProfileType) theEObject;
+			T result = caseStandardProfileType(standardProfileType);
+			if (result == null)
+				result = caseComplexBaseType(standardProfileType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -6549,6 +7376,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseStringerFramePositionType(stringerFramePositionType);
 			if (result == null)
 				result = caseComplexBaseType(stringerFramePositionType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.STRINGER_FRAME_POSITION_UI_DS_TYPE: {
+			StringerFramePositionUIDsType stringerFramePositionUIDsType = (StringerFramePositionUIDsType) theEObject;
+			T result = caseStringerFramePositionUIDsType(stringerFramePositionUIDsType);
+			if (result == null)
+				result = caseComplexBaseType(stringerFramePositionUIDsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -6650,20 +7486,31 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.STRUT_TYPE: {
-			StrutType strutType = (StrutType) theEObject;
-			T result = caseStrutType(strutType);
+		case CpacsPackage.STRUT_ASSEMBLY_TYPE: {
+			StrutAssemblyType strutAssemblyType = (StrutAssemblyType) theEObject;
+			T result = caseStrutAssemblyType(strutAssemblyType);
 			if (result == null)
-				result = caseComplexBaseType(strutType);
+				result = caseComplexBaseType(strutAssemblyType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.STRUT_WITH_ACTUATOR_TYPE: {
-			StrutWithActuatorType strutWithActuatorType = (StrutWithActuatorType) theEObject;
-			T result = caseStrutWithActuatorType(strutWithActuatorType);
+		case CpacsPackage.STRUT_PROPERTIES_TYPE: {
+			StrutPropertiesType strutPropertiesType = (StrutPropertiesType) theEObject;
+			T result = caseStrutPropertiesType(strutPropertiesType);
 			if (result == null)
-				result = caseComplexBaseType(strutWithActuatorType);
+				result = caseComplexBaseType(strutPropertiesType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.STRUT_TYPE: {
+			StrutType strutType = (StrutType) theEObject;
+			T result = caseStrutType(strutType);
+			if (result == null)
+				result = caseStrutPropertiesType(strutType);
+			if (result == null)
+				result = caseComplexBaseType(strutType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -6704,11 +7551,20 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.SYMMETRY_TYPE3: {
-			SymmetryType3 symmetryType3 = (SymmetryType3) theEObject;
-			T result = caseSymmetryType3(symmetryType3);
+		case CpacsPackage.SUPER_ELLIPSE_PROFILE_TYPE: {
+			SuperEllipseProfileType superEllipseProfileType = (SuperEllipseProfileType) theEObject;
+			T result = caseSuperEllipseProfileType(superEllipseProfileType);
 			if (result == null)
-				result = caseStringBaseType(symmetryType3);
+				result = caseComplexBaseType(superEllipseProfileType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.SUPPORT_BEAM_TYPE: {
+			SupportBeamType supportBeamType = (SupportBeamType) theEObject;
+			T result = caseSupportBeamType(supportBeamType);
+			if (result == null)
+				result = caseComplexBaseType(supportBeamType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -6783,6 +7639,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.TIME_CONSTRAINT_BASE_TYPE: {
+			TimeConstraintBaseType timeConstraintBaseType = (TimeConstraintBaseType) theEObject;
+			T result = caseTimeConstraintBaseType(timeConstraintBaseType);
+			if (result == null)
+				result = caseTimeBaseType(timeConstraintBaseType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.TOOLSPECIFIC_TYPE: {
 			ToolspecificType toolspecificType = (ToolspecificType) theEObject;
 			T result = caseToolspecificType(toolspecificType);
@@ -6837,20 +7702,38 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.TRACK_CAR_TYPE: {
-			TrackCarType trackCarType = (TrackCarType) theEObject;
-			T result = caseTrackCarType(trackCarType);
+		case CpacsPackage.TRACK_JOINT_COORDINATES_TYPE: {
+			TrackJointCoordinatesType trackJointCoordinatesType = (TrackJointCoordinatesType) theEObject;
+			T result = caseTrackJointCoordinatesType(trackJointCoordinatesType);
 			if (result == null)
-				result = caseComplexBaseType(trackCarType);
+				result = caseComplexBaseType(trackJointCoordinatesType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.TRACK_FAIRING_TYPE: {
-			TrackFairingType trackFairingType = (TrackFairingType) theEObject;
-			T result = caseTrackFairingType(trackFairingType);
+		case CpacsPackage.TRACK_JOINT_POSITIONS_TYPE: {
+			TrackJointPositionsType trackJointPositionsType = (TrackJointPositionsType) theEObject;
+			T result = caseTrackJointPositionsType(trackJointPositionsType);
 			if (result == null)
-				result = caseComplexBaseType(trackFairingType);
+				result = caseComplexBaseType(trackJointPositionsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.TRACK_JOINT_POSITION_TYPE: {
+			TrackJointPositionType trackJointPositionType = (TrackJointPositionType) theEObject;
+			T result = caseTrackJointPositionType(trackJointPositionType);
+			if (result == null)
+				result = caseComplexBaseType(trackJointPositionType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.TRACK_SECONDARY_STRUCTURE_TYPE: {
+			TrackSecondaryStructureType trackSecondaryStructureType = (TrackSecondaryStructureType) theEObject;
+			T result = caseTrackSecondaryStructureType(trackSecondaryStructureType);
+			if (result == null)
+				result = caseComplexBaseType(trackSecondaryStructureType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -6864,20 +7747,20 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.TRACK_STRUT1_TYPE: {
-			TrackStrut1Type trackStrut1Type = (TrackStrut1Type) theEObject;
-			T result = caseTrackStrut1Type(trackStrut1Type);
+		case CpacsPackage.TRACK_STRUTS_TYPE: {
+			TrackStrutsType trackStrutsType = (TrackStrutsType) theEObject;
+			T result = caseTrackStrutsType(trackStrutsType);
 			if (result == null)
-				result = caseComplexBaseType(trackStrut1Type);
+				result = caseComplexBaseType(trackStrutsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.TRACK_STRUT2_TYPE: {
-			TrackStrut2Type trackStrut2Type = (TrackStrut2Type) theEObject;
-			T result = caseTrackStrut2Type(trackStrut2Type);
+		case CpacsPackage.TRACK_STRUT_TYPE: {
+			TrackStrutType trackStrutType = (TrackStrutType) theEObject;
+			T result = caseTrackStrutType(trackStrutType);
 			if (result == null)
-				result = caseComplexBaseType(trackStrut2Type);
+				result = caseComplexBaseType(trackStrutType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -7026,11 +7909,47 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.TRIM_PARAMETERS_TYPE: {
-			TrimParametersType trimParametersType = (TrimParametersType) theEObject;
-			T result = caseTrimParametersType(trimParametersType);
+		case CpacsPackage.TRIM_CASE_TYPE: {
+			TrimCaseType trimCaseType = (TrimCaseType) theEObject;
+			T result = caseTrimCaseType(trimCaseType);
 			if (result == null)
-				result = caseComplexBaseType(trimParametersType);
+				result = caseComplexBaseType(trimCaseType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.TRIM_REQUIREMENTS_TYPE: {
+			TrimRequirementsType trimRequirementsType = (TrimRequirementsType) theEObject;
+			T result = caseTrimRequirementsType(trimRequirementsType);
+			if (result == null)
+				result = caseComplexBaseType(trimRequirementsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.TRIM_REQUIREMENT_TYPE: {
+			TrimRequirementType trimRequirementType = (TrimRequirementType) theEObject;
+			T result = caseTrimRequirementType(trimRequirementType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.TRIM_TYPE: {
+			TrimType trimType = (TrimType) theEObject;
+			T result = caseTrimType(trimType);
+			if (result == null)
+				result = caseComplexBaseType(trimType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.TURN_ANGLE_TYPE: {
+			TurnAngleType turnAngleType = (TurnAngleType) theEObject;
+			T result = caseTurnAngleType(turnAngleType);
+			if (result == null)
+				result = caseDoubleConstraintBaseType(turnAngleType);
+			if (result == null)
+				result = caseDoubleBaseType(turnAngleType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -7044,47 +7963,20 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.TYPE_TYPE1: {
-			TypeType1 typeType1 = (TypeType1) theEObject;
-			T result = caseTypeType1(typeType1);
+		case CpacsPackage.TYPE_TYPE: {
+			TypeType typeType = (TypeType) theEObject;
+			T result = caseTypeType(typeType);
 			if (result == null)
-				result = caseStringBaseType(typeType1);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.TYPE_TYPE2: {
-			TypeType2 typeType2 = (TypeType2) theEObject;
-			T result = caseTypeType2(typeType2);
-			if (result == null)
-				result = caseStringBaseType(typeType2);
+				result = caseStringBaseType(typeType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.TYPE_TYPE5: {
-			TypeType5 typeType5 = (TypeType5) theEObject;
-			T result = caseTypeType5(typeType5);
+		case CpacsPackage.TYPE_TYPE4: {
+			TypeType4 typeType4 = (TypeType4) theEObject;
+			T result = caseTypeType4(typeType4);
 			if (result == null)
-				result = caseStringBaseType(typeType5);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.TYPE_TYPE6: {
-			TypeType6 typeType6 = (TypeType6) theEObject;
-			T result = caseTypeType6(typeType6);
-			if (result == null)
-				result = caseStringBaseType(typeType6);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.TYPE_TYPE7: {
-			TypeType7 typeType7 = (TypeType7) theEObject;
-			T result = caseTypeType7(typeType7);
-			if (result == null)
-				result = caseStringBaseType(typeType7);
+				result = caseStringBaseType(typeType4);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -7107,20 +7999,11 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.UPDATES_TYPE: {
-			UpdatesType updatesType = (UpdatesType) theEObject;
-			T result = caseUpdatesType(updatesType);
+		case CpacsPackage.UID_SEQUENCE_TYPE: {
+			UIDSequenceType uidSequenceType = (UIDSequenceType) theEObject;
+			T result = caseUIDSequenceType(uidSequenceType);
 			if (result == null)
-				result = caseComplexBaseType(updatesType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.UPDATE_TYPE: {
-			UpdateType updateType = (UpdateType) theEObject;
-			T result = caseUpdateType(updateType);
-			if (result == null)
-				result = caseComplexBaseType(updateType);
+				result = caseComplexBaseType(uidSequenceType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -7130,6 +8013,17 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseUpperLinksType(upperLinksType);
 			if (result == null)
 				result = caseComplexBaseType(upperLinksType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.VARIABLE_CONDITIONS_TYPE: {
+			VariableConditionsType variableConditionsType = (VariableConditionsType) theEObject;
+			T result = caseVariableConditionsType(variableConditionsType);
+			if (result == null)
+				result = caseStringVectorBaseType(variableConditionsType);
+			if (result == null)
+				result = caseStringBaseType(variableConditionsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -7152,11 +8046,47 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.VEHICLE_CONFIGURATIONS_TYPE: {
+			VehicleConfigurationsType vehicleConfigurationsType = (VehicleConfigurationsType) theEObject;
+			T result = caseVehicleConfigurationsType(vehicleConfigurationsType);
+			if (result == null)
+				result = caseComplexBaseType(vehicleConfigurationsType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.VEHICLE_CONFIGURATION_TYPE: {
+			VehicleConfigurationType vehicleConfigurationType = (VehicleConfigurationType) theEObject;
+			T result = caseVehicleConfigurationType(vehicleConfigurationType);
+			if (result == null)
+				result = caseComplexBaseType(vehicleConfigurationType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.VEHICLES_TYPE: {
 			VehiclesType vehiclesType = (VehiclesType) theEObject;
 			T result = caseVehiclesType(vehiclesType);
 			if (result == null)
 				result = caseComplexBaseType(vehiclesType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.VERSION_INFOS_TYPE: {
+			VersionInfosType versionInfosType = (VersionInfosType) theEObject;
+			T result = caseVersionInfosType(versionInfosType);
+			if (result == null)
+				result = caseComplexBaseType(versionInfosType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case CpacsPackage.VERSION_INFO_TYPE: {
+			VersionInfoType versionInfoType = (VersionInfoType) theEObject;
+			T result = caseVersionInfoType(versionInfoType);
+			if (result == null)
+				result = caseComplexBaseType(versionInfoType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -7230,6 +8160,8 @@ public class CpacsSwitch<T> extends Switch<T> {
 		case CpacsPackage.WAY_POINT_TYPE_TYPE: {
 			WayPointTypeType wayPointTypeType = (WayPointTypeType) theEObject;
 			T result = caseWayPointTypeType(wayPointTypeType);
+			if (result == null)
+				result = caseStringVectorBaseType(wayPointTypeType);
 			if (result == null)
 				result = caseStringBaseType(wayPointTypeType);
 			if (result == null)
@@ -7317,15 +8249,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.WHEELS_TYPE: {
-			WheelsType wheelsType = (WheelsType) theEObject;
-			T result = caseWheelsType(wheelsType);
-			if (result == null)
-				result = caseComplexBaseType(wheelsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.WHEEL_TYPE: {
 			WheelType wheelType = (WheelType) theEObject;
 			T result = caseWheelType(wheelType);
@@ -7380,6 +8303,15 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case CpacsPackage.WING_ATTACHMENT_POSITIONING_TYPE: {
+			WingAttachmentPositioningType wingAttachmentPositioningType = (WingAttachmentPositioningType) theEObject;
+			T result = caseWingAttachmentPositioningType(wingAttachmentPositioningType);
+			if (result == null)
+				result = caseComplexBaseType(wingAttachmentPositioningType);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case CpacsPackage.WING_CELLS_TYPE: {
 			WingCellsType wingCellsType = (WingCellsType) theEObject;
 			T result = caseWingCellsType(wingCellsType);
@@ -7394,15 +8326,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseWingCellType(wingCellType);
 			if (result == null)
 				result = caseComplexBaseType(wingCellType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.WING_COEFFICIENTS_TYPE: {
-			WingCoefficientsType wingCoefficientsType = (WingCoefficientsType) theEObject;
-			T result = caseWingCoefficientsType(wingCoefficientsType);
-			if (result == null)
-				result = caseComplexBaseType(wingCoefficientsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -7614,15 +8537,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case CpacsPackage.WINGS_COEFFICIENTS_TYPE: {
-			WingsCoefficientsType wingsCoefficientsType = (WingsCoefficientsType) theEObject;
-			T result = caseWingsCoefficientsType(wingsCoefficientsType);
-			if (result == null)
-				result = caseComplexBaseType(wingsCoefficientsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case CpacsPackage.WING_SECTIONS_TYPE: {
 			WingSectionsType wingSectionsType = (WingSectionsType) theEObject;
 			T result = caseWingSectionsType(wingSectionsType);
@@ -7637,33 +8551,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 			T result = caseWingSectionType(wingSectionType);
 			if (result == null)
 				result = caseComplexBaseType(wingSectionType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.WING_SEGMENT_COEFFICIENTS_TYPE: {
-			WingSegmentCoefficientsType wingSegmentCoefficientsType = (WingSegmentCoefficientsType) theEObject;
-			T result = caseWingSegmentCoefficientsType(wingSegmentCoefficientsType);
-			if (result == null)
-				result = caseComplexBaseType(wingSegmentCoefficientsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.WING_SEGMENTS_COEFFICIENTS_TYPE: {
-			WingSegmentsCoefficientsType wingSegmentsCoefficientsType = (WingSegmentsCoefficientsType) theEObject;
-			T result = caseWingSegmentsCoefficientsType(wingSegmentsCoefficientsType);
-			if (result == null)
-				result = caseComplexBaseType(wingSegmentsCoefficientsType);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case CpacsPackage.WING_SEGMENT_STRIP_COEFFICIENTS_TYPE: {
-			WingSegmentStripCoefficientsType wingSegmentStripCoefficientsType = (WingSegmentStripCoefficientsType) theEObject;
-			T result = caseWingSegmentStripCoefficientsType(wingSegmentStripCoefficientsType);
-			if (result == null)
-				result = caseComplexBaseType(wingSegmentStripCoefficientsType);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -7917,62 +8804,122 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Additional Parameters Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Aero Case Aero Data Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Additional Parameters Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Aero Case Aero Data Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAdditionalParametersType(AdditionalParametersType object) {
+	public T caseAeroCaseAeroDataType(AeroCaseAeroDataType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Additional Parameter Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Aero Case Coefficients Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Additional Parameter Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Aero Case Coefficients Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAdditionalParameterType(AdditionalParameterType object) {
+	public T caseAeroCaseCoefficientsType(AeroCaseCoefficientsType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Aero Data Set For Loads Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Aero Case Specification Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Aero Data Set For Loads Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Aero Case Specification Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAeroDataSetForLoadsType(AeroDataSetForLoadsType object) {
+	public T caseAeroCaseSpecificationType(AeroCaseSpecificationType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Aero Data Sets For Loads Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Aero Cases Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Aero Data Sets For Loads Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Aero Cases Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAeroDataSetsForLoadsType(AeroDataSetsForLoadsType object) {
+	public T caseAeroCasesType(AeroCasesType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Aero Case Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Aero Case Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAeroCaseType(AeroCaseType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Aero Data Components Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Aero Data Components Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAeroDataComponentsType(AeroDataComponentsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Aero Data Component Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Aero Data Component Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAeroDataComponentType(AeroDataComponentType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Aero Data Vehicle Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Aero Data Vehicle Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAeroDataVehicleType(AeroDataVehicleType object) {
 		return null;
 	}
 
@@ -8037,6 +8984,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Aero Limits Increment Map Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Aero Limits Increment Map Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAeroLimitsIncrementMapType(AeroLimitsIncrementMapType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Aero Limits Map Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -8093,36 +9055,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseAeroPerformanceBoundaryConditionsType(AeroPerformanceBoundaryConditionsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Aero Performance Control Elements Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Aero Performance Control Elements Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAeroPerformanceControlElementsType(AeroPerformanceControlElementsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Aero Performance Control Element Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Aero Performance Control Element Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAeroPerformanceControlElementType(AeroPerformanceControlElementType object) {
 		return null;
 	}
 
@@ -8232,6 +9164,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Aircraft Analyses Global Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Aircraft Analyses Global Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAircraftAnalysesGlobalType(AircraftAnalysesGlobalType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Aircraft Analyses Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -8243,6 +9190,36 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseAircraftAnalysesType(AircraftAnalysesType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Aircraft Control Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Aircraft Control Elements Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAircraftControlElementsType(AircraftControlElementsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Aircraft Control Element Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Aircraft Control Element Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAircraftControlElementType(AircraftControlElementType object) {
 		return null;
 	}
 
@@ -8472,32 +9449,17 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Angle Acceleration Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Altitude Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Angle Acceleration Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Altitude Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAngleAccelerationType(AngleAccelerationType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Angle Displacement Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Angle Displacement Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAngleDisplacementType(AngleDisplacementType object) {
+	public T caseAltitudeType(AltitudeType object) {
 		return null;
 	}
 
@@ -8528,21 +9490,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseAnisotropicSolidPropertiesType(AnisotropicSolidPropertiesType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Atmospheric Conditions Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Atmospheric Conditions Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAtmosphericConditionsType(AtmosphericConditionsType object) {
 		return null;
 	}
 
@@ -8622,32 +9569,32 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Attitude And Motion Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Axle Assemblies Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Attitude And Motion Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Axle Assemblies Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAttitudeAndMotionType(AttitudeAndMotionType object) {
+	public T caseAxleAssembliesType(AxleAssembliesType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Axles Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Axle Assembly Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Axles Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Axle Assembly Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAxlesType(AxlesType object) {
+	public T caseAxleAssemblyType(AxleAssemblyType object) {
 		return null;
 	}
 
@@ -8712,36 +9659,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Bogie Axles Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Bogie Axles Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseBogieAxlesType(BogieAxlesType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Bogie Axle Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Bogie Axle Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseBogieAxleType(BogieAxleType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Bogie Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -8772,6 +9689,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Bounding Box Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Bounding Box Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBoundingBoxType(BoundingBoxType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Bounding Element UI Ds Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -8783,21 +9715,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseBoundingElementUIDsType(BoundingElementUIDsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cab Geometry Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cab Geometry Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCabGeometryType(CabGeometryType object) {
 		return null;
 	}
 
@@ -8832,92 +9749,47 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cabin Doors Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Cabin Geometry Contours Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cabin Doors Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Cabin Geometry Contours Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCabinDoorsType(CabinDoorsType object) {
+	public T caseCabinGeometryContoursType(CabinGeometryContoursType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cabin Door Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Cabin Geometry Contour Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cabin Door Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Cabin Geometry Contour Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCabinDoorType(CabinDoorType object) {
+	public T caseCabinGeometryContourType(CabinGeometryContourType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cabin Floor Elements Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Cabin Geometry Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cabin Floor Elements Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Cabin Geometry Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCabinFloorElementsType(CabinFloorElementsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cabin Floor Element Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cabin Floor Element Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCabinFloorElementType(CabinFloorElementType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cabin Seat Elements Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cabin Seat Elements Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCabinSeatElementsType(CabinSeatElementsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cabin Seat Element Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cabin Seat Element Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCabinSeatElementType(CabinSeatElementType object) {
+	public T caseCabinGeometryType(CabinGeometryType object) {
 		return null;
 	}
 
@@ -8952,6 +9824,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Calibrated Air Speed Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Calibrated Air Speed Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCalibratedAirSpeedType(CalibratedAirSpeedType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Cap Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -8963,6 +9850,66 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCapType(CapType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cargo Container Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cargo Container Elements Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCargoContainerElementsType(CargoContainerElementsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cargo Container Element Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cargo Container Element Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCargoContainerElementType(CargoContainerElementType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cargo Containers Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cargo Containers Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCargoContainersType(CargoContainersType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cargo Container Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cargo Container Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCargoContainerType(CargoContainerType object) {
 		return null;
 	}
 
@@ -9008,6 +9955,36 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCargoDoorsAssemblyType(CargoDoorsAssemblyType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ceiling Panel Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ceiling Panel Elements Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCeilingPanelElementsType(CeilingPanelElementsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ceiling Panels Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ceiling Panels Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCeilingPanelsType(CeilingPanelsType object) {
 		return null;
 	}
 
@@ -9207,6 +10184,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Change Log Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Change Log Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseChangeLogType(ChangeLogType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Charges Cost Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -9218,6 +10210,66 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseChargesCostType(ChargesCostType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Chordwise Parts Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Chordwise Parts Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseChordwisePartsType(ChordwisePartsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Chordwise Part Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Chordwise Part Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseChordwisePartType(ChordwisePartType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Class Divider Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Class Divider Elements Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseClassDividerElementsType(ClassDividerElementsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Class Dividers Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Class Dividers Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseClassDividersType(ClassDividersType object) {
 		return null;
 	}
 
@@ -9252,17 +10304,152 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Coefficients Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Coefficient Reference Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Coefficients Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Coefficient Reference Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCoefficientsType(CoefficientsType object) {
+	public T caseCoefficientReferenceType(CoefficientReferenceType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Coefficients Breakdown Components Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Coefficients Breakdown Components Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCoefficientsBreakdownComponentsType(CoefficientsBreakdownComponentsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Coefficients Breakdown Component Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Coefficients Breakdown Component Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCoefficientsBreakdownComponentType(CoefficientsBreakdownComponentType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Coefficients Breakdown Segment Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Coefficients Breakdown Segment Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCoefficientsBreakdownSegmentType(CoefficientsBreakdownSegmentType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Coefficients Breakdown Strips Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Coefficients Breakdown Strips Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCoefficientsBreakdownStripsType(CoefficientsBreakdownStripsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Coefficients Breakdown Strip Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Coefficients Breakdown Strip Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCoefficientsBreakdownStripType(CoefficientsBreakdownStripType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Coefficients Breakdown Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Coefficients Breakdown Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCoefficientsBreakdownType(CoefficientsBreakdownType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Coefficients Breakdown Wing Segments Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Coefficients Breakdown Wing Segments Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCoefficientsBreakdownWingSegmentsType(CoefficientsBreakdownWingSegmentsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Coefficients Breakdown Wings Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Coefficients Breakdown Wings Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCoefficientsBreakdownWingsType(CoefficientsBreakdownWingsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Coefficients Breakdown Wing Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Coefficients Breakdown Wing Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCoefficientsBreakdownWingType(CoefficientsBreakdownWingType object) {
 		return null;
 	}
 
@@ -9387,21 +10574,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Component Cut Loads Envelope Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Component Cut Loads Envelope Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseComponentCutLoadsEnvelopeType(ComponentCutLoadsEnvelopeType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Component Segment Path Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -9522,6 +10694,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Configuration Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Configuration Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConfigurationType(ConfigurationType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Connectivities Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -9552,21 +10739,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Constraint Settings Point Performance Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Constraint Settings Point Performance Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseConstraintSettingsPointPerformanceType(ConstraintSettingsPointPerformanceType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Constraint Settings Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -9578,6 +10750,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseConstraintSettingsType(ConstraintSettingsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Constraints Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Constraints Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConstraintsType(ConstraintsType object) {
 		return null;
 	}
 
@@ -9672,6 +10859,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Continuity Type4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Continuity Type4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseContinuityType4(ContinuityType4 object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Contour Reference Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -9683,6 +10885,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseContourReferenceType(ContourReferenceType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Contour Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Contour Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseContourType(ContourType object) {
 		return null;
 	}
 
@@ -9777,32 +10994,32 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Control Inputs Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Controllability Reqs Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Control Inputs Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Controllability Reqs Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseControlInputsType(ControlInputsType object) {
+	public T caseControllabilityReqsType(ControllabilityReqsType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Control Input Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Controllability Requirement Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Control Input Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Controllability Requirement Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseControlInputType(ControlInputType object) {
+	public T caseControllabilityRequirementType(ControllabilityRequirementType object) {
 		return null;
 	}
 
@@ -9953,36 +11170,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseControlSurfaceContoursType(ControlSurfaceContoursType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Control Surface Deflections Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Control Surface Deflections Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseControlSurfaceDeflectionsType(ControlSurfaceDeflectionsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Control Surface Deflection Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Control Surface Deflection Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseControlSurfaceDeflectionType(ControlSurfaceDeflectionType object) {
 		return null;
 	}
 
@@ -10268,6 +11455,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseControlSurfaceWingCutOutType(ControlSurfaceWingCutOutType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Corner Radius Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Corner Radius Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCornerRadiusType(CornerRadiusType object) {
 		return null;
 	}
 
@@ -10872,62 +12074,17 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cut Load Integration Points Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Cut Load Points Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cut Load Integration Points Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Cut Load Points Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCutLoadIntegrationPointsType(CutLoadIntegrationPointsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cut Loads Envelope Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cut Loads Envelope Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCutLoadsEnvelopeType(CutLoadsEnvelopeType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cut Loads Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cut Loads Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCutLoadsType(CutLoadsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cut Load Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cut Load Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCutLoadType(CutLoadType object) {
+	public T caseCutLoadPointsType(CutLoadPointsType object) {
 		return null;
 	}
 
@@ -11142,6 +12299,156 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Deck Component2 DBase Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Deck Component2 DBase Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeckComponent2DBaseType(DeckComponent2DBaseType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Deck Component Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Deck Component Base Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeckComponentBaseType(DeckComponentBaseType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Deck Doors Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Deck Doors Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeckDoorsType(DeckDoorsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Deck Door Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Deck Door Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeckDoorType(DeckDoorType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Deck Element Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Deck Element Base Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeckElementBaseType(DeckElementBaseType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Deck Element Geometry Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Deck Element Geometry Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeckElementGeometryType(DeckElementGeometryType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Deck Element Mass Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Deck Element Mass Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeckElementMassType(DeckElementMassType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Deck Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Deck Elements Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeckElementsType(DeckElementsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Deck Structural Mounts Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Deck Structural Mounts Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeckStructuralMountsType(DeckStructuralMountsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Deck Structural Mount Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Deck Structural Mount Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeckStructuralMountType(DeckStructuralMountType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Decks Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -11168,6 +12475,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDeckType(DeckType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Deck Type Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Deck Type Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeckTypeType(DeckTypeType object) {
 		return null;
 	}
 
@@ -11243,21 +12565,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDesignSpaceType(DesignSpaceType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Design Speed Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Design Speed Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseDesignSpeedType(DesignSpeedType object) {
 		return null;
 	}
 
@@ -11382,6 +12689,36 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Door Opening Legacy Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Door Opening Legacy Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDoorOpeningLegacyType(DoorOpeningLegacyType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Door Opening Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Door Opening Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDoorOpeningType(DoorOpeningType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Doors Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -11442,6 +12779,36 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Door Type Type1</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Door Type Type1</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDoorTypeType1(DoorTypeType1 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Double Array Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Double Array Base Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDoubleArrayBaseType(DoubleArrayBaseType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Double Base Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -11468,6 +12835,51 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDoubleConstraintBaseType(DoubleConstraintBaseType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Double Vector Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Double Vector Base Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDoubleVectorBaseType(DoubleVectorBaseType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Double Vector Constraint Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Double Vector Constraint Base Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDoubleVectorConstraintBaseType(DoubleVectorConstraintBaseType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Drag Contributions Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Drag Contributions Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDragContributionsType(DragContributionsType object) {
 		return null;
 	}
 
@@ -11502,6 +12914,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Duration Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Duration Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDurationType(DurationType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Dynamic Aircraft Model Analysis Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -11517,36 +12944,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Dynamic Aircraft Model Points Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Dynamic Aircraft Model Points Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseDynamicAircraftModelPointsType(DynamicAircraftModelPointsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Dynamic Aircraft Model Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Dynamic Aircraft Model Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseDynamicAircraftModelType(DynamicAircraftModelType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Emissivity Map Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -11558,6 +12955,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseEmissivityMapType(EmissivityMapType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>End Time UTC Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>End Time UTC Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEndTimeUTCType(EndTimeUTCType object) {
 		return null;
 	}
 
@@ -11772,21 +13184,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Engine Setting Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Engine Setting Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseEngineSettingType(EngineSettingType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Engine Spinner Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -11828,6 +13225,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseEngineType(EngineType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Environment Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Environment Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEnvironmentType(EnvironmentType object) {
 		return null;
 	}
 
@@ -11952,36 +13364,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Flight Dynamics Flight Cases Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Flight Dynamics Flight Cases Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseFlightDynamicsFlightCasesType(FlightDynamicsFlightCasesType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Flight Dynamics Flight Case Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Flight Dynamics Flight Case Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseFlightDynamicsFlightCaseType(FlightDynamicsFlightCaseType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Flight Dynamics Linear Model Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -11993,21 +13375,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseFlightDynamicsLinearModelType(FlightDynamicsLinearModelType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Flight Dynamics Model Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Flight Dynamics Model Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseFlightDynamicsModelType(FlightDynamicsModelType object) {
 		return null;
 	}
 
@@ -12027,6 +13394,51 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Flight Envelope Speed Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Flight Envelope Speed Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFlightEnvelopeSpeedType(FlightEnvelopeSpeedType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Flight Envelopes Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Flight Envelopes Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFlightEnvelopesType(FlightEnvelopesType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Flight Envelope Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Flight Envelope Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFlightEnvelopeType(FlightEnvelopeType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Flight Load Cases Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -12042,17 +13454,47 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Flight Load Case Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Flight Load Conditions Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Flight Load Case Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Flight Load Conditions Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFlightLoadCaseType(FlightLoadCaseType object) {
+	public T caseFlightLoadConditionsType(FlightLoadConditionsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Flight Load Data Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Flight Load Data Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFlightLoadDataType(FlightLoadDataType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Flight Path Angle Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Flight Path Angle Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFlightPathAngleType(FlightPathAngleType object) {
 		return null;
 	}
 
@@ -12117,6 +13559,51 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Flight Performance Level Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Flight Performance Level Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFlightPerformanceLevelType(FlightPerformanceLevelType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Flight Performance Requirements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Flight Performance Requirements Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFlightPerformanceRequirementsType(FlightPerformanceRequirementsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Flight Performance Requirement Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Flight Performance Requirement Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFlightPerformanceRequirementType(FlightPerformanceRequirementType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Flight Performance Takeoff Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -12132,17 +13619,32 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Flight Performance Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Flight Performance Turn Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Flight Performance Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Flight Performance Turn Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFlightPerformanceType(FlightPerformanceType object) {
+	public T caseFlightPerformanceTurnType(FlightPerformanceTurnType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Flight Points Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Flight Points Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFlightPointsType(FlightPointsType object) {
 		return null;
 	}
 
@@ -12237,47 +13739,32 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Flow Condition Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Flying Qualities Cases Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Flow Condition Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Flying Qualities Cases Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFlowConditionType(FlowConditionType object) {
+	public T caseFlyingQualitiesCasesType(FlyingQualitiesCasesType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Flying Qualities Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Flying Qualities Case Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Flying Qualities Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Flying Qualities Case Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFlyingQualitiesType(FlyingQualitiesType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Fq Case Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Fq Case Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseFqCaseType(FqCaseType object) {
+	public T caseFlyingQualitiesCaseType(FlyingQualitiesCaseType object) {
 		return null;
 	}
 
@@ -12477,6 +13964,36 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Fuel Consumed Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Fuel Consumed Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFuelConsumedType(FuelConsumedType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Fuel Fraction Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Fuel Fraction Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFuelFractionType(FuelFractionType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Fuel In Tank Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -12492,6 +14009,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Fuel Mass Fraction Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Fuel Mass Fraction Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFuelMassFractionType(FuelMassFractionType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Fuel Planning Type Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -12503,6 +14035,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseFuelPlanningTypeType(FuelPlanningTypeType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Fuel Remaining Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Fuel Remaining Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFuelRemainingType(FuelRemainingType object) {
 		return null;
 	}
 
@@ -12563,21 +14110,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseFuselageAeroPerformanceType(FuselageAeroPerformanceType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Fuselage Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Fuselage Coefficients Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseFuselageCoefficientsType(FuselageCoefficientsType object) {
 		return null;
 	}
 
@@ -12702,21 +14234,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Fuselages Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Fuselages Coefficients Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseFuselagesCoefficientsType(FuselagesCoefficientsType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Fuselage Sections Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -12743,51 +14260,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseFuselageSectionType(FuselageSectionType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Fuselage Segment Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Fuselage Segment Coefficients Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseFuselageSegmentCoefficientsType(FuselageSegmentCoefficientsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Fuselage Segments Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Fuselage Segments Coefficients Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseFuselageSegmentsCoefficientsType(FuselageSegmentsCoefficientsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Fuselage Segment Strip Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Fuselage Segment Strip Coefficients Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseFuselageSegmentStripCoefficientsType(FuselageSegmentStripCoefficientsType object) {
 		return null;
 	}
 
@@ -12867,17 +14339,47 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Gear Components Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Galley Elements Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Gear Components Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Galley Elements Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGearComponentsType(GearComponentsType object) {
+	public T caseGalleyElementsType(GalleyElementsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Galley Element Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Galley Element Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGalleyElementType(GalleyElementType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Galleys Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Galleys Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGalleysType(GalleysType object) {
 		return null;
 	}
 
@@ -12957,36 +14459,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Generic Component Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Generic Component Coefficients Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseGenericComponentCoefficientsType(GenericComponentCoefficientsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Generic Components Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Generic Components Coefficients Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseGenericComponentsCoefficientsType(GenericComponentsCoefficientsType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Generic Cost Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -12998,6 +14470,36 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseGenericCostType(GenericCostType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Generic Floor Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Generic Floor Elements Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGenericFloorElementsType(GenericFloorElementsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Generic Floor Modules Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Generic Floor Modules Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGenericFloorModulesType(GenericFloorModulesType object) {
 		return null;
 	}
 
@@ -13028,6 +14530,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseGenericGeometryComponentsType(GenericGeometryComponentsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Generic Geometry Component Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Generic Geometry Component Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGenericGeometryComponentType(GenericGeometryComponentType object) {
 		return null;
 	}
 
@@ -13073,21 +14590,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseGenericSystemType(GenericSystemType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Geogen Wing Output Options Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Geogen Wing Output Options Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseGeogenWingOutputOptionsType(GeogenWingOutputOptionsType object) {
 		return null;
 	}
 
@@ -13152,6 +14654,36 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Global Flight Point Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Global Flight Point Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGlobalFlightPointType(GlobalFlightPointType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Global Performance Cases Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Global Performance Cases Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGlobalPerformanceCasesType(GlobalPerformanceCasesType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Ground Load Cases Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -13163,21 +14695,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseGroundLoadCasesType(GroundLoadCasesType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Ground Load Case Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Ground Load Case Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseGroundLoadCaseType(GroundLoadCaseType object) {
 		return null;
 	}
 
@@ -13242,47 +14759,17 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Handbook Aero Last Transition Region Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Gust Shape Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Handbook Aero Last Transition Region Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Gust Shape Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseHandbookAeroLastTransitionRegionType(HandbookAeroLastTransitionRegionType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Handbook Aero Polynomial Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Handbook Aero Polynomial Coefficients Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseHandbookAeroPolynomialCoefficientsType(HandbookAeroPolynomialCoefficientsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Handbook Aero Transition Region Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Handbook Aero Transition Region Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseHandbookAeroTransitionRegionType(HandbookAeroTransitionRegionType object) {
+	public T caseGustShapeType(GustShapeType object) {
 		return null;
 	}
 
@@ -13298,6 +14785,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseHeaderType(HeaderType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Heading Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Heading Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHeadingType(HeadingType object) {
 		return null;
 	}
 
@@ -13358,21 +14860,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseHtpStructElemDefType(HtpStructElemDefType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Identifier Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Identifier Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseIdentifierType(IdentifierType object) {
 		return null;
 	}
 
@@ -13512,6 +14999,36 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Internal Pressures Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Internal Pressures Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalPressuresType(InternalPressuresType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Internal Pressure Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Internal Pressure Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalPressureType(InternalPressureType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Interpolation Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -13568,6 +15085,111 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseIsotropicPropertiesType(IsotropicPropertiesType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Landing Gear Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Landing Gear Base Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLandingGearBaseType(LandingGearBaseType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Landing Gear Braking State Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Landing Gear Braking State Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLandingGearBrakingStateType(LandingGearBrakingStateType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Landing Gear Component Assembly Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Landing Gear Component Assembly Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLandingGearComponentAssemblyType(LandingGearComponentAssemblyType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Landing Gear Control Functions Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Landing Gear Control Functions Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLandingGearControlFunctionsType(LandingGearControlFunctionsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Landing Gear Control Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Landing Gear Control Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLandingGearControlType(LandingGearControlType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Landing Gear Extension Function Step Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Landing Gear Extension Function Step Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLandingGearExtensionFunctionStepType(LandingGearExtensionFunctionStepType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Landing Gear Extension Function Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Landing Gear Extension Function Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLandingGearExtensionFunctionType(LandingGearExtensionFunctionType object) {
 		return null;
 	}
 
@@ -13693,17 +15315,77 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Landing Gear Setting Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Landing Gear Steering Function Step Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Landing Gear Setting Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Landing Gear Steering Function Step Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLandingGearSettingType(LandingGearSettingType object) {
+	public T caseLandingGearSteeringFunctionStepType(LandingGearSteeringFunctionStepType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Landing Gear Steering Function Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Landing Gear Steering Function Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLandingGearSteeringFunctionType(LandingGearSteeringFunctionType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Landing Gear Strut Attachment Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Landing Gear Strut Attachment Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLandingGearStrutAttachmentType(LandingGearStrutAttachmentType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Landing Gears Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Landing Gears Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLandingGearsType(LandingGearsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Landing Gear Support Beam Position Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Landing Gear Support Beam Position Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLandingGearSupportBeamPositionType(LandingGearSupportBeamPositionType object) {
 		return null;
 	}
 
@@ -13734,6 +15416,51 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseLateralCapType(LateralCapType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Latitude Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Latitude Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLatitudeType(LatitudeType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Lavatories Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Lavatories Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLavatoriesType(LavatoriesType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Lavatory Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Lavatory Elements Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLavatoryElementsType(LavatoryElementsType object) {
 		return null;
 	}
 
@@ -13843,6 +15570,51 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Load Application Point Sets Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Load Application Point Sets Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLoadApplicationPointSetsType(LoadApplicationPointSetsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Load Application Point Set Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Load Application Point Set Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLoadApplicationPointSetType(LoadApplicationPointSetType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Load Application Points Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Load Application Points Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLoadApplicationPointsType(LoadApplicationPointsType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Load Breakdown Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -13858,107 +15630,62 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Load Case Engines Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Load Case Accelerations Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Load Case Engines Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Load Case Accelerations Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLoadCaseEnginesType(LoadCaseEnginesType object) {
+	public T caseLoadCaseAccelerationsType(LoadCaseAccelerationsType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Load Case Landing Gears Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Load Case Gust Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Load Case Landing Gears Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Load Case Gust Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLoadCaseLandingGearsType(LoadCaseLandingGearsType object) {
+	public T caseLoadCaseGustType(LoadCaseGustType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Load Case Mass Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Load Case Load Factors Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Load Case Mass Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Load Case Load Factors Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLoadCaseMassType(LoadCaseMassType object) {
+	public T caseLoadCaseLoadFactorsType(LoadCaseLoadFactorsType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Load Case Rotation Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Load Case Specification Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Load Case Rotation Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Load Case Specification Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLoadCaseRotationType(LoadCaseRotationType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Load Case Rotation Velocity Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Load Case Rotation Velocity Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseLoadCaseRotationVelocityType(LoadCaseRotationVelocityType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Load Case Settings Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Load Case Settings Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseLoadCaseSettingsType(LoadCaseSettingsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Load Case State Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Load Case State Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseLoadCaseStateType(LoadCaseStateType object) {
+	public T caseLoadCaseSpecificationType(LoadCaseSpecificationType object) {
 		return null;
 	}
 
@@ -13978,122 +15705,137 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Load Case Translation Acceleration Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Load Case Superposition Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Load Case Translation Acceleration Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Load Case Superposition Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLoadCaseTranslationAccelerationType(LoadCaseTranslationAccelerationType object) {
+	public T caseLoadCaseSuperpositionType(LoadCaseSuperpositionType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Load Case Translation Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Load Case Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Load Case Translation Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Load Case Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLoadCaseTranslationType(LoadCaseTranslationType object) {
+	public T caseLoadCaseType(LoadCaseType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Load Case Translation Velocity Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Load Envelopes Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Load Case Translation Velocity Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Load Envelopes Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLoadCaseTranslationVelocityType(LoadCaseTranslationVelocityType object) {
+	public T caseLoadEnvelopesType(LoadEnvelopesType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Load Condition Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Load Envelope Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Load Condition Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Load Envelope Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLoadConditionType(LoadConditionType object) {
+	public T caseLoadEnvelopeType(LoadEnvelopeType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Load Reference Axis Points Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Load Reference Line Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Load Reference Axis Points Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Load Reference Line Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLoadReferenceAxisPointsType(LoadReferenceAxisPointsType object) {
+	public T caseLoadReferenceLineType(LoadReferenceLineType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Load Reference Axis Point Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Load Reference Point Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Load Reference Axis Point Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Load Reference Point Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLoadReferenceAxisPointType(LoadReferenceAxisPointType object) {
+	public T caseLoadReferencePointType(LoadReferencePointType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Load Reference Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Load Sets Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Load Reference Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Load Sets Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLoadReferenceType(LoadReferenceType object) {
+	public T caseLoadSetsType(LoadSetsType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Loads Envelope Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Load Set Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Loads Envelope Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Load Set Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLoadsEnvelopeType(LoadsEnvelopeType object) {
+	public T caseLoadSetType(LoadSetType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Log Entry Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Log Entry Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLogEntryType(LogEntryType object) {
 		return null;
 	}
 
@@ -14143,6 +15885,96 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Longitude Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Longitude Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLongitudeType(LongitudeType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Lower Height Fraction Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Lower Height Fraction Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLowerHeightFractionType(LowerHeightFractionType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Luggage Compartment Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Luggage Compartment Elements Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLuggageCompartmentElementsType(LuggageCompartmentElementsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Luggage Compartments Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Luggage Compartments Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLuggageCompartmentsType(LuggageCompartmentsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mach Number Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mach Number Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMachNumberType(MachNumberType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MAdditional Center Tanks Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MAdditional Center Tanks Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMAdditionalCenterTanksType(MAdditionalCenterTanksType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Main Actuator Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -14158,21 +15990,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Main Gear Global Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Main Gear Global Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseMainGearGlobalType(MainGearGlobalType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Main Gears Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -14184,66 +16001,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseMainGearsType(MainGearsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Main Gear Support Beam Position Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Main Gear Support Beam Position Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseMainGearSupportBeamPositionType(MainGearSupportBeamPositionType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Main Gear Support Beam Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Main Gear Support Beam Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseMainGearSupportBeamType(MainGearSupportBeamType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Main Gear Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Main Gear Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseMainGearType(MainGearType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Main Gear Wing Attachment Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Main Gear Wing Attachment Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseMainGearWingAttachmentType(MainGearWingAttachmentType object) {
 		return null;
 	}
 
@@ -14968,6 +16725,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MEngine APU Oils Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MEngine APU Oils Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMEngineAPUOilsType(MEngineAPUOilsType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>MEngine Control Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -15358,6 +17130,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mission End Runway Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mission End Runway Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMissionEndRunwayType(MissionEndRunwayType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Mission Performance Map Definition Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -15474,6 +17261,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseMissionStartConditionType(MissionStartConditionType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mission Start Runway Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mission Start Runway Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMissionStartRunwayType(MissionStartRunwayType object) {
 		return null;
 	}
 
@@ -15613,21 +17415,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>MMiscellaneous Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>MMiscellaneous Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseMMiscellaneousType(MMiscellaneousType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>MMoveable Leading Edges Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -15714,21 +17501,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseMNoseGearsType(MNoseGearsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Model Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Model Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseModelType(ModelType object) {
 		return null;
 	}
 
@@ -15898,6 +17670,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MRemovable Crew Rests Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MRemovable Crew Rests Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMRemovableCrewRestsType(MRemovableCrewRestsType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>MRibs Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -16003,6 +17790,36 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MSpar Cells Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MSpar Cells Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMSparCellsType(MSparCellsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MSpar Skins Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MSpar Skins Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMSparSkinsType(MSparSkinsType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>MSpars Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -16014,6 +17831,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseMSparsType(MSparsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MSpar Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MSpar Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMSparType(MSparType object) {
 		return null;
 	}
 
@@ -16093,6 +17925,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MToilet Fluids Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MToilet Fluids Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMToiletFluidsType(MToiletFluidsType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>MTrailing Edge Devices Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -16153,6 +18000,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MUnusable Fuels Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MUnusable Fuels Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMUnusableFuelsType(MUnusableFuelsType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>MVacuum Waste Systems Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -16168,6 +18030,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MWalls Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MWalls Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMWallsType(MWallsType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>MWaste Water Systems Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -16179,6 +18056,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseMWasteWaterSystemsType(MWasteWaterSystemsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MWater Reservoirs Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MWater Reservoirs Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMWaterReservoirsType(MWaterReservoirsType object) {
 		return null;
 	}
 
@@ -16348,32 +18240,32 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Nodal Loads Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Name Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Nodal Loads Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Name Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseNodalLoadsType(NodalLoadsType object) {
+	public T caseNameType(NameType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Nodal Load Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Name Type1</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Nodal Load Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Name Type1</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseNodalLoadType(NodalLoadType object) {
+	public T caseNameType1(NameType1 object) {
 		return null;
 	}
 
@@ -16393,21 +18285,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Nose Gear Global Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Nose Gear Global Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseNoseGearGlobalType(NoseGearGlobalType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Nose Gears Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -16419,21 +18296,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseNoseGearsType(NoseGearsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Nose Gear Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Nose Gear Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseNoseGearType(NoseGearType object) {
 		return null;
 	}
 
@@ -16494,21 +18356,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseOperationLimitIncrementsType(OperationLimitIncrementsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Orientation Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Orientation Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseOrientationType(OrientationType object) {
 		return null;
 	}
 
@@ -16648,36 +18495,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Performance Cases Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Performance Cases Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T casePerformanceCasesType(PerformanceCasesType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Performance Case Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Performance Case Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T casePerformanceCaseType(PerformanceCaseType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Performance Map Selection Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -16689,6 +18506,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T casePerformanceMapSelectionType(PerformanceMapSelectionType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Performance Requirement Configurations Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Performance Requirement Configurations Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePerformanceRequirementConfigurationsType(PerformanceRequirementConfigurationsType object) {
 		return null;
 	}
 
@@ -16734,6 +18566,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T casePhiType(PhiType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Pintle Struts Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Pintle Struts Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePintleStrutsType(PintleStrutsType object) {
 		return null;
 	}
 
@@ -16918,32 +18765,62 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Point Performances Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Point Performance Constraints Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Point Performances Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Point Performance Constraints Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePointPerformancesType(PointPerformancesType object) {
+	public T casePointPerformanceConstraintsType(PointPerformanceConstraintsType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Point Performance Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Point Performance Definitions Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Point Performance Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Point Performance Definitions Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePointPerformanceType(PointPerformanceType object) {
+	public T casePointPerformanceDefinitionsType(PointPerformanceDefinitionsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Point Performance Definition Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Point Performance Definition Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePointPerformanceDefinitionType(PointPerformanceDefinitionType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Point Performance Requirements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Point Performance Requirements Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePointPerformanceRequirementsType(PointPerformanceRequirementsType object) {
 		return null;
 	}
 
@@ -17068,6 +18945,51 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Pos Excl0 Double Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Pos Excl0 Double Base Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePosExcl0DoubleBaseType(PosExcl0DoubleBaseType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Pos Excl0 Int Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Pos Excl0 Int Base Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePosExcl0IntBaseType(PosExcl0IntBaseType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Pos Int Vector Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Pos Int Vector Base Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePosIntVectorBaseType(PosIntVectorBaseType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Positionings Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -17094,6 +19016,51 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T casePositioningType(PositioningType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Power Consumed Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Power Consumed Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePowerConsumedType(PowerConsumedType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Power Fraction Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Power Fraction Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePowerFractionType(PowerFractionType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Power Remaining Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Power Remaining Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePowerRemainingType(PowerRemainingType object) {
 		return null;
 	}
 
@@ -17443,21 +19410,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Quasi Steady Rotation Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Quasi Steady Rotation Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseQuasiSteadyRotationType(QuasiSteadyRotationType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Radiative Forcing Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -17469,6 +19421,51 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRadiativeForcingType(RadiativeForcingType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Range Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Range Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRangeType(RangeType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Rate Of Climb Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Rate Of Climb Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRateOfClimbType(RateOfClimbType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Rectangle Profile Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Rectangle Profile Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRectangleProfileType(RectangleProfileType object) {
 		return null;
 	}
 
@@ -17499,6 +19496,96 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseReferenceType(ReferenceType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Relative Strut Position Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Relative Strut Position Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRelativeStrutPositionType(RelativeStrutPositionType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Released Stores Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Released Stores Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReleasedStoresType(ReleasedStoresType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Released Store Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Released Store Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReleasedStoreType(ReleasedStoreType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Remaining Contributions Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Remaining Contributions Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRemainingContributionsType(RemainingContributionsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Remaining Contribution Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Remaining Contribution Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRemainingContributionType(RemainingContributionType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Requirement Classification Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Requirement Classification Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRequirementClassificationType(RequirementClassificationType object) {
 		return null;
 	}
 
@@ -17953,6 +20040,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Runway Start Position Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Runway Start Position Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRunwayStartPositionType(RunwayStartPositionType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Runways Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -17983,6 +20085,51 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Runway Type1</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Runway Type1</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRunwayType1(RunwayType1 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Seat Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Seat Elements Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSeatElementsType(SeatElementsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Seat Element Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Seat Element Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSeatElementType(SeatElementType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Seat Modules Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -17994,36 +20141,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSeatModulesType(SeatModulesType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Seat Module Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Seat Module Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSeatModuleType(SeatModuleType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Section Distribution Mode Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Section Distribution Mode Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSectionDistributionModeType(SectionDistributionModeType object) {
 		return null;
 	}
 
@@ -18238,6 +20355,36 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sidewall Panel Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sidewall Panel Elements Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSidewallPanelElementsType(SidewallPanelElementsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sidewall Panels Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sidewall Panels Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSidewallPanelsType(SidewallPanelsType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Single Generic Mass Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -18253,36 +20400,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Sizing Type Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Sizing Type Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSizingTypeType(SizingTypeType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Skid Gear Global Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Skid Gear Global Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSkidGearGlobalType(SkidGearGlobalType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Skid Gears Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -18294,21 +20411,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSkidGearsType(SkidGearsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Skid Gear Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Skid Gear Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSkidGearType(SkidGearType object) {
 		return null;
 	}
 
@@ -18478,6 +20580,81 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Specific Configuration Segments Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Specific Configuration Segments Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSpecificConfigurationSegmentsType(SpecificConfigurationSegmentsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Specific Configuration Segment Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Specific Configuration Segment Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSpecificConfigurationSegmentType(SpecificConfigurationSegmentType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Specific Configuration UI Ds Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Specific Configuration UI Ds Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSpecificConfigurationUIDsType(SpecificConfigurationUIDsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Specific Configuration UID Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Specific Configuration UID Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSpecificConfigurationUIDType(SpecificConfigurationUIDType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Specific Excess Power Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Specific Excess Power Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSpecificExcessPowerType(SpecificExcessPowerType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Specific Heat Map Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -18523,6 +20700,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Speed Designators Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Speed Designators Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSpeedDesignatorsType(SpeedDesignatorsType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Spoilers Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -18549,6 +20741,36 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSpoilerType(SpoilerType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Standard Profile Sheet ID Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Standard Profile Sheet ID Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStandardProfileSheetIDType(StandardProfileSheetIDType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Standard Profile Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Standard Profile Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStandardProfileType(StandardProfileType object) {
 		return null;
 	}
 
@@ -18654,6 +20876,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseStringerFramePositionType(StringerFramePositionType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Stringer Frame Position UI Ds Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Stringer Frame Position UI Ds Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStringerFramePositionUIDsType(StringerFramePositionUIDsType object) {
 		return null;
 	}
 
@@ -18823,6 +21060,36 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Strut Assembly Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Strut Assembly Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStrutAssemblyType(StrutAssemblyType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Strut Properties Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Strut Properties Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStrutPropertiesType(StrutPropertiesType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Strut Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -18834,21 +21101,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseStrutType(StrutType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Strut With Actuator Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Strut With Actuator Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseStrutWithActuatorType(StrutWithActuatorType object) {
 		return null;
 	}
 
@@ -18913,17 +21165,32 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Symmetry Type3</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Super Ellipse Profile Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Symmetry Type3</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Super Ellipse Profile Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSymmetryType3(SymmetryType3 object) {
+	public T caseSuperEllipseProfileType(SuperEllipseProfileType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Support Beam Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Support Beam Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSupportBeamType(SupportBeamType object) {
 		return null;
 	}
 
@@ -19048,6 +21315,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Time Constraint Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Time Constraint Base Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTimeConstraintBaseType(TimeConstraintBaseType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Toolspecific Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -19138,32 +21420,62 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Track Car Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Track Joint Coordinates Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Track Car Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Track Joint Coordinates Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTrackCarType(TrackCarType object) {
+	public T caseTrackJointCoordinatesType(TrackJointCoordinatesType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Track Fairing Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Track Joint Positions Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Track Fairing Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Track Joint Positions Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTrackFairingType(TrackFairingType object) {
+	public T caseTrackJointPositionsType(TrackJointPositionsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Track Joint Position Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Track Joint Position Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTrackJointPositionType(TrackJointPositionType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Track Secondary Structure Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Track Secondary Structure Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTrackSecondaryStructureType(TrackSecondaryStructureType object) {
 		return null;
 	}
 
@@ -19183,32 +21495,32 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Track Strut1 Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Track Struts Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Track Strut1 Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Track Struts Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTrackStrut1Type(TrackStrut1Type object) {
+	public T caseTrackStrutsType(TrackStrutsType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Track Strut2 Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Track Strut Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Track Strut2 Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Track Strut Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTrackStrut2Type(TrackStrut2Type object) {
+	public T caseTrackStrutType(TrackStrutType object) {
 		return null;
 	}
 
@@ -19453,17 +21765,77 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Trim Parameters Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Trim Case Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Trim Parameters Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Trim Case Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTrimParametersType(TrimParametersType object) {
+	public T caseTrimCaseType(TrimCaseType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Trim Requirements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Trim Requirements Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTrimRequirementsType(TrimRequirementsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Trim Requirement Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Trim Requirement Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTrimRequirementType(TrimRequirementType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Trim Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Trim Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTrimType(TrimType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Turn Angle Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Turn Angle Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTurnAngleType(TurnAngleType object) {
 		return null;
 	}
 
@@ -19483,77 +21855,32 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Type Type1</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Type Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Type Type1</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Type Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTypeType1(TypeType1 object) {
+	public T caseTypeType(TypeType object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Type Type2</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Type Type4</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Type Type2</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Type Type4</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTypeType2(TypeType2 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Type Type5</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Type Type5</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseTypeType5(TypeType5 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Type Type6</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Type Type6</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseTypeType6(TypeType6 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Type Type7</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Type Type7</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseTypeType7(TypeType7 object) {
+	public T caseTypeType4(TypeType4 object) {
 		return null;
 	}
 
@@ -19588,32 +21915,17 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Updates Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>UID Sequence Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Updates Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>UID Sequence Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUpdatesType(UpdatesType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Update Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Update Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseUpdateType(UpdateType object) {
+	public T caseUIDSequenceType(UIDSequenceType object) {
 		return null;
 	}
 
@@ -19629,6 +21941,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseUpperLinksType(UpperLinksType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Variable Conditions Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Variable Conditions Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVariableConditionsType(VariableConditionsType object) {
 		return null;
 	}
 
@@ -19663,6 +21990,36 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Vehicle Configurations Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Vehicle Configurations Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVehicleConfigurationsType(VehicleConfigurationsType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Vehicle Configuration Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Vehicle Configuration Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVehicleConfigurationType(VehicleConfigurationType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Vehicles Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -19674,6 +22031,36 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseVehiclesType(VehiclesType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Version Infos Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Version Infos Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVersionInfosType(VersionInfosType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Version Info Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Version Info Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVersionInfoType(VersionInfoType object) {
 		return null;
 	}
 
@@ -19948,21 +22335,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Wheels Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Wheels Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseWheelsType(WheelsType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Wheel Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -20053,6 +22425,21 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Wing Attachment Positioning Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Wing Attachment Positioning Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseWingAttachmentPositioningType(WingAttachmentPositioningType object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Wing Cells Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -20079,21 +22466,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseWingCellType(WingCellType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Wing Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Wing Coefficients Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseWingCoefficientsType(WingCoefficientsType object) {
 		return null;
 	}
 
@@ -20443,21 +22815,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Wings Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Wings Coefficients Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseWingsCoefficientsType(WingsCoefficientsType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Wing Sections Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -20484,51 +22841,6 @@ public class CpacsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseWingSectionType(WingSectionType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Wing Segment Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Wing Segment Coefficients Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseWingSegmentCoefficientsType(WingSegmentCoefficientsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Wing Segments Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Wing Segments Coefficients Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseWingSegmentsCoefficientsType(WingSegmentsCoefficientsType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Wing Segment Strip Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Wing Segment Strip Coefficients Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseWingSegmentStripCoefficientsType(WingSegmentStripCoefficientsType object) {
 		return null;
 	}
 

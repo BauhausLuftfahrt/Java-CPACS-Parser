@@ -5,7 +5,7 @@ package Cpacs.impl;
 import Cpacs.CpacsPackage;
 import Cpacs.SpecificPerformanceMapType;
 import Cpacs.StringUIDBaseType;
-import Cpacs.StringVectorBaseType;
+import Cpacs.UIDSequenceType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.SpecificPerformanceMapTypeImpl#getPerformanceMapUID <em>Performance Map UID</em>}</li>
  *   <li>{@link Cpacs.impl.SpecificPerformanceMapTypeImpl#getSegmentUIDs <em>Segment UI Ds</em>}</li>
  *   <li>{@link Cpacs.impl.SpecificPerformanceMapTypeImpl#getPointPerformanceUIDs <em>Point Performance UI Ds</em>}</li>
- *   <li>{@link Cpacs.impl.SpecificPerformanceMapTypeImpl#getUID <em>UID</em>}</li>
+ *   <li>{@link Cpacs.impl.SpecificPerformanceMapTypeImpl#getPointPerformanceUIDs1 <em>Point Performance UI Ds1</em>}</li>
  * </ul>
  *
  * @generated
@@ -50,7 +50,7 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType segmentUIDs;
+	protected UIDSequenceType segmentUIDs;
 
 	/**
 	 * The cached value of the '{@link #getPointPerformanceUIDs() <em>Point Performance UI Ds</em>}' containment reference.
@@ -60,27 +60,17 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType pointPerformanceUIDs;
+	protected UIDSequenceType pointPerformanceUIDs;
 
 	/**
-	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
+	 * The cached value of the '{@link #getPointPerformanceUIDs1() <em>Point Performance UI Ds1</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getUID()
+	 * @see #getPointPerformanceUIDs1()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String UID_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getUID() <em>UID</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getUID()
-	 * @generated
-	 * @ordered
-	 */
-	protected String uID = UID_EDEFAULT;
+	protected UIDSequenceType pointPerformanceUIDs1;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -163,7 +153,7 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getSegmentUIDs() {
+	public UIDSequenceType getSegmentUIDs() {
 		return segmentUIDs;
 	}
 
@@ -172,8 +162,8 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSegmentUIDs(StringVectorBaseType newSegmentUIDs, NotificationChain msgs) {
-		StringVectorBaseType oldSegmentUIDs = segmentUIDs;
+	public NotificationChain basicSetSegmentUIDs(UIDSequenceType newSegmentUIDs, NotificationChain msgs) {
+		UIDSequenceType oldSegmentUIDs = segmentUIDs;
 		segmentUIDs = newSegmentUIDs;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -192,7 +182,7 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setSegmentUIDs(StringVectorBaseType newSegmentUIDs) {
+	public void setSegmentUIDs(UIDSequenceType newSegmentUIDs) {
 		if (newSegmentUIDs != segmentUIDs) {
 			NotificationChain msgs = null;
 			if (segmentUIDs != null)
@@ -215,7 +205,7 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getPointPerformanceUIDs() {
+	public UIDSequenceType getPointPerformanceUIDs() {
 		return pointPerformanceUIDs;
 	}
 
@@ -224,9 +214,9 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPointPerformanceUIDs(StringVectorBaseType newPointPerformanceUIDs,
+	public NotificationChain basicSetPointPerformanceUIDs(UIDSequenceType newPointPerformanceUIDs,
 			NotificationChain msgs) {
-		StringVectorBaseType oldPointPerformanceUIDs = pointPerformanceUIDs;
+		UIDSequenceType oldPointPerformanceUIDs = pointPerformanceUIDs;
 		pointPerformanceUIDs = newPointPerformanceUIDs;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -246,7 +236,7 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setPointPerformanceUIDs(StringVectorBaseType newPointPerformanceUIDs) {
+	public void setPointPerformanceUIDs(UIDSequenceType newPointPerformanceUIDs) {
 		if (newPointPerformanceUIDs != pointPerformanceUIDs) {
 			NotificationChain msgs = null;
 			if (pointPerformanceUIDs != null)
@@ -272,8 +262,29 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 	 * @generated
 	 */
 	@Override
-	public String getUID() {
-		return uID;
+	public UIDSequenceType getPointPerformanceUIDs1() {
+		return pointPerformanceUIDs1;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetPointPerformanceUIDs1(UIDSequenceType newPointPerformanceUIDs1,
+			NotificationChain msgs) {
+		UIDSequenceType oldPointPerformanceUIDs1 = pointPerformanceUIDs1;
+		pointPerformanceUIDs1 = newPointPerformanceUIDs1;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__POINT_PERFORMANCE_UI_DS1, oldPointPerformanceUIDs1,
+					newPointPerformanceUIDs1);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
 	}
 
 	/**
@@ -282,12 +293,24 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setUID(String newUID) {
-		String oldUID = uID;
-		uID = newUID;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__UID,
-					oldUID, uID));
+	public void setPointPerformanceUIDs1(UIDSequenceType newPointPerformanceUIDs1) {
+		if (newPointPerformanceUIDs1 != pointPerformanceUIDs1) {
+			NotificationChain msgs = null;
+			if (pointPerformanceUIDs1 != null)
+				msgs = ((InternalEObject) pointPerformanceUIDs1).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__POINT_PERFORMANCE_UI_DS1,
+						null, msgs);
+			if (newPointPerformanceUIDs1 != null)
+				msgs = ((InternalEObject) newPointPerformanceUIDs1).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__POINT_PERFORMANCE_UI_DS1,
+						null, msgs);
+			msgs = basicSetPointPerformanceUIDs1(newPointPerformanceUIDs1, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__POINT_PERFORMANCE_UI_DS1, newPointPerformanceUIDs1,
+					newPointPerformanceUIDs1));
 	}
 
 	/**
@@ -304,6 +327,8 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 			return basicSetSegmentUIDs(null, msgs);
 		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__POINT_PERFORMANCE_UI_DS:
 			return basicSetPointPerformanceUIDs(null, msgs);
+		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__POINT_PERFORMANCE_UI_DS1:
+			return basicSetPointPerformanceUIDs1(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -322,8 +347,8 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 			return getSegmentUIDs();
 		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__POINT_PERFORMANCE_UI_DS:
 			return getPointPerformanceUIDs();
-		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__UID:
-			return getUID();
+		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__POINT_PERFORMANCE_UI_DS1:
+			return getPointPerformanceUIDs1();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -340,13 +365,13 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 			setPerformanceMapUID((StringUIDBaseType) newValue);
 			return;
 		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__SEGMENT_UI_DS:
-			setSegmentUIDs((StringVectorBaseType) newValue);
+			setSegmentUIDs((UIDSequenceType) newValue);
 			return;
 		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__POINT_PERFORMANCE_UI_DS:
-			setPointPerformanceUIDs((StringVectorBaseType) newValue);
+			setPointPerformanceUIDs((UIDSequenceType) newValue);
 			return;
-		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__UID:
-			setUID((String) newValue);
+		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__POINT_PERFORMANCE_UI_DS1:
+			setPointPerformanceUIDs1((UIDSequenceType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -364,13 +389,13 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 			setPerformanceMapUID((StringUIDBaseType) null);
 			return;
 		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__SEGMENT_UI_DS:
-			setSegmentUIDs((StringVectorBaseType) null);
+			setSegmentUIDs((UIDSequenceType) null);
 			return;
 		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__POINT_PERFORMANCE_UI_DS:
-			setPointPerformanceUIDs((StringVectorBaseType) null);
+			setPointPerformanceUIDs((UIDSequenceType) null);
 			return;
-		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__UID:
-			setUID(UID_EDEFAULT);
+		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__POINT_PERFORMANCE_UI_DS1:
+			setPointPerformanceUIDs1((UIDSequenceType) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -390,27 +415,10 @@ public class SpecificPerformanceMapTypeImpl extends ComplexBaseTypeImpl implemen
 			return segmentUIDs != null;
 		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__POINT_PERFORMANCE_UI_DS:
 			return pointPerformanceUIDs != null;
-		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__UID:
-			return UID_EDEFAULT == null ? uID != null : !UID_EDEFAULT.equals(uID);
+		case CpacsPackage.SPECIFIC_PERFORMANCE_MAP_TYPE__POINT_PERFORMANCE_UI_DS1:
+			return pointPerformanceUIDs1 != null;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy())
-			return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (uID: ");
-		result.append(uID);
-		result.append(')');
-		return result.toString();
 	}
 
 } //SpecificPerformanceMapTypeImpl

@@ -76,40 +76,76 @@ public interface CpacsFactory extends EFactory {
 	ActuatorsFuselageWingType createActuatorsFuselageWingType();
 
 	/**
-	 * Returns a new object of class '<em>Additional Parameters Type</em>'.
+	 * Returns a new object of class '<em>Aero Case Aero Data Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Additional Parameters Type</em>'.
+	 * @return a new object of class '<em>Aero Case Aero Data Type</em>'.
 	 * @generated
 	 */
-	AdditionalParametersType createAdditionalParametersType();
+	AeroCaseAeroDataType createAeroCaseAeroDataType();
 
 	/**
-	 * Returns a new object of class '<em>Additional Parameter Type</em>'.
+	 * Returns a new object of class '<em>Aero Case Coefficients Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Additional Parameter Type</em>'.
+	 * @return a new object of class '<em>Aero Case Coefficients Type</em>'.
 	 * @generated
 	 */
-	AdditionalParameterType createAdditionalParameterType();
+	AeroCaseCoefficientsType createAeroCaseCoefficientsType();
 
 	/**
-	 * Returns a new object of class '<em>Aero Data Set For Loads Type</em>'.
+	 * Returns a new object of class '<em>Aero Case Specification Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Aero Data Set For Loads Type</em>'.
+	 * @return a new object of class '<em>Aero Case Specification Type</em>'.
 	 * @generated
 	 */
-	AeroDataSetForLoadsType createAeroDataSetForLoadsType();
+	AeroCaseSpecificationType createAeroCaseSpecificationType();
 
 	/**
-	 * Returns a new object of class '<em>Aero Data Sets For Loads Type</em>'.
+	 * Returns a new object of class '<em>Aero Cases Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Aero Data Sets For Loads Type</em>'.
+	 * @return a new object of class '<em>Aero Cases Type</em>'.
 	 * @generated
 	 */
-	AeroDataSetsForLoadsType createAeroDataSetsForLoadsType();
+	AeroCasesType createAeroCasesType();
+
+	/**
+	 * Returns a new object of class '<em>Aero Case Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Aero Case Type</em>'.
+	 * @generated
+	 */
+	AeroCaseType createAeroCaseType();
+
+	/**
+	 * Returns a new object of class '<em>Aero Data Components Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Aero Data Components Type</em>'.
+	 * @generated
+	 */
+	AeroDataComponentsType createAeroDataComponentsType();
+
+	/**
+	 * Returns a new object of class '<em>Aero Data Component Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Aero Data Component Type</em>'.
+	 * @generated
+	 */
+	AeroDataComponentType createAeroDataComponentType();
+
+	/**
+	 * Returns a new object of class '<em>Aero Data Vehicle Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Aero Data Vehicle Type</em>'.
+	 * @generated
+	 */
+	AeroDataVehicleType createAeroDataVehicleType();
 
 	/**
 	 * Returns a new object of class '<em>Aeroelastic Divergence Type</em>'.
@@ -148,6 +184,15 @@ public interface CpacsFactory extends EFactory {
 	AeroLimitsIncrementMapsType createAeroLimitsIncrementMapsType();
 
 	/**
+	 * Returns a new object of class '<em>Aero Limits Increment Map Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Aero Limits Increment Map Type</em>'.
+	 * @generated
+	 */
+	AeroLimitsIncrementMapType createAeroLimitsIncrementMapType();
+
+	/**
 	 * Returns a new object of class '<em>Aero Limits Map Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -182,24 +227,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	AeroPerformanceBoundaryConditionsType createAeroPerformanceBoundaryConditionsType();
-
-	/**
-	 * Returns a new object of class '<em>Aero Performance Control Elements Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Aero Performance Control Elements Type</em>'.
-	 * @generated
-	 */
-	AeroPerformanceControlElementsType createAeroPerformanceControlElementsType();
-
-	/**
-	 * Returns a new object of class '<em>Aero Performance Control Element Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Aero Performance Control Element Type</em>'.
-	 * @generated
-	 */
-	AeroPerformanceControlElementType createAeroPerformanceControlElementType();
 
 	/**
 	 * Returns a new object of class '<em>Aero Performance Increment Maps Type</em>'.
@@ -265,6 +292,15 @@ public interface CpacsFactory extends EFactory {
 	AeroPerformanceType createAeroPerformanceType();
 
 	/**
+	 * Returns a new object of class '<em>Aircraft Analyses Global Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Aircraft Analyses Global Type</em>'.
+	 * @generated
+	 */
+	AircraftAnalysesGlobalType createAircraftAnalysesGlobalType();
+
+	/**
 	 * Returns a new object of class '<em>Aircraft Analyses Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -272,6 +308,24 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	AircraftAnalysesType createAircraftAnalysesType();
+
+	/**
+	 * Returns a new object of class '<em>Aircraft Control Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Aircraft Control Elements Type</em>'.
+	 * @generated
+	 */
+	AircraftControlElementsType createAircraftControlElementsType();
+
+	/**
+	 * Returns a new object of class '<em>Aircraft Control Element Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Aircraft Control Element Type</em>'.
+	 * @generated
+	 */
+	AircraftControlElementType createAircraftControlElementType();
 
 	/**
 	 * Returns a new object of class '<em>Aircraft Global Type</em>'.
@@ -409,22 +463,13 @@ public interface CpacsFactory extends EFactory {
 	AlignmentStructMemberType createAlignmentStructMemberType();
 
 	/**
-	 * Returns a new object of class '<em>Angle Acceleration Type</em>'.
+	 * Returns a new object of class '<em>Altitude Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Angle Acceleration Type</em>'.
+	 * @return a new object of class '<em>Altitude Type</em>'.
 	 * @generated
 	 */
-	AngleAccelerationType createAngleAccelerationType();
-
-	/**
-	 * Returns a new object of class '<em>Angle Displacement Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Angle Displacement Type</em>'.
-	 * @generated
-	 */
-	AngleDisplacementType createAngleDisplacementType();
+	AltitudeType createAltitudeType();
 
 	/**
 	 * Returns a new object of class '<em>Anisotropic Shell Properties Type</em>'.
@@ -443,15 +488,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	AnisotropicSolidPropertiesType createAnisotropicSolidPropertiesType();
-
-	/**
-	 * Returns a new object of class '<em>Atmospheric Conditions Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Atmospheric Conditions Type</em>'.
-	 * @generated
-	 */
-	AtmosphericConditionsType createAtmosphericConditionsType();
 
 	/**
 	 * Returns a new object of class '<em>Atmospheric Model Old Type</em>'.
@@ -499,22 +535,22 @@ public interface CpacsFactory extends EFactory {
 	AttachmentPinType createAttachmentPinType();
 
 	/**
-	 * Returns a new object of class '<em>Attitude And Motion Type</em>'.
+	 * Returns a new object of class '<em>Axle Assemblies Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Attitude And Motion Type</em>'.
+	 * @return a new object of class '<em>Axle Assemblies Type</em>'.
 	 * @generated
 	 */
-	AttitudeAndMotionType createAttitudeAndMotionType();
+	AxleAssembliesType createAxleAssembliesType();
 
 	/**
-	 * Returns a new object of class '<em>Axles Type</em>'.
+	 * Returns a new object of class '<em>Axle Assembly Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Axles Type</em>'.
+	 * @return a new object of class '<em>Axle Assembly Type</em>'.
 	 * @generated
 	 */
-	AxlesType createAxlesType();
+	AxleAssemblyType createAxleAssemblyType();
 
 	/**
 	 * Returns a new object of class '<em>Axle Type</em>'.
@@ -553,24 +589,6 @@ public interface CpacsFactory extends EFactory {
 	BlockedDOFType createBlockedDOFType();
 
 	/**
-	 * Returns a new object of class '<em>Bogie Axles Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Bogie Axles Type</em>'.
-	 * @generated
-	 */
-	BogieAxlesType createBogieAxlesType();
-
-	/**
-	 * Returns a new object of class '<em>Bogie Axle Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Bogie Axle Type</em>'.
-	 * @generated
-	 */
-	BogieAxleType createBogieAxleType();
-
-	/**
 	 * Returns a new object of class '<em>Bogie Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -589,6 +607,15 @@ public interface CpacsFactory extends EFactory {
 	BooleanBaseType createBooleanBaseType();
 
 	/**
+	 * Returns a new object of class '<em>Bounding Box Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Bounding Box Type</em>'.
+	 * @generated
+	 */
+	BoundingBoxType createBoundingBoxType();
+
+	/**
 	 * Returns a new object of class '<em>Bounding Element UI Ds Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -596,15 +623,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	BoundingElementUIDsType createBoundingElementUIDsType();
-
-	/**
-	 * Returns a new object of class '<em>Cab Geometry Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cab Geometry Type</em>'.
-	 * @generated
-	 */
-	CabGeometryType createCabGeometryType();
 
 	/**
 	 * Returns a new object of class '<em>Cabin Aisles Type</em>'.
@@ -625,58 +643,31 @@ public interface CpacsFactory extends EFactory {
 	CabinAisleType createCabinAisleType();
 
 	/**
-	 * Returns a new object of class '<em>Cabin Doors Type</em>'.
+	 * Returns a new object of class '<em>Cabin Geometry Contours Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cabin Doors Type</em>'.
+	 * @return a new object of class '<em>Cabin Geometry Contours Type</em>'.
 	 * @generated
 	 */
-	CabinDoorsType createCabinDoorsType();
+	CabinGeometryContoursType createCabinGeometryContoursType();
 
 	/**
-	 * Returns a new object of class '<em>Cabin Door Type</em>'.
+	 * Returns a new object of class '<em>Cabin Geometry Contour Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cabin Door Type</em>'.
+	 * @return a new object of class '<em>Cabin Geometry Contour Type</em>'.
 	 * @generated
 	 */
-	CabinDoorType createCabinDoorType();
+	CabinGeometryContourType createCabinGeometryContourType();
 
 	/**
-	 * Returns a new object of class '<em>Cabin Floor Elements Type</em>'.
+	 * Returns a new object of class '<em>Cabin Geometry Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cabin Floor Elements Type</em>'.
+	 * @return a new object of class '<em>Cabin Geometry Type</em>'.
 	 * @generated
 	 */
-	CabinFloorElementsType createCabinFloorElementsType();
-
-	/**
-	 * Returns a new object of class '<em>Cabin Floor Element Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cabin Floor Element Type</em>'.
-	 * @generated
-	 */
-	CabinFloorElementType createCabinFloorElementType();
-
-	/**
-	 * Returns a new object of class '<em>Cabin Seat Elements Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cabin Seat Elements Type</em>'.
-	 * @generated
-	 */
-	CabinSeatElementsType createCabinSeatElementsType();
-
-	/**
-	 * Returns a new object of class '<em>Cabin Seat Element Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cabin Seat Element Type</em>'.
-	 * @generated
-	 */
-	CabinSeatElementType createCabinSeatElementType();
+	CabinGeometryType createCabinGeometryType();
 
 	/**
 	 * Returns a new object of class '<em>Cabin Spaces Type</em>'.
@@ -697,6 +688,15 @@ public interface CpacsFactory extends EFactory {
 	CabinSpaceType createCabinSpaceType();
 
 	/**
+	 * Returns a new object of class '<em>Calibrated Air Speed Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Calibrated Air Speed Type</em>'.
+	 * @generated
+	 */
+	CalibratedAirSpeedType createCalibratedAirSpeedType();
+
+	/**
 	 * Returns a new object of class '<em>Cap Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -704,6 +704,42 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	CapType createCapType();
+
+	/**
+	 * Returns a new object of class '<em>Cargo Container Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cargo Container Elements Type</em>'.
+	 * @generated
+	 */
+	CargoContainerElementsType createCargoContainerElementsType();
+
+	/**
+	 * Returns a new object of class '<em>Cargo Container Element Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cargo Container Element Type</em>'.
+	 * @generated
+	 */
+	CargoContainerElementType createCargoContainerElementType();
+
+	/**
+	 * Returns a new object of class '<em>Cargo Containers Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cargo Containers Type</em>'.
+	 * @generated
+	 */
+	CargoContainersType createCargoContainersType();
+
+	/**
+	 * Returns a new object of class '<em>Cargo Container Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cargo Container Type</em>'.
+	 * @generated
+	 */
+	CargoContainerType createCargoContainerType();
 
 	/**
 	 * Returns a new object of class '<em>Cargo Cross Beams Assembly Type</em>'.
@@ -731,6 +767,24 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	CargoDoorsAssemblyType createCargoDoorsAssemblyType();
+
+	/**
+	 * Returns a new object of class '<em>Ceiling Panel Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ceiling Panel Elements Type</em>'.
+	 * @generated
+	 */
+	CeilingPanelElementsType createCeilingPanelElementsType();
+
+	/**
+	 * Returns a new object of class '<em>Ceiling Panels Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ceiling Panels Type</em>'.
+	 * @generated
+	 */
+	CeilingPanelsType createCeilingPanelsType();
 
 	/**
 	 * Returns a new object of class '<em>Cell Positioning Chordwise Type</em>'.
@@ -850,6 +904,15 @@ public interface CpacsFactory extends EFactory {
 	CertificationCasesType createCertificationCasesType();
 
 	/**
+	 * Returns a new object of class '<em>Change Log Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Change Log Type</em>'.
+	 * @generated
+	 */
+	ChangeLogType createChangeLogType();
+
+	/**
 	 * Returns a new object of class '<em>Charges Cost Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -857,6 +920,42 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	ChargesCostType createChargesCostType();
+
+	/**
+	 * Returns a new object of class '<em>Chordwise Parts Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Chordwise Parts Type</em>'.
+	 * @generated
+	 */
+	ChordwisePartsType createChordwisePartsType();
+
+	/**
+	 * Returns a new object of class '<em>Chordwise Part Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Chordwise Part Type</em>'.
+	 * @generated
+	 */
+	ChordwisePartType createChordwisePartType();
+
+	/**
+	 * Returns a new object of class '<em>Class Divider Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Class Divider Elements Type</em>'.
+	 * @generated
+	 */
+	ClassDividerElementsType createClassDividerElementsType();
+
+	/**
+	 * Returns a new object of class '<em>Class Dividers Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Class Dividers Type</em>'.
+	 * @generated
+	 */
+	ClassDividersType createClassDividersType();
 
 	/**
 	 * Returns a new object of class '<em>Cockpit Controls Type</em>'.
@@ -877,13 +976,94 @@ public interface CpacsFactory extends EFactory {
 	CockpitControlType createCockpitControlType();
 
 	/**
-	 * Returns a new object of class '<em>Coefficients Type</em>'.
+	 * Returns a new object of class '<em>Coefficient Reference Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Coefficients Type</em>'.
+	 * @return a new object of class '<em>Coefficient Reference Type</em>'.
 	 * @generated
 	 */
-	CoefficientsType createCoefficientsType();
+	CoefficientReferenceType createCoefficientReferenceType();
+
+	/**
+	 * Returns a new object of class '<em>Coefficients Breakdown Components Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coefficients Breakdown Components Type</em>'.
+	 * @generated
+	 */
+	CoefficientsBreakdownComponentsType createCoefficientsBreakdownComponentsType();
+
+	/**
+	 * Returns a new object of class '<em>Coefficients Breakdown Component Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coefficients Breakdown Component Type</em>'.
+	 * @generated
+	 */
+	CoefficientsBreakdownComponentType createCoefficientsBreakdownComponentType();
+
+	/**
+	 * Returns a new object of class '<em>Coefficients Breakdown Segment Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coefficients Breakdown Segment Type</em>'.
+	 * @generated
+	 */
+	CoefficientsBreakdownSegmentType createCoefficientsBreakdownSegmentType();
+
+	/**
+	 * Returns a new object of class '<em>Coefficients Breakdown Strips Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coefficients Breakdown Strips Type</em>'.
+	 * @generated
+	 */
+	CoefficientsBreakdownStripsType createCoefficientsBreakdownStripsType();
+
+	/**
+	 * Returns a new object of class '<em>Coefficients Breakdown Strip Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coefficients Breakdown Strip Type</em>'.
+	 * @generated
+	 */
+	CoefficientsBreakdownStripType createCoefficientsBreakdownStripType();
+
+	/**
+	 * Returns a new object of class '<em>Coefficients Breakdown Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coefficients Breakdown Type</em>'.
+	 * @generated
+	 */
+	CoefficientsBreakdownType createCoefficientsBreakdownType();
+
+	/**
+	 * Returns a new object of class '<em>Coefficients Breakdown Wing Segments Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coefficients Breakdown Wing Segments Type</em>'.
+	 * @generated
+	 */
+	CoefficientsBreakdownWingSegmentsType createCoefficientsBreakdownWingSegmentsType();
+
+	/**
+	 * Returns a new object of class '<em>Coefficients Breakdown Wings Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coefficients Breakdown Wings Type</em>'.
+	 * @generated
+	 */
+	CoefficientsBreakdownWingsType createCoefficientsBreakdownWingsType();
+
+	/**
+	 * Returns a new object of class '<em>Coefficients Breakdown Wing Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coefficients Breakdown Wing Type</em>'.
+	 * @generated
+	 */
+	CoefficientsBreakdownWingType createCoefficientsBreakdownWingType();
 
 	/**
 	 * Returns a new object of class '<em>Command Case Command Type</em>'.
@@ -958,15 +1138,6 @@ public interface CpacsFactory extends EFactory {
 	ComponentCostType createComponentCostType();
 
 	/**
-	 * Returns a new object of class '<em>Component Cut Loads Envelope Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Component Cut Loads Envelope Type</em>'.
-	 * @generated
-	 */
-	ComponentCutLoadsEnvelopeType createComponentCutLoadsEnvelopeType();
-
-	/**
 	 * Returns a new object of class '<em>Component Segment Path Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1039,6 +1210,15 @@ public interface CpacsFactory extends EFactory {
 	CompositeType createCompositeType();
 
 	/**
+	 * Returns a new object of class '<em>Configuration Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Configuration Type</em>'.
+	 * @generated
+	 */
+	ConfigurationType createConfigurationType();
+
+	/**
 	 * Returns a new object of class '<em>Connectivities Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1057,15 +1237,6 @@ public interface CpacsFactory extends EFactory {
 	ConnectivityType createConnectivityType();
 
 	/**
-	 * Returns a new object of class '<em>Constraint Settings Point Performance Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Constraint Settings Point Performance Type</em>'.
-	 * @generated
-	 */
-	ConstraintSettingsPointPerformanceType createConstraintSettingsPointPerformanceType();
-
-	/**
 	 * Returns a new object of class '<em>Constraint Settings Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1073,6 +1244,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	ConstraintSettingsType createConstraintSettingsType();
+
+	/**
+	 * Returns a new object of class '<em>Constraints Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Constraints Type</em>'.
+	 * @generated
+	 */
+	ConstraintsType createConstraintsType();
 
 	/**
 	 * Returns a new object of class '<em>Continuity At P1 Type</em>'.
@@ -1129,6 +1309,15 @@ public interface CpacsFactory extends EFactory {
 	ContinuityType3 createContinuityType3();
 
 	/**
+	 * Returns a new object of class '<em>Continuity Type4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Continuity Type4</em>'.
+	 * @generated
+	 */
+	ContinuityType4 createContinuityType4();
+
+	/**
 	 * Returns a new object of class '<em>Contour Reference Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1136,6 +1325,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	ContourReferenceType createContourReferenceType();
+
+	/**
+	 * Returns a new object of class '<em>Contour Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Contour Type</em>'.
+	 * @generated
+	 */
+	ContourType createContourType();
 
 	/**
 	 * Returns a new object of class '<em>Control Distributors Type</em>'.
@@ -1192,22 +1390,22 @@ public interface CpacsFactory extends EFactory {
 	ControlFunctionType createControlFunctionType();
 
 	/**
-	 * Returns a new object of class '<em>Control Inputs Type</em>'.
+	 * Returns a new object of class '<em>Controllability Reqs Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Control Inputs Type</em>'.
+	 * @return a new object of class '<em>Controllability Reqs Type</em>'.
 	 * @generated
 	 */
-	ControlInputsType createControlInputsType();
+	ControllabilityReqsType createControllabilityReqsType();
 
 	/**
-	 * Returns a new object of class '<em>Control Input Type</em>'.
+	 * Returns a new object of class '<em>Controllability Requirement Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Control Input Type</em>'.
+	 * @return a new object of class '<em>Controllability Requirement Type</em>'.
 	 * @generated
 	 */
-	ControlInputType createControlInputType();
+	ControllabilityRequirementType createControllabilityRequirementType();
 
 	/**
 	 * Returns a new object of class '<em>Control Law Modes Type</em>'.
@@ -1298,24 +1496,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	ControlSurfaceContoursType createControlSurfaceContoursType();
-
-	/**
-	 * Returns a new object of class '<em>Control Surface Deflections Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Control Surface Deflections Type</em>'.
-	 * @generated
-	 */
-	ControlSurfaceDeflectionsType createControlSurfaceDeflectionsType();
-
-	/**
-	 * Returns a new object of class '<em>Control Surface Deflection Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Control Surface Deflection Type</em>'.
-	 * @generated
-	 */
-	ControlSurfaceDeflectionType createControlSurfaceDeflectionType();
 
 	/**
 	 * Returns a new object of class '<em>Control Surface Deflection Vectors Type</em>'.
@@ -1487,6 +1667,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	ControlSurfaceWingCutOutType createControlSurfaceWingCutOutType();
+
+	/**
+	 * Returns a new object of class '<em>Corner Radius Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Corner Radius Type</em>'.
+	 * @generated
+	 */
+	CornerRadiusType createCornerRadiusType();
 
 	/**
 	 * Returns a new object of class '<em>Cost Air Conditioning Systems Type</em>'.
@@ -1849,40 +2038,13 @@ public interface CpacsFactory extends EFactory {
 	CurveProfilesType createCurveProfilesType();
 
 	/**
-	 * Returns a new object of class '<em>Cut Load Integration Points Type</em>'.
+	 * Returns a new object of class '<em>Cut Load Points Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cut Load Integration Points Type</em>'.
+	 * @return a new object of class '<em>Cut Load Points Type</em>'.
 	 * @generated
 	 */
-	CutLoadIntegrationPointsType createCutLoadIntegrationPointsType();
-
-	/**
-	 * Returns a new object of class '<em>Cut Loads Envelope Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cut Loads Envelope Type</em>'.
-	 * @generated
-	 */
-	CutLoadsEnvelopeType createCutLoadsEnvelopeType();
-
-	/**
-	 * Returns a new object of class '<em>Cut Loads Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cut Loads Type</em>'.
-	 * @generated
-	 */
-	CutLoadsType createCutLoadsType();
-
-	/**
-	 * Returns a new object of class '<em>Cut Load Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cut Load Type</em>'.
-	 * @generated
-	 */
-	CutLoadType createCutLoadType();
+	CutLoadPointsType createCutLoadPointsType();
 
 	/**
 	 * Returns a new object of class '<em>Cut Out Control Points Type</em>'.
@@ -2011,6 +2173,96 @@ public interface CpacsFactory extends EFactory {
 	DateTimeBaseType createDateTimeBaseType();
 
 	/**
+	 * Returns a new object of class '<em>Deck Component2 DBase Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Deck Component2 DBase Type</em>'.
+	 * @generated
+	 */
+	DeckComponent2DBaseType createDeckComponent2DBaseType();
+
+	/**
+	 * Returns a new object of class '<em>Deck Component Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Deck Component Base Type</em>'.
+	 * @generated
+	 */
+	DeckComponentBaseType createDeckComponentBaseType();
+
+	/**
+	 * Returns a new object of class '<em>Deck Doors Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Deck Doors Type</em>'.
+	 * @generated
+	 */
+	DeckDoorsType createDeckDoorsType();
+
+	/**
+	 * Returns a new object of class '<em>Deck Door Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Deck Door Type</em>'.
+	 * @generated
+	 */
+	DeckDoorType createDeckDoorType();
+
+	/**
+	 * Returns a new object of class '<em>Deck Element Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Deck Element Base Type</em>'.
+	 * @generated
+	 */
+	DeckElementBaseType createDeckElementBaseType();
+
+	/**
+	 * Returns a new object of class '<em>Deck Element Geometry Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Deck Element Geometry Type</em>'.
+	 * @generated
+	 */
+	DeckElementGeometryType createDeckElementGeometryType();
+
+	/**
+	 * Returns a new object of class '<em>Deck Element Mass Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Deck Element Mass Type</em>'.
+	 * @generated
+	 */
+	DeckElementMassType createDeckElementMassType();
+
+	/**
+	 * Returns a new object of class '<em>Deck Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Deck Elements Type</em>'.
+	 * @generated
+	 */
+	DeckElementsType createDeckElementsType();
+
+	/**
+	 * Returns a new object of class '<em>Deck Structural Mounts Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Deck Structural Mounts Type</em>'.
+	 * @generated
+	 */
+	DeckStructuralMountsType createDeckStructuralMountsType();
+
+	/**
+	 * Returns a new object of class '<em>Deck Structural Mount Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Deck Structural Mount Type</em>'.
+	 * @generated
+	 */
+	DeckStructuralMountType createDeckStructuralMountType();
+
+	/**
 	 * Returns a new object of class '<em>Decks Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2027,6 +2279,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	DeckType createDeckType();
+
+	/**
+	 * Returns a new object of class '<em>Deck Type Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Deck Type Type</em>'.
+	 * @generated
+	 */
+	DeckTypeType createDeckTypeType();
 
 	/**
 	 * Returns a new object of class '<em>Delta Temperature Type</em>'.
@@ -2072,15 +2333,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	DesignSpaceType createDesignSpaceType();
-
-	/**
-	 * Returns a new object of class '<em>Design Speed Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Design Speed Type</em>'.
-	 * @generated
-	 */
-	DesignSpeedType createDesignSpeedType();
 
 	/**
 	 * Returns a new object of class '<em>Design Studies Type</em>'.
@@ -2155,6 +2407,24 @@ public interface CpacsFactory extends EFactory {
 	DoorCutOutType createDoorCutOutType();
 
 	/**
+	 * Returns a new object of class '<em>Door Opening Legacy Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Door Opening Legacy Type</em>'.
+	 * @generated
+	 */
+	DoorOpeningLegacyType createDoorOpeningLegacyType();
+
+	/**
+	 * Returns a new object of class '<em>Door Opening Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Door Opening Type</em>'.
+	 * @generated
+	 */
+	DoorOpeningType createDoorOpeningType();
+
+	/**
 	 * Returns a new object of class '<em>Doors Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2191,6 +2461,24 @@ public interface CpacsFactory extends EFactory {
 	DoorTypeType createDoorTypeType();
 
 	/**
+	 * Returns a new object of class '<em>Door Type Type1</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Door Type Type1</em>'.
+	 * @generated
+	 */
+	DoorTypeType1 createDoorTypeType1();
+
+	/**
+	 * Returns a new object of class '<em>Double Array Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Double Array Base Type</em>'.
+	 * @generated
+	 */
+	DoubleArrayBaseType createDoubleArrayBaseType();
+
+	/**
 	 * Returns a new object of class '<em>Double Base Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2207,6 +2495,33 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	DoubleConstraintBaseType createDoubleConstraintBaseType();
+
+	/**
+	 * Returns a new object of class '<em>Double Vector Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Double Vector Base Type</em>'.
+	 * @generated
+	 */
+	DoubleVectorBaseType createDoubleVectorBaseType();
+
+	/**
+	 * Returns a new object of class '<em>Double Vector Constraint Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Double Vector Constraint Base Type</em>'.
+	 * @generated
+	 */
+	DoubleVectorConstraintBaseType createDoubleVectorConstraintBaseType();
+
+	/**
+	 * Returns a new object of class '<em>Drag Contributions Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Drag Contributions Type</em>'.
+	 * @generated
+	 */
+	DragContributionsType createDragContributionsType();
 
 	/**
 	 * Returns a new object of class '<em>Drive Systems Type</em>'.
@@ -2227,6 +2542,15 @@ public interface CpacsFactory extends EFactory {
 	DriveSystemType createDriveSystemType();
 
 	/**
+	 * Returns a new object of class '<em>Duration Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Duration Type</em>'.
+	 * @generated
+	 */
+	DurationType createDurationType();
+
+	/**
 	 * Returns a new object of class '<em>Dynamic Aircraft Model Analysis Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2236,24 +2560,6 @@ public interface CpacsFactory extends EFactory {
 	DynamicAircraftModelAnalysisType createDynamicAircraftModelAnalysisType();
 
 	/**
-	 * Returns a new object of class '<em>Dynamic Aircraft Model Points Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Dynamic Aircraft Model Points Type</em>'.
-	 * @generated
-	 */
-	DynamicAircraftModelPointsType createDynamicAircraftModelPointsType();
-
-	/**
-	 * Returns a new object of class '<em>Dynamic Aircraft Model Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Dynamic Aircraft Model Type</em>'.
-	 * @generated
-	 */
-	DynamicAircraftModelType createDynamicAircraftModelType();
-
-	/**
 	 * Returns a new object of class '<em>Emissivity Map Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2261,6 +2567,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	EmissivityMapType createEmissivityMapType();
+
+	/**
+	 * Returns a new object of class '<em>End Time UTC Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>End Time UTC Type</em>'.
+	 * @generated
+	 */
+	EndTimeUTCType createEndTimeUTCType();
 
 	/**
 	 * Returns a new object of class '<em>Engine Analysis Type</em>'.
@@ -2389,15 +2704,6 @@ public interface CpacsFactory extends EFactory {
 	EnginePylonType createEnginePylonType();
 
 	/**
-	 * Returns a new object of class '<em>Engine Setting Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Engine Setting Type</em>'.
-	 * @generated
-	 */
-	EngineSettingType createEngineSettingType();
-
-	/**
 	 * Returns a new object of class '<em>Engine Spinner Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2423,6 +2729,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	EngineType createEngineType();
+
+	/**
+	 * Returns a new object of class '<em>Environment Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Environment Type</em>'.
+	 * @generated
+	 */
+	EnvironmentType createEnvironmentType();
 
 	/**
 	 * Returns a new object of class '<em>Eta Iso Line Type</em>'.
@@ -2497,24 +2812,6 @@ public interface CpacsFactory extends EFactory {
 	FlightDynamicsAnalysisType createFlightDynamicsAnalysisType();
 
 	/**
-	 * Returns a new object of class '<em>Flight Dynamics Flight Cases Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Flight Dynamics Flight Cases Type</em>'.
-	 * @generated
-	 */
-	FlightDynamicsFlightCasesType createFlightDynamicsFlightCasesType();
-
-	/**
-	 * Returns a new object of class '<em>Flight Dynamics Flight Case Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Flight Dynamics Flight Case Type</em>'.
-	 * @generated
-	 */
-	FlightDynamicsFlightCaseType createFlightDynamicsFlightCaseType();
-
-	/**
 	 * Returns a new object of class '<em>Flight Dynamics Linear Model Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2522,15 +2819,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	FlightDynamicsLinearModelType createFlightDynamicsLinearModelType();
-
-	/**
-	 * Returns a new object of class '<em>Flight Dynamics Model Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Flight Dynamics Model Type</em>'.
-	 * @generated
-	 */
-	FlightDynamicsModelType createFlightDynamicsModelType();
 
 	/**
 	 * Returns a new object of class '<em>Flight Dynamics Trim Result Type</em>'.
@@ -2542,6 +2830,33 @@ public interface CpacsFactory extends EFactory {
 	FlightDynamicsTrimResultType createFlightDynamicsTrimResultType();
 
 	/**
+	 * Returns a new object of class '<em>Flight Envelope Speed Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Flight Envelope Speed Type</em>'.
+	 * @generated
+	 */
+	FlightEnvelopeSpeedType createFlightEnvelopeSpeedType();
+
+	/**
+	 * Returns a new object of class '<em>Flight Envelopes Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Flight Envelopes Type</em>'.
+	 * @generated
+	 */
+	FlightEnvelopesType createFlightEnvelopesType();
+
+	/**
+	 * Returns a new object of class '<em>Flight Envelope Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Flight Envelope Type</em>'.
+	 * @generated
+	 */
+	FlightEnvelopeType createFlightEnvelopeType();
+
+	/**
 	 * Returns a new object of class '<em>Flight Load Cases Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2551,13 +2866,31 @@ public interface CpacsFactory extends EFactory {
 	FlightLoadCasesType createFlightLoadCasesType();
 
 	/**
-	 * Returns a new object of class '<em>Flight Load Case Type</em>'.
+	 * Returns a new object of class '<em>Flight Load Conditions Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Flight Load Case Type</em>'.
+	 * @return a new object of class '<em>Flight Load Conditions Type</em>'.
 	 * @generated
 	 */
-	FlightLoadCaseType createFlightLoadCaseType();
+	FlightLoadConditionsType createFlightLoadConditionsType();
+
+	/**
+	 * Returns a new object of class '<em>Flight Load Data Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Flight Load Data Type</em>'.
+	 * @generated
+	 */
+	FlightLoadDataType createFlightLoadDataType();
+
+	/**
+	 * Returns a new object of class '<em>Flight Path Angle Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Flight Path Angle Type</em>'.
+	 * @generated
+	 */
+	FlightPathAngleType createFlightPathAngleType();
 
 	/**
 	 * Returns a new object of class '<em>Flight Path Type</em>'.
@@ -2596,6 +2929,33 @@ public interface CpacsFactory extends EFactory {
 	FlightPerformanceLandingType createFlightPerformanceLandingType();
 
 	/**
+	 * Returns a new object of class '<em>Flight Performance Level Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Flight Performance Level Type</em>'.
+	 * @generated
+	 */
+	FlightPerformanceLevelType createFlightPerformanceLevelType();
+
+	/**
+	 * Returns a new object of class '<em>Flight Performance Requirements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Flight Performance Requirements Type</em>'.
+	 * @generated
+	 */
+	FlightPerformanceRequirementsType createFlightPerformanceRequirementsType();
+
+	/**
+	 * Returns a new object of class '<em>Flight Performance Requirement Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Flight Performance Requirement Type</em>'.
+	 * @generated
+	 */
+	FlightPerformanceRequirementType createFlightPerformanceRequirementType();
+
+	/**
 	 * Returns a new object of class '<em>Flight Performance Takeoff Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2605,13 +2965,22 @@ public interface CpacsFactory extends EFactory {
 	FlightPerformanceTakeoffType createFlightPerformanceTakeoffType();
 
 	/**
-	 * Returns a new object of class '<em>Flight Performance Type</em>'.
+	 * Returns a new object of class '<em>Flight Performance Turn Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Flight Performance Type</em>'.
+	 * @return a new object of class '<em>Flight Performance Turn Type</em>'.
 	 * @generated
 	 */
-	FlightPerformanceType createFlightPerformanceType();
+	FlightPerformanceTurnType createFlightPerformanceTurnType();
+
+	/**
+	 * Returns a new object of class '<em>Flight Points Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Flight Points Type</em>'.
+	 * @generated
+	 */
+	FlightPointsType createFlightPointsType();
 
 	/**
 	 * Returns a new object of class '<em>Flight Point Type</em>'.
@@ -2668,31 +3037,22 @@ public interface CpacsFactory extends EFactory {
 	FloorPanelType createFloorPanelType();
 
 	/**
-	 * Returns a new object of class '<em>Flow Condition Type</em>'.
+	 * Returns a new object of class '<em>Flying Qualities Cases Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Flow Condition Type</em>'.
+	 * @return a new object of class '<em>Flying Qualities Cases Type</em>'.
 	 * @generated
 	 */
-	FlowConditionType createFlowConditionType();
+	FlyingQualitiesCasesType createFlyingQualitiesCasesType();
 
 	/**
-	 * Returns a new object of class '<em>Flying Qualities Type</em>'.
+	 * Returns a new object of class '<em>Flying Qualities Case Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Flying Qualities Type</em>'.
+	 * @return a new object of class '<em>Flying Qualities Case Type</em>'.
 	 * @generated
 	 */
-	FlyingQualitiesType createFlyingQualitiesType();
-
-	/**
-	 * Returns a new object of class '<em>Fq Case Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Fq Case Type</em>'.
-	 * @generated
-	 */
-	FqCaseType createFqCaseType();
+	FlyingQualitiesCaseType createFlyingQualitiesCaseType();
 
 	/**
 	 * Returns a new object of class '<em>Fq Char Parameters Type</em>'.
@@ -2812,6 +3172,24 @@ public interface CpacsFactory extends EFactory {
 	FreePathType createFreePathType();
 
 	/**
+	 * Returns a new object of class '<em>Fuel Consumed Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Fuel Consumed Type</em>'.
+	 * @generated
+	 */
+	FuelConsumedType createFuelConsumedType();
+
+	/**
+	 * Returns a new object of class '<em>Fuel Fraction Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Fuel Fraction Type</em>'.
+	 * @generated
+	 */
+	FuelFractionType createFuelFractionType();
+
+	/**
 	 * Returns a new object of class '<em>Fuel In Tank Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2821,6 +3199,15 @@ public interface CpacsFactory extends EFactory {
 	FuelInTankType createFuelInTankType();
 
 	/**
+	 * Returns a new object of class '<em>Fuel Mass Fraction Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Fuel Mass Fraction Type</em>'.
+	 * @generated
+	 */
+	FuelMassFractionType createFuelMassFractionType();
+
+	/**
 	 * Returns a new object of class '<em>Fuel Planning Type Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2828,6 +3215,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	FuelPlanningTypeType createFuelPlanningTypeType();
+
+	/**
+	 * Returns a new object of class '<em>Fuel Remaining Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Fuel Remaining Type</em>'.
+	 * @generated
+	 */
+	FuelRemainingType createFuelRemainingType();
 
 	/**
 	 * Returns a new object of class '<em>Fuels Type</em>'.
@@ -2864,15 +3260,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	FuselageAeroPerformanceType createFuselageAeroPerformanceType();
-
-	/**
-	 * Returns a new object of class '<em>Fuselage Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Fuselage Coefficients Type</em>'.
-	 * @generated
-	 */
-	FuselageCoefficientsType createFuselageCoefficientsType();
 
 	/**
 	 * Returns a new object of class '<em>Fuselage Cut Outs Type</em>'.
@@ -2947,15 +3334,6 @@ public interface CpacsFactory extends EFactory {
 	FuselagesAeroPerformanceType createFuselagesAeroPerformanceType();
 
 	/**
-	 * Returns a new object of class '<em>Fuselages Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Fuselages Coefficients Type</em>'.
-	 * @generated
-	 */
-	FuselagesCoefficientsType createFuselagesCoefficientsType();
-
-	/**
 	 * Returns a new object of class '<em>Fuselage Sections Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2972,33 +3350,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	FuselageSectionType createFuselageSectionType();
-
-	/**
-	 * Returns a new object of class '<em>Fuselage Segment Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Fuselage Segment Coefficients Type</em>'.
-	 * @generated
-	 */
-	FuselageSegmentCoefficientsType createFuselageSegmentCoefficientsType();
-
-	/**
-	 * Returns a new object of class '<em>Fuselage Segments Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Fuselage Segments Coefficients Type</em>'.
-	 * @generated
-	 */
-	FuselageSegmentsCoefficientsType createFuselageSegmentsCoefficientsType();
-
-	/**
-	 * Returns a new object of class '<em>Fuselage Segment Strip Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Fuselage Segment Strip Coefficients Type</em>'.
-	 * @generated
-	 */
-	FuselageSegmentStripCoefficientsType createFuselageSegmentStripCoefficientsType();
 
 	/**
 	 * Returns a new object of class '<em>Fuselage Segments Type</em>'.
@@ -3046,13 +3397,31 @@ public interface CpacsFactory extends EFactory {
 	FuselageType createFuselageType();
 
 	/**
-	 * Returns a new object of class '<em>Gear Components Type</em>'.
+	 * Returns a new object of class '<em>Galley Elements Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Gear Components Type</em>'.
+	 * @return a new object of class '<em>Galley Elements Type</em>'.
 	 * @generated
 	 */
-	GearComponentsType createGearComponentsType();
+	GalleyElementsType createGalleyElementsType();
+
+	/**
+	 * Returns a new object of class '<em>Galley Element Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Galley Element Type</em>'.
+	 * @generated
+	 */
+	GalleyElementType createGalleyElementType();
+
+	/**
+	 * Returns a new object of class '<em>Galleys Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Galleys Type</em>'.
+	 * @generated
+	 */
+	GalleysType createGalleysType();
 
 	/**
 	 * Returns a new object of class '<em>Gear Deflection Vectors Type</em>'.
@@ -3100,24 +3469,6 @@ public interface CpacsFactory extends EFactory {
 	GeneralStructuralMemberType createGeneralStructuralMemberType();
 
 	/**
-	 * Returns a new object of class '<em>Generic Component Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Generic Component Coefficients Type</em>'.
-	 * @generated
-	 */
-	GenericComponentCoefficientsType createGenericComponentCoefficientsType();
-
-	/**
-	 * Returns a new object of class '<em>Generic Components Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Generic Components Coefficients Type</em>'.
-	 * @generated
-	 */
-	GenericComponentsCoefficientsType createGenericComponentsCoefficientsType();
-
-	/**
 	 * Returns a new object of class '<em>Generic Cost Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3125,6 +3476,24 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	GenericCostType createGenericCostType();
+
+	/**
+	 * Returns a new object of class '<em>Generic Floor Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Generic Floor Elements Type</em>'.
+	 * @generated
+	 */
+	GenericFloorElementsType createGenericFloorElementsType();
+
+	/**
+	 * Returns a new object of class '<em>Generic Floor Modules Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Generic Floor Modules Type</em>'.
+	 * @generated
+	 */
+	GenericFloorModulesType createGenericFloorModulesType();
 
 	/**
 	 * Returns a new object of class '<em>Generic Geometric Component Type</em>'.
@@ -3143,6 +3512,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	GenericGeometryComponentsType createGenericGeometryComponentsType();
+
+	/**
+	 * Returns a new object of class '<em>Generic Geometry Component Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Generic Geometry Component Type</em>'.
+	 * @generated
+	 */
+	GenericGeometryComponentType createGenericGeometryComponentType();
 
 	/**
 	 * Returns a new object of class '<em>Generic Mass Type</em>'.
@@ -3170,15 +3548,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	GenericSystemType createGenericSystemType();
-
-	/**
-	 * Returns a new object of class '<em>Geogen Wing Output Options Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Geogen Wing Output Options Type</em>'.
-	 * @generated
-	 */
-	GeogenWingOutputOptionsType createGeogenWingOutputOptionsType();
 
 	/**
 	 * Returns a new object of class '<em>Geographic Point Constraint Type</em>'.
@@ -3217,6 +3586,24 @@ public interface CpacsFactory extends EFactory {
 	GlobalBeamPropertiesType createGlobalBeamPropertiesType();
 
 	/**
+	 * Returns a new object of class '<em>Global Flight Point Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Global Flight Point Type</em>'.
+	 * @generated
+	 */
+	GlobalFlightPointType createGlobalFlightPointType();
+
+	/**
+	 * Returns a new object of class '<em>Global Performance Cases Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Global Performance Cases Type</em>'.
+	 * @generated
+	 */
+	GlobalPerformanceCasesType createGlobalPerformanceCasesType();
+
+	/**
 	 * Returns a new object of class '<em>Ground Load Cases Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3224,15 +3611,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	GroundLoadCasesType createGroundLoadCasesType();
-
-	/**
-	 * Returns a new object of class '<em>Ground Load Case Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ground Load Case Type</em>'.
-	 * @generated
-	 */
-	GroundLoadCaseType createGroundLoadCaseType();
 
 	/**
 	 * Returns a new object of class '<em>Guide Curve Profile Geometry Type</em>'.
@@ -3271,31 +3649,13 @@ public interface CpacsFactory extends EFactory {
 	GuideCurveType createGuideCurveType();
 
 	/**
-	 * Returns a new object of class '<em>Handbook Aero Last Transition Region Type</em>'.
+	 * Returns a new object of class '<em>Gust Shape Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Handbook Aero Last Transition Region Type</em>'.
+	 * @return a new object of class '<em>Gust Shape Type</em>'.
 	 * @generated
 	 */
-	HandbookAeroLastTransitionRegionType createHandbookAeroLastTransitionRegionType();
-
-	/**
-	 * Returns a new object of class '<em>Handbook Aero Polynomial Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Handbook Aero Polynomial Coefficients Type</em>'.
-	 * @generated
-	 */
-	HandbookAeroPolynomialCoefficientsType createHandbookAeroPolynomialCoefficientsType();
-
-	/**
-	 * Returns a new object of class '<em>Handbook Aero Transition Region Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Handbook Aero Transition Region Type</em>'.
-	 * @generated
-	 */
-	HandbookAeroTransitionRegionType createHandbookAeroTransitionRegionType();
+	GustShapeType createGustShapeType();
 
 	/**
 	 * Returns a new object of class '<em>Header Type</em>'.
@@ -3305,6 +3665,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	HeaderType createHeaderType();
+
+	/**
+	 * Returns a new object of class '<em>Heading Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Heading Type</em>'.
+	 * @generated
+	 */
+	HeadingType createHeadingType();
 
 	/**
 	 * Returns a new object of class '<em>Hinge Moments Map Type</em>'.
@@ -3341,15 +3710,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	HtpStructElemDefType createHtpStructElemDefType();
-
-	/**
-	 * Returns a new object of class '<em>Identifier Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Identifier Type</em>'.
-	 * @generated
-	 */
-	IdentifierType createIdentifierType();
 
 	/**
 	 * Returns a new object of class '<em>Impact Surface Definition Type</em>'.
@@ -3433,6 +3793,24 @@ public interface CpacsFactory extends EFactory {
 	InterfaceDefinitionsType createInterfaceDefinitionsType();
 
 	/**
+	 * Returns a new object of class '<em>Internal Pressures Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Internal Pressures Type</em>'.
+	 * @generated
+	 */
+	InternalPressuresType createInternalPressuresType();
+
+	/**
+	 * Returns a new object of class '<em>Internal Pressure Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Internal Pressure Type</em>'.
+	 * @generated
+	 */
+	InternalPressureType createInternalPressureType();
+
+	/**
 	 * Returns a new object of class '<em>Interpolation Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3467,6 +3845,69 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	IsotropicPropertiesType createIsotropicPropertiesType();
+
+	/**
+	 * Returns a new object of class '<em>Landing Gear Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Landing Gear Base Type</em>'.
+	 * @generated
+	 */
+	LandingGearBaseType createLandingGearBaseType();
+
+	/**
+	 * Returns a new object of class '<em>Landing Gear Braking State Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Landing Gear Braking State Type</em>'.
+	 * @generated
+	 */
+	LandingGearBrakingStateType createLandingGearBrakingStateType();
+
+	/**
+	 * Returns a new object of class '<em>Landing Gear Component Assembly Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Landing Gear Component Assembly Type</em>'.
+	 * @generated
+	 */
+	LandingGearComponentAssemblyType createLandingGearComponentAssemblyType();
+
+	/**
+	 * Returns a new object of class '<em>Landing Gear Control Functions Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Landing Gear Control Functions Type</em>'.
+	 * @generated
+	 */
+	LandingGearControlFunctionsType createLandingGearControlFunctionsType();
+
+	/**
+	 * Returns a new object of class '<em>Landing Gear Control Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Landing Gear Control Type</em>'.
+	 * @generated
+	 */
+	LandingGearControlType createLandingGearControlType();
+
+	/**
+	 * Returns a new object of class '<em>Landing Gear Extension Function Step Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Landing Gear Extension Function Step Type</em>'.
+	 * @generated
+	 */
+	LandingGearExtensionFunctionStepType createLandingGearExtensionFunctionStepType();
+
+	/**
+	 * Returns a new object of class '<em>Landing Gear Extension Function Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Landing Gear Extension Function Type</em>'.
+	 * @generated
+	 */
+	LandingGearExtensionFunctionType createLandingGearExtensionFunctionType();
 
 	/**
 	 * Returns a new object of class '<em>Landing Gear Interface Definitions Type</em>'.
@@ -3541,13 +3982,49 @@ public interface CpacsFactory extends EFactory {
 	LandingGearPositionSafetyMarginsType createLandingGearPositionSafetyMarginsType();
 
 	/**
-	 * Returns a new object of class '<em>Landing Gear Setting Type</em>'.
+	 * Returns a new object of class '<em>Landing Gear Steering Function Step Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Landing Gear Setting Type</em>'.
+	 * @return a new object of class '<em>Landing Gear Steering Function Step Type</em>'.
 	 * @generated
 	 */
-	LandingGearSettingType createLandingGearSettingType();
+	LandingGearSteeringFunctionStepType createLandingGearSteeringFunctionStepType();
+
+	/**
+	 * Returns a new object of class '<em>Landing Gear Steering Function Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Landing Gear Steering Function Type</em>'.
+	 * @generated
+	 */
+	LandingGearSteeringFunctionType createLandingGearSteeringFunctionType();
+
+	/**
+	 * Returns a new object of class '<em>Landing Gear Strut Attachment Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Landing Gear Strut Attachment Type</em>'.
+	 * @generated
+	 */
+	LandingGearStrutAttachmentType createLandingGearStrutAttachmentType();
+
+	/**
+	 * Returns a new object of class '<em>Landing Gears Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Landing Gears Type</em>'.
+	 * @generated
+	 */
+	LandingGearsType createLandingGearsType();
+
+	/**
+	 * Returns a new object of class '<em>Landing Gear Support Beam Position Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Landing Gear Support Beam Position Type</em>'.
+	 * @generated
+	 */
+	LandingGearSupportBeamPositionType createLandingGearSupportBeamPositionType();
 
 	/**
 	 * Returns a new object of class '<em>Landing Gear Type</em>'.
@@ -3566,6 +4043,33 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	LateralCapType createLateralCapType();
+
+	/**
+	 * Returns a new object of class '<em>Latitude Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Latitude Type</em>'.
+	 * @generated
+	 */
+	LatitudeType createLatitudeType();
+
+	/**
+	 * Returns a new object of class '<em>Lavatories Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Lavatories Type</em>'.
+	 * @generated
+	 */
+	LavatoriesType createLavatoriesType();
+
+	/**
+	 * Returns a new object of class '<em>Lavatory Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Lavatory Elements Type</em>'.
+	 * @generated
+	 */
+	LavatoryElementsType createLavatoryElementsType();
 
 	/**
 	 * Returns a new object of class '<em>Leading Edge Devices Type</em>'.
@@ -3631,6 +4135,33 @@ public interface CpacsFactory extends EFactory {
 	LoadAnalysisType createLoadAnalysisType();
 
 	/**
+	 * Returns a new object of class '<em>Load Application Point Sets Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Load Application Point Sets Type</em>'.
+	 * @generated
+	 */
+	LoadApplicationPointSetsType createLoadApplicationPointSetsType();
+
+	/**
+	 * Returns a new object of class '<em>Load Application Point Set Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Load Application Point Set Type</em>'.
+	 * @generated
+	 */
+	LoadApplicationPointSetType createLoadApplicationPointSetType();
+
+	/**
+	 * Returns a new object of class '<em>Load Application Points Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Load Application Points Type</em>'.
+	 * @generated
+	 */
+	LoadApplicationPointsType createLoadApplicationPointsType();
+
+	/**
 	 * Returns a new object of class '<em>Load Breakdown Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3640,67 +4171,40 @@ public interface CpacsFactory extends EFactory {
 	LoadBreakdownType createLoadBreakdownType();
 
 	/**
-	 * Returns a new object of class '<em>Load Case Engines Type</em>'.
+	 * Returns a new object of class '<em>Load Case Accelerations Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Case Engines Type</em>'.
+	 * @return a new object of class '<em>Load Case Accelerations Type</em>'.
 	 * @generated
 	 */
-	LoadCaseEnginesType createLoadCaseEnginesType();
+	LoadCaseAccelerationsType createLoadCaseAccelerationsType();
 
 	/**
-	 * Returns a new object of class '<em>Load Case Landing Gears Type</em>'.
+	 * Returns a new object of class '<em>Load Case Gust Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Case Landing Gears Type</em>'.
+	 * @return a new object of class '<em>Load Case Gust Type</em>'.
 	 * @generated
 	 */
-	LoadCaseLandingGearsType createLoadCaseLandingGearsType();
+	LoadCaseGustType createLoadCaseGustType();
 
 	/**
-	 * Returns a new object of class '<em>Load Case Mass Type</em>'.
+	 * Returns a new object of class '<em>Load Case Load Factors Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Case Mass Type</em>'.
+	 * @return a new object of class '<em>Load Case Load Factors Type</em>'.
 	 * @generated
 	 */
-	LoadCaseMassType createLoadCaseMassType();
+	LoadCaseLoadFactorsType createLoadCaseLoadFactorsType();
 
 	/**
-	 * Returns a new object of class '<em>Load Case Rotation Type</em>'.
+	 * Returns a new object of class '<em>Load Case Specification Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Case Rotation Type</em>'.
+	 * @return a new object of class '<em>Load Case Specification Type</em>'.
 	 * @generated
 	 */
-	LoadCaseRotationType createLoadCaseRotationType();
-
-	/**
-	 * Returns a new object of class '<em>Load Case Rotation Velocity Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Case Rotation Velocity Type</em>'.
-	 * @generated
-	 */
-	LoadCaseRotationVelocityType createLoadCaseRotationVelocityType();
-
-	/**
-	 * Returns a new object of class '<em>Load Case Settings Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Case Settings Type</em>'.
-	 * @generated
-	 */
-	LoadCaseSettingsType createLoadCaseSettingsType();
-
-	/**
-	 * Returns a new object of class '<em>Load Case State Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Case State Type</em>'.
-	 * @generated
-	 */
-	LoadCaseStateType createLoadCaseStateType();
+	LoadCaseSpecificationType createLoadCaseSpecificationType();
 
 	/**
 	 * Returns a new object of class '<em>Load Cases Type</em>'.
@@ -3712,76 +4216,85 @@ public interface CpacsFactory extends EFactory {
 	LoadCasesType createLoadCasesType();
 
 	/**
-	 * Returns a new object of class '<em>Load Case Translation Acceleration Type</em>'.
+	 * Returns a new object of class '<em>Load Case Superposition Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Case Translation Acceleration Type</em>'.
+	 * @return a new object of class '<em>Load Case Superposition Type</em>'.
 	 * @generated
 	 */
-	LoadCaseTranslationAccelerationType createLoadCaseTranslationAccelerationType();
+	LoadCaseSuperpositionType createLoadCaseSuperpositionType();
 
 	/**
-	 * Returns a new object of class '<em>Load Case Translation Type</em>'.
+	 * Returns a new object of class '<em>Load Case Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Case Translation Type</em>'.
+	 * @return a new object of class '<em>Load Case Type</em>'.
 	 * @generated
 	 */
-	LoadCaseTranslationType createLoadCaseTranslationType();
+	LoadCaseType createLoadCaseType();
 
 	/**
-	 * Returns a new object of class '<em>Load Case Translation Velocity Type</em>'.
+	 * Returns a new object of class '<em>Load Envelopes Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Case Translation Velocity Type</em>'.
+	 * @return a new object of class '<em>Load Envelopes Type</em>'.
 	 * @generated
 	 */
-	LoadCaseTranslationVelocityType createLoadCaseTranslationVelocityType();
+	LoadEnvelopesType createLoadEnvelopesType();
 
 	/**
-	 * Returns a new object of class '<em>Load Condition Type</em>'.
+	 * Returns a new object of class '<em>Load Envelope Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Condition Type</em>'.
+	 * @return a new object of class '<em>Load Envelope Type</em>'.
 	 * @generated
 	 */
-	LoadConditionType createLoadConditionType();
+	LoadEnvelopeType createLoadEnvelopeType();
 
 	/**
-	 * Returns a new object of class '<em>Load Reference Axis Points Type</em>'.
+	 * Returns a new object of class '<em>Load Reference Line Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Reference Axis Points Type</em>'.
+	 * @return a new object of class '<em>Load Reference Line Type</em>'.
 	 * @generated
 	 */
-	LoadReferenceAxisPointsType createLoadReferenceAxisPointsType();
+	LoadReferenceLineType createLoadReferenceLineType();
 
 	/**
-	 * Returns a new object of class '<em>Load Reference Axis Point Type</em>'.
+	 * Returns a new object of class '<em>Load Reference Point Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Reference Axis Point Type</em>'.
+	 * @return a new object of class '<em>Load Reference Point Type</em>'.
 	 * @generated
 	 */
-	LoadReferenceAxisPointType createLoadReferenceAxisPointType();
+	LoadReferencePointType createLoadReferencePointType();
 
 	/**
-	 * Returns a new object of class '<em>Load Reference Type</em>'.
+	 * Returns a new object of class '<em>Load Sets Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Load Reference Type</em>'.
+	 * @return a new object of class '<em>Load Sets Type</em>'.
 	 * @generated
 	 */
-	LoadReferenceType createLoadReferenceType();
+	LoadSetsType createLoadSetsType();
 
 	/**
-	 * Returns a new object of class '<em>Loads Envelope Type</em>'.
+	 * Returns a new object of class '<em>Load Set Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Loads Envelope Type</em>'.
+	 * @return a new object of class '<em>Load Set Type</em>'.
 	 * @generated
 	 */
-	LoadsEnvelopeType createLoadsEnvelopeType();
+	LoadSetType createLoadSetType();
+
+	/**
+	 * Returns a new object of class '<em>Log Entry Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Log Entry Type</em>'.
+	 * @generated
+	 */
+	LogEntryType createLogEntryType();
 
 	/**
 	 * Returns a new object of class '<em>Long Floor Beam Position Type</em>'.
@@ -3811,6 +4324,60 @@ public interface CpacsFactory extends EFactory {
 	LongFloorBeamType createLongFloorBeamType();
 
 	/**
+	 * Returns a new object of class '<em>Longitude Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Longitude Type</em>'.
+	 * @generated
+	 */
+	LongitudeType createLongitudeType();
+
+	/**
+	 * Returns a new object of class '<em>Lower Height Fraction Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Lower Height Fraction Type</em>'.
+	 * @generated
+	 */
+	LowerHeightFractionType createLowerHeightFractionType();
+
+	/**
+	 * Returns a new object of class '<em>Luggage Compartment Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Luggage Compartment Elements Type</em>'.
+	 * @generated
+	 */
+	LuggageCompartmentElementsType createLuggageCompartmentElementsType();
+
+	/**
+	 * Returns a new object of class '<em>Luggage Compartments Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Luggage Compartments Type</em>'.
+	 * @generated
+	 */
+	LuggageCompartmentsType createLuggageCompartmentsType();
+
+	/**
+	 * Returns a new object of class '<em>Mach Number Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mach Number Type</em>'.
+	 * @generated
+	 */
+	MachNumberType createMachNumberType();
+
+	/**
+	 * Returns a new object of class '<em>MAdditional Center Tanks Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MAdditional Center Tanks Type</em>'.
+	 * @generated
+	 */
+	MAdditionalCenterTanksType createMAdditionalCenterTanksType();
+
+	/**
 	 * Returns a new object of class '<em>Main Actuator Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3820,15 +4387,6 @@ public interface CpacsFactory extends EFactory {
 	MainActuatorType createMainActuatorType();
 
 	/**
-	 * Returns a new object of class '<em>Main Gear Global Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Main Gear Global Type</em>'.
-	 * @generated
-	 */
-	MainGearGlobalType createMainGearGlobalType();
-
-	/**
 	 * Returns a new object of class '<em>Main Gears Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3836,42 +4394,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	MainGearsType createMainGearsType();
-
-	/**
-	 * Returns a new object of class '<em>Main Gear Support Beam Position Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Main Gear Support Beam Position Type</em>'.
-	 * @generated
-	 */
-	MainGearSupportBeamPositionType createMainGearSupportBeamPositionType();
-
-	/**
-	 * Returns a new object of class '<em>Main Gear Support Beam Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Main Gear Support Beam Type</em>'.
-	 * @generated
-	 */
-	MainGearSupportBeamType createMainGearSupportBeamType();
-
-	/**
-	 * Returns a new object of class '<em>Main Gear Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Main Gear Type</em>'.
-	 * @generated
-	 */
-	MainGearType createMainGearType();
-
-	/**
-	 * Returns a new object of class '<em>Main Gear Wing Attachment Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Main Gear Wing Attachment Type</em>'.
-	 * @generated
-	 */
-	MainGearWingAttachmentType createMainGearWingAttachmentType();
 
 	/**
 	 * Returns a new object of class '<em>Main Strut Interface Definitions Type</em>'.
@@ -4306,6 +4828,15 @@ public interface CpacsFactory extends EFactory {
 	MEmptyULDType createMEmptyULDType();
 
 	/**
+	 * Returns a new object of class '<em>MEngine APU Oils Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MEngine APU Oils Type</em>'.
+	 * @generated
+	 */
+	MEngineAPUOilsType createMEngineAPUOilsType();
+
+	/**
 	 * Returns a new object of class '<em>MEngine Control Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4540,6 +5071,15 @@ public interface CpacsFactory extends EFactory {
 	MissionDefinitionsType createMissionDefinitionsType();
 
 	/**
+	 * Returns a new object of class '<em>Mission End Runway Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mission End Runway Type</em>'.
+	 * @generated
+	 */
+	MissionEndRunwayType createMissionEndRunwayType();
+
+	/**
 	 * Returns a new object of class '<em>Mission Performance Map Definition Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4610,6 +5150,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	MissionStartConditionType createMissionStartConditionType();
+
+	/**
+	 * Returns a new object of class '<em>Mission Start Runway Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mission Start Runway Type</em>'.
+	 * @generated
+	 */
+	MissionStartRunwayType createMissionStartRunwayType();
 
 	/**
 	 * Returns a new object of class '<em>Missions Type</em>'.
@@ -4693,15 +5242,6 @@ public interface CpacsFactory extends EFactory {
 	MMillitarySystemsType createMMillitarySystemsType();
 
 	/**
-	 * Returns a new object of class '<em>MMiscellaneous Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>MMiscellaneous Type</em>'.
-	 * @generated
-	 */
-	MMiscellaneousType createMMiscellaneousType();
-
-	/**
 	 * Returns a new object of class '<em>MMoveable Leading Edges Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4754,15 +5294,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	MNoseGearsType createMNoseGearsType();
-
-	/**
-	 * Returns a new object of class '<em>Model Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Model Type</em>'.
-	 * @generated
-	 */
-	ModelType createModelType();
 
 	/**
 	 * Returns a new object of class '<em>Monetary Values Analysis Type</em>'.
@@ -4864,6 +5395,15 @@ public interface CpacsFactory extends EFactory {
 	MPylonsType createMPylonsType();
 
 	/**
+	 * Returns a new object of class '<em>MRemovable Crew Rests Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MRemovable Crew Rests Type</em>'.
+	 * @generated
+	 */
+	MRemovableCrewRestsType createMRemovableCrewRestsType();
+
+	/**
 	 * Returns a new object of class '<em>MRibs Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4927,6 +5467,24 @@ public interface CpacsFactory extends EFactory {
 	MSkinsType createMSkinsType();
 
 	/**
+	 * Returns a new object of class '<em>MSpar Cells Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MSpar Cells Type</em>'.
+	 * @generated
+	 */
+	MSparCellsType createMSparCellsType();
+
+	/**
+	 * Returns a new object of class '<em>MSpar Skins Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MSpar Skins Type</em>'.
+	 * @generated
+	 */
+	MSparSkinsType createMSparSkinsType();
+
+	/**
 	 * Returns a new object of class '<em>MSpars Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4934,6 +5492,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	MSparsType createMSparsType();
+
+	/**
+	 * Returns a new object of class '<em>MSpar Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MSpar Type</em>'.
+	 * @generated
+	 */
+	MSparType createMSparType();
 
 	/**
 	 * Returns a new object of class '<em>MSpecial Structures Type</em>'.
@@ -4981,6 +5548,15 @@ public interface CpacsFactory extends EFactory {
 	MSystemsType createMSystemsType();
 
 	/**
+	 * Returns a new object of class '<em>MToilet Fluids Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MToilet Fluids Type</em>'.
+	 * @generated
+	 */
+	MToiletFluidsType createMToiletFluidsType();
+
+	/**
 	 * Returns a new object of class '<em>MTrailing Edge Devices Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5017,6 +5593,15 @@ public interface CpacsFactory extends EFactory {
 	MULDContentType createMULDContentType();
 
 	/**
+	 * Returns a new object of class '<em>MUnusable Fuels Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MUnusable Fuels Type</em>'.
+	 * @generated
+	 */
+	MUnusableFuelsType createMUnusableFuelsType();
+
+	/**
 	 * Returns a new object of class '<em>MVacuum Waste Systems Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5026,6 +5611,15 @@ public interface CpacsFactory extends EFactory {
 	MVacuumWasteSystemsType createMVacuumWasteSystemsType();
 
 	/**
+	 * Returns a new object of class '<em>MWalls Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MWalls Type</em>'.
+	 * @generated
+	 */
+	MWallsType createMWallsType();
+
+	/**
 	 * Returns a new object of class '<em>MWaste Water Systems Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5033,6 +5627,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	MWasteWaterSystemsType createMWasteWaterSystemsType();
+
+	/**
+	 * Returns a new object of class '<em>MWater Reservoirs Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MWater Reservoirs Type</em>'.
+	 * @generated
+	 */
+	MWaterReservoirsType createMWaterReservoirsType();
 
 	/**
 	 * Returns a new object of class '<em>MWindows Type</em>'.
@@ -5134,22 +5737,22 @@ public interface CpacsFactory extends EFactory {
 	NacelleSectionType createNacelleSectionType();
 
 	/**
-	 * Returns a new object of class '<em>Nodal Loads Type</em>'.
+	 * Returns a new object of class '<em>Name Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Nodal Loads Type</em>'.
+	 * @return a new object of class '<em>Name Type</em>'.
 	 * @generated
 	 */
-	NodalLoadsType createNodalLoadsType();
+	NameType createNameType();
 
 	/**
-	 * Returns a new object of class '<em>Nodal Load Type</em>'.
+	 * Returns a new object of class '<em>Name Type1</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Nodal Load Type</em>'.
+	 * @return a new object of class '<em>Name Type1</em>'.
 	 * @generated
 	 */
-	NodalLoadType createNodalLoadType();
+	NameType1 createNameType1();
 
 	/**
 	 * Returns a new object of class '<em>Noise Analysis Type</em>'.
@@ -5161,15 +5764,6 @@ public interface CpacsFactory extends EFactory {
 	NoiseAnalysisType createNoiseAnalysisType();
 
 	/**
-	 * Returns a new object of class '<em>Nose Gear Global Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Nose Gear Global Type</em>'.
-	 * @generated
-	 */
-	NoseGearGlobalType createNoseGearGlobalType();
-
-	/**
 	 * Returns a new object of class '<em>Nose Gears Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5177,15 +5771,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	NoseGearsType createNoseGearsType();
-
-	/**
-	 * Returns a new object of class '<em>Nose Gear Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Nose Gear Type</em>'.
-	 * @generated
-	 */
-	NoseGearType createNoseGearType();
 
 	/**
 	 * Returns a new object of class '<em>OEM Type</em>'.
@@ -5222,15 +5807,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	OperationLimitIncrementsType createOperationLimitIncrementsType();
-
-	/**
-	 * Returns a new object of class '<em>Orientation Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Orientation Type</em>'.
-	 * @generated
-	 */
-	OrientationType createOrientationType();
 
 	/**
 	 * Returns a new object of class '<em>Orthotropic Shell Properties Type</em>'.
@@ -5314,24 +5890,6 @@ public interface CpacsFactory extends EFactory {
 	PayloadGlobalType createPayloadGlobalType();
 
 	/**
-	 * Returns a new object of class '<em>Performance Cases Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Performance Cases Type</em>'.
-	 * @generated
-	 */
-	PerformanceCasesType createPerformanceCasesType();
-
-	/**
-	 * Returns a new object of class '<em>Performance Case Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Performance Case Type</em>'.
-	 * @generated
-	 */
-	PerformanceCaseType createPerformanceCaseType();
-
-	/**
 	 * Returns a new object of class '<em>Performance Map Selection Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5339,6 +5897,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	PerformanceMapSelectionType createPerformanceMapSelectionType();
+
+	/**
+	 * Returns a new object of class '<em>Performance Requirement Configurations Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Performance Requirement Configurations Type</em>'.
+	 * @generated
+	 */
+	PerformanceRequirementConfigurationsType createPerformanceRequirementConfigurationsType();
 
 	/**
 	 * Returns a new object of class '<em>Performance Requirements Type</em>'.
@@ -5366,6 +5933,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	PhiType createPhiType();
+
+	/**
+	 * Returns a new object of class '<em>Pintle Struts Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Pintle Struts Type</em>'.
+	 * @generated
+	 */
+	PintleStrutsType createPintleStrutsType();
 
 	/**
 	 * Returns a new object of class '<em>Piston Type</em>'.
@@ -5476,22 +6052,40 @@ public interface CpacsFactory extends EFactory {
 	PointListXYZVectorType createPointListXYZVectorType();
 
 	/**
-	 * Returns a new object of class '<em>Point Performances Type</em>'.
+	 * Returns a new object of class '<em>Point Performance Constraints Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Point Performances Type</em>'.
+	 * @return a new object of class '<em>Point Performance Constraints Type</em>'.
 	 * @generated
 	 */
-	PointPerformancesType createPointPerformancesType();
+	PointPerformanceConstraintsType createPointPerformanceConstraintsType();
 
 	/**
-	 * Returns a new object of class '<em>Point Performance Type</em>'.
+	 * Returns a new object of class '<em>Point Performance Definitions Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Point Performance Type</em>'.
+	 * @return a new object of class '<em>Point Performance Definitions Type</em>'.
 	 * @generated
 	 */
-	PointPerformanceType createPointPerformanceType();
+	PointPerformanceDefinitionsType createPointPerformanceDefinitionsType();
+
+	/**
+	 * Returns a new object of class '<em>Point Performance Definition Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Point Performance Definition Type</em>'.
+	 * @generated
+	 */
+	PointPerformanceDefinitionType createPointPerformanceDefinitionType();
+
+	/**
+	 * Returns a new object of class '<em>Point Performance Requirements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Point Performance Requirements Type</em>'.
+	 * @generated
+	 */
+	PointPerformanceRequirementsType createPointPerformanceRequirementsType();
 
 	/**
 	 * Returns a new object of class '<em>Point Type</em>'.
@@ -5566,6 +6160,33 @@ public interface CpacsFactory extends EFactory {
 	PointZType createPointZType();
 
 	/**
+	 * Returns a new object of class '<em>Pos Excl0 Double Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Pos Excl0 Double Base Type</em>'.
+	 * @generated
+	 */
+	PosExcl0DoubleBaseType createPosExcl0DoubleBaseType();
+
+	/**
+	 * Returns a new object of class '<em>Pos Excl0 Int Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Pos Excl0 Int Base Type</em>'.
+	 * @generated
+	 */
+	PosExcl0IntBaseType createPosExcl0IntBaseType();
+
+	/**
+	 * Returns a new object of class '<em>Pos Int Vector Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Pos Int Vector Base Type</em>'.
+	 * @generated
+	 */
+	PosIntVectorBaseType createPosIntVectorBaseType();
+
+	/**
 	 * Returns a new object of class '<em>Positionings Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5582,6 +6203,33 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	PositioningType createPositioningType();
+
+	/**
+	 * Returns a new object of class '<em>Power Consumed Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Power Consumed Type</em>'.
+	 * @generated
+	 */
+	PowerConsumedType createPowerConsumedType();
+
+	/**
+	 * Returns a new object of class '<em>Power Fraction Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Power Fraction Type</em>'.
+	 * @generated
+	 */
+	PowerFractionType createPowerFractionType();
+
+	/**
+	 * Returns a new object of class '<em>Power Remaining Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Power Remaining Type</em>'.
+	 * @generated
+	 */
+	PowerRemainingType createPowerRemainingType();
 
 	/**
 	 * Returns a new object of class '<em>Pressure Bulkhead Assembly Position Type</em>'.
@@ -5791,15 +6439,6 @@ public interface CpacsFactory extends EFactory {
 	PylonStrutsType createPylonStrutsType();
 
 	/**
-	 * Returns a new object of class '<em>Quasi Steady Rotation Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Quasi Steady Rotation Type</em>'.
-	 * @generated
-	 */
-	QuasiSteadyRotationType createQuasiSteadyRotationType();
-
-	/**
 	 * Returns a new object of class '<em>Radiative Forcing Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5807,6 +6446,33 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	RadiativeForcingType createRadiativeForcingType();
+
+	/**
+	 * Returns a new object of class '<em>Range Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Range Type</em>'.
+	 * @generated
+	 */
+	RangeType createRangeType();
+
+	/**
+	 * Returns a new object of class '<em>Rate Of Climb Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Rate Of Climb Type</em>'.
+	 * @generated
+	 */
+	RateOfClimbType createRateOfClimbType();
+
+	/**
+	 * Returns a new object of class '<em>Rectangle Profile Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Rectangle Profile Type</em>'.
+	 * @generated
+	 */
+	RectangleProfileType createRectangleProfileType();
 
 	/**
 	 * Returns a new object of class '<em>Recurring Cost Type</em>'.
@@ -5825,6 +6491,60 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	ReferenceType createReferenceType();
+
+	/**
+	 * Returns a new object of class '<em>Relative Strut Position Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Relative Strut Position Type</em>'.
+	 * @generated
+	 */
+	RelativeStrutPositionType createRelativeStrutPositionType();
+
+	/**
+	 * Returns a new object of class '<em>Released Stores Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Released Stores Type</em>'.
+	 * @generated
+	 */
+	ReleasedStoresType createReleasedStoresType();
+
+	/**
+	 * Returns a new object of class '<em>Released Store Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Released Store Type</em>'.
+	 * @generated
+	 */
+	ReleasedStoreType createReleasedStoreType();
+
+	/**
+	 * Returns a new object of class '<em>Remaining Contributions Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Remaining Contributions Type</em>'.
+	 * @generated
+	 */
+	RemainingContributionsType createRemainingContributionsType();
+
+	/**
+	 * Returns a new object of class '<em>Remaining Contribution Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Remaining Contribution Type</em>'.
+	 * @generated
+	 */
+	RemainingContributionType createRemainingContributionType();
+
+	/**
+	 * Returns a new object of class '<em>Requirement Classification Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Requirement Classification Type</em>'.
+	 * @generated
+	 */
+	RequirementClassificationType createRequirementClassificationType();
 
 	/**
 	 * Returns a new object of class '<em>Requirement Type</em>'.
@@ -6097,6 +6817,15 @@ public interface CpacsFactory extends EFactory {
 	RunwayILSType createRunwayILSType();
 
 	/**
+	 * Returns a new object of class '<em>Runway Start Position Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Runway Start Position Type</em>'.
+	 * @generated
+	 */
+	RunwayStartPositionType createRunwayStartPositionType();
+
+	/**
 	 * Returns a new object of class '<em>Runways Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6115,6 +6844,33 @@ public interface CpacsFactory extends EFactory {
 	RunwayType createRunwayType();
 
 	/**
+	 * Returns a new object of class '<em>Runway Type1</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Runway Type1</em>'.
+	 * @generated
+	 */
+	RunwayType1 createRunwayType1();
+
+	/**
+	 * Returns a new object of class '<em>Seat Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Seat Elements Type</em>'.
+	 * @generated
+	 */
+	SeatElementsType createSeatElementsType();
+
+	/**
+	 * Returns a new object of class '<em>Seat Element Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Seat Element Type</em>'.
+	 * @generated
+	 */
+	SeatElementType createSeatElementType();
+
+	/**
 	 * Returns a new object of class '<em>Seat Modules Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6122,24 +6878,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	SeatModulesType createSeatModulesType();
-
-	/**
-	 * Returns a new object of class '<em>Seat Module Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Seat Module Type</em>'.
-	 * @generated
-	 */
-	SeatModuleType createSeatModuleType();
-
-	/**
-	 * Returns a new object of class '<em>Section Distribution Mode Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Section Distribution Mode Type</em>'.
-	 * @generated
-	 */
-	SectionDistributionModeType createSectionDistributionModeType();
 
 	/**
 	 * Returns a new object of class '<em>Segment Direction Type</em>'.
@@ -6268,6 +7006,24 @@ public interface CpacsFactory extends EFactory {
 	SideType createSideType();
 
 	/**
+	 * Returns a new object of class '<em>Sidewall Panel Elements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sidewall Panel Elements Type</em>'.
+	 * @generated
+	 */
+	SidewallPanelElementsType createSidewallPanelElementsType();
+
+	/**
+	 * Returns a new object of class '<em>Sidewall Panels Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sidewall Panels Type</em>'.
+	 * @generated
+	 */
+	SidewallPanelsType createSidewallPanelsType();
+
+	/**
 	 * Returns a new object of class '<em>Single Generic Mass Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6277,24 +7033,6 @@ public interface CpacsFactory extends EFactory {
 	SingleGenericMassType createSingleGenericMassType();
 
 	/**
-	 * Returns a new object of class '<em>Sizing Type Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sizing Type Type</em>'.
-	 * @generated
-	 */
-	SizingTypeType createSizingTypeType();
-
-	/**
-	 * Returns a new object of class '<em>Skid Gear Global Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Skid Gear Global Type</em>'.
-	 * @generated
-	 */
-	SkidGearGlobalType createSkidGearGlobalType();
-
-	/**
 	 * Returns a new object of class '<em>Skid Gears Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6302,15 +7040,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	SkidGearsType createSkidGearsType();
-
-	/**
-	 * Returns a new object of class '<em>Skid Gear Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Skid Gear Type</em>'.
-	 * @generated
-	 */
-	SkidGearType createSkidGearType();
 
 	/**
 	 * Returns a new object of class '<em>Skin Segments Type</em>'.
@@ -6412,6 +7141,51 @@ public interface CpacsFactory extends EFactory {
 	SparSegmentType createSparSegmentType();
 
 	/**
+	 * Returns a new object of class '<em>Specific Configuration Segments Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Specific Configuration Segments Type</em>'.
+	 * @generated
+	 */
+	SpecificConfigurationSegmentsType createSpecificConfigurationSegmentsType();
+
+	/**
+	 * Returns a new object of class '<em>Specific Configuration Segment Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Specific Configuration Segment Type</em>'.
+	 * @generated
+	 */
+	SpecificConfigurationSegmentType createSpecificConfigurationSegmentType();
+
+	/**
+	 * Returns a new object of class '<em>Specific Configuration UI Ds Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Specific Configuration UI Ds Type</em>'.
+	 * @generated
+	 */
+	SpecificConfigurationUIDsType createSpecificConfigurationUIDsType();
+
+	/**
+	 * Returns a new object of class '<em>Specific Configuration UID Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Specific Configuration UID Type</em>'.
+	 * @generated
+	 */
+	SpecificConfigurationUIDType createSpecificConfigurationUIDType();
+
+	/**
+	 * Returns a new object of class '<em>Specific Excess Power Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Specific Excess Power Type</em>'.
+	 * @generated
+	 */
+	SpecificExcessPowerType createSpecificExcessPowerType();
+
+	/**
 	 * Returns a new object of class '<em>Specific Heat Map Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6439,6 +7213,15 @@ public interface CpacsFactory extends EFactory {
 	SpecificPerformanceMapType createSpecificPerformanceMapType();
 
 	/**
+	 * Returns a new object of class '<em>Speed Designators Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Speed Designators Type</em>'.
+	 * @generated
+	 */
+	SpeedDesignatorsType createSpeedDesignatorsType();
+
+	/**
 	 * Returns a new object of class '<em>Spoilers Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6455,6 +7238,24 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	SpoilerType createSpoilerType();
+
+	/**
+	 * Returns a new object of class '<em>Standard Profile Sheet ID Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Standard Profile Sheet ID Type</em>'.
+	 * @generated
+	 */
+	StandardProfileSheetIDType createStandardProfileSheetIDType();
+
+	/**
+	 * Returns a new object of class '<em>Standard Profile Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Standard Profile Type</em>'.
+	 * @generated
+	 */
+	StandardProfileType createStandardProfileType();
 
 	/**
 	 * Returns a new object of class '<em>Standard Profile Type Type</em>'.
@@ -6518,6 +7319,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	StringerFramePositionType createStringerFramePositionType();
+
+	/**
+	 * Returns a new object of class '<em>Stringer Frame Position UI Ds Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Stringer Frame Position UI Ds Type</em>'.
+	 * @generated
+	 */
+	StringerFramePositionUIDsType createStringerFramePositionUIDsType();
 
 	/**
 	 * Returns a new object of class '<em>Stringers Assembly Type</em>'.
@@ -6619,6 +7429,24 @@ public interface CpacsFactory extends EFactory {
 	StructuralWallElementType createStructuralWallElementType();
 
 	/**
+	 * Returns a new object of class '<em>Strut Assembly Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Strut Assembly Type</em>'.
+	 * @generated
+	 */
+	StrutAssemblyType createStrutAssemblyType();
+
+	/**
+	 * Returns a new object of class '<em>Strut Properties Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Strut Properties Type</em>'.
+	 * @generated
+	 */
+	StrutPropertiesType createStrutPropertiesType();
+
+	/**
 	 * Returns a new object of class '<em>Strut Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6626,15 +7454,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	StrutType createStrutType();
-
-	/**
-	 * Returns a new object of class '<em>Strut With Actuator Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Strut With Actuator Type</em>'.
-	 * @generated
-	 */
-	StrutWithActuatorType createStrutWithActuatorType();
 
 	/**
 	 * Returns a new object of class '<em>Studies Type</em>'.
@@ -6673,13 +7492,22 @@ public interface CpacsFactory extends EFactory {
 	SubLoadType createSubLoadType();
 
 	/**
-	 * Returns a new object of class '<em>Symmetry Type3</em>'.
+	 * Returns a new object of class '<em>Super Ellipse Profile Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Symmetry Type3</em>'.
+	 * @return a new object of class '<em>Super Ellipse Profile Type</em>'.
 	 * @generated
 	 */
-	SymmetryType3 createSymmetryType3();
+	SuperEllipseProfileType createSuperEllipseProfileType();
+
+	/**
+	 * Returns a new object of class '<em>Support Beam Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Support Beam Type</em>'.
+	 * @generated
+	 */
+	SupportBeamType createSupportBeamType();
 
 	/**
 	 * Returns a new object of class '<em>Systems Type</em>'.
@@ -6754,6 +7582,15 @@ public interface CpacsFactory extends EFactory {
 	TimeBaseType createTimeBaseType();
 
 	/**
+	 * Returns a new object of class '<em>Time Constraint Base Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Time Constraint Base Type</em>'.
+	 * @generated
+	 */
+	TimeConstraintBaseType createTimeConstraintBaseType();
+
+	/**
 	 * Returns a new object of class '<em>Toolspecific Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6808,22 +7645,40 @@ public interface CpacsFactory extends EFactory {
 	TrackActuatorType createTrackActuatorType();
 
 	/**
-	 * Returns a new object of class '<em>Track Car Type</em>'.
+	 * Returns a new object of class '<em>Track Joint Coordinates Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Track Car Type</em>'.
+	 * @return a new object of class '<em>Track Joint Coordinates Type</em>'.
 	 * @generated
 	 */
-	TrackCarType createTrackCarType();
+	TrackJointCoordinatesType createTrackJointCoordinatesType();
 
 	/**
-	 * Returns a new object of class '<em>Track Fairing Type</em>'.
+	 * Returns a new object of class '<em>Track Joint Positions Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Track Fairing Type</em>'.
+	 * @return a new object of class '<em>Track Joint Positions Type</em>'.
 	 * @generated
 	 */
-	TrackFairingType createTrackFairingType();
+	TrackJointPositionsType createTrackJointPositionsType();
+
+	/**
+	 * Returns a new object of class '<em>Track Joint Position Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Track Joint Position Type</em>'.
+	 * @generated
+	 */
+	TrackJointPositionType createTrackJointPositionType();
+
+	/**
+	 * Returns a new object of class '<em>Track Secondary Structure Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Track Secondary Structure Type</em>'.
+	 * @generated
+	 */
+	TrackSecondaryStructureType createTrackSecondaryStructureType();
 
 	/**
 	 * Returns a new object of class '<em>Track Structure Type</em>'.
@@ -6835,22 +7690,22 @@ public interface CpacsFactory extends EFactory {
 	TrackStructureType createTrackStructureType();
 
 	/**
-	 * Returns a new object of class '<em>Track Strut1 Type</em>'.
+	 * Returns a new object of class '<em>Track Struts Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Track Strut1 Type</em>'.
+	 * @return a new object of class '<em>Track Struts Type</em>'.
 	 * @generated
 	 */
-	TrackStrut1Type createTrackStrut1Type();
+	TrackStrutsType createTrackStrutsType();
 
 	/**
-	 * Returns a new object of class '<em>Track Strut2 Type</em>'.
+	 * Returns a new object of class '<em>Track Strut Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Track Strut2 Type</em>'.
+	 * @return a new object of class '<em>Track Strut Type</em>'.
 	 * @generated
 	 */
-	TrackStrut2Type createTrackStrut2Type();
+	TrackStrutType createTrackStrutType();
 
 	/**
 	 * Returns a new object of class '<em>Track Sub Type Type</em>'.
@@ -6997,13 +7852,49 @@ public interface CpacsFactory extends EFactory {
 	TransmissionType createTransmissionType();
 
 	/**
-	 * Returns a new object of class '<em>Trim Parameters Type</em>'.
+	 * Returns a new object of class '<em>Trim Case Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Trim Parameters Type</em>'.
+	 * @return a new object of class '<em>Trim Case Type</em>'.
 	 * @generated
 	 */
-	TrimParametersType createTrimParametersType();
+	TrimCaseType createTrimCaseType();
+
+	/**
+	 * Returns a new object of class '<em>Trim Requirements Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Trim Requirements Type</em>'.
+	 * @generated
+	 */
+	TrimRequirementsType createTrimRequirementsType();
+
+	/**
+	 * Returns a new object of class '<em>Trim Requirement Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Trim Requirement Type</em>'.
+	 * @generated
+	 */
+	TrimRequirementType createTrimRequirementType();
+
+	/**
+	 * Returns a new object of class '<em>Trim Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Trim Type</em>'.
+	 * @generated
+	 */
+	TrimType createTrimType();
+
+	/**
+	 * Returns a new object of class '<em>Turn Angle Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Turn Angle Type</em>'.
+	 * @generated
+	 */
+	TurnAngleType createTurnAngleType();
 
 	/**
 	 * Returns a new object of class '<em>Type Of Point Performance Type</em>'.
@@ -7015,49 +7906,22 @@ public interface CpacsFactory extends EFactory {
 	TypeOfPointPerformanceType createTypeOfPointPerformanceType();
 
 	/**
-	 * Returns a new object of class '<em>Type Type1</em>'.
+	 * Returns a new object of class '<em>Type Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Type Type1</em>'.
+	 * @return a new object of class '<em>Type Type</em>'.
 	 * @generated
 	 */
-	TypeType1 createTypeType1();
+	TypeType createTypeType();
 
 	/**
-	 * Returns a new object of class '<em>Type Type2</em>'.
+	 * Returns a new object of class '<em>Type Type4</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Type Type2</em>'.
+	 * @return a new object of class '<em>Type Type4</em>'.
 	 * @generated
 	 */
-	TypeType2 createTypeType2();
-
-	/**
-	 * Returns a new object of class '<em>Type Type5</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Type Type5</em>'.
-	 * @generated
-	 */
-	TypeType5 createTypeType5();
-
-	/**
-	 * Returns a new object of class '<em>Type Type6</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Type Type6</em>'.
-	 * @generated
-	 */
-	TypeType6 createTypeType6();
-
-	/**
-	 * Returns a new object of class '<em>Type Type7</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Type Type7</em>'.
-	 * @generated
-	 */
-	TypeType7 createTypeType7();
+	TypeType4 createTypeType4();
 
 	/**
 	 * Returns a new object of class '<em>UID Group Definitions Type</em>'.
@@ -7078,22 +7942,13 @@ public interface CpacsFactory extends EFactory {
 	UIDGroupDefinitionType createUIDGroupDefinitionType();
 
 	/**
-	 * Returns a new object of class '<em>Updates Type</em>'.
+	 * Returns a new object of class '<em>UID Sequence Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Updates Type</em>'.
+	 * @return a new object of class '<em>UID Sequence Type</em>'.
 	 * @generated
 	 */
-	UpdatesType createUpdatesType();
-
-	/**
-	 * Returns a new object of class '<em>Update Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Update Type</em>'.
-	 * @generated
-	 */
-	UpdateType createUpdateType();
+	UIDSequenceType createUIDSequenceType();
 
 	/**
 	 * Returns a new object of class '<em>Upper Links Type</em>'.
@@ -7103,6 +7958,15 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	UpperLinksType createUpperLinksType();
+
+	/**
+	 * Returns a new object of class '<em>Variable Conditions Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Variable Conditions Type</em>'.
+	 * @generated
+	 */
+	VariableConditionsType createVariableConditionsType();
 
 	/**
 	 * Returns a new object of class '<em>Variable Segments Type</em>'.
@@ -7123,6 +7987,24 @@ public interface CpacsFactory extends EFactory {
 	VariableSegmentType createVariableSegmentType();
 
 	/**
+	 * Returns a new object of class '<em>Vehicle Configurations Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vehicle Configurations Type</em>'.
+	 * @generated
+	 */
+	VehicleConfigurationsType createVehicleConfigurationsType();
+
+	/**
+	 * Returns a new object of class '<em>Vehicle Configuration Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vehicle Configuration Type</em>'.
+	 * @generated
+	 */
+	VehicleConfigurationType createVehicleConfigurationType();
+
+	/**
 	 * Returns a new object of class '<em>Vehicles Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7130,6 +8012,24 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	VehiclesType createVehiclesType();
+
+	/**
+	 * Returns a new object of class '<em>Version Infos Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Version Infos Type</em>'.
+	 * @generated
+	 */
+	VersionInfosType createVersionInfosType();
+
+	/**
+	 * Returns a new object of class '<em>Version Info Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Version Info Type</em>'.
+	 * @generated
+	 */
+	VersionInfoType createVersionInfoType();
 
 	/**
 	 * Returns a new object of class '<em>Vtp Frame Def Type</em>'.
@@ -7294,15 +8194,6 @@ public interface CpacsFactory extends EFactory {
 	WeightAndBalanceType createWeightAndBalanceType();
 
 	/**
-	 * Returns a new object of class '<em>Wheels Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Wheels Type</em>'.
-	 * @generated
-	 */
-	WheelsType createWheelsType();
-
-	/**
 	 * Returns a new object of class '<em>Wheel Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7357,6 +8248,15 @@ public interface CpacsFactory extends EFactory {
 	WingAirfoilsType createWingAirfoilsType();
 
 	/**
+	 * Returns a new object of class '<em>Wing Attachment Positioning Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Wing Attachment Positioning Type</em>'.
+	 * @generated
+	 */
+	WingAttachmentPositioningType createWingAttachmentPositioningType();
+
+	/**
 	 * Returns a new object of class '<em>Wing Cells Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7373,15 +8273,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	WingCellType createWingCellType();
-
-	/**
-	 * Returns a new object of class '<em>Wing Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Wing Coefficients Type</em>'.
-	 * @generated
-	 */
-	WingCoefficientsType createWingCoefficientsType();
 
 	/**
 	 * Returns a new object of class '<em>Wing Component Segment Structure Type</em>'.
@@ -7591,15 +8482,6 @@ public interface CpacsFactory extends EFactory {
 	WingsAeroPerformanceType createWingsAeroPerformanceType();
 
 	/**
-	 * Returns a new object of class '<em>Wings Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Wings Coefficients Type</em>'.
-	 * @generated
-	 */
-	WingsCoefficientsType createWingsCoefficientsType();
-
-	/**
 	 * Returns a new object of class '<em>Wing Sections Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7616,33 +8498,6 @@ public interface CpacsFactory extends EFactory {
 	 * @generated
 	 */
 	WingSectionType createWingSectionType();
-
-	/**
-	 * Returns a new object of class '<em>Wing Segment Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Wing Segment Coefficients Type</em>'.
-	 * @generated
-	 */
-	WingSegmentCoefficientsType createWingSegmentCoefficientsType();
-
-	/**
-	 * Returns a new object of class '<em>Wing Segments Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Wing Segments Coefficients Type</em>'.
-	 * @generated
-	 */
-	WingSegmentsCoefficientsType createWingSegmentsCoefficientsType();
-
-	/**
-	 * Returns a new object of class '<em>Wing Segment Strip Coefficients Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Wing Segment Strip Coefficients Type</em>'.
-	 * @generated
-	 */
-	WingSegmentStripCoefficientsType createWingSegmentStripCoefficientsType();
 
 	/**
 	 * Returns a new object of class '<em>Wing Segments Type</em>'.

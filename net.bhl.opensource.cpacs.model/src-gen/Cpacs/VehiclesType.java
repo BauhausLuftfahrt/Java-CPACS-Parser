@@ -13,9 +13,12 @@ package Cpacs;
  * <ul>
  *   <li>{@link Cpacs.VehiclesType#getAircraft <em>Aircraft</em>}</li>
  *   <li>{@link Cpacs.VehiclesType#getRotorcraft <em>Rotorcraft</em>}</li>
+ *   <li>{@link Cpacs.VehiclesType#getPerformanceCases <em>Performance Cases</em>}</li>
+ *   <li>{@link Cpacs.VehiclesType#getFlightPoints <em>Flight Points</em>}</li>
  *   <li>{@link Cpacs.VehiclesType#getEngines <em>Engines</em>}</li>
  *   <li>{@link Cpacs.VehiclesType#getProfiles <em>Profiles</em>}</li>
  *   <li>{@link Cpacs.VehiclesType#getStructuralElements <em>Structural Elements</em>}</li>
+ *   <li>{@link Cpacs.VehiclesType#getDeckElements <em>Deck Elements</em>}</li>
  *   <li>{@link Cpacs.VehiclesType#getMaterials <em>Materials</em>}</li>
  *   <li>{@link Cpacs.VehiclesType#getFuels <em>Fuels</em>}</li>
  * </ul>
@@ -70,6 +73,52 @@ public interface VehiclesType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setRotorcraft(RotorcraftType value);
+
+	/**
+	 * Returns the value of the '<em><b>Performance Cases</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Performance Cases</em>' containment reference.
+	 * @see #setPerformanceCases(GlobalPerformanceCasesType)
+	 * @see Cpacs.CpacsPackage#getVehiclesType_PerformanceCases()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='performanceCases' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	GlobalPerformanceCasesType getPerformanceCases();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.VehiclesType#getPerformanceCases <em>Performance Cases</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Performance Cases</em>' containment reference.
+	 * @see #getPerformanceCases()
+	 * @generated
+	 */
+	void setPerformanceCases(GlobalPerformanceCasesType value);
+
+	/**
+	 * Returns the value of the '<em><b>Flight Points</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Flight Points</em>' containment reference.
+	 * @see #setFlightPoints(FlightPointsType)
+	 * @see Cpacs.CpacsPackage#getVehiclesType_FlightPoints()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='flightPoints' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	FlightPointsType getFlightPoints();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.VehiclesType#getFlightPoints <em>Flight Points</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Flight Points</em>' containment reference.
+	 * @see #getFlightPoints()
+	 * @generated
+	 */
+	void setFlightPoints(FlightPointsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Engines</b></em>' containment reference.
@@ -139,6 +188,29 @@ public interface VehiclesType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setStructuralElements(StructuralElementsType value);
+
+	/**
+	 * Returns the value of the '<em><b>Deck Elements</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Deck Elements</em>' containment reference.
+	 * @see #setDeckElements(DeckElementsType)
+	 * @see Cpacs.CpacsPackage#getVehiclesType_DeckElements()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='deckElements' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	DeckElementsType getDeckElements();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.VehiclesType#getDeckElements <em>Deck Elements</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Deck Elements</em>' containment reference.
+	 * @see #getDeckElements()
+	 * @generated
+	 */
+	void setDeckElements(DeckElementsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Materials</b></em>' containment reference.

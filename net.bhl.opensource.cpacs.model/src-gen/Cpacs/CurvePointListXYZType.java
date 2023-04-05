@@ -11,7 +11,7 @@ package Cpacs;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.CurvePointListXYZType#getKinks <em>Kinks</em>}</li>
+ *   <li>{@link Cpacs.CurvePointListXYZType#getKinkIndices <em>Kink Indices</em>}</li>
  *   <li>{@link Cpacs.CurvePointListXYZType#getParameterMap <em>Parameter Map</em>}</li>
  * </ul>
  *
@@ -21,32 +21,31 @@ package Cpacs;
  */
 public interface CurvePointListXYZType extends PointListXYZVectorType {
 	/**
-	 * Returns the value of the '<em><b>Kinks</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Kink Indices</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Points, at which the curve has a kink. This list contains the indices
-	 *                             of the points at which the curve should contain a kink. Each index is in the range [0, n-1].
+	 * Indices of points at which the curve has a kink. Each index is in the range [1, npoints].
 	 *                             
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Kinks</em>' containment reference.
-	 * @see #setKinks(StringVectorBaseType)
-	 * @see Cpacs.CpacsPackage#getCurvePointListXYZType_Kinks()
+	 * @return the value of the '<em>Kink Indices</em>' containment reference.
+	 * @see #setKinkIndices(StringVectorBaseType)
+	 * @see Cpacs.CpacsPackage#getCurvePointListXYZType_KinkIndices()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='kinks' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='kinkIndices' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getKinks();
+	StringVectorBaseType getKinkIndices();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.CurvePointListXYZType#getKinks <em>Kinks</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.CurvePointListXYZType#getKinkIndices <em>Kink Indices</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Kinks</em>' containment reference.
-	 * @see #getKinks()
+	 * @param value the new value of the '<em>Kink Indices</em>' containment reference.
+	 * @see #getKinkIndices()
 	 * @generated
 	 */
-	void setKinks(StringVectorBaseType value);
+	void setKinkIndices(StringVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Parameter Map</b></em>' containment reference.

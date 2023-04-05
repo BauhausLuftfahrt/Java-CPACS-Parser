@@ -47,7 +47,7 @@ public interface MSparsType extends ComplexBaseType {
 
 	/**
 	 * Returns the value of the '<em><b>MSpar</b></em>' containment reference list.
-	 * The list contents are of type {@link Cpacs.SingleGenericMassType}.
+	 * The list contents are of type {@link Cpacs.MSparType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MSpar</em>' containment reference list.
@@ -56,6 +56,6 @@ public interface MSparsType extends ComplexBaseType {
 	 *        extendedMetaData="kind='element' name='mSpar' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<SingleGenericMassType> getMSpar();
+	EList<MSparType> getMSpar();
 
 } // MSparsType

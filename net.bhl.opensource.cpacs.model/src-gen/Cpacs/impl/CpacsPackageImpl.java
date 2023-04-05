@@ -5,6 +5,8 @@ package Cpacs.impl;
 import Cpacs.CpacsFactory;
 import Cpacs.CpacsPackage;
 
+import Cpacs.util.CpacsValidator;
+
 import java.io.IOException;
 
 import java.net.URL;
@@ -19,6 +21,7 @@ import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.EValidator;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
@@ -89,28 +92,56 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass additionalParametersTypeEClass = null;
+	private EClass aeroCaseAeroDataTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass additionalParameterTypeEClass = null;
+	private EClass aeroCaseCoefficientsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass aeroDataSetForLoadsTypeEClass = null;
+	private EClass aeroCaseSpecificationTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass aeroDataSetsForLoadsTypeEClass = null;
+	private EClass aeroCasesTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass aeroCaseTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass aeroDataComponentsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass aeroDataComponentTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass aeroDataVehicleTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,6 +176,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass aeroLimitsIncrementMapTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass aeroLimitsMapTypeEClass = null;
 
 	/**
@@ -167,20 +205,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass aeroPerformanceBoundaryConditionsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass aeroPerformanceControlElementsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass aeroPerformanceControlElementTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -236,7 +260,28 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass aircraftAnalysesGlobalTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass aircraftAnalysesTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass aircraftControlElementsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass aircraftControlElementTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -348,14 +393,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass angleAccelerationTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass angleDisplacementTypeEClass = null;
+	private EClass altitudeTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -370,13 +408,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass anisotropicSolidPropertiesTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass atmosphericConditionsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -418,14 +449,14 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass attitudeAndMotionTypeEClass = null;
+	private EClass axleAssembliesTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass axlesTypeEClass = null;
+	private EClass axleAssemblyTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -460,20 +491,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass bogieAxlesTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass bogieAxleTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass bogieTypeEClass = null;
 
 	/**
@@ -488,14 +505,14 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass boundingElementUIDsTypeEClass = null;
+	private EClass boundingBoxTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass cabGeometryTypeEClass = null;
+	private EClass boundingElementUIDsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -516,42 +533,21 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass cabinDoorsTypeEClass = null;
+	private EClass cabinGeometryContoursTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass cabinDoorTypeEClass = null;
+	private EClass cabinGeometryContourTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass cabinFloorElementsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass cabinFloorElementTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass cabinSeatElementsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass cabinSeatElementTypeEClass = null;
+	private EClass cabinGeometryTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -572,7 +568,42 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass calibratedAirSpeedTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass capTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass cargoContainerElementsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass cargoContainerElementTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass cargoContainersTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass cargoContainerTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -594,6 +625,20 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass cargoDoorsAssemblyTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ceilingPanelElementsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ceilingPanelsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -691,7 +736,42 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass changeLogTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass chargesCostTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass chordwisePartsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass chordwisePartTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass classDividerElementsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass classDividersTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -712,7 +792,70 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass coefficientsTypeEClass = null;
+	private EClass coefficientReferenceTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass coefficientsBreakdownComponentsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass coefficientsBreakdownComponentTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass coefficientsBreakdownSegmentTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass coefficientsBreakdownStripsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass coefficientsBreakdownStripTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass coefficientsBreakdownTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass coefficientsBreakdownWingSegmentsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass coefficientsBreakdownWingsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass coefficientsBreakdownWingTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -775,13 +918,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass componentCutLoadsEnvelopeTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass componentSegmentPathTypeEClass = null;
 
 	/**
@@ -838,6 +974,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass configurationTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass connectivitiesTypeEClass = null;
 
 	/**
@@ -852,14 +995,14 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass constraintSettingsPointPerformanceTypeEClass = null;
+	private EClass constraintSettingsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass constraintSettingsTypeEClass = null;
+	private EClass constraintsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -908,7 +1051,21 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass continuityType4EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass contourReferenceTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass contourTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -957,14 +1114,14 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass controlInputsTypeEClass = null;
+	private EClass controllabilityReqsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass controlInputTypeEClass = null;
+	private EClass controllabilityRequirementTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1035,20 +1192,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass controlSurfaceContoursTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass controlSurfaceDeflectionsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass controlSurfaceDeflectionTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1182,6 +1325,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass controlSurfaceWingCutOutTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass cornerRadiusTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1468,28 +1618,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass cutLoadIntegrationPointsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass cutLoadsEnvelopeTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass cutLoadsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass cutLoadTypeEClass = null;
+	private EClass cutLoadPointsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1594,6 +1723,76 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass deckComponent2DBaseTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass deckComponentBaseTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass deckDoorsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass deckDoorTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass deckElementBaseTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass deckElementGeometryTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass deckElementMassTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass deckElementsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass deckStructuralMountsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass deckStructuralMountTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass decksTypeEClass = null;
 
 	/**
@@ -1602,6 +1801,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass deckTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass deckTypeTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1637,13 +1843,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass designSpaceTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass designSpeedTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1706,6 +1905,20 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass doorOpeningLegacyTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass doorOpeningTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass doorsTypeEClass = null;
 
 	/**
@@ -1734,6 +1947,20 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass doorTypeType1EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass doubleArrayBaseTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass doubleBaseTypeEClass = null;
 
 	/**
@@ -1742,6 +1969,27 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass doubleConstraintBaseTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass doubleVectorBaseTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass doubleVectorConstraintBaseTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass dragContributionsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1762,6 +2010,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass durationTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass dynamicAircraftModelAnalysisTypeEClass = null;
 
 	/**
@@ -1769,21 +2024,14 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass dynamicAircraftModelPointsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass dynamicAircraftModelTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass emissivityMapTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass endTimeUTCTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1888,13 +2136,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass engineSettingTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass engineSpinnerTypeEClass = null;
 
 	/**
@@ -1910,6 +2151,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass engineTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass environmentTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1972,28 +2220,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass flightDynamicsFlightCasesTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass flightDynamicsFlightCaseTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass flightDynamicsLinearModelTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass flightDynamicsModelTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2007,6 +2234,27 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass flightEnvelopeSpeedTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass flightEnvelopesTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass flightEnvelopeTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass flightLoadCasesTypeEClass = null;
 
 	/**
@@ -2014,7 +2262,21 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass flightLoadCaseTypeEClass = null;
+	private EClass flightLoadConditionsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass flightLoadDataTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass flightPathAngleTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2049,6 +2311,27 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass flightPerformanceLevelTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass flightPerformanceRequirementsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass flightPerformanceRequirementTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass flightPerformanceTakeoffTypeEClass = null;
 
 	/**
@@ -2056,7 +2339,14 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass flightPerformanceTypeEClass = null;
+	private EClass flightPerformanceTurnTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass flightPointsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2105,21 +2395,14 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass flowConditionTypeEClass = null;
+	private EClass flyingQualitiesCasesTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass flyingQualitiesTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass fqCaseTypeEClass = null;
+	private EClass flyingQualitiesCaseTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2217,6 +2500,20 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass fuelConsumedTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass fuelFractionTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass fuelInTankTypeEClass = null;
 
 	/**
@@ -2224,7 +2521,21 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass fuelMassFractionTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass fuelPlanningTypeTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass fuelRemainingTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2253,13 +2564,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass fuselageAeroPerformanceTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass fuselageCoefficientsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2322,13 +2626,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass fuselagesCoefficientsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass fuselageSectionsTypeEClass = null;
 
 	/**
@@ -2337,27 +2634,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass fuselageSectionTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass fuselageSegmentCoefficientsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass fuselageSegmentsCoefficientsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass fuselageSegmentStripCoefficientsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2399,7 +2675,21 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass gearComponentsTypeEClass = null;
+	private EClass galleyElementsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass galleyElementTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass galleysTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2441,21 +2731,21 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass genericComponentCoefficientsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass genericComponentsCoefficientsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass genericCostTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass genericFloorElementsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass genericFloorModulesTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2470,6 +2760,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass genericGeometryComponentsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass genericGeometryComponentTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2491,13 +2788,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass genericSystemTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass geogenWingOutputOptionsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2532,14 +2822,21 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass groundLoadCasesTypeEClass = null;
+	private EClass globalFlightPointTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass groundLoadCaseTypeEClass = null;
+	private EClass globalPerformanceCasesTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass groundLoadCasesTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2574,21 +2871,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass handbookAeroLastTransitionRegionTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass handbookAeroPolynomialCoefficientsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass handbookAeroTransitionRegionTypeEClass = null;
+	private EClass gustShapeTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2596,6 +2879,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass headerTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass headingTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2624,13 +2914,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass htpStructElemDefTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass identifierTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2700,6 +2983,20 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass internalPressuresTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass internalPressureTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass interpolationTypeEClass = null;
 
 	/**
@@ -2722,6 +3019,55 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass isotropicPropertiesTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass landingGearBaseTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass landingGearBrakingStateTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass landingGearComponentAssemblyTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass landingGearControlFunctionsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass landingGearControlTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass landingGearExtensionFunctionStepTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass landingGearExtensionFunctionTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2784,7 +3130,35 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass landingGearSettingTypeEClass = null;
+	private EClass landingGearSteeringFunctionStepTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass landingGearSteeringFunctionTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass landingGearStrutAttachmentTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass landingGearsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass landingGearSupportBeamPositionTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2799,6 +3173,27 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass lateralCapTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass latitudeTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass lavatoriesTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass lavatoryElementsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2854,6 +3249,27 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass loadApplicationPointSetsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass loadApplicationPointSetTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass loadApplicationPointsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass loadBreakdownTypeEClass = null;
 
 	/**
@@ -2861,49 +3277,28 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass loadCaseEnginesTypeEClass = null;
+	private EClass loadCaseAccelerationsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass loadCaseLandingGearsTypeEClass = null;
+	private EClass loadCaseGustTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass loadCaseMassTypeEClass = null;
+	private EClass loadCaseLoadFactorsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass loadCaseRotationTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass loadCaseRotationVelocityTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass loadCaseSettingsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass loadCaseStateTypeEClass = null;
+	private EClass loadCaseSpecificationTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2917,56 +3312,63 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass loadCaseTranslationAccelerationTypeEClass = null;
+	private EClass loadCaseSuperpositionTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass loadCaseTranslationTypeEClass = null;
+	private EClass loadCaseTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass loadCaseTranslationVelocityTypeEClass = null;
+	private EClass loadEnvelopesTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass loadConditionTypeEClass = null;
+	private EClass loadEnvelopeTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass loadReferenceAxisPointsTypeEClass = null;
+	private EClass loadReferenceLineTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass loadReferenceAxisPointTypeEClass = null;
+	private EClass loadReferencePointTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass loadReferenceTypeEClass = null;
+	private EClass loadSetsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass loadsEnvelopeTypeEClass = null;
+	private EClass loadSetTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass logEntryTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2994,6 +3396,48 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass longitudeTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass lowerHeightFractionTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass luggageCompartmentElementsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass luggageCompartmentsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass machNumberTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mAdditionalCenterTanksTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass mainActuatorTypeEClass = null;
 
 	/**
@@ -3001,42 +3445,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass mainGearGlobalTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass mainGearsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass mainGearSupportBeamPositionTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass mainGearSupportBeamTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass mainGearTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass mainGearWingAttachmentTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3379,6 +3788,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass mEngineAPUOilsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass mEngineControlTypeEClass = null;
 
 	/**
@@ -3561,6 +3977,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass missionEndRunwayTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass missionPerformanceMapDefinitionTypeEClass = null;
 
 	/**
@@ -3611,6 +4034,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass missionStartConditionTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass missionStartRunwayTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3680,13 +4110,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass mMiscellaneousTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass mMoveableLeadingEdgesTypeEClass = null;
 
 	/**
@@ -3723,13 +4146,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass mNoseGearsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass modelTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3813,6 +4229,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass mRemovableCrewRestsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass mRibsTypeEClass = null;
 
 	/**
@@ -3862,7 +4285,28 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass mSparCellsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mSparSkinsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass mSparsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mSparTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3904,6 +4348,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass mToiletFluidsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass mTrailingEdgeDevicesTypeEClass = null;
 
 	/**
@@ -3932,6 +4383,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass mUnusableFuelsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass mVacuumWasteSystemsTypeEClass = null;
 
 	/**
@@ -3939,7 +4397,21 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass mWallsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass mWasteWaterSystemsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mWaterReservoirsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4023,14 +4495,14 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass nodalLoadsTypeEClass = null;
+	private EClass nameTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass nodalLoadTypeEClass = null;
+	private EClass nameType1EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4044,21 +4516,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass noseGearGlobalTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass noseGearsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass noseGearTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4087,13 +4545,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass operationLimitIncrementsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass orientationTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4163,21 +4614,14 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass performanceCasesTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass performanceCaseTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass performanceMapSelectionTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass performanceRequirementConfigurationsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4199,6 +4643,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass phiTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass pintleStrutsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4289,14 +4740,28 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass pointPerformancesTypeEClass = null;
+	private EClass pointPerformanceConstraintsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass pointPerformanceTypeEClass = null;
+	private EClass pointPerformanceDefinitionsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass pointPerformanceDefinitionTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass pointPerformanceRequirementsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4359,6 +4824,27 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass posExcl0DoubleBaseTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass posExcl0IntBaseTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass posIntVectorBaseTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass positioningsTypeEClass = null;
 
 	/**
@@ -4367,6 +4853,27 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass positioningTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass powerConsumedTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass powerFractionTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass powerRemainingTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4534,14 +5041,28 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass quasiSteadyRotationTypeEClass = null;
+	private EClass radiativeForcingTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass radiativeForcingTypeEClass = null;
+	private EClass rangeTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass rateOfClimbTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass rectangleProfileTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4556,6 +5077,48 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass referenceTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass relativeStrutPositionTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass releasedStoresTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass releasedStoreTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass remainingContributionsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass remainingContributionTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass requirementClassificationTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4772,6 +5335,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass runwayStartPositionTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass runwaysTypeEClass = null;
 
 	/**
@@ -4786,21 +5356,28 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass runwayType1EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass seatElementsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass seatElementTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass seatModulesTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass seatModuleTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass sectionDistributionModeTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4905,6 +5482,20 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass sidewallPanelElementsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sidewallPanelsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass singleGenericMassTypeEClass = null;
 
 	/**
@@ -4912,28 +5503,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass sizingTypeTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass skidGearGlobalTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass skidGearsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass skidGearTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -5017,6 +5587,41 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass specificConfigurationSegmentsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass specificConfigurationSegmentTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass specificConfigurationUIDsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass specificConfigurationUIDTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass specificExcessPowerTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass specificHeatMapTypeEClass = null;
 
 	/**
@@ -5038,6 +5643,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass speedDesignatorsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass spoilersTypeEClass = null;
 
 	/**
@@ -5046,6 +5658,20 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass spoilerTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass standardProfileSheetIDTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass standardProfileTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -5095,6 +5721,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass stringerFramePositionTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass stringerFramePositionUIDsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -5178,14 +5811,21 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass strutTypeEClass = null;
+	private EClass strutAssemblyTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass strutWithActuatorTypeEClass = null;
+	private EClass strutPropertiesTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass strutTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -5220,7 +5860,14 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass symmetryType3EClass = null;
+	private EClass superEllipseProfileTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass supportBeamTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -5283,6 +5930,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass timeConstraintBaseTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass toolspecificTypeEClass = null;
 
 	/**
@@ -5325,14 +5979,28 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass trackCarTypeEClass = null;
+	private EClass trackJointCoordinatesTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass trackFairingTypeEClass = null;
+	private EClass trackJointPositionsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass trackJointPositionTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass trackSecondaryStructureTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -5346,14 +6014,14 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass trackStrut1TypeEClass = null;
+	private EClass trackStrutsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass trackStrut2TypeEClass = null;
+	private EClass trackStrutTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -5472,7 +6140,35 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass trimParametersTypeEClass = null;
+	private EClass trimCaseTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass trimRequirementsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass trimRequirementTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass trimTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass turnAngleTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -5486,35 +6182,14 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass typeType1EClass = null;
+	private EClass typeTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass typeType2EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass typeType5EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass typeType6EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass typeType7EClass = null;
+	private EClass typeType4EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -5535,14 +6210,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass updatesTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass updateTypeEClass = null;
+	private EClass uidSequenceTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -5550,6 +6218,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass upperLinksTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass variableConditionsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -5570,7 +6245,35 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass vehicleConfigurationsTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass vehicleConfigurationTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass vehiclesTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass versionInfosTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass versionInfoTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -5703,13 +6406,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass wheelsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass wheelTypeEClass = null;
 
 	/**
@@ -5752,6 +6448,13 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass wingAttachmentPositioningTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass wingCellsTypeEClass = null;
 
 	/**
@@ -5760,13 +6463,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass wingCellTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass wingCoefficientsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -5934,13 +6630,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass wingsCoefficientsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass wingSectionsTypeEClass = null;
 
 	/**
@@ -5949,27 +6638,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	private EClass wingSectionTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass wingSegmentCoefficientsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass wingSegmentsCoefficientsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass wingSegmentStripCoefficientsTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -6095,13 +6763,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum cpacsVersionTypeEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EEnum formatTypeEEnum = null;
 
 	/**
@@ -6137,6 +6798,48 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EEnum relationalOperatorType1EEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum relationalOperatorType2EEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum sideOfFirstWheelTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum sizingTypeTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum stepTypeTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum stepTypeType1EEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EEnum symmetryTypeEEnum = null;
 
 	/**
@@ -6151,91 +6854,21 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum symmetryType2EEnum = null;
+	private EEnum symmetryXyXzYzTypeEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum symmetryType4EEnum = null;
+	private EEnum typeType1EEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum symmetryType5EEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum symmetryType6EEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum symmetryType7EEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum symmetryType8EEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum symmetryType9EEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum symmetryType10EEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum symmetryType11EEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum symmetryType12EEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum symmetryType13EEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum symmetryType14EEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum typeTypeEEnum = null;
+	private EEnum typeType2EEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -6249,13 +6882,6 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum typeType4EEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EEnum uncertaintyFunctionTypeEEnum = null;
 
 	/**
@@ -6263,7 +6889,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EDataType cpacsVersionTypeObjectEDataType = null;
+	private EDataType doubleVectorBaseTypeBaseEDataType = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -6284,7 +6910,35 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EDataType mainStrutRelativePositionTypeEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType mainStrutRelativePositionTypeObjectEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EDataType placementTypeObjectEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType posOnBogieTypeEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType posOnBogieTypeObjectEDataType = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -6305,6 +6959,62 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EDataType relationalOperatorTypeObject1EDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType relationalOperatorTypeObject2EDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType relativePositionTypeEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType relativePositionTypeObjectEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType sideOfFirstWheelTypeObjectEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType sizingTypeTypeObjectEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType stepTypeTypeObjectEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType stepTypeTypeObject1EDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EDataType symmetryTypeObjectEDataType = null;
 
 	/**
@@ -6319,84 +7029,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EDataType symmetryTypeObject2EDataType = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType symmetryTypeObject3EDataType = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType symmetryTypeObject4EDataType = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType symmetryTypeObject5EDataType = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType symmetryTypeObject6EDataType = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType symmetryTypeObject7EDataType = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType symmetryTypeObject8EDataType = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType symmetryTypeObject9EDataType = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType symmetryTypeObject10EDataType = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType symmetryTypeObject11EDataType = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType symmetryTypeObject12EDataType = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType symmetryTypeObject13EDataType = null;
+	private EDataType symmetryXyXzYzTypeObjectEDataType = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -6482,6 +7115,14 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 
 		// Fix loaded packages
 		theCpacsPackage.fixPackageContents();
+
+		// Register package validator
+		EValidator.Registry.INSTANCE.put(theCpacsPackage, new EValidator.Descriptor() {
+			@Override
+			public EValidator getEValidator() {
+				return CpacsValidator.INSTANCE;
+			}
+		});
 
 		// Mark meta-data to indicate it can't be changed
 		theCpacsPackage.freeze();
@@ -6741,12 +7382,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getAdditionalParametersType() {
-		if (additionalParametersTypeEClass == null) {
-			additionalParametersTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+	public EClass getAeroCaseAeroDataType() {
+		if (aeroCaseAeroDataTypeEClass == null) {
+			aeroCaseAeroDataTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
 					.getEClassifiers().get(6);
 		}
-		return additionalParametersTypeEClass;
+		return aeroCaseAeroDataTypeEClass;
 	}
 
 	/**
@@ -6755,8 +7396,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAdditionalParametersType_Parameter() {
-		return (EReference) getAdditionalParametersType().getEStructuralFeatures().get(0);
+	public EReference getAeroCaseAeroDataType_AngleOfAttack() {
+		return (EReference) getAeroCaseAeroDataType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -6765,12 +7406,42 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getAdditionalParameterType() {
-		if (additionalParameterTypeEClass == null) {
-			additionalParameterTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+	public EReference getAeroCaseAeroDataType_AngleOfSideslip() {
+		return (EReference) getAeroCaseAeroDataType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroCaseAeroDataType_Vehicle() {
+		return (EReference) getAeroCaseAeroDataType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroCaseAeroDataType_Components() {
+		return (EReference) getAeroCaseAeroDataType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAeroCaseCoefficientsType() {
+		if (aeroCaseCoefficientsTypeEClass == null) {
+			aeroCaseCoefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
 					.getEClassifiers().get(7);
 		}
-		return additionalParameterTypeEClass;
+		return aeroCaseCoefficientsTypeEClass;
 	}
 
 	/**
@@ -6779,8 +7450,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAdditionalParameterType_Name() {
-		return (EReference) getAdditionalParameterType().getEStructuralFeatures().get(0);
+	public EReference getAeroCaseCoefficientsType_Cd() {
+		return (EReference) getAeroCaseCoefficientsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -6789,8 +7460,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAdditionalParameterType_Description() {
-		return (EReference) getAdditionalParameterType().getEStructuralFeatures().get(1);
+	public EReference getAeroCaseCoefficientsType_Cs() {
+		return (EReference) getAeroCaseCoefficientsType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -6799,8 +7470,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAdditionalParameterType_Value() {
-		return (EReference) getAdditionalParameterType().getEStructuralFeatures().get(2);
+	public EReference getAeroCaseCoefficientsType_Cl() {
+		return (EReference) getAeroCaseCoefficientsType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -6809,12 +7480,52 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getAeroDataSetForLoadsType() {
-		if (aeroDataSetForLoadsTypeEClass == null) {
-			aeroDataSetForLoadsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+	public EReference getAeroCaseCoefficientsType_Cmd() {
+		return (EReference) getAeroCaseCoefficientsType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroCaseCoefficientsType_Cms() {
+		return (EReference) getAeroCaseCoefficientsType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroCaseCoefficientsType_Cml() {
+		return (EReference) getAeroCaseCoefficientsType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroCaseCoefficientsType_DragContributions() {
+		return (EReference) getAeroCaseCoefficientsType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAeroCaseSpecificationType() {
+		if (aeroCaseSpecificationTypeEClass == null) {
+			aeroCaseSpecificationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
 					.getEClassifiers().get(8);
 		}
-		return aeroDataSetForLoadsTypeEClass;
+		return aeroCaseSpecificationTypeEClass;
 	}
 
 	/**
@@ -6823,8 +7534,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroDataSetForLoadsType_FlowCondition() {
-		return (EReference) getAeroDataSetForLoadsType().getEStructuralFeatures().get(0);
+	public EReference getAeroCaseSpecificationType_Environment() {
+		return (EReference) getAeroCaseSpecificationType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -6833,8 +7544,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroDataSetForLoadsType_TotalCoefficients() {
-		return (EReference) getAeroDataSetForLoadsType().getEStructuralFeatures().get(1);
+	public EReference getAeroCaseSpecificationType_Altitude() {
+		return (EReference) getAeroCaseSpecificationType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -6843,8 +7554,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroDataSetForLoadsType_Wings() {
-		return (EReference) getAeroDataSetForLoadsType().getEStructuralFeatures().get(2);
+	public EReference getAeroCaseSpecificationType_MachNumber() {
+		return (EReference) getAeroCaseSpecificationType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -6853,8 +7564,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroDataSetForLoadsType_Fuselages() {
-		return (EReference) getAeroDataSetForLoadsType().getEStructuralFeatures().get(3);
+	public EReference getAeroCaseSpecificationType_AngleOfSideslip() {
+		return (EReference) getAeroCaseSpecificationType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -6863,8 +7574,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroDataSetForLoadsType_GenericComponents() {
-		return (EReference) getAeroDataSetForLoadsType().getEStructuralFeatures().get(4);
+	public EReference getAeroCaseSpecificationType_AngleOfAttack() {
+		return (EReference) getAeroCaseSpecificationType().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -6873,8 +7584,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getAeroDataSetForLoadsType_UID() {
-		return (EAttribute) getAeroDataSetForLoadsType().getEStructuralFeatures().get(5);
+	public EReference getAeroCaseSpecificationType_TargetCl() {
+		return (EReference) getAeroCaseSpecificationType().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -6883,12 +7594,62 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getAeroDataSetsForLoadsType() {
-		if (aeroDataSetsForLoadsTypeEClass == null) {
-			aeroDataSetsForLoadsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+	public EReference getAeroCaseSpecificationType_PStar() {
+		return (EReference) getAeroCaseSpecificationType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroCaseSpecificationType_QStar() {
+		return (EReference) getAeroCaseSpecificationType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroCaseSpecificationType_RStar() {
+		return (EReference) getAeroCaseSpecificationType().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroCaseSpecificationType_Configuration() {
+		return (EReference) getAeroCaseSpecificationType().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroCaseSpecificationType_WeightAndBalanceUID() {
+		return (EReference) getAeroCaseSpecificationType().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAeroCasesType() {
+		if (aeroCasesTypeEClass == null) {
+			aeroCasesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
 					.getEClassifiers().get(9);
 		}
-		return aeroDataSetsForLoadsTypeEClass;
+		return aeroCasesTypeEClass;
 	}
 
 	/**
@@ -6897,8 +7658,164 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroDataSetsForLoadsType_AeroDataSetForLoads() {
-		return (EReference) getAeroDataSetsForLoadsType().getEStructuralFeatures().get(0);
+	public EReference getAeroCasesType_AeroCase() {
+		return (EReference) getAeroCasesType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAeroCaseType() {
+		if (aeroCaseTypeEClass == null) {
+			aeroCaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(10);
+		}
+		return aeroCaseTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroCaseType_Name() {
+		return (EReference) getAeroCaseType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroCaseType_Description() {
+		return (EReference) getAeroCaseType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroCaseType_Specification() {
+		return (EReference) getAeroCaseType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroCaseType_AeroData() {
+		return (EReference) getAeroCaseType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAeroCaseType_UID() {
+		return (EAttribute) getAeroCaseType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAeroDataComponentsType() {
+		if (aeroDataComponentsTypeEClass == null) {
+			aeroDataComponentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(11);
+		}
+		return aeroDataComponentsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroDataComponentsType_Component() {
+		return (EReference) getAeroDataComponentsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAeroDataComponentType() {
+		if (aeroDataComponentTypeEClass == null) {
+			aeroDataComponentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(12);
+		}
+		return aeroDataComponentTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroDataComponentType_ComponentUID() {
+		return (EReference) getAeroDataComponentType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroDataComponentType_Coefficients() {
+		return (EReference) getAeroDataComponentType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAeroDataVehicleType() {
+		if (aeroDataVehicleTypeEClass == null) {
+			aeroDataVehicleTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(13);
+		}
+		return aeroDataVehicleTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroDataVehicleType_Coefficients() {
+		return (EReference) getAeroDataVehicleType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroDataVehicleType_CoefficientsBreakdown() {
+		return (EReference) getAeroDataVehicleType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -6910,7 +7827,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroelasticDivergenceType() {
 		if (aeroelasticDivergenceTypeEClass == null) {
 			aeroelasticDivergenceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(10);
+					.getEClassifiers().get(14);
 		}
 		return aeroelasticDivergenceTypeEClass;
 	}
@@ -6934,7 +7851,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroelasticStaticMaxDisplacementType() {
 		if (aeroelasticStaticMaxDisplacementTypeEClass == null) {
 			aeroelasticStaticMaxDisplacementTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(11);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(15);
 		}
 		return aeroelasticStaticMaxDisplacementTypeEClass;
 	}
@@ -6968,7 +7885,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroelasticsType() {
 		if (aeroelasticsTypeEClass == null) {
 			aeroelasticsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(12);
+					.getEClassifiers().get(16);
 		}
 		return aeroelasticsTypeEClass;
 	}
@@ -7002,7 +7919,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroLimitsIncrementMapsType() {
 		if (aeroLimitsIncrementMapsTypeEClass == null) {
 			aeroLimitsIncrementMapsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(13);
+					.getEClassifiers().get(17);
 		}
 		return aeroLimitsIncrementMapsTypeEClass;
 	}
@@ -7013,7 +7930,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroLimitsIncrementMapsType_ControlDeviceUID() {
+	public EReference getAeroLimitsIncrementMapsType_IncrementMap() {
 		return (EReference) getAeroLimitsIncrementMapsType().getEStructuralFeatures().get(0);
 	}
 
@@ -7023,8 +7940,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroLimitsIncrementMapsType_ControlParameters() {
-		return (EReference) getAeroLimitsIncrementMapsType().getEStructuralFeatures().get(1);
+	public EClass getAeroLimitsIncrementMapType() {
+		if (aeroLimitsIncrementMapTypeEClass == null) {
+			aeroLimitsIncrementMapTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(18);
+		}
+		return aeroLimitsIncrementMapTypeEClass;
 	}
 
 	/**
@@ -7033,8 +7954,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroLimitsIncrementMapsType_ControlDistributorUID() {
-		return (EReference) getAeroLimitsIncrementMapsType().getEStructuralFeatures().get(2);
+	public EReference getAeroLimitsIncrementMapType_ControlDeviceUID() {
+		return (EReference) getAeroLimitsIncrementMapType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -7043,8 +7964,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroLimitsIncrementMapsType_CommandInputs() {
-		return (EReference) getAeroLimitsIncrementMapsType().getEStructuralFeatures().get(3);
+	public EReference getAeroLimitsIncrementMapType_ControlParameters() {
+		return (EReference) getAeroLimitsIncrementMapType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -7053,8 +7974,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroLimitsIncrementMapsType_AeroPerformanceIncrementMapUID() {
-		return (EReference) getAeroLimitsIncrementMapsType().getEStructuralFeatures().get(4);
+	public EReference getAeroLimitsIncrementMapType_ControlDistributorUID() {
+		return (EReference) getAeroLimitsIncrementMapType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -7063,8 +7984,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroLimitsIncrementMapsType_OperationLimitIncrements() {
-		return (EReference) getAeroLimitsIncrementMapsType().getEStructuralFeatures().get(5);
+	public EReference getAeroLimitsIncrementMapType_CommandInputs() {
+		return (EReference) getAeroLimitsIncrementMapType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -7073,8 +7994,28 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getAeroLimitsIncrementMapsType_UID() {
-		return (EAttribute) getAeroLimitsIncrementMapsType().getEStructuralFeatures().get(6);
+	public EReference getAeroLimitsIncrementMapType_AeroPerformanceIncrementMapUID() {
+		return (EReference) getAeroLimitsIncrementMapType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroLimitsIncrementMapType_OperationLimitIncrements() {
+		return (EReference) getAeroLimitsIncrementMapType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAeroLimitsIncrementMapType_UID() {
+		return (EAttribute) getAeroLimitsIncrementMapType().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -7086,7 +8027,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroLimitsMapType() {
 		if (aeroLimitsMapTypeEClass == null) {
 			aeroLimitsMapTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(14);
+					.getEClassifiers().get(19);
 		}
 		return aeroLimitsMapTypeEClass;
 	}
@@ -7117,7 +8058,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroLimitsMapType_OperationLimit() {
+	public EReference getAeroLimitsMapType_AngleOfSideslip() {
 		return (EReference) getAeroLimitsMapType().getEStructuralFeatures().get(2);
 	}
 
@@ -7127,8 +8068,18 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroLimitsMapType_IncrementMaps() {
+	public EReference getAeroLimitsMapType_OperationLimit() {
 		return (EReference) getAeroLimitsMapType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAeroLimitsMapType_IncrementMaps() {
+		return (EReference) getAeroLimitsMapType().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -7140,7 +8091,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroMapOperationLimitType() {
 		if (aeroMapOperationLimitTypeEClass == null) {
 			aeroMapOperationLimitTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(15);
+					.getEClassifiers().get(20);
 		}
 		return aeroMapOperationLimitTypeEClass;
 	}
@@ -7151,7 +8102,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroMapOperationLimitType_AngleOfSideslip() {
+	public EReference getAeroMapOperationLimitType_AngleOfAttackMin() {
 		return (EReference) getAeroMapOperationLimitType().getEStructuralFeatures().get(0);
 	}
 
@@ -7161,7 +8112,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroMapOperationLimitType_AngleOfAttack() {
+	public EReference getAeroMapOperationLimitType_AngleOfAttackMax() {
 		return (EReference) getAeroMapOperationLimitType().getEStructuralFeatures().get(1);
 	}
 
@@ -7174,7 +8125,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroMapType() {
 		if (aeroMapTypeEClass == null) {
 			aeroMapTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(16);
+					.get(21);
 		}
 		return aeroMapTypeEClass;
 	}
@@ -7248,7 +8199,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroPerformanceBoundaryConditionsType() {
 		if (aeroPerformanceBoundaryConditionsTypeEClass == null) {
 			aeroPerformanceBoundaryConditionsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(17);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(22);
 		}
 		return aeroPerformanceBoundaryConditionsTypeEClass;
 	}
@@ -7279,86 +8230,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAeroPerformanceBoundaryConditionsType_ControlElements() {
+	public EReference getAeroPerformanceBoundaryConditionsType_Configuration() {
 		return (EReference) getAeroPerformanceBoundaryConditionsType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getAeroPerformanceControlElementsType() {
-		if (aeroPerformanceControlElementsTypeEClass == null) {
-			aeroPerformanceControlElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(18);
-		}
-		return aeroPerformanceControlElementsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAeroPerformanceControlElementsType_ControlElement() {
-		return (EReference) getAeroPerformanceControlElementsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getAeroPerformanceControlElementType() {
-		if (aeroPerformanceControlElementTypeEClass == null) {
-			aeroPerformanceControlElementTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(19);
-		}
-		return aeroPerformanceControlElementTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAeroPerformanceControlElementType_ControlDeviceUID() {
-		return (EReference) getAeroPerformanceControlElementType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAeroPerformanceControlElementType_ControlParameter() {
-		return (EReference) getAeroPerformanceControlElementType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAeroPerformanceControlElementType_ControlDistributorUID() {
-		return (EReference) getAeroPerformanceControlElementType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAeroPerformanceControlElementType_CommandInput() {
-		return (EReference) getAeroPerformanceControlElementType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -7370,7 +8243,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroPerformanceIncrementMapsType() {
 		if (aeroPerformanceIncrementMapsTypeEClass == null) {
 			aeroPerformanceIncrementMapsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(20);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(23);
 		}
 		return aeroPerformanceIncrementMapsTypeEClass;
 	}
@@ -7394,7 +8267,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroPerformanceIncrementMapType() {
 		if (aeroPerformanceIncrementMapTypeEClass == null) {
 			aeroPerformanceIncrementMapTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(21);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(24);
 		}
 		return aeroPerformanceIncrementMapTypeEClass;
 	}
@@ -7518,7 +8391,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroPerformanceMapRCType() {
 		if (aeroPerformanceMapRCTypeEClass == null) {
 			aeroPerformanceMapRCTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(22);
+					.getEClassifiers().get(25);
 		}
 		return aeroPerformanceMapRCTypeEClass;
 	}
@@ -7672,7 +8545,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroPerformanceMapsRCType() {
 		if (aeroPerformanceMapsRCTypeEClass == null) {
 			aeroPerformanceMapsRCTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(23);
+					.getEClassifiers().get(26);
 		}
 		return aeroPerformanceMapsRCTypeEClass;
 	}
@@ -7696,7 +8569,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroPerformanceMapType() {
 		if (aeroPerformanceMapTypeEClass == null) {
 			aeroPerformanceMapTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(24);
+					.getEClassifiers().get(27);
 		}
 		return aeroPerformanceMapTypeEClass;
 	}
@@ -7830,7 +8703,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroPerformanceRCType() {
 		if (aeroPerformanceRCTypeEClass == null) {
 			aeroPerformanceRCTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(25);
+					.getEClassifiers().get(28);
 		}
 		return aeroPerformanceRCTypeEClass;
 	}
@@ -7894,7 +8767,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAeroPerformanceType() {
 		if (aeroPerformanceTypeEClass == null) {
 			aeroPerformanceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(26);
+					.getEClassifiers().get(29);
 		}
 		return aeroPerformanceTypeEClass;
 	}
@@ -7915,10 +8788,34 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getAircraftAnalysesGlobalType() {
+		if (aircraftAnalysesGlobalTypeEClass == null) {
+			aircraftAnalysesGlobalTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(30);
+		}
+		return aircraftAnalysesGlobalTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAircraftAnalysesGlobalType_LoadApplicationPointSets() {
+		return (EReference) getAircraftAnalysesGlobalType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getAircraftAnalysesType() {
 		if (aircraftAnalysesTypeEClass == null) {
 			aircraftAnalysesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(27);
+					.getEClassifiers().get(31);
 		}
 		return aircraftAnalysesTypeEClass;
 	}
@@ -7929,7 +8826,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAircraftAnalysesType_AeroPerformance() {
+	public EReference getAircraftAnalysesType_Global() {
 		return (EReference) getAircraftAnalysesType().getEStructuralFeatures().get(0);
 	}
 
@@ -7939,7 +8836,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAircraftAnalysesType_Aeroelastics() {
+	public EReference getAircraftAnalysesType_AeroPerformance() {
 		return (EReference) getAircraftAnalysesType().getEStructuralFeatures().get(1);
 	}
 
@@ -7949,7 +8846,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAircraftAnalysesType_DynamicAircraftModel() {
+	public EReference getAircraftAnalysesType_Aeroelastics() {
 		return (EReference) getAircraftAnalysesType().getEStructuralFeatures().get(2);
 	}
 
@@ -7969,7 +8866,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAircraftAnalysesType_FlyingQualities() {
+	public EReference getAircraftAnalysesType_FlightSystems() {
 		return (EReference) getAircraftAnalysesType().getEStructuralFeatures().get(4);
 	}
 
@@ -7979,7 +8876,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAircraftAnalysesType_FlightPerformance() {
+	public EReference getAircraftAnalysesType_LandingGearPositionSafetyMargins() {
 		return (EReference) getAircraftAnalysesType().getEStructuralFeatures().get(5);
 	}
 
@@ -7989,7 +8886,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAircraftAnalysesType_FlightSystems() {
+	public EReference getAircraftAnalysesType_LoadAnalysis() {
 		return (EReference) getAircraftAnalysesType().getEStructuralFeatures().get(6);
 	}
 
@@ -7999,7 +8896,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAircraftAnalysesType_LandingGearPositionSafetyMargins() {
+	public EReference getAircraftAnalysesType_MassBreakdown() {
 		return (EReference) getAircraftAnalysesType().getEStructuralFeatures().get(7);
 	}
 
@@ -8009,7 +8906,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAircraftAnalysesType_LoadAnalysis() {
+	public EReference getAircraftAnalysesType_MonetaryValues() {
 		return (EReference) getAircraftAnalysesType().getEStructuralFeatures().get(8);
 	}
 
@@ -8019,7 +8916,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAircraftAnalysesType_MassBreakdown() {
+	public EReference getAircraftAnalysesType_Noise() {
 		return (EReference) getAircraftAnalysesType().getEStructuralFeatures().get(9);
 	}
 
@@ -8029,7 +8926,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAircraftAnalysesType_MonetaryValues() {
+	public EReference getAircraftAnalysesType_Trajectories() {
 		return (EReference) getAircraftAnalysesType().getEStructuralFeatures().get(10);
 	}
 
@@ -8039,7 +8936,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAircraftAnalysesType_Noise() {
+	public EReference getAircraftAnalysesType_WeightAndBalance() {
 		return (EReference) getAircraftAnalysesType().getEStructuralFeatures().get(11);
 	}
 
@@ -8049,8 +8946,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAircraftAnalysesType_Trajectories() {
-		return (EReference) getAircraftAnalysesType().getEStructuralFeatures().get(12);
+	public EClass getAircraftControlElementsType() {
+		if (aircraftControlElementsTypeEClass == null) {
+			aircraftControlElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(32);
+		}
+		return aircraftControlElementsTypeEClass;
 	}
 
 	/**
@@ -8059,8 +8960,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAircraftAnalysesType_WeightAndBalance() {
-		return (EReference) getAircraftAnalysesType().getEStructuralFeatures().get(13);
+	public EReference getAircraftControlElementsType_ControlElement() {
+		return (EReference) getAircraftControlElementsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -8069,8 +8970,52 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getAircraftAnalysesType_PaxFlow() {
-		return (EAttribute) getAircraftAnalysesType().getEStructuralFeatures().get(14);
+	public EClass getAircraftControlElementType() {
+		if (aircraftControlElementTypeEClass == null) {
+			aircraftControlElementTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(33);
+		}
+		return aircraftControlElementTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAircraftControlElementType_ControlDeviceUID() {
+		return (EReference) getAircraftControlElementType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAircraftControlElementType_ControlParameter() {
+		return (EReference) getAircraftControlElementType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAircraftControlElementType_ControlDistributorUID() {
+		return (EReference) getAircraftControlElementType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAircraftControlElementType_CommandInput() {
+		return (EReference) getAircraftControlElementType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -8082,7 +9027,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAircraftGlobalType() {
 		if (aircraftGlobalTypeEClass == null) {
 			aircraftGlobalTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(28);
+					.getEClassifiers().get(34);
 		}
 		return aircraftGlobalTypeEClass;
 	}
@@ -8133,10 +9078,20 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getAircraftGlobalType_FlightEnvelopes() {
+		return (EReference) getAircraftGlobalType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getAircraftModelType() {
 		if (aircraftModelTypeEClass == null) {
 			aircraftModelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(29);
+					.getEClassifiers().get(35);
 		}
 		return aircraftModelTypeEClass;
 	}
@@ -8217,7 +9172,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAircraftModelType_LandingGear() {
+	public EReference getAircraftModelType_LandingGears() {
 		return (EReference) getAircraftModelType().getEStructuralFeatures().get(7);
 	}
 
@@ -8277,8 +9232,18 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getAircraftModelType_Configurations() {
+		return (EReference) getAircraftModelType().getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getAircraftModelType_UID() {
-		return (EAttribute) getAircraftModelType().getEStructuralFeatures().get(13);
+		return (EAttribute) getAircraftModelType().getEStructuralFeatures().get(14);
 	}
 
 	/**
@@ -8290,7 +9255,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAircraftType() {
 		if (aircraftTypeEClass == null) {
 			aircraftTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(30);
+					.get(36);
 		}
 		return aircraftTypeEClass;
 	}
@@ -8314,7 +9279,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAirfoilAeroPerformanceType() {
 		if (airfoilAeroPerformanceTypeEClass == null) {
 			airfoilAeroPerformanceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(31);
+					.getEClassifiers().get(37);
 		}
 		return airfoilAeroPerformanceTypeEClass;
 	}
@@ -8358,7 +9323,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAirfoilsAeroPerformanceType() {
 		if (airfoilsAeroPerformanceTypeEClass == null) {
 			airfoilsAeroPerformanceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(32);
+					.getEClassifiers().get(38);
 		}
 		return airfoilsAeroPerformanceTypeEClass;
 	}
@@ -8382,7 +9347,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAirframeMaintenanceCostType() {
 		if (airframeMaintenanceCostTypeEClass == null) {
 			airframeMaintenanceCostTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(33);
+					.getEClassifiers().get(39);
 		}
 		return airframeMaintenanceCostTypeEClass;
 	}
@@ -8416,7 +9381,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAirlinesType() {
 		if (airlinesTypeEClass == null) {
 			airlinesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(34);
+					.get(40);
 		}
 		return airlinesTypeEClass;
 	}
@@ -8440,7 +9405,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAirlineType() {
 		if (airlineTypeEClass == null) {
 			airlineTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(35);
+					.get(41);
 		}
 		return airlineTypeEClass;
 	}
@@ -8494,7 +9459,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAirportCompatabilityGlobalType() {
 		if (airportCompatabilityGlobalTypeEClass == null) {
 			airportCompatabilityGlobalTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(36);
+					.getEClassifiers().get(42);
 		}
 		return airportCompatabilityGlobalTypeEClass;
 	}
@@ -8558,7 +9523,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAirportsType() {
 		if (airportsTypeEClass == null) {
 			airportsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(37);
+					.get(43);
 		}
 		return airportsTypeEClass;
 	}
@@ -8582,7 +9547,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAirportType() {
 		if (airportTypeEClass == null) {
 			airportTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(38);
+					.get(44);
 		}
 		return airportTypeEClass;
 	}
@@ -8686,7 +9651,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAlignmentCrossBeamType() {
 		if (alignmentCrossBeamTypeEClass == null) {
 			alignmentCrossBeamTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(39);
+					.getEClassifiers().get(45);
 		}
 		return alignmentCrossBeamTypeEClass;
 	}
@@ -8760,7 +9725,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAlignmentFloorPanelType() {
 		if (alignmentFloorPanelTypeEClass == null) {
 			alignmentFloorPanelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(40);
+					.getEClassifiers().get(46);
 		}
 		return alignmentFloorPanelTypeEClass;
 	}
@@ -8814,7 +9779,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAlignmentStringFrameType() {
 		if (alignmentStringFrameTypeEClass == null) {
 			alignmentStringFrameTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(41);
+					.getEClassifiers().get(47);
 		}
 		return alignmentStringFrameTypeEClass;
 	}
@@ -8868,7 +9833,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAlignmentStructMemberType() {
 		if (alignmentStructMemberTypeEClass == null) {
 			alignmentStructMemberTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(42);
+					.getEClassifiers().get(48);
 		}
 		return alignmentStructMemberTypeEClass;
 	}
@@ -8929,12 +9894,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getAngleAccelerationType() {
-		if (angleAccelerationTypeEClass == null) {
-			angleAccelerationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(43);
+	public EClass getAltitudeType() {
+		if (altitudeTypeEClass == null) {
+			altitudeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(49);
 		}
-		return angleAccelerationTypeEClass;
+		return altitudeTypeEClass;
 	}
 
 	/**
@@ -8943,102 +9908,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAngleAccelerationType_PDot() {
-		return (EReference) getAngleAccelerationType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAngleAccelerationType_QDot() {
-		return (EReference) getAngleAccelerationType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAngleAccelerationType_RDot() {
-		return (EReference) getAngleAccelerationType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAngleAccelerationType_PhiDotDot() {
-		return (EReference) getAngleAccelerationType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAngleAccelerationType_ThetaDotDot() {
-		return (EReference) getAngleAccelerationType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAngleAccelerationType_PsiDotDot() {
-		return (EReference) getAngleAccelerationType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getAngleDisplacementType() {
-		if (angleDisplacementTypeEClass == null) {
-			angleDisplacementTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(44);
-		}
-		return angleDisplacementTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAngleDisplacementType_Phi() {
-		return (EReference) getAngleDisplacementType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAngleDisplacementType_Theta() {
-		return (EReference) getAngleDisplacementType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAngleDisplacementType_Psi() {
-		return (EReference) getAngleDisplacementType().getEStructuralFeatures().get(2);
+	public EAttribute getAltitudeType_UID() {
+		return (EAttribute) getAltitudeType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -9050,7 +9921,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAnisotropicShellPropertiesType() {
 		if (anisotropicShellPropertiesTypeEClass == null) {
 			anisotropicShellPropertiesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(45);
+					.getEClassifiers().get(50);
 		}
 		return anisotropicShellPropertiesTypeEClass;
 	}
@@ -9284,7 +10155,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAnisotropicSolidPropertiesType() {
 		if (anisotropicSolidPropertiesTypeEClass == null) {
 			anisotropicSolidPropertiesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(46);
+					.getEClassifiers().get(51);
 		}
 		return anisotropicSolidPropertiesTypeEClass;
 	}
@@ -9805,114 +10676,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getAtmosphericConditionsType() {
-		if (atmosphericConditionsTypeEClass == null) {
-			atmosphericConditionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(47);
-		}
-		return atmosphericConditionsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAtmosphericConditionsType_Model() {
-		return (EReference) getAtmosphericConditionsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAtmosphericConditionsType_Altitude() {
-		return (EReference) getAtmosphericConditionsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAtmosphericConditionsType_DeltaTemperature() {
-		return (EReference) getAtmosphericConditionsType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAtmosphericConditionsType_StaticPressure() {
-		return (EReference) getAtmosphericConditionsType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAtmosphericConditionsType_Density() {
-		return (EReference) getAtmosphericConditionsType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAtmosphericConditionsType_Temperature() {
-		return (EReference) getAtmosphericConditionsType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAtmosphericConditionsType_SpeedOfSound() {
-		return (EReference) getAtmosphericConditionsType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAtmosphericConditionsType_DynamicViscosity() {
-		return (EReference) getAtmosphericConditionsType().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAtmosphericConditionsType_KinematicViscosity() {
-		return (EReference) getAtmosphericConditionsType().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getAtmosphericModelOldType() {
 		if (atmosphericModelOldTypeEClass == null) {
 			atmosphericModelOldTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(48);
+					.getEClassifiers().get(52);
 		}
 		return atmosphericModelOldTypeEClass;
 	}
@@ -9946,7 +10713,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAtmosphericModelType() {
 		if (atmosphericModelTypeEClass == null) {
 			atmosphericModelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(49);
+					.getEClassifiers().get(53);
 		}
 		return atmosphericModelTypeEClass;
 	}
@@ -9960,7 +10727,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAtmosphericModelType1() {
 		if (atmosphericModelType1EClass == null) {
 			atmosphericModelType1EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(50);
+					.getEClassifiers().get(54);
 		}
 		return atmosphericModelType1EClass;
 	}
@@ -9974,7 +10741,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAttachmentPinsType() {
 		if (attachmentPinsTypeEClass == null) {
 			attachmentPinsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(51);
+					.getEClassifiers().get(55);
 		}
 		return attachmentPinsTypeEClass;
 	}
@@ -9998,7 +10765,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAttachmentPinType() {
 		if (attachmentPinTypeEClass == null) {
 			attachmentPinTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(52);
+					.getEClassifiers().get(56);
 		}
 		return attachmentPinTypeEClass;
 	}
@@ -10069,12 +10836,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getAttitudeAndMotionType() {
-		if (attitudeAndMotionTypeEClass == null) {
-			attitudeAndMotionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(53);
+	public EClass getAxleAssembliesType() {
+		if (axleAssembliesTypeEClass == null) {
+			axleAssembliesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(57);
 		}
-		return attitudeAndMotionTypeEClass;
+		return axleAssembliesTypeEClass;
 	}
 
 	/**
@@ -10083,8 +10850,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAttitudeAndMotionType_RefPointUID() {
-		return (EReference) getAttitudeAndMotionType().getEStructuralFeatures().get(0);
+	public EReference getAxleAssembliesType_AxleAssembly() {
+		return (EReference) getAxleAssembliesType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -10093,42 +10860,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAttitudeAndMotionType_RefRotation() {
-		return (EReference) getAttitudeAndMotionType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAttitudeAndMotionType_Translation() {
-		return (EReference) getAttitudeAndMotionType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getAttitudeAndMotionType_Rotation() {
-		return (EReference) getAttitudeAndMotionType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getAxlesType() {
-		if (axlesTypeEClass == null) {
-			axlesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(54);
+	public EClass getAxleAssemblyType() {
+		if (axleAssemblyTypeEClass == null) {
+			axleAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(58);
 		}
-		return axlesTypeEClass;
+		return axleAssemblyTypeEClass;
 	}
 
 	/**
@@ -10137,8 +10874,18 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAxlesType_Axle() {
-		return (EReference) getAxlesType().getEStructuralFeatures().get(0);
+	public EReference getAxleAssemblyType_Axle() {
+		return (EReference) getAxleAssemblyType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAxleAssemblyType_PosOnBogie() {
+		return (EAttribute) getAxleAssemblyType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -10150,7 +10897,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getAxleType() {
 		if (axleTypeEClass == null) {
 			axleTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(55);
+					.get(59);
 		}
 		return axleTypeEClass;
 	}
@@ -10161,7 +10908,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAxleType_Shaft() {
+	public EReference getAxleType_Length() {
 		return (EReference) getAxleType().getEStructuralFeatures().get(0);
 	}
 
@@ -10171,7 +10918,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getAxleType_WheelUID() {
+	public EReference getAxleType_ShaftProperties() {
 		return (EReference) getAxleType().getEStructuralFeatures().get(1);
 	}
 
@@ -10191,8 +10938,28 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getAxleType_UID() {
+	public EAttribute getAxleType_SideOfFirstWheel() {
 		return (EAttribute) getAxleType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAxleType_Wheel() {
+		return (EReference) getAxleType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAxleType_UID() {
+		return (EAttribute) getAxleType().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -10204,7 +10971,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getBeamCrossSectionType() {
 		if (beamCrossSectionTypeEClass == null) {
 			beamCrossSectionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(56);
+					.getEClassifiers().get(60);
 		}
 		return beamCrossSectionTypeEClass;
 	}
@@ -10278,7 +11045,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getBeamStiffnessType() {
 		if (beamStiffnessTypeEClass == null) {
 			beamStiffnessTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(57);
+					.getEClassifiers().get(61);
 		}
 		return beamStiffnessTypeEClass;
 	}
@@ -10372,7 +11139,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getBlockedDOFType() {
 		if (blockedDOFTypeEClass == null) {
 			blockedDOFTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(58);
+					.getEClassifiers().get(62);
 		}
 		return blockedDOFTypeEClass;
 	}
@@ -10403,78 +11170,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getBogieAxlesType() {
-		if (bogieAxlesTypeEClass == null) {
-			bogieAxlesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(59);
-		}
-		return bogieAxlesTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getBogieAxlesType_Axle() {
-		return (EReference) getBogieAxlesType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getBogieAxleType() {
-		if (bogieAxleTypeEClass == null) {
-			bogieAxleTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(60);
-		}
-		return bogieAxleTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getBogieAxleType_AxleUID() {
-		return (EReference) getBogieAxleType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getBogieAxleType_PosOnBogie() {
-		return (EReference) getBogieAxleType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getBogieAxleType_UID() {
-		return (EAttribute) getBogieAxleType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getBogieType() {
 		if (bogieTypeEClass == null) {
 			bogieTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(61);
+					.get(63);
 		}
 		return bogieTypeEClass;
 	}
@@ -10485,8 +11184,48 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBogieType_Axles() {
+	public EReference getBogieType_Length() {
 		return (EReference) getBogieType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getBogieType_TiltAngle() {
+		return (EReference) getBogieType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getBogieType_StrutProperties() {
+		return (EReference) getBogieType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getBogieType_AxleAssemblies() {
+		return (EReference) getBogieType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBogieType_UID() {
+		return (EAttribute) getBogieType().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -10498,7 +11237,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getBooleanBaseType() {
 		if (booleanBaseTypeEClass == null) {
 			booleanBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(62);
+					.getEClassifiers().get(64);
 		}
 		return booleanBaseTypeEClass;
 	}
@@ -10549,10 +11288,64 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getBoundingBoxType() {
+		if (boundingBoxTypeEClass == null) {
+			boundingBoxTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(65);
+		}
+		return boundingBoxTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getBoundingBoxType_DeltaX() {
+		return (EReference) getBoundingBoxType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getBoundingBoxType_DeltaY() {
+		return (EReference) getBoundingBoxType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getBoundingBoxType_DeltaZ() {
+		return (EReference) getBoundingBoxType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getBoundingBoxType_Origin() {
+		return (EReference) getBoundingBoxType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getBoundingElementUIDsType() {
 		if (boundingElementUIDsTypeEClass == null) {
 			boundingElementUIDsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(63);
+					.getEClassifiers().get(66);
 		}
 		return boundingElementUIDsTypeEClass;
 	}
@@ -10573,84 +11366,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getCabGeometryType() {
-		if (cabGeometryTypeEClass == null) {
-			cabGeometryTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(64);
-		}
-		return cabGeometryTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabGeometryType_Name() {
-		return (EReference) getCabGeometryType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabGeometryType_Description() {
-		return (EReference) getCabGeometryType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabGeometryType_X() {
-		return (EReference) getCabGeometryType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabGeometryType_Z() {
-		return (EReference) getCabGeometryType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabGeometryType_Y() {
-		return (EReference) getCabGeometryType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getCabGeometryType_UID() {
-		return (EAttribute) getCabGeometryType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getCabinAislesType() {
 		if (cabinAislesTypeEClass == null) {
 			cabinAislesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(65);
+					.getEClassifiers().get(67);
 		}
 		return cabinAislesTypeEClass;
 	}
@@ -10674,7 +11393,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCabinAisleType() {
 		if (cabinAisleTypeEClass == null) {
 			cabinAisleTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(66);
+					.getEClassifiers().get(68);
 		}
 		return cabinAisleTypeEClass;
 	}
@@ -10725,7 +11444,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCabinAisleType_WFloor() {
+	public EReference getCabinAisleType_WidthY() {
 		return (EReference) getCabinAisleType().getEStructuralFeatures().get(4);
 	}
 
@@ -10745,160 +11464,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getCabinDoorsType() {
-		if (cabinDoorsTypeEClass == null) {
-			cabinDoorsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(67);
-		}
-		return cabinDoorsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinDoorsType_Door() {
-		return (EReference) getCabinDoorsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getCabinDoorType() {
-		if (cabinDoorTypeEClass == null) {
-			cabinDoorTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(68);
-		}
-		return cabinDoorTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinDoorType_Name() {
-		return (EReference) getCabinDoorType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinDoorType_Description() {
-		return (EReference) getCabinDoorType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinDoorType_StructuralUID() {
-		return (EReference) getCabinDoorType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinDoorType_PaxCapacity() {
-		return (EReference) getCabinDoorType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinDoorType_X() {
-		return (EReference) getCabinDoorType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinDoorType_Z() {
-		return (EReference) getCabinDoorType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinDoorType_Width() {
-		return (EReference) getCabinDoorType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinDoorType_Height() {
-		return (EReference) getCabinDoorType().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinDoorType_Side() {
-		return (EReference) getCabinDoorType().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinDoorType_Type() {
-		return (EReference) getCabinDoorType().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getCabinDoorType_UID() {
-		return (EAttribute) getCabinDoorType().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getCabinFloorElementsType() {
-		if (cabinFloorElementsTypeEClass == null) {
-			cabinFloorElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+	public EClass getCabinGeometryContoursType() {
+		if (cabinGeometryContoursTypeEClass == null) {
+			cabinGeometryContoursTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
 					.getEClassifiers().get(69);
 		}
-		return cabinFloorElementsTypeEClass;
+		return cabinGeometryContoursTypeEClass;
 	}
 
 	/**
@@ -10907,8 +11478,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCabinFloorElementsType_FloorElement() {
-		return (EReference) getCabinFloorElementsType().getEStructuralFeatures().get(0);
+	public EReference getCabinGeometryContoursType_Contour() {
+		return (EReference) getCabinGeometryContoursType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -10917,12 +11488,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getCabinFloorElementType() {
-		if (cabinFloorElementTypeEClass == null) {
-			cabinFloorElementTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+	public EClass getCabinGeometryContourType() {
+		if (cabinGeometryContourTypeEClass == null) {
+			cabinGeometryContourTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
 					.getEClassifiers().get(70);
 		}
-		return cabinFloorElementTypeEClass;
+		return cabinGeometryContourTypeEClass;
 	}
 
 	/**
@@ -10931,8 +11502,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getCabinFloorElementType_Name() {
-		return (EAttribute) getCabinFloorElementType().getEStructuralFeatures().get(0);
+	public EReference getCabinGeometryContourType_Y() {
+		return (EReference) getCabinGeometryContourType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -10941,8 +11512,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getCabinFloorElementType_Description() {
-		return (EAttribute) getCabinFloorElementType().getEStructuralFeatures().get(1);
+	public EReference getCabinGeometryContourType_Z() {
+		return (EReference) getCabinGeometryContourType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -10951,92 +11522,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCabinFloorElementType_Type() {
-		return (EReference) getCabinFloorElementType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinFloorElementType_X() {
-		return (EReference) getCabinFloorElementType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinFloorElementType_Y() {
-		return (EReference) getCabinFloorElementType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinFloorElementType_Length() {
-		return (EReference) getCabinFloorElementType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinFloorElementType_Width() {
-		return (EReference) getCabinFloorElementType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinFloorElementType_Height() {
-		return (EReference) getCabinFloorElementType().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinFloorElementType_Number() {
-		return (EReference) getCabinFloorElementType().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getCabinFloorElementType_UID() {
-		return (EAttribute) getCabinFloorElementType().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getCabinSeatElementsType() {
-		if (cabinSeatElementsTypeEClass == null) {
-			cabinSeatElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+	public EClass getCabinGeometryType() {
+		if (cabinGeometryTypeEClass == null) {
+			cabinGeometryTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
 					.getEClassifiers().get(71);
 		}
-		return cabinSeatElementsTypeEClass;
+		return cabinGeometryTypeEClass;
 	}
 
 	/**
@@ -11045,8 +11536,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCabinSeatElementsType_SeatElement() {
-		return (EReference) getCabinSeatElementsType().getEStructuralFeatures().get(0);
+	public EReference getCabinGeometryType_Name() {
+		return (EReference) getCabinGeometryType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -11055,12 +11546,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getCabinSeatElementType() {
-		if (cabinSeatElementTypeEClass == null) {
-			cabinSeatElementTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(72);
-		}
-		return cabinSeatElementTypeEClass;
+	public EReference getCabinGeometryType_Description() {
+		return (EReference) getCabinGeometryType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -11069,8 +11556,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCabinSeatElementType_Name() {
-		return (EReference) getCabinSeatElementType().getEStructuralFeatures().get(0);
+	public EReference getCabinGeometryType_Contours() {
+		return (EReference) getCabinGeometryType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -11079,128 +11566,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCabinSeatElementType_Description() {
-		return (EReference) getCabinSeatElementType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinSeatElementType_NSeats() {
-		return (EReference) getCabinSeatElementType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinSeatElementType_Type() {
-		return (EReference) getCabinSeatElementType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinSeatElementType_X() {
-		return (EReference) getCabinSeatElementType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinSeatElementType_Y() {
-		return (EReference) getCabinSeatElementType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinSeatElementType_DySeats() {
-		return (EReference) getCabinSeatElementType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinSeatElementType_Length() {
-		return (EReference) getCabinSeatElementType().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinSeatElementType_Width() {
-		return (EReference) getCabinSeatElementType().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinSeatElementType_Height() {
-		return (EReference) getCabinSeatElementType().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinSeatElementType_SeatModuleElementUID() {
-		return (EReference) getCabinSeatElementType().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinSeatElementType_LongFloorBeam1UID() {
-		return (EReference) getCabinSeatElementType().getEStructuralFeatures().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCabinSeatElementType_LongFloorBeam2UID() {
-		return (EReference) getCabinSeatElementType().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getCabinSeatElementType_UID() {
-		return (EAttribute) getCabinSeatElementType().getEStructuralFeatures().get(13);
+	public EReference getCabinGeometryType_X() {
+		return (EReference) getCabinGeometryType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -11212,7 +11579,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCabinSpacesType() {
 		if (cabinSpacesTypeEClass == null) {
 			cabinSpacesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(73);
+					.getEClassifiers().get(72);
 		}
 		return cabinSpacesTypeEClass;
 	}
@@ -11236,7 +11603,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCabinSpaceType() {
 		if (cabinSpaceTypeEClass == null) {
 			cabinSpaceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(74);
+					.getEClassifiers().get(73);
 		}
 		return cabinSpaceTypeEClass;
 	}
@@ -11307,6 +11674,30 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getCalibratedAirSpeedType() {
+		if (calibratedAirSpeedTypeEClass == null) {
+			calibratedAirSpeedTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(74);
+		}
+		return calibratedAirSpeedTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCalibratedAirSpeedType_UID() {
+		return (EAttribute) getCalibratedAirSpeedType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getCapType() {
 		if (capTypeEClass == null) {
 			capTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
@@ -11341,10 +11732,246 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getCapType_UID() {
+		return (EAttribute) getCapType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCargoContainerElementsType() {
+		if (cargoContainerElementsTypeEClass == null) {
+			cargoContainerElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(76);
+		}
+		return cargoContainerElementsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainerElementsType_CargoContainerElement() {
+		return (EReference) getCargoContainerElementsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCargoContainerElementType() {
+		if (cargoContainerElementTypeEClass == null) {
+			cargoContainerElementTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(77);
+		}
+		return cargoContainerElementTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainerElementType_Description() {
+		return (EReference) getCargoContainerElementType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainerElementType_Mass() {
+		return (EReference) getCargoContainerElementType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainerElementType_Contour() {
+		return (EReference) getCargoContainerElementType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainerElementType_DeltaX() {
+		return (EReference) getCargoContainerElementType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainerElementType_DeltaY() {
+		return (EReference) getCargoContainerElementType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainerElementType_DeltaYBase() {
+		return (EReference) getCargoContainerElementType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainerElementType_DeltaZ() {
+		return (EReference) getCargoContainerElementType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainerElementType_DeltaZKink() {
+		return (EReference) getCargoContainerElementType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCargoContainerElementType_UID() {
+		return (EAttribute) getCargoContainerElementType().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCargoContainersType() {
+		if (cargoContainersTypeEClass == null) {
+			cargoContainersTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(78);
+		}
+		return cargoContainersTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainersType_CargoContainer() {
+		return (EReference) getCargoContainersType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCargoContainerType() {
+		if (cargoContainerTypeEClass == null) {
+			cargoContainerTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(79);
+		}
+		return cargoContainerTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainerType_Name() {
+		return (EReference) getCargoContainerType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainerType_Description() {
+		return (EReference) getCargoContainerType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainerType_CargoContainerElementUID() {
+		return (EReference) getCargoContainerType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainerType_X() {
+		return (EReference) getCargoContainerType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCargoContainerType_Y() {
+		return (EReference) getCargoContainerType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCargoContainerType_UID() {
+		return (EAttribute) getCargoContainerType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getCargoCrossBeamsAssemblyType() {
 		if (cargoCrossBeamsAssemblyTypeEClass == null) {
 			cargoCrossBeamsAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(76);
+					.getEClassifiers().get(80);
 		}
 		return cargoCrossBeamsAssemblyTypeEClass;
 	}
@@ -11368,7 +11995,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCargoCrossBeamStrutsAssemblyType() {
 		if (cargoCrossBeamStrutsAssemblyTypeEClass == null) {
 			cargoCrossBeamStrutsAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(77);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(81);
 		}
 		return cargoCrossBeamStrutsAssemblyTypeEClass;
 	}
@@ -11392,7 +12019,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCargoDoorsAssemblyType() {
 		if (cargoDoorsAssemblyTypeEClass == null) {
 			cargoDoorsAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(78);
+					.getEClassifiers().get(82);
 		}
 		return cargoDoorsAssemblyTypeEClass;
 	}
@@ -11413,10 +12040,58 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getCeilingPanelElementsType() {
+		if (ceilingPanelElementsTypeEClass == null) {
+			ceilingPanelElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(83);
+		}
+		return ceilingPanelElementsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCeilingPanelElementsType_CeilingPanelElement() {
+		return (EReference) getCeilingPanelElementsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCeilingPanelsType() {
+		if (ceilingPanelsTypeEClass == null) {
+			ceilingPanelsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(84);
+		}
+		return ceilingPanelsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCeilingPanelsType_CeilingPanel() {
+		return (EReference) getCeilingPanelsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getCellPositioningChordwiseType() {
 		if (cellPositioningChordwiseTypeEClass == null) {
 			cellPositioningChordwiseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(79);
+					.getEClassifiers().get(85);
 		}
 		return cellPositioningChordwiseTypeEClass;
 	}
@@ -11457,10 +12132,20 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getCellPositioningChordwiseType_ContourCoordinate() {
+		return (EReference) getCellPositioningChordwiseType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getCellPositioningSpanwiseType() {
 		if (cellPositioningSpanwiseTypeEClass == null) {
 			cellPositioningSpanwiseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(80);
+					.getEClassifiers().get(86);
 		}
 		return cellPositioningSpanwiseTypeEClass;
 	}
@@ -11511,10 +12196,20 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getCellPositioningSpanwiseType_ContourCoordinate() {
+		return (EReference) getCellPositioningSpanwiseType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getCenterFuselageAreasAssemblyType() {
 		if (centerFuselageAreasAssemblyTypeEClass == null) {
 			centerFuselageAreasAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(81);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(87);
 		}
 		return centerFuselageAreasAssemblyTypeEClass;
 	}
@@ -11538,7 +12233,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCenterFuselageAreaType() {
 		if (centerFuselageAreaTypeEClass == null) {
 			centerFuselageAreaTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(82);
+					.getEClassifiers().get(88);
 		}
 		return centerFuselageAreaTypeEClass;
 	}
@@ -11622,7 +12317,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCenterFuselageHighWingConfigurationType() {
 		if (centerFuselageHighWingConfigurationTypeEClass == null) {
 			centerFuselageHighWingConfigurationTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(83);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(89);
 		}
 		return centerFuselageHighWingConfigurationTypeEClass;
 	}
@@ -11676,7 +12371,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCenterFuselageKeelbeamType() {
 		if (centerFuselageKeelbeamTypeEClass == null) {
 			centerFuselageKeelbeamTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(84);
+					.getEClassifiers().get(90);
 		}
 		return centerFuselageKeelbeamTypeEClass;
 	}
@@ -11860,7 +12555,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCenterFuselageLateralPanelsType() {
 		if (centerFuselageLateralPanelsTypeEClass == null) {
 			centerFuselageLateralPanelsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(85);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(91);
 		}
 		return centerFuselageLateralPanelsTypeEClass;
 	}
@@ -11954,7 +12649,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCenterFuselageLongFloorBeamsConnectionType() {
 		if (centerFuselageLongFloorBeamsConnectionTypeEClass == null) {
 			centerFuselageLongFloorBeamsConnectionTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(86);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(92);
 		}
 		return centerFuselageLongFloorBeamsConnectionTypeEClass;
 	}
@@ -11988,7 +12683,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCenterFuselageLowWingConfigurationType() {
 		if (centerFuselageLowWingConfigurationTypeEClass == null) {
 			centerFuselageLowWingConfigurationTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(87);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(93);
 		}
 		return centerFuselageLowWingConfigurationTypeEClass;
 	}
@@ -12072,7 +12767,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCenterFuselageMainFramesType() {
 		if (centerFuselageMainFramesTypeEClass == null) {
 			centerFuselageMainFramesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(88);
+					.getEClassifiers().get(94);
 		}
 		return centerFuselageMainFramesTypeEClass;
 	}
@@ -12146,7 +12841,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCenterFuselagePressureFloorType() {
 		if (centerFuselagePressureFloorTypeEClass == null) {
 			centerFuselagePressureFloorTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(89);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(95);
 		}
 		return centerFuselagePressureFloorTypeEClass;
 	}
@@ -12220,7 +12915,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCenterFuselageSideboxType() {
 		if (centerFuselageSideboxTypeEClass == null) {
 			centerFuselageSideboxTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(90);
+					.getEClassifiers().get(96);
 		}
 		return centerFuselageSideboxTypeEClass;
 	}
@@ -12264,7 +12959,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCertificationCasesType() {
 		if (certificationCasesTypeEClass == null) {
 			certificationCasesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(91);
+					.getEClassifiers().get(97);
 		}
 		return certificationCasesTypeEClass;
 	}
@@ -12285,10 +12980,34 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getChangeLogType() {
+		if (changeLogTypeEClass == null) {
+			changeLogTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(98);
+		}
+		return changeLogTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getChangeLogType_LogEntry() {
+		return (EReference) getChangeLogType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getChargesCostType() {
 		if (chargesCostTypeEClass == null) {
 			chargesCostTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(92);
+					.getEClassifiers().get(99);
 		}
 		return chargesCostTypeEClass;
 	}
@@ -12349,10 +13068,136 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getChordwisePartsType() {
+		if (chordwisePartsTypeEClass == null) {
+			chordwisePartsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(100);
+		}
+		return chordwisePartsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getChordwisePartsType_Part() {
+		return (EReference) getChordwisePartsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getChordwisePartType() {
+		if (chordwisePartTypeEClass == null) {
+			chordwisePartTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(101);
+		}
+		return chordwisePartTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getChordwisePartType_InnerBorderToSegmentXsi() {
+		return (EReference) getChordwisePartType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getChordwisePartType_OuterBorderToSegmentXsi() {
+		return (EReference) getChordwisePartType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getChordwisePartType_Coefficients() {
+		return (EReference) getChordwisePartType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getChordwisePartType_Reference() {
+		return (EReference) getChordwisePartType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getClassDividerElementsType() {
+		if (classDividerElementsTypeEClass == null) {
+			classDividerElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(102);
+		}
+		return classDividerElementsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getClassDividerElementsType_ClassDividerElement() {
+		return (EReference) getClassDividerElementsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getClassDividersType() {
+		if (classDividersTypeEClass == null) {
+			classDividersTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(103);
+		}
+		return classDividersTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getClassDividersType_ClassDivider() {
+		return (EReference) getClassDividersType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getCockpitControlsType() {
 		if (cockpitControlsTypeEClass == null) {
 			cockpitControlsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(93);
+					.getEClassifiers().get(104);
 		}
 		return cockpitControlsTypeEClass;
 	}
@@ -12406,7 +13251,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCockpitControlType() {
 		if (cockpitControlTypeEClass == null) {
 			cockpitControlTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(94);
+					.getEClassifiers().get(105);
 		}
 		return cockpitControlTypeEClass;
 	}
@@ -12477,12 +13322,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getCoefficientsType() {
-		if (coefficientsTypeEClass == null) {
-			coefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(95);
+	public EClass getCoefficientReferenceType() {
+		if (coefficientReferenceTypeEClass == null) {
+			coefficientReferenceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(106);
 		}
-		return coefficientsTypeEClass;
+		return coefficientReferenceTypeEClass;
 	}
 
 	/**
@@ -12491,8 +13336,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCoefficientsType_Cfx() {
-		return (EReference) getCoefficientsType().getEStructuralFeatures().get(0);
+	public EReference getCoefficientReferenceType_Area() {
+		return (EReference) getCoefficientReferenceType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -12501,8 +13346,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCoefficientsType_Cfy() {
-		return (EReference) getCoefficientsType().getEStructuralFeatures().get(1);
+	public EReference getCoefficientReferenceType_Length() {
+		return (EReference) getCoefficientReferenceType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -12511,8 +13356,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCoefficientsType_Cfz() {
-		return (EReference) getCoefficientsType().getEStructuralFeatures().get(2);
+	public EReference getCoefficientReferenceType_GeometryPoint() {
+		return (EReference) getCoefficientReferenceType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -12521,8 +13366,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCoefficientsType_Cmx() {
-		return (EReference) getCoefficientsType().getEStructuralFeatures().get(3);
+	public EReference getCoefficientReferenceType_DeformationTranslation() {
+		return (EReference) getCoefficientReferenceType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -12531,8 +13376,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCoefficientsType_Cmy() {
-		return (EReference) getCoefficientsType().getEStructuralFeatures().get(4);
+	public EReference getCoefficientReferenceType_DeformationRotation() {
+		return (EReference) getCoefficientReferenceType().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -12541,8 +13386,364 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCoefficientsType_Cmz() {
-		return (EReference) getCoefficientsType().getEStructuralFeatures().get(5);
+	public EClass getCoefficientsBreakdownComponentsType() {
+		if (coefficientsBreakdownComponentsTypeEClass == null) {
+			coefficientsBreakdownComponentsTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(107);
+		}
+		return coefficientsBreakdownComponentsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownComponentsType_Component() {
+		return (EReference) getCoefficientsBreakdownComponentsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCoefficientsBreakdownComponentType() {
+		if (coefficientsBreakdownComponentTypeEClass == null) {
+			coefficientsBreakdownComponentTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(108);
+		}
+		return coefficientsBreakdownComponentTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownComponentType_ComponentUID() {
+		return (EReference) getCoefficientsBreakdownComponentType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownComponentType_Coefficients() {
+		return (EReference) getCoefficientsBreakdownComponentType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCoefficientsBreakdownSegmentType() {
+		if (coefficientsBreakdownSegmentTypeEClass == null) {
+			coefficientsBreakdownSegmentTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(109);
+		}
+		return coefficientsBreakdownSegmentTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownSegmentType_SegmentUID() {
+		return (EReference) getCoefficientsBreakdownSegmentType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownSegmentType_Coefficients() {
+		return (EReference) getCoefficientsBreakdownSegmentType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownSegmentType_Strips() {
+		return (EReference) getCoefficientsBreakdownSegmentType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownSegmentType_RemainingContributions() {
+		return (EReference) getCoefficientsBreakdownSegmentType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCoefficientsBreakdownStripsType() {
+		if (coefficientsBreakdownStripsTypeEClass == null) {
+			coefficientsBreakdownStripsTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(110);
+		}
+		return coefficientsBreakdownStripsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownStripsType_Strip() {
+		return (EReference) getCoefficientsBreakdownStripsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCoefficientsBreakdownStripType() {
+		if (coefficientsBreakdownStripTypeEClass == null) {
+			coefficientsBreakdownStripTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(111);
+		}
+		return coefficientsBreakdownStripTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownStripType_ToSegmentEta() {
+		return (EReference) getCoefficientsBreakdownStripType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownStripType_Coefficients() {
+		return (EReference) getCoefficientsBreakdownStripType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownStripType_Reference() {
+		return (EReference) getCoefficientsBreakdownStripType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownStripType_ChordwiseParts() {
+		return (EReference) getCoefficientsBreakdownStripType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownStripType_RemainingContributions() {
+		return (EReference) getCoefficientsBreakdownStripType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCoefficientsBreakdownType() {
+		if (coefficientsBreakdownTypeEClass == null) {
+			coefficientsBreakdownTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(112);
+		}
+		return coefficientsBreakdownTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownType_Wings() {
+		return (EReference) getCoefficientsBreakdownType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownType_OtherComponents() {
+		return (EReference) getCoefficientsBreakdownType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownType_RemainingContributions() {
+		return (EReference) getCoefficientsBreakdownType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownType_OtherComponents1() {
+		return (EReference) getCoefficientsBreakdownType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownType_RemainingContributions1() {
+		return (EReference) getCoefficientsBreakdownType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCoefficientsBreakdownWingSegmentsType() {
+		if (coefficientsBreakdownWingSegmentsTypeEClass == null) {
+			coefficientsBreakdownWingSegmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(113);
+		}
+		return coefficientsBreakdownWingSegmentsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownWingSegmentsType_Segment() {
+		return (EReference) getCoefficientsBreakdownWingSegmentsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCoefficientsBreakdownWingsType() {
+		if (coefficientsBreakdownWingsTypeEClass == null) {
+			coefficientsBreakdownWingsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(114);
+		}
+		return coefficientsBreakdownWingsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownWingsType_Wing() {
+		return (EReference) getCoefficientsBreakdownWingsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCoefficientsBreakdownWingType() {
+		if (coefficientsBreakdownWingTypeEClass == null) {
+			coefficientsBreakdownWingTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(115);
+		}
+		return coefficientsBreakdownWingTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownWingType_WingUID() {
+		return (EReference) getCoefficientsBreakdownWingType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownWingType_Coefficients() {
+		return (EReference) getCoefficientsBreakdownWingType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownWingType_Segments() {
+		return (EReference) getCoefficientsBreakdownWingType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCoefficientsBreakdownWingType_RemainingContributions() {
+		return (EReference) getCoefficientsBreakdownWingType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -12554,7 +13755,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCommandCaseCommandType() {
 		if (commandCaseCommandTypeEClass == null) {
 			commandCaseCommandTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(96);
+					.getEClassifiers().get(116);
 		}
 		return commandCaseCommandTypeEClass;
 	}
@@ -12598,7 +13799,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCommandCasesType() {
 		if (commandCasesTypeEClass == null) {
 			commandCasesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(97);
+					.getEClassifiers().get(117);
 		}
 		return commandCasesTypeEClass;
 	}
@@ -12682,7 +13883,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCommandCaseType() {
 		if (commandCaseTypeEClass == null) {
 			commandCaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(98);
+					.getEClassifiers().get(118);
 		}
 		return commandCaseTypeEClass;
 	}
@@ -12736,7 +13937,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCompartmentGeometryType() {
 		if (compartmentGeometryTypeEClass == null) {
 			compartmentGeometryTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(99);
+					.getEClassifiers().get(119);
 		}
 		return compartmentGeometryTypeEClass;
 	}
@@ -12760,7 +13961,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCompartmentsType() {
 		if (compartmentsTypeEClass == null) {
 			compartmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(100);
+					.getEClassifiers().get(120);
 		}
 		return compartmentsTypeEClass;
 	}
@@ -12784,7 +13985,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCompartmentType() {
 		if (compartmentTypeEClass == null) {
 			compartmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(101);
+					.getEClassifiers().get(121);
 		}
 		return compartmentTypeEClass;
 	}
@@ -12848,7 +14049,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getComplexBaseType() {
 		if (complexBaseTypeEClass == null) {
 			complexBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(102);
+					.getEClassifiers().get(122);
 		}
 		return complexBaseTypeEClass;
 	}
@@ -12892,7 +14093,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getComponentCostType() {
 		if (componentCostTypeEClass == null) {
 			componentCostTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(103);
+					.getEClassifiers().get(123);
 		}
 		return componentCostTypeEClass;
 	}
@@ -12913,54 +14114,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getComponentCutLoadsEnvelopeType() {
-		if (componentCutLoadsEnvelopeTypeEClass == null) {
-			componentCutLoadsEnvelopeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(104);
-		}
-		return componentCutLoadsEnvelopeTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getComponentCutLoadsEnvelopeType_ParentUID() {
-		return (EReference) getComponentCutLoadsEnvelopeType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getComponentCutLoadsEnvelopeType_Max() {
-		return (EReference) getComponentCutLoadsEnvelopeType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getComponentCutLoadsEnvelopeType_Min() {
-		return (EReference) getComponentCutLoadsEnvelopeType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getComponentSegmentPathType() {
 		if (componentSegmentPathTypeEClass == null) {
 			componentSegmentPathTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(105);
+					.getEClassifiers().get(124);
 		}
 		return componentSegmentPathTypeEClass;
 	}
@@ -13004,7 +14161,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getComponentSegmentStepsType() {
 		if (componentSegmentStepsTypeEClass == null) {
 			componentSegmentStepsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(106);
+					.getEClassifiers().get(125);
 		}
 		return componentSegmentStepsTypeEClass;
 	}
@@ -13028,7 +14185,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getComponentSegmentStepType() {
 		if (componentSegmentStepTypeEClass == null) {
 			componentSegmentStepTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(107);
+					.getEClassifiers().get(126);
 		}
 		return componentSegmentStepTypeEClass;
 	}
@@ -13072,7 +14229,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getComponentSegmentsType() {
 		if (componentSegmentsTypeEClass == null) {
 			componentSegmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(108);
+					.getEClassifiers().get(127);
 		}
 		return componentSegmentsTypeEClass;
 	}
@@ -13096,7 +14253,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getComponentSegmentType() {
 		if (componentSegmentTypeEClass == null) {
 			componentSegmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(109);
+					.getEClassifiers().get(128);
 		}
 		return componentSegmentTypeEClass;
 	}
@@ -13230,7 +14387,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCompositeLayerType() {
 		if (compositeLayerTypeEClass == null) {
 			compositeLayerTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(110);
+					.getEClassifiers().get(129);
 		}
 		return compositeLayerTypeEClass;
 	}
@@ -13294,7 +14451,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCompositesType() {
 		if (compositesTypeEClass == null) {
 			compositesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(111);
+					.getEClassifiers().get(130);
 		}
 		return compositesTypeEClass;
 	}
@@ -13318,7 +14475,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCompositeType() {
 		if (compositeTypeEClass == null) {
 			compositeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(112);
+					.getEClassifiers().get(131);
 		}
 		return compositeTypeEClass;
 	}
@@ -13379,10 +14536,44 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getConfigurationType() {
+		if (configurationTypeEClass == null) {
+			configurationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(132);
+		}
+		return configurationTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getConfigurationType_ConfigurationUID() {
+		return (EReference) getConfigurationType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getConfigurationType_ControlElements() {
+		return (EReference) getConfigurationType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getConnectivitiesType() {
 		if (connectivitiesTypeEClass == null) {
 			connectivitiesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(113);
+					.getEClassifiers().get(133);
 		}
 		return connectivitiesTypeEClass;
 	}
@@ -13406,7 +14597,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getConnectivityType() {
 		if (connectivityTypeEClass == null) {
 			connectivityTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(114);
+					.getEClassifiers().get(134);
 		}
 		return connectivityTypeEClass;
 	}
@@ -13417,7 +14608,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConnectivityType_DamPoint1UID() {
+	public EReference getConnectivityType_LoadAppPoint1ID() {
 		return (EReference) getConnectivityType().getEStructuralFeatures().get(0);
 	}
 
@@ -13427,7 +14618,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConnectivityType_DamPoint2UID() {
+	public EReference getConnectivityType_LoadAppPoint2ID() {
 		return (EReference) getConnectivityType().getEStructuralFeatures().get(1);
 	}
 
@@ -13457,154 +14648,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getConstraintSettingsPointPerformanceType() {
-		if (constraintSettingsPointPerformanceTypeEClass == null) {
-			constraintSettingsPointPerformanceTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(115);
-		}
-		return constraintSettingsPointPerformanceTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getConstraintSettingsPointPerformanceType_CAS() {
-		return (EReference) getConstraintSettingsPointPerformanceType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getConstraintSettingsPointPerformanceType_MachNumber() {
-		return (EReference) getConstraintSettingsPointPerformanceType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getConstraintSettingsPointPerformanceType_ThrustSetting() {
-		return (EReference) getConstraintSettingsPointPerformanceType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getConstraintSettingsPointPerformanceType_ClimbAngle() {
-		return (EReference) getConstraintSettingsPointPerformanceType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getConstraintSettingsPointPerformanceType_RateOfClimb() {
-		return (EReference) getConstraintSettingsPointPerformanceType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getConstraintSettingsPointPerformanceType_RateOfTurn() {
-		return (EReference) getConstraintSettingsPointPerformanceType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getConstraintSettingsPointPerformanceType_RateOfDescent() {
-		return (EReference) getConstraintSettingsPointPerformanceType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getConstraintSettingsPointPerformanceType_Acceleration() {
-		return (EReference) getConstraintSettingsPointPerformanceType().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getConstraintSettingsPointPerformanceType_DescentAngle() {
-		return (EReference) getConstraintSettingsPointPerformanceType().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getConstraintSettingsPointPerformanceType_LoadFactor() {
-		return (EReference) getConstraintSettingsPointPerformanceType().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getConstraintSettingsPointPerformanceType_Duration() {
-		return (EReference) getConstraintSettingsPointPerformanceType().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getConstraintSettingsPointPerformanceType_AngleOfAttack() {
-		return (EReference) getConstraintSettingsPointPerformanceType().getEStructuralFeatures().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getConstraintSettingsPointPerformanceType_DeltaTemperatureISA() {
-		return (EReference) getConstraintSettingsPointPerformanceType().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getConstraintSettingsType() {
 		if (constraintSettingsTypeEClass == null) {
 			constraintSettingsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(116);
+					.getEClassifiers().get(135);
 		}
 		return constraintSettingsTypeEClass;
 	}
@@ -13615,7 +14662,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_CAS() {
+	public EReference getConstraintSettingsType_ReferenceEndConditionUID() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(0);
 	}
 
@@ -13625,7 +14672,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_MachNumber() {
+	public EReference getConstraintSettingsType_EndConditionRatio() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(1);
 	}
 
@@ -13635,7 +14682,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_ThrustSetting() {
+	public EReference getConstraintSettingsType_Continuity() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(2);
 	}
 
@@ -13645,7 +14692,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_ClimbAngle() {
+	public EReference getConstraintSettingsType_CalibratedAirSpeed() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(3);
 	}
 
@@ -13655,7 +14702,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_RateOfClimb() {
+	public EReference getConstraintSettingsType_MachNumber() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(4);
 	}
 
@@ -13665,7 +14712,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_RateOfTurn() {
+	public EReference getConstraintSettingsType_ClimbAngle() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(5);
 	}
 
@@ -13675,7 +14722,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_RateOfDescent() {
+	public EReference getConstraintSettingsType_RateOfClimb() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(6);
 	}
 
@@ -13685,7 +14732,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_Acceleration() {
+	public EReference getConstraintSettingsType_StepClimbSpecificExcessPower() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(7);
 	}
 
@@ -13695,7 +14742,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_DescentAngle() {
+	public EReference getConstraintSettingsType_StepClimbAltitudeDifference() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(8);
 	}
 
@@ -13705,7 +14752,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_LoadFactor() {
+	public EReference getConstraintSettingsType_Heading() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(9);
 	}
 
@@ -13715,7 +14762,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_StepClimbSpecificExcessPower() {
+	public EReference getConstraintSettingsType_TurnAngle() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(10);
 	}
 
@@ -13725,7 +14772,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_StepClimbAltitudeDifference() {
+	public EReference getConstraintSettingsType_RateOfTurn() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(11);
 	}
 
@@ -13735,7 +14782,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_Altitude() {
+	public EReference getConstraintSettingsType_ThrustSetting() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(12);
 	}
 
@@ -13745,7 +14792,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_DeltaTemperatureISA() {
+	public EReference getConstraintSettingsType_Acceleration() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(13);
 	}
 
@@ -13755,8 +14802,52 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConstraintSettingsType_PrioritySetting() {
+	public EReference getConstraintSettingsType_LoadFactor() {
 		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getConstraintSettingsType_Altitude() {
+		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getConstraintSettingsType_PrioritySetting() {
+		return (EReference) getConstraintSettingsType().getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getConstraintsType() {
+		if (constraintsTypeEClass == null) {
+			constraintsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(136);
+		}
+		return constraintsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getConstraintsType_Constraint() {
+		return (EReference) getConstraintsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -13768,7 +14859,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getContinuityAtP1Type() {
 		if (continuityAtP1TypeEClass == null) {
 			continuityAtP1TypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(117);
+					.getEClassifiers().get(137);
 		}
 		return continuityAtP1TypeEClass;
 	}
@@ -13782,7 +14873,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getContinuityAtP2Type() {
 		if (continuityAtP2TypeEClass == null) {
 			continuityAtP2TypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(118);
+					.getEClassifiers().get(138);
 		}
 		return continuityAtP2TypeEClass;
 	}
@@ -13796,7 +14887,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getContinuityType() {
 		if (continuityTypeEClass == null) {
 			continuityTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(119);
+					.getEClassifiers().get(139);
 		}
 		return continuityTypeEClass;
 	}
@@ -13810,7 +14901,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getContinuityType1() {
 		if (continuityType1EClass == null) {
 			continuityType1EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(120);
+					.getEClassifiers().get(140);
 		}
 		return continuityType1EClass;
 	}
@@ -13824,7 +14915,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getContinuityType2() {
 		if (continuityType2EClass == null) {
 			continuityType2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(121);
+					.getEClassifiers().get(141);
 		}
 		return continuityType2EClass;
 	}
@@ -13838,9 +14929,23 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getContinuityType3() {
 		if (continuityType3EClass == null) {
 			continuityType3EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(122);
+					.getEClassifiers().get(142);
 		}
 		return continuityType3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getContinuityType4() {
+		if (continuityType4EClass == null) {
+			continuityType4EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(143);
+		}
+		return continuityType4EClass;
 	}
 
 	/**
@@ -13852,7 +14957,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getContourReferenceType() {
 		if (contourReferenceTypeEClass == null) {
 			contourReferenceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(123);
+					.getEClassifiers().get(144);
 		}
 		return contourReferenceTypeEClass;
 	}
@@ -13903,10 +15008,24 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getContourType() {
+		if (contourTypeEClass == null) {
+			contourTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(145);
+		}
+		return contourTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getControlDistributorsType() {
 		if (controlDistributorsTypeEClass == null) {
 			controlDistributorsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(124);
+					.getEClassifiers().get(146);
 		}
 		return controlDistributorsTypeEClass;
 	}
@@ -13930,7 +15049,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlDistributorType() {
 		if (controlDistributorTypeEClass == null) {
 			controlDistributorTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(125);
+					.getEClassifiers().get(147);
 		}
 		return controlDistributorTypeEClass;
 	}
@@ -13994,7 +15113,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlElementsType() {
 		if (controlElementsTypeEClass == null) {
 			controlElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(126);
+					.getEClassifiers().get(148);
 		}
 		return controlElementsTypeEClass;
 	}
@@ -14018,7 +15137,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlElementType() {
 		if (controlElementTypeEClass == null) {
 			controlElementTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(127);
+					.getEClassifiers().get(149);
 		}
 		return controlElementTypeEClass;
 	}
@@ -14052,7 +15171,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlFunctionsType() {
 		if (controlFunctionsTypeEClass == null) {
 			controlFunctionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(128);
+					.getEClassifiers().get(150);
 		}
 		return controlFunctionsTypeEClass;
 	}
@@ -14076,7 +15195,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlFunctionType() {
 		if (controlFunctionTypeEClass == null) {
 			controlFunctionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(129);
+					.getEClassifiers().get(151);
 		}
 		return controlFunctionTypeEClass;
 	}
@@ -14167,12 +15286,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getControlInputsType() {
-		if (controlInputsTypeEClass == null) {
-			controlInputsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(130);
+	public EClass getControllabilityReqsType() {
+		if (controllabilityReqsTypeEClass == null) {
+			controllabilityReqsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(152);
 		}
-		return controlInputsTypeEClass;
+		return controllabilityReqsTypeEClass;
 	}
 
 	/**
@@ -14181,8 +15300,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getControlInputsType_ControlInput() {
-		return (EReference) getControlInputsType().getEStructuralFeatures().get(0);
+	public EReference getControllabilityReqsType_ControllabilityRequirement() {
+		return (EReference) getControllabilityReqsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -14191,12 +15310,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getControlInputType() {
-		if (controlInputTypeEClass == null) {
-			controlInputTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(131);
+	public EClass getControllabilityRequirementType() {
+		if (controllabilityRequirementTypeEClass == null) {
+			controllabilityRequirementTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(153);
 		}
-		return controlInputTypeEClass;
+		return controllabilityRequirementTypeEClass;
 	}
 
 	/**
@@ -14205,8 +15324,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getControlInputType_CockpitControlUID() {
-		return (EReference) getControlInputType().getEStructuralFeatures().get(0);
+	public EReference getControllabilityRequirementType_Name() {
+		return (EReference) getControllabilityRequirementType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -14215,8 +15334,58 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getControlInputType_Value() {
-		return (EReference) getControlInputType().getEStructuralFeatures().get(1);
+	public EReference getControllabilityRequirementType_Description() {
+		return (EReference) getControllabilityRequirementType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getControllabilityRequirementType_PointPerformanceUID() {
+		return (EReference) getControllabilityRequirementType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getControllabilityRequirementType_WeightAndBalanceUID() {
+		return (EReference) getControllabilityRequirementType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getControllabilityRequirementType_Configurations() {
+		return (EReference) getControllabilityRequirementType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getControllabilityRequirementType_PerformanceMaps() {
+		return (EReference) getControllabilityRequirementType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getControllabilityRequirementType_UID() {
+		return (EAttribute) getControllabilityRequirementType().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -14228,7 +15397,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlLawModesType() {
 		if (controlLawModesTypeEClass == null) {
 			controlLawModesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(132);
+					.getEClassifiers().get(154);
 		}
 		return controlLawModesTypeEClass;
 	}
@@ -14252,7 +15421,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlLawModeType() {
 		if (controlLawModeTypeEClass == null) {
 			controlLawModeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(133);
+					.getEClassifiers().get(155);
 		}
 		return controlLawModeTypeEClass;
 	}
@@ -14276,7 +15445,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlLawsType() {
 		if (controlLawsTypeEClass == null) {
 			controlLawsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(134);
+					.getEClassifiers().get(156);
 		}
 		return controlLawsTypeEClass;
 	}
@@ -14310,7 +15479,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceActuatorsType() {
 		if (controlSurfaceActuatorsTypeEClass == null) {
 			controlSurfaceActuatorsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(135);
+					.getEClassifiers().get(157);
 		}
 		return controlSurfaceActuatorsTypeEClass;
 	}
@@ -14334,7 +15503,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceActuatorType() {
 		if (controlSurfaceActuatorTypeEClass == null) {
 			controlSurfaceActuatorTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(136);
+					.getEClassifiers().get(158);
 		}
 		return controlSurfaceActuatorTypeEClass;
 	}
@@ -14378,7 +15547,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceAirfoilType() {
 		if (controlSurfaceAirfoilTypeEClass == null) {
 			controlSurfaceAirfoilTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(137);
+					.getEClassifiers().get(159);
 		}
 		return controlSurfaceAirfoilTypeEClass;
 	}
@@ -14452,7 +15621,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceBorderLeadingEdgeType() {
 		if (controlSurfaceBorderLeadingEdgeTypeEClass == null) {
 			controlSurfaceBorderLeadingEdgeTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(138);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(160);
 		}
 		return controlSurfaceBorderLeadingEdgeTypeEClass;
 	}
@@ -14546,7 +15715,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceBorderSpoilerType() {
 		if (controlSurfaceBorderSpoilerTypeEClass == null) {
 			controlSurfaceBorderSpoilerTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(139);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(161);
 		}
 		return controlSurfaceBorderSpoilerTypeEClass;
 	}
@@ -14630,7 +15799,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceBorderTrailingEdgeType() {
 		if (controlSurfaceBorderTrailingEdgeTypeEClass == null) {
 			controlSurfaceBorderTrailingEdgeTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(140);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(162);
 		}
 		return controlSurfaceBorderTrailingEdgeTypeEClass;
 	}
@@ -14704,7 +15873,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceContoursType() {
 		if (controlSurfaceContoursTypeEClass == null) {
 			controlSurfaceContoursTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(141);
+					.getEClassifiers().get(163);
 		}
 		return controlSurfaceContoursTypeEClass;
 	}
@@ -14725,68 +15894,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getControlSurfaceDeflectionsType() {
-		if (controlSurfaceDeflectionsTypeEClass == null) {
-			controlSurfaceDeflectionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(142);
-		}
-		return controlSurfaceDeflectionsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getControlSurfaceDeflectionsType_ControlSurface() {
-		return (EReference) getControlSurfaceDeflectionsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getControlSurfaceDeflectionType() {
-		if (controlSurfaceDeflectionTypeEClass == null) {
-			controlSurfaceDeflectionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(143);
-		}
-		return controlSurfaceDeflectionTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getControlSurfaceDeflectionType_ControlSurfaceUID() {
-		return (EReference) getControlSurfaceDeflectionType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getControlSurfaceDeflectionType_ControlParameter() {
-		return (EReference) getControlSurfaceDeflectionType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getControlSurfaceDeflectionVectorsType() {
 		if (controlSurfaceDeflectionVectorsTypeEClass == null) {
 			controlSurfaceDeflectionVectorsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(144);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(164);
 		}
 		return controlSurfaceDeflectionVectorsTypeEClass;
 	}
@@ -14810,7 +15921,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceDeflectionVectorType() {
 		if (controlSurfaceDeflectionVectorTypeEClass == null) {
 			controlSurfaceDeflectionVectorTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(145);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(165);
 		}
 		return controlSurfaceDeflectionVectorTypeEClass;
 	}
@@ -14844,7 +15955,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceHingeMomentMapsType() {
 		if (controlSurfaceHingeMomentMapsTypeEClass == null) {
 			controlSurfaceHingeMomentMapsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(146);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(166);
 		}
 		return controlSurfaceHingeMomentMapsTypeEClass;
 	}
@@ -14868,7 +15979,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceHingeMomentMapType() {
 		if (controlSurfaceHingeMomentMapTypeEClass == null) {
 			controlSurfaceHingeMomentMapTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(147);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(167);
 		}
 		return controlSurfaceHingeMomentMapTypeEClass;
 	}
@@ -14962,7 +16073,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceHingePointType() {
 		if (controlSurfaceHingePointTypeEClass == null) {
 			controlSurfaceHingePointTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(148);
+					.getEClassifiers().get(168);
 		}
 		return controlSurfaceHingePointTypeEClass;
 	}
@@ -14996,7 +16107,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceOuterShapeLeadingEdgeType() {
 		if (controlSurfaceOuterShapeLeadingEdgeTypeEClass == null) {
 			controlSurfaceOuterShapeLeadingEdgeTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(149);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(169);
 		}
 		return controlSurfaceOuterShapeLeadingEdgeTypeEClass;
 	}
@@ -15040,7 +16151,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceOuterShapeSpoilerType() {
 		if (controlSurfaceOuterShapeSpoilerTypeEClass == null) {
 			controlSurfaceOuterShapeSpoilerTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(150);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(170);
 		}
 		return controlSurfaceOuterShapeSpoilerTypeEClass;
 	}
@@ -15084,7 +16195,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceOuterShapeTrailingEdgeType() {
 		if (controlSurfaceOuterShapeTrailingEdgeTypeEClass == null) {
 			controlSurfaceOuterShapeTrailingEdgeTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(151);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(171);
 		}
 		return controlSurfaceOuterShapeTrailingEdgeTypeEClass;
 	}
@@ -15128,7 +16239,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfacePathType() {
 		if (controlSurfacePathTypeEClass == null) {
 			controlSurfacePathTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(152);
+					.getEClassifiers().get(172);
 		}
 		return controlSurfacePathTypeEClass;
 	}
@@ -15172,7 +16283,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfacePerformanceMapOldType() {
 		if (controlSurfacePerformanceMapOldTypeEClass == null) {
 			controlSurfacePerformanceMapOldTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(153);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(173);
 		}
 		return controlSurfacePerformanceMapOldTypeEClass;
 	}
@@ -15266,7 +16377,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfacePerformanceMapsOldType() {
 		if (controlSurfacePerformanceMapsOldTypeEClass == null) {
 			controlSurfacePerformanceMapsOldTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(154);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(174);
 		}
 		return controlSurfacePerformanceMapsOldTypeEClass;
 	}
@@ -15290,7 +16401,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceSkinCutOutBorderType() {
 		if (controlSurfaceSkinCutOutBorderTypeEClass == null) {
 			controlSurfaceSkinCutOutBorderTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(155);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(175);
 		}
 		return controlSurfaceSkinCutOutBorderTypeEClass;
 	}
@@ -15344,7 +16455,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceSkinCutOutType() {
 		if (controlSurfaceSkinCutOutTypeEClass == null) {
 			controlSurfaceSkinCutOutTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(156);
+					.getEClassifiers().get(176);
 		}
 		return controlSurfaceSkinCutOutTypeEClass;
 	}
@@ -15388,7 +16499,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceStepsType() {
 		if (controlSurfaceStepsTypeEClass == null) {
 			controlSurfaceStepsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(157);
+					.getEClassifiers().get(177);
 		}
 		return controlSurfaceStepsTypeEClass;
 	}
@@ -15412,7 +16523,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceStepType() {
 		if (controlSurfaceStepTypeEClass == null) {
 			controlSurfaceStepTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(158);
+					.getEClassifiers().get(178);
 		}
 		return controlSurfaceStepTypeEClass;
 	}
@@ -15466,7 +16577,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfacesType() {
 		if (controlSurfacesTypeEClass == null) {
 			controlSurfacesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(159);
+					.getEClassifiers().get(179);
 		}
 		return controlSurfacesTypeEClass;
 	}
@@ -15510,7 +16621,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceTracksType() {
 		if (controlSurfaceTracksTypeEClass == null) {
 			controlSurfaceTracksTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(160);
+					.getEClassifiers().get(180);
 		}
 		return controlSurfaceTracksTypeEClass;
 	}
@@ -15534,7 +16645,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceTrackTypeType() {
 		if (controlSurfaceTrackTypeTypeEClass == null) {
 			controlSurfaceTrackTypeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(161);
+					.getEClassifiers().get(181);
 		}
 		return controlSurfaceTrackTypeTypeEClass;
 	}
@@ -15545,7 +16656,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getControlSurfaceTrackTypeType_Eta() {
+	public EReference getControlSurfaceTrackTypeType_EtaPosition() {
 		return (EReference) getControlSurfaceTrackTypeType().getEStructuralFeatures().get(0);
 	}
 
@@ -15608,7 +16719,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getControlSurfaceWingCutOutType() {
 		if (controlSurfaceWingCutOutTypeEClass == null) {
 			controlSurfaceWingCutOutTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(162);
+					.getEClassifiers().get(182);
 		}
 		return controlSurfaceWingCutOutTypeEClass;
 	}
@@ -15679,10 +16790,24 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getCornerRadiusType() {
+		if (cornerRadiusTypeEClass == null) {
+			cornerRadiusTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(183);
+		}
+		return cornerRadiusTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getCostAirConditioningSystemsType() {
 		if (costAirConditioningSystemsTypeEClass == null) {
 			costAirConditioningSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(163);
+					.getEClassifiers().get(184);
 		}
 		return costAirConditioningSystemsTypeEClass;
 	}
@@ -15716,7 +16841,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostAutomaticFlightSystemsType() {
 		if (costAutomaticFlightSystemsTypeEClass == null) {
 			costAutomaticFlightSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(164);
+					.getEClassifiers().get(185);
 		}
 		return costAutomaticFlightSystemsTypeEClass;
 	}
@@ -15750,7 +16875,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostAuxilaryPowerUnitsType() {
 		if (costAuxilaryPowerUnitsTypeEClass == null) {
 			costAuxilaryPowerUnitsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(165);
+					.getEClassifiers().get(186);
 		}
 		return costAuxilaryPowerUnitsTypeEClass;
 	}
@@ -15784,7 +16909,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostBleedAirSystemsType() {
 		if (costBleedAirSystemsTypeEClass == null) {
 			costBleedAirSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(166);
+					.getEClassifiers().get(187);
 		}
 		return costBleedAirSystemsTypeEClass;
 	}
@@ -15818,7 +16943,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostCommunicationSystemsType() {
 		if (costCommunicationSystemsTypeEClass == null) {
 			costCommunicationSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(167);
+					.getEClassifiers().get(188);
 		}
 		return costCommunicationSystemsTypeEClass;
 	}
@@ -15852,7 +16977,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostComponentsType() {
 		if (costComponentsTypeEClass == null) {
 			costComponentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(168);
+					.getEClassifiers().get(189);
 		}
 		return costComponentsTypeEClass;
 	}
@@ -15916,7 +17041,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostDeIcingSystemsType() {
 		if (costDeIcingSystemsTypeEClass == null) {
 			costDeIcingSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(169);
+					.getEClassifiers().get(190);
 		}
 		return costDeIcingSystemsTypeEClass;
 	}
@@ -15950,7 +17075,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostElectricalSystemsType() {
 		if (costElectricalSystemsTypeEClass == null) {
 			costElectricalSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(170);
+					.getEClassifiers().get(191);
 		}
 		return costElectricalSystemsTypeEClass;
 	}
@@ -15984,7 +17109,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostEnginePylonsType() {
 		if (costEnginePylonsTypeEClass == null) {
 			costEnginePylonsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(171);
+					.getEClassifiers().get(192);
 		}
 		return costEnginePylonsTypeEClass;
 	}
@@ -16018,7 +17143,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostEquippedEnginesType() {
 		if (costEquippedEnginesTypeEClass == null) {
 			costEquippedEnginesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(172);
+					.getEClassifiers().get(193);
 		}
 		return costEquippedEnginesTypeEClass;
 	}
@@ -16052,7 +17177,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostFireProtectionSystemsType() {
 		if (costFireProtectionSystemsTypeEClass == null) {
 			costFireProtectionSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(173);
+					.getEClassifiers().get(194);
 		}
 		return costFireProtectionSystemsTypeEClass;
 	}
@@ -16086,7 +17211,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostFixedEmergencyOxygenSystemsType() {
 		if (costFixedEmergencyOxygenSystemsTypeEClass == null) {
 			costFixedEmergencyOxygenSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(174);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(195);
 		}
 		return costFixedEmergencyOxygenSystemsTypeEClass;
 	}
@@ -16120,7 +17245,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostFlightControlSystemsType() {
 		if (costFlightControlSystemsTypeEClass == null) {
 			costFlightControlSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(175);
+					.getEClassifiers().get(196);
 		}
 		return costFlightControlSystemsTypeEClass;
 	}
@@ -16154,7 +17279,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostFuelSystemsType() {
 		if (costFuelSystemsTypeEClass == null) {
 			costFuelSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(176);
+					.getEClassifiers().get(197);
 		}
 		return costFuelSystemsTypeEClass;
 	}
@@ -16188,7 +17313,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostFurnishingElementsType() {
 		if (costFurnishingElementsTypeEClass == null) {
 			costFurnishingElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(177);
+					.getEClassifiers().get(198);
 		}
 		return costFurnishingElementsTypeEClass;
 	}
@@ -16222,7 +17347,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostFurnishingsType() {
 		if (costFurnishingsTypeEClass == null) {
 			costFurnishingsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(178);
+					.getEClassifiers().get(199);
 		}
 		return costFurnishingsTypeEClass;
 	}
@@ -16286,7 +17411,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostFuselagesType() {
 		if (costFuselagesTypeEClass == null) {
 			costFuselagesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(179);
+					.getEClassifiers().get(200);
 		}
 		return costFuselagesTypeEClass;
 	}
@@ -16320,7 +17445,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostHydraulicSystemsType() {
 		if (costHydraulicSystemsTypeEClass == null) {
 			costHydraulicSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(180);
+					.getEClassifiers().get(201);
 		}
 		return costHydraulicSystemsTypeEClass;
 	}
@@ -16354,7 +17479,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostInstrumentSystemsType() {
 		if (costInstrumentSystemsTypeEClass == null) {
 			costInstrumentSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(181);
+					.getEClassifiers().get(202);
 		}
 		return costInstrumentSystemsTypeEClass;
 	}
@@ -16388,7 +17513,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostLandingGearType() {
 		if (costLandingGearTypeEClass == null) {
 			costLandingGearTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(182);
+					.getEClassifiers().get(203);
 		}
 		return costLandingGearTypeEClass;
 	}
@@ -16422,7 +17547,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostLightingSystemsType() {
 		if (costLightingSystemsTypeEClass == null) {
 			costLightingSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(183);
+					.getEClassifiers().get(204);
 		}
 		return costLightingSystemsTypeEClass;
 	}
@@ -16456,7 +17581,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostNacellesType() {
 		if (costNacellesTypeEClass == null) {
 			costNacellesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(184);
+					.getEClassifiers().get(205);
 		}
 		return costNacellesTypeEClass;
 	}
@@ -16490,7 +17615,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostNavigationSystemsType() {
 		if (costNavigationSystemsTypeEClass == null) {
 			costNavigationSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(185);
+					.getEClassifiers().get(206);
 		}
 		return costNavigationSystemsTypeEClass;
 	}
@@ -16524,7 +17649,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostPowerUnitsType() {
 		if (costPowerUnitsTypeEClass == null) {
 			costPowerUnitsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(186);
+					.getEClassifiers().get(207);
 		}
 		return costPowerUnitsTypeEClass;
 	}
@@ -16588,7 +17713,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostSystemsType() {
 		if (costSystemsTypeEClass == null) {
 			costSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(187);
+					.getEClassifiers().get(208);
 		}
 		return costSystemsTypeEClass;
 	}
@@ -16722,7 +17847,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostWaterInstallationSystemsType() {
 		if (costWaterInstallationSystemsTypeEClass == null) {
 			costWaterInstallationSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(188);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(209);
 		}
 		return costWaterInstallationSystemsTypeEClass;
 	}
@@ -16756,7 +17881,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCostWingsType() {
 		if (costWingsTypeEClass == null) {
 			costWingsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(189);
+					.getEClassifiers().get(210);
 		}
 		return costWingsTypeEClass;
 	}
@@ -16790,7 +17915,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCpacsType() {
 		if (cpacsTypeEClass == null) {
 			cpacsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(190);
+					.get(211);
 		}
 		return cpacsTypeEClass;
 	}
@@ -16821,7 +17946,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCpacsType_MissionDefinitions() {
+	public EReference getCpacsType_Airports() {
 		return (EReference) getCpacsType().getEStructuralFeatures().get(2);
 	}
 
@@ -16831,7 +17956,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCpacsType_Airports() {
+	public EReference getCpacsType_Flights() {
 		return (EReference) getCpacsType().getEStructuralFeatures().get(3);
 	}
 
@@ -16841,7 +17966,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCpacsType_Flights() {
+	public EReference getCpacsType_Airlines() {
 		return (EReference) getCpacsType().getEStructuralFeatures().get(4);
 	}
 
@@ -16851,7 +17976,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCpacsType_Airlines() {
+	public EReference getCpacsType_Studies() {
 		return (EReference) getCpacsType().getEStructuralFeatures().get(5);
 	}
 
@@ -16861,18 +17986,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCpacsType_Studies() {
-		return (EReference) getCpacsType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EReference getCpacsType_Toolspecific() {
-		return (EReference) getCpacsType().getEStructuralFeatures().get(7);
+		return (EReference) getCpacsType().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -16884,7 +17999,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCrashLoadCasesType() {
 		if (crashLoadCasesTypeEClass == null) {
 			crashLoadCasesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(193);
+					.getEClassifiers().get(212);
 		}
 		return crashLoadCasesTypeEClass;
 	}
@@ -16908,7 +18023,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCrashLoadcaseType() {
 		if (crashLoadcaseTypeEClass == null) {
 			crashLoadcaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(194);
+					.getEClassifiers().get(213);
 		}
 		return crashLoadcaseTypeEClass;
 	}
@@ -17032,7 +18147,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCrewCostType() {
 		if (crewCostTypeEClass == null) {
 			crewCostTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(195);
+					.get(214);
 		}
 		return crewCostTypeEClass;
 	}
@@ -17076,7 +18191,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCrossBeamAssemblyPositionType() {
 		if (crossBeamAssemblyPositionTypeEClass == null) {
 			crossBeamAssemblyPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(196);
+					.getEClassifiers().get(215);
 		}
 		return crossBeamAssemblyPositionTypeEClass;
 	}
@@ -17140,7 +18255,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCrossBeamStrutAssemblyPositionType() {
 		if (crossBeamStrutAssemblyPositionTypeEClass == null) {
 			crossBeamStrutAssemblyPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(197);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(216);
 		}
 		return crossBeamStrutAssemblyPositionTypeEClass;
 	}
@@ -17224,7 +18339,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCruiseRollersType() {
 		if (cruiseRollersTypeEClass == null) {
 			cruiseRollersTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(198);
+					.getEClassifiers().get(217);
 		}
 		return cruiseRollersTypeEClass;
 	}
@@ -17248,7 +18363,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCruiseRollerType() {
 		if (cruiseRollerTypeEClass == null) {
 			cruiseRollerTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(199);
+					.getEClassifiers().get(218);
 		}
 		return cruiseRollerTypeEClass;
 	}
@@ -17312,7 +18427,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCst2DType() {
 		if (cst2DTypeEClass == null) {
 			cst2DTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(200);
+					.get(219);
 		}
 		return cst2DTypeEClass;
 	}
@@ -17406,7 +18521,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCurveParamPointMapType() {
 		if (curveParamPointMapTypeEClass == null) {
 			curveParamPointMapTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(201);
+					.getEClassifiers().get(220);
 		}
 		return curveParamPointMapTypeEClass;
 	}
@@ -17417,7 +18532,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCurveParamPointMapType_PointIndex() {
+	public EReference getCurveParamPointMapType_PointIndices() {
 		return (EReference) getCurveParamPointMapType().getEStructuralFeatures().get(0);
 	}
 
@@ -17440,7 +18555,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCurvePointListXYZType() {
 		if (curvePointListXYZTypeEClass == null) {
 			curvePointListXYZTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(202);
+					.getEClassifiers().get(221);
 		}
 		return curvePointListXYZTypeEClass;
 	}
@@ -17451,7 +18566,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCurvePointListXYZType_Kinks() {
+	public EReference getCurvePointListXYZType_KinkIndices() {
 		return (EReference) getCurvePointListXYZType().getEStructuralFeatures().get(0);
 	}
 
@@ -17474,7 +18589,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCurvePointType() {
 		if (curvePointTypeEClass == null) {
 			curvePointTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(203);
+					.getEClassifiers().get(222);
 		}
 		return curvePointTypeEClass;
 	}
@@ -17508,7 +18623,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCurveProfilesType() {
 		if (curveProfilesTypeEClass == null) {
 			curveProfilesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(204);
+					.getEClassifiers().get(223);
 		}
 		return curveProfilesTypeEClass;
 	}
@@ -17529,12 +18644,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getCutLoadIntegrationPointsType() {
-		if (cutLoadIntegrationPointsTypeEClass == null) {
-			cutLoadIntegrationPointsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(205);
+	public EClass getCutLoadPointsType() {
+		if (cutLoadPointsTypeEClass == null) {
+			cutLoadPointsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(224);
 		}
-		return cutLoadIntegrationPointsTypeEClass;
+		return cutLoadPointsTypeEClass;
 	}
 
 	/**
@@ -17543,8 +18658,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCutLoadIntegrationPointsType_UIDs() {
-		return (EReference) getCutLoadIntegrationPointsType().getEStructuralFeatures().get(0);
+	public EReference getCutLoadPointsType_PointIDs() {
+		return (EReference) getCutLoadPointsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -17553,8 +18668,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCutLoadIntegrationPointsType_X() {
-		return (EReference) getCutLoadIntegrationPointsType().getEStructuralFeatures().get(1);
+	public EReference getCutLoadPointsType_X() {
+		return (EReference) getCutLoadPointsType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -17563,8 +18678,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCutLoadIntegrationPointsType_Y() {
-		return (EReference) getCutLoadIntegrationPointsType().getEStructuralFeatures().get(2);
+	public EReference getCutLoadPointsType_Y() {
+		return (EReference) getCutLoadPointsType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -17573,8 +18688,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCutLoadIntegrationPointsType_Z() {
-		return (EReference) getCutLoadIntegrationPointsType().getEStructuralFeatures().get(3);
+	public EReference getCutLoadPointsType_Z() {
+		return (EReference) getCutLoadPointsType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -17583,8 +18698,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCutLoadIntegrationPointsType_OrientationX() {
-		return (EReference) getCutLoadIntegrationPointsType().getEStructuralFeatures().get(4);
+	public EReference getCutLoadPointsType_OrientationX() {
+		return (EReference) getCutLoadPointsType().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -17593,8 +18708,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCutLoadIntegrationPointsType_OrientationY() {
-		return (EReference) getCutLoadIntegrationPointsType().getEStructuralFeatures().get(5);
+	public EReference getCutLoadPointsType_OrientationY() {
+		return (EReference) getCutLoadPointsType().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -17603,200 +18718,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCutLoadIntegrationPointsType_OrientationZ() {
-		return (EReference) getCutLoadIntegrationPointsType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getCutLoadsEnvelopeType() {
-		if (cutLoadsEnvelopeTypeEClass == null) {
-			cutLoadsEnvelopeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(206);
-		}
-		return cutLoadsEnvelopeTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCutLoadsEnvelopeType_FuselageCutLoadsEnvelope() {
-		return (EReference) getCutLoadsEnvelopeType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCutLoadsEnvelopeType_WingCutLoadsEnvelope() {
-		return (EReference) getCutLoadsEnvelopeType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getCutLoadsType() {
-		if (cutLoadsTypeEClass == null) {
-			cutLoadsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(207);
-		}
-		return cutLoadsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCutLoadsType_FuselageCutLoad() {
-		return (EReference) getCutLoadsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCutLoadsType_WingCutLoad() {
-		return (EReference) getCutLoadsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getCutLoadType() {
-		if (cutLoadTypeEClass == null) {
-			cutLoadTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(208);
-		}
-		return cutLoadTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCutLoadType_Name() {
-		return (EReference) getCutLoadType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCutLoadType_Description() {
-		return (EReference) getCutLoadType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCutLoadType_ParentUID() {
-		return (EReference) getCutLoadType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCutLoadType_Fx() {
-		return (EReference) getCutLoadType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCutLoadType_Fy() {
-		return (EReference) getCutLoadType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCutLoadType_Fz() {
-		return (EReference) getCutLoadType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCutLoadType_Mx() {
-		return (EReference) getCutLoadType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCutLoadType_My() {
-		return (EReference) getCutLoadType().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCutLoadType_Mz() {
-		return (EReference) getCutLoadType().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCutLoadType_LoadBreakdown() {
-		return (EReference) getCutLoadType().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getCutLoadType_UID() {
-		return (EAttribute) getCutLoadType().getEStructuralFeatures().get(10);
+	public EReference getCutLoadPointsType_OrientationZ() {
+		return (EReference) getCutLoadPointsType().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -17808,7 +18731,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCutOutControlPointsType() {
 		if (cutOutControlPointsTypeEClass == null) {
 			cutOutControlPointsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(209);
+					.getEClassifiers().get(225);
 		}
 		return cutOutControlPointsTypeEClass;
 	}
@@ -17842,7 +18765,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCutOutControlPointType() {
 		if (cutOutControlPointTypeEClass == null) {
 			cutOutControlPointTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(210);
+					.getEClassifiers().get(226);
 		}
 		return cutOutControlPointTypeEClass;
 	}
@@ -17876,7 +18799,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCutOutProfilesType() {
 		if (cutOutProfilesTypeEClass == null) {
 			cutOutProfilesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(211);
+					.getEClassifiers().get(227);
 		}
 		return cutOutProfilesTypeEClass;
 	}
@@ -17920,7 +18843,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCutOutProfileType() {
 		if (cutOutProfileTypeEClass == null) {
 			cutOutProfileTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(212);
+					.getEClassifiers().get(228);
 		}
 		return cutOutProfileTypeEClass;
 	}
@@ -17964,7 +18887,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCutOutType() {
 		if (cutOutTypeEClass == null) {
 			cutOutTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(213);
+					.get(229);
 		}
 		return cutOutTypeEClass;
 	}
@@ -18048,7 +18971,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getCutoutTypeType() {
 		if (cutoutTypeTypeEClass == null) {
 			cutoutTypeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(214);
+					.getEClassifiers().get(230);
 		}
 		return cutoutTypeTypeEClass;
 	}
@@ -18062,7 +18985,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDampingDerivativesRatesArrayType() {
 		if (dampingDerivativesRatesArrayTypeEClass == null) {
 			dampingDerivativesRatesArrayTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(215);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(231);
 		}
 		return dampingDerivativesRatesArrayTypeEClass;
 	}
@@ -18106,7 +19029,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDampingDerivativesRatesType() {
 		if (dampingDerivativesRatesTypeEClass == null) {
 			dampingDerivativesRatesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(216);
+					.getEClassifiers().get(232);
 		}
 		return dampingDerivativesRatesTypeEClass;
 	}
@@ -18140,7 +19063,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDampingDerivativesType() {
 		if (dampingDerivativesTypeEClass == null) {
 			dampingDerivativesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(217);
+					.getEClassifiers().get(233);
 		}
 		return dampingDerivativesTypeEClass;
 	}
@@ -18151,7 +19074,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcddpstar() {
+	public EReference getDampingDerivativesType_DcddpStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(0);
 	}
 
@@ -18161,7 +19084,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcddqstar() {
+	public EReference getDampingDerivativesType_DcddqStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(1);
 	}
 
@@ -18171,7 +19094,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcddrstar() {
+	public EReference getDampingDerivativesType_DcddrStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(2);
 	}
 
@@ -18181,7 +19104,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcsdpstar() {
+	public EReference getDampingDerivativesType_DcsdpStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(3);
 	}
 
@@ -18191,7 +19114,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcsdqstar() {
+	public EReference getDampingDerivativesType_DcsdqStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(4);
 	}
 
@@ -18201,7 +19124,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcsdrstar() {
+	public EReference getDampingDerivativesType_DcsdrStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(5);
 	}
 
@@ -18211,7 +19134,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcldpstar() {
+	public EReference getDampingDerivativesType_DcldpStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(6);
 	}
 
@@ -18221,7 +19144,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcldqstar() {
+	public EReference getDampingDerivativesType_DcldqStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(7);
 	}
 
@@ -18231,7 +19154,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcldrstar() {
+	public EReference getDampingDerivativesType_DcldrStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(8);
 	}
 
@@ -18241,7 +19164,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcmddpstar() {
+	public EReference getDampingDerivativesType_DcmddpStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(9);
 	}
 
@@ -18251,7 +19174,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcmddqstar() {
+	public EReference getDampingDerivativesType_DcmddqStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(10);
 	}
 
@@ -18261,7 +19184,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcmddrstar() {
+	public EReference getDampingDerivativesType_DcmddrStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(11);
 	}
 
@@ -18271,7 +19194,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcmsdpstar() {
+	public EReference getDampingDerivativesType_DcmsdpStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(12);
 	}
 
@@ -18281,7 +19204,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcmsdqstar() {
+	public EReference getDampingDerivativesType_DcmsdqStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(13);
 	}
 
@@ -18291,7 +19214,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcmsdrstar() {
+	public EReference getDampingDerivativesType_DcmsdrStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(14);
 	}
 
@@ -18301,7 +19224,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcmldpstar() {
+	public EReference getDampingDerivativesType_DcmldpStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(15);
 	}
 
@@ -18311,7 +19234,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcmldqstar() {
+	public EReference getDampingDerivativesType_DcmldqStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(16);
 	}
 
@@ -18321,7 +19244,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDampingDerivativesType_Dcmldrstar() {
+	public EReference getDampingDerivativesType_DcmldrStar() {
 		return (EReference) getDampingDerivativesType().getEStructuralFeatures().get(17);
 	}
 
@@ -18334,7 +19257,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDamTolBehaviourType() {
 		if (damTolBehaviourTypeEClass == null) {
 			damTolBehaviourTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(218);
+					.getEClassifiers().get(234);
 		}
 		return damTolBehaviourTypeEClass;
 	}
@@ -18368,7 +19291,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDamTolFormanType() {
 		if (damTolFormanTypeEClass == null) {
 			damTolFormanTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(219);
+					.getEClassifiers().get(235);
 		}
 		return damTolFormanTypeEClass;
 	}
@@ -18412,7 +19335,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDamTolWalkerType() {
 		if (damTolWalkerTypeEClass == null) {
 			damTolWalkerTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(220);
+					.getEClassifiers().get(236);
 		}
 		return damTolWalkerTypeEClass;
 	}
@@ -18466,7 +19389,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDateBaseType() {
 		if (dateBaseTypeEClass == null) {
 			dateBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(221);
+					.get(237);
 		}
 		return dateBaseTypeEClass;
 	}
@@ -18520,7 +19443,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDateTimeBaseType() {
 		if (dateTimeBaseTypeEClass == null) {
 			dateTimeBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(222);
+					.getEClassifiers().get(238);
 		}
 		return dateTimeBaseTypeEClass;
 	}
@@ -18571,10 +19494,580 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getDeckComponent2DBaseType() {
+		if (deckComponent2DBaseTypeEClass == null) {
+			deckComponent2DBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(239);
+		}
+		return deckComponent2DBaseTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckComponent2DBaseType_Name() {
+		return (EReference) getDeckComponent2DBaseType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckComponent2DBaseType_Description() {
+		return (EReference) getDeckComponent2DBaseType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckComponent2DBaseType_DeckElementUID() {
+		return (EReference) getDeckComponent2DBaseType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckComponent2DBaseType_StructuralMounts() {
+		return (EReference) getDeckComponent2DBaseType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckComponent2DBaseType_Transformation() {
+		return (EReference) getDeckComponent2DBaseType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDeckComponent2DBaseType_UID() {
+		return (EAttribute) getDeckComponent2DBaseType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDeckComponentBaseType() {
+		if (deckComponentBaseTypeEClass == null) {
+			deckComponentBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(240);
+		}
+		return deckComponentBaseTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckComponentBaseType_Name() {
+		return (EReference) getDeckComponentBaseType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckComponentBaseType_Description() {
+		return (EReference) getDeckComponentBaseType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckComponentBaseType_DeckElementUID() {
+		return (EReference) getDeckComponentBaseType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckComponentBaseType_StructuralMounts() {
+		return (EReference) getDeckComponentBaseType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckComponentBaseType_Transformation() {
+		return (EReference) getDeckComponentBaseType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDeckComponentBaseType_UID() {
+		return (EAttribute) getDeckComponentBaseType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDeckDoorsType() {
+		if (deckDoorsTypeEClass == null) {
+			deckDoorsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(241);
+		}
+		return deckDoorsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckDoorsType_DeckDoor() {
+		return (EReference) getDeckDoorsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDeckDoorType() {
+		if (deckDoorTypeEClass == null) {
+			deckDoorTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(242);
+		}
+		return deckDoorTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckDoorType_Name() {
+		return (EReference) getDeckDoorType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckDoorType_Description() {
+		return (EReference) getDeckDoorType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckDoorType_PaxCapacity() {
+		return (EReference) getDeckDoorType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckDoorType_Opening() {
+		return (EReference) getDeckDoorType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckDoorType_DoorType() {
+		return (EReference) getDeckDoorType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDeckDoorType_UID() {
+		return (EAttribute) getDeckDoorType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDeckElementBaseType() {
+		if (deckElementBaseTypeEClass == null) {
+			deckElementBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(243);
+		}
+		return deckElementBaseTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementBaseType_Description() {
+		return (EReference) getDeckElementBaseType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementBaseType_Geometry() {
+		return (EReference) getDeckElementBaseType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementBaseType_Mass() {
+		return (EReference) getDeckElementBaseType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDeckElementBaseType_UID() {
+		return (EAttribute) getDeckElementBaseType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDeckElementGeometryType() {
+		if (deckElementGeometryTypeEClass == null) {
+			deckElementGeometryTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(244);
+		}
+		return deckElementGeometryTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementGeometryType_GenericGeometryComponent() {
+		return (EReference) getDeckElementGeometryType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementGeometryType_BoundingBox() {
+		return (EReference) getDeckElementGeometryType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDeckElementMassType() {
+		if (deckElementMassTypeEClass == null) {
+			deckElementMassTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(245);
+		}
+		return deckElementMassTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementMassType_Mass() {
+		return (EReference) getDeckElementMassType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementMassType_Location() {
+		return (EReference) getDeckElementMassType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementMassType_MassInertia() {
+		return (EReference) getDeckElementMassType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDeckElementMassType_UID() {
+		return (EAttribute) getDeckElementMassType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDeckElementsType() {
+		if (deckElementsTypeEClass == null) {
+			deckElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(246);
+		}
+		return deckElementsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementsType_CeilingPanelElements() {
+		return (EReference) getDeckElementsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementsType_ClassDividerElements() {
+		return (EReference) getDeckElementsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementsType_GalleyElements() {
+		return (EReference) getDeckElementsType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementsType_GenericFloorElements() {
+		return (EReference) getDeckElementsType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementsType_LavatoryElements() {
+		return (EReference) getDeckElementsType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementsType_LuggageCompartmentElements() {
+		return (EReference) getDeckElementsType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementsType_SeatElements() {
+		return (EReference) getDeckElementsType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementsType_SidewallPanelElements() {
+		return (EReference) getDeckElementsType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckElementsType_CargoContainerElements() {
+		return (EReference) getDeckElementsType().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDeckStructuralMountsType() {
+		if (deckStructuralMountsTypeEClass == null) {
+			deckStructuralMountsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(247);
+		}
+		return deckStructuralMountsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckStructuralMountsType_StructuralMount() {
+		return (EReference) getDeckStructuralMountsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDeckStructuralMountType() {
+		if (deckStructuralMountTypeEClass == null) {
+			deckStructuralMountTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(248);
+		}
+		return deckStructuralMountTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckStructuralMountType_Name() {
+		return (EReference) getDeckStructuralMountType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckStructuralMountType_Description() {
+		return (EReference) getDeckStructuralMountType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckStructuralMountType_ComponentUID() {
+		return (EReference) getDeckStructuralMountType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDeckStructuralMountType_UID() {
+		return (EAttribute) getDeckStructuralMountType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getDecksType() {
 		if (decksTypeEClass == null) {
 			decksTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(223);
+					.get(249);
 		}
 		return decksTypeEClass;
 	}
@@ -18598,7 +20091,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDeckType() {
 		if (deckTypeEClass == null) {
 			deckTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(224);
+					.get(250);
 		}
 		return deckTypeEClass;
 	}
@@ -18639,7 +20132,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDeckType_X0() {
+	public EReference getDeckType_FloorStructureUID() {
 		return (EReference) getDeckType().getEStructuralFeatures().get(3);
 	}
 
@@ -18649,7 +20142,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDeckType_Z0() {
+	public EReference getDeckType_Transformation() {
 		return (EReference) getDeckType().getEStructuralFeatures().get(4);
 	}
 
@@ -18659,7 +20152,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDeckType_Type() {
+	public EReference getDeckType_DeckType() {
 		return (EReference) getDeckType().getEStructuralFeatures().get(5);
 	}
 
@@ -18669,7 +20162,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDeckType_CabGeometry() {
+	public EReference getDeckType_CabinGeometry() {
 		return (EReference) getDeckType().getEStructuralFeatures().get(6);
 	}
 
@@ -18679,7 +20172,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDeckType_Aisles() {
+	public EReference getDeckType_SeatModules() {
 		return (EReference) getDeckType().getEStructuralFeatures().get(7);
 	}
 
@@ -18689,7 +20182,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDeckType_Spaces() {
+	public EReference getDeckType_Aisles() {
 		return (EReference) getDeckType().getEStructuralFeatures().get(8);
 	}
 
@@ -18699,7 +20192,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDeckType_Doors() {
+	public EReference getDeckType_Spaces() {
 		return (EReference) getDeckType().getEStructuralFeatures().get(9);
 	}
 
@@ -18709,7 +20202,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDeckType_SeatElements() {
+	public EReference getDeckType_SidewallPanels() {
 		return (EReference) getDeckType().getEStructuralFeatures().get(10);
 	}
 
@@ -18719,7 +20212,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getDeckType_FloorElements() {
+	public EReference getDeckType_LuggageCompartments() {
 		return (EReference) getDeckType().getEStructuralFeatures().get(11);
 	}
 
@@ -18729,8 +20222,92 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getDeckType_CeilingPanels() {
+		return (EReference) getDeckType().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckType_Galleys() {
+		return (EReference) getDeckType().getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckType_GenericFloorModules() {
+		return (EReference) getDeckType().getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckType_Lavatories() {
+		return (EReference) getDeckType().getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckType_ClassDividers() {
+		return (EReference) getDeckType().getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckType_CargoContainers() {
+		return (EReference) getDeckType().getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDeckType_DeckDoors() {
+		return (EReference) getDeckType().getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getDeckType_UID() {
-		return (EAttribute) getDeckType().getEStructuralFeatures().get(12);
+		return (EAttribute) getDeckType().getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDeckTypeType() {
+		if (deckTypeTypeEClass == null) {
+			deckTypeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(251);
+		}
+		return deckTypeTypeEClass;
 	}
 
 	/**
@@ -18742,7 +20319,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDeltaTemperatureType() {
 		if (deltaTemperatureTypeEClass == null) {
 			deltaTemperatureTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(225);
+					.getEClassifiers().get(252);
 		}
 		return deltaTemperatureTypeEClass;
 	}
@@ -18826,7 +20403,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDesignMassesType() {
 		if (designMassesTypeEClass == null) {
 			designMassesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(226);
+					.getEClassifiers().get(253);
 		}
 		return designMassesTypeEClass;
 	}
@@ -18880,7 +20457,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDesignParametersType() {
 		if (designParametersTypeEClass == null) {
 			designParametersTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(227);
+					.getEClassifiers().get(254);
 		}
 		return designParametersTypeEClass;
 	}
@@ -18904,7 +20481,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDesignParameterType() {
 		if (designParameterTypeEClass == null) {
 			designParameterTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(228);
+					.getEClassifiers().get(255);
 		}
 		return designParameterTypeEClass;
 	}
@@ -18948,7 +20525,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDesignSpaceType() {
 		if (designSpaceTypeEClass == null) {
 			designSpaceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(229);
+					.getEClassifiers().get(256);
 		}
 		return designSpaceTypeEClass;
 	}
@@ -18999,24 +20576,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getDesignSpeedType() {
-		if (designSpeedTypeEClass == null) {
-			designSpeedTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(230);
-		}
-		return designSpeedTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getDesignStudiesType() {
 		if (designStudiesTypeEClass == null) {
 			designStudiesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(231);
+					.getEClassifiers().get(257);
 		}
 		return designStudiesTypeEClass;
 	}
@@ -19040,7 +20603,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDesignVolumeType() {
 		if (designVolumeTypeEClass == null) {
 			designVolumeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(232);
+					.getEClassifiers().get(258);
 		}
 		return designVolumeTypeEClass;
 	}
@@ -19054,7 +20617,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDirectOperatingCostType() {
 		if (directOperatingCostTypeEClass == null) {
 			directOperatingCostTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(233);
+					.getEClassifiers().get(259);
 		}
 		return directOperatingCostTypeEClass;
 	}
@@ -19138,7 +20701,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDivergenceCasesType() {
 		if (divergenceCasesTypeEClass == null) {
 			divergenceCasesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(234);
+					.getEClassifiers().get(260);
 		}
 		return divergenceCasesTypeEClass;
 	}
@@ -19162,7 +20725,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDivergenceCaseType() {
 		if (divergenceCaseTypeEClass == null) {
 			divergenceCaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(235);
+					.getEClassifiers().get(261);
 		}
 		return divergenceCaseTypeEClass;
 	}
@@ -19196,7 +20759,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDocumentRoot() {
 		if (documentRootEClass == null) {
 			documentRootEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(236);
+					.get(262);
 		}
 		return documentRootEClass;
 	}
@@ -19250,7 +20813,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDoorAssemblyPositionType() {
 		if (doorAssemblyPositionTypeEClass == null) {
 			doorAssemblyPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(237);
+					.getEClassifiers().get(263);
 		}
 		return doorAssemblyPositionTypeEClass;
 	}
@@ -19394,7 +20957,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDoorCutOutType() {
 		if (doorCutOutTypeEClass == null) {
 			doorCutOutTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(238);
+					.getEClassifiers().get(264);
 		}
 		return doorCutOutTypeEClass;
 	}
@@ -19455,10 +21018,108 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getDoorOpeningLegacyType() {
+		if (doorOpeningLegacyTypeEClass == null) {
+			doorOpeningLegacyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(265);
+		}
+		return doorOpeningLegacyTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDoorOpeningLegacyType_X() {
+		return (EReference) getDoorOpeningLegacyType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDoorOpeningLegacyType_Z() {
+		return (EReference) getDoorOpeningLegacyType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDoorOpeningLegacyType_Width() {
+		return (EReference) getDoorOpeningLegacyType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDoorOpeningLegacyType_Height() {
+		return (EReference) getDoorOpeningLegacyType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDoorOpeningLegacyType_Side() {
+		return (EReference) getDoorOpeningLegacyType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDoorOpeningType() {
+		if (doorOpeningTypeEClass == null) {
+			doorOpeningTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(266);
+		}
+		return doorOpeningTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDoorOpeningType_CutOutUID() {
+		return (EReference) getDoorOpeningType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDoorOpeningType_DoorOpeningLegacy() {
+		return (EReference) getDoorOpeningType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getDoorsType() {
 		if (doorsTypeEClass == null) {
 			doorsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(239);
+					.get(267);
 		}
 		return doorsTypeEClass;
 	}
@@ -19482,7 +21143,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDoorSurroundStructurePositionType() {
 		if (doorSurroundStructurePositionTypeEClass == null) {
 			doorSurroundStructurePositionTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(240);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(268);
 		}
 		return doorSurroundStructurePositionTypeEClass;
 	}
@@ -19566,7 +21227,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDoorSurroundStructuresAssemblyType() {
 		if (doorSurroundStructuresAssemblyTypeEClass == null) {
 			doorSurroundStructuresAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(241);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(269);
 		}
 		return doorSurroundStructuresAssemblyTypeEClass;
 	}
@@ -19590,9 +21251,37 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDoorTypeType() {
 		if (doorTypeTypeEClass == null) {
 			doorTypeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(242);
+					.get(270);
 		}
 		return doorTypeTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDoorTypeType1() {
+		if (doorTypeType1EClass == null) {
+			doorTypeType1EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(271);
+		}
+		return doorTypeType1EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDoubleArrayBaseType() {
+		if (doubleArrayBaseTypeEClass == null) {
+			doubleArrayBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(272);
+		}
+		return doubleArrayBaseTypeEClass;
 	}
 
 	/**
@@ -19604,7 +21293,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDoubleBaseType() {
 		if (doubleBaseTypeEClass == null) {
 			doubleBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(243);
+					.getEClassifiers().get(273);
 		}
 		return doubleBaseTypeEClass;
 	}
@@ -19738,7 +21427,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDoubleConstraintBaseType() {
 		if (doubleConstraintBaseTypeEClass == null) {
 			doubleConstraintBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(244);
+					.getEClassifiers().get(274);
 		}
 		return doubleConstraintBaseTypeEClass;
 	}
@@ -19759,10 +21448,132 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getDoubleVectorBaseType() {
+		if (doubleVectorBaseTypeEClass == null) {
+			doubleVectorBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(275);
+		}
+		return doubleVectorBaseTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDoubleVectorConstraintBaseType() {
+		if (doubleVectorConstraintBaseTypeEClass == null) {
+			doubleVectorConstraintBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(277);
+		}
+		return doubleVectorConstraintBaseTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDoubleVectorConstraintBaseType_RelationalOperator() {
+		return (EAttribute) getDoubleVectorConstraintBaseType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDragContributionsType() {
+		if (dragContributionsTypeEClass == null) {
+			dragContributionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(278);
+		}
+		return dragContributionsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDragContributionsType_CdPressure() {
+		return (EReference) getDragContributionsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDragContributionsType_CdViscous() {
+		return (EReference) getDragContributionsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDragContributionsType_CdFriction() {
+		return (EReference) getDragContributionsType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDragContributionsType_CdInduced() {
+		return (EReference) getDragContributionsType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDragContributionsType_CdInterference() {
+		return (EReference) getDragContributionsType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDragContributionsType_CdWave() {
+		return (EReference) getDragContributionsType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDragContributionsType_CdTrim() {
+		return (EReference) getDragContributionsType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getDriveSystemsType() {
 		if (driveSystemsTypeEClass == null) {
 			driveSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(245);
+					.getEClassifiers().get(279);
 		}
 		return driveSystemsTypeEClass;
 	}
@@ -19786,7 +21597,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getDriveSystemType() {
 		if (driveSystemTypeEClass == null) {
 			driveSystemTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(246);
+					.getEClassifiers().get(280);
 		}
 		return driveSystemTypeEClass;
 	}
@@ -19827,10 +21638,34 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getDurationType() {
+		if (durationTypeEClass == null) {
+			durationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(281);
+		}
+		return durationTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDurationType_UID() {
+		return (EAttribute) getDurationType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getDynamicAircraftModelAnalysisType() {
 		if (dynamicAircraftModelAnalysisTypeEClass == null) {
 			dynamicAircraftModelAnalysisTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(247);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(282);
 		}
 		return dynamicAircraftModelAnalysisTypeEClass;
 	}
@@ -19851,118 +21686,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getDynamicAircraftModelPointsType() {
-		if (dynamicAircraftModelPointsTypeEClass == null) {
-			dynamicAircraftModelPointsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(248);
-		}
-		return dynamicAircraftModelPointsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getDynamicAircraftModelPointsType_UID() {
-		return (EAttribute) getDynamicAircraftModelPointsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDynamicAircraftModelPointsType_X() {
-		return (EReference) getDynamicAircraftModelPointsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDynamicAircraftModelPointsType_Y() {
-		return (EReference) getDynamicAircraftModelPointsType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDynamicAircraftModelPointsType_Z() {
-		return (EReference) getDynamicAircraftModelPointsType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getDynamicAircraftModelType() {
-		if (dynamicAircraftModelTypeEClass == null) {
-			dynamicAircraftModelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(249);
-		}
-		return dynamicAircraftModelTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDynamicAircraftModelType_LoadReferenceAxisPoints() {
-		return (EReference) getDynamicAircraftModelType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDynamicAircraftModelType_DynamicAircraftModelPoints() {
-		return (EReference) getDynamicAircraftModelType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDynamicAircraftModelType_CutLoadIntegrationPoints() {
-		return (EReference) getDynamicAircraftModelType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDynamicAircraftModelType_Connectivities() {
-		return (EReference) getDynamicAircraftModelType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getEmissivityMapType() {
 		if (emissivityMapTypeEClass == null) {
 			emissivityMapTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(250);
+					.getEClassifiers().get(283);
 		}
 		return emissivityMapTypeEClass;
 	}
@@ -19993,10 +21720,34 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getEndTimeUTCType() {
+		if (endTimeUTCTypeEClass == null) {
+			endTimeUTCTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(284);
+		}
+		return endTimeUTCTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEndTimeUTCType_UID() {
+		return (EAttribute) getEndTimeUTCType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getEngineAnalysisType() {
 		if (engineAnalysisTypeEClass == null) {
 			engineAnalysisTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(251);
+					.getEClassifiers().get(285);
 		}
 		return engineAnalysisTypeEClass;
 	}
@@ -20100,7 +21851,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEngineConceptType() {
 		if (engineConceptTypeEClass == null) {
 			engineConceptTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(252);
+					.getEClassifiers().get(286);
 		}
 		return engineConceptTypeEClass;
 	}
@@ -20114,7 +21865,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEngineFanType() {
 		if (engineFanTypeEClass == null) {
 			engineFanTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(253);
+					.getEClassifiers().get(287);
 		}
 		return engineFanTypeEClass;
 	}
@@ -20148,7 +21899,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEngineGeometryType() {
 		if (engineGeometryTypeEClass == null) {
 			engineGeometryTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(254);
+					.getEClassifiers().get(288);
 		}
 		return engineGeometryTypeEClass;
 	}
@@ -20242,7 +21993,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEngineGlobalType() {
 		if (engineGlobalTypeEClass == null) {
 			engineGlobalTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(255);
+					.getEClassifiers().get(289);
 		}
 		return engineGlobalTypeEClass;
 	}
@@ -20326,7 +22077,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEngineMountsType() {
 		if (engineMountsTypeEClass == null) {
 			engineMountsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(256);
+					.getEClassifiers().get(290);
 		}
 		return engineMountsTypeEClass;
 	}
@@ -20350,7 +22101,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEngineMountType() {
 		if (engineMountTypeEClass == null) {
 			engineMountTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(257);
+					.getEClassifiers().get(291);
 		}
 		return engineMountTypeEClass;
 	}
@@ -20404,7 +22155,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEngineNacelleType() {
 		if (engineNacelleTypeEClass == null) {
 			engineNacelleTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(258);
+					.getEClassifiers().get(292);
 		}
 		return engineNacelleTypeEClass;
 	}
@@ -20458,7 +22209,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEnginePerformanceMapsType() {
 		if (enginePerformanceMapsTypeEClass == null) {
 			enginePerformanceMapsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(259);
+					.getEClassifiers().get(293);
 		}
 		return enginePerformanceMapsTypeEClass;
 	}
@@ -20482,7 +22233,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEnginePerformanceMapType() {
 		if (enginePerformanceMapTypeEClass == null) {
 			enginePerformanceMapTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(260);
+					.getEClassifiers().get(294);
 		}
 		return enginePerformanceMapTypeEClass;
 	}
@@ -20786,7 +22537,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEnginePositionsType() {
 		if (enginePositionsTypeEClass == null) {
 			enginePositionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(261);
+					.getEClassifiers().get(295);
 		}
 		return enginePositionsTypeEClass;
 	}
@@ -20810,7 +22561,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEnginePositionType() {
 		if (enginePositionTypeEClass == null) {
 			enginePositionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(262);
+					.getEClassifiers().get(296);
 		}
 		return enginePositionTypeEClass;
 	}
@@ -20894,7 +22645,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEnginePylonsType() {
 		if (enginePylonsTypeEClass == null) {
 			enginePylonsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(263);
+					.getEClassifiers().get(297);
 		}
 		return enginePylonsTypeEClass;
 	}
@@ -20918,7 +22669,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEnginePylonType() {
 		if (enginePylonTypeEClass == null) {
 			enginePylonTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(264);
+					.getEClassifiers().get(298);
 		}
 		return enginePylonTypeEClass;
 	}
@@ -21029,54 +22780,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getEngineSettingType() {
-		if (engineSettingTypeEClass == null) {
-			engineSettingTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(265);
-		}
-		return engineSettingTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getEngineSettingType_ModelEngineUID() {
-		return (EReference) getEngineSettingType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getEngineSettingType_ThrustLevel() {
-		return (EReference) getEngineSettingType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getEngineSettingType_Inoperative() {
-		return (EReference) getEngineSettingType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getEngineSpinnerType() {
 		if (engineSpinnerTypeEClass == null) {
 			engineSpinnerTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(266);
+					.getEClassifiers().get(299);
 		}
 		return engineSpinnerTypeEClass;
 	}
@@ -21120,7 +22827,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEnginesType() {
 		if (enginesTypeEClass == null) {
 			enginesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(267);
+					.get(300);
 		}
 		return enginesTypeEClass;
 	}
@@ -21144,7 +22851,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEngineType() {
 		if (engineTypeEClass == null) {
 			engineTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(268);
+					.get(301);
 		}
 		return engineTypeEClass;
 	}
@@ -21235,10 +22942,44 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getEnvironmentType() {
+		if (environmentTypeEClass == null) {
+			environmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(302);
+		}
+		return environmentTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getEnvironmentType_AtmosphericModel() {
+		return (EReference) getEnvironmentType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getEnvironmentType_DeltaTemperature() {
+		return (EReference) getEnvironmentType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getEtaIsoLineType() {
 		if (etaIsoLineTypeEClass == null) {
 			etaIsoLineTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(269);
+					.getEClassifiers().get(303);
 		}
 		return etaIsoLineTypeEClass;
 	}
@@ -21272,7 +23013,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEtaXsiPointType() {
 		if (etaXsiPointTypeEClass == null) {
 			etaXsiPointTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(270);
+					.getEClassifiers().get(304);
 		}
 		return etaXsiPointTypeEClass;
 	}
@@ -21316,7 +23057,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getEtaXsiRelHeightPointType() {
 		if (etaXsiRelHeightPointTypeEClass == null) {
 			etaXsiRelHeightPointTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(271);
+					.getEClassifiers().get(305);
 		}
 		return etaXsiRelHeightPointTypeEClass;
 	}
@@ -21370,7 +23111,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFatigueBehaviourType() {
 		if (fatigueBehaviourTypeEClass == null) {
 			fatigueBehaviourTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(272);
+					.getEClassifiers().get(306);
 		}
 		return fatigueBehaviourTypeEClass;
 	}
@@ -21394,7 +23135,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFatigueStressBasedBrownMillerType() {
 		if (fatigueStressBasedBrownMillerTypeEClass == null) {
 			fatigueStressBasedBrownMillerTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(273);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(307);
 		}
 		return fatigueStressBasedBrownMillerTypeEClass;
 	}
@@ -21448,7 +23189,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFleetType() {
 		if (fleetTypeEClass == null) {
 			fleetTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(274);
+					.get(308);
 		}
 		return fleetTypeEClass;
 	}
@@ -21502,7 +23243,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFlightAnalysisType() {
 		if (flightAnalysisTypeEClass == null) {
 			flightAnalysisTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(275);
+					.getEClassifiers().get(309);
 		}
 		return flightAnalysisTypeEClass;
 	}
@@ -21536,7 +23277,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFlightDynamicsAnalysisType() {
 		if (flightDynamicsAnalysisTypeEClass == null) {
 			flightDynamicsAnalysisTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(276);
+					.getEClassifiers().get(310);
 		}
 		return flightDynamicsAnalysisTypeEClass;
 	}
@@ -21547,7 +23288,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightDynamicsAnalysisType_FlightCases() {
+	public EReference getFlightDynamicsAnalysisType_Trim() {
 		return (EReference) getFlightDynamicsAnalysisType().getEStructuralFeatures().get(0);
 	}
 
@@ -21557,7 +23298,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightDynamicsAnalysisType_Model() {
+	public EReference getFlightDynamicsAnalysisType_FlyingQualities() {
 		return (EReference) getFlightDynamicsAnalysisType().getEStructuralFeatures().get(1);
 	}
 
@@ -21567,136 +23308,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getFlightDynamicsFlightCasesType() {
-		if (flightDynamicsFlightCasesTypeEClass == null) {
-			flightDynamicsFlightCasesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(277);
-		}
-		return flightDynamicsFlightCasesTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsFlightCasesType_FlightCase() {
-		return (EReference) getFlightDynamicsFlightCasesType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getFlightDynamicsFlightCaseType() {
-		if (flightDynamicsFlightCaseTypeEClass == null) {
-			flightDynamicsFlightCaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(278);
-		}
-		return flightDynamicsFlightCaseTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsFlightCaseType_Name() {
-		return (EReference) getFlightDynamicsFlightCaseType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsFlightCaseType_Description() {
-		return (EReference) getFlightDynamicsFlightCaseType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsFlightCaseType_WeightAndBalanceUID() {
-		return (EReference) getFlightDynamicsFlightCaseType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsFlightCaseType_StandardAltitude() {
-		return (EReference) getFlightDynamicsFlightCaseType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsFlightCaseType_VCAS() {
-		return (EReference) getFlightDynamicsFlightCaseType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsFlightCaseType_Configuration() {
-		return (EReference) getFlightDynamicsFlightCaseType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsFlightCaseType_Gear() {
-		return (EReference) getFlightDynamicsFlightCaseType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsFlightCaseType_LinearModel() {
-		return (EReference) getFlightDynamicsFlightCaseType().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsFlightCaseType_TrimResult() {
-		return (EReference) getFlightDynamicsFlightCaseType().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getFlightDynamicsFlightCaseType_UID() {
-		return (EAttribute) getFlightDynamicsFlightCaseType().getEStructuralFeatures().get(9);
+	public EReference getFlightDynamicsAnalysisType_FlightPerformance() {
+		return (EReference) getFlightDynamicsAnalysisType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -21708,7 +23321,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFlightDynamicsLinearModelType() {
 		if (flightDynamicsLinearModelTypeEClass == null) {
 			flightDynamicsLinearModelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(279);
+					.getEClassifiers().get(311);
 		}
 		return flightDynamicsLinearModelTypeEClass;
 	}
@@ -21799,104 +23412,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getFlightDynamicsModelType() {
-		if (flightDynamicsModelTypeEClass == null) {
-			flightDynamicsModelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(280);
-		}
-		return flightDynamicsModelTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsModelType_Name() {
-		return (EReference) getFlightDynamicsModelType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsModelType_Description() {
-		return (EReference) getFlightDynamicsModelType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsModelType_XLonNames() {
-		return (EReference) getFlightDynamicsModelType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsModelType_YLonNames() {
-		return (EReference) getFlightDynamicsModelType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsModelType_ULonNames() {
-		return (EReference) getFlightDynamicsModelType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsModelType_XLatNames() {
-		return (EReference) getFlightDynamicsModelType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsModelType_YLatNames() {
-		return (EReference) getFlightDynamicsModelType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlightDynamicsModelType_ULatNames() {
-		return (EReference) getFlightDynamicsModelType().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getFlightDynamicsTrimResultType() {
 		if (flightDynamicsTrimResultTypeEClass == null) {
 			flightDynamicsTrimResultTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(281);
+					.getEClassifiers().get(312);
 		}
 		return flightDynamicsTrimResultTypeEClass;
 	}
@@ -21907,7 +23426,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightDynamicsTrimResultType_Mach() {
+	public EReference getFlightDynamicsTrimResultType_MachNumber() {
 		return (EReference) getFlightDynamicsTrimResultType().getEStructuralFeatures().get(0);
 	}
 
@@ -21917,7 +23436,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightDynamicsTrimResultType_VTAS() {
+	public EReference getFlightDynamicsTrimResultType_TrueAirSpeed() {
 		return (EReference) getFlightDynamicsTrimResultType().getEStructuralFeatures().get(1);
 	}
 
@@ -21927,7 +23446,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightDynamicsTrimResultType_Alpha() {
+	public EReference getFlightDynamicsTrimResultType_AngleOfAttack() {
 		return (EReference) getFlightDynamicsTrimResultType().getEStructuralFeatures().get(2);
 	}
 
@@ -21947,10 +23466,122 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getFlightEnvelopeSpeedType() {
+		if (flightEnvelopeSpeedTypeEClass == null) {
+			flightEnvelopeSpeedTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(313);
+		}
+		return flightEnvelopeSpeedTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightEnvelopeSpeedType_SpeedName() {
+		return (EReference) getFlightEnvelopeSpeedType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightEnvelopeSpeedType_Altitude() {
+		return (EReference) getFlightEnvelopeSpeedType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightEnvelopeSpeedType_TrueAirSpeed() {
+		return (EReference) getFlightEnvelopeSpeedType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getFlightEnvelopesType() {
+		if (flightEnvelopesTypeEClass == null) {
+			flightEnvelopesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(314);
+		}
+		return flightEnvelopesTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightEnvelopesType_FlightEnvelope() {
+		return (EReference) getFlightEnvelopesType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getFlightEnvelopeType() {
+		if (flightEnvelopeTypeEClass == null) {
+			flightEnvelopeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(315);
+		}
+		return flightEnvelopeTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightEnvelopeType_AtmosphericModel() {
+		return (EReference) getFlightEnvelopeType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightEnvelopeType_DeltaTemperature() {
+		return (EReference) getFlightEnvelopeType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightEnvelopeType_Speed() {
+		return (EReference) getFlightEnvelopeType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getFlightLoadCasesType() {
 		if (flightLoadCasesTypeEClass == null) {
 			flightLoadCasesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(282);
+					.getEClassifiers().get(316);
 		}
 		return flightLoadCasesTypeEClass;
 	}
@@ -21971,12 +23602,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getFlightLoadCaseType() {
-		if (flightLoadCaseTypeEClass == null) {
-			flightLoadCaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(283);
+	public EClass getFlightLoadConditionsType() {
+		if (flightLoadConditionsTypeEClass == null) {
+			flightLoadConditionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(317);
 		}
-		return flightLoadCaseTypeEClass;
+		return flightLoadConditionsTypeEClass;
 	}
 
 	/**
@@ -21985,8 +23616,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightLoadCaseType_Name() {
-		return (EReference) getFlightLoadCaseType().getEStructuralFeatures().get(0);
+	public EReference getFlightLoadConditionsType_Description() {
+		return (EReference) getFlightLoadConditionsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -21995,8 +23626,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightLoadCaseType_Description() {
-		return (EReference) getFlightLoadCaseType().getEStructuralFeatures().get(1);
+	public EReference getFlightLoadConditionsType_SafetyFactor() {
+		return (EReference) getFlightLoadConditionsType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -22005,8 +23636,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightLoadCaseType_AeroDataSetUID() {
-		return (EReference) getFlightLoadCaseType().getEStructuralFeatures().get(2);
+	public EReference getFlightLoadConditionsType_Accelerations() {
+		return (EReference) getFlightLoadConditionsType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -22015,8 +23646,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightLoadCaseType_LoadCondition() {
-		return (EReference) getFlightLoadCaseType().getEStructuralFeatures().get(3);
+	public EReference getFlightLoadConditionsType_RotationRates() {
+		return (EReference) getFlightLoadConditionsType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -22025,8 +23656,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightLoadCaseType_State() {
-		return (EReference) getFlightLoadCaseType().getEStructuralFeatures().get(4);
+	public EAttribute getFlightLoadConditionsType_SizingType() {
+		return (EAttribute) getFlightLoadConditionsType().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -22035,8 +23666,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightLoadCaseType_AircraftSettings() {
-		return (EReference) getFlightLoadCaseType().getEStructuralFeatures().get(5);
+	public EReference getFlightLoadConditionsType_AngleOfSideslip() {
+		return (EReference) getFlightLoadConditionsType().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -22045,8 +23676,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightLoadCaseType_Mass() {
-		return (EReference) getFlightLoadCaseType().getEStructuralFeatures().get(6);
+	public EReference getFlightLoadConditionsType_AngleOfAttack() {
+		return (EReference) getFlightLoadConditionsType().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -22055,8 +23686,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightLoadCaseType_NodalLoads() {
-		return (EReference) getFlightLoadCaseType().getEStructuralFeatures().get(7);
+	public EReference getFlightLoadConditionsType_Gust() {
+		return (EReference) getFlightLoadConditionsType().getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -22065,8 +23696,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightLoadCaseType_CutLoads() {
-		return (EReference) getFlightLoadCaseType().getEStructuralFeatures().get(8);
+	public EReference getFlightLoadConditionsType_DesignSpeed() {
+		return (EReference) getFlightLoadConditionsType().getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -22075,8 +23706,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightLoadCaseType_ExternalAmifFile() {
-		return (EReference) getFlightLoadCaseType().getEStructuralFeatures().get(9);
+	public EClass getFlightLoadDataType() {
+		if (flightLoadDataTypeEClass == null) {
+			flightLoadDataTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(318);
+		}
+		return flightLoadDataTypeEClass;
 	}
 
 	/**
@@ -22085,8 +23720,42 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getFlightLoadCaseType_UID() {
-		return (EAttribute) getFlightLoadCaseType().getEStructuralFeatures().get(10);
+	public EReference getFlightLoadDataType_NodalLoadSets() {
+		return (EReference) getFlightLoadDataType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightLoadDataType_CutLoadSets() {
+		return (EReference) getFlightLoadDataType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getFlightPathAngleType() {
+		if (flightPathAngleTypeEClass == null) {
+			flightPathAngleTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(319);
+		}
+		return flightPathAngleTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFlightPathAngleType_UID() {
+		return (EAttribute) getFlightPathAngleType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -22098,7 +23767,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFlightPathType() {
 		if (flightPathTypeEClass == null) {
 			flightPathTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(284);
+					.getEClassifiers().get(320);
 		}
 		return flightPathTypeEClass;
 	}
@@ -22152,7 +23821,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFlightPerformanceCasesType() {
 		if (flightPerformanceCasesTypeEClass == null) {
 			flightPerformanceCasesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(285);
+					.getEClassifiers().get(321);
 		}
 		return flightPerformanceCasesTypeEClass;
 	}
@@ -22163,7 +23832,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightPerformanceCasesType_PerformanceCase() {
+	public EReference getFlightPerformanceCasesType_FlightPerformanceCase() {
 		return (EReference) getFlightPerformanceCasesType().getEStructuralFeatures().get(0);
 	}
 
@@ -22176,7 +23845,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFlightPerformanceCaseType() {
 		if (flightPerformanceCaseTypeEClass == null) {
 			flightPerformanceCaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(286);
+					.getEClassifiers().get(322);
 		}
 		return flightPerformanceCaseTypeEClass;
 	}
@@ -22187,7 +23856,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightPerformanceCaseType_Takeoff() {
+	public EReference getFlightPerformanceCaseType_Name() {
 		return (EReference) getFlightPerformanceCaseType().getEStructuralFeatures().get(0);
 	}
 
@@ -22197,7 +23866,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightPerformanceCaseType_Landing() {
+	public EReference getFlightPerformanceCaseType_Description() {
 		return (EReference) getFlightPerformanceCaseType().getEStructuralFeatures().get(1);
 	}
 
@@ -22207,8 +23876,58 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getFlightPerformanceCaseType_FlightPerformanceReqUID() {
+		return (EReference) getFlightPerformanceCaseType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceCaseType_Takeoff() {
+		return (EReference) getFlightPerformanceCaseType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceCaseType_Landing() {
+		return (EReference) getFlightPerformanceCaseType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceCaseType_Turn() {
+		return (EReference) getFlightPerformanceCaseType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceCaseType_LevelFlight() {
+		return (EReference) getFlightPerformanceCaseType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getFlightPerformanceCaseType_UID() {
-		return (EAttribute) getFlightPerformanceCaseType().getEStructuralFeatures().get(2);
+		return (EAttribute) getFlightPerformanceCaseType().getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -22220,7 +23939,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFlightPerformanceLandingType() {
 		if (flightPerformanceLandingTypeEClass == null) {
 			flightPerformanceLandingTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(287);
+					.getEClassifiers().get(323);
 		}
 		return flightPerformanceLandingTypeEClass;
 	}
@@ -22251,10 +23970,162 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getFlightPerformanceLevelType() {
+		if (flightPerformanceLevelTypeEClass == null) {
+			flightPerformanceLevelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(324);
+		}
+		return flightPerformanceLevelTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceLevelType_SpecificExcessPower() {
+		return (EReference) getFlightPerformanceLevelType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getFlightPerformanceRequirementsType() {
+		if (flightPerformanceRequirementsTypeEClass == null) {
+			flightPerformanceRequirementsTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(325);
+		}
+		return flightPerformanceRequirementsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceRequirementsType_FlightPerformanceRequirement() {
+		return (EReference) getFlightPerformanceRequirementsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getFlightPerformanceRequirementType() {
+		if (flightPerformanceRequirementTypeEClass == null) {
+			flightPerformanceRequirementTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(326);
+		}
+		return flightPerformanceRequirementTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceRequirementType_Name() {
+		return (EReference) getFlightPerformanceRequirementType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceRequirementType_Description() {
+		return (EReference) getFlightPerformanceRequirementType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceRequirementType_RequirementClassification() {
+		return (EReference) getFlightPerformanceRequirementType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceRequirementType_WeightAndBalanceUID() {
+		return (EReference) getFlightPerformanceRequirementType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceRequirementType_MissionUID() {
+		return (EReference) getFlightPerformanceRequirementType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceRequirementType_PointPerformanceUIDs() {
+		return (EReference) getFlightPerformanceRequirementType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceRequirementType_Configurations() {
+		return (EReference) getFlightPerformanceRequirementType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceRequirementType_PerformanceMaps() {
+		return (EReference) getFlightPerformanceRequirementType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFlightPerformanceRequirementType_UID() {
+		return (EAttribute) getFlightPerformanceRequirementType().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getFlightPerformanceTakeoffType() {
 		if (flightPerformanceTakeoffTypeEClass == null) {
 			flightPerformanceTakeoffTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(288);
+					.getEClassifiers().get(327);
 		}
 		return flightPerformanceTakeoffTypeEClass;
 	}
@@ -22285,12 +24156,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getFlightPerformanceType() {
-		if (flightPerformanceTypeEClass == null) {
-			flightPerformanceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(289);
+	public EClass getFlightPerformanceTurnType() {
+		if (flightPerformanceTurnTypeEClass == null) {
+			flightPerformanceTurnTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(328);
 		}
-		return flightPerformanceTypeEClass;
+		return flightPerformanceTurnTypeEClass;
 	}
 
 	/**
@@ -22299,8 +24170,42 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlightPerformanceType_PerformanceCases() {
-		return (EReference) getFlightPerformanceType().getEStructuralFeatures().get(0);
+	public EReference getFlightPerformanceTurnType_SustainableLoadFactor() {
+		return (EReference) getFlightPerformanceTurnType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPerformanceTurnType_InstantaneousLoadFactor() {
+		return (EReference) getFlightPerformanceTurnType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getFlightPointsType() {
+		if (flightPointsTypeEClass == null) {
+			flightPointsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(329);
+		}
+		return flightPointsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFlightPointsType_FlightPoint() {
+		return (EReference) getFlightPointsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -22312,7 +24217,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFlightPointType() {
 		if (flightPointTypeEClass == null) {
 			flightPointTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(290);
+					.getEClassifiers().get(330);
 		}
 		return flightPointTypeEClass;
 	}
@@ -22606,7 +24511,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFlightsType() {
 		if (flightsTypeEClass == null) {
 			flightsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(291);
+					.get(331);
 		}
 		return flightsTypeEClass;
 	}
@@ -22630,7 +24535,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFlightSystemsType() {
 		if (flightSystemsTypeEClass == null) {
 			flightSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(292);
+					.getEClassifiers().get(332);
 		}
 		return flightSystemsTypeEClass;
 	}
@@ -22654,7 +24559,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFlightType() {
 		if (flightTypeEClass == null) {
 			flightTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(293);
+					.get(333);
 		}
 		return flightTypeEClass;
 	}
@@ -22758,7 +24663,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFloorPanelsType() {
 		if (floorPanelsTypeEClass == null) {
 			floorPanelsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(294);
+					.getEClassifiers().get(334);
 		}
 		return floorPanelsTypeEClass;
 	}
@@ -22782,7 +24687,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFloorPanelType() {
 		if (floorPanelTypeEClass == null) {
 			floorPanelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(295);
+					.getEClassifiers().get(335);
 		}
 		return floorPanelTypeEClass;
 	}
@@ -22863,12 +24768,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getFlowConditionType() {
-		if (flowConditionTypeEClass == null) {
-			flowConditionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(296);
+	public EClass getFlyingQualitiesCasesType() {
+		if (flyingQualitiesCasesTypeEClass == null) {
+			flyingQualitiesCasesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(336);
 		}
-		return flowConditionTypeEClass;
+		return flyingQualitiesCasesTypeEClass;
 	}
 
 	/**
@@ -22877,8 +24782,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlowConditionType_MachNumber() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(0);
+	public EReference getFlyingQualitiesCasesType_FlyingQualitiesCase() {
+		return (EReference) getFlyingQualitiesCasesType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -22887,232 +24792,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlowConditionType_ReynoldsNumber() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_StandardAltitude() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_DeltaTemperature() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_KinematicViscosity() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_Airspeed() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_SpeedOfSound() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_ReynoldsNumber1() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_StandardAltitude1() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_DeltaTemperature1() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_SpeedOfSound1() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_Airspeed1() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_KinematicViscosity1() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_Airspeed2() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(13);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_StandardAltitude2() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(14);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_DeltaTemperature2() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(15);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_KinematicViscosity2() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(16);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_SpeedOfSound2() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(17);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_AngleOfSideslip() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(18);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_AngleOfAttack() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(19);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_TargetLiftCoefficient() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(20);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_QuasiSteadyRotation() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(21);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFlowConditionType_ControlSurfaces() {
-		return (EReference) getFlowConditionType().getEStructuralFeatures().get(22);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getFlyingQualitiesType() {
-		if (flyingQualitiesTypeEClass == null) {
-			flyingQualitiesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(297);
+	public EClass getFlyingQualitiesCaseType() {
+		if (flyingQualitiesCaseTypeEClass == null) {
+			flyingQualitiesCaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(337);
 		}
-		return flyingQualitiesTypeEClass;
+		return flyingQualitiesCaseTypeEClass;
 	}
 
 	/**
@@ -23121,8 +24806,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFlyingQualitiesType_FqCase() {
-		return (EReference) getFlyingQualitiesType().getEStructuralFeatures().get(0);
+	public EReference getFlyingQualitiesCaseType_Name() {
+		return (EReference) getFlyingQualitiesCaseType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -23131,12 +24816,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getFqCaseType() {
-		if (fqCaseTypeEClass == null) {
-			fqCaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(300);
-		}
-		return fqCaseTypeEClass;
+	public EReference getFlyingQualitiesCaseType_Description() {
+		return (EReference) getFlyingQualitiesCaseType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -23145,8 +24826,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFqCaseType_Class() {
-		return (EReference) getFqCaseType().getEStructuralFeatures().get(0);
+	public EReference getFlyingQualitiesCaseType_Class() {
+		return (EReference) getFlyingQualitiesCaseType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -23155,8 +24836,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFqCaseType_Category() {
-		return (EReference) getFqCaseType().getEStructuralFeatures().get(1);
+	public EReference getFlyingQualitiesCaseType_Category() {
+		return (EReference) getFlyingQualitiesCaseType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -23165,8 +24846,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFqCaseType_Longitudinal() {
-		return (EReference) getFqCaseType().getEStructuralFeatures().get(2);
+	public EReference getFlyingQualitiesCaseType_Longitudinal() {
+		return (EReference) getFlyingQualitiesCaseType().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -23175,8 +24856,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFqCaseType_Lateral() {
-		return (EReference) getFqCaseType().getEStructuralFeatures().get(3);
+	public EReference getFlyingQualitiesCaseType_Lateral() {
+		return (EReference) getFlyingQualitiesCaseType().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -23185,8 +24866,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFqCaseType_CharParameters() {
-		return (EReference) getFqCaseType().getEStructuralFeatures().get(4);
+	public EReference getFlyingQualitiesCaseType_CharParameters() {
+		return (EReference) getFlyingQualitiesCaseType().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -23195,8 +24876,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFqCaseType_Ratings() {
-		return (EReference) getFqCaseType().getEStructuralFeatures().get(5);
+	public EReference getFlyingQualitiesCaseType_Ratings() {
+		return (EReference) getFlyingQualitiesCaseType().getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -23205,8 +24886,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getFqCaseType_UID() {
-		return (EAttribute) getFqCaseType().getEStructuralFeatures().get(6);
+	public EAttribute getFlyingQualitiesCaseType_UID() {
+		return (EAttribute) getFlyingQualitiesCaseType().getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -23218,7 +24899,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFqCharParametersType() {
 		if (fqCharParametersTypeEClass == null) {
 			fqCharParametersTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(301);
+					.getEClassifiers().get(340);
 		}
 		return fqCharParametersTypeEClass;
 	}
@@ -23312,7 +24993,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFqEiglatType() {
 		if (fqEiglatTypeEClass == null) {
 			fqEiglatTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(302);
+					.get(341);
 		}
 		return fqEiglatTypeEClass;
 	}
@@ -23426,7 +25107,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFqLateralType() {
 		if (fqLateralTypeEClass == null) {
 			fqLateralTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(303);
+					.getEClassifiers().get(342);
 		}
 		return fqLateralTypeEClass;
 	}
@@ -23610,7 +25291,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFqLongitudinalType() {
 		if (fqLongitudinalTypeEClass == null) {
 			fqLongitudinalTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(304);
+					.getEClassifiers().get(343);
 		}
 		return fqLongitudinalTypeEClass;
 	}
@@ -23684,7 +25365,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFqPhugoidType() {
 		if (fqPhugoidTypeEClass == null) {
 			fqPhugoidTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(305);
+					.getEClassifiers().get(344);
 		}
 		return fqPhugoidTypeEClass;
 	}
@@ -23718,7 +25399,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFqRatingsType() {
 		if (fqRatingsTypeEClass == null) {
 			fqRatingsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(306);
+					.getEClassifiers().get(345);
 		}
 		return fqRatingsTypeEClass;
 	}
@@ -23802,7 +25483,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFqRollPerfType() {
 		if (fqRollPerfTypeEClass == null) {
 			fqRollPerfTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(307);
+					.getEClassifiers().get(346);
 		}
 		return fqRollPerfTypeEClass;
 	}
@@ -23836,7 +25517,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFqRoloscType() {
 		if (fqRoloscTypeEClass == null) {
 			fqRoloscTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(308);
+					.get(347);
 		}
 		return fqRoloscTypeEClass;
 	}
@@ -23900,7 +25581,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFqShortPeriodType() {
 		if (fqShortPeriodTypeEClass == null) {
 			fqShortPeriodTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(309);
+					.getEClassifiers().get(348);
 		}
 		return fqShortPeriodTypeEClass;
 	}
@@ -23964,7 +25645,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFqTreffType() {
 		if (fqTreffTypeEClass == null) {
 			fqTreffTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(310);
+					.get(349);
 		}
 		return fqTreffTypeEClass;
 	}
@@ -23998,7 +25679,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFramesAssemblyType() {
 		if (framesAssemblyTypeEClass == null) {
 			framesAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(311);
+					.getEClassifiers().get(350);
 		}
 		return framesAssemblyTypeEClass;
 	}
@@ -24022,7 +25703,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFrameType() {
 		if (frameTypeEClass == null) {
 			frameTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(312);
+					.get(351);
 		}
 		return frameTypeEClass;
 	}
@@ -24056,7 +25737,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFreePathType() {
 		if (freePathTypeEClass == null) {
 			freePathTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(313);
+					.get(352);
 		}
 		return freePathTypeEClass;
 	}
@@ -24087,10 +25768,58 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getFuelConsumedType() {
+		if (fuelConsumedTypeEClass == null) {
+			fuelConsumedTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(353);
+		}
+		return fuelConsumedTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFuelConsumedType_UID() {
+		return (EAttribute) getFuelConsumedType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getFuelFractionType() {
+		if (fuelFractionTypeEClass == null) {
+			fuelFractionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(354);
+		}
+		return fuelFractionTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFuelFractionType_UID() {
+		return (EAttribute) getFuelFractionType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getFuelInTankType() {
 		if (fuelInTankTypeEClass == null) {
 			fuelInTankTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(314);
+					.getEClassifiers().get(355);
 		}
 		return fuelInTankTypeEClass;
 	}
@@ -24111,12 +25840,80 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getFuelMassFractionType() {
+		if (fuelMassFractionTypeEClass == null) {
+			fuelMassFractionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(356);
+		}
+		return fuelMassFractionTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFuelMassFractionType_FromSegmentUID() {
+		return (EReference) getFuelMassFractionType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFuelMassFractionType_ToSegmentUID() {
+		return (EReference) getFuelMassFractionType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFuelMassFractionType_Fraction() {
+		return (EReference) getFuelMassFractionType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getFuelPlanningTypeType() {
 		if (fuelPlanningTypeTypeEClass == null) {
 			fuelPlanningTypeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(315);
+					.getEClassifiers().get(357);
 		}
 		return fuelPlanningTypeTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getFuelRemainingType() {
+		if (fuelRemainingTypeEClass == null) {
+			fuelRemainingTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(358);
+		}
+		return fuelRemainingTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFuelRemainingType_UID() {
+		return (EAttribute) getFuelRemainingType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -24128,7 +25925,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuelsType() {
 		if (fuelsTypeEClass == null) {
 			fuelsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(316);
+					.get(359);
 		}
 		return fuelsTypeEClass;
 	}
@@ -24152,7 +25949,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuelTankVolumeType() {
 		if (fuelTankVolumeTypeEClass == null) {
 			fuelTankVolumeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(317);
+					.getEClassifiers().get(360);
 		}
 		return fuelTankVolumeTypeEClass;
 	}
@@ -24216,7 +26013,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuelType() {
 		if (fuelTypeEClass == null) {
 			fuelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(318);
+					.get(361);
 		}
 		return fuelTypeEClass;
 	}
@@ -24340,7 +26137,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuselageAeroPerformanceType() {
 		if (fuselageAeroPerformanceTypeEClass == null) {
 			fuselageAeroPerformanceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(319);
+					.getEClassifiers().get(362);
 		}
 		return fuselageAeroPerformanceTypeEClass;
 	}
@@ -24381,54 +26178,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getFuselageCoefficientsType() {
-		if (fuselageCoefficientsTypeEClass == null) {
-			fuselageCoefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(320);
-		}
-		return fuselageCoefficientsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselageCoefficientsType_FuselageUID() {
-		return (EReference) getFuselageCoefficientsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselageCoefficientsType_Coefficients() {
-		return (EReference) getFuselageCoefficientsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselageCoefficientsType_Segments() {
-		return (EReference) getFuselageCoefficientsType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getFuselageCutOutsType() {
 		if (fuselageCutOutsTypeEClass == null) {
 			fuselageCutOutsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(321);
+					.getEClassifiers().get(363);
 		}
 		return fuselageCutOutsTypeEClass;
 	}
@@ -24452,7 +26205,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuselageCutOutType() {
 		if (fuselageCutOutTypeEClass == null) {
 			fuselageCutOutTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(322);
+					.getEClassifiers().get(364);
 		}
 		return fuselageCutOutTypeEClass;
 	}
@@ -24616,7 +26369,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuselageElementsType() {
 		if (fuselageElementsTypeEClass == null) {
 			fuselageElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(323);
+					.getEClassifiers().get(365);
 		}
 		return fuselageElementsTypeEClass;
 	}
@@ -24640,7 +26393,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuselageElementType() {
 		if (fuselageElementTypeEClass == null) {
 			fuselageElementTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(324);
+					.getEClassifiers().get(366);
 		}
 		return fuselageElementTypeEClass;
 	}
@@ -24704,7 +26457,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuselageFuelTanksType() {
 		if (fuselageFuelTanksTypeEClass == null) {
 			fuselageFuelTanksTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(325);
+					.getEClassifiers().get(367);
 		}
 		return fuselageFuelTanksTypeEClass;
 	}
@@ -24728,7 +26481,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuselageFuelTankType() {
 		if (fuselageFuelTankTypeEClass == null) {
 			fuselageFuelTankTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(326);
+					.getEClassifiers().get(368);
 		}
 		return fuselageFuelTankTypeEClass;
 	}
@@ -24792,7 +26545,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuselageProfilesType() {
 		if (fuselageProfilesTypeEClass == null) {
 			fuselageProfilesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(327);
+					.getEClassifiers().get(369);
 		}
 		return fuselageProfilesTypeEClass;
 	}
@@ -24816,7 +26569,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuselagesAeroPerformanceType() {
 		if (fuselagesAeroPerformanceTypeEClass == null) {
 			fuselagesAeroPerformanceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(328);
+					.getEClassifiers().get(370);
 		}
 		return fuselagesAeroPerformanceTypeEClass;
 	}
@@ -24837,44 +26590,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getFuselagesCoefficientsType() {
-		if (fuselagesCoefficientsTypeEClass == null) {
-			fuselagesCoefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(329);
-		}
-		return fuselagesCoefficientsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselagesCoefficientsType_Fuselage() {
-		return (EReference) getFuselagesCoefficientsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselagesCoefficientsType_Calibration() {
-		return (EReference) getFuselagesCoefficientsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getFuselageSectionsType() {
 		if (fuselageSectionsTypeEClass == null) {
 			fuselageSectionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(330);
+					.getEClassifiers().get(371);
 		}
 		return fuselageSectionsTypeEClass;
 	}
@@ -24898,7 +26617,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuselageSectionType() {
 		if (fuselageSectionTypeEClass == null) {
 			fuselageSectionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(331);
+					.getEClassifiers().get(372);
 		}
 		return fuselageSectionTypeEClass;
 	}
@@ -24959,162 +26678,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getFuselageSegmentCoefficientsType() {
-		if (fuselageSegmentCoefficientsTypeEClass == null) {
-			fuselageSegmentCoefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(332);
-		}
-		return fuselageSegmentCoefficientsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselageSegmentCoefficientsType_SegmentUID() {
-		return (EReference) getFuselageSegmentCoefficientsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselageSegmentCoefficientsType_Strip() {
-		return (EReference) getFuselageSegmentCoefficientsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getFuselageSegmentsCoefficientsType() {
-		if (fuselageSegmentsCoefficientsTypeEClass == null) {
-			fuselageSegmentsCoefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(333);
-		}
-		return fuselageSegmentsCoefficientsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselageSegmentsCoefficientsType_Segment() {
-		return (EReference) getFuselageSegmentsCoefficientsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselageSegmentsCoefficientsType_Calibration() {
-		return (EReference) getFuselageSegmentsCoefficientsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getFuselageSegmentStripCoefficientsType() {
-		if (fuselageSegmentStripCoefficientsTypeEClass == null) {
-			fuselageSegmentStripCoefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(334);
-		}
-		return fuselageSegmentStripCoefficientsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselageSegmentStripCoefficientsType_Cfx() {
-		return (EReference) getFuselageSegmentStripCoefficientsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselageSegmentStripCoefficientsType_Cfy() {
-		return (EReference) getFuselageSegmentStripCoefficientsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselageSegmentStripCoefficientsType_Cfz() {
-		return (EReference) getFuselageSegmentStripCoefficientsType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselageSegmentStripCoefficientsType_Cmx() {
-		return (EReference) getFuselageSegmentStripCoefficientsType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselageSegmentStripCoefficientsType_Cmy() {
-		return (EReference) getFuselageSegmentStripCoefficientsType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselageSegmentStripCoefficientsType_Cmz() {
-		return (EReference) getFuselageSegmentStripCoefficientsType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getFuselageSegmentStripCoefficientsType_Reference() {
-		return (EReference) getFuselageSegmentStripCoefficientsType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getFuselageSegmentsType() {
 		if (fuselageSegmentsTypeEClass == null) {
 			fuselageSegmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(335);
+					.getEClassifiers().get(373);
 		}
 		return fuselageSegmentsTypeEClass;
 	}
@@ -25138,7 +26705,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuselageSegmentType() {
 		if (fuselageSegmentTypeEClass == null) {
 			fuselageSegmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(336);
+					.getEClassifiers().get(374);
 		}
 		return fuselageSegmentTypeEClass;
 	}
@@ -25212,7 +26779,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuselageStructureType() {
 		if (fuselageStructureTypeEClass == null) {
 			fuselageStructureTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(337);
+					.getEClassifiers().get(375);
 		}
 		return fuselageStructureTypeEClass;
 	}
@@ -25426,7 +26993,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuselagesType() {
 		if (fuselagesTypeEClass == null) {
 			fuselagesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(338);
+					.getEClassifiers().get(376);
 		}
 		return fuselagesTypeEClass;
 	}
@@ -25450,7 +27017,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getFuselageType() {
 		if (fuselageTypeEClass == null) {
 			fuselageTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(339);
+					.get(377);
 		}
 		return fuselageTypeEClass;
 	}
@@ -25561,7 +27128,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFuselageType_DynamicAircraftModel() {
+	public EReference getFuselageType_FuelTanks() {
 		return (EReference) getFuselageType().getEStructuralFeatures().get(10);
 	}
 
@@ -25571,7 +27138,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFuselageType_FuelTanks() {
+	public EReference getFuselageType_CutOuts() {
 		return (EReference) getFuselageType().getEStructuralFeatures().get(11);
 	}
 
@@ -25581,18 +27148,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFuselageType_CutOuts() {
-		return (EReference) getFuselageType().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EAttribute getFuselageType_Symmetry() {
-		return (EAttribute) getFuselageType().getEStructuralFeatures().get(13);
+		return (EAttribute) getFuselageType().getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -25602,7 +27159,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 */
 	@Override
 	public EAttribute getFuselageType_UID() {
-		return (EAttribute) getFuselageType().getEStructuralFeatures().get(14);
+		return (EAttribute) getFuselageType().getEStructuralFeatures().get(13);
 	}
 
 	/**
@@ -25611,12 +27168,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getGearComponentsType() {
-		if (gearComponentsTypeEClass == null) {
-			gearComponentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(340);
+	public EClass getGalleyElementsType() {
+		if (galleyElementsTypeEClass == null) {
+			galleyElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(378);
 		}
-		return gearComponentsTypeEClass;
+		return galleyElementsTypeEClass;
 	}
 
 	/**
@@ -25625,8 +27182,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGearComponentsType_MainStrut() {
-		return (EReference) getGearComponentsType().getEStructuralFeatures().get(0);
+	public EReference getGalleyElementsType_GalleyElement() {
+		return (EReference) getGalleyElementsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -25635,8 +27192,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGearComponentsType_Piston() {
-		return (EReference) getGearComponentsType().getEStructuralFeatures().get(1);
+	public EClass getGalleyElementType() {
+		if (galleyElementTypeEClass == null) {
+			galleyElementTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(379);
+		}
+		return galleyElementTypeEClass;
 	}
 
 	/**
@@ -25645,8 +27206,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGearComponentsType_DragStrut() {
-		return (EReference) getGearComponentsType().getEStructuralFeatures().get(2);
+	public EReference getGalleyElementType_Description() {
+		return (EReference) getGalleyElementType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -25655,8 +27216,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGearComponentsType_PintleStrut() {
-		return (EReference) getGearComponentsType().getEStructuralFeatures().get(3);
+	public EReference getGalleyElementType_Geometry() {
+		return (EReference) getGalleyElementType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -25665,8 +27226,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGearComponentsType_SideStruts() {
-		return (EReference) getGearComponentsType().getEStructuralFeatures().get(4);
+	public EReference getGalleyElementType_Mass() {
+		return (EReference) getGalleyElementType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -25675,8 +27236,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGearComponentsType_MainActuator() {
-		return (EReference) getGearComponentsType().getEStructuralFeatures().get(5);
+	public EReference getGalleyElementType_NumberOfTrolleys() {
+		return (EReference) getGalleyElementType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -25685,8 +27246,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGearComponentsType_Bogie() {
-		return (EReference) getGearComponentsType().getEStructuralFeatures().get(6);
+	public EAttribute getGalleyElementType_UID() {
+		return (EAttribute) getGalleyElementType().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -25695,8 +27256,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGearComponentsType_Axles() {
-		return (EReference) getGearComponentsType().getEStructuralFeatures().get(7);
+	public EClass getGalleysType() {
+		if (galleysTypeEClass == null) {
+			galleysTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(380);
+		}
+		return galleysTypeEClass;
 	}
 
 	/**
@@ -25705,8 +27270,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGearComponentsType_Wheels() {
-		return (EReference) getGearComponentsType().getEStructuralFeatures().get(8);
+	public EReference getGalleysType_Galley() {
+		return (EReference) getGalleysType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -25718,7 +27283,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getGearDeflectionVectorsType() {
 		if (gearDeflectionVectorsTypeEClass == null) {
 			gearDeflectionVectorsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(341);
+					.getEClassifiers().get(381);
 		}
 		return gearDeflectionVectorsTypeEClass;
 	}
@@ -25742,7 +27307,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getGearDeflectionVectorType() {
 		if (gearDeflectionVectorTypeEClass == null) {
 			gearDeflectionVectorTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(342);
+					.getEClassifiers().get(382);
 		}
 		return gearDeflectionVectorTypeEClass;
 	}
@@ -25776,7 +27341,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getGeneralStructuralMemberPositionType() {
 		if (generalStructuralMemberPositionTypeEClass == null) {
 			generalStructuralMemberPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(343);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(383);
 		}
 		return generalStructuralMemberPositionTypeEClass;
 	}
@@ -25930,7 +27495,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getGeneralStructuralMembersAssemblyType() {
 		if (generalStructuralMembersAssemblyTypeEClass == null) {
 			generalStructuralMembersAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(344);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(384);
 		}
 		return generalStructuralMembersAssemblyTypeEClass;
 	}
@@ -25954,7 +27519,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getGeneralStructuralMemberType() {
 		if (generalStructuralMemberTypeEClass == null) {
 			generalStructuralMemberTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(345);
+					.getEClassifiers().get(385);
 		}
 		return generalStructuralMemberTypeEClass;
 	}
@@ -25995,68 +27560,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getGenericComponentCoefficientsType() {
-		if (genericComponentCoefficientsTypeEClass == null) {
-			genericComponentCoefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(346);
-		}
-		return genericComponentCoefficientsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGenericComponentCoefficientsType_ParentUID() {
-		return (EReference) getGenericComponentCoefficientsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGenericComponentCoefficientsType_Coefficients() {
-		return (EReference) getGenericComponentCoefficientsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getGenericComponentsCoefficientsType() {
-		if (genericComponentsCoefficientsTypeEClass == null) {
-			genericComponentsCoefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(347);
-		}
-		return genericComponentsCoefficientsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGenericComponentsCoefficientsType_GenericComponent() {
-		return (EReference) getGenericComponentsCoefficientsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getGenericCostType() {
 		if (genericCostTypeEClass == null) {
 			genericCostTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(348);
+					.getEClassifiers().get(386);
 		}
 		return genericCostTypeEClass;
 	}
@@ -26097,10 +27604,58 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getGenericFloorElementsType() {
+		if (genericFloorElementsTypeEClass == null) {
+			genericFloorElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(387);
+		}
+		return genericFloorElementsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGenericFloorElementsType_GenericFloorElement() {
+		return (EReference) getGenericFloorElementsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getGenericFloorModulesType() {
+		if (genericFloorModulesTypeEClass == null) {
+			genericFloorModulesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(388);
+		}
+		return genericFloorModulesTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGenericFloorModulesType_GenericFloorModule() {
+		return (EReference) getGenericFloorModulesType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getGenericGeometricComponentType() {
 		if (genericGeometricComponentTypeEClass == null) {
 			genericGeometricComponentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(349);
+					.getEClassifiers().get(389);
 		}
 		return genericGeometricComponentTypeEClass;
 	}
@@ -26184,7 +27739,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getGenericGeometryComponentsType() {
 		if (genericGeometryComponentsTypeEClass == null) {
 			genericGeometryComponentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(350);
+					.getEClassifiers().get(390);
 		}
 		return genericGeometryComponentsTypeEClass;
 	}
@@ -26205,10 +27760,44 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getGenericGeometryComponentType() {
+		if (genericGeometryComponentTypeEClass == null) {
+			genericGeometryComponentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(391);
+		}
+		return genericGeometryComponentTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGenericGeometryComponentType_LinkToFile() {
+		return (EReference) getGenericGeometryComponentType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGenericGeometryComponentType_Transformation() {
+		return (EReference) getGenericGeometryComponentType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getGenericMassType() {
 		if (genericMassTypeEClass == null) {
 			genericMassTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(351);
+					.getEClassifiers().get(392);
 		}
 		return genericMassTypeEClass;
 	}
@@ -26249,7 +27838,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGenericMassType_Mass() {
+	public EReference getGenericMassType_ComponentUID() {
 		return (EReference) getGenericMassType().getEStructuralFeatures().get(3);
 	}
 
@@ -26259,7 +27848,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGenericMassType_Location() {
+	public EReference getGenericMassType_Mass() {
 		return (EReference) getGenericMassType().getEStructuralFeatures().get(4);
 	}
 
@@ -26269,7 +27858,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGenericMassType_Orientation() {
+	public EReference getGenericMassType_Location() {
 		return (EReference) getGenericMassType().getEStructuralFeatures().get(5);
 	}
 
@@ -26279,7 +27868,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGenericMassType_MassInertia() {
+	public EReference getGenericMassType_Orientation() {
 		return (EReference) getGenericMassType().getEStructuralFeatures().get(6);
 	}
 
@@ -26289,8 +27878,18 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getGenericMassType_MassInertia() {
+		return (EReference) getGenericMassType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getGenericMassType_UID() {
-		return (EAttribute) getGenericMassType().getEStructuralFeatures().get(7);
+		return (EAttribute) getGenericMassType().getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -26302,7 +27901,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getGenericSystemsType() {
 		if (genericSystemsTypeEClass == null) {
 			genericSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(352);
+					.getEClassifiers().get(393);
 		}
 		return genericSystemsTypeEClass;
 	}
@@ -26326,7 +27925,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getGenericSystemType() {
 		if (genericSystemTypeEClass == null) {
 			genericSystemTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(353);
+					.getEClassifiers().get(394);
 		}
 		return genericSystemTypeEClass;
 	}
@@ -26397,84 +27996,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getGeogenWingOutputOptionsType() {
-		if (geogenWingOutputOptionsTypeEClass == null) {
-			geogenWingOutputOptionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(354);
-		}
-		return geogenWingOutputOptionsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGeogenWingOutputOptionsType_DestinationWingUID() {
-		return (EReference) getGeogenWingOutputOptionsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGeogenWingOutputOptionsType_ParentUID() {
-		return (EReference) getGeogenWingOutputOptionsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGeogenWingOutputOptionsType_Symmetry() {
-		return (EReference) getGeogenWingOutputOptionsType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGeogenWingOutputOptionsType_SectionDistributionMode() {
-		return (EReference) getGeogenWingOutputOptionsType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGeogenWingOutputOptionsType_NumberOfSections() {
-		return (EReference) getGeogenWingOutputOptionsType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGeogenWingOutputOptionsType_NumberOfPointsPerSection() {
-		return (EReference) getGeogenWingOutputOptionsType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getGeographicPointConstraintType() {
 		if (geographicPointConstraintTypeEClass == null) {
 			geographicPointConstraintTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(355);
+					.getEClassifiers().get(395);
 		}
 		return geographicPointConstraintTypeEClass;
 	}
@@ -26518,7 +28043,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getGeographicPointType() {
 		if (geographicPointTypeEClass == null) {
 			geographicPointTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(356);
+					.getEClassifiers().get(396);
 		}
 		return geographicPointTypeEClass;
 	}
@@ -26572,7 +28097,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getGlobalAeroPerformanceType() {
 		if (globalAeroPerformanceTypeEClass == null) {
 			globalAeroPerformanceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(359);
+					.getEClassifiers().get(399);
 		}
 		return globalAeroPerformanceTypeEClass;
 	}
@@ -26606,7 +28131,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getGlobalBeamPropertiesType() {
 		if (globalBeamPropertiesTypeEClass == null) {
 			globalBeamPropertiesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(360);
+					.getEClassifiers().get(400);
 		}
 		return globalBeamPropertiesTypeEClass;
 	}
@@ -26637,7 +28162,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGlobalBeamPropertiesType_Consistancy() {
+	public EReference getGlobalBeamPropertiesType_Consistency() {
 		return (EReference) getGlobalBeamPropertiesType().getEStructuralFeatures().get(2);
 	}
 
@@ -26707,10 +28232,138 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getGlobalFlightPointType() {
+		if (globalFlightPointTypeEClass == null) {
+			globalFlightPointTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(401);
+		}
+		return globalFlightPointTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGlobalFlightPointType_Name() {
+		return (EReference) getGlobalFlightPointType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGlobalFlightPointType_Description() {
+		return (EReference) getGlobalFlightPointType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGlobalFlightPointType_Altitude() {
+		return (EReference) getGlobalFlightPointType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGlobalFlightPointType_MachNumber() {
+		return (EReference) getGlobalFlightPointType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGlobalFlightPointType_CalibratedAirSpeed() {
+		return (EReference) getGlobalFlightPointType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGlobalFlightPointType_TrueAirSpeed() {
+		return (EReference) getGlobalFlightPointType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGlobalFlightPointType_Environment() {
+		return (EReference) getGlobalFlightPointType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGlobalFlightPointType_UID() {
+		return (EAttribute) getGlobalFlightPointType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getGlobalPerformanceCasesType() {
+		if (globalPerformanceCasesTypeEClass == null) {
+			globalPerformanceCasesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(402);
+		}
+		return globalPerformanceCasesTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGlobalPerformanceCasesType_MissionDefinitions() {
+		return (EReference) getGlobalPerformanceCasesType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGlobalPerformanceCasesType_PointPerformanceDefinitions() {
+		return (EReference) getGlobalPerformanceCasesType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getGroundLoadCasesType() {
 		if (groundLoadCasesTypeEClass == null) {
 			groundLoadCasesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(361);
+					.getEClassifiers().get(403);
 		}
 		return groundLoadCasesTypeEClass;
 	}
@@ -26731,134 +28384,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getGroundLoadCaseType() {
-		if (groundLoadCaseTypeEClass == null) {
-			groundLoadCaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(362);
-		}
-		return groundLoadCaseTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGroundLoadCaseType_Name() {
-		return (EReference) getGroundLoadCaseType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGroundLoadCaseType_Description() {
-		return (EReference) getGroundLoadCaseType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGroundLoadCaseType_AeroDataSetUID() {
-		return (EReference) getGroundLoadCaseType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGroundLoadCaseType_LoadCondition() {
-		return (EReference) getGroundLoadCaseType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGroundLoadCaseType_State() {
-		return (EReference) getGroundLoadCaseType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGroundLoadCaseType_AircraftSettings() {
-		return (EReference) getGroundLoadCaseType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGroundLoadCaseType_Mass() {
-		return (EReference) getGroundLoadCaseType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGroundLoadCaseType_NodalLoads() {
-		return (EReference) getGroundLoadCaseType().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGroundLoadCaseType_CutLoads() {
-		return (EReference) getGroundLoadCaseType().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getGroundLoadCaseType_ExternalAmifFile() {
-		return (EReference) getGroundLoadCaseType().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getGroundLoadCaseType_UID() {
-		return (EAttribute) getGroundLoadCaseType().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getGuideCurveProfileGeometryType() {
 		if (guideCurveProfileGeometryTypeEClass == null) {
 			guideCurveProfileGeometryTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(363);
+					.getEClassifiers().get(404);
 		}
 		return guideCurveProfileGeometryTypeEClass;
 	}
@@ -26922,7 +28451,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getGuideCurveProfilesType() {
 		if (guideCurveProfilesTypeEClass == null) {
 			guideCurveProfilesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(364);
+					.getEClassifiers().get(405);
 		}
 		return guideCurveProfilesTypeEClass;
 	}
@@ -26946,7 +28475,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getGuideCurvesType() {
 		if (guideCurvesTypeEClass == null) {
 			guideCurvesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(365);
+					.getEClassifiers().get(406);
 		}
 		return guideCurvesTypeEClass;
 	}
@@ -26970,7 +28499,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getGuideCurveType() {
 		if (guideCurveTypeEClass == null) {
 			guideCurveTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(366);
+					.getEClassifiers().get(407);
 		}
 		return guideCurveTypeEClass;
 	}
@@ -27091,120 +28620,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getHandbookAeroLastTransitionRegionType() {
-		if (handbookAeroLastTransitionRegionTypeEClass == null) {
-			handbookAeroLastTransitionRegionTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(367);
+	public EClass getGustShapeType() {
+		if (gustShapeTypeEClass == null) {
+			gustShapeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(408);
 		}
-		return handbookAeroLastTransitionRegionTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getHandbookAeroLastTransitionRegionType_LaminarFormFactor() {
-		return (EReference) getHandbookAeroLastTransitionRegionType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getHandbookAeroLastTransitionRegionType_TurbulentFormFactor() {
-		return (EReference) getHandbookAeroLastTransitionRegionType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getHandbookAeroLastTransitionRegionType_PolynomialCoefficients() {
-		return (EReference) getHandbookAeroLastTransitionRegionType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getHandbookAeroPolynomialCoefficientsType() {
-		if (handbookAeroPolynomialCoefficientsTypeEClass == null) {
-			handbookAeroPolynomialCoefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(368);
-		}
-		return handbookAeroPolynomialCoefficientsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getHandbookAeroPolynomialCoefficientsType_PolynomialCoefficient() {
-		return (EReference) getHandbookAeroPolynomialCoefficientsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getHandbookAeroTransitionRegionType() {
-		if (handbookAeroTransitionRegionTypeEClass == null) {
-			handbookAeroTransitionRegionTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(369);
-		}
-		return handbookAeroTransitionRegionTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getHandbookAeroTransitionRegionType_MaxReynoldsNumber() {
-		return (EReference) getHandbookAeroTransitionRegionType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getHandbookAeroTransitionRegionType_LaminarFormFactor() {
-		return (EReference) getHandbookAeroTransitionRegionType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getHandbookAeroTransitionRegionType_TurbulentFormFactor() {
-		return (EReference) getHandbookAeroTransitionRegionType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getHandbookAeroTransitionRegionType_PolynomialCoefficients() {
-		return (EReference) getHandbookAeroTransitionRegionType().getEStructuralFeatures().get(3);
+		return gustShapeTypeEClass;
 	}
 
 	/**
@@ -27216,7 +28637,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getHeaderType() {
 		if (headerTypeEClass == null) {
 			headerTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(370);
+					.get(409);
 		}
 		return headerTypeEClass;
 	}
@@ -27247,8 +28668,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getHeaderType_Creator() {
-		return (EReference) getHeaderType().getEStructuralFeatures().get(2);
+	public EAttribute getHeaderType_Version() {
+		return (EAttribute) getHeaderType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -27257,7 +28678,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getHeaderType_Timestamp() {
+	public EReference getHeaderType_VersionInfos() {
 		return (EReference) getHeaderType().getEStructuralFeatures().get(3);
 	}
 
@@ -27267,8 +28688,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getHeaderType_Version() {
-		return (EReference) getHeaderType().getEStructuralFeatures().get(4);
+	public EClass getHeadingType() {
+		if (headingTypeEClass == null) {
+			headingTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(410);
+		}
+		return headingTypeEClass;
 	}
 
 	/**
@@ -27277,18 +28702,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getHeaderType_CpacsVersion() {
-		return (EAttribute) getHeaderType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getHeaderType_Updates() {
-		return (EReference) getHeaderType().getEStructuralFeatures().get(6);
+	public EAttribute getHeadingType_UID() {
+		return (EAttribute) getHeadingType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -27300,7 +28715,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getHingeMomentsMapType() {
 		if (hingeMomentsMapTypeEClass == null) {
 			hingeMomentsMapTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(371);
+					.getEClassifiers().get(411);
 		}
 		return hingeMomentsMapTypeEClass;
 	}
@@ -27384,7 +28799,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getHtpFwdInterfaceDefType() {
 		if (htpFwdInterfaceDefTypeEClass == null) {
 			htpFwdInterfaceDefTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(372);
+					.getEClassifiers().get(412);
 		}
 		return htpFwdInterfaceDefTypeEClass;
 	}
@@ -27468,7 +28883,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getHtpInterfaceDefType() {
 		if (htpInterfaceDefTypeEClass == null) {
 			htpInterfaceDefTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(373);
+					.getEClassifiers().get(413);
 		}
 		return htpInterfaceDefTypeEClass;
 	}
@@ -27592,7 +29007,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getHtpStructElemDefType() {
 		if (htpStructElemDefTypeEClass == null) {
 			htpStructElemDefTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(374);
+					.getEClassifiers().get(414);
 		}
 		return htpStructElemDefTypeEClass;
 	}
@@ -27673,24 +29088,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getIdentifierType() {
-		if (identifierTypeEClass == null) {
-			identifierTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(375);
-		}
-		return identifierTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getImpactSurfaceDefinitionType() {
 		if (impactSurfaceDefinitionTypeEClass == null) {
 			impactSurfaceDefinitionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(376);
+					.getEClassifiers().get(415);
 		}
 		return impactSurfaceDefinitionTypeEClass;
 	}
@@ -27704,7 +29105,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getIndirectOperatingCostType() {
 		if (indirectOperatingCostTypeEClass == null) {
 			indirectOperatingCostTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(377);
+					.getEClassifiers().get(416);
 		}
 		return indirectOperatingCostTypeEClass;
 	}
@@ -27728,7 +29129,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getIntegerBaseType() {
 		if (integerBaseTypeEClass == null) {
 			integerBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(378);
+					.getEClassifiers().get(417);
 		}
 		return integerBaseTypeEClass;
 	}
@@ -27782,7 +29183,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getInterConnectionStrutAttachmentType() {
 		if (interConnectionStrutAttachmentTypeEClass == null) {
 			interConnectionStrutAttachmentTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(379);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(418);
 		}
 		return interConnectionStrutAttachmentTypeEClass;
 	}
@@ -27816,7 +29217,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getInterconnectionStrutsType() {
 		if (interconnectionStrutsTypeEClass == null) {
 			interconnectionStrutsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(380);
+					.getEClassifiers().get(419);
 		}
 		return interconnectionStrutsTypeEClass;
 	}
@@ -27840,7 +29241,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getInterconnectionStrutType() {
 		if (interconnectionStrutTypeEClass == null) {
 			interconnectionStrutTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(381);
+					.getEClassifiers().get(420);
 		}
 		return interconnectionStrutTypeEClass;
 	}
@@ -27914,7 +29315,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getIntercostalPositionType() {
 		if (intercostalPositionTypeEClass == null) {
 			intercostalPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(382);
+					.getEClassifiers().get(421);
 		}
 		return intercostalPositionTypeEClass;
 	}
@@ -28008,7 +29409,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getIntercostalsAssemblyType() {
 		if (intercostalsAssemblyTypeEClass == null) {
 			intercostalsAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(383);
+					.getEClassifiers().get(422);
 		}
 		return intercostalsAssemblyTypeEClass;
 	}
@@ -28032,7 +29433,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getInterfaceDefinitionsType() {
 		if (interfaceDefinitionsTypeEClass == null) {
 			interfaceDefinitionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(384);
+					.getEClassifiers().get(423);
 		}
 		return interfaceDefinitionsTypeEClass;
 	}
@@ -28073,10 +29474,68 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getInternalPressuresType() {
+		if (internalPressuresTypeEClass == null) {
+			internalPressuresTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(424);
+		}
+		return internalPressuresTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getInternalPressuresType_InternalPressure() {
+		return (EReference) getInternalPressuresType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getInternalPressureType() {
+		if (internalPressureTypeEClass == null) {
+			internalPressureTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(425);
+		}
+		return internalPressureTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getInternalPressureType_ReferenceUID() {
+		return (EReference) getInternalPressureType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getInternalPressureType_Pressure() {
+		return (EReference) getInternalPressureType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getInterpolationType() {
 		if (interpolationTypeEClass == null) {
 			interpolationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(385);
+					.getEClassifiers().get(426);
 		}
 		return interpolationTypeEClass;
 	}
@@ -28090,7 +29549,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getInterpolationType1() {
 		if (interpolationType1EClass == null) {
 			interpolationType1EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(386);
+					.getEClassifiers().get(427);
 		}
 		return interpolationType1EClass;
 	}
@@ -28104,7 +29563,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getInterpolationType2() {
 		if (interpolationType2EClass == null) {
 			interpolationType2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(387);
+					.getEClassifiers().get(428);
 		}
 		return interpolationType2EClass;
 	}
@@ -28118,7 +29577,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getIsotropicPropertiesType() {
 		if (isotropicPropertiesTypeEClass == null) {
 			isotropicPropertiesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(388);
+					.getEClassifiers().get(429);
 		}
 		return isotropicPropertiesTypeEClass;
 	}
@@ -28299,10 +29758,438 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getLandingGearBaseType() {
+		if (landingGearBaseTypeEClass == null) {
+			landingGearBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(430);
+		}
+		return landingGearBaseTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearBaseType_Name() {
+		return (EReference) getLandingGearBaseType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearBaseType_Description() {
+		return (EReference) getLandingGearBaseType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearBaseType_ParentUID() {
+		return (EReference) getLandingGearBaseType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearBaseType_Control() {
+		return (EReference) getLandingGearBaseType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearBaseType_ComponentAssembly() {
+		return (EReference) getLandingGearBaseType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearBaseType_TotalLength() {
+		return (EReference) getLandingGearBaseType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearBaseType_StaticSuspensionTravel() {
+		return (EReference) getLandingGearBaseType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearBaseType_CompressedSuspensionTravel() {
+		return (EReference) getLandingGearBaseType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearBaseType_Transformation() {
+		return (EReference) getLandingGearBaseType().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLandingGearBaseType_Symmetry() {
+		return (EAttribute) getLandingGearBaseType().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLandingGearBaseType_UID() {
+		return (EAttribute) getLandingGearBaseType().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLandingGearBrakingStateType() {
+		if (landingGearBrakingStateTypeEClass == null) {
+			landingGearBrakingStateTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(431);
+		}
+		return landingGearBrakingStateTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearBrakingStateType_ControlParameterBraked() {
+		return (EReference) getLandingGearBrakingStateType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearBrakingStateType_ControlParameterReleased() {
+		return (EReference) getLandingGearBrakingStateType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLandingGearBrakingStateType_UID() {
+		return (EAttribute) getLandingGearBrakingStateType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLandingGearComponentAssemblyType() {
+		if (landingGearComponentAssemblyTypeEClass == null) {
+			landingGearComponentAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(432);
+		}
+		return landingGearComponentAssemblyTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearComponentAssemblyType_MainStrut() {
+		return (EReference) getLandingGearComponentAssemblyType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearComponentAssemblyType_Piston() {
+		return (EReference) getLandingGearComponentAssemblyType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearComponentAssemblyType_Axle() {
+		return (EReference) getLandingGearComponentAssemblyType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearComponentAssemblyType_Bogie() {
+		return (EReference) getLandingGearComponentAssemblyType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearComponentAssemblyType_DragStrut() {
+		return (EReference) getLandingGearComponentAssemblyType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearComponentAssemblyType_PintleStruts() {
+		return (EReference) getLandingGearComponentAssemblyType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearComponentAssemblyType_SideStruts() {
+		return (EReference) getLandingGearComponentAssemblyType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearComponentAssemblyType_MainActuator() {
+		return (EReference) getLandingGearComponentAssemblyType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLandingGearControlFunctionsType() {
+		if (landingGearControlFunctionsTypeEClass == null) {
+			landingGearControlFunctionsTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(433);
+		}
+		return landingGearControlFunctionsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearControlFunctionsType_ExtensionPath() {
+		return (EReference) getLandingGearControlFunctionsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearControlFunctionsType_SteeringPath() {
+		return (EReference) getLandingGearControlFunctionsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearControlFunctionsType_BrakingState() {
+		return (EReference) getLandingGearControlFunctionsType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLandingGearControlType() {
+		if (landingGearControlTypeEClass == null) {
+			landingGearControlTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(434);
+		}
+		return landingGearControlTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearControlType_RetractAngle() {
+		return (EReference) getLandingGearControlType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearControlType_ControlFunctions() {
+		return (EReference) getLandingGearControlType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearControlType_Offset() {
+		return (EReference) getLandingGearControlType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLandingGearExtensionFunctionStepType() {
+		if (landingGearExtensionFunctionStepTypeEClass == null) {
+			landingGearExtensionFunctionStepTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(435);
+		}
+		return landingGearExtensionFunctionStepTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLandingGearExtensionFunctionStepType_StepType() {
+		return (EAttribute) getLandingGearExtensionFunctionStepType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearExtensionFunctionStepType_ControlParameter() {
+		return (EReference) getLandingGearExtensionFunctionStepType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearExtensionFunctionStepType_ExtensionAngle() {
+		return (EReference) getLandingGearExtensionFunctionStepType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLandingGearExtensionFunctionType() {
+		if (landingGearExtensionFunctionTypeEClass == null) {
+			landingGearExtensionFunctionTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(436);
+		}
+		return landingGearExtensionFunctionTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearExtensionFunctionType_Step() {
+		return (EReference) getLandingGearExtensionFunctionType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLandingGearExtensionFunctionType_UID() {
+		return (EAttribute) getLandingGearExtensionFunctionType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getLandingGearInterfaceDefinitionsType() {
 		if (landingGearInterfaceDefinitionsTypeEClass == null) {
 			landingGearInterfaceDefinitionsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(389);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(437);
 		}
 		return landingGearInterfaceDefinitionsTypeEClass;
 	}
@@ -28386,7 +30273,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLandingGearInterfaceKeelbeamType() {
 		if (landingGearInterfaceKeelbeamTypeEClass == null) {
 			landingGearInterfaceKeelbeamTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(390);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(438);
 		}
 		return landingGearInterfaceKeelbeamTypeEClass;
 	}
@@ -28540,7 +30427,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLandingGearInterfaceLateralPanelsType() {
 		if (landingGearInterfaceLateralPanelsTypeEClass == null) {
 			landingGearInterfaceLateralPanelsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(391);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(439);
 		}
 		return landingGearInterfaceLateralPanelsTypeEClass;
 	}
@@ -28634,7 +30521,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLandingGearInterfaceLongFloorBeamsConnectionType() {
 		if (landingGearInterfaceLongFloorBeamsConnectionTypeEClass == null) {
 			landingGearInterfaceLongFloorBeamsConnectionTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(392);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(440);
 		}
 		return landingGearInterfaceLongFloorBeamsConnectionTypeEClass;
 	}
@@ -28668,7 +30555,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLandingGearInterfaceMainFramesType() {
 		if (landingGearInterfaceMainFramesTypeEClass == null) {
 			landingGearInterfaceMainFramesTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(393);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(441);
 		}
 		return landingGearInterfaceMainFramesTypeEClass;
 	}
@@ -28732,7 +30619,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLandingGearInterfacePressureFloorType() {
 		if (landingGearInterfacePressureFloorTypeEClass == null) {
 			landingGearInterfacePressureFloorTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(394);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(442);
 		}
 		return landingGearInterfacePressureFloorTypeEClass;
 	}
@@ -28796,7 +30683,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLandingGearInterfaceSideboxType() {
 		if (landingGearInterfaceSideboxTypeEClass == null) {
 			landingGearInterfaceSideboxTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(395);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(443);
 		}
 		return landingGearInterfaceSideboxTypeEClass;
 	}
@@ -28850,7 +30737,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLandingGearPositionSafetyMarginsType() {
 		if (landingGearPositionSafetyMarginsTypeEClass == null) {
 			landingGearPositionSafetyMarginsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(396);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(444);
 		}
 		return landingGearPositionSafetyMarginsTypeEClass;
 	}
@@ -28901,12 +30788,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getLandingGearSettingType() {
-		if (landingGearSettingTypeEClass == null) {
-			landingGearSettingTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(397);
+	public EClass getLandingGearSteeringFunctionStepType() {
+		if (landingGearSteeringFunctionStepTypeEClass == null) {
+			landingGearSteeringFunctionStepTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(445);
 		}
-		return landingGearSettingTypeEClass;
+		return landingGearSteeringFunctionStepTypeEClass;
 	}
 
 	/**
@@ -28915,8 +30802,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLandingGearSettingType_LandingGearUID() {
-		return (EReference) getLandingGearSettingType().getEStructuralFeatures().get(0);
+	public EAttribute getLandingGearSteeringFunctionStepType_StepType() {
+		return (EAttribute) getLandingGearSteeringFunctionStepType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -28925,8 +30812,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLandingGearSettingType_Extended() {
-		return (EReference) getLandingGearSettingType().getEStructuralFeatures().get(1);
+	public EReference getLandingGearSteeringFunctionStepType_ControlParameter() {
+		return (EReference) getLandingGearSteeringFunctionStepType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -28935,8 +30822,184 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLandingGearSettingType_ControlParameter() {
-		return (EReference) getLandingGearSettingType().getEStructuralFeatures().get(2);
+	public EReference getLandingGearSteeringFunctionStepType_SteeringAngle() {
+		return (EReference) getLandingGearSteeringFunctionStepType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLandingGearSteeringFunctionType() {
+		if (landingGearSteeringFunctionTypeEClass == null) {
+			landingGearSteeringFunctionTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(446);
+		}
+		return landingGearSteeringFunctionTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearSteeringFunctionType_Step() {
+		return (EReference) getLandingGearSteeringFunctionType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLandingGearSteeringFunctionType_UID() {
+		return (EAttribute) getLandingGearSteeringFunctionType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLandingGearStrutAttachmentType() {
+		if (landingGearStrutAttachmentTypeEClass == null) {
+			landingGearStrutAttachmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(447);
+		}
+		return landingGearStrutAttachmentTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearStrutAttachmentType_SparSegmentUID() {
+		return (EReference) getLandingGearStrutAttachmentType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearStrutAttachmentType_RibDefinitionUID() {
+		return (EReference) getLandingGearStrutAttachmentType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearStrutAttachmentType_RibNumber() {
+		return (EReference) getLandingGearStrutAttachmentType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearStrutAttachmentType_SupportBeam() {
+		return (EReference) getLandingGearStrutAttachmentType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearStrutAttachmentType_StringerFramePositionUIDs() {
+		return (EReference) getLandingGearStrutAttachmentType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearStrutAttachmentType_StructuralMountUIDs() {
+		return (EReference) getLandingGearStrutAttachmentType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearStrutAttachmentType_Positioning() {
+		return (EReference) getLandingGearStrutAttachmentType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLandingGearsType() {
+		if (landingGearsTypeEClass == null) {
+			landingGearsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(448);
+		}
+		return landingGearsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearsType_LandingGear() {
+		return (EReference) getLandingGearsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLandingGearSupportBeamPositionType() {
+		if (landingGearSupportBeamPositionTypeEClass == null) {
+			landingGearSupportBeamPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(449);
+		}
+		return landingGearSupportBeamPositionTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearSupportBeamPositionType_XsiInside() {
+		return (EReference) getLandingGearSupportBeamPositionType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLandingGearSupportBeamPositionType_EtaOutside() {
+		return (EReference) getLandingGearSupportBeamPositionType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -28948,7 +31011,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLandingGearType() {
 		if (landingGearTypeEClass == null) {
 			landingGearTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(398);
+					.getEClassifiers().get(450);
 		}
 		return landingGearTypeEClass;
 	}
@@ -28992,7 +31055,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLateralCapType() {
 		if (lateralCapTypeEClass == null) {
 			lateralCapTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(399);
+					.getEClassifiers().get(451);
 		}
 		return lateralCapTypeEClass;
 	}
@@ -29013,10 +31076,82 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getLatitudeType() {
+		if (latitudeTypeEClass == null) {
+			latitudeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(452);
+		}
+		return latitudeTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLatitudeType_UID() {
+		return (EAttribute) getLatitudeType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLavatoriesType() {
+		if (lavatoriesTypeEClass == null) {
+			lavatoriesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(453);
+		}
+		return lavatoriesTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLavatoriesType_Lavatory() {
+		return (EReference) getLavatoriesType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLavatoryElementsType() {
+		if (lavatoryElementsTypeEClass == null) {
+			lavatoryElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(454);
+		}
+		return lavatoryElementsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLavatoryElementsType_LavatoryElement() {
+		return (EReference) getLavatoryElementsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getLeadingEdgeDevicesType() {
 		if (leadingEdgeDevicesTypeEClass == null) {
 			leadingEdgeDevicesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(400);
+					.getEClassifiers().get(455);
 		}
 		return leadingEdgeDevicesTypeEClass;
 	}
@@ -29040,7 +31175,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLeadingEdgeDeviceType() {
 		if (leadingEdgeDeviceTypeEClass == null) {
 			leadingEdgeDeviceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(401);
+					.getEClassifiers().get(456);
 		}
 		return leadingEdgeDeviceTypeEClass;
 	}
@@ -29154,7 +31289,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLeadingEdgeHollowType() {
 		if (leadingEdgeHollowTypeEClass == null) {
 			leadingEdgeHollowTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(402);
+					.getEClassifiers().get(457);
 		}
 		return leadingEdgeHollowTypeEClass;
 	}
@@ -29188,7 +31323,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLeadingEdgeShapeType() {
 		if (leadingEdgeShapeTypeEClass == null) {
 			leadingEdgeShapeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(403);
+					.getEClassifiers().get(458);
 		}
 		return leadingEdgeShapeTypeEClass;
 	}
@@ -29232,7 +31367,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLinerType() {
 		if (linerTypeEClass == null) {
 			linerTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(404);
+					.get(459);
 		}
 		return linerTypeEClass;
 	}
@@ -29276,7 +31411,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLinkToFileType() {
 		if (linkToFileTypeEClass == null) {
 			linkToFileTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(405);
+					.getEClassifiers().get(460);
 		}
 		return linkToFileTypeEClass;
 	}
@@ -29300,7 +31435,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLoadAnalysisType() {
 		if (loadAnalysisTypeEClass == null) {
 			loadAnalysisTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(406);
+					.getEClassifiers().get(461);
 		}
 		return loadAnalysisTypeEClass;
 	}
@@ -29321,10 +31456,172 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getLoadAnalysisType_LoadEnvelopes() {
+		return (EReference) getLoadAnalysisType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLoadApplicationPointSetsType() {
+		if (loadApplicationPointSetsTypeEClass == null) {
+			loadApplicationPointSetsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(462);
+		}
+		return loadApplicationPointSetsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadApplicationPointSetsType_LoadApplicationPointSet() {
+		return (EReference) getLoadApplicationPointSetsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLoadApplicationPointSetType() {
+		if (loadApplicationPointSetTypeEClass == null) {
+			loadApplicationPointSetTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(463);
+		}
+		return loadApplicationPointSetTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadApplicationPointSetType_ComponentUID() {
+		return (EReference) getLoadApplicationPointSetType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadApplicationPointSetType_LoadReferenceLine() {
+		return (EReference) getLoadApplicationPointSetType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadApplicationPointSetType_LoadApplicationPoints() {
+		return (EReference) getLoadApplicationPointSetType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadApplicationPointSetType_CutLoadIntegrationPoints() {
+		return (EReference) getLoadApplicationPointSetType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadApplicationPointSetType_Connectivities() {
+		return (EReference) getLoadApplicationPointSetType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLoadApplicationPointSetType_UID() {
+		return (EAttribute) getLoadApplicationPointSetType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLoadApplicationPointsType() {
+		if (loadApplicationPointsTypeEClass == null) {
+			loadApplicationPointsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(464);
+		}
+		return loadApplicationPointsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadApplicationPointsType_PointIDs() {
+		return (EReference) getLoadApplicationPointsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadApplicationPointsType_X() {
+		return (EReference) getLoadApplicationPointsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadApplicationPointsType_Y() {
+		return (EReference) getLoadApplicationPointsType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadApplicationPointsType_Z() {
+		return (EReference) getLoadApplicationPointsType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getLoadBreakdownType() {
 		if (loadBreakdownTypeEClass == null) {
 			loadBreakdownTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(407);
+					.getEClassifiers().get(465);
 		}
 		return loadBreakdownTypeEClass;
 	}
@@ -29375,7 +31672,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadBreakdownType_CalibrationLoads() {
+	public EReference getLoadBreakdownType_RemainingLoads() {
 		return (EReference) getLoadBreakdownType().getEStructuralFeatures().get(4);
 	}
 
@@ -29385,12 +31682,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getLoadCaseEnginesType() {
-		if (loadCaseEnginesTypeEClass == null) {
-			loadCaseEnginesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(408);
+	public EClass getLoadCaseAccelerationsType() {
+		if (loadCaseAccelerationsTypeEClass == null) {
+			loadCaseAccelerationsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(466);
 		}
-		return loadCaseEnginesTypeEClass;
+		return loadCaseAccelerationsTypeEClass;
 	}
 
 	/**
@@ -29399,8 +31696,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseEnginesType_Engine() {
-		return (EReference) getLoadCaseEnginesType().getEStructuralFeatures().get(0);
+	public EReference getLoadCaseAccelerationsType_LoadFactors() {
+		return (EReference) getLoadCaseAccelerationsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -29409,12 +31706,22 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getLoadCaseLandingGearsType() {
-		if (loadCaseLandingGearsTypeEClass == null) {
-			loadCaseLandingGearsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(409);
+	public EReference getLoadCaseAccelerationsType_Rotation() {
+		return (EReference) getLoadCaseAccelerationsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLoadCaseGustType() {
+		if (loadCaseGustTypeEClass == null) {
+			loadCaseGustTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(467);
 		}
-		return loadCaseLandingGearsTypeEClass;
+		return loadCaseGustTypeEClass;
 	}
 
 	/**
@@ -29423,8 +31730,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseLandingGearsType_LandingGear() {
-		return (EReference) getLoadCaseLandingGearsType().getEStructuralFeatures().get(0);
+	public EReference getLoadCaseGustType_GustShape() {
+		return (EReference) getLoadCaseGustType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -29433,12 +31740,42 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getLoadCaseMassType() {
-		if (loadCaseMassTypeEClass == null) {
-			loadCaseMassTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(410);
+	public EReference getLoadCaseGustType_GustAngle() {
+		return (EReference) getLoadCaseGustType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadCaseGustType_GustLength() {
+		return (EReference) getLoadCaseGustType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadCaseGustType_GustVelocity() {
+		return (EReference) getLoadCaseGustType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLoadCaseLoadFactorsType() {
+		if (loadCaseLoadFactorsTypeEClass == null) {
+			loadCaseLoadFactorsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(468);
 		}
-		return loadCaseMassTypeEClass;
+		return loadCaseLoadFactorsTypeEClass;
 	}
 
 	/**
@@ -29447,8 +31784,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseMassType_WeightAndBalanceUID() {
-		return (EReference) getLoadCaseMassType().getEStructuralFeatures().get(0);
+	public EReference getLoadCaseLoadFactorsType_NX() {
+		return (EReference) getLoadCaseLoadFactorsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -29457,12 +31794,32 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getLoadCaseRotationType() {
-		if (loadCaseRotationTypeEClass == null) {
-			loadCaseRotationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(411);
+	public EReference getLoadCaseLoadFactorsType_NY() {
+		return (EReference) getLoadCaseLoadFactorsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadCaseLoadFactorsType_NZ() {
+		return (EReference) getLoadCaseLoadFactorsType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLoadCaseSpecificationType() {
+		if (loadCaseSpecificationTypeEClass == null) {
+			loadCaseSpecificationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(469);
 		}
-		return loadCaseRotationTypeEClass;
+		return loadCaseSpecificationTypeEClass;
 	}
 
 	/**
@@ -29471,8 +31828,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseRotationType_Orientation() {
-		return (EReference) getLoadCaseRotationType().getEStructuralFeatures().get(0);
+	public EReference getLoadCaseSpecificationType_Environment() {
+		return (EReference) getLoadCaseSpecificationType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -29481,8 +31838,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseRotationType_AngularVelocity() {
-		return (EReference) getLoadCaseRotationType().getEStructuralFeatures().get(1);
+	public EReference getLoadCaseSpecificationType_Altitude() {
+		return (EReference) getLoadCaseSpecificationType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -29491,8 +31848,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseRotationType_AngularAcceleration() {
-		return (EReference) getLoadCaseRotationType().getEStructuralFeatures().get(2);
+	public EReference getLoadCaseSpecificationType_MachNumber() {
+		return (EReference) getLoadCaseSpecificationType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -29501,12 +31858,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getLoadCaseRotationVelocityType() {
-		if (loadCaseRotationVelocityTypeEClass == null) {
-			loadCaseRotationVelocityTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(412);
-		}
-		return loadCaseRotationVelocityTypeEClass;
+	public EReference getLoadCaseSpecificationType_AeroCaseUID() {
+		return (EReference) getLoadCaseSpecificationType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -29515,8 +31868,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseRotationVelocityType_P() {
-		return (EReference) getLoadCaseRotationVelocityType().getEStructuralFeatures().get(0);
+	public EReference getLoadCaseSpecificationType_ControllerDescription() {
+		return (EReference) getLoadCaseSpecificationType().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -29525,8 +31878,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseRotationVelocityType_Q() {
-		return (EReference) getLoadCaseRotationVelocityType().getEStructuralFeatures().get(1);
+	public EReference getLoadCaseSpecificationType_LoadCaseSuperposition() {
+		return (EReference) getLoadCaseSpecificationType().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -29535,8 +31888,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseRotationVelocityType_R() {
-		return (EReference) getLoadCaseRotationVelocityType().getEStructuralFeatures().get(2);
+	public EReference getLoadCaseSpecificationType_LoadConditions() {
+		return (EReference) getLoadCaseSpecificationType().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -29545,8 +31898,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseRotationVelocityType_PhiDot() {
-		return (EReference) getLoadCaseRotationVelocityType().getEStructuralFeatures().get(3);
+	public EReference getLoadCaseSpecificationType_Configuration() {
+		return (EReference) getLoadCaseSpecificationType().getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -29555,136 +31908,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseRotationVelocityType_ThetaDot() {
-		return (EReference) getLoadCaseRotationVelocityType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseRotationVelocityType_PsiDot() {
-		return (EReference) getLoadCaseRotationVelocityType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getLoadCaseSettingsType() {
-		if (loadCaseSettingsTypeEClass == null) {
-			loadCaseSettingsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(413);
-		}
-		return loadCaseSettingsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseSettingsType_ControlSurfaces() {
-		return (EReference) getLoadCaseSettingsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseSettingsType_ControlInputs() {
-		return (EReference) getLoadCaseSettingsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseSettingsType_LandingGears() {
-		return (EReference) getLoadCaseSettingsType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseSettingsType_Engines() {
-		return (EReference) getLoadCaseSettingsType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseSettingsType_CabinPressure() {
-		return (EReference) getLoadCaseSettingsType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getLoadCaseStateType() {
-		if (loadCaseStateTypeEClass == null) {
-			loadCaseStateTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(414);
-		}
-		return loadCaseStateTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseStateType_AtmosphericConditions() {
-		return (EReference) getLoadCaseStateType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseStateType_TrimParameters() {
-		return (EReference) getLoadCaseStateType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseStateType_Wind() {
-		return (EReference) getLoadCaseStateType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseStateType_AttitudeAndMotion() {
-		return (EReference) getLoadCaseStateType().getEStructuralFeatures().get(3);
+	public EReference getLoadCaseSpecificationType_WeightAndBalanceUID() {
+		return (EReference) getLoadCaseSpecificationType().getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -29696,7 +31921,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLoadCasesType() {
 		if (loadCasesTypeEClass == null) {
 			loadCasesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(415);
+					.getEClassifiers().get(470);
 		}
 		return loadCasesTypeEClass;
 	}
@@ -29737,7 +31962,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCasesType_AeroDataSetsForLoads() {
+	public EReference getLoadCasesType_AeroCases() {
 		return (EReference) getLoadCasesType().getEStructuralFeatures().get(3);
 	}
 
@@ -29747,22 +31972,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCasesType_LoadsEnvelope() {
-		return (EReference) getLoadCasesType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getLoadCaseTranslationAccelerationType() {
-		if (loadCaseTranslationAccelerationTypeEClass == null) {
-			loadCaseTranslationAccelerationTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(416);
+	public EClass getLoadCaseSuperpositionType() {
+		if (loadCaseSuperpositionTypeEClass == null) {
+			loadCaseSuperpositionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(471);
 		}
-		return loadCaseTranslationAccelerationTypeEClass;
+		return loadCaseSuperpositionTypeEClass;
 	}
 
 	/**
@@ -29771,8 +31986,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseTranslationAccelerationType_UDot() {
-		return (EReference) getLoadCaseTranslationAccelerationType().getEStructuralFeatures().get(0);
+	public EReference getLoadCaseSuperpositionType_LoadCaseUID() {
+		return (EReference) getLoadCaseSuperpositionType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -29781,62 +31996,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseTranslationAccelerationType_VDot() {
-		return (EReference) getLoadCaseTranslationAccelerationType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseTranslationAccelerationType_WDot() {
-		return (EReference) getLoadCaseTranslationAccelerationType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseTranslationAccelerationType_XDotDot() {
-		return (EReference) getLoadCaseTranslationAccelerationType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseTranslationAccelerationType_YDotDot() {
-		return (EReference) getLoadCaseTranslationAccelerationType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseTranslationAccelerationType_ZDotDot() {
-		return (EReference) getLoadCaseTranslationAccelerationType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getLoadCaseTranslationType() {
-		if (loadCaseTranslationTypeEClass == null) {
-			loadCaseTranslationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(417);
+	public EClass getLoadCaseType() {
+		if (loadCaseTypeEClass == null) {
+			loadCaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(472);
 		}
-		return loadCaseTranslationTypeEClass;
+		return loadCaseTypeEClass;
 	}
 
 	/**
@@ -29845,8 +32010,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseTranslationType_Displacement() {
-		return (EReference) getLoadCaseTranslationType().getEStructuralFeatures().get(0);
+	public EReference getLoadCaseType_Name() {
+		return (EReference) getLoadCaseType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -29855,8 +32020,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseTranslationType_Velocity() {
-		return (EReference) getLoadCaseTranslationType().getEStructuralFeatures().get(1);
+	public EReference getLoadCaseType_Description() {
+		return (EReference) getLoadCaseType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -29865,8 +32030,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseTranslationType_Acceleration() {
-		return (EReference) getLoadCaseTranslationType().getEStructuralFeatures().get(2);
+	public EReference getLoadCaseType_Specification() {
+		return (EReference) getLoadCaseType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -29875,12 +32040,32 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getLoadCaseTranslationVelocityType() {
-		if (loadCaseTranslationVelocityTypeEClass == null) {
-			loadCaseTranslationVelocityTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(418);
+	public EReference getLoadCaseType_LoadData() {
+		return (EReference) getLoadCaseType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLoadCaseType_UID() {
+		return (EAttribute) getLoadCaseType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLoadEnvelopesType() {
+		if (loadEnvelopesTypeEClass == null) {
+			loadEnvelopesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(473);
 		}
-		return loadCaseTranslationVelocityTypeEClass;
+		return loadEnvelopesTypeEClass;
 	}
 
 	/**
@@ -29889,8 +32074,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseTranslationVelocityType_U() {
-		return (EReference) getLoadCaseTranslationVelocityType().getEStructuralFeatures().get(0);
+	public EReference getLoadEnvelopesType_LoadEnvelope() {
+		return (EReference) getLoadEnvelopesType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -29899,62 +32084,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadCaseTranslationVelocityType_V() {
-		return (EReference) getLoadCaseTranslationVelocityType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseTranslationVelocityType_W() {
-		return (EReference) getLoadCaseTranslationVelocityType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseTranslationVelocityType_XDot() {
-		return (EReference) getLoadCaseTranslationVelocityType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseTranslationVelocityType_YDot() {
-		return (EReference) getLoadCaseTranslationVelocityType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadCaseTranslationVelocityType_ZDot() {
-		return (EReference) getLoadCaseTranslationVelocityType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getLoadConditionType() {
-		if (loadConditionTypeEClass == null) {
-			loadConditionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(419);
+	public EClass getLoadEnvelopeType() {
+		if (loadEnvelopeTypeEClass == null) {
+			loadEnvelopeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(474);
 		}
-		return loadConditionTypeEClass;
+		return loadEnvelopeTypeEClass;
 	}
 
 	/**
@@ -29963,8 +32098,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadConditionType_Identifier() {
-		return (EReference) getLoadConditionType().getEStructuralFeatures().get(0);
+	public EReference getLoadEnvelopeType_Name() {
+		return (EReference) getLoadEnvelopeType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -29973,8 +32108,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadConditionType_SizingType() {
-		return (EReference) getLoadConditionType().getEStructuralFeatures().get(1);
+	public EReference getLoadEnvelopeType_Description() {
+		return (EReference) getLoadEnvelopeType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -29983,8 +32118,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadConditionType_SafetyFactor() {
-		return (EReference) getLoadConditionType().getEStructuralFeatures().get(2);
+	public EReference getLoadEnvelopeType_PointSetUID() {
+		return (EReference) getLoadEnvelopeType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -29993,8 +32128,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadConditionType_DesignSpeed() {
-		return (EReference) getLoadConditionType().getEStructuralFeatures().get(3);
+	public EReference getLoadEnvelopeType_LoadCaseUIDs() {
+		return (EReference) getLoadEnvelopeType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -30003,22 +32138,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadConditionType_AdditionalParameters() {
-		return (EReference) getLoadConditionType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getLoadReferenceAxisPointsType() {
-		if (loadReferenceAxisPointsTypeEClass == null) {
-			loadReferenceAxisPointsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(420);
+	public EClass getLoadReferenceLineType() {
+		if (loadReferenceLineTypeEClass == null) {
+			loadReferenceLineTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(475);
 		}
-		return loadReferenceAxisPointsTypeEClass;
+		return loadReferenceLineTypeEClass;
 	}
 
 	/**
@@ -30027,8 +32152,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadReferenceAxisPointsType_LoadReferenceAxisPoint() {
-		return (EReference) getLoadReferenceAxisPointsType().getEStructuralFeatures().get(0);
+	public EReference getLoadReferenceLineType_LoadReferencePoint() {
+		return (EReference) getLoadReferenceLineType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -30037,12 +32162,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getLoadReferenceAxisPointType() {
-		if (loadReferenceAxisPointTypeEClass == null) {
-			loadReferenceAxisPointTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(421);
+	public EClass getLoadReferencePointType() {
+		if (loadReferencePointTypeEClass == null) {
+			loadReferencePointTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(476);
 		}
-		return loadReferenceAxisPointTypeEClass;
+		return loadReferencePointTypeEClass;
 	}
 
 	/**
@@ -30051,8 +32176,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadReferenceAxisPointType_X() {
-		return (EReference) getLoadReferenceAxisPointType().getEStructuralFeatures().get(0);
+	public EReference getLoadReferencePointType_X() {
+		return (EReference) getLoadReferencePointType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -30061,8 +32186,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadReferenceAxisPointType_Y() {
-		return (EReference) getLoadReferenceAxisPointType().getEStructuralFeatures().get(1);
+	public EReference getLoadReferencePointType_Y() {
+		return (EReference) getLoadReferencePointType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -30071,8 +32196,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadReferenceAxisPointType_Z() {
-		return (EReference) getLoadReferenceAxisPointType().getEStructuralFeatures().get(2);
+	public EReference getLoadReferencePointType_Z() {
+		return (EReference) getLoadReferencePointType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -30081,8 +32206,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadReferenceAxisPointType_RefPoint() {
-		return (EReference) getLoadReferenceAxisPointType().getEStructuralFeatures().get(3);
+	public EReference getLoadReferencePointType_Eta() {
+		return (EReference) getLoadReferencePointType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -30091,12 +32216,42 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getLoadReferenceType() {
-		if (loadReferenceTypeEClass == null) {
-			loadReferenceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(422);
+	public EReference getLoadReferencePointType_Xsi() {
+		return (EReference) getLoadReferencePointType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadReferencePointType_RelHeight() {
+		return (EReference) getLoadReferencePointType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadReferencePointType_ReferenceUID() {
+		return (EReference) getLoadReferencePointType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLoadSetsType() {
+		if (loadSetsTypeEClass == null) {
+			loadSetsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(477);
 		}
-		return loadReferenceTypeEClass;
+		return loadSetsTypeEClass;
 	}
 
 	/**
@@ -30105,8 +32260,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadReferenceType_Area() {
-		return (EReference) getLoadReferenceType().getEStructuralFeatures().get(0);
+	public EReference getLoadSetsType_LoadSet() {
+		return (EReference) getLoadSetsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -30115,42 +32270,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadReferenceType_Length() {
-		return (EReference) getLoadReferenceType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadReferenceType_JigShapePoint() {
-		return (EReference) getLoadReferenceType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getLoadReferenceType_FlightShapePoint() {
-		return (EReference) getLoadReferenceType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getLoadsEnvelopeType() {
-		if (loadsEnvelopeTypeEClass == null) {
-			loadsEnvelopeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(423);
+	public EClass getLoadSetType() {
+		if (loadSetTypeEClass == null) {
+			loadSetTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(478);
 		}
-		return loadsEnvelopeTypeEClass;
+		return loadSetTypeEClass;
 	}
 
 	/**
@@ -30159,8 +32284,212 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getLoadsEnvelopeType_CutLoadsEnvelope() {
-		return (EReference) getLoadsEnvelopeType().getEStructuralFeatures().get(0);
+	public EReference getLoadSetType_Description() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadSetType_PointSetUID() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadSetType_Fx() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadSetType_Fy() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadSetType_Fz() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadSetType_Mx() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadSetType_My() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadSetType_Mz() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadSetType_Dx() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadSetType_Dy() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadSetType_Dz() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadSetType_Phix() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadSetType_Phiy() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadSetType_Phiz() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLoadSetType_LoadBreakdown() {
+		return (EReference) getLoadSetType().getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLoadSetType_UID() {
+		return (EAttribute) getLoadSetType().getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLogEntryType() {
+		if (logEntryTypeEClass == null) {
+			logEntryTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(479);
+		}
+		return logEntryTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLogEntryType_Description() {
+		return (EReference) getLogEntryType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLogEntryType_Timestamp() {
+		return (EReference) getLogEntryType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLogEntryType_Creator() {
+		return (EReference) getLogEntryType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLogEntryType_Version() {
+		return (EAttribute) getLogEntryType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -30172,7 +32501,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLongFloorBeamPositionType() {
 		if (longFloorBeamPositionTypeEClass == null) {
 			longFloorBeamPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(424);
+					.getEClassifiers().get(480);
 		}
 		return longFloorBeamPositionTypeEClass;
 	}
@@ -30256,7 +32585,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLongFloorBeamsAssemblyType() {
 		if (longFloorBeamsAssemblyTypeEClass == null) {
 			longFloorBeamsAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(425);
+					.getEClassifiers().get(481);
 		}
 		return longFloorBeamsAssemblyTypeEClass;
 	}
@@ -30280,7 +32609,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getLongFloorBeamType() {
 		if (longFloorBeamTypeEClass == null) {
 			longFloorBeamTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(426);
+					.getEClassifiers().get(482);
 		}
 		return longFloorBeamTypeEClass;
 	}
@@ -30311,10 +32640,154 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getLongitudeType() {
+		if (longitudeTypeEClass == null) {
+			longitudeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(483);
+		}
+		return longitudeTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLongitudeType_UID() {
+		return (EAttribute) getLongitudeType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLowerHeightFractionType() {
+		if (lowerHeightFractionTypeEClass == null) {
+			lowerHeightFractionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(484);
+		}
+		return lowerHeightFractionTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLuggageCompartmentElementsType() {
+		if (luggageCompartmentElementsTypeEClass == null) {
+			luggageCompartmentElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(485);
+		}
+		return luggageCompartmentElementsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLuggageCompartmentElementsType_LuggageCompartmentElement() {
+		return (EReference) getLuggageCompartmentElementsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLuggageCompartmentsType() {
+		if (luggageCompartmentsTypeEClass == null) {
+			luggageCompartmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(486);
+		}
+		return luggageCompartmentsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getLuggageCompartmentsType_LuggageCompartment() {
+		return (EReference) getLuggageCompartmentsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getMachNumberType() {
+		if (machNumberTypeEClass == null) {
+			machNumberTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(487);
+		}
+		return machNumberTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMachNumberType_UID() {
+		return (EAttribute) getMachNumberType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getMAdditionalCenterTanksType() {
+		if (mAdditionalCenterTanksTypeEClass == null) {
+			mAdditionalCenterTanksTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(488);
+		}
+		return mAdditionalCenterTanksTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMAdditionalCenterTanksType_MassDescription() {
+		return (EReference) getMAdditionalCenterTanksType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMAdditionalCenterTanksType_MAdditionalCenterTank() {
+		return (EReference) getMAdditionalCenterTanksType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getMainActuatorType() {
 		if (mainActuatorTypeEClass == null) {
 			mainActuatorTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(427);
+					.getEClassifiers().get(489);
 		}
 		return mainActuatorTypeEClass;
 	}
@@ -30335,32 +32808,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getMainGearGlobalType() {
-		if (mainGearGlobalTypeEClass == null) {
-			mainGearGlobalTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(428);
-		}
-		return mainGearGlobalTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearGlobalType_TotalLength() {
-		return (EReference) getMainGearGlobalType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearGlobalType_RetractAngle() {
-		return (EReference) getMainGearGlobalType().getEStructuralFeatures().get(1);
+	public EAttribute getMainActuatorType_UID() {
+		return (EAttribute) getMainActuatorType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -30372,7 +32821,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMainGearsType() {
 		if (mainGearsTypeEClass == null) {
 			mainGearsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(429);
+					.getEClassifiers().get(490);
 		}
 		return mainGearsTypeEClass;
 	}
@@ -30393,236 +32842,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getMainGearSupportBeamPositionType() {
-		if (mainGearSupportBeamPositionTypeEClass == null) {
-			mainGearSupportBeamPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(430);
-		}
-		return mainGearSupportBeamPositionTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearSupportBeamPositionType_XsiInside() {
-		return (EReference) getMainGearSupportBeamPositionType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearSupportBeamPositionType_EtaOutside() {
-		return (EReference) getMainGearSupportBeamPositionType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getMainGearSupportBeamType() {
-		if (mainGearSupportBeamTypeEClass == null) {
-			mainGearSupportBeamTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(431);
-		}
-		return mainGearSupportBeamTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearSupportBeamType_Position() {
-		return (EReference) getMainGearSupportBeamType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearSupportBeamType_Structure() {
-		return (EReference) getMainGearSupportBeamType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getMainGearType() {
-		if (mainGearTypeEClass == null) {
-			mainGearTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(432);
-		}
-		return mainGearTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearType_Name() {
-		return (EReference) getMainGearType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearType_Description() {
-		return (EReference) getMainGearType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearType_ParentUID() {
-		return (EReference) getMainGearType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearType_WingAttachment() {
-		return (EReference) getMainGearType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearType_FuselageAttachment() {
-		return (EReference) getMainGearType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearType_Global() {
-		return (EReference) getMainGearType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearType_Components() {
-		return (EReference) getMainGearType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getMainGearType_Symmetry() {
-		return (EAttribute) getMainGearType().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getMainGearType_UID() {
-		return (EAttribute) getMainGearType().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getMainGearWingAttachmentType() {
-		if (mainGearWingAttachmentTypeEClass == null) {
-			mainGearWingAttachmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(433);
-		}
-		return mainGearWingAttachmentTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearWingAttachmentType_FirstSparUID() {
-		return (EReference) getMainGearWingAttachmentType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearWingAttachmentType_Positioning() {
-		return (EReference) getMainGearWingAttachmentType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearWingAttachmentType_SecondSparUID() {
-		return (EReference) getMainGearWingAttachmentType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMainGearWingAttachmentType_SupportBeam() {
-		return (EReference) getMainGearWingAttachmentType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getMainStrutInterfaceDefinitionsType() {
 		if (mainStrutInterfaceDefinitionsTypeEClass == null) {
 			mainStrutInterfaceDefinitionsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(434);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(491);
 		}
 		return mainStrutInterfaceDefinitionsTypeEClass;
 	}
@@ -30666,7 +32889,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMainStrutWingFuselageAttachmentType() {
 		if (mainStrutWingFuselageAttachmentTypeEClass == null) {
 			mainStrutWingFuselageAttachmentTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(435);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(494);
 		}
 		return mainStrutWingFuselageAttachmentTypeEClass;
 	}
@@ -30730,7 +32953,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMaintenanceCostType() {
 		if (maintenanceCostTypeEClass == null) {
 			maintenanceCostTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(436);
+					.getEClassifiers().get(495);
 		}
 		return maintenanceCostTypeEClass;
 	}
@@ -30774,7 +32997,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMAirConditioningType() {
 		if (mAirConditioningTypeEClass == null) {
 			mAirConditioningTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(437);
+					.getEClassifiers().get(496);
 		}
 		return mAirConditioningTypeEClass;
 	}
@@ -30798,7 +33021,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMassBreakdownType() {
 		if (massBreakdownTypeEClass == null) {
 			massBreakdownTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(438);
+					.getEClassifiers().get(497);
 		}
 		return massBreakdownTypeEClass;
 	}
@@ -30852,7 +33075,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMassFractionType() {
 		if (massFractionTypeEClass == null) {
 			massFractionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(439);
+					.getEClassifiers().get(498);
 		}
 		return massFractionTypeEClass;
 	}
@@ -30863,28 +33086,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMassFractionType_FromSegmentUID() {
-		return (EReference) getMassFractionType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMassFractionType_ToSegmentUID() {
-		return (EReference) getMassFractionType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMassFractionType_Fraction() {
-		return (EReference) getMassFractionType().getEStructuralFeatures().get(2);
+	public EAttribute getMassFractionType_UID() {
+		return (EAttribute) getMassFractionType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -30896,7 +33099,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMassInertiaType() {
 		if (massInertiaTypeEClass == null) {
 			massInertiaTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(440);
+					.getEClassifiers().get(499);
 		}
 		return massInertiaTypeEClass;
 	}
@@ -30970,7 +33173,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMassInertiaVectorType() {
 		if (massInertiaVectorTypeEClass == null) {
 			massInertiaVectorTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(441);
+					.getEClassifiers().get(500);
 		}
 		return massInertiaVectorTypeEClass;
 	}
@@ -31044,7 +33247,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMaterialDefinitionForProfileBasedPointType() {
 		if (materialDefinitionForProfileBasedPointTypeEClass == null) {
 			materialDefinitionForProfileBasedPointTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(442);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(501);
 		}
 		return materialDefinitionForProfileBasedPointTypeEClass;
 	}
@@ -31108,7 +33311,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMaterialDefinitionForProfileBasedType() {
 		if (materialDefinitionForProfileBasedTypeEClass == null) {
 			materialDefinitionForProfileBasedTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(443);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(502);
 		}
 		return materialDefinitionForProfileBasedTypeEClass;
 	}
@@ -31129,7 +33332,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMaterialDefinitionForProfileBasedType_CompositeUID() {
+	public EReference getMaterialDefinitionForProfileBasedType_StandardProfileSheetID() {
 		return (EReference) getMaterialDefinitionForProfileBasedType().getEStructuralFeatures().get(1);
 	}
 
@@ -31139,7 +33342,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMaterialDefinitionForProfileBasedType_OrthotropyDirection() {
+	public EReference getMaterialDefinitionForProfileBasedType_Length() {
 		return (EReference) getMaterialDefinitionForProfileBasedType().getEStructuralFeatures().get(2);
 	}
 
@@ -31149,7 +33352,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMaterialDefinitionForProfileBasedType_ThicknessScaling() {
+	public EReference getMaterialDefinitionForProfileBasedType_CompositeUID() {
 		return (EReference) getMaterialDefinitionForProfileBasedType().getEStructuralFeatures().get(3);
 	}
 
@@ -31159,7 +33362,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMaterialDefinitionForProfileBasedType_MaterialUID() {
+	public EReference getMaterialDefinitionForProfileBasedType_OrthotropyDirection() {
 		return (EReference) getMaterialDefinitionForProfileBasedType().getEStructuralFeatures().get(4);
 	}
 
@@ -31169,8 +33372,28 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMaterialDefinitionForProfileBasedType_Thickness() {
+	public EReference getMaterialDefinitionForProfileBasedType_ThicknessScaling() {
 		return (EReference) getMaterialDefinitionForProfileBasedType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMaterialDefinitionForProfileBasedType_MaterialUID() {
+		return (EReference) getMaterialDefinitionForProfileBasedType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMaterialDefinitionForProfileBasedType_Thickness() {
+		return (EReference) getMaterialDefinitionForProfileBasedType().getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -31182,7 +33405,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMaterialDefinitionType() {
 		if (materialDefinitionTypeEClass == null) {
 			materialDefinitionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(444);
+					.getEClassifiers().get(503);
 		}
 		return materialDefinitionTypeEClass;
 	}
@@ -31246,7 +33469,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMaterialsType() {
 		if (materialsTypeEClass == null) {
 			materialsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(445);
+					.getEClassifiers().get(504);
 		}
 		return materialsTypeEClass;
 	}
@@ -31280,7 +33503,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMaterialType() {
 		if (materialTypeEClass == null) {
 			materialTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(446);
+					.get(505);
 		}
 		return materialTypeEClass;
 	}
@@ -31414,7 +33637,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMAutomaticFlightSystemType() {
 		if (mAutomaticFlightSystemTypeEClass == null) {
 			mAutomaticFlightSystemTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(447);
+					.getEClassifiers().get(506);
 		}
 		return mAutomaticFlightSystemTypeEClass;
 	}
@@ -31438,7 +33661,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMAuxillaryPowerUnitType() {
 		if (mAuxillaryPowerUnitTypeEClass == null) {
 			mAuxillaryPowerUnitTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(448);
+					.getEClassifiers().get(507);
 		}
 		return mAuxillaryPowerUnitTypeEClass;
 	}
@@ -31462,7 +33685,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMBellyFairingsType() {
 		if (mBellyFairingsTypeEClass == null) {
 			mBellyFairingsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(449);
+					.getEClassifiers().get(508);
 		}
 		return mBellyFairingsTypeEClass;
 	}
@@ -31496,7 +33719,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMBleedAirSystemType() {
 		if (mBleedAirSystemTypeEClass == null) {
 			mBleedAirSystemTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(450);
+					.getEClassifiers().get(509);
 		}
 		return mBleedAirSystemTypeEClass;
 	}
@@ -31520,7 +33743,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMBulkCargosType() {
 		if (mBulkCargosTypeEClass == null) {
 			mBulkCargosTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(451);
+					.getEClassifiers().get(510);
 		}
 		return mBulkCargosTypeEClass;
 	}
@@ -31554,7 +33777,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMBulkCargoType() {
 		if (mBulkCargoTypeEClass == null) {
 			mBulkCargoTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(452);
+					.getEClassifiers().get(511);
 		}
 		return mBulkCargoTypeEClass;
 	}
@@ -31578,7 +33801,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMBulkheadsType() {
 		if (mBulkheadsTypeEClass == null) {
 			mBulkheadsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(453);
+					.getEClassifiers().get(512);
 		}
 		return mBulkheadsTypeEClass;
 	}
@@ -31612,7 +33835,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCabinFloorsType() {
 		if (mCabinFloorsTypeEClass == null) {
 			mCabinFloorsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(454);
+					.getEClassifiers().get(513);
 		}
 		return mCabinFloorsTypeEClass;
 	}
@@ -31646,7 +33869,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCabinLightingsType() {
 		if (mCabinLightingsTypeEClass == null) {
 			mCabinLightingsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(455);
+					.getEClassifiers().get(514);
 		}
 		return mCabinLightingsTypeEClass;
 	}
@@ -31680,7 +33903,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCargoFloorsType() {
 		if (mCargoFloorsTypeEClass == null) {
 			mCargoFloorsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(456);
+					.getEClassifiers().get(515);
 		}
 		return mCargoFloorsTypeEClass;
 	}
@@ -31714,7 +33937,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCargoLiningsType() {
 		if (mCargoLiningsTypeEClass == null) {
 			mCargoLiningsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(457);
+					.getEClassifiers().get(516);
 		}
 		return mCargoLiningsTypeEClass;
 	}
@@ -31748,7 +33971,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCargoLoadingsType() {
 		if (mCargoLoadingsTypeEClass == null) {
 			mCargoLoadingsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(458);
+					.getEClassifiers().get(517);
 		}
 		return mCargoLoadingsTypeEClass;
 	}
@@ -31782,7 +34005,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCargoType() {
 		if (mCargoTypeEClass == null) {
 			mCargoTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(459);
+					.get(518);
 		}
 		return mCargoTypeEClass;
 	}
@@ -31836,7 +34059,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCarriagesType() {
 		if (mCarriagesTypeEClass == null) {
 			mCarriagesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(460);
+					.getEClassifiers().get(519);
 		}
 		return mCarriagesTypeEClass;
 	}
@@ -31870,7 +34093,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCarryOnsType() {
 		if (mCarryOnsTypeEClass == null) {
 			mCarryOnsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(461);
+					.getEClassifiers().get(520);
 		}
 		return mCarryOnsTypeEClass;
 	}
@@ -31904,7 +34127,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCarryOnType() {
 		if (mCarryOnTypeEClass == null) {
 			mCarryOnTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(462);
+					.get(521);
 		}
 		return mCarryOnTypeEClass;
 	}
@@ -31928,7 +34151,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCateringsType() {
 		if (mCateringsTypeEClass == null) {
 			mCateringsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(463);
+					.getEClassifiers().get(522);
 		}
 		return mCateringsTypeEClass;
 	}
@@ -31962,7 +34185,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCellsType() {
 		if (mCellsTypeEClass == null) {
 			mCellsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(464);
+					.get(523);
 		}
 		return mCellsTypeEClass;
 	}
@@ -31996,7 +34219,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCockpitLightingsType() {
 		if (mCockpitLightingsTypeEClass == null) {
 			mCockpitLightingsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(465);
+					.getEClassifiers().get(524);
 		}
 		return mCockpitLightingsTypeEClass;
 	}
@@ -32030,7 +34253,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCommunicationType() {
 		if (mCommunicationTypeEClass == null) {
 			mCommunicationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(466);
+					.getEClassifiers().get(525);
 		}
 		return mCommunicationTypeEClass;
 	}
@@ -32054,7 +34277,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMComponentSegmentsType() {
 		if (mComponentSegmentsTypeEClass == null) {
 			mComponentSegmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(467);
+					.getEClassifiers().get(526);
 		}
 		return mComponentSegmentsTypeEClass;
 	}
@@ -32088,7 +34311,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMComponentSegmentType() {
 		if (mComponentSegmentTypeEClass == null) {
 			mComponentSegmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(468);
+					.getEClassifiers().get(527);
 		}
 		return mComponentSegmentTypeEClass;
 	}
@@ -32182,7 +34405,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMControlSurfaceSupportsType() {
 		if (mControlSurfaceSupportsTypeEClass == null) {
 			mControlSurfaceSupportsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(469);
+					.getEClassifiers().get(528);
 		}
 		return mControlSurfaceSupportsTypeEClass;
 	}
@@ -32216,7 +34439,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMControlSurfaceSupportType() {
 		if (mControlSurfaceSupportTypeEClass == null) {
 			mControlSurfaceSupportTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(470);
+					.getEClassifiers().get(529);
 		}
 		return mControlSurfaceSupportTypeEClass;
 	}
@@ -32270,7 +34493,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCrewMembersType() {
 		if (mCrewMembersTypeEClass == null) {
 			mCrewMembersTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(471);
+					.getEClassifiers().get(530);
 		}
 		return mCrewMembersTypeEClass;
 	}
@@ -32304,7 +34527,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMCrewSeatsType() {
 		if (mCrewSeatsTypeEClass == null) {
 			mCrewSeatsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(472);
+					.getEClassifiers().get(531);
 		}
 		return mCrewSeatsTypeEClass;
 	}
@@ -32338,7 +34561,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMDeIcingType() {
 		if (mDeIcingTypeEClass == null) {
 			mDeIcingTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(473);
+					.get(532);
 		}
 		return mDeIcingTypeEClass;
 	}
@@ -32362,7 +34585,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMDocumentsToolsType() {
 		if (mDocumentsToolsTypeEClass == null) {
 			mDocumentsToolsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(474);
+					.getEClassifiers().get(533);
 		}
 		return mDocumentsToolsTypeEClass;
 	}
@@ -32396,7 +34619,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMDoorsType() {
 		if (mDoorsTypeEClass == null) {
 			mDoorsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(475);
+					.get(534);
 		}
 		return mDoorsTypeEClass;
 	}
@@ -32430,7 +34653,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMElectricalDistributionType() {
 		if (mElectricalDistributionTypeEClass == null) {
 			mElectricalDistributionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(476);
+					.getEClassifiers().get(535);
 		}
 		return mElectricalDistributionTypeEClass;
 	}
@@ -32454,7 +34677,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMElectricalGenerationType() {
 		if (mElectricalGenerationTypeEClass == null) {
 			mElectricalGenerationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(477);
+					.getEClassifiers().get(536);
 		}
 		return mElectricalGenerationTypeEClass;
 	}
@@ -32478,7 +34701,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMEmergencyEquipmentsType() {
 		if (mEmergencyEquipmentsTypeEClass == null) {
 			mEmergencyEquipmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(478);
+					.getEClassifiers().get(537);
 		}
 		return mEmergencyEquipmentsTypeEClass;
 	}
@@ -32512,7 +34735,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMEmergencyOxygenSystemsType() {
 		if (mEmergencyOxygenSystemsTypeEClass == null) {
 			mEmergencyOxygenSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(479);
+					.getEClassifiers().get(538);
 		}
 		return mEmergencyOxygenSystemsTypeEClass;
 	}
@@ -32546,7 +34769,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMEmptyULDsType() {
 		if (mEmptyULDsTypeEClass == null) {
 			mEmptyULDsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(480);
+					.getEClassifiers().get(539);
 		}
 		return mEmptyULDsTypeEClass;
 	}
@@ -32580,7 +34803,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMEmptyULDType() {
 		if (mEmptyULDTypeEClass == null) {
 			mEmptyULDTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(481);
+					.getEClassifiers().get(540);
 		}
 		return mEmptyULDTypeEClass;
 	}
@@ -32601,10 +34824,44 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getMEngineAPUOilsType() {
+		if (mEngineAPUOilsTypeEClass == null) {
+			mEngineAPUOilsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(541);
+		}
+		return mEngineAPUOilsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMEngineAPUOilsType_MassDescription() {
+		return (EReference) getMEngineAPUOilsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMEngineAPUOilsType_MEngineAPUOil() {
+		return (EReference) getMEngineAPUOilsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getMEngineControlType() {
 		if (mEngineControlTypeEClass == null) {
 			mEngineControlTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(482);
+					.getEClassifiers().get(542);
 		}
 		return mEngineControlTypeEClass;
 	}
@@ -32628,7 +34885,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMEquippedEnginesType() {
 		if (mEquippedEnginesTypeEClass == null) {
 			mEquippedEnginesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(483);
+					.getEClassifiers().get(543);
 		}
 		return mEquippedEnginesTypeEClass;
 	}
@@ -32662,7 +34919,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMExtLightingsType() {
 		if (mExtLightingsTypeEClass == null) {
 			mExtLightingsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(484);
+					.getEClassifiers().get(544);
 		}
 		return mExtLightingsTypeEClass;
 	}
@@ -32696,7 +34953,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMFireProtectionType() {
 		if (mFireProtectionTypeEClass == null) {
 			mFireProtectionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(485);
+					.getEClassifiers().get(545);
 		}
 		return mFireProtectionTypeEClass;
 	}
@@ -32720,7 +34977,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMFixedGalleysType() {
 		if (mFixedGalleysTypeEClass == null) {
 			mFixedGalleysTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(486);
+					.getEClassifiers().get(546);
 		}
 		return mFixedGalleysTypeEClass;
 	}
@@ -32754,7 +35011,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMFixedLeadingEdgesType() {
 		if (mFixedLeadingEdgesTypeEClass == null) {
 			mFixedLeadingEdgesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(487);
+					.getEClassifiers().get(547);
 		}
 		return mFixedLeadingEdgesTypeEClass;
 	}
@@ -32788,7 +35045,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMFixedLeadingEdgeType() {
 		if (mFixedLeadingEdgeTypeEClass == null) {
 			mFixedLeadingEdgeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(488);
+					.getEClassifiers().get(548);
 		}
 		return mFixedLeadingEdgeTypeEClass;
 	}
@@ -32812,7 +35069,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMFixedTrailingEdgesType() {
 		if (mFixedTrailingEdgesTypeEClass == null) {
 			mFixedTrailingEdgesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(489);
+					.getEClassifiers().get(549);
 		}
 		return mFixedTrailingEdgesTypeEClass;
 	}
@@ -32846,7 +35103,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMFixedTrailingEdgeType() {
 		if (mFixedTrailingEdgeTypeEClass == null) {
 			mFixedTrailingEdgeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(490);
+					.getEClassifiers().get(550);
 		}
 		return mFixedTrailingEdgeTypeEClass;
 	}
@@ -32890,7 +35147,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMFlightControlsType() {
 		if (mFlightControlsTypeEClass == null) {
 			mFlightControlsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(491);
+					.getEClassifiers().get(551);
 		}
 		return mFlightControlsTypeEClass;
 	}
@@ -32914,7 +35171,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMFloorCoveringsType() {
 		if (mFloorCoveringsTypeEClass == null) {
 			mFloorCoveringsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(492);
+					.getEClassifiers().get(552);
 		}
 		return mFloorCoveringsTypeEClass;
 	}
@@ -32948,7 +35205,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMFramesType() {
 		if (mFramesTypeEClass == null) {
 			mFramesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(493);
+					.get(553);
 		}
 		return mFramesTypeEClass;
 	}
@@ -32982,7 +35239,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMFreshWaterSystemsType() {
 		if (mFreshWaterSystemsTypeEClass == null) {
 			mFreshWaterSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(494);
+					.getEClassifiers().get(554);
 		}
 		return mFreshWaterSystemsTypeEClass;
 	}
@@ -33016,7 +35273,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMFuelSystemType() {
 		if (mFuelSystemTypeEClass == null) {
 			mFuelSystemTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(495);
+					.getEClassifiers().get(555);
 		}
 		return mFuelSystemTypeEClass;
 	}
@@ -33040,7 +35297,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMFuelType() {
 		if (mFuelTypeEClass == null) {
 			mFuelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(496);
+					.get(556);
 		}
 		return mFuelTypeEClass;
 	}
@@ -33074,7 +35331,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMFurnishingType() {
 		if (mFurnishingTypeEClass == null) {
 			mFurnishingTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(497);
+					.getEClassifiers().get(557);
 		}
 		return mFurnishingTypeEClass;
 	}
@@ -33255,10 +35512,20 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getMFurnishingType_MMiscellaneous() {
+		return (EReference) getMFurnishingType().getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getMFuselagesStructureType() {
 		if (mFuselagesStructureTypeEClass == null) {
 			mFuselagesStructureTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(498);
+					.getEClassifiers().get(558);
 		}
 		return mFuselagesStructureTypeEClass;
 	}
@@ -33292,7 +35559,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMFuselageStructureType() {
 		if (mFuselageStructureTypeEClass == null) {
 			mFuselageStructureTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(499);
+					.getEClassifiers().get(559);
 		}
 		return mFuselageStructureTypeEClass;
 	}
@@ -33333,7 +35600,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMFuselageStructureType_MDoors() {
+	public EReference getMFuselageStructureType_MWalls() {
 		return (EReference) getMFuselageStructureType().getEStructuralFeatures().get(3);
 	}
 
@@ -33343,7 +35610,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMFuselageStructureType_MWindows() {
+	public EReference getMFuselageStructureType_MDoors() {
 		return (EReference) getMFuselageStructureType().getEStructuralFeatures().get(4);
 	}
 
@@ -33353,7 +35620,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMFuselageStructureType_MCabinFloors() {
+	public EReference getMFuselageStructureType_MWindows() {
 		return (EReference) getMFuselageStructureType().getEStructuralFeatures().get(5);
 	}
 
@@ -33363,7 +35630,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMFuselageStructureType_MCargoFloors() {
+	public EReference getMFuselageStructureType_MCabinFloors() {
 		return (EReference) getMFuselageStructureType().getEStructuralFeatures().get(6);
 	}
 
@@ -33373,7 +35640,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMFuselageStructureType_MSpecialStructures() {
+	public EReference getMFuselageStructureType_MCargoFloors() {
 		return (EReference) getMFuselageStructureType().getEStructuralFeatures().get(7);
 	}
 
@@ -33383,7 +35650,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMFuselageStructureType_MBellyFairings() {
+	public EReference getMFuselageStructureType_MSpecialStructures() {
 		return (EReference) getMFuselageStructureType().getEStructuralFeatures().get(8);
 	}
 
@@ -33393,7 +35660,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMFuselageStructureType_MStringers() {
+	public EReference getMFuselageStructureType_MBellyFairings() {
 		return (EReference) getMFuselageStructureType().getEStructuralFeatures().get(9);
 	}
 
@@ -33403,8 +35670,28 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMFuselageStructureType_MFrames() {
+	public EReference getMFuselageStructureType_MStringers() {
 		return (EReference) getMFuselageStructureType().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMFuselageStructureType_MFrames() {
+		return (EReference) getMFuselageStructureType().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMFuselageStructureType_MMiscellaneous() {
+		return (EReference) getMFuselageStructureType().getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -33416,7 +35703,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMHydraulicDistributionType() {
 		if (mHydraulicDistributionTypeEClass == null) {
 			mHydraulicDistributionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(500);
+					.getEClassifiers().get(560);
 		}
 		return mHydraulicDistributionTypeEClass;
 	}
@@ -33440,7 +35727,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMHydraulicGenerationType() {
 		if (mHydraulicGenerationTypeEClass == null) {
 			mHydraulicGenerationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(501);
+					.getEClassifiers().get(561);
 		}
 		return mHydraulicGenerationTypeEClass;
 	}
@@ -33464,7 +35751,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMIFESystemsType() {
 		if (mifeSystemsTypeEClass == null) {
 			mifeSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(502);
+					.getEClassifiers().get(562);
 		}
 		return mifeSystemsTypeEClass;
 	}
@@ -33498,7 +35785,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMInstrumentPanelType() {
 		if (mInstrumentPanelTypeEClass == null) {
 			mInstrumentPanelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(503);
+					.getEClassifiers().get(563);
 		}
 		return mInstrumentPanelTypeEClass;
 	}
@@ -33522,7 +35809,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMInsulationsType() {
 		if (mInsulationsTypeEClass == null) {
 			mInsulationsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(504);
+					.getEClassifiers().get(564);
 		}
 		return mInsulationsTypeEClass;
 	}
@@ -33556,7 +35843,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMIntegratedModularAvionicsType() {
 		if (mIntegratedModularAvionicsTypeEClass == null) {
 			mIntegratedModularAvionicsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(505);
+					.getEClassifiers().get(565);
 		}
 		return mIntegratedModularAvionicsTypeEClass;
 	}
@@ -33580,7 +35867,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMInterGasSystemType() {
 		if (mInterGasSystemTypeEClass == null) {
 			mInterGasSystemTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(506);
+					.getEClassifiers().get(566);
 		}
 		return mInterGasSystemTypeEClass;
 	}
@@ -33604,7 +35891,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMissionDefinitionsType() {
 		if (missionDefinitionsTypeEClass == null) {
 			missionDefinitionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(507);
+					.getEClassifiers().get(567);
 		}
 		return missionDefinitionsTypeEClass;
 	}
@@ -33615,7 +35902,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionDefinitionsType_Segments() {
+	public EReference getMissionDefinitionsType_Missions() {
 		return (EReference) getMissionDefinitionsType().getEStructuralFeatures().get(0);
 	}
 
@@ -33625,7 +35912,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionDefinitionsType_Missions() {
+	public EReference getMissionDefinitionsType_SegmentBlocks() {
 		return (EReference) getMissionDefinitionsType().getEStructuralFeatures().get(1);
 	}
 
@@ -33635,7 +35922,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionDefinitionsType_PointPerformances() {
+	public EReference getMissionDefinitionsType_Segments() {
 		return (EReference) getMissionDefinitionsType().getEStructuralFeatures().get(2);
 	}
 
@@ -33645,8 +35932,32 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionDefinitionsType_SegmentBlocks() {
-		return (EReference) getMissionDefinitionsType().getEStructuralFeatures().get(3);
+	public EClass getMissionEndRunwayType() {
+		if (missionEndRunwayTypeEClass == null) {
+			missionEndRunwayTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(568);
+		}
+		return missionEndRunwayTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMissionEndRunwayType_RunwayUID() {
+		return (EReference) getMissionEndRunwayType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMissionEndRunwayType_RunwayEndPosition() {
+		return (EReference) getMissionEndRunwayType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -33658,7 +35969,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMissionPerformanceMapDefinitionType() {
 		if (missionPerformanceMapDefinitionTypeEClass == null) {
 			missionPerformanceMapDefinitionTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(508);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(569);
 		}
 		return missionPerformanceMapDefinitionTypeEClass;
 	}
@@ -33692,7 +36003,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMissionSegmentBlockConstraintsType() {
 		if (missionSegmentBlockConstraintsTypeEClass == null) {
 			missionSegmentBlockConstraintsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(509);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(570);
 		}
 		return missionSegmentBlockConstraintsTypeEClass;
 	}
@@ -33726,7 +36037,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMissionSegmentBlocksType() {
 		if (missionSegmentBlocksTypeEClass == null) {
 			missionSegmentBlocksTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(510);
+					.getEClassifiers().get(571);
 		}
 		return missionSegmentBlocksTypeEClass;
 	}
@@ -33750,7 +36061,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMissionSegmentBlockType() {
 		if (missionSegmentBlockTypeEClass == null) {
 			missionSegmentBlockTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(511);
+					.getEClassifiers().get(572);
 		}
 		return missionSegmentBlockTypeEClass;
 	}
@@ -33761,7 +36072,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentBlockType_SegmentBlockConstraints() {
+	public EReference getMissionSegmentBlockType_Name() {
 		return (EReference) getMissionSegmentBlockType().getEStructuralFeatures().get(0);
 	}
 
@@ -33771,7 +36082,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentBlockType_SegmentDirection() {
+	public EReference getMissionSegmentBlockType_Description() {
 		return (EReference) getMissionSegmentBlockType().getEStructuralFeatures().get(1);
 	}
 
@@ -33781,7 +36092,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentBlockType_SegmentUIDSequence() {
+	public EReference getMissionSegmentBlockType_SegmentBlockConstraints() {
 		return (EReference) getMissionSegmentBlockType().getEStructuralFeatures().get(2);
 	}
 
@@ -33791,7 +36102,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentBlockType_VariableSegments() {
+	public EReference getMissionSegmentBlockType_SegmentDirection() {
 		return (EReference) getMissionSegmentBlockType().getEStructuralFeatures().get(3);
 	}
 
@@ -33801,7 +36112,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentBlockType_FuelPlanningType() {
+	public EReference getMissionSegmentBlockType_SegmentUIDs() {
 		return (EReference) getMissionSegmentBlockType().getEStructuralFeatures().get(4);
 	}
 
@@ -33811,8 +36122,38 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getMissionSegmentBlockType_VariableSegments() {
+		return (EReference) getMissionSegmentBlockType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMissionSegmentBlockType_FuelPlanningType() {
+		return (EReference) getMissionSegmentBlockType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMissionSegmentBlockType_NumberOfRepetitions() {
+		return (EReference) getMissionSegmentBlockType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getMissionSegmentBlockType_UID() {
-		return (EAttribute) getMissionSegmentBlockType().getEStructuralFeatures().get(5);
+		return (EAttribute) getMissionSegmentBlockType().getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -33824,7 +36165,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMissionSegmentEndConditionType() {
 		if (missionSegmentEndConditionTypeEClass == null) {
 			missionSegmentEndConditionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(512);
+					.getEClassifiers().get(573);
 		}
 		return missionSegmentEndConditionTypeEClass;
 	}
@@ -33835,7 +36176,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentEndConditionType_CAS() {
+	public EReference getMissionSegmentEndConditionType_CalibratedAirSpeed() {
 		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(0);
 	}
 
@@ -33875,7 +36216,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentEndConditionType_RunwayUID() {
+	public EReference getMissionSegmentEndConditionType_Runway() {
 		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(4);
 	}
 
@@ -33885,7 +36226,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentEndConditionType_Orientation() {
+	public EReference getMissionSegmentEndConditionType_MassFraction() {
 		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(5);
 	}
 
@@ -33895,7 +36236,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentEndConditionType_Range() {
+	public EReference getMissionSegmentEndConditionType_FuelFraction() {
 		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(6);
 	}
 
@@ -33905,7 +36246,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentEndConditionType_Duration() {
+	public EReference getMissionSegmentEndConditionType_FuelRemaining() {
 		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(7);
 	}
 
@@ -33915,7 +36256,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentEndConditionType_SpecificExcessPower() {
+	public EReference getMissionSegmentEndConditionType_FuelConsumed() {
 		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(8);
 	}
 
@@ -33925,7 +36266,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentEndConditionType_RateOfClimb() {
+	public EReference getMissionSegmentEndConditionType_PowerFraction() {
 		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(9);
 	}
 
@@ -33935,7 +36276,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentEndConditionType_FlightPathAngle() {
+	public EReference getMissionSegmentEndConditionType_PowerRemaining() {
 		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(10);
 	}
 
@@ -33945,7 +36286,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentEndConditionType_MassFraction() {
+	public EReference getMissionSegmentEndConditionType_PowerConsumed() {
 		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(11);
 	}
 
@@ -33955,7 +36296,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentEndConditionType_FuelFraction() {
+	public EReference getMissionSegmentEndConditionType_Heading() {
 		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(12);
 	}
 
@@ -33965,7 +36306,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentEndConditionType_FuelRemaining() {
+	public EReference getMissionSegmentEndConditionType_TurnAngle() {
 		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(13);
 	}
 
@@ -33975,8 +36316,68 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentEndConditionType_FuelConsumed() {
+	public EReference getMissionSegmentEndConditionType_Range() {
 		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMissionSegmentEndConditionType_Duration() {
+		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMissionSegmentEndConditionType_EndTimeUTC() {
+		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMissionSegmentEndConditionType_SpecificExcessPower() {
+		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMissionSegmentEndConditionType_RateOfClimb() {
+		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMissionSegmentEndConditionType_FlightPathAngle() {
+		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMissionSegmentEndConditionType_ReleasedStores() {
+		return (EReference) getMissionSegmentEndConditionType().getEStructuralFeatures().get(20);
 	}
 
 	/**
@@ -33988,7 +36389,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMissionSegmentsType() {
 		if (missionSegmentsTypeEClass == null) {
 			missionSegmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(513);
+					.getEClassifiers().get(574);
 		}
 		return missionSegmentsTypeEClass;
 	}
@@ -34012,7 +36413,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMissionSegmentType() {
 		if (missionSegmentTypeEClass == null) {
 			missionSegmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(514);
+					.getEClassifiers().get(575);
 		}
 		return missionSegmentTypeEClass;
 	}
@@ -34053,7 +36454,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentType_Mass() {
+	public EReference getMissionSegmentType_CreditDistance() {
 		return (EReference) getMissionSegmentType().getEStructuralFeatures().get(3);
 	}
 
@@ -34063,7 +36464,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentType_MassFraction() {
+	public EReference getMissionSegmentType_Environment() {
 		return (EReference) getMissionSegmentType().getEStructuralFeatures().get(4);
 	}
 
@@ -34073,7 +36474,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentType_EndCondition() {
+	public EReference getMissionSegmentType_FuelMass() {
 		return (EReference) getMissionSegmentType().getEStructuralFeatures().get(5);
 	}
 
@@ -34083,7 +36484,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentType_ConstraintSettings() {
+	public EReference getMissionSegmentType_FuelMassFraction() {
 		return (EReference) getMissionSegmentType().getEStructuralFeatures().get(6);
 	}
 
@@ -34093,7 +36494,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionSegmentType_Configuration() {
+	public EReference getMissionSegmentType_EndCondition() {
 		return (EReference) getMissionSegmentType().getEStructuralFeatures().get(7);
 	}
 
@@ -34103,8 +36504,18 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getMissionSegmentType_Constraints() {
+		return (EReference) getMissionSegmentType().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getMissionSegmentType_UID() {
-		return (EAttribute) getMissionSegmentType().getEStructuralFeatures().get(8);
+		return (EAttribute) getMissionSegmentType().getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -34116,7 +36527,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMissionStartConditionType() {
 		if (missionStartConditionTypeEClass == null) {
 			missionStartConditionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(515);
+					.getEClassifiers().get(576);
 		}
 		return missionStartConditionTypeEClass;
 	}
@@ -34127,7 +36538,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionStartConditionType_RunwayUID() {
+	public EReference getMissionStartConditionType_CalibratedAirSpeed() {
 		return (EReference) getMissionStartConditionType().getEStructuralFeatures().get(0);
 	}
 
@@ -34137,7 +36548,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionStartConditionType_CAS() {
+	public EReference getMissionStartConditionType_MachNumber() {
 		return (EReference) getMissionStartConditionType().getEStructuralFeatures().get(1);
 	}
 
@@ -34147,7 +36558,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionStartConditionType_Mach() {
+	public EReference getMissionStartConditionType_PositionXYZ() {
 		return (EReference) getMissionStartConditionType().getEStructuralFeatures().get(2);
 	}
 
@@ -34157,7 +36568,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionStartConditionType_PositionXYZ() {
+	public EReference getMissionStartConditionType_PositionGeo() {
 		return (EReference) getMissionStartConditionType().getEStructuralFeatures().get(3);
 	}
 
@@ -34167,7 +36578,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionStartConditionType_PositionGeo() {
+	public EReference getMissionStartConditionType_Runway() {
 		return (EReference) getMissionStartConditionType().getEStructuralFeatures().get(4);
 	}
 
@@ -34177,8 +36588,62 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionStartConditionType_Orientation() {
+	public EReference getMissionStartConditionType_Heading() {
 		return (EReference) getMissionStartConditionType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMissionStartConditionType_StartTimeUTC() {
+		return (EReference) getMissionStartConditionType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMissionStartConditionType_Environment() {
+		return (EReference) getMissionStartConditionType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getMissionStartRunwayType() {
+		if (missionStartRunwayTypeEClass == null) {
+			missionStartRunwayTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(577);
+		}
+		return missionStartRunwayTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMissionStartRunwayType_RunwayUID() {
+		return (EReference) getMissionStartRunwayType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMissionStartRunwayType_RunwayStartPosition() {
+		return (EReference) getMissionStartRunwayType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -34190,7 +36655,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMissionsType() {
 		if (missionsTypeEClass == null) {
 			missionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(516);
+					.get(578);
 		}
 		return missionsTypeEClass;
 	}
@@ -34214,7 +36679,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMissionType() {
 		if (missionTypeEClass == null) {
 			missionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(517);
+					.get(579);
 		}
 		return missionTypeEClass;
 	}
@@ -34255,7 +36720,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMissionType_SegmentUIDSequence() {
+	public EReference getMissionType_SegmentBlockUIDs() {
 		return (EReference) getMissionType().getEStructuralFeatures().get(3);
 	}
 
@@ -34278,7 +36743,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMLandingGearsType() {
 		if (mLandingGearsTypeEClass == null) {
 			mLandingGearsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(518);
+					.getEClassifiers().get(580);
 		}
 		return mLandingGearsTypeEClass;
 	}
@@ -34322,7 +36787,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMLandingGearSupportsType() {
 		if (mLandingGearSupportsTypeEClass == null) {
 			mLandingGearSupportsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(519);
+					.getEClassifiers().get(581);
 		}
 		return mLandingGearSupportsTypeEClass;
 	}
@@ -34356,7 +36821,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMLavatoriesType() {
 		if (mLavatoriesTypeEClass == null) {
 			mLavatoriesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(520);
+					.getEClassifiers().get(582);
 		}
 		return mLavatoriesTypeEClass;
 	}
@@ -34390,7 +36855,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMLiningsType() {
 		if (mLiningsTypeEClass == null) {
 			mLiningsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(521);
+					.get(583);
 		}
 		return mLiningsTypeEClass;
 	}
@@ -34424,7 +36889,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMMainGearsType() {
 		if (mMainGearsTypeEClass == null) {
 			mMainGearsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(522);
+					.getEClassifiers().get(584);
 		}
 		return mMainGearsTypeEClass;
 	}
@@ -34458,7 +36923,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMManufacturerEmptyType() {
 		if (mManufacturerEmptyTypeEClass == null) {
 			mManufacturerEmptyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(523);
+					.getEClassifiers().get(585);
 		}
 		return mManufacturerEmptyTypeEClass;
 	}
@@ -34522,7 +36987,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMMillitarySystemsType() {
 		if (mMillitarySystemsTypeEClass == null) {
 			mMillitarySystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(524);
+					.getEClassifiers().get(586);
 		}
 		return mMillitarySystemsTypeEClass;
 	}
@@ -34543,34 +37008,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getMMiscellaneousType() {
-		if (mMiscellaneousTypeEClass == null) {
-			mMiscellaneousTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(525);
-		}
-		return mMiscellaneousTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getMMiscellaneousType_MassDescription() {
-		return (EReference) getMMiscellaneousType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getMMoveableLeadingEdgesType() {
 		if (mMoveableLeadingEdgesTypeEClass == null) {
 			mMoveableLeadingEdgesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(526);
+					.getEClassifiers().get(587);
 		}
 		return mMoveableLeadingEdgesTypeEClass;
 	}
@@ -34604,7 +37045,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMMoveableLeadingEdgeType() {
 		if (mMoveableLeadingEdgeTypeEClass == null) {
 			mMoveableLeadingEdgeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(527);
+					.getEClassifiers().get(588);
 		}
 		return mMoveableLeadingEdgeTypeEClass;
 	}
@@ -34648,7 +37089,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMMoveablesType() {
 		if (mMoveablesTypeEClass == null) {
 			mMoveablesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(528);
+					.getEClassifiers().get(589);
 		}
 		return mMoveablesTypeEClass;
 	}
@@ -34692,7 +37133,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMMoveableTrailingEdgeType() {
 		if (mMoveableTrailingEdgeTypeEClass == null) {
 			mMoveableTrailingEdgeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(529);
+					.getEClassifiers().get(590);
 		}
 		return mMoveableTrailingEdgeTypeEClass;
 	}
@@ -34736,7 +37177,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMNavigationType() {
 		if (mNavigationTypeEClass == null) {
 			mNavigationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(530);
+					.getEClassifiers().get(591);
 		}
 		return mNavigationTypeEClass;
 	}
@@ -34760,7 +37201,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMNoseGearsType() {
 		if (mNoseGearsTypeEClass == null) {
 			mNoseGearsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(531);
+					.getEClassifiers().get(592);
 		}
 		return mNoseGearsTypeEClass;
 	}
@@ -34791,24 +37232,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getModelType() {
-		if (modelTypeEClass == null) {
-			modelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(532);
-		}
-		return modelTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getMonetaryValuesAnalysisType() {
 		if (monetaryValuesAnalysisTypeEClass == null) {
 			monetaryValuesAnalysisTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(533);
+					.getEClassifiers().get(593);
 		}
 		return monetaryValuesAnalysisTypeEClass;
 	}
@@ -34842,7 +37269,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMOperatorItemsType() {
 		if (mOperatorItemsTypeEClass == null) {
 			mOperatorItemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(534);
+					.getEClassifiers().get(594);
 		}
 		return mOperatorItemsTypeEClass;
 	}
@@ -34933,10 +37360,80 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getMOperatorItemsType_MAdditionalCenterTanks() {
+		return (EReference) getMOperatorItemsType().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMOperatorItemsType_MEngineAPUOils() {
+		return (EReference) getMOperatorItemsType().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMOperatorItemsType_MRemovableCrewRests() {
+		return (EReference) getMOperatorItemsType().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMOperatorItemsType_MToiletFluids() {
+		return (EReference) getMOperatorItemsType().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMOperatorItemsType_MUnusableFuels() {
+		return (EReference) getMOperatorItemsType().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMOperatorItemsType_MWaterReservoirs() {
+		return (EReference) getMOperatorItemsType().getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMOperatorItemsType_MMiscellaneous() {
+		return (EReference) getMOperatorItemsType().getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getMOverheadBinsType() {
 		if (mOverheadBinsTypeEClass == null) {
 			mOverheadBinsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(535);
+					.getEClassifiers().get(595);
 		}
 		return mOverheadBinsTypeEClass;
 	}
@@ -34970,7 +37467,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMPartStowDoorsType() {
 		if (mPartStowDoorsTypeEClass == null) {
 			mPartStowDoorsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(536);
+					.getEClassifiers().get(596);
 		}
 		return mPartStowDoorsTypeEClass;
 	}
@@ -35004,7 +37501,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMPassengersType() {
 		if (mPassengersTypeEClass == null) {
 			mPassengersTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(537);
+					.getEClassifiers().get(597);
 		}
 		return mPassengersTypeEClass;
 	}
@@ -35038,7 +37535,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMPassengerType() {
 		if (mPassengerTypeEClass == null) {
 			mPassengerTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(538);
+					.getEClassifiers().get(598);
 		}
 		return mPassengerTypeEClass;
 	}
@@ -35062,7 +37559,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMPaxType() {
 		if (mPaxTypeEClass == null) {
 			mPaxTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(539);
+					.get(599);
 		}
 		return mPaxTypeEClass;
 	}
@@ -35106,7 +37603,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMPayloadType() {
 		if (mPayloadTypeEClass == null) {
 			mPayloadTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(540);
+					.get(600);
 		}
 		return mPayloadTypeEClass;
 	}
@@ -35150,7 +37647,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMPowerUnitsType() {
 		if (mPowerUnitsTypeEClass == null) {
 			mPowerUnitsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(541);
+					.getEClassifiers().get(601);
 		}
 		return mPowerUnitsTypeEClass;
 	}
@@ -35221,10 +37718,20 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getMPowerUnitsType_MMiscellaneous() {
+		return (EReference) getMPowerUnitsType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getMPylonAttachmentsType() {
 		if (mPylonAttachmentsTypeEClass == null) {
 			mPylonAttachmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(542);
+					.getEClassifiers().get(602);
 		}
 		return mPylonAttachmentsTypeEClass;
 	}
@@ -35258,7 +37765,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMPylonsType() {
 		if (mPylonsTypeEClass == null) {
 			mPylonsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(543);
+					.get(603);
 		}
 		return mPylonsTypeEClass;
 	}
@@ -35279,8 +37786,42 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getMPylonsType_MPylons() {
+	public EReference getMPylonsType_MPylon() {
 		return (EReference) getMPylonsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getMRemovableCrewRestsType() {
+		if (mRemovableCrewRestsTypeEClass == null) {
+			mRemovableCrewRestsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(604);
+		}
+		return mRemovableCrewRestsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMRemovableCrewRestsType_MassDescription() {
+		return (EReference) getMRemovableCrewRestsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMRemovableCrewRestsType_MRemovableCrewRest() {
+		return (EReference) getMRemovableCrewRestsType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -35292,7 +37833,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMRibsType() {
 		if (mRibsTypeEClass == null) {
 			mRibsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(544);
+					.get(605);
 		}
 		return mRibsTypeEClass;
 	}
@@ -35326,7 +37867,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMRibType() {
 		if (mRibTypeEClass == null) {
 			mRibTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(545);
+					.get(606);
 		}
 		return mRibTypeEClass;
 	}
@@ -35350,7 +37891,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMSeatsType() {
 		if (mSeatsTypeEClass == null) {
 			mSeatsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(546);
+					.get(607);
 		}
 		return mSeatsTypeEClass;
 	}
@@ -35384,7 +37925,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMShellsType() {
 		if (mShellsTypeEClass == null) {
 			mShellsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(547);
+					.get(608);
 		}
 		return mShellsTypeEClass;
 	}
@@ -35428,7 +37969,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMShellType() {
 		if (mShellTypeEClass == null) {
 			mShellTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(548);
+					.get(609);
 		}
 		return mShellTypeEClass;
 	}
@@ -35482,7 +38023,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMSkinPanelsType() {
 		if (mSkinPanelsTypeEClass == null) {
 			mSkinPanelsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(549);
+					.getEClassifiers().get(610);
 		}
 		return mSkinPanelsTypeEClass;
 	}
@@ -35516,7 +38057,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMSkinsType() {
 		if (mSkinsTypeEClass == null) {
 			mSkinsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(550);
+					.get(611);
 		}
 		return mSkinsTypeEClass;
 	}
@@ -35547,10 +38088,78 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getMSparCellsType() {
+		if (mSparCellsTypeEClass == null) {
+			mSparCellsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(612);
+		}
+		return mSparCellsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMSparCellsType_MassDescription() {
+		return (EReference) getMSparCellsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMSparCellsType_MSparCell() {
+		return (EReference) getMSparCellsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getMSparSkinsType() {
+		if (mSparSkinsTypeEClass == null) {
+			mSparSkinsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(613);
+		}
+		return mSparSkinsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMSparSkinsType_MassDescription() {
+		return (EReference) getMSparSkinsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMSparSkinsType_MSparSkin() {
+		return (EReference) getMSparSkinsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getMSparsType() {
 		if (mSparsTypeEClass == null) {
 			mSparsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(551);
+					.get(614);
 		}
 		return mSparsTypeEClass;
 	}
@@ -35581,10 +38190,54 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getMSparType() {
+		if (mSparTypeEClass == null) {
+			mSparTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(615);
+		}
+		return mSparTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMSparType_MassDescription() {
+		return (EReference) getMSparType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMSparType_MSparSkins() {
+		return (EReference) getMSparType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMSparType_MSparCells() {
+		return (EReference) getMSparType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getMSpecialStructuresType() {
 		if (mSpecialStructuresTypeEClass == null) {
 			mSpecialStructuresTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(552);
+					.getEClassifiers().get(616);
 		}
 		return mSpecialStructuresTypeEClass;
 	}
@@ -35618,7 +38271,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMSpoilersType() {
 		if (mSpoilersTypeEClass == null) {
 			mSpoilersTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(553);
+					.getEClassifiers().get(617);
 		}
 		return mSpoilersTypeEClass;
 	}
@@ -35652,7 +38305,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMStringersType() {
 		if (mStringersTypeEClass == null) {
 			mStringersTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(554);
+					.getEClassifiers().get(618);
 		}
 		return mStringersTypeEClass;
 	}
@@ -35686,7 +38339,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMStructureType() {
 		if (mStructureTypeEClass == null) {
 			mStructureTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(555);
+					.getEClassifiers().get(619);
 		}
 		return mStructureTypeEClass;
 	}
@@ -35750,7 +38403,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMSystemsType() {
 		if (mSystemsTypeEClass == null) {
 			mSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(556);
+					.get(620);
 		}
 		return mSystemsTypeEClass;
 	}
@@ -35921,10 +38574,54 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getMSystemsType_MMiscellaneous() {
+		return (EReference) getMSystemsType().getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getMToiletFluidsType() {
+		if (mToiletFluidsTypeEClass == null) {
+			mToiletFluidsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(621);
+		}
+		return mToiletFluidsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMToiletFluidsType_MassDescription() {
+		return (EReference) getMToiletFluidsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMToiletFluidsType_MToiletFluid() {
+		return (EReference) getMToiletFluidsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getMTrailingEdgeDevicesType() {
 		if (mTrailingEdgeDevicesTypeEClass == null) {
 			mTrailingEdgeDevicesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(557);
+					.getEClassifiers().get(622);
 		}
 		return mTrailingEdgeDevicesTypeEClass;
 	}
@@ -35958,7 +38655,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMTrailingEdgeDeviceType() {
 		if (mTrailingEdgeDeviceTypeEClass == null) {
 			mTrailingEdgeDeviceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(558);
+					.getEClassifiers().get(623);
 		}
 		return mTrailingEdgeDeviceTypeEClass;
 	}
@@ -36002,7 +38699,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMULDContentsType() {
 		if (muldContentsTypeEClass == null) {
 			muldContentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(559);
+					.getEClassifiers().get(624);
 		}
 		return muldContentsTypeEClass;
 	}
@@ -36036,7 +38733,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMULDContentType() {
 		if (muldContentTypeEClass == null) {
 			muldContentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(560);
+					.getEClassifiers().get(625);
 		}
 		return muldContentTypeEClass;
 	}
@@ -36057,10 +38754,44 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getMUnusableFuelsType() {
+		if (mUnusableFuelsTypeEClass == null) {
+			mUnusableFuelsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(626);
+		}
+		return mUnusableFuelsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMUnusableFuelsType_MassDescription() {
+		return (EReference) getMUnusableFuelsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMUnusableFuelsType_MUnusableFuel() {
+		return (EReference) getMUnusableFuelsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getMVacuumWasteSystemsType() {
 		if (mVacuumWasteSystemsTypeEClass == null) {
 			mVacuumWasteSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(561);
+					.getEClassifiers().get(627);
 		}
 		return mVacuumWasteSystemsTypeEClass;
 	}
@@ -36091,10 +38822,44 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getMWallsType() {
+		if (mWallsTypeEClass == null) {
+			mWallsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(628);
+		}
+		return mWallsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMWallsType_MassDescription() {
+		return (EReference) getMWallsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMWallsType_MWall() {
+		return (EReference) getMWallsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getMWasteWaterSystemsType() {
 		if (mWasteWaterSystemsTypeEClass == null) {
 			mWasteWaterSystemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(562);
+					.getEClassifiers().get(629);
 		}
 		return mWasteWaterSystemsTypeEClass;
 	}
@@ -36125,10 +38890,44 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getMWaterReservoirsType() {
+		if (mWaterReservoirsTypeEClass == null) {
+			mWaterReservoirsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(630);
+		}
+		return mWaterReservoirsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMWaterReservoirsType_MassDescription() {
+		return (EReference) getMWaterReservoirsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getMWaterReservoirsType_MWaterReservoir() {
+		return (EReference) getMWaterReservoirsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getMWindowsType() {
 		if (mWindowsTypeEClass == null) {
 			mWindowsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(563);
+					.get(631);
 		}
 		return mWindowsTypeEClass;
 	}
@@ -36162,7 +38961,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMWingBoxType() {
 		if (mWingBoxTypeEClass == null) {
 			mWingBoxTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(564);
+					.get(632);
 		}
 		return mWingBoxTypeEClass;
 	}
@@ -36216,7 +39015,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMWingsStructureType() {
 		if (mWingsStructureTypeEClass == null) {
 			mWingsStructureTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(565);
+					.getEClassifiers().get(633);
 		}
 		return mWingsStructureTypeEClass;
 	}
@@ -36250,7 +39049,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getMWingStructureType() {
 		if (mWingStructureTypeEClass == null) {
 			mWingStructureTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(566);
+					.getEClassifiers().get(634);
 		}
 		return mWingStructureTypeEClass;
 	}
@@ -36284,7 +39083,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getNacelleCenterCowlType() {
 		if (nacelleCenterCowlTypeEClass == null) {
 			nacelleCenterCowlTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(567);
+					.getEClassifiers().get(635);
 		}
 		return nacelleCenterCowlTypeEClass;
 	}
@@ -36328,7 +39127,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getNacelleCowlType() {
 		if (nacelleCowlTypeEClass == null) {
 			nacelleCowlTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(568);
+					.getEClassifiers().get(636);
 		}
 		return nacelleCowlTypeEClass;
 	}
@@ -36382,7 +39181,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getNacelleGuideCurvesType() {
 		if (nacelleGuideCurvesTypeEClass == null) {
 			nacelleGuideCurvesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(569);
+					.getEClassifiers().get(637);
 		}
 		return nacelleGuideCurvesTypeEClass;
 	}
@@ -36406,7 +39205,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getNacelleGuideCurveType() {
 		if (nacelleGuideCurveTypeEClass == null) {
 			nacelleGuideCurveTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(570);
+					.getEClassifiers().get(638);
 		}
 		return nacelleGuideCurveTypeEClass;
 	}
@@ -36480,7 +39279,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getNacelleProfilesType() {
 		if (nacelleProfilesTypeEClass == null) {
 			nacelleProfilesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(571);
+					.getEClassifiers().get(639);
 		}
 		return nacelleProfilesTypeEClass;
 	}
@@ -36504,7 +39303,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getNacelleSectionsType() {
 		if (nacelleSectionsTypeEClass == null) {
 			nacelleSectionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(572);
+					.getEClassifiers().get(640);
 		}
 		return nacelleSectionsTypeEClass;
 	}
@@ -36528,7 +39327,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getNacelleSectionType() {
 		if (nacelleSectionTypeEClass == null) {
 			nacelleSectionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(573);
+					.getEClassifiers().get(641);
 		}
 		return nacelleSectionTypeEClass;
 	}
@@ -36589,12 +39388,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getNodalLoadsType() {
-		if (nodalLoadsTypeEClass == null) {
-			nodalLoadsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(574);
+	public EClass getNameType() {
+		if (nameTypeEClass == null) {
+			nameTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(642);
 		}
-		return nodalLoadsTypeEClass;
+		return nameTypeEClass;
 	}
 
 	/**
@@ -36603,142 +39402,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getNodalLoadsType_FuselageNodalLoad() {
-		return (EReference) getNodalLoadsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNodalLoadsType_WingNodalLoad() {
-		return (EReference) getNodalLoadsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getNodalLoadType() {
-		if (nodalLoadTypeEClass == null) {
-			nodalLoadTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(575);
+	public EClass getNameType1() {
+		if (nameType1EClass == null) {
+			nameType1EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(643);
 		}
-		return nodalLoadTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNodalLoadType_Name() {
-		return (EReference) getNodalLoadType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNodalLoadType_Description() {
-		return (EReference) getNodalLoadType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNodalLoadType_ParentUID() {
-		return (EReference) getNodalLoadType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNodalLoadType_Fx() {
-		return (EReference) getNodalLoadType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNodalLoadType_Fy() {
-		return (EReference) getNodalLoadType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNodalLoadType_Fz() {
-		return (EReference) getNodalLoadType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNodalLoadType_Mx() {
-		return (EReference) getNodalLoadType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNodalLoadType_My() {
-		return (EReference) getNodalLoadType().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNodalLoadType_Mz() {
-		return (EReference) getNodalLoadType().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNodalLoadType_LoadBreakdown() {
-		return (EReference) getNodalLoadType().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getNodalLoadType_UID() {
-		return (EAttribute) getNodalLoadType().getEStructuralFeatures().get(10);
+		return nameType1EClass;
 	}
 
 	/**
@@ -36750,7 +39419,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getNoiseAnalysisType() {
 		if (noiseAnalysisTypeEClass == null) {
 			noiseAnalysisTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(576);
+					.getEClassifiers().get(644);
 		}
 		return noiseAnalysisTypeEClass;
 	}
@@ -36791,74 +39460,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getNoseGearGlobalType() {
-		if (noseGearGlobalTypeEClass == null) {
-			noseGearGlobalTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(577);
-		}
-		return noseGearGlobalTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNoseGearGlobalType_TotalLength() {
-		return (EReference) getNoseGearGlobalType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNoseGearGlobalType_RetractAngle() {
-		return (EReference) getNoseGearGlobalType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNoseGearGlobalType_ExtAngle() {
-		return (EReference) getNoseGearGlobalType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNoseGearGlobalType_Offset() {
-		return (EReference) getNoseGearGlobalType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNoseGearGlobalType_ExtractedAngle() {
-		return (EReference) getNoseGearGlobalType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getNoseGearsType() {
 		if (noseGearsTypeEClass == null) {
 			noseGearsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(578);
+					.getEClassifiers().get(645);
 		}
 		return noseGearsTypeEClass;
 	}
@@ -36879,104 +39484,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getNoseGearType() {
-		if (noseGearTypeEClass == null) {
-			noseGearTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(579);
-		}
-		return noseGearTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNoseGearType_Name() {
-		return (EReference) getNoseGearType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNoseGearType_Description() {
-		return (EReference) getNoseGearType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNoseGearType_ParentUID() {
-		return (EReference) getNoseGearType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNoseGearType_FuselageAttachment() {
-		return (EReference) getNoseGearType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNoseGearType_Global() {
-		return (EReference) getNoseGearType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getNoseGearType_Components() {
-		return (EReference) getNoseGearType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getNoseGearType_Symmetry() {
-		return (EAttribute) getNoseGearType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getNoseGearType_UID() {
-		return (EAttribute) getNoseGearType().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getOEMType() {
 		if (oemTypeEClass == null) {
 			oemTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(580);
+					.get(646);
 		}
 		return oemTypeEClass;
 	}
@@ -37020,7 +39531,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getOperationalCasesType() {
 		if (operationalCasesTypeEClass == null) {
 			operationalCasesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(581);
+					.getEClassifiers().get(647);
 		}
 		return operationalCasesTypeEClass;
 	}
@@ -37044,7 +39555,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getOperationalCaseType() {
 		if (operationalCaseTypeEClass == null) {
 			operationalCaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(582);
+					.getEClassifiers().get(648);
 		}
 		return operationalCaseTypeEClass;
 	}
@@ -37138,7 +39649,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getOperationLimitIncrementsType() {
 		if (operationLimitIncrementsTypeEClass == null) {
 			operationLimitIncrementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(583);
+					.getEClassifiers().get(649);
 		}
 		return operationLimitIncrementsTypeEClass;
 	}
@@ -37149,7 +39660,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOperationLimitIncrementsType_AngleOfSideslip() {
+	public EReference getOperationLimitIncrementsType_DeltaAngleOfAttackMin() {
 		return (EReference) getOperationLimitIncrementsType().getEStructuralFeatures().get(0);
 	}
 
@@ -37159,32 +39670,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOperationLimitIncrementsType_AngleOfAttack() {
+	public EReference getOperationLimitIncrementsType_DeltaAngleOfAttackMax() {
 		return (EReference) getOperationLimitIncrementsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getOrientationType() {
-		if (orientationTypeEClass == null) {
-			orientationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(584);
-		}
-		return orientationTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getOrientationType_Heading() {
-		return (EReference) getOrientationType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -37196,7 +39683,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getOrthotropicShellPropertiesType() {
 		if (orthotropicShellPropertiesTypeEClass == null) {
 			orthotropicShellPropertiesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(585);
+					.getEClassifiers().get(650);
 		}
 		return orthotropicShellPropertiesTypeEClass;
 	}
@@ -37410,7 +39897,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getOrthotropicSolidPropertiesType() {
 		if (orthotropicSolidPropertiesTypeEClass == null) {
 			orthotropicSolidPropertiesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(586);
+					.getEClassifiers().get(651);
 		}
 		return orthotropicSolidPropertiesTypeEClass;
 	}
@@ -37754,7 +40241,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getOuterCutOutProfileType() {
 		if (outerCutOutProfileTypeEClass == null) {
 			outerCutOutProfileTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(587);
+					.getEClassifiers().get(652);
 		}
 		return outerCutOutProfileTypeEClass;
 	}
@@ -37788,7 +40275,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getParametersType() {
 		if (parametersTypeEClass == null) {
 			parametersTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(588);
+					.getEClassifiers().get(653);
 		}
 		return parametersTypeEClass;
 	}
@@ -37812,7 +40299,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getParameterType() {
 		if (parameterTypeEClass == null) {
 			parameterTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(589);
+					.getEClassifiers().get(654);
 		}
 		return parameterTypeEClass;
 	}
@@ -37846,7 +40333,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPaxCrossBeamsAssemblyType() {
 		if (paxCrossBeamsAssemblyTypeEClass == null) {
 			paxCrossBeamsAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(590);
+					.getEClassifiers().get(655);
 		}
 		return paxCrossBeamsAssemblyTypeEClass;
 	}
@@ -37870,7 +40357,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPaxCrossBeamStrutsAssemblyType() {
 		if (paxCrossBeamStrutsAssemblyTypeEClass == null) {
 			paxCrossBeamStrutsAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(591);
+					.getEClassifiers().get(656);
 		}
 		return paxCrossBeamStrutsAssemblyTypeEClass;
 	}
@@ -37894,7 +40381,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPaxDoorsAssemblyType() {
 		if (paxDoorsAssemblyTypeEClass == null) {
 			paxDoorsAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(592);
+					.getEClassifiers().get(657);
 		}
 		return paxDoorsAssemblyTypeEClass;
 	}
@@ -37918,7 +40405,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPayloadGlobalType() {
 		if (payloadGlobalTypeEClass == null) {
 			payloadGlobalTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(593);
+					.getEClassifiers().get(658);
 		}
 		return payloadGlobalTypeEClass;
 	}
@@ -37949,118 +40436,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getPerformanceCasesType() {
-		if (performanceCasesTypeEClass == null) {
-			performanceCasesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(594);
-		}
-		return performanceCasesTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPerformanceCasesType_PerformanceCase() {
-		return (EReference) getPerformanceCasesType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getPerformanceCaseType() {
-		if (performanceCaseTypeEClass == null) {
-			performanceCaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(595);
-		}
-		return performanceCaseTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPerformanceCaseType_Name() {
-		return (EReference) getPerformanceCaseType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPerformanceCaseType_Description() {
-		return (EReference) getPerformanceCaseType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPerformanceCaseType_WeightAndBalanceUID() {
-		return (EReference) getPerformanceCaseType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPerformanceCaseType_MissionUID() {
-		return (EReference) getPerformanceCaseType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPerformanceCaseType_PointPerformanceUIDs() {
-		return (EReference) getPerformanceCaseType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPerformanceCaseType_PerformanceMaps() {
-		return (EReference) getPerformanceCaseType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getPerformanceCaseType_UID() {
-		return (EAttribute) getPerformanceCaseType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getPerformanceMapSelectionType() {
 		if (performanceMapSelectionTypeEClass == null) {
 			performanceMapSelectionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(596);
+					.getEClassifiers().get(659);
 		}
 		return performanceMapSelectionTypeEClass;
 	}
@@ -38091,10 +40470,44 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getPerformanceRequirementConfigurationsType() {
+		if (performanceRequirementConfigurationsTypeEClass == null) {
+			performanceRequirementConfigurationsTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(660);
+		}
+		return performanceRequirementConfigurationsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPerformanceRequirementConfigurationsType_DefaultConfigurationUID() {
+		return (EReference) getPerformanceRequirementConfigurationsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPerformanceRequirementConfigurationsType_SpecificConfigurationUIDs() {
+		return (EReference) getPerformanceRequirementConfigurationsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getPerformanceRequirementsType() {
 		if (performanceRequirementsTypeEClass == null) {
 			performanceRequirementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(597);
+					.getEClassifiers().get(661);
 		}
 		return performanceRequirementsTypeEClass;
 	}
@@ -38105,7 +40518,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPerformanceRequirementsType_RequiredPerformanceCases() {
+	public EReference getPerformanceRequirementsType_FlightPerformanceRequirements() {
 		return (EReference) getPerformanceRequirementsType().getEStructuralFeatures().get(0);
 	}
 
@@ -38115,7 +40528,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPerformanceRequirementsType_OptionalPerformanceCases() {
+	public EReference getPerformanceRequirementsType_ControllabilityRequirements() {
 		return (EReference) getPerformanceRequirementsType().getEStructuralFeatures().get(1);
 	}
 
@@ -38125,7 +40538,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPerformanceRequirementsType_PerformanceCases() {
+	public EReference getPerformanceRequirementsType_TrimRequirements() {
 		return (EReference) getPerformanceRequirementsType().getEStructuralFeatures().get(2);
 	}
 
@@ -38138,7 +40551,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPerformanceTargetsGlobalType() {
 		if (performanceTargetsGlobalTypeEClass == null) {
 			performanceTargetsGlobalTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(598);
+					.getEClassifiers().get(662);
 		}
 		return performanceTargetsGlobalTypeEClass;
 	}
@@ -38222,9 +40635,33 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPhiType() {
 		if (phiTypeEClass == null) {
 			phiTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(599);
+					.get(663);
 		}
 		return phiTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getPintleStrutsType() {
+		if (pintleStrutsTypeEClass == null) {
+			pintleStrutsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(664);
+		}
+		return pintleStrutsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPintleStrutsType_PintleStrut() {
+		return (EReference) getPintleStrutsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -38236,7 +40673,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPistonType() {
 		if (pistonTypeEClass == null) {
 			pistonTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(600);
+					.get(665);
 		}
 		return pistonTypeEClass;
 	}
@@ -38247,8 +40684,48 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPistonType_MaxSpringDeflection() {
+	public EReference getPistonType_Length() {
 		return (EReference) getPistonType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPistonType_StrutProperties() {
+		return (EReference) getPistonType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPistonType_MaxSpringDeflection() {
+		return (EReference) getPistonType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPistonType_CompressedExternalLength() {
+		return (EReference) getPistonType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPistonType_UID() {
+		return (EAttribute) getPistonType().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -38260,7 +40737,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPlasticityCurvePointsType() {
 		if (plasticityCurvePointsTypeEClass == null) {
 			plasticityCurvePointsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(603);
+					.getEClassifiers().get(668);
 		}
 		return plasticityCurvePointsTypeEClass;
 	}
@@ -38284,7 +40761,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPlasticityCurvePointType() {
 		if (plasticityCurvePointTypeEClass == null) {
 			plasticityCurvePointTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(604);
+					.getEClassifiers().get(669);
 		}
 		return plasticityCurvePointTypeEClass;
 	}
@@ -38318,7 +40795,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPlasticityCurvesType() {
 		if (plasticityCurvesTypeEClass == null) {
 			plasticityCurvesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(605);
+					.getEClassifiers().get(670);
 		}
 		return plasticityCurvesTypeEClass;
 	}
@@ -38342,7 +40819,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPlasticityCurveType() {
 		if (plasticityCurveTypeEClass == null) {
 			plasticityCurveTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(606);
+					.getEClassifiers().get(671);
 		}
 		return plasticityCurveTypeEClass;
 	}
@@ -38406,7 +40883,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointAbsRelType() {
 		if (pointAbsRelTypeEClass == null) {
 			pointAbsRelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(607);
+					.getEClassifiers().get(672);
 		}
 		return pointAbsRelTypeEClass;
 	}
@@ -38470,7 +40947,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointConstraintType() {
 		if (pointConstraintTypeEClass == null) {
 			pointConstraintTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(608);
+					.getEClassifiers().get(673);
 		}
 		return pointConstraintTypeEClass;
 	}
@@ -38514,7 +40991,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointListRelXYZVectorType() {
 		if (pointListRelXYZVectorTypeEClass == null) {
 			pointListRelXYZVectorTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(609);
+					.getEClassifiers().get(674);
 		}
 		return pointListRelXYZVectorTypeEClass;
 	}
@@ -38558,7 +41035,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointListType() {
 		if (pointListTypeEClass == null) {
 			pointListTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(610);
+					.getEClassifiers().get(675);
 		}
 		return pointListTypeEClass;
 	}
@@ -38582,7 +41059,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointListXYType() {
 		if (pointListXYTypeEClass == null) {
 			pointListXYTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(611);
+					.getEClassifiers().get(676);
 		}
 		return pointListXYTypeEClass;
 	}
@@ -38606,7 +41083,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointListXYVectorType() {
 		if (pointListXYVectorTypeEClass == null) {
 			pointListXYVectorTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(612);
+					.getEClassifiers().get(677);
 		}
 		return pointListXYVectorTypeEClass;
 	}
@@ -38640,7 +41117,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointListXYZVectorType() {
 		if (pointListXYZVectorTypeEClass == null) {
 			pointListXYZVectorTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(613);
+					.getEClassifiers().get(678);
 		}
 		return pointListXYZVectorTypeEClass;
 	}
@@ -38681,12 +41158,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getPointPerformancesType() {
-		if (pointPerformancesTypeEClass == null) {
-			pointPerformancesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(614);
+	public EClass getPointPerformanceConstraintsType() {
+		if (pointPerformanceConstraintsTypeEClass == null) {
+			pointPerformanceConstraintsTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(679);
 		}
-		return pointPerformancesTypeEClass;
+		return pointPerformanceConstraintsTypeEClass;
 	}
 
 	/**
@@ -38695,8 +41172,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPointPerformancesType_PointPerformance() {
-		return (EReference) getPointPerformancesType().getEStructuralFeatures().get(0);
+	public EReference getPointPerformanceConstraintsType_CalibratedAirSpeed() {
+		return (EReference) getPointPerformanceConstraintsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -38705,12 +41182,102 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getPointPerformanceType() {
-		if (pointPerformanceTypeEClass == null) {
-			pointPerformanceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(615);
+	public EReference getPointPerformanceConstraintsType_MachNumber() {
+		return (EReference) getPointPerformanceConstraintsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceConstraintsType_ClimbAngle() {
+		return (EReference) getPointPerformanceConstraintsType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceConstraintsType_RateOfClimb() {
+		return (EReference) getPointPerformanceConstraintsType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceConstraintsType_RateOfTurn() {
+		return (EReference) getPointPerformanceConstraintsType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceConstraintsType_ThrustSetting() {
+		return (EReference) getPointPerformanceConstraintsType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceConstraintsType_Acceleration() {
+		return (EReference) getPointPerformanceConstraintsType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceConstraintsType_Duration() {
+		return (EReference) getPointPerformanceConstraintsType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceConstraintsType_AngleOfAttack() {
+		return (EReference) getPointPerformanceConstraintsType().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceConstraintsType_Altitude() {
+		return (EReference) getPointPerformanceConstraintsType().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getPointPerformanceDefinitionsType() {
+		if (pointPerformanceDefinitionsTypeEClass == null) {
+			pointPerformanceDefinitionsTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(680);
 		}
-		return pointPerformanceTypeEClass;
+		return pointPerformanceDefinitionsTypeEClass;
 	}
 
 	/**
@@ -38719,8 +41286,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPointPerformanceType_Name() {
-		return (EReference) getPointPerformanceType().getEStructuralFeatures().get(0);
+	public EReference getPointPerformanceDefinitionsType_PointPerformanceDefinition() {
+		return (EReference) getPointPerformanceDefinitionsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -38729,8 +41296,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPointPerformanceType_Description() {
-		return (EReference) getPointPerformanceType().getEStructuralFeatures().get(1);
+	public EClass getPointPerformanceDefinitionType() {
+		if (pointPerformanceDefinitionTypeEClass == null) {
+			pointPerformanceDefinitionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(681);
+		}
+		return pointPerformanceDefinitionTypeEClass;
 	}
 
 	/**
@@ -38739,8 +41310,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPointPerformanceType_SegmentUID() {
-		return (EReference) getPointPerformanceType().getEStructuralFeatures().get(2);
+	public EReference getPointPerformanceDefinitionType_Name() {
+		return (EReference) getPointPerformanceDefinitionType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -38749,8 +41320,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPointPerformanceType_MassFraction() {
-		return (EReference) getPointPerformanceType().getEStructuralFeatures().get(3);
+	public EReference getPointPerformanceDefinitionType_Description() {
+		return (EReference) getPointPerformanceDefinitionType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -38759,8 +41330,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPointPerformanceType_TypeOfPointPerformance() {
-		return (EReference) getPointPerformanceType().getEStructuralFeatures().get(4);
+	public EReference getPointPerformanceDefinitionType_SegmentUID() {
+		return (EReference) getPointPerformanceDefinitionType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -38769,8 +41340,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPointPerformanceType_ConstraintSettings() {
-		return (EReference) getPointPerformanceType().getEStructuralFeatures().get(5);
+	public EReference getPointPerformanceDefinitionType_MassFraction() {
+		return (EReference) getPointPerformanceDefinitionType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -38779,8 +41350,132 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getPointPerformanceType_UID() {
-		return (EAttribute) getPointPerformanceType().getEStructuralFeatures().get(6);
+	public EReference getPointPerformanceDefinitionType_FuelFraction() {
+		return (EReference) getPointPerformanceDefinitionType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceDefinitionType_TypeOfPointPerformance() {
+		return (EReference) getPointPerformanceDefinitionType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceDefinitionType_Constraints() {
+		return (EReference) getPointPerformanceDefinitionType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceDefinitionType_Requirements() {
+		return (EReference) getPointPerformanceDefinitionType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceDefinitionType_Environment() {
+		return (EReference) getPointPerformanceDefinitionType().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPointPerformanceDefinitionType_UID() {
+		return (EAttribute) getPointPerformanceDefinitionType().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getPointPerformanceRequirementsType() {
+		if (pointPerformanceRequirementsTypeEClass == null) {
+			pointPerformanceRequirementsTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(682);
+		}
+		return pointPerformanceRequirementsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceRequirementsType_SustainedLoadFactor() {
+		return (EReference) getPointPerformanceRequirementsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceRequirementsType_InstantaneousLoadFactor() {
+		return (EReference) getPointPerformanceRequirementsType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceRequirementsType_SpecificExcessPower() {
+		return (EReference) getPointPerformanceRequirementsType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceRequirementsType_RollRate() {
+		return (EReference) getPointPerformanceRequirementsType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceRequirementsType_RollAccelerationOnset() {
+		return (EReference) getPointPerformanceRequirementsType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPointPerformanceRequirementsType_RollAccelerationStop() {
+		return (EReference) getPointPerformanceRequirementsType().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -38792,7 +41487,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointType() {
 		if (pointTypeEClass == null) {
 			pointTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(616);
+					.get(683);
 		}
 		return pointTypeEClass;
 	}
@@ -38846,7 +41541,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointXType() {
 		if (pointXTypeEClass == null) {
 			pointXTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(617);
+					.get(684);
 		}
 		return pointXTypeEClass;
 	}
@@ -38880,7 +41575,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointXYType() {
 		if (pointXYTypeEClass == null) {
 			pointXYTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(618);
+					.get(685);
 		}
 		return pointXYTypeEClass;
 	}
@@ -38924,7 +41619,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointXYZType() {
 		if (pointXYZTypeEClass == null) {
 			pointXYZTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(619);
+					.get(686);
 		}
 		return pointXYZTypeEClass;
 	}
@@ -38978,7 +41673,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointXZType() {
 		if (pointXZTypeEClass == null) {
 			pointXZTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(620);
+					.get(687);
 		}
 		return pointXZTypeEClass;
 	}
@@ -39022,7 +41717,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointYType() {
 		if (pointYTypeEClass == null) {
 			pointYTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(621);
+					.get(688);
 		}
 		return pointYTypeEClass;
 	}
@@ -39056,7 +41751,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointYZType() {
 		if (pointYZTypeEClass == null) {
 			pointYZTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(622);
+					.get(689);
 		}
 		return pointYZTypeEClass;
 	}
@@ -39100,7 +41795,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPointZType() {
 		if (pointZTypeEClass == null) {
 			pointZTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(623);
+					.get(690);
 		}
 		return pointZTypeEClass;
 	}
@@ -39131,10 +41826,52 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getPosExcl0DoubleBaseType() {
+		if (posExcl0DoubleBaseTypeEClass == null) {
+			posExcl0DoubleBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(691);
+		}
+		return posExcl0DoubleBaseTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getPosExcl0IntBaseType() {
+		if (posExcl0IntBaseTypeEClass == null) {
+			posExcl0IntBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(692);
+		}
+		return posExcl0IntBaseTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getPosIntVectorBaseType() {
+		if (posIntVectorBaseTypeEClass == null) {
+			posIntVectorBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(693);
+		}
+		return posIntVectorBaseTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getPositioningsType() {
 		if (positioningsTypeEClass == null) {
 			positioningsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(624);
+					.getEClassifiers().get(694);
 		}
 		return positioningsTypeEClass;
 	}
@@ -39158,7 +41895,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPositioningType() {
 		if (positioningTypeEClass == null) {
 			positioningTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(625);
+					.getEClassifiers().get(695);
 		}
 		return positioningTypeEClass;
 	}
@@ -39249,10 +41986,82 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getPowerConsumedType() {
+		if (powerConsumedTypeEClass == null) {
+			powerConsumedTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(698);
+		}
+		return powerConsumedTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPowerConsumedType_UID() {
+		return (EAttribute) getPowerConsumedType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getPowerFractionType() {
+		if (powerFractionTypeEClass == null) {
+			powerFractionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(699);
+		}
+		return powerFractionTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPowerFractionType_UID() {
+		return (EAttribute) getPowerFractionType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getPowerRemainingType() {
+		if (powerRemainingTypeEClass == null) {
+			powerRemainingTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(700);
+		}
+		return powerRemainingTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPowerRemainingType_UID() {
+		return (EAttribute) getPowerRemainingType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getPressureBulkheadAssemblyPositionType() {
 		if (pressureBulkheadAssemblyPositionTypeEClass == null) {
 			pressureBulkheadAssemblyPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(626);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(701);
 		}
 		return pressureBulkheadAssemblyPositionTypeEClass;
 	}
@@ -39296,7 +42105,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPressureBulkheadAssemblyType() {
 		if (pressureBulkheadAssemblyTypeEClass == null) {
 			pressureBulkheadAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(627);
+					.getEClassifiers().get(702);
 		}
 		return pressureBulkheadAssemblyTypeEClass;
 	}
@@ -39320,7 +42129,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPressureBulkheadsType() {
 		if (pressureBulkheadsTypeEClass == null) {
 			pressureBulkheadsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(628);
+					.getEClassifiers().get(703);
 		}
 		return pressureBulkheadsTypeEClass;
 	}
@@ -39344,7 +42153,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPressureBulkheadType() {
 		if (pressureBulkheadTypeEClass == null) {
 			pressureBulkheadTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(629);
+					.getEClassifiers().get(704);
 		}
 		return pressureBulkheadTypeEClass;
 	}
@@ -39478,7 +42287,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPrioritySettingType() {
 		if (prioritySettingTypeEClass == null) {
 			prioritySettingTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(630);
+					.getEClassifiers().get(705);
 		}
 		return prioritySettingTypeEClass;
 	}
@@ -39492,7 +42301,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getProfileBasedStructuralElementsType() {
 		if (profileBasedStructuralElementsTypeEClass == null) {
 			profileBasedStructuralElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(631);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(706);
 		}
 		return profileBasedStructuralElementsTypeEClass;
 	}
@@ -39516,7 +42325,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getProfileBasedStructuralElementType() {
 		if (profileBasedStructuralElementTypeEClass == null) {
 			profileBasedStructuralElementTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(632);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(707);
 		}
 		return profileBasedStructuralElementTypeEClass;
 	}
@@ -39630,7 +42439,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getProfileGeometry2DType() {
 		if (profileGeometry2DTypeEClass == null) {
 			profileGeometry2DTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(633);
+					.getEClassifiers().get(708);
 		}
 		return profileGeometry2DTypeEClass;
 	}
@@ -39704,7 +42513,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getProfileGeometryType() {
 		if (profileGeometryTypeEClass == null) {
 			profileGeometryTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(634);
+					.getEClassifiers().get(709);
 		}
 		return profileGeometryTypeEClass;
 	}
@@ -39755,8 +42564,18 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getProfileGeometryType_StandardProfile() {
+		return (EReference) getProfileGeometryType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getProfileGeometryType_Symmetry() {
-		return (EAttribute) getProfileGeometryType().getEStructuralFeatures().get(4);
+		return (EAttribute) getProfileGeometryType().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -39766,7 +42585,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 */
 	@Override
 	public EAttribute getProfileGeometryType_UID() {
-		return (EAttribute) getProfileGeometryType().getEStructuralFeatures().get(5);
+		return (EAttribute) getProfileGeometryType().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -39778,7 +42597,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getProfilesType() {
 		if (profilesTypeEClass == null) {
 			profilesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(635);
+					.get(710);
 		}
 		return profilesTypeEClass;
 	}
@@ -39862,7 +42681,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPylonAttachmentsType() {
 		if (pylonAttachmentsTypeEClass == null) {
 			pylonAttachmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(636);
+					.getEClassifiers().get(711);
 		}
 		return pylonAttachmentsTypeEClass;
 	}
@@ -39896,7 +42715,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPylonAttachmentType() {
 		if (pylonAttachmentTypeEClass == null) {
 			pylonAttachmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(637);
+					.getEClassifiers().get(712);
 		}
 		return pylonAttachmentTypeEClass;
 	}
@@ -39940,7 +42759,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPylonBoxType() {
 		if (pylonBoxTypeEClass == null) {
 			pylonBoxTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(638);
+					.get(713);
 		}
 		return pylonBoxTypeEClass;
 	}
@@ -40014,7 +42833,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPylonPinsType() {
 		if (pylonPinsTypeEClass == null) {
 			pylonPinsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(639);
+					.getEClassifiers().get(714);
 		}
 		return pylonPinsTypeEClass;
 	}
@@ -40038,7 +42857,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPylonPinType() {
 		if (pylonPinTypeEClass == null) {
 			pylonPinTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(640);
+					.get(715);
 		}
 		return pylonPinTypeEClass;
 	}
@@ -40122,7 +42941,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPylonRibsDefinitionsType() {
 		if (pylonRibsDefinitionsTypeEClass == null) {
 			pylonRibsDefinitionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(641);
+					.getEClassifiers().get(716);
 		}
 		return pylonRibsDefinitionsTypeEClass;
 	}
@@ -40146,7 +42965,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPylonRibsDefinitionType() {
 		if (pylonRibsDefinitionTypeEClass == null) {
 			pylonRibsDefinitionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(642);
+					.getEClassifiers().get(717);
 		}
 		return pylonRibsDefinitionTypeEClass;
 	}
@@ -40210,7 +43029,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPylonRibsPositioningType() {
 		if (pylonRibsPositioningTypeEClass == null) {
 			pylonRibsPositioningTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(643);
+					.getEClassifiers().get(718);
 		}
 		return pylonRibsPositioningTypeEClass;
 	}
@@ -40284,7 +43103,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPylonShacklesType() {
 		if (pylonShacklesTypeEClass == null) {
 			pylonShacklesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(644);
+					.getEClassifiers().get(719);
 		}
 		return pylonShacklesTypeEClass;
 	}
@@ -40318,7 +43137,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPylonShackleType() {
 		if (pylonShackleTypeEClass == null) {
 			pylonShackleTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(645);
+					.getEClassifiers().get(720);
 		}
 		return pylonShackleTypeEClass;
 	}
@@ -40362,7 +43181,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPylonShellType() {
 		if (pylonShellTypeEClass == null) {
 			pylonShellTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(646);
+					.getEClassifiers().get(721);
 		}
 		return pylonShellTypeEClass;
 	}
@@ -40416,7 +43235,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPylonStructureType() {
 		if (pylonStructureTypeEClass == null) {
 			pylonStructureTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(647);
+					.getEClassifiers().get(722);
 		}
 		return pylonStructureTypeEClass;
 	}
@@ -40500,7 +43319,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getPylonStrutsType() {
 		if (pylonStrutsTypeEClass == null) {
 			pylonStrutsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(648);
+					.getEClassifiers().get(723);
 		}
 		return pylonStrutsTypeEClass;
 	}
@@ -40541,54 +43360,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getQuasiSteadyRotationType() {
-		if (quasiSteadyRotationTypeEClass == null) {
-			quasiSteadyRotationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(649);
-		}
-		return quasiSteadyRotationTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getQuasiSteadyRotationType_Pstar() {
-		return (EReference) getQuasiSteadyRotationType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getQuasiSteadyRotationType_Qstar() {
-		return (EReference) getQuasiSteadyRotationType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getQuasiSteadyRotationType_Rstar() {
-		return (EReference) getQuasiSteadyRotationType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getRadiativeForcingType() {
 		if (radiativeForcingTypeEClass == null) {
 			radiativeForcingTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(650);
+					.getEClassifiers().get(724);
 		}
 		return radiativeForcingTypeEClass;
 	}
@@ -40669,10 +43444,92 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getRangeType() {
+		if (rangeTypeEClass == null) {
+			rangeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(725);
+		}
+		return rangeTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRangeType_UID() {
+		return (EAttribute) getRangeType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getRateOfClimbType() {
+		if (rateOfClimbTypeEClass == null) {
+			rateOfClimbTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(726);
+		}
+		return rateOfClimbTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRateOfClimbType_UID() {
+		return (EAttribute) getRateOfClimbType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getRectangleProfileType() {
+		if (rectangleProfileTypeEClass == null) {
+			rectangleProfileTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(727);
+		}
+		return rectangleProfileTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRectangleProfileType_CornerRadius() {
+		return (EReference) getRectangleProfileType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRectangleProfileType_HeightToWidthRatio() {
+		return (EReference) getRectangleProfileType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getRecurringCostType() {
 		if (recurringCostTypeEClass == null) {
 			recurringCostTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(651);
+					.getEClassifiers().get(728);
 		}
 		return recurringCostTypeEClass;
 	}
@@ -40766,7 +43623,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getReferenceType() {
 		if (referenceTypeEClass == null) {
 			referenceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(652);
+					.getEClassifiers().get(729);
 		}
 		return referenceTypeEClass;
 	}
@@ -40807,10 +43664,204 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getRelativeStrutPositionType() {
+		if (relativeStrutPositionTypeEClass == null) {
+			relativeStrutPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(740);
+		}
+		return relativeStrutPositionTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRelativeStrutPositionType_StrutUID() {
+		return (EReference) getRelativeStrutPositionType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRelativeStrutPositionType_RelativePosition() {
+		return (EAttribute) getRelativeStrutPositionType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getReleasedStoresType() {
+		if (releasedStoresTypeEClass == null) {
+			releasedStoresTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(741);
+		}
+		return releasedStoresTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getReleasedStoresType_ReleasedStore() {
+		return (EReference) getReleasedStoresType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getReleasedStoreType() {
+		if (releasedStoreTypeEClass == null) {
+			releasedStoreTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(742);
+		}
+		return releasedStoreTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getReleasedStoreType_UID() {
+		return (EReference) getReleasedStoreType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getReleasedStoreType_Quantity() {
+		return (EReference) getReleasedStoreType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getRemainingContributionsType() {
+		if (remainingContributionsTypeEClass == null) {
+			remainingContributionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(743);
+		}
+		return remainingContributionsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRemainingContributionsType_RemainingContribution() {
+		return (EReference) getRemainingContributionsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getRemainingContributionType() {
+		if (remainingContributionTypeEClass == null) {
+			remainingContributionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(744);
+		}
+		return remainingContributionTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRemainingContributionType_Name() {
+		return (EReference) getRemainingContributionType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRemainingContributionType_Description() {
+		return (EReference) getRemainingContributionType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRemainingContributionType_Type() {
+		return (EReference) getRemainingContributionType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRemainingContributionType_Coefficients() {
+		return (EReference) getRemainingContributionType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRemainingContributionType_UID() {
+		return (EAttribute) getRemainingContributionType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getRequirementClassificationType() {
+		if (requirementClassificationTypeEClass == null) {
+			requirementClassificationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(745);
+		}
+		return requirementClassificationTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getRequirementType() {
 		if (requirementTypeEClass == null) {
 			requirementTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(657);
+					.getEClassifiers().get(746);
 		}
 		return requirementTypeEClass;
 	}
@@ -40844,7 +43895,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRibCrossingBehaviourType() {
 		if (ribCrossingBehaviourTypeEClass == null) {
 			ribCrossingBehaviourTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(658);
+					.getEClassifiers().get(747);
 		}
 		return ribCrossingBehaviourTypeEClass;
 	}
@@ -40858,7 +43909,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRibCrossingBehaviourType1() {
 		if (ribCrossingBehaviourType1EClass == null) {
 			ribCrossingBehaviourType1EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(659);
+					.getEClassifiers().get(748);
 		}
 		return ribCrossingBehaviourType1EClass;
 	}
@@ -40872,7 +43923,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRibIdentificationType() {
 		if (ribIdentificationTypeEClass == null) {
 			ribIdentificationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(660);
+					.getEClassifiers().get(749);
 		}
 		return ribIdentificationTypeEClass;
 	}
@@ -40906,7 +43957,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRibRotationType() {
 		if (ribRotationTypeEClass == null) {
 			ribRotationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(661);
+					.getEClassifiers().get(750);
 		}
 		return ribRotationTypeEClass;
 	}
@@ -40940,7 +43991,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRivetJointAreaAssemblyPositionType() {
 		if (rivetJointAreaAssemblyPositionTypeEClass == null) {
 			rivetJointAreaAssemblyPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(662);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(751);
 		}
 		return rivetJointAreaAssemblyPositionTypeEClass;
 	}
@@ -40984,7 +44035,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRivetJointAreasAssemblyType() {
 		if (rivetJointAreasAssemblyTypeEClass == null) {
 			rivetJointAreasAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(663);
+					.getEClassifiers().get(752);
 		}
 		return rivetJointAreasAssemblyTypeEClass;
 	}
@@ -41008,7 +44059,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRivetsType() {
 		if (rivetsTypeEClass == null) {
 			rivetsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(664);
+					.get(753);
 		}
 		return rivetsTypeEClass;
 	}
@@ -41032,7 +44083,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRivetType() {
 		if (rivetTypeEClass == null) {
 			rivetTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(665);
+					.get(754);
 		}
 		return rivetTypeEClass;
 	}
@@ -41096,7 +44147,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotationCurveType() {
 		if (rotationCurveTypeEClass == null) {
 			rotationCurveTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(666);
+					.getEClassifiers().get(755);
 		}
 		return rotationCurveTypeEClass;
 	}
@@ -41180,7 +44231,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotDirectionType() {
 		if (rotDirectionTypeEClass == null) {
 			rotDirectionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(667);
+					.getEClassifiers().get(756);
 		}
 		return rotDirectionTypeEClass;
 	}
@@ -41194,7 +44245,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorAirfoilsType() {
 		if (rotorAirfoilsTypeEClass == null) {
 			rotorAirfoilsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(668);
+					.getEClassifiers().get(757);
 		}
 		return rotorAirfoilsTypeEClass;
 	}
@@ -41218,7 +44269,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorBladeAttachmentsType() {
 		if (rotorBladeAttachmentsTypeEClass == null) {
 			rotorBladeAttachmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(669);
+					.getEClassifiers().get(758);
 		}
 		return rotorBladeAttachmentsTypeEClass;
 	}
@@ -41242,7 +44293,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorBladeAttachmentType() {
 		if (rotorBladeAttachmentTypeEClass == null) {
 			rotorBladeAttachmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(670);
+					.getEClassifiers().get(759);
 		}
 		return rotorBladeAttachmentTypeEClass;
 	}
@@ -41326,7 +44377,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorBladesType() {
 		if (rotorBladesTypeEClass == null) {
 			rotorBladesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(671);
+					.getEClassifiers().get(760);
 		}
 		return rotorBladesTypeEClass;
 	}
@@ -41350,7 +44401,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorcraftAnalysesType() {
 		if (rotorcraftAnalysesTypeEClass == null) {
 			rotorcraftAnalysesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(672);
+					.getEClassifiers().get(761);
 		}
 		return rotorcraftAnalysesTypeEClass;
 	}
@@ -41474,7 +44525,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorcraftGlobalType() {
 		if (rotorcraftGlobalTypeEClass == null) {
 			rotorcraftGlobalTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(673);
+					.getEClassifiers().get(762);
 		}
 		return rotorcraftGlobalTypeEClass;
 	}
@@ -41528,7 +44579,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorcraftMassBreakdownType() {
 		if (rotorcraftMassBreakdownTypeEClass == null) {
 			rotorcraftMassBreakdownTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(674);
+					.getEClassifiers().get(763);
 		}
 		return rotorcraftMassBreakdownTypeEClass;
 	}
@@ -41582,7 +44633,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorcraftMassEMType() {
 		if (rotorcraftMassEMTypeEClass == null) {
 			rotorcraftMassEMTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(675);
+					.getEClassifiers().get(764);
 		}
 		return rotorcraftMassEMTypeEClass;
 	}
@@ -41636,7 +44687,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorcraftMassGroupLevel1Type() {
 		if (rotorcraftMassGroupLevel1TypeEClass == null) {
 			rotorcraftMassGroupLevel1TypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(676);
+					.getEClassifiers().get(765);
 		}
 		return rotorcraftMassGroupLevel1TypeEClass;
 	}
@@ -41670,7 +44721,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorcraftMassGroupLevel2Type() {
 		if (rotorcraftMassGroupLevel2TypeEClass == null) {
 			rotorcraftMassGroupLevel2TypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(677);
+					.getEClassifiers().get(766);
 		}
 		return rotorcraftMassGroupLevel2TypeEClass;
 	}
@@ -41704,7 +44755,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorcraftMassOEMType() {
 		if (rotorcraftMassOEMTypeEClass == null) {
 			rotorcraftMassOEMTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(678);
+					.getEClassifiers().get(767);
 		}
 		return rotorcraftMassOEMTypeEClass;
 	}
@@ -41748,7 +44799,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorcraftModelType() {
 		if (rotorcraftModelTypeEClass == null) {
 			rotorcraftModelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(679);
+					.getEClassifiers().get(768);
 		}
 		return rotorcraftModelTypeEClass;
 	}
@@ -41902,7 +44953,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorcraftType() {
 		if (rotorcraftTypeEClass == null) {
 			rotorcraftTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(680);
+					.getEClassifiers().get(769);
 		}
 		return rotorcraftTypeEClass;
 	}
@@ -41926,7 +44977,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorHubHingesType() {
 		if (rotorHubHingesTypeEClass == null) {
 			rotorHubHingesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(681);
+					.getEClassifiers().get(770);
 		}
 		return rotorHubHingesTypeEClass;
 	}
@@ -41950,7 +45001,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorHubHingeType() {
 		if (rotorHubHingeTypeEClass == null) {
 			rotorHubHingeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(682);
+					.getEClassifiers().get(771);
 		}
 		return rotorHubHingeTypeEClass;
 	}
@@ -42054,7 +45105,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorHubType() {
 		if (rotorHubTypeEClass == null) {
 			rotorHubTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(683);
+					.get(772);
 		}
 		return rotorHubTypeEClass;
 	}
@@ -42118,7 +45169,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorsType() {
 		if (rotorsTypeEClass == null) {
 			rotorsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(684);
+					.get(773);
 		}
 		return rotorsTypeEClass;
 	}
@@ -42142,7 +45193,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRotorType() {
 		if (rotorTypeEClass == null) {
 			rotorTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(685);
+					.get(774);
 		}
 		return rotorTypeEClass;
 	}
@@ -42246,7 +45297,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRunwayILSType() {
 		if (runwayILSTypeEClass == null) {
 			runwayILSTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(686);
+					.getEClassifiers().get(775);
 		}
 		return runwayILSTypeEClass;
 	}
@@ -42287,10 +45338,74 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getRunwayStartPositionType() {
+		if (runwayStartPositionTypeEClass == null) {
+			runwayStartPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(776);
+		}
+		return runwayStartPositionTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRunwayStartPositionType_X() {
+		return (EReference) getRunwayStartPositionType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRunwayStartPositionType_Y() {
+		return (EReference) getRunwayStartPositionType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRunwayStartPositionType_Z() {
+		return (EReference) getRunwayStartPositionType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRunwayStartPositionType_Distance() {
+		return (EReference) getRunwayStartPositionType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRunwayStartPositionType_LateralOffset() {
+		return (EReference) getRunwayStartPositionType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getRunwaysType() {
 		if (runwaysTypeEClass == null) {
 			runwaysTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(687);
+					.get(777);
 		}
 		return runwaysTypeEClass;
 	}
@@ -42314,7 +45429,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getRunwayType() {
 		if (runwayTypeEClass == null) {
 			runwayTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(688);
+					.get(778);
 		}
 		return runwayTypeEClass;
 	}
@@ -42435,10 +45550,122 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getRunwayType1() {
+		if (runwayType1EClass == null) {
+			runwayType1EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(779);
+		}
+		return runwayType1EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRunwayType1_UID() {
+		return (EAttribute) getRunwayType1().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSeatElementsType() {
+		if (seatElementsTypeEClass == null) {
+			seatElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(780);
+		}
+		return seatElementsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSeatElementsType_SeatElement() {
+		return (EReference) getSeatElementsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSeatElementType() {
+		if (seatElementTypeEClass == null) {
+			seatElementTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(781);
+		}
+		return seatElementTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSeatElementType_Description() {
+		return (EReference) getSeatElementType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSeatElementType_Geometry() {
+		return (EReference) getSeatElementType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSeatElementType_Mass() {
+		return (EReference) getSeatElementType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSeatElementType_NumberOfSeats() {
+		return (EReference) getSeatElementType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSeatElementType_UID() {
+		return (EAttribute) getSeatElementType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getSeatModulesType() {
 		if (seatModulesTypeEClass == null) {
 			seatModulesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(689);
+					.getEClassifiers().get(782);
 		}
 		return seatModulesTypeEClass;
 	}
@@ -42459,108 +45686,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getSeatModuleType() {
-		if (seatModuleTypeEClass == null) {
-			seatModuleTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(690);
-		}
-		return seatModuleTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSeatModuleType_Name() {
-		return (EReference) getSeatModuleType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSeatModuleType_Description() {
-		return (EReference) getSeatModuleType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSeatModuleType_NumberOfSeats() {
-		return (EReference) getSeatModuleType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSeatModuleType_WidthOfSeatModule() {
-		return (EReference) getSeatModuleType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSeatModuleType_ModuleMass() {
-		return (EReference) getSeatModuleType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSeatModuleType_ModuleCoG() {
-		return (EReference) getSeatModuleType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getSeatModuleType_UID() {
-		return (EAttribute) getSeatModuleType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getSectionDistributionModeType() {
-		if (sectionDistributionModeTypeEClass == null) {
-			sectionDistributionModeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(691);
-		}
-		return sectionDistributionModeTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getSegmentDirectionType() {
 		if (segmentDirectionTypeEClass == null) {
 			segmentDirectionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(692);
+					.getEClassifiers().get(783);
 		}
 		return segmentDirectionTypeEClass;
 	}
@@ -42574,7 +45703,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSegmentTypeType() {
 		if (segmentTypeTypeEClass == null) {
 			segmentTypeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(693);
+					.getEClassifiers().get(784);
 		}
 		return segmentTypeTypeEClass;
 	}
@@ -42588,7 +45717,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getShaftLinkedComponentsType() {
 		if (shaftLinkedComponentsTypeEClass == null) {
 			shaftLinkedComponentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(694);
+					.getEClassifiers().get(785);
 		}
 		return shaftLinkedComponentsTypeEClass;
 	}
@@ -42652,7 +45781,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getShaftsType() {
 		if (shaftsTypeEClass == null) {
 			shaftsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(695);
+					.get(786);
 		}
 		return shaftsTypeEClass;
 	}
@@ -42676,7 +45805,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getShaftType() {
 		if (shaftTypeEClass == null) {
 			shaftTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(696);
+					.get(787);
 		}
 		return shaftTypeEClass;
 	}
@@ -42730,7 +45859,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSheet3DType() {
 		if (sheet3DTypeEClass == null) {
 			sheet3DTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(697);
+					.get(788);
 		}
 		return sheet3DTypeEClass;
 	}
@@ -42784,7 +45913,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSheetBasedStructuralElementsType() {
 		if (sheetBasedStructuralElementsTypeEClass == null) {
 			sheetBasedStructuralElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(698);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(789);
 		}
 		return sheetBasedStructuralElementsTypeEClass;
 	}
@@ -42808,7 +45937,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSheetBasedStructuralElementType() {
 		if (sheetBasedStructuralElementTypeEClass == null) {
 			sheetBasedStructuralElementTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(699);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(790);
 		}
 		return sheetBasedStructuralElementTypeEClass;
 	}
@@ -42842,7 +45971,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSheetList3DType() {
 		if (sheetList3DTypeEClass == null) {
 			sheetList3DTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(700);
+					.getEClassifiers().get(791);
 		}
 		return sheetList3DTypeEClass;
 	}
@@ -42866,7 +45995,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSheetListType() {
 		if (sheetListTypeEClass == null) {
 			sheetListTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(701);
+					.getEClassifiers().get(792);
 		}
 		return sheetListTypeEClass;
 	}
@@ -42890,7 +46019,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSheetPointsType() {
 		if (sheetPointsTypeEClass == null) {
 			sheetPointsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(702);
+					.getEClassifiers().get(793);
 		}
 		return sheetPointsTypeEClass;
 	}
@@ -42914,7 +46043,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSheetType() {
 		if (sheetTypeEClass == null) {
 			sheetTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(703);
+					.get(794);
 		}
 		return sheetTypeEClass;
 	}
@@ -43018,7 +46147,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSideStrutsType() {
 		if (sideStrutsTypeEClass == null) {
 			sideStrutsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(704);
+					.getEClassifiers().get(797);
 		}
 		return sideStrutsTypeEClass;
 	}
@@ -43042,9 +46171,57 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSideType() {
 		if (sideTypeEClass == null) {
 			sideTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(705);
+					.get(798);
 		}
 		return sideTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSidewallPanelElementsType() {
+		if (sidewallPanelElementsTypeEClass == null) {
+			sidewallPanelElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(799);
+		}
+		return sidewallPanelElementsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSidewallPanelElementsType_SidewallPanelElement() {
+		return (EReference) getSidewallPanelElementsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSidewallPanelsType() {
+		if (sidewallPanelsTypeEClass == null) {
+			sidewallPanelsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(800);
+		}
+		return sidewallPanelsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSidewallPanelsType_SidewallPanel() {
+		return (EReference) getSidewallPanelsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -43056,7 +46233,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSingleGenericMassType() {
 		if (singleGenericMassTypeEClass == null) {
 			singleGenericMassTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(706);
+					.getEClassifiers().get(801);
 		}
 		return singleGenericMassTypeEClass;
 	}
@@ -43077,48 +46254,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getSizingTypeType() {
-		if (sizingTypeTypeEClass == null) {
-			sizingTypeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(707);
-		}
-		return sizingTypeTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getSkidGearGlobalType() {
-		if (skidGearGlobalTypeEClass == null) {
-			skidGearGlobalTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(708);
-		}
-		return skidGearGlobalTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSkidGearGlobalType_TotalLength() {
-		return (EReference) getSkidGearGlobalType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getSkidGearsType() {
 		if (skidGearsTypeEClass == null) {
 			skidGearsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(709);
+					.getEClassifiers().get(804);
 		}
 		return skidGearsTypeEClass;
 	}
@@ -43139,104 +46278,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getSkidGearType() {
-		if (skidGearTypeEClass == null) {
-			skidGearTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(710);
-		}
-		return skidGearTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSkidGearType_Name() {
-		return (EReference) getSkidGearType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSkidGearType_Description() {
-		return (EReference) getSkidGearType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSkidGearType_ParentUID() {
-		return (EReference) getSkidGearType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSkidGearType_FuselageAttachment() {
-		return (EReference) getSkidGearType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSkidGearType_Global() {
-		return (EReference) getSkidGearType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSkidGearType_Components() {
-		return (EReference) getSkidGearType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getSkidGearType_Symmetry() {
-		return (EAttribute) getSkidGearType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getSkidGearType_UID() {
-		return (EAttribute) getSkidGearType().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getSkinSegmentsType() {
 		if (skinSegmentsTypeEClass == null) {
 			skinSegmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(711);
+					.getEClassifiers().get(805);
 		}
 		return skinSegmentsTypeEClass;
 	}
@@ -43260,7 +46305,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSkinSegmentType() {
 		if (skinSegmentTypeEClass == null) {
 			skinSegmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(712);
+					.getEClassifiers().get(806);
 		}
 		return skinSegmentTypeEClass;
 	}
@@ -43334,7 +46379,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSkinType() {
 		if (skinTypeEClass == null) {
 			skinTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(713);
+					.get(807);
 		}
 		return skinTypeEClass;
 	}
@@ -43368,7 +46413,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSparCellsType() {
 		if (sparCellsTypeEClass == null) {
 			sparCellsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(714);
+					.getEClassifiers().get(808);
 		}
 		return sparCellsTypeEClass;
 	}
@@ -43392,7 +46437,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSparCellType() {
 		if (sparCellTypeEClass == null) {
 			sparCellTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(715);
+					.get(809);
 		}
 		return sparCellTypeEClass;
 	}
@@ -43486,7 +46531,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSparCrossSectionType() {
 		if (sparCrossSectionTypeEClass == null) {
 			sparCrossSectionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(716);
+					.getEClassifiers().get(810);
 		}
 		return sparCrossSectionTypeEClass;
 	}
@@ -43560,7 +46605,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSparPositionsType() {
 		if (sparPositionsTypeEClass == null) {
 			sparPositionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(717);
+					.getEClassifiers().get(811);
 		}
 		return sparPositionsTypeEClass;
 	}
@@ -43584,7 +46629,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSparPositionType() {
 		if (sparPositionTypeEClass == null) {
 			sparPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(718);
+					.getEClassifiers().get(812);
 		}
 		return sparPositionTypeEClass;
 	}
@@ -43615,8 +46660,18 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getSparPositionType_SparPositionCurve() {
+		return (EReference) getSparPositionType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getSparPositionType_UID() {
-		return (EAttribute) getSparPositionType().getEStructuralFeatures().get(2);
+		return (EAttribute) getSparPositionType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -43628,7 +46683,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSparPositionUIDsType() {
 		if (sparPositionUIDsTypeEClass == null) {
 			sparPositionUIDsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(719);
+					.getEClassifiers().get(813);
 		}
 		return sparPositionUIDsTypeEClass;
 	}
@@ -43652,7 +46707,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSparSegmentsType() {
 		if (sparSegmentsTypeEClass == null) {
 			sparSegmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(720);
+					.getEClassifiers().get(814);
 		}
 		return sparSegmentsTypeEClass;
 	}
@@ -43676,7 +46731,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSparSegmentType() {
 		if (sparSegmentTypeEClass == null) {
 			sparSegmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(721);
+					.getEClassifiers().get(815);
 		}
 		return sparSegmentTypeEClass;
 	}
@@ -43737,10 +46792,160 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getSpecificConfigurationSegmentsType() {
+		if (specificConfigurationSegmentsTypeEClass == null) {
+			specificConfigurationSegmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(816);
+		}
+		return specificConfigurationSegmentsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSpecificConfigurationSegmentsType_Segment() {
+		return (EReference) getSpecificConfigurationSegmentsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSpecificConfigurationSegmentType() {
+		if (specificConfigurationSegmentTypeEClass == null) {
+			specificConfigurationSegmentTypeEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(817);
+		}
+		return specificConfigurationSegmentTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSpecificConfigurationSegmentType_UID() {
+		return (EReference) getSpecificConfigurationSegmentType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSpecificConfigurationSegmentType_IndexIDs() {
+		return (EReference) getSpecificConfigurationSegmentType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSpecificConfigurationUIDsType() {
+		if (specificConfigurationUIDsTypeEClass == null) {
+			specificConfigurationUIDsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(818);
+		}
+		return specificConfigurationUIDsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSpecificConfigurationUIDsType_SpecificConfigurationsUID() {
+		return (EReference) getSpecificConfigurationUIDsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSpecificConfigurationUIDType() {
+		if (specificConfigurationUIDTypeEClass == null) {
+			specificConfigurationUIDTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(819);
+		}
+		return specificConfigurationUIDTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSpecificConfigurationUIDType_ConfigurationUID() {
+		return (EReference) getSpecificConfigurationUIDType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSpecificConfigurationUIDType_Segments() {
+		return (EReference) getSpecificConfigurationUIDType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSpecificConfigurationUIDType_PointPerformanceUIDs() {
+		return (EReference) getSpecificConfigurationUIDType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSpecificExcessPowerType() {
+		if (specificExcessPowerTypeEClass == null) {
+			specificExcessPowerTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(820);
+		}
+		return specificExcessPowerTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSpecificExcessPowerType_UID() {
+		return (EAttribute) getSpecificExcessPowerType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getSpecificHeatMapType() {
 		if (specificHeatMapTypeEClass == null) {
 			specificHeatMapTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(722);
+					.getEClassifiers().get(821);
 		}
 		return specificHeatMapTypeEClass;
 	}
@@ -43774,7 +46979,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSpecificPerformanceMapsType() {
 		if (specificPerformanceMapsTypeEClass == null) {
 			specificPerformanceMapsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(723);
+					.getEClassifiers().get(822);
 		}
 		return specificPerformanceMapsTypeEClass;
 	}
@@ -43798,7 +47003,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSpecificPerformanceMapType() {
 		if (specificPerformanceMapTypeEClass == null) {
 			specificPerformanceMapTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(724);
+					.getEClassifiers().get(823);
 		}
 		return specificPerformanceMapTypeEClass;
 	}
@@ -43839,8 +47044,22 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getSpecificPerformanceMapType_UID() {
-		return (EAttribute) getSpecificPerformanceMapType().getEStructuralFeatures().get(3);
+	public EReference getSpecificPerformanceMapType_PointPerformanceUIDs1() {
+		return (EReference) getSpecificPerformanceMapType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSpeedDesignatorsType() {
+		if (speedDesignatorsTypeEClass == null) {
+			speedDesignatorsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(824);
+		}
+		return speedDesignatorsTypeEClass;
 	}
 
 	/**
@@ -43852,7 +47071,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSpoilersType() {
 		if (spoilersTypeEClass == null) {
 			spoilersTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(725);
+					.get(825);
 		}
 		return spoilersTypeEClass;
 	}
@@ -43876,7 +47095,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSpoilerType() {
 		if (spoilerTypeEClass == null) {
 			spoilerTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(726);
+					.get(826);
 		}
 		return spoilerTypeEClass;
 	}
@@ -43987,10 +47206,58 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getStandardProfileSheetIDType() {
+		if (standardProfileSheetIDTypeEClass == null) {
+			standardProfileSheetIDTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(827);
+		}
+		return standardProfileSheetIDTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getStandardProfileType() {
+		if (standardProfileTypeEClass == null) {
+			standardProfileTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(828);
+		}
+		return standardProfileTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getStandardProfileType_Rectangle() {
+		return (EReference) getStandardProfileType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getStandardProfileType_SuperEllipse() {
+		return (EReference) getStandardProfileType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getStandardProfileTypeType() {
 		if (standardProfileTypeTypeEClass == null) {
 			standardProfileTypeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(727);
+					.getEClassifiers().get(829);
 		}
 		return standardProfileTypeTypeEClass;
 	}
@@ -44004,7 +47271,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStateParametersType() {
 		if (stateParametersTypeEClass == null) {
 			stateParametersTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(728);
+					.getEClassifiers().get(830);
 		}
 		return stateParametersTypeEClass;
 	}
@@ -44028,7 +47295,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStateParameterType() {
 		if (stateParameterTypeEClass == null) {
 			stateParameterTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(729);
+					.getEClassifiers().get(831);
 		}
 		return stateParameterTypeEClass;
 	}
@@ -44092,7 +47359,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStiffnessType() {
 		if (stiffnessTypeEClass == null) {
 			stiffnessTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(730);
+					.getEClassifiers().get(836);
 		}
 		return stiffnessTypeEClass;
 	}
@@ -44166,7 +47433,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStringArrayBaseType() {
 		if (stringArrayBaseTypeEClass == null) {
 			stringArrayBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(731);
+					.getEClassifiers().get(837);
 		}
 		return stringArrayBaseTypeEClass;
 	}
@@ -44190,7 +47457,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStringBaseType() {
 		if (stringBaseTypeEClass == null) {
 			stringBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(732);
+					.getEClassifiers().get(838);
 		}
 		return stringBaseTypeEClass;
 	}
@@ -44244,7 +47511,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStringerFramePositionType() {
 		if (stringerFramePositionTypeEClass == null) {
 			stringerFramePositionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(733);
+					.getEClassifiers().get(839);
 		}
 		return stringerFramePositionTypeEClass;
 	}
@@ -44275,7 +47542,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getStringerFramePositionType_ReferenceY() {
+	public EReference getStringerFramePositionType_SectionElementUID() {
 		return (EReference) getStringerFramePositionType().getEStructuralFeatures().get(2);
 	}
 
@@ -44285,7 +47552,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getStringerFramePositionType_ReferenceZ() {
+	public EReference getStringerFramePositionType_ReferenceY() {
 		return (EReference) getStringerFramePositionType().getEStructuralFeatures().get(3);
 	}
 
@@ -44295,7 +47562,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getStringerFramePositionType_ReferenceAngle() {
+	public EReference getStringerFramePositionType_ReferenceZ() {
 		return (EReference) getStringerFramePositionType().getEStructuralFeatures().get(4);
 	}
 
@@ -44305,7 +47572,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getStringerFramePositionType_Alignment() {
+	public EReference getStringerFramePositionType_ReferenceAngle() {
 		return (EReference) getStringerFramePositionType().getEStructuralFeatures().get(5);
 	}
 
@@ -44315,7 +47582,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getStringerFramePositionType_Continuity() {
+	public EReference getStringerFramePositionType_Alignment() {
 		return (EReference) getStringerFramePositionType().getEStructuralFeatures().get(6);
 	}
 
@@ -44325,7 +47592,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getStringerFramePositionType_Interpolation() {
+	public EReference getStringerFramePositionType_Continuity() {
 		return (EReference) getStringerFramePositionType().getEStructuralFeatures().get(7);
 	}
 
@@ -44335,8 +47602,42 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getStringerFramePositionType_Interpolation() {
+		return (EReference) getStringerFramePositionType().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getStringerFramePositionType_UID() {
-		return (EAttribute) getStringerFramePositionType().getEStructuralFeatures().get(8);
+		return (EAttribute) getStringerFramePositionType().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getStringerFramePositionUIDsType() {
+		if (stringerFramePositionUIDsTypeEClass == null) {
+			stringerFramePositionUIDsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(840);
+		}
+		return stringerFramePositionUIDsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getStringerFramePositionUIDsType_StringerFramePositionUID() {
+		return (EReference) getStringerFramePositionUIDsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -44348,7 +47649,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStringersAssemblyType() {
 		if (stringersAssemblyTypeEClass == null) {
 			stringersAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(734);
+					.getEClassifiers().get(841);
 		}
 		return stringersAssemblyTypeEClass;
 	}
@@ -44372,7 +47673,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStringerType() {
 		if (stringerTypeEClass == null) {
 			stringerTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(735);
+					.get(842);
 		}
 		return stringerTypeEClass;
 	}
@@ -44406,7 +47707,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStringUIDBaseType() {
 		if (stringUIDBaseTypeEClass == null) {
 			stringUIDBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(736);
+					.getEClassifiers().get(843);
 		}
 		return stringUIDBaseTypeEClass;
 	}
@@ -44450,7 +47751,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStringVectorBaseType() {
 		if (stringVectorBaseTypeEClass == null) {
 			stringVectorBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(737);
+					.getEClassifiers().get(844);
 		}
 		return stringVectorBaseTypeEClass;
 	}
@@ -44554,7 +47855,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStructuralElementsType() {
 		if (structuralElementsTypeEClass == null) {
 			structuralElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(738);
+					.getEClassifiers().get(845);
 		}
 		return structuralElementsTypeEClass;
 	}
@@ -44658,7 +47959,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStructuralMountType() {
 		if (structuralMountTypeEClass == null) {
 			structuralMountTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(739);
+					.getEClassifiers().get(846);
 		}
 		return structuralMountTypeEClass;
 	}
@@ -44742,7 +48043,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStructuralProfile3DType() {
 		if (structuralProfile3DTypeEClass == null) {
 			structuralProfile3DTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(740);
+					.getEClassifiers().get(847);
 		}
 		return structuralProfile3DTypeEClass;
 	}
@@ -44806,7 +48107,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStructuralProfilesType() {
 		if (structuralProfilesTypeEClass == null) {
 			structuralProfilesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(741);
+					.getEClassifiers().get(848);
 		}
 		return structuralProfilesTypeEClass;
 	}
@@ -44840,7 +48141,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStructuralProfileType() {
 		if (structuralProfileTypeEClass == null) {
 			structuralProfileTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(742);
+					.getEClassifiers().get(849);
 		}
 		return structuralProfileTypeEClass;
 	}
@@ -44904,7 +48205,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStructuralWallElementsType() {
 		if (structuralWallElementsTypeEClass == null) {
 			structuralWallElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(743);
+					.getEClassifiers().get(850);
 		}
 		return structuralWallElementsTypeEClass;
 	}
@@ -44928,7 +48229,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStructuralWallElementType() {
 		if (structuralWallElementTypeEClass == null) {
 			structuralWallElementTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(744);
+					.getEClassifiers().get(851);
 		}
 		return structuralWallElementTypeEClass;
 	}
@@ -45009,10 +48310,158 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getStrutAssemblyType() {
+		if (strutAssemblyTypeEClass == null) {
+			strutAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(852);
+		}
+		return strutAssemblyTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getStrutAssemblyType_StrutProperties() {
+		return (EReference) getStrutAssemblyType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getStrutAssemblyType_MainStrutRelativePosition() {
+		return (EAttribute) getStrutAssemblyType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getStrutAssemblyType_EndPoint() {
+		return (EReference) getStrutAssemblyType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getStrutAssemblyType_RelEndPoint() {
+		return (EReference) getStrutAssemblyType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getStrutAssemblyType_RelStrutEndPoint() {
+		return (EReference) getStrutAssemblyType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getStrutAssemblyType_Attachment() {
+		return (EReference) getStrutAssemblyType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getStrutAssemblyType_ActuatorUID() {
+		return (EReference) getStrutAssemblyType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getStrutAssemblyType_UID() {
+		return (EAttribute) getStrutAssemblyType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getStrutPropertiesType() {
+		if (strutPropertiesTypeEClass == null) {
+			strutPropertiesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(853);
+		}
+		return strutPropertiesTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getStrutPropertiesType_Radius() {
+		return (EReference) getStrutPropertiesType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getStrutPropertiesType_MaterialUID() {
+		return (EReference) getStrutPropertiesType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getStrutPropertiesType_InnerRadius() {
+		return (EReference) getStrutPropertiesType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getStrutPropertiesType_StructuralElementUID() {
+		return (EReference) getStrutPropertiesType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getStrutType() {
 		if (strutTypeEClass == null) {
 			strutTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(745);
+					.get(854);
 		}
 		return strutTypeEClass;
 	}
@@ -45033,112 +48482,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getStrutType_Radius() {
-		return (EReference) getStrutType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getStrutType_MaterialUID() {
-		return (EReference) getStrutType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getStrutType_InnerRadius() {
-		return (EReference) getStrutType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getStrutType_StructuralElementUID() {
-		return (EReference) getStrutType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getStrutWithActuatorType() {
-		if (strutWithActuatorTypeEClass == null) {
-			strutWithActuatorTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(746);
-		}
-		return strutWithActuatorTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getStrutWithActuatorType_ActuatorUID() {
-		return (EReference) getStrutWithActuatorType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getStrutWithActuatorType_Length() {
-		return (EReference) getStrutWithActuatorType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getStrutWithActuatorType_Radius() {
-		return (EReference) getStrutWithActuatorType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getStrutWithActuatorType_MaterialUID() {
-		return (EReference) getStrutWithActuatorType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getStrutWithActuatorType_InnerRadius() {
-		return (EReference) getStrutWithActuatorType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getStrutWithActuatorType_StructuralElementUID() {
-		return (EReference) getStrutWithActuatorType().getEStructuralFeatures().get(5);
+	public EAttribute getStrutType_UID() {
+		return (EAttribute) getStrutType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -45150,7 +48495,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getStudiesType() {
 		if (studiesTypeEClass == null) {
 			studiesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(747);
+					.get(855);
 		}
 		return studiesTypeEClass;
 	}
@@ -45184,7 +48529,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSubFleetsType() {
 		if (subFleetsTypeEClass == null) {
 			subFleetsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(748);
+					.getEClassifiers().get(856);
 		}
 		return subFleetsTypeEClass;
 	}
@@ -45208,7 +48553,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSubFleetType() {
 		if (subFleetTypeEClass == null) {
 			subFleetTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(749);
+					.get(857);
 		}
 		return subFleetTypeEClass;
 	}
@@ -45262,7 +48607,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSubLoadType() {
 		if (subLoadTypeEClass == null) {
 			subLoadTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(750);
+					.get(858);
 		}
 		return subLoadTypeEClass;
 	}
@@ -45353,12 +48698,96 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getSymmetryType3() {
-		if (symmetryType3EClass == null) {
-			symmetryType3EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(754);
+	public EClass getSuperEllipseProfileType() {
+		if (superEllipseProfileTypeEClass == null) {
+			superEllipseProfileTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(859);
 		}
-		return symmetryType3EClass;
+		return superEllipseProfileTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSuperEllipseProfileType_MUpper() {
+		return (EReference) getSuperEllipseProfileType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSuperEllipseProfileType_NUpper() {
+		return (EReference) getSuperEllipseProfileType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSuperEllipseProfileType_MLower() {
+		return (EReference) getSuperEllipseProfileType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSuperEllipseProfileType_NLower() {
+		return (EReference) getSuperEllipseProfileType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSuperEllipseProfileType_LowerHeightFraction() {
+		return (EReference) getSuperEllipseProfileType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSupportBeamType() {
+		if (supportBeamTypeEClass == null) {
+			supportBeamTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(860);
+		}
+		return supportBeamTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSupportBeamType_Position() {
+		return (EReference) getSupportBeamType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSupportBeamType_Structure() {
+		return (EReference) getSupportBeamType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -45370,7 +48799,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getSystemsType() {
 		if (systemsTypeEClass == null) {
 			systemsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(780);
+					.get(867);
 		}
 		return systemsTypeEClass;
 	}
@@ -45434,7 +48863,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTailplaneAttachmentAreaType() {
 		if (tailplaneAttachmentAreaTypeEClass == null) {
 			tailplaneAttachmentAreaTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(781);
+					.getEClassifiers().get(868);
 		}
 		return tailplaneAttachmentAreaTypeEClass;
 	}
@@ -45488,7 +48917,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTailplaneAttachmentTypeType() {
 		if (tailplaneAttachmentTypeTypeEClass == null) {
 			tailplaneAttachmentTypeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(782);
+					.getEClassifiers().get(869);
 		}
 		return tailplaneAttachmentTypeTypeEClass;
 	}
@@ -45502,7 +48931,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTakeoffPerformanceParametersType() {
 		if (takeoffPerformanceParametersTypeEClass == null) {
 			takeoffPerformanceParametersTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(783);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(870);
 		}
 		return takeoffPerformanceParametersTypeEClass;
 	}
@@ -45606,7 +49035,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTangentLinksType() {
 		if (tangentLinksTypeEClass == null) {
 			tangentLinksTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(784);
+					.getEClassifiers().get(871);
 		}
 		return tangentLinksTypeEClass;
 	}
@@ -45630,7 +49059,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTiedInterfacesType() {
 		if (tiedInterfacesTypeEClass == null) {
 			tiedInterfacesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(785);
+					.getEClassifiers().get(872);
 		}
 		return tiedInterfacesTypeEClass;
 	}
@@ -45654,7 +49083,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTiedInterfaceType() {
 		if (tiedInterfaceTypeEClass == null) {
 			tiedInterfaceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(786);
+					.getEClassifiers().get(873);
 		}
 		return tiedInterfaceTypeEClass;
 	}
@@ -45698,7 +49127,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTimeBaseType() {
 		if (timeBaseTypeEClass == null) {
 			timeBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(787);
+					.get(874);
 		}
 		return timeBaseTypeEClass;
 	}
@@ -45749,10 +49178,34 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getTimeConstraintBaseType() {
+		if (timeConstraintBaseTypeEClass == null) {
+			timeConstraintBaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(875);
+		}
+		return timeConstraintBaseTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTimeConstraintBaseType_RelationalOperator() {
+		return (EAttribute) getTimeConstraintBaseType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getToolspecificType() {
 		if (toolspecificTypeEClass == null) {
 			toolspecificTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(788);
+					.getEClassifiers().get(876);
 		}
 		return toolspecificTypeEClass;
 	}
@@ -45776,7 +49229,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getToolType() {
 		if (toolTypeEClass == null) {
 			toolTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(789);
+					.get(877);
 		}
 		return toolTypeEClass;
 	}
@@ -45820,7 +49273,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTopologyEntriesType() {
 		if (topologyEntriesTypeEClass == null) {
 			topologyEntriesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(790);
+					.getEClassifiers().get(878);
 		}
 		return topologyEntriesTypeEClass;
 	}
@@ -45844,7 +49297,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTopologyEntryType() {
 		if (topologyEntryTypeEClass == null) {
 			topologyEntryTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(791);
+					.getEClassifiers().get(879);
 		}
 		return topologyEntryTypeEClass;
 	}
@@ -45898,7 +49351,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTotalOperatingCostType() {
 		if (totalOperatingCostTypeEClass == null) {
 			totalOperatingCostTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(792);
+					.getEClassifiers().get(880);
 		}
 		return totalOperatingCostTypeEClass;
 	}
@@ -45942,7 +49395,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTrackActuatorType() {
 		if (trackActuatorTypeEClass == null) {
 			trackActuatorTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(793);
+					.getEClassifiers().get(881);
 		}
 		return trackActuatorTypeEClass;
 	}
@@ -45983,12 +49436,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getTrackCarType() {
-		if (trackCarTypeEClass == null) {
-			trackCarTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(794);
+	public EClass getTrackJointCoordinatesType() {
+		if (trackJointCoordinatesTypeEClass == null) {
+			trackJointCoordinatesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(882);
 		}
-		return trackCarTypeEClass;
+		return trackJointCoordinatesTypeEClass;
 	}
 
 	/**
@@ -45997,8 +49450,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackCarType_Material() {
-		return (EReference) getTrackCarType().getEStructuralFeatures().get(0);
+	public EReference getTrackJointCoordinatesType_Name() {
+		return (EReference) getTrackJointCoordinatesType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -46007,12 +49460,42 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getTrackFairingType() {
-		if (trackFairingTypeEClass == null) {
-			trackFairingTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(795);
+	public EReference getTrackJointCoordinatesType_X() {
+		return (EReference) getTrackJointCoordinatesType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrackJointCoordinatesType_Dy() {
+		return (EReference) getTrackJointCoordinatesType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrackJointCoordinatesType_Z() {
+		return (EReference) getTrackJointCoordinatesType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getTrackJointPositionsType() {
+		if (trackJointPositionsTypeEClass == null) {
+			trackJointPositionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(883);
 		}
-		return trackFairingTypeEClass;
+		return trackJointPositionsTypeEClass;
 	}
 
 	/**
@@ -46021,8 +49504,66 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackFairingType_Material() {
-		return (EReference) getTrackFairingType().getEStructuralFeatures().get(0);
+	public EReference getTrackJointPositionsType_JointPosition() {
+		return (EReference) getTrackJointPositionsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getTrackJointPositionType() {
+		if (trackJointPositionTypeEClass == null) {
+			trackJointPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(884);
+		}
+		return trackJointPositionTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrackJointPositionType_ControlParameters() {
+		return (EReference) getTrackJointPositionType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrackJointPositionType_JointCoordinates() {
+		return (EReference) getTrackJointPositionType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getTrackSecondaryStructureType() {
+		if (trackSecondaryStructureTypeEClass == null) {
+			trackSecondaryStructureTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(885);
+		}
+		return trackSecondaryStructureTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrackSecondaryStructureType_MaterialUID() {
+		return (EReference) getTrackSecondaryStructureType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -46034,7 +49575,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTrackStructureType() {
 		if (trackStructureTypeEClass == null) {
 			trackStructureTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(796);
+					.getEClassifiers().get(886);
 		}
 		return trackStructureTypeEClass;
 	}
@@ -46045,7 +49586,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackStructureType_ControlSurfaceAttachment() {
+	public EReference getTrackStructureType_Struts() {
 		return (EReference) getTrackStructureType().getEStructuralFeatures().get(0);
 	}
 
@@ -46055,7 +49596,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackStructureType_Car() {
+	public EReference getTrackStructureType_JointPositions() {
 		return (EReference) getTrackStructureType().getEStructuralFeatures().get(1);
 	}
 
@@ -46065,7 +49606,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackStructureType_Strut1() {
+	public EReference getTrackStructureType_ControlSurfaceAttachment() {
 		return (EReference) getTrackStructureType().getEStructuralFeatures().get(2);
 	}
 
@@ -46075,7 +49616,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackStructureType_Strut2() {
+	public EReference getTrackStructureType_Carriage() {
 		return (EReference) getTrackStructureType().getEStructuralFeatures().get(3);
 	}
 
@@ -46085,7 +49626,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackStructureType_Strut3() {
+	public EReference getTrackStructureType_SidePanels() {
 		return (EReference) getTrackStructureType().getEStructuralFeatures().get(4);
 	}
 
@@ -46095,7 +49636,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackStructureType_SidePanels() {
+	public EReference getTrackStructureType_UpperPanel() {
 		return (EReference) getTrackStructureType().getEStructuralFeatures().get(5);
 	}
 
@@ -46105,7 +49646,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackStructureType_UpperPanel() {
+	public EReference getTrackStructureType_LowerPanel() {
 		return (EReference) getTrackStructureType().getEStructuralFeatures().get(6);
 	}
 
@@ -46115,7 +49656,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackStructureType_LowerPanel() {
+	public EReference getTrackStructureType_RollerTrack() {
 		return (EReference) getTrackStructureType().getEStructuralFeatures().get(7);
 	}
 
@@ -46125,7 +49666,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackStructureType_RollerTrack() {
+	public EReference getTrackStructureType_Ribs() {
 		return (EReference) getTrackStructureType().getEStructuralFeatures().get(8);
 	}
 
@@ -46135,7 +49676,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackStructureType_Ribs() {
+	public EReference getTrackStructureType_Fairing() {
 		return (EReference) getTrackStructureType().getEStructuralFeatures().get(9);
 	}
 
@@ -46145,22 +49686,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackStructureType_Fairing() {
-		return (EReference) getTrackStructureType().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getTrackStrut1Type() {
-		if (trackStrut1TypeEClass == null) {
-			trackStrut1TypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(797);
+	public EClass getTrackStrutsType() {
+		if (trackStrutsTypeEClass == null) {
+			trackStrutsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(887);
 		}
-		return trackStrut1TypeEClass;
+		return trackStrutsTypeEClass;
 	}
 
 	/**
@@ -46169,8 +49700,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackStrut1Type_Material() {
-		return (EReference) getTrackStrut1Type().getEStructuralFeatures().get(0);
+	public EReference getTrackStrutsType_Strut() {
+		return (EReference) getTrackStrutsType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -46179,12 +49710,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getTrackStrut2Type() {
-		if (trackStrut2TypeEClass == null) {
-			trackStrut2TypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(798);
+	public EClass getTrackStrutType() {
+		if (trackStrutTypeEClass == null) {
+			trackStrutTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(888);
 		}
-		return trackStrut2TypeEClass;
+		return trackStrutTypeEClass;
 	}
 
 	/**
@@ -46193,8 +49724,28 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrackStrut2Type_Material() {
-		return (EReference) getTrackStrut2Type().getEStructuralFeatures().get(0);
+	public EReference getTrackStrutType_Name() {
+		return (EReference) getTrackStrutType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrackStrutType_MaterialUID() {
+		return (EReference) getTrackStrutType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrackStrutType_ProfileUID() {
+		return (EReference) getTrackStrutType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -46206,7 +49757,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTrackSubTypeType() {
 		if (trackSubTypeTypeEClass == null) {
 			trackSubTypeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(799);
+					.getEClassifiers().get(889);
 		}
 		return trackSubTypeTypeEClass;
 	}
@@ -46220,7 +49771,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTrackTypeType() {
 		if (trackTypeTypeEClass == null) {
 			trackTypeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(800);
+					.getEClassifiers().get(890);
 		}
 		return trackTypeTypeEClass;
 	}
@@ -46234,7 +49785,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTrailingEdgeDevicesType() {
 		if (trailingEdgeDevicesTypeEClass == null) {
 			trailingEdgeDevicesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(801);
+					.getEClassifiers().get(891);
 		}
 		return trailingEdgeDevicesTypeEClass;
 	}
@@ -46258,7 +49809,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTrailingEdgeDeviceType() {
 		if (trailingEdgeDeviceTypeEClass == null) {
 			trailingEdgeDeviceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(802);
+					.getEClassifiers().get(892);
 		}
 		return trailingEdgeDeviceTypeEClass;
 	}
@@ -46402,7 +49953,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTrajectoriesType() {
 		if (trajectoriesTypeEClass == null) {
 			trajectoriesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(803);
+					.getEClassifiers().get(893);
 		}
 		return trajectoriesTypeEClass;
 	}
@@ -46426,7 +49977,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTrajectoryGlobalType() {
 		if (trajectoryGlobalTypeEClass == null) {
 			trajectoryGlobalTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(804);
+					.getEClassifiers().get(894);
 		}
 		return trajectoryGlobalTypeEClass;
 	}
@@ -46570,7 +50121,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTrajectoryType() {
 		if (trajectoryTypeEClass == null) {
 			trajectoryTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(805);
+					.getEClassifiers().get(895);
 		}
 		return trajectoryTypeEClass;
 	}
@@ -46644,7 +50195,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTransformation2DType() {
 		if (transformation2DTypeEClass == null) {
 			transformation2DTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(806);
+					.getEClassifiers().get(896);
 		}
 		return transformation2DTypeEClass;
 	}
@@ -46698,7 +50249,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTransformationType() {
 		if (transformationTypeEClass == null) {
 			transformationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(807);
+					.getEClassifiers().get(897);
 		}
 		return transformationTypeEClass;
 	}
@@ -46752,7 +50303,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTransmissionGearRatioType() {
 		if (transmissionGearRatioTypeEClass == null) {
 			transmissionGearRatioTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(808);
+					.getEClassifiers().get(898);
 		}
 		return transmissionGearRatioTypeEClass;
 	}
@@ -46786,7 +50337,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTransmissionShaftInputsType() {
 		if (transmissionShaftInputsTypeEClass == null) {
 			transmissionShaftInputsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(809);
+					.getEClassifiers().get(899);
 		}
 		return transmissionShaftInputsTypeEClass;
 	}
@@ -46810,7 +50361,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTransmissionShaftInputType() {
 		if (transmissionShaftInputTypeEClass == null) {
 			transmissionShaftInputTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(810);
+					.getEClassifiers().get(900);
 		}
 		return transmissionShaftInputTypeEClass;
 	}
@@ -46844,7 +50395,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTransmissionShaftOutputsType() {
 		if (transmissionShaftOutputsTypeEClass == null) {
 			transmissionShaftOutputsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(811);
+					.getEClassifiers().get(901);
 		}
 		return transmissionShaftOutputsTypeEClass;
 	}
@@ -46868,7 +50419,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTransmissionShaftOutputType() {
 		if (transmissionShaftOutputTypeEClass == null) {
 			transmissionShaftOutputTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(812);
+					.getEClassifiers().get(902);
 		}
 		return transmissionShaftOutputTypeEClass;
 	}
@@ -46912,7 +50463,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTransmissionsType() {
 		if (transmissionsTypeEClass == null) {
 			transmissionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(813);
+					.getEClassifiers().get(903);
 		}
 		return transmissionsTypeEClass;
 	}
@@ -46936,7 +50487,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTransmissionType() {
 		if (transmissionTypeEClass == null) {
 			transmissionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(814);
+					.getEClassifiers().get(904);
 		}
 		return transmissionTypeEClass;
 	}
@@ -47007,12 +50558,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getTrimParametersType() {
-		if (trimParametersTypeEClass == null) {
-			trimParametersTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(815);
+	public EClass getTrimCaseType() {
+		if (trimCaseTypeEClass == null) {
+			trimCaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(905);
 		}
-		return trimParametersTypeEClass;
+		return trimCaseTypeEClass;
 	}
 
 	/**
@@ -47021,8 +50572,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrimParametersType_MachNumber() {
-		return (EReference) getTrimParametersType().getEStructuralFeatures().get(0);
+	public EReference getTrimCaseType_Name() {
+		return (EReference) getTrimCaseType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -47031,8 +50582,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrimParametersType_ReynoldsNumber() {
-		return (EReference) getTrimParametersType().getEStructuralFeatures().get(1);
+	public EReference getTrimCaseType_Description() {
+		return (EReference) getTrimCaseType().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -47041,8 +50592,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrimParametersType_Airspeed() {
-		return (EReference) getTrimParametersType().getEStructuralFeatures().get(2);
+	public EReference getTrimCaseType_TrimReqUID() {
+		return (EReference) getTrimCaseType().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -47051,8 +50602,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrimParametersType_AngleOfSideslip() {
-		return (EReference) getTrimParametersType().getEStructuralFeatures().get(3);
+	public EReference getTrimCaseType_TrimResult() {
+		return (EReference) getTrimCaseType().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -47061,8 +50612,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrimParametersType_AngleOfAttack() {
-		return (EReference) getTrimParametersType().getEStructuralFeatures().get(4);
+	public EReference getTrimCaseType_LinearModel() {
+		return (EReference) getTrimCaseType().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -47071,8 +50622,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrimParametersType_LoadFactorZ() {
-		return (EReference) getTrimParametersType().getEStructuralFeatures().get(5);
+	public EReference getTrimCaseType_LinearModelDescription() {
+		return (EReference) getTrimCaseType().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -47081,8 +50632,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrimParametersType_TargetLiftCoefficient() {
-		return (EReference) getTrimParametersType().getEStructuralFeatures().get(6);
+	public EAttribute getTrimCaseType_UID() {
+		return (EAttribute) getTrimCaseType().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -47091,8 +50642,154 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTrimParametersType_QuasiSteadyRotation() {
-		return (EReference) getTrimParametersType().getEStructuralFeatures().get(7);
+	public EClass getTrimRequirementsType() {
+		if (trimRequirementsTypeEClass == null) {
+			trimRequirementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(906);
+		}
+		return trimRequirementsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrimRequirementsType_TrimRequirement() {
+		return (EReference) getTrimRequirementsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getTrimRequirementType() {
+		if (trimRequirementTypeEClass == null) {
+			trimRequirementTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(907);
+		}
+		return trimRequirementTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrimRequirementType_Name() {
+		return (EReference) getTrimRequirementType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrimRequirementType_Description() {
+		return (EReference) getTrimRequirementType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrimRequirementType_FlightPointUID() {
+		return (EReference) getTrimRequirementType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrimRequirementType_WeightAndBalanceUID() {
+		return (EReference) getTrimRequirementType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrimRequirementType_Configurations() {
+		return (EReference) getTrimRequirementType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrimRequirementType_PerformanceMaps() {
+		return (EReference) getTrimRequirementType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTrimRequirementType_UID() {
+		return (EAttribute) getTrimRequirementType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getTrimType() {
+		if (trimTypeEClass == null) {
+			trimTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(908);
+		}
+		return trimTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getTrimType_TrimCase() {
+		return (EReference) getTrimType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getTurnAngleType() {
+		if (turnAngleTypeEClass == null) {
+			turnAngleTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(909);
+		}
+		return turnAngleTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTurnAngleType_UID() {
+		return (EAttribute) getTurnAngleType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -47104,7 +50801,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getTypeOfPointPerformanceType() {
 		if (typeOfPointPerformanceTypeEClass == null) {
 			typeOfPointPerformanceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(816);
+					.getEClassifiers().get(910);
 		}
 		return typeOfPointPerformanceTypeEClass;
 	}
@@ -47115,12 +50812,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getTypeType1() {
-		if (typeType1EClass == null) {
-			typeType1EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(818);
+	public EClass getTypeType() {
+		if (typeTypeEClass == null) {
+			typeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(911);
 		}
-		return typeType1EClass;
+		return typeTypeEClass;
 	}
 
 	/**
@@ -47129,54 +50826,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getTypeType2() {
-		if (typeType2EClass == null) {
-			typeType2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(819);
+	public EClass getTypeType4() {
+		if (typeType4EClass == null) {
+			typeType4EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(915);
 		}
-		return typeType2EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getTypeType5() {
-		if (typeType5EClass == null) {
-			typeType5EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(822);
-		}
-		return typeType5EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getTypeType6() {
-		if (typeType6EClass == null) {
-			typeType6EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(823);
-		}
-		return typeType6EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getTypeType7() {
-		if (typeType7EClass == null) {
-			typeType7EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(824);
-		}
-		return typeType7EClass;
+		return typeType4EClass;
 	}
 
 	/**
@@ -47188,7 +50843,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getUIDGroupDefinitionsType() {
 		if (uidGroupDefinitionsTypeEClass == null) {
 			uidGroupDefinitionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(828);
+					.getEClassifiers().get(919);
 		}
 		return uidGroupDefinitionsTypeEClass;
 	}
@@ -47222,7 +50877,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getUIDGroupDefinitionType() {
 		if (uidGroupDefinitionTypeEClass == null) {
 			uidGroupDefinitionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(829);
+					.getEClassifiers().get(920);
 		}
 		return uidGroupDefinitionTypeEClass;
 	}
@@ -47293,12 +50948,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getUpdatesType() {
-		if (updatesTypeEClass == null) {
-			updatesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(832);
+	public EClass getUIDSequenceType() {
+		if (uidSequenceTypeEClass == null) {
+			uidSequenceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(921);
 		}
-		return updatesTypeEClass;
+		return uidSequenceTypeEClass;
 	}
 
 	/**
@@ -47307,72 +50962,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getUpdatesType_Update() {
-		return (EReference) getUpdatesType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getUpdateType() {
-		if (updateTypeEClass == null) {
-			updateTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(833);
-		}
-		return updateTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getUpdateType_Modification() {
-		return (EReference) getUpdateType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getUpdateType_Creator() {
-		return (EReference) getUpdateType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getUpdateType_Timestamp() {
-		return (EReference) getUpdateType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getUpdateType_Version() {
-		return (EReference) getUpdateType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getUpdateType_CpacsVersion() {
-		return (EReference) getUpdateType().getEStructuralFeatures().get(4);
+	public EReference getUIDSequenceType_UID() {
+		return (EReference) getUIDSequenceType().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -47384,7 +50975,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getUpperLinksType() {
 		if (upperLinksTypeEClass == null) {
 			upperLinksTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(834);
+					.getEClassifiers().get(924);
 		}
 		return upperLinksTypeEClass;
 	}
@@ -47405,10 +50996,24 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getVariableConditionsType() {
+		if (variableConditionsTypeEClass == null) {
+			variableConditionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(925);
+		}
+		return variableConditionsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getVariableSegmentsType() {
 		if (variableSegmentsTypeEClass == null) {
 			variableSegmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(835);
+					.getEClassifiers().get(926);
 		}
 		return variableSegmentsTypeEClass;
 	}
@@ -47432,7 +51037,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getVariableSegmentType() {
 		if (variableSegmentTypeEClass == null) {
 			variableSegmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(836);
+					.getEClassifiers().get(927);
 		}
 		return variableSegmentTypeEClass;
 	}
@@ -47463,8 +51068,86 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVariableSegmentType_UID() {
-		return (EAttribute) getVariableSegmentType().getEStructuralFeatures().get(2);
+	public EClass getVehicleConfigurationsType() {
+		if (vehicleConfigurationsTypeEClass == null) {
+			vehicleConfigurationsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(928);
+		}
+		return vehicleConfigurationsTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getVehicleConfigurationsType_Configuration() {
+		return (EReference) getVehicleConfigurationsType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getVehicleConfigurationType() {
+		if (vehicleConfigurationTypeEClass == null) {
+			vehicleConfigurationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(929);
+		}
+		return vehicleConfigurationTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getVehicleConfigurationType_Name() {
+		return (EReference) getVehicleConfigurationType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getVehicleConfigurationType_Description() {
+		return (EReference) getVehicleConfigurationType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getVehicleConfigurationType_ControlElements() {
+		return (EReference) getVehicleConfigurationType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getVehicleConfigurationType_InternalPressures() {
+		return (EReference) getVehicleConfigurationType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVehicleConfigurationType_UID() {
+		return (EAttribute) getVehicleConfigurationType().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -47476,7 +51159,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getVehiclesType() {
 		if (vehiclesTypeEClass == null) {
 			vehiclesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(837);
+					.get(930);
 		}
 		return vehiclesTypeEClass;
 	}
@@ -47507,7 +51190,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getVehiclesType_Engines() {
+	public EReference getVehiclesType_PerformanceCases() {
 		return (EReference) getVehiclesType().getEStructuralFeatures().get(2);
 	}
 
@@ -47517,7 +51200,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getVehiclesType_Profiles() {
+	public EReference getVehiclesType_FlightPoints() {
 		return (EReference) getVehiclesType().getEStructuralFeatures().get(3);
 	}
 
@@ -47527,7 +51210,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getVehiclesType_StructuralElements() {
+	public EReference getVehiclesType_Engines() {
 		return (EReference) getVehiclesType().getEStructuralFeatures().get(4);
 	}
 
@@ -47537,7 +51220,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getVehiclesType_Materials() {
+	public EReference getVehiclesType_Profiles() {
 		return (EReference) getVehiclesType().getEStructuralFeatures().get(5);
 	}
 
@@ -47547,8 +51230,136 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getVehiclesType_Fuels() {
+	public EReference getVehiclesType_StructuralElements() {
 		return (EReference) getVehiclesType().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getVehiclesType_DeckElements() {
+		return (EReference) getVehiclesType().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getVehiclesType_Materials() {
+		return (EReference) getVehiclesType().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getVehiclesType_Fuels() {
+		return (EReference) getVehiclesType().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getVersionInfosType() {
+		if (versionInfosTypeEClass == null) {
+			versionInfosTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(931);
+		}
+		return versionInfosTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getVersionInfosType_VersionInfo() {
+		return (EReference) getVersionInfosType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getVersionInfoType() {
+		if (versionInfoTypeEClass == null) {
+			versionInfoTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(932);
+		}
+		return versionInfoTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionInfoType_CpacsVersion() {
+		return (EAttribute) getVersionInfoType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getVersionInfoType_Description() {
+		return (EReference) getVersionInfoType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getVersionInfoType_Timestamp() {
+		return (EReference) getVersionInfoType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getVersionInfoType_Creator() {
+		return (EReference) getVersionInfoType().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getVersionInfoType_ChangeLog() {
+		return (EReference) getVersionInfoType().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionInfoType_Version() {
+		return (EAttribute) getVersionInfoType().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -47560,7 +51371,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getVtpFrameDefType() {
 		if (vtpFrameDefTypeEClass == null) {
 			vtpFrameDefTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(838);
+					.getEClassifiers().get(933);
 		}
 		return vtpFrameDefTypeEClass;
 	}
@@ -47644,7 +51455,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getVtpInterfaceDefType() {
 		if (vtpInterfaceDefTypeEClass == null) {
 			vtpInterfaceDefTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(839);
+					.getEClassifiers().get(934);
 		}
 		return vtpInterfaceDefTypeEClass;
 	}
@@ -47738,7 +51549,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWallPositionsType() {
 		if (wallPositionsTypeEClass == null) {
 			wallPositionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(840);
+					.getEClassifiers().get(935);
 		}
 		return wallPositionsTypeEClass;
 	}
@@ -47762,7 +51573,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWallPositionType() {
 		if (wallPositionTypeEClass == null) {
 			wallPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(841);
+					.getEClassifiers().get(936);
 		}
 		return wallPositionTypeEClass;
 	}
@@ -47846,7 +51657,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWallPositionUIDsType() {
 		if (wallPositionUIDsTypeEClass == null) {
 			wallPositionUIDsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(842);
+					.getEClassifiers().get(937);
 		}
 		return wallPositionUIDsTypeEClass;
 	}
@@ -47870,7 +51681,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWallSegmentsType() {
 		if (wallSegmentsTypeEClass == null) {
 			wallSegmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(843);
+					.getEClassifiers().get(938);
 		}
 		return wallSegmentsTypeEClass;
 	}
@@ -47894,7 +51705,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWallSegmentType() {
 		if (wallSegmentTypeEClass == null) {
 			wallSegmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(844);
+					.getEClassifiers().get(939);
 		}
 		return wallSegmentTypeEClass;
 	}
@@ -47988,7 +51799,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWallsType() {
 		if (wallsTypeEClass == null) {
 			wallsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(845);
+					.get(940);
 		}
 		return wallsTypeEClass;
 	}
@@ -48022,7 +51833,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWayPointTypeType() {
 		if (wayPointTypeTypeEClass == null) {
 			wayPointTypeTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(846);
+					.getEClassifiers().get(941);
 		}
 		return wayPointTypeTypeEClass;
 	}
@@ -48036,7 +51847,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWebType() {
 		if (webTypeEClass == null) {
 			webTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(847);
+					.get(942);
 		}
 		return webTypeEClass;
 	}
@@ -48070,7 +51881,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWeightAndBalanceCaseType() {
 		if (weightAndBalanceCaseTypeEClass == null) {
 			weightAndBalanceCaseTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(848);
+					.getEClassifiers().get(943);
 		}
 		return weightAndBalanceCaseTypeEClass;
 	}
@@ -48144,7 +51955,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWeightAndBalanceFuelInTanksType() {
 		if (weightAndBalanceFuelInTanksTypeEClass == null) {
 			weightAndBalanceFuelInTanksTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(849);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(944);
 		}
 		return weightAndBalanceFuelInTanksTypeEClass;
 	}
@@ -48168,7 +51979,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWeightAndBalanceFuelInTankType() {
 		if (weightAndBalanceFuelInTankTypeEClass == null) {
 			weightAndBalanceFuelInTankTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(850);
+					.getEClassifiers().get(945);
 		}
 		return weightAndBalanceFuelInTankTypeEClass;
 	}
@@ -48242,7 +52053,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWeightAndBalanceFuelType() {
 		if (weightAndBalanceFuelTypeEClass == null) {
 			weightAndBalanceFuelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(851);
+					.getEClassifiers().get(946);
 		}
 		return weightAndBalanceFuelTypeEClass;
 	}
@@ -48296,7 +52107,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWeightAndBalancemCargosType() {
 		if (weightAndBalancemCargosTypeEClass == null) {
 			weightAndBalancemCargosTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(852);
+					.getEClassifiers().get(947);
 		}
 		return weightAndBalancemCargosTypeEClass;
 	}
@@ -48350,7 +52161,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWeightAndBalancemPaxxType() {
 		if (weightAndBalancemPaxxTypeEClass == null) {
 			weightAndBalancemPaxxTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(853);
+					.getEClassifiers().get(948);
 		}
 		return weightAndBalancemPaxxTypeEClass;
 	}
@@ -48404,7 +52215,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWeightAndBalancePayloadType() {
 		if (weightAndBalancePayloadTypeEClass == null) {
 			weightAndBalancePayloadTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(854);
+					.getEClassifiers().get(949);
 		}
 		return weightAndBalancePayloadTypeEClass;
 	}
@@ -48468,7 +52279,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWeightAndBalanceType() {
 		if (weightAndBalanceTypeEClass == null) {
 			weightAndBalanceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(855);
+					.getEClassifiers().get(950);
 		}
 		return weightAndBalanceTypeEClass;
 	}
@@ -48499,34 +52310,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getWheelsType() {
-		if (wheelsTypeEClass == null) {
-			wheelsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(856);
-		}
-		return wheelsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWheelsType_Wheel() {
-		return (EReference) getWheelsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getWheelType() {
 		if (wheelTypeEClass == null) {
 			wheelTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(857);
+					.get(951);
 		}
 		return wheelTypeEClass;
 	}
@@ -48580,7 +52367,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWindowAssemblyPositionType() {
 		if (windowAssemblyPositionTypeEClass == null) {
 			windowAssemblyPositionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(858);
+					.getEClassifiers().get(952);
 		}
 		return windowAssemblyPositionTypeEClass;
 	}
@@ -48644,7 +52431,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWindowsAssemblyType() {
 		if (windowsAssemblyTypeEClass == null) {
 			windowsAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(859);
+					.getEClassifiers().get(953);
 		}
 		return windowsAssemblyTypeEClass;
 	}
@@ -48668,7 +52455,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWindowsType() {
 		if (windowsTypeEClass == null) {
 			windowsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(860);
+					.get(954);
 		}
 		return windowsTypeEClass;
 	}
@@ -48702,7 +52489,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingAeroPerformanceType() {
 		if (wingAeroPerformanceTypeEClass == null) {
 			wingAeroPerformanceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(861);
+					.getEClassifiers().get(955);
 		}
 		return wingAeroPerformanceTypeEClass;
 	}
@@ -48746,7 +52533,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingAirfoilsType() {
 		if (wingAirfoilsTypeEClass == null) {
 			wingAirfoilsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(862);
+					.getEClassifiers().get(956);
 		}
 		return wingAirfoilsTypeEClass;
 	}
@@ -48767,10 +52554,54 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getWingAttachmentPositioningType() {
+		if (wingAttachmentPositioningTypeEClass == null) {
+			wingAttachmentPositioningTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(957);
+		}
+		return wingAttachmentPositioningTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getWingAttachmentPositioningType_RelHeight() {
+		return (EReference) getWingAttachmentPositioningType().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getWingAttachmentPositioningType_Eta() {
+		return (EReference) getWingAttachmentPositioningType().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getWingAttachmentPositioningType_Xsi() {
+		return (EReference) getWingAttachmentPositioningType().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getWingCellsType() {
 		if (wingCellsTypeEClass == null) {
 			wingCellsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(863);
+					.getEClassifiers().get(958);
 		}
 		return wingCellsTypeEClass;
 	}
@@ -48794,7 +52625,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingCellType() {
 		if (wingCellTypeEClass == null) {
 			wingCellTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(864);
+					.get(959);
 		}
 		return wingCellTypeEClass;
 	}
@@ -48875,54 +52706,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getWingCoefficientsType() {
-		if (wingCoefficientsTypeEClass == null) {
-			wingCoefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(865);
-		}
-		return wingCoefficientsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingCoefficientsType_WingUID() {
-		return (EReference) getWingCoefficientsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingCoefficientsType_Coefficients() {
-		return (EReference) getWingCoefficientsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingCoefficientsType_Segments() {
-		return (EReference) getWingCoefficientsType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getWingComponentSegmentStructureType() {
 		if (wingComponentSegmentStructureTypeEClass == null) {
 			wingComponentSegmentStructureTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(866);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(960);
 		}
 		return wingComponentSegmentStructureTypeEClass;
 	}
@@ -48986,7 +52773,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingElementsType() {
 		if (wingElementsTypeEClass == null) {
 			wingElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(867);
+					.getEClassifiers().get(961);
 		}
 		return wingElementsTypeEClass;
 	}
@@ -49010,7 +52797,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingElementType() {
 		if (wingElementTypeEClass == null) {
 			wingElementTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(868);
+					.getEClassifiers().get(962);
 		}
 		return wingElementTypeEClass;
 	}
@@ -49074,7 +52861,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingFuelTankBorderType() {
 		if (wingFuelTankBorderTypeEClass == null) {
 			wingFuelTankBorderTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(869);
+					.getEClassifiers().get(963);
 		}
 		return wingFuelTankBorderTypeEClass;
 	}
@@ -49118,7 +52905,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingFuelTankGeometryType() {
 		if (wingFuelTankGeometryTypeEClass == null) {
 			wingFuelTankGeometryTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(870);
+					.getEClassifiers().get(964);
 		}
 		return wingFuelTankGeometryTypeEClass;
 	}
@@ -49142,7 +52929,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingFuelTanksType() {
 		if (wingFuelTanksTypeEClass == null) {
 			wingFuelTanksTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(871);
+					.getEClassifiers().get(965);
 		}
 		return wingFuelTanksTypeEClass;
 	}
@@ -49166,7 +52953,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingFuelTankType() {
 		if (wingFuelTankTypeEClass == null) {
 			wingFuelTankTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(872);
+					.getEClassifiers().get(966);
 		}
 		return wingFuelTankTypeEClass;
 	}
@@ -49230,7 +53017,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingFuselageAttachmentsType() {
 		if (wingFuselageAttachmentsTypeEClass == null) {
 			wingFuselageAttachmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(873);
+					.getEClassifiers().get(967);
 		}
 		return wingFuselageAttachmentsTypeEClass;
 	}
@@ -49254,7 +53041,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingFuselageAttachmentType() {
 		if (wingFuselageAttachmentTypeEClass == null) {
 			wingFuselageAttachmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(874);
+					.getEClassifiers().get(968);
 		}
 		return wingFuselageAttachmentTypeEClass;
 	}
@@ -49308,7 +53095,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingInterfaceDefinitionsType() {
 		if (wingInterfaceDefinitionsTypeEClass == null) {
 			wingInterfaceDefinitionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(875);
+					.getEClassifiers().get(969);
 		}
 		return wingInterfaceDefinitionsTypeEClass;
 	}
@@ -49382,7 +53169,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingInterfaceMainFramesType() {
 		if (wingInterfaceMainFramesTypeEClass == null) {
 			wingInterfaceMainFramesTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(876);
+					.getEClassifiers().get(970);
 		}
 		return wingInterfaceMainFramesTypeEClass;
 	}
@@ -49426,7 +53213,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingInterfaceSupportStrutsAssemblyType() {
 		if (wingInterfaceSupportStrutsAssemblyTypeEClass == null) {
 			wingInterfaceSupportStrutsAssemblyTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(877);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(971);
 		}
 		return wingInterfaceSupportStrutsAssemblyTypeEClass;
 	}
@@ -49460,7 +53247,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingInterfaceSupportStrutType() {
 		if (wingInterfaceSupportStrutTypeEClass == null) {
 			wingInterfaceSupportStrutTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(878);
+					.getEClassifiers().get(972);
 		}
 		return wingInterfaceSupportStrutTypeEClass;
 	}
@@ -49544,7 +53331,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingIntermediateStructureCellsType() {
 		if (wingIntermediateStructureCellsTypeEClass == null) {
 			wingIntermediateStructureCellsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(879);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(973);
 		}
 		return wingIntermediateStructureCellsTypeEClass;
 	}
@@ -49568,7 +53355,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingIntermediateStructureCellType() {
 		if (wingIntermediateStructureCellTypeEClass == null) {
 			wingIntermediateStructureCellTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(880);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(974);
 		}
 		return wingIntermediateStructureCellTypeEClass;
 	}
@@ -49662,7 +53449,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingRibCellType() {
 		if (wingRibCellTypeEClass == null) {
 			wingRibCellTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(881);
+					.getEClassifiers().get(975);
 		}
 		return wingRibCellTypeEClass;
 	}
@@ -49746,7 +53533,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingRibCrossSectionType() {
 		if (wingRibCrossSectionTypeEClass == null) {
 			wingRibCrossSectionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(882);
+					.getEClassifiers().get(976);
 		}
 		return wingRibCrossSectionTypeEClass;
 	}
@@ -49807,10 +53594,20 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getWingRibCrossSectionType_RibPost() {
+		return (EReference) getWingRibCrossSectionType().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getWingRibExplicitPositioningType() {
 		if (wingRibExplicitPositioningTypeEClass == null) {
 			wingRibExplicitPositioningTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(883);
+					.getEClassifiers().get(977);
 		}
 		return wingRibExplicitPositioningTypeEClass;
 	}
@@ -49904,7 +53701,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingRibPointType() {
 		if (wingRibPointTypeEClass == null) {
 			wingRibPointTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(884);
+					.getEClassifiers().get(978);
 		}
 		return wingRibPointTypeEClass;
 	}
@@ -49948,7 +53745,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingRibsDefinitionsType() {
 		if (wingRibsDefinitionsTypeEClass == null) {
 			wingRibsDefinitionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(885);
+					.getEClassifiers().get(979);
 		}
 		return wingRibsDefinitionsTypeEClass;
 	}
@@ -49972,7 +53769,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingRibsDefinitionType() {
 		if (wingRibsDefinitionTypeEClass == null) {
 			wingRibsDefinitionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(886);
+					.getEClassifiers().get(980);
 		}
 		return wingRibsDefinitionTypeEClass;
 	}
@@ -50046,7 +53843,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingRibsPositioningType() {
 		if (wingRibsPositioningTypeEClass == null) {
 			wingRibsPositioningTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(887);
+					.getEClassifiers().get(981);
 		}
 		return wingRibsPositioningTypeEClass;
 	}
@@ -50190,7 +53987,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingsAeroPerformanceType() {
 		if (wingsAeroPerformanceTypeEClass == null) {
 			wingsAeroPerformanceTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(888);
+					.getEClassifiers().get(982);
 		}
 		return wingsAeroPerformanceTypeEClass;
 	}
@@ -50211,44 +54008,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getWingsCoefficientsType() {
-		if (wingsCoefficientsTypeEClass == null) {
-			wingsCoefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(889);
-		}
-		return wingsCoefficientsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingsCoefficientsType_Wing() {
-		return (EReference) getWingsCoefficientsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingsCoefficientsType_Calibration() {
-		return (EReference) getWingsCoefficientsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getWingSectionsType() {
 		if (wingSectionsTypeEClass == null) {
 			wingSectionsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(890);
+					.getEClassifiers().get(983);
 		}
 		return wingSectionsTypeEClass;
 	}
@@ -50272,7 +54035,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingSectionType() {
 		if (wingSectionTypeEClass == null) {
 			wingSectionTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(891);
+					.getEClassifiers().get(984);
 		}
 		return wingSectionTypeEClass;
 	}
@@ -50333,162 +54096,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getWingSegmentCoefficientsType() {
-		if (wingSegmentCoefficientsTypeEClass == null) {
-			wingSegmentCoefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(892);
-		}
-		return wingSegmentCoefficientsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingSegmentCoefficientsType_SegmentUID() {
-		return (EReference) getWingSegmentCoefficientsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingSegmentCoefficientsType_Strip() {
-		return (EReference) getWingSegmentCoefficientsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getWingSegmentsCoefficientsType() {
-		if (wingSegmentsCoefficientsTypeEClass == null) {
-			wingSegmentsCoefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(893);
-		}
-		return wingSegmentsCoefficientsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingSegmentsCoefficientsType_Segment() {
-		return (EReference) getWingSegmentsCoefficientsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingSegmentsCoefficientsType_Calibration() {
-		return (EReference) getWingSegmentsCoefficientsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getWingSegmentStripCoefficientsType() {
-		if (wingSegmentStripCoefficientsTypeEClass == null) {
-			wingSegmentStripCoefficientsTypeEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(894);
-		}
-		return wingSegmentStripCoefficientsTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingSegmentStripCoefficientsType_Cfx() {
-		return (EReference) getWingSegmentStripCoefficientsType().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingSegmentStripCoefficientsType_Cfy() {
-		return (EReference) getWingSegmentStripCoefficientsType().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingSegmentStripCoefficientsType_Cfz() {
-		return (EReference) getWingSegmentStripCoefficientsType().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingSegmentStripCoefficientsType_Cmx() {
-		return (EReference) getWingSegmentStripCoefficientsType().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingSegmentStripCoefficientsType_Cmy() {
-		return (EReference) getWingSegmentStripCoefficientsType().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingSegmentStripCoefficientsType_Cmz() {
-		return (EReference) getWingSegmentStripCoefficientsType().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWingSegmentStripCoefficientsType_Reference() {
-		return (EReference) getWingSegmentStripCoefficientsType().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getWingSegmentsType() {
 		if (wingSegmentsTypeEClass == null) {
 			wingSegmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(895);
+					.getEClassifiers().get(985);
 		}
 		return wingSegmentsTypeEClass;
 	}
@@ -50512,7 +54123,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingSegmentType() {
 		if (wingSegmentTypeEClass == null) {
 			wingSegmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(896);
+					.getEClassifiers().get(986);
 		}
 		return wingSegmentTypeEClass;
 	}
@@ -50586,7 +54197,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingShellType() {
 		if (wingShellTypeEClass == null) {
 			wingShellTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(897);
+					.getEClassifiers().get(987);
 		}
 		return wingShellTypeEClass;
 	}
@@ -50640,7 +54251,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingSkinType() {
 		if (wingSkinTypeEClass == null) {
 			wingSkinTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(898);
+					.get(988);
 		}
 		return wingSkinTypeEClass;
 	}
@@ -50664,7 +54275,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingSparType() {
 		if (wingSparTypeEClass == null) {
 			wingSparTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(899);
+					.get(989);
 		}
 		return wingSparTypeEClass;
 	}
@@ -50698,7 +54309,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingStringerType() {
 		if (wingStringerTypeEClass == null) {
 			wingStringerTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(900);
+					.getEClassifiers().get(990);
 		}
 		return wingStringerTypeEClass;
 	}
@@ -50832,7 +54443,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingStructuralMountsType() {
 		if (wingStructuralMountsTypeEClass == null) {
 			wingStructuralMountsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(901);
+					.getEClassifiers().get(991);
 		}
 		return wingStructuralMountsTypeEClass;
 	}
@@ -50856,7 +54467,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingsType() {
 		if (wingsTypeEClass == null) {
 			wingsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(902);
+					.get(992);
 		}
 		return wingsTypeEClass;
 	}
@@ -50880,7 +54491,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingType() {
 		if (wingTypeEClass == null) {
 			wingTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(903);
+					.get(993);
 		}
 		return wingTypeEClass;
 	}
@@ -50971,18 +54582,8 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getWingType_DynamicAircraftModel() {
-		return (EReference) getWingType().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EAttribute getWingType_Symmetry() {
-		return (EAttribute) getWingType().getEStructuralFeatures().get(9);
+		return (EAttribute) getWingType().getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -50992,7 +54593,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 */
 	@Override
 	public EAttribute getWingType_UID() {
-		return (EAttribute) getWingType().getEStructuralFeatures().get(10);
+		return (EAttribute) getWingType().getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -51004,7 +54605,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingWingAttachmentElementsType() {
 		if (wingWingAttachmentElementsTypeEClass == null) {
 			wingWingAttachmentElementsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(904);
+					.getEClassifiers().get(994);
 		}
 		return wingWingAttachmentElementsTypeEClass;
 	}
@@ -51038,7 +54639,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingWingAttachmentSparsType() {
 		if (wingWingAttachmentSparsTypeEClass == null) {
 			wingWingAttachmentSparsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(905);
+					.getEClassifiers().get(995);
 		}
 		return wingWingAttachmentSparsTypeEClass;
 	}
@@ -51072,7 +54673,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingWingAttachmentsSparsType() {
 		if (wingWingAttachmentsSparsTypeEClass == null) {
 			wingWingAttachmentsSparsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(906);
+					.getEClassifiers().get(996);
 		}
 		return wingWingAttachmentsSparsTypeEClass;
 	}
@@ -51096,7 +54697,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingWingAttachmentsType() {
 		if (wingWingAttachmentsTypeEClass == null) {
 			wingWingAttachmentsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(907);
+					.getEClassifiers().get(997);
 		}
 		return wingWingAttachmentsTypeEClass;
 	}
@@ -51120,7 +54721,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getWingWingAttachmentType() {
 		if (wingWingAttachmentTypeEClass == null) {
 			wingWingAttachmentTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(908);
+					.getEClassifiers().get(998);
 		}
 		return wingWingAttachmentTypeEClass;
 	}
@@ -51184,7 +54785,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getXsiIsoLineType() {
 		if (xsiIsoLineTypeEClass == null) {
 			xsiIsoLineTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(909);
+					.getEClassifiers().get(999);
 		}
 		return xsiIsoLineTypeEClass;
 	}
@@ -51218,7 +54819,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getZCouplingsType() {
 		if (zCouplingsTypeEClass == null) {
 			zCouplingsTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(910);
+					.getEClassifiers().get(1000);
 		}
 		return zCouplingsTypeEClass;
 	}
@@ -51242,7 +54843,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EClass getZCouplingType() {
 		if (zCouplingTypeEClass == null) {
 			zCouplingTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(911);
+					.getEClassifiers().get(1001);
 		}
 		return zCouplingTypeEClass;
 	}
@@ -51303,24 +54904,10 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EEnum getCpacsVersionType() {
-		if (cpacsVersionTypeEEnum == null) {
-			cpacsVersionTypeEEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(191);
-		}
-		return cpacsVersionTypeEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EEnum getFormatType() {
 		if (formatTypeEEnum == null) {
 			formatTypeEEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(298);
+					.get(338);
 		}
 		return formatTypeEEnum;
 	}
@@ -51334,7 +54921,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EEnum getGeometricBaseTypeType() {
 		if (geometricBaseTypeTypeEEnum == null) {
 			geometricBaseTypeTypeEEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(357);
+					.getEClassifiers().get(397);
 		}
 		return geometricBaseTypeTypeEEnum;
 	}
@@ -51348,7 +54935,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EEnum getPlacementType() {
 		if (placementTypeEEnum == null) {
 			placementTypeEEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(601);
+					.get(666);
 		}
 		return placementTypeEEnum;
 	}
@@ -51362,7 +54949,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EEnum getRefTypeType() {
 		if (refTypeTypeEEnum == null) {
 			refTypeTypeEEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(653);
+					.get(730);
 		}
 		return refTypeTypeEEnum;
 	}
@@ -51376,9 +54963,93 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EEnum getRelationalOperatorType() {
 		if (relationalOperatorTypeEEnum == null) {
 			relationalOperatorTypeEEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(655);
+					.getEClassifiers().get(732);
 		}
 		return relationalOperatorTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getRelationalOperatorType1() {
+		if (relationalOperatorType1EEnum == null) {
+			relationalOperatorType1EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(733);
+		}
+		return relationalOperatorType1EEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getRelationalOperatorType2() {
+		if (relationalOperatorType2EEnum == null) {
+			relationalOperatorType2EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(734);
+		}
+		return relationalOperatorType2EEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getSideOfFirstWheelType() {
+		if (sideOfFirstWheelTypeEEnum == null) {
+			sideOfFirstWheelTypeEEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(795);
+		}
+		return sideOfFirstWheelTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getSizingTypeType() {
+		if (sizingTypeTypeEEnum == null) {
+			sizingTypeTypeEEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(802);
+		}
+		return sizingTypeTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getStepTypeType() {
+		if (stepTypeTypeEEnum == null) {
+			stepTypeTypeEEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(832);
+		}
+		return stepTypeTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getStepTypeType1() {
+		if (stepTypeType1EEnum == null) {
+			stepTypeType1EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(833);
+		}
+		return stepTypeType1EEnum;
 	}
 
 	/**
@@ -51390,7 +55061,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EEnum getSymmetryType() {
 		if (symmetryTypeEEnum == null) {
 			symmetryTypeEEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(751);
+					.get(861);
 		}
 		return symmetryTypeEEnum;
 	}
@@ -51404,7 +55075,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EEnum getSymmetryType1() {
 		if (symmetryType1EEnum == null) {
 			symmetryType1EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(752);
+					.get(862);
 		}
 		return symmetryType1EEnum;
 	}
@@ -51415,12 +55086,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EEnum getSymmetryType2() {
-		if (symmetryType2EEnum == null) {
-			symmetryType2EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(753);
+	public EEnum getSymmetryXyXzYzType() {
+		if (symmetryXyXzYzTypeEEnum == null) {
+			symmetryXyXzYzTypeEEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(865);
 		}
-		return symmetryType2EEnum;
+		return symmetryXyXzYzTypeEEnum;
 	}
 
 	/**
@@ -51429,12 +55100,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EEnum getSymmetryType4() {
-		if (symmetryType4EEnum == null) {
-			symmetryType4EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(755);
+	public EEnum getTypeType1() {
+		if (typeType1EEnum == null) {
+			typeType1EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(912);
 		}
-		return symmetryType4EEnum;
+		return typeType1EEnum;
 	}
 
 	/**
@@ -51443,152 +55114,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EEnum getSymmetryType5() {
-		if (symmetryType5EEnum == null) {
-			symmetryType5EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(756);
+	public EEnum getTypeType2() {
+		if (typeType2EEnum == null) {
+			typeType2EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
+					.get(913);
 		}
-		return symmetryType5EEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EEnum getSymmetryType6() {
-		if (symmetryType6EEnum == null) {
-			symmetryType6EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(757);
-		}
-		return symmetryType6EEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EEnum getSymmetryType7() {
-		if (symmetryType7EEnum == null) {
-			symmetryType7EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(758);
-		}
-		return symmetryType7EEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EEnum getSymmetryType8() {
-		if (symmetryType8EEnum == null) {
-			symmetryType8EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(759);
-		}
-		return symmetryType8EEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EEnum getSymmetryType9() {
-		if (symmetryType9EEnum == null) {
-			symmetryType9EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(760);
-		}
-		return symmetryType9EEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EEnum getSymmetryType10() {
-		if (symmetryType10EEnum == null) {
-			symmetryType10EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(761);
-		}
-		return symmetryType10EEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EEnum getSymmetryType11() {
-		if (symmetryType11EEnum == null) {
-			symmetryType11EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(762);
-		}
-		return symmetryType11EEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EEnum getSymmetryType12() {
-		if (symmetryType12EEnum == null) {
-			symmetryType12EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(763);
-		}
-		return symmetryType12EEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EEnum getSymmetryType13() {
-		if (symmetryType13EEnum == null) {
-			symmetryType13EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(764);
-		}
-		return symmetryType13EEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EEnum getSymmetryType14() {
-		if (symmetryType14EEnum == null) {
-			symmetryType14EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(765);
-		}
-		return symmetryType14EEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EEnum getTypeType() {
-		if (typeTypeEEnum == null) {
-			typeTypeEEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(817);
-		}
-		return typeTypeEEnum;
+		return typeType2EEnum;
 	}
 
 	/**
@@ -51600,23 +55131,9 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EEnum getTypeType3() {
 		if (typeType3EEnum == null) {
 			typeType3EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(820);
+					.get(914);
 		}
 		return typeType3EEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EEnum getTypeType4() {
-		if (typeType4EEnum == null) {
-			typeType4EEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI).getEClassifiers()
-					.get(821);
-		}
-		return typeType4EEnum;
 	}
 
 	/**
@@ -51628,7 +55145,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EEnum getUncertaintyFunctionType() {
 		if (uncertaintyFunctionTypeEEnum == null) {
 			uncertaintyFunctionTypeEEnum = (EEnum) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(830);
+					.getEClassifiers().get(922);
 		}
 		return uncertaintyFunctionTypeEEnum;
 	}
@@ -51639,12 +55156,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EDataType getCpacsVersionTypeObject() {
-		if (cpacsVersionTypeObjectEDataType == null) {
-			cpacsVersionTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(192);
+	public EDataType getDoubleVectorBaseTypeBase() {
+		if (doubleVectorBaseTypeBaseEDataType == null) {
+			doubleVectorBaseTypeBaseEDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(276);
 		}
-		return cpacsVersionTypeObjectEDataType;
+		return doubleVectorBaseTypeBaseEDataType;
 	}
 
 	/**
@@ -51656,7 +55173,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EDataType getFormatTypeObject() {
 		if (formatTypeObjectEDataType == null) {
 			formatTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(299);
+					.getEClassifiers().get(339);
 		}
 		return formatTypeObjectEDataType;
 	}
@@ -51670,9 +55187,37 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EDataType getGeometricBaseTypeTypeObject() {
 		if (geometricBaseTypeTypeObjectEDataType == null) {
 			geometricBaseTypeTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(358);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(398);
 		}
 		return geometricBaseTypeTypeObjectEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EDataType getMainStrutRelativePositionType() {
+		if (mainStrutRelativePositionTypeEDataType == null) {
+			mainStrutRelativePositionTypeEDataType = (EDataType) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(492);
+		}
+		return mainStrutRelativePositionTypeEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EDataType getMainStrutRelativePositionTypeObject() {
+		if (mainStrutRelativePositionTypeObjectEDataType == null) {
+			mainStrutRelativePositionTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(493);
+		}
+		return mainStrutRelativePositionTypeObjectEDataType;
 	}
 
 	/**
@@ -51684,9 +55229,37 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EDataType getPlacementTypeObject() {
 		if (placementTypeObjectEDataType == null) {
 			placementTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(602);
+					.getEClassifiers().get(667);
 		}
 		return placementTypeObjectEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EDataType getPosOnBogieType() {
+		if (posOnBogieTypeEDataType == null) {
+			posOnBogieTypeEDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(696);
+		}
+		return posOnBogieTypeEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EDataType getPosOnBogieTypeObject() {
+		if (posOnBogieTypeObjectEDataType == null) {
+			posOnBogieTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(697);
+		}
+		return posOnBogieTypeObjectEDataType;
 	}
 
 	/**
@@ -51698,7 +55271,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EDataType getRefTypeTypeObject() {
 		if (refTypeTypeObjectEDataType == null) {
 			refTypeTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(654);
+					.getEClassifiers().get(731);
 		}
 		return refTypeTypeObjectEDataType;
 	}
@@ -51712,9 +55285,121 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EDataType getRelationalOperatorTypeObject() {
 		if (relationalOperatorTypeObjectEDataType == null) {
 			relationalOperatorTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(656);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(735);
 		}
 		return relationalOperatorTypeObjectEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EDataType getRelationalOperatorTypeObject1() {
+		if (relationalOperatorTypeObject1EDataType == null) {
+			relationalOperatorTypeObject1EDataType = (EDataType) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(736);
+		}
+		return relationalOperatorTypeObject1EDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EDataType getRelationalOperatorTypeObject2() {
+		if (relationalOperatorTypeObject2EDataType == null) {
+			relationalOperatorTypeObject2EDataType = (EDataType) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(737);
+		}
+		return relationalOperatorTypeObject2EDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EDataType getRelativePositionType() {
+		if (relativePositionTypeEDataType == null) {
+			relativePositionTypeEDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(738);
+		}
+		return relativePositionTypeEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EDataType getRelativePositionTypeObject() {
+		if (relativePositionTypeObjectEDataType == null) {
+			relativePositionTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(739);
+		}
+		return relativePositionTypeObjectEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EDataType getSideOfFirstWheelTypeObject() {
+		if (sideOfFirstWheelTypeObjectEDataType == null) {
+			sideOfFirstWheelTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(796);
+		}
+		return sideOfFirstWheelTypeObjectEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EDataType getSizingTypeTypeObject() {
+		if (sizingTypeTypeObjectEDataType == null) {
+			sizingTypeTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(803);
+		}
+		return sizingTypeTypeObjectEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EDataType getStepTypeTypeObject() {
+		if (stepTypeTypeObjectEDataType == null) {
+			stepTypeTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(834);
+		}
+		return stepTypeTypeObjectEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EDataType getStepTypeTypeObject1() {
+		if (stepTypeTypeObject1EDataType == null) {
+			stepTypeTypeObject1EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(835);
+		}
+		return stepTypeTypeObject1EDataType;
 	}
 
 	/**
@@ -51726,7 +55411,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EDataType getSymmetryTypeObject() {
 		if (symmetryTypeObjectEDataType == null) {
 			symmetryTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(766);
+					.getEClassifiers().get(863);
 		}
 		return symmetryTypeObjectEDataType;
 	}
@@ -51740,7 +55425,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EDataType getSymmetryTypeObject1() {
 		if (symmetryTypeObject1EDataType == null) {
 			symmetryTypeObject1EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(767);
+					.getEClassifiers().get(864);
 		}
 		return symmetryTypeObject1EDataType;
 	}
@@ -51751,166 +55436,12 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	 * @generated
 	 */
 	@Override
-	public EDataType getSymmetryTypeObject2() {
-		if (symmetryTypeObject2EDataType == null) {
-			symmetryTypeObject2EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(768);
+	public EDataType getSymmetryXyXzYzTypeObject() {
+		if (symmetryXyXzYzTypeObjectEDataType == null) {
+			symmetryXyXzYzTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
+					.getEClassifiers().get(866);
 		}
-		return symmetryTypeObject2EDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EDataType getSymmetryTypeObject3() {
-		if (symmetryTypeObject3EDataType == null) {
-			symmetryTypeObject3EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(769);
-		}
-		return symmetryTypeObject3EDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EDataType getSymmetryTypeObject4() {
-		if (symmetryTypeObject4EDataType == null) {
-			symmetryTypeObject4EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(770);
-		}
-		return symmetryTypeObject4EDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EDataType getSymmetryTypeObject5() {
-		if (symmetryTypeObject5EDataType == null) {
-			symmetryTypeObject5EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(771);
-		}
-		return symmetryTypeObject5EDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EDataType getSymmetryTypeObject6() {
-		if (symmetryTypeObject6EDataType == null) {
-			symmetryTypeObject6EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(772);
-		}
-		return symmetryTypeObject6EDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EDataType getSymmetryTypeObject7() {
-		if (symmetryTypeObject7EDataType == null) {
-			symmetryTypeObject7EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(773);
-		}
-		return symmetryTypeObject7EDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EDataType getSymmetryTypeObject8() {
-		if (symmetryTypeObject8EDataType == null) {
-			symmetryTypeObject8EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(774);
-		}
-		return symmetryTypeObject8EDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EDataType getSymmetryTypeObject9() {
-		if (symmetryTypeObject9EDataType == null) {
-			symmetryTypeObject9EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(775);
-		}
-		return symmetryTypeObject9EDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EDataType getSymmetryTypeObject10() {
-		if (symmetryTypeObject10EDataType == null) {
-			symmetryTypeObject10EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(776);
-		}
-		return symmetryTypeObject10EDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EDataType getSymmetryTypeObject11() {
-		if (symmetryTypeObject11EDataType == null) {
-			symmetryTypeObject11EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(777);
-		}
-		return symmetryTypeObject11EDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EDataType getSymmetryTypeObject12() {
-		if (symmetryTypeObject12EDataType == null) {
-			symmetryTypeObject12EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(778);
-		}
-		return symmetryTypeObject12EDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EDataType getSymmetryTypeObject13() {
-		if (symmetryTypeObject13EDataType == null) {
-			symmetryTypeObject13EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(779);
-		}
-		return symmetryTypeObject13EDataType;
+		return symmetryXyXzYzTypeObjectEDataType;
 	}
 
 	/**
@@ -51922,7 +55453,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EDataType getTypeTypeObject() {
 		if (typeTypeObjectEDataType == null) {
 			typeTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(825);
+					.getEClassifiers().get(916);
 		}
 		return typeTypeObjectEDataType;
 	}
@@ -51936,7 +55467,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EDataType getTypeTypeObject1() {
 		if (typeTypeObject1EDataType == null) {
 			typeTypeObject1EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(826);
+					.getEClassifiers().get(917);
 		}
 		return typeTypeObject1EDataType;
 	}
@@ -51950,7 +55481,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EDataType getTypeTypeObject2() {
 		if (typeTypeObject2EDataType == null) {
 			typeTypeObject2EDataType = (EDataType) EPackage.Registry.INSTANCE.getEPackage(CpacsPackage.eNS_URI)
-					.getEClassifiers().get(827);
+					.getEClassifiers().get(918);
 		}
 		return typeTypeObject2EDataType;
 	}
@@ -51964,7 +55495,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	public EDataType getUncertaintyFunctionTypeObject() {
 		if (uncertaintyFunctionTypeObjectEDataType == null) {
 			uncertaintyFunctionTypeObjectEDataType = (EDataType) EPackage.Registry.INSTANCE
-					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(831);
+					.getEPackage(CpacsPackage.eNS_URI).getEClassifiers().get(923);
 		}
 		return uncertaintyFunctionTypeObjectEDataType;
 	}
@@ -51987,7 +55518,7 @@ public class CpacsPackageImpl extends EPackageImpl implements CpacsPackage {
 	private boolean isLoaded = false;
 
 	/**
-	 * Laods the package and any sub-packages from their serialized form.
+	 * Loads the package and any sub-packages from their serialized form.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

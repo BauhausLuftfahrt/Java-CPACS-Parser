@@ -3,10 +3,10 @@
 package Cpacs.impl;
 
 import Cpacs.AlignmentStructMemberType;
-import Cpacs.ContinuityType2;
+import Cpacs.ContinuityType;
 import Cpacs.CpacsPackage;
 import Cpacs.DoubleBaseType;
-import Cpacs.InterpolationType1;
+import Cpacs.InterpolationType;
 import Cpacs.LongFloorBeamPositionType;
 import Cpacs.StringUIDBaseType;
 
@@ -86,7 +86,7 @@ public class LongFloorBeamPositionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 * @ordered
 	 */
-	protected ContinuityType2 continuity;
+	protected ContinuityType continuity;
 
 	/**
 	 * The cached value of the '{@link #getInterpolation() <em>Interpolation</em>}' containment reference.
@@ -96,7 +96,7 @@ public class LongFloorBeamPositionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 * @ordered
 	 */
-	protected InterpolationType1 interpolation;
+	protected InterpolationType interpolation;
 
 	/**
 	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
@@ -358,7 +358,7 @@ public class LongFloorBeamPositionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public ContinuityType2 getContinuity() {
+	public ContinuityType getContinuity() {
 		return continuity;
 	}
 
@@ -367,8 +367,8 @@ public class LongFloorBeamPositionTypeImpl extends ComplexBaseTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContinuity(ContinuityType2 newContinuity, NotificationChain msgs) {
-		ContinuityType2 oldContinuity = continuity;
+	public NotificationChain basicSetContinuity(ContinuityType newContinuity, NotificationChain msgs) {
+		ContinuityType oldContinuity = continuity;
 		continuity = newContinuity;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -387,7 +387,7 @@ public class LongFloorBeamPositionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setContinuity(ContinuityType2 newContinuity) {
+	public void setContinuity(ContinuityType newContinuity) {
 		if (newContinuity != continuity) {
 			NotificationChain msgs = null;
 			if (continuity != null)
@@ -410,7 +410,7 @@ public class LongFloorBeamPositionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public InterpolationType1 getInterpolation() {
+	public InterpolationType getInterpolation() {
 		return interpolation;
 	}
 
@@ -419,8 +419,8 @@ public class LongFloorBeamPositionTypeImpl extends ComplexBaseTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetInterpolation(InterpolationType1 newInterpolation, NotificationChain msgs) {
-		InterpolationType1 oldInterpolation = interpolation;
+	public NotificationChain basicSetInterpolation(InterpolationType newInterpolation, NotificationChain msgs) {
+		InterpolationType oldInterpolation = interpolation;
 		interpolation = newInterpolation;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -439,7 +439,7 @@ public class LongFloorBeamPositionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setInterpolation(InterpolationType1 newInterpolation) {
+	public void setInterpolation(InterpolationType newInterpolation) {
 		if (newInterpolation != interpolation) {
 			NotificationChain msgs = null;
 			if (interpolation != null)
@@ -551,10 +551,10 @@ public class LongFloorBeamPositionTypeImpl extends ComplexBaseTypeImpl implement
 			setAlignment((AlignmentStructMemberType) newValue);
 			return;
 		case CpacsPackage.LONG_FLOOR_BEAM_POSITION_TYPE__CONTINUITY:
-			setContinuity((ContinuityType2) newValue);
+			setContinuity((ContinuityType) newValue);
 			return;
 		case CpacsPackage.LONG_FLOOR_BEAM_POSITION_TYPE__INTERPOLATION:
-			setInterpolation((InterpolationType1) newValue);
+			setInterpolation((InterpolationType) newValue);
 			return;
 		case CpacsPackage.LONG_FLOOR_BEAM_POSITION_TYPE__UID:
 			setUID((String) newValue);
@@ -584,10 +584,10 @@ public class LongFloorBeamPositionTypeImpl extends ComplexBaseTypeImpl implement
 			setAlignment((AlignmentStructMemberType) null);
 			return;
 		case CpacsPackage.LONG_FLOOR_BEAM_POSITION_TYPE__CONTINUITY:
-			setContinuity((ContinuityType2) null);
+			setContinuity((ContinuityType) null);
 			return;
 		case CpacsPackage.LONG_FLOOR_BEAM_POSITION_TYPE__INTERPOLATION:
-			setInterpolation((InterpolationType1) null);
+			setInterpolation((InterpolationType) null);
 			return;
 		case CpacsPackage.LONG_FLOOR_BEAM_POSITION_TYPE__UID:
 			setUID(UID_EDEFAULT);

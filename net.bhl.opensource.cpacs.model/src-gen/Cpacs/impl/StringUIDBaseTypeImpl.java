@@ -4,7 +4,7 @@ package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
 import Cpacs.StringUIDBaseType;
-import Cpacs.SymmetryType14;
+import Cpacs.SymmetryType1;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -86,7 +86,7 @@ public class StringUIDBaseTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SymmetryType14 SYMMETRY_EDEFAULT = SymmetryType14.DEF;
+	protected static final SymmetryType1 SYMMETRY_EDEFAULT = SymmetryType1.DEF;
 
 	/**
 	 * The cached value of the '{@link #getSymmetry() <em>Symmetry</em>}' attribute.
@@ -96,7 +96,7 @@ public class StringUIDBaseTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 * @ordered
 	 */
-	protected SymmetryType14 symmetry = SYMMETRY_EDEFAULT;
+	protected SymmetryType1 symmetry = SYMMETRY_EDEFAULT;
 
 	/**
 	 * This is true if the Symmetry attribute has been set.
@@ -208,7 +208,7 @@ public class StringUIDBaseTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public SymmetryType14 getSymmetry() {
+	public SymmetryType1 getSymmetry() {
 		return symmetry;
 	}
 
@@ -218,8 +218,8 @@ public class StringUIDBaseTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void setSymmetry(SymmetryType14 newSymmetry) {
-		SymmetryType14 oldSymmetry = symmetry;
+	public void setSymmetry(SymmetryType1 newSymmetry) {
+		SymmetryType1 oldSymmetry = symmetry;
 		symmetry = newSymmetry == null ? SYMMETRY_EDEFAULT : newSymmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetryESet = true;
@@ -235,7 +235,7 @@ public class StringUIDBaseTypeImpl extends MinimalEObjectImpl.Container implemen
 	 */
 	@Override
 	public void unsetSymmetry() {
-		SymmetryType14 oldSymmetry = symmetry;
+		SymmetryType1 oldSymmetry = symmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetry = SYMMETRY_EDEFAULT;
 		symmetryESet = false;
@@ -287,7 +287,7 @@ public class StringUIDBaseTypeImpl extends MinimalEObjectImpl.Container implemen
 			setIsLink((String) newValue);
 			return;
 		case CpacsPackage.STRING_UID_BASE_TYPE__SYMMETRY:
-			setSymmetry((SymmetryType14) newValue);
+			setSymmetry((SymmetryType1) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

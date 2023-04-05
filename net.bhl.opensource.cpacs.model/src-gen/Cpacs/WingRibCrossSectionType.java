@@ -16,6 +16,7 @@ package Cpacs;
  *   <li>{@link Cpacs.WingRibCrossSectionType#getRibCell <em>Rib Cell</em>}</li>
  *   <li>{@link Cpacs.WingRibCrossSectionType#getUpperCap <em>Upper Cap</em>}</li>
  *   <li>{@link Cpacs.WingRibCrossSectionType#getLowerCap <em>Lower Cap</em>}</li>
+ *   <li>{@link Cpacs.WingRibCrossSectionType#getRibPost <em>Rib Post</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getWingRibCrossSectionType()
@@ -67,7 +68,7 @@ public interface WingRibCrossSectionType extends ComplexBaseType {
 	 *                                 trailing edge). This angle defaults to 90° which means, that the
 	 *                                 rib is perpendicular on the wings middle plane. The rotation
 	 *                                 angle is defined at the intersection point of the rib with the
-	 *                                 ribReference line. The rib itself is allways straight and not
+	 *                                 ribReference line. The rib itself is always straight and not
 	 *                                 twisted. PYLON: The Rotation along the z describes a rotation
 	 *                                 around the pylons z-axis (= rotation in top view). This angle
 	 *                                 defaults to 90° which means, that the rib is perpendicular to
@@ -160,5 +161,31 @@ public interface WingRibCrossSectionType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setLowerCap(CapType value);
+
+	/**
+	 * Returns the value of the '<em><b>Rib Post</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Post element definition applied to all vertical intersections with spars
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Rib Post</em>' containment reference.
+	 * @see #setRibPost(CapType)
+	 * @see Cpacs.CpacsPackage#getWingRibCrossSectionType_RibPost()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='ribPost' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	CapType getRibPost();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.WingRibCrossSectionType#getRibPost <em>Rib Post</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Rib Post</em>' containment reference.
+	 * @see #getRibPost()
+	 * @generated
+	 */
+	void setRibPost(CapType value);
 
 } // WingRibCrossSectionType

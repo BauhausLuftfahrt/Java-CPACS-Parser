@@ -3,9 +3,13 @@
 package Cpacs.impl;
 
 import Cpacs.ConstraintSettingsType;
+import Cpacs.ContinuityType3;
 import Cpacs.CpacsPackage;
 import Cpacs.DoubleConstraintBaseType;
+import Cpacs.DoubleVectorBaseType;
+import Cpacs.DoubleVectorConstraintBaseType;
 import Cpacs.PrioritySettingType;
+import Cpacs.StringUIDBaseType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -23,20 +27,22 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getCAS <em>CAS</em>}</li>
+ *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getReferenceEndConditionUID <em>Reference End Condition UID</em>}</li>
+ *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getEndConditionRatio <em>End Condition Ratio</em>}</li>
+ *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getContinuity <em>Continuity</em>}</li>
+ *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getCalibratedAirSpeed <em>Calibrated Air Speed</em>}</li>
  *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getMachNumber <em>Mach Number</em>}</li>
- *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getThrustSetting <em>Thrust Setting</em>}</li>
  *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getClimbAngle <em>Climb Angle</em>}</li>
  *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getRateOfClimb <em>Rate Of Climb</em>}</li>
- *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getRateOfTurn <em>Rate Of Turn</em>}</li>
- *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getRateOfDescent <em>Rate Of Descent</em>}</li>
- *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getAcceleration <em>Acceleration</em>}</li>
- *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getDescentAngle <em>Descent Angle</em>}</li>
- *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getLoadFactor <em>Load Factor</em>}</li>
  *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getStepClimbSpecificExcessPower <em>Step Climb Specific Excess Power</em>}</li>
  *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getStepClimbAltitudeDifference <em>Step Climb Altitude Difference</em>}</li>
+ *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getHeading <em>Heading</em>}</li>
+ *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getTurnAngle <em>Turn Angle</em>}</li>
+ *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getRateOfTurn <em>Rate Of Turn</em>}</li>
+ *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getThrustSetting <em>Thrust Setting</em>}</li>
+ *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getAcceleration <em>Acceleration</em>}</li>
+ *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getLoadFactor <em>Load Factor</em>}</li>
  *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getAltitude <em>Altitude</em>}</li>
- *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getDeltaTemperatureISA <em>Delta Temperature ISA</em>}</li>
  *   <li>{@link Cpacs.impl.ConstraintSettingsTypeImpl#getPrioritySetting <em>Priority Setting</em>}</li>
  * </ul>
  *
@@ -44,14 +50,44 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements ConstraintSettingsType {
 	/**
-	 * The cached value of the '{@link #getCAS() <em>CAS</em>}' containment reference.
+	 * The cached value of the '{@link #getReferenceEndConditionUID() <em>Reference End Condition UID</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCAS()
+	 * @see #getReferenceEndConditionUID()
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleConstraintBaseType cAS;
+	protected StringUIDBaseType referenceEndConditionUID;
+
+	/**
+	 * The cached value of the '{@link #getEndConditionRatio() <em>End Condition Ratio</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEndConditionRatio()
+	 * @generated
+	 * @ordered
+	 */
+	protected DoubleVectorBaseType endConditionRatio;
+
+	/**
+	 * The cached value of the '{@link #getContinuity() <em>Continuity</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getContinuity()
+	 * @generated
+	 * @ordered
+	 */
+	protected ContinuityType3 continuity;
+
+	/**
+	 * The cached value of the '{@link #getCalibratedAirSpeed() <em>Calibrated Air Speed</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCalibratedAirSpeed()
+	 * @generated
+	 * @ordered
+	 */
+	protected DoubleVectorConstraintBaseType calibratedAirSpeed;
 
 	/**
 	 * The cached value of the '{@link #getMachNumber() <em>Mach Number</em>}' containment reference.
@@ -61,17 +97,7 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleConstraintBaseType machNumber;
-
-	/**
-	 * The cached value of the '{@link #getThrustSetting() <em>Thrust Setting</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getThrustSetting()
-	 * @generated
-	 * @ordered
-	 */
-	protected DoubleConstraintBaseType thrustSetting;
+	protected DoubleVectorConstraintBaseType machNumber;
 
 	/**
 	 * The cached value of the '{@link #getClimbAngle() <em>Climb Angle</em>}' containment reference.
@@ -81,7 +107,7 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleConstraintBaseType climbAngle;
+	protected DoubleVectorConstraintBaseType climbAngle;
 
 	/**
 	 * The cached value of the '{@link #getRateOfClimb() <em>Rate Of Climb</em>}' containment reference.
@@ -92,56 +118,6 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @ordered
 	 */
 	protected DoubleConstraintBaseType rateOfClimb;
-
-	/**
-	 * The cached value of the '{@link #getRateOfTurn() <em>Rate Of Turn</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRateOfTurn()
-	 * @generated
-	 * @ordered
-	 */
-	protected DoubleConstraintBaseType rateOfTurn;
-
-	/**
-	 * The cached value of the '{@link #getRateOfDescent() <em>Rate Of Descent</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRateOfDescent()
-	 * @generated
-	 * @ordered
-	 */
-	protected DoubleConstraintBaseType rateOfDescent;
-
-	/**
-	 * The cached value of the '{@link #getAcceleration() <em>Acceleration</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAcceleration()
-	 * @generated
-	 * @ordered
-	 */
-	protected DoubleConstraintBaseType acceleration;
-
-	/**
-	 * The cached value of the '{@link #getDescentAngle() <em>Descent Angle</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDescentAngle()
-	 * @generated
-	 * @ordered
-	 */
-	protected DoubleConstraintBaseType descentAngle;
-
-	/**
-	 * The cached value of the '{@link #getLoadFactor() <em>Load Factor</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getLoadFactor()
-	 * @generated
-	 * @ordered
-	 */
-	protected DoubleConstraintBaseType loadFactor;
 
 	/**
 	 * The cached value of the '{@link #getStepClimbSpecificExcessPower() <em>Step Climb Specific Excess Power</em>}' containment reference.
@@ -161,7 +137,67 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleConstraintBaseType stepClimbAltitudeDifference;
+	protected DoubleVectorConstraintBaseType stepClimbAltitudeDifference;
+
+	/**
+	 * The cached value of the '{@link #getHeading() <em>Heading</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getHeading()
+	 * @generated
+	 * @ordered
+	 */
+	protected DoubleVectorConstraintBaseType heading;
+
+	/**
+	 * The cached value of the '{@link #getTurnAngle() <em>Turn Angle</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTurnAngle()
+	 * @generated
+	 * @ordered
+	 */
+	protected DoubleVectorConstraintBaseType turnAngle;
+
+	/**
+	 * The cached value of the '{@link #getRateOfTurn() <em>Rate Of Turn</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRateOfTurn()
+	 * @generated
+	 * @ordered
+	 */
+	protected DoubleVectorConstraintBaseType rateOfTurn;
+
+	/**
+	 * The cached value of the '{@link #getThrustSetting() <em>Thrust Setting</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getThrustSetting()
+	 * @generated
+	 * @ordered
+	 */
+	protected DoubleVectorConstraintBaseType thrustSetting;
+
+	/**
+	 * The cached value of the '{@link #getAcceleration() <em>Acceleration</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAcceleration()
+	 * @generated
+	 * @ordered
+	 */
+	protected DoubleVectorConstraintBaseType acceleration;
+
+	/**
+	 * The cached value of the '{@link #getLoadFactor() <em>Load Factor</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLoadFactor()
+	 * @generated
+	 * @ordered
+	 */
+	protected DoubleVectorConstraintBaseType loadFactor;
 
 	/**
 	 * The cached value of the '{@link #getAltitude() <em>Altitude</em>}' containment reference.
@@ -171,17 +207,7 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleConstraintBaseType altitude;
-
-	/**
-	 * The cached value of the '{@link #getDeltaTemperatureISA() <em>Delta Temperature ISA</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDeltaTemperatureISA()
-	 * @generated
-	 * @ordered
-	 */
-	protected DoubleConstraintBaseType deltaTemperatureISA;
+	protected DoubleVectorConstraintBaseType altitude;
 
 	/**
 	 * The cached value of the '{@link #getPrioritySetting() <em>Priority Setting</em>}' containment reference.
@@ -218,8 +244,8 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 */
 	@Override
-	public DoubleConstraintBaseType getCAS() {
-		return cAS;
+	public StringUIDBaseType getReferenceEndConditionUID() {
+		return referenceEndConditionUID;
 	}
 
 	/**
@@ -227,12 +253,14 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCAS(DoubleConstraintBaseType newCAS, NotificationChain msgs) {
-		DoubleConstraintBaseType oldCAS = cAS;
-		cAS = newCAS;
+	public NotificationChain basicSetReferenceEndConditionUID(StringUIDBaseType newReferenceEndConditionUID,
+			NotificationChain msgs) {
+		StringUIDBaseType oldReferenceEndConditionUID = referenceEndConditionUID;
+		referenceEndConditionUID = newReferenceEndConditionUID;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CAS, oldCAS, newCAS);
+					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__REFERENCE_END_CONDITION_UID, oldReferenceEndConditionUID,
+					newReferenceEndConditionUID);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -247,21 +275,24 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 */
 	@Override
-	public void setCAS(DoubleConstraintBaseType newCAS) {
-		if (newCAS != cAS) {
+	public void setReferenceEndConditionUID(StringUIDBaseType newReferenceEndConditionUID) {
+		if (newReferenceEndConditionUID != referenceEndConditionUID) {
 			NotificationChain msgs = null;
-			if (cAS != null)
-				msgs = ((InternalEObject) cAS).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CAS, null, msgs);
-			if (newCAS != null)
-				msgs = ((InternalEObject) newCAS).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CAS, null, msgs);
-			msgs = basicSetCAS(newCAS, msgs);
+			if (referenceEndConditionUID != null)
+				msgs = ((InternalEObject) referenceEndConditionUID).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__REFERENCE_END_CONDITION_UID,
+						null, msgs);
+			if (newReferenceEndConditionUID != null)
+				msgs = ((InternalEObject) newReferenceEndConditionUID).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__REFERENCE_END_CONDITION_UID,
+						null, msgs);
+			msgs = basicSetReferenceEndConditionUID(newReferenceEndConditionUID, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CAS, newCAS,
-					newCAS));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__REFERENCE_END_CONDITION_UID, newReferenceEndConditionUID,
+					newReferenceEndConditionUID));
 	}
 
 	/**
@@ -270,7 +301,173 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 */
 	@Override
-	public DoubleConstraintBaseType getMachNumber() {
+	public DoubleVectorBaseType getEndConditionRatio() {
+		return endConditionRatio;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetEndConditionRatio(DoubleVectorBaseType newEndConditionRatio,
+			NotificationChain msgs) {
+		DoubleVectorBaseType oldEndConditionRatio = endConditionRatio;
+		endConditionRatio = newEndConditionRatio;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__END_CONDITION_RATIO, oldEndConditionRatio,
+					newEndConditionRatio);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEndConditionRatio(DoubleVectorBaseType newEndConditionRatio) {
+		if (newEndConditionRatio != endConditionRatio) {
+			NotificationChain msgs = null;
+			if (endConditionRatio != null)
+				msgs = ((InternalEObject) endConditionRatio).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__END_CONDITION_RATIO, null,
+						msgs);
+			if (newEndConditionRatio != null)
+				msgs = ((InternalEObject) newEndConditionRatio).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__END_CONDITION_RATIO, null,
+						msgs);
+			msgs = basicSetEndConditionRatio(newEndConditionRatio, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__END_CONDITION_RATIO, newEndConditionRatio,
+					newEndConditionRatio));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContinuityType3 getContinuity() {
+		return continuity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetContinuity(ContinuityType3 newContinuity, NotificationChain msgs) {
+		ContinuityType3 oldContinuity = continuity;
+		continuity = newContinuity;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CONTINUITY, oldContinuity, newContinuity);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContinuity(ContinuityType3 newContinuity) {
+		if (newContinuity != continuity) {
+			NotificationChain msgs = null;
+			if (continuity != null)
+				msgs = ((InternalEObject) continuity).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CONTINUITY, null, msgs);
+			if (newContinuity != null)
+				msgs = ((InternalEObject) newContinuity).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CONTINUITY, null, msgs);
+			msgs = basicSetContinuity(newContinuity, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CONTINUITY,
+					newContinuity, newContinuity));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DoubleVectorConstraintBaseType getCalibratedAirSpeed() {
+		return calibratedAirSpeed;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetCalibratedAirSpeed(DoubleVectorConstraintBaseType newCalibratedAirSpeed,
+			NotificationChain msgs) {
+		DoubleVectorConstraintBaseType oldCalibratedAirSpeed = calibratedAirSpeed;
+		calibratedAirSpeed = newCalibratedAirSpeed;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CALIBRATED_AIR_SPEED, oldCalibratedAirSpeed,
+					newCalibratedAirSpeed);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCalibratedAirSpeed(DoubleVectorConstraintBaseType newCalibratedAirSpeed) {
+		if (newCalibratedAirSpeed != calibratedAirSpeed) {
+			NotificationChain msgs = null;
+			if (calibratedAirSpeed != null)
+				msgs = ((InternalEObject) calibratedAirSpeed).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CALIBRATED_AIR_SPEED, null,
+						msgs);
+			if (newCalibratedAirSpeed != null)
+				msgs = ((InternalEObject) newCalibratedAirSpeed).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CALIBRATED_AIR_SPEED, null,
+						msgs);
+			msgs = basicSetCalibratedAirSpeed(newCalibratedAirSpeed, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CALIBRATED_AIR_SPEED, newCalibratedAirSpeed,
+					newCalibratedAirSpeed));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DoubleVectorConstraintBaseType getMachNumber() {
 		return machNumber;
 	}
 
@@ -279,8 +476,8 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMachNumber(DoubleConstraintBaseType newMachNumber, NotificationChain msgs) {
-		DoubleConstraintBaseType oldMachNumber = machNumber;
+	public NotificationChain basicSetMachNumber(DoubleVectorConstraintBaseType newMachNumber, NotificationChain msgs) {
+		DoubleVectorConstraintBaseType oldMachNumber = machNumber;
 		machNumber = newMachNumber;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -299,7 +496,7 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 */
 	@Override
-	public void setMachNumber(DoubleConstraintBaseType newMachNumber) {
+	public void setMachNumber(DoubleVectorConstraintBaseType newMachNumber) {
 		if (newMachNumber != machNumber) {
 			NotificationChain msgs = null;
 			if (machNumber != null)
@@ -322,59 +519,7 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 */
 	@Override
-	public DoubleConstraintBaseType getThrustSetting() {
-		return thrustSetting;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetThrustSetting(DoubleConstraintBaseType newThrustSetting, NotificationChain msgs) {
-		DoubleConstraintBaseType oldThrustSetting = thrustSetting;
-		thrustSetting = newThrustSetting;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING, oldThrustSetting, newThrustSetting);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setThrustSetting(DoubleConstraintBaseType newThrustSetting) {
-		if (newThrustSetting != thrustSetting) {
-			NotificationChain msgs = null;
-			if (thrustSetting != null)
-				msgs = ((InternalEObject) thrustSetting).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING, null, msgs);
-			if (newThrustSetting != null)
-				msgs = ((InternalEObject) newThrustSetting).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING, null, msgs);
-			msgs = basicSetThrustSetting(newThrustSetting, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING,
-					newThrustSetting, newThrustSetting));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DoubleConstraintBaseType getClimbAngle() {
+	public DoubleVectorConstraintBaseType getClimbAngle() {
 		return climbAngle;
 	}
 
@@ -383,8 +528,8 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetClimbAngle(DoubleConstraintBaseType newClimbAngle, NotificationChain msgs) {
-		DoubleConstraintBaseType oldClimbAngle = climbAngle;
+	public NotificationChain basicSetClimbAngle(DoubleVectorConstraintBaseType newClimbAngle, NotificationChain msgs) {
+		DoubleVectorConstraintBaseType oldClimbAngle = climbAngle;
 		climbAngle = newClimbAngle;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -403,7 +548,7 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 */
 	@Override
-	public void setClimbAngle(DoubleConstraintBaseType newClimbAngle) {
+	public void setClimbAngle(DoubleVectorConstraintBaseType newClimbAngle) {
 		if (newClimbAngle != climbAngle) {
 			NotificationChain msgs = null;
 			if (climbAngle != null)
@@ -478,266 +623,6 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 */
 	@Override
-	public DoubleConstraintBaseType getRateOfTurn() {
-		return rateOfTurn;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetRateOfTurn(DoubleConstraintBaseType newRateOfTurn, NotificationChain msgs) {
-		DoubleConstraintBaseType oldRateOfTurn = rateOfTurn;
-		rateOfTurn = newRateOfTurn;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN, oldRateOfTurn, newRateOfTurn);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRateOfTurn(DoubleConstraintBaseType newRateOfTurn) {
-		if (newRateOfTurn != rateOfTurn) {
-			NotificationChain msgs = null;
-			if (rateOfTurn != null)
-				msgs = ((InternalEObject) rateOfTurn).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN, null, msgs);
-			if (newRateOfTurn != null)
-				msgs = ((InternalEObject) newRateOfTurn).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN, null, msgs);
-			msgs = basicSetRateOfTurn(newRateOfTurn, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN,
-					newRateOfTurn, newRateOfTurn));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DoubleConstraintBaseType getRateOfDescent() {
-		return rateOfDescent;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetRateOfDescent(DoubleConstraintBaseType newRateOfDescent, NotificationChain msgs) {
-		DoubleConstraintBaseType oldRateOfDescent = rateOfDescent;
-		rateOfDescent = newRateOfDescent;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_DESCENT, oldRateOfDescent, newRateOfDescent);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRateOfDescent(DoubleConstraintBaseType newRateOfDescent) {
-		if (newRateOfDescent != rateOfDescent) {
-			NotificationChain msgs = null;
-			if (rateOfDescent != null)
-				msgs = ((InternalEObject) rateOfDescent).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_DESCENT, null, msgs);
-			if (newRateOfDescent != null)
-				msgs = ((InternalEObject) newRateOfDescent).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_DESCENT, null, msgs);
-			msgs = basicSetRateOfDescent(newRateOfDescent, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_DESCENT, newRateOfDescent, newRateOfDescent));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DoubleConstraintBaseType getAcceleration() {
-		return acceleration;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetAcceleration(DoubleConstraintBaseType newAcceleration, NotificationChain msgs) {
-		DoubleConstraintBaseType oldAcceleration = acceleration;
-		acceleration = newAcceleration;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION, oldAcceleration, newAcceleration);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAcceleration(DoubleConstraintBaseType newAcceleration) {
-		if (newAcceleration != acceleration) {
-			NotificationChain msgs = null;
-			if (acceleration != null)
-				msgs = ((InternalEObject) acceleration).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION, null, msgs);
-			if (newAcceleration != null)
-				msgs = ((InternalEObject) newAcceleration).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION, null, msgs);
-			msgs = basicSetAcceleration(newAcceleration, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION,
-					newAcceleration, newAcceleration));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DoubleConstraintBaseType getDescentAngle() {
-		return descentAngle;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetDescentAngle(DoubleConstraintBaseType newDescentAngle, NotificationChain msgs) {
-		DoubleConstraintBaseType oldDescentAngle = descentAngle;
-		descentAngle = newDescentAngle;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DESCENT_ANGLE, oldDescentAngle, newDescentAngle);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDescentAngle(DoubleConstraintBaseType newDescentAngle) {
-		if (newDescentAngle != descentAngle) {
-			NotificationChain msgs = null;
-			if (descentAngle != null)
-				msgs = ((InternalEObject) descentAngle).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DESCENT_ANGLE, null, msgs);
-			if (newDescentAngle != null)
-				msgs = ((InternalEObject) newDescentAngle).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DESCENT_ANGLE, null, msgs);
-			msgs = basicSetDescentAngle(newDescentAngle, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DESCENT_ANGLE,
-					newDescentAngle, newDescentAngle));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DoubleConstraintBaseType getLoadFactor() {
-		return loadFactor;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetLoadFactor(DoubleConstraintBaseType newLoadFactor, NotificationChain msgs) {
-		DoubleConstraintBaseType oldLoadFactor = loadFactor;
-		loadFactor = newLoadFactor;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR, oldLoadFactor, newLoadFactor);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setLoadFactor(DoubleConstraintBaseType newLoadFactor) {
-		if (newLoadFactor != loadFactor) {
-			NotificationChain msgs = null;
-			if (loadFactor != null)
-				msgs = ((InternalEObject) loadFactor).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR, null, msgs);
-			if (newLoadFactor != null)
-				msgs = ((InternalEObject) newLoadFactor).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR, null, msgs);
-			msgs = basicSetLoadFactor(newLoadFactor, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR,
-					newLoadFactor, newLoadFactor));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public DoubleConstraintBaseType getStepClimbSpecificExcessPower() {
 		return stepClimbSpecificExcessPower;
 	}
@@ -793,7 +678,7 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 */
 	@Override
-	public DoubleConstraintBaseType getStepClimbAltitudeDifference() {
+	public DoubleVectorConstraintBaseType getStepClimbAltitudeDifference() {
 		return stepClimbAltitudeDifference;
 	}
 
@@ -803,8 +688,8 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 */
 	public NotificationChain basicSetStepClimbAltitudeDifference(
-			DoubleConstraintBaseType newStepClimbAltitudeDifference, NotificationChain msgs) {
-		DoubleConstraintBaseType oldStepClimbAltitudeDifference = stepClimbAltitudeDifference;
+			DoubleVectorConstraintBaseType newStepClimbAltitudeDifference, NotificationChain msgs) {
+		DoubleVectorConstraintBaseType oldStepClimbAltitudeDifference = stepClimbAltitudeDifference;
 		stepClimbAltitudeDifference = newStepClimbAltitudeDifference;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -824,7 +709,7 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 */
 	@Override
-	public void setStepClimbAltitudeDifference(DoubleConstraintBaseType newStepClimbAltitudeDifference) {
+	public void setStepClimbAltitudeDifference(DoubleVectorConstraintBaseType newStepClimbAltitudeDifference) {
 		if (newStepClimbAltitudeDifference != stepClimbAltitudeDifference) {
 			NotificationChain msgs = null;
 			if (stepClimbAltitudeDifference != null)
@@ -850,7 +735,321 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 */
 	@Override
-	public DoubleConstraintBaseType getAltitude() {
+	public DoubleVectorConstraintBaseType getHeading() {
+		return heading;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetHeading(DoubleVectorConstraintBaseType newHeading, NotificationChain msgs) {
+		DoubleVectorConstraintBaseType oldHeading = heading;
+		heading = newHeading;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__HEADING, oldHeading, newHeading);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setHeading(DoubleVectorConstraintBaseType newHeading) {
+		if (newHeading != heading) {
+			NotificationChain msgs = null;
+			if (heading != null)
+				msgs = ((InternalEObject) heading).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__HEADING, null, msgs);
+			if (newHeading != null)
+				msgs = ((InternalEObject) newHeading).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__HEADING, null, msgs);
+			msgs = basicSetHeading(newHeading, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONSTRAINT_SETTINGS_TYPE__HEADING,
+					newHeading, newHeading));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DoubleVectorConstraintBaseType getTurnAngle() {
+		return turnAngle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetTurnAngle(DoubleVectorConstraintBaseType newTurnAngle, NotificationChain msgs) {
+		DoubleVectorConstraintBaseType oldTurnAngle = turnAngle;
+		turnAngle = newTurnAngle;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__TURN_ANGLE, oldTurnAngle, newTurnAngle);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTurnAngle(DoubleVectorConstraintBaseType newTurnAngle) {
+		if (newTurnAngle != turnAngle) {
+			NotificationChain msgs = null;
+			if (turnAngle != null)
+				msgs = ((InternalEObject) turnAngle).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__TURN_ANGLE, null, msgs);
+			if (newTurnAngle != null)
+				msgs = ((InternalEObject) newTurnAngle).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__TURN_ANGLE, null, msgs);
+			msgs = basicSetTurnAngle(newTurnAngle, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONSTRAINT_SETTINGS_TYPE__TURN_ANGLE,
+					newTurnAngle, newTurnAngle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DoubleVectorConstraintBaseType getRateOfTurn() {
+		return rateOfTurn;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetRateOfTurn(DoubleVectorConstraintBaseType newRateOfTurn, NotificationChain msgs) {
+		DoubleVectorConstraintBaseType oldRateOfTurn = rateOfTurn;
+		rateOfTurn = newRateOfTurn;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN, oldRateOfTurn, newRateOfTurn);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRateOfTurn(DoubleVectorConstraintBaseType newRateOfTurn) {
+		if (newRateOfTurn != rateOfTurn) {
+			NotificationChain msgs = null;
+			if (rateOfTurn != null)
+				msgs = ((InternalEObject) rateOfTurn).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN, null, msgs);
+			if (newRateOfTurn != null)
+				msgs = ((InternalEObject) newRateOfTurn).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN, null, msgs);
+			msgs = basicSetRateOfTurn(newRateOfTurn, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN,
+					newRateOfTurn, newRateOfTurn));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DoubleVectorConstraintBaseType getThrustSetting() {
+		return thrustSetting;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetThrustSetting(DoubleVectorConstraintBaseType newThrustSetting,
+			NotificationChain msgs) {
+		DoubleVectorConstraintBaseType oldThrustSetting = thrustSetting;
+		thrustSetting = newThrustSetting;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING, oldThrustSetting, newThrustSetting);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setThrustSetting(DoubleVectorConstraintBaseType newThrustSetting) {
+		if (newThrustSetting != thrustSetting) {
+			NotificationChain msgs = null;
+			if (thrustSetting != null)
+				msgs = ((InternalEObject) thrustSetting).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING, null, msgs);
+			if (newThrustSetting != null)
+				msgs = ((InternalEObject) newThrustSetting).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING, null, msgs);
+			msgs = basicSetThrustSetting(newThrustSetting, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING,
+					newThrustSetting, newThrustSetting));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DoubleVectorConstraintBaseType getAcceleration() {
+		return acceleration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetAcceleration(DoubleVectorConstraintBaseType newAcceleration,
+			NotificationChain msgs) {
+		DoubleVectorConstraintBaseType oldAcceleration = acceleration;
+		acceleration = newAcceleration;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION, oldAcceleration, newAcceleration);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAcceleration(DoubleVectorConstraintBaseType newAcceleration) {
+		if (newAcceleration != acceleration) {
+			NotificationChain msgs = null;
+			if (acceleration != null)
+				msgs = ((InternalEObject) acceleration).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION, null, msgs);
+			if (newAcceleration != null)
+				msgs = ((InternalEObject) newAcceleration).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION, null, msgs);
+			msgs = basicSetAcceleration(newAcceleration, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION,
+					newAcceleration, newAcceleration));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DoubleVectorConstraintBaseType getLoadFactor() {
+		return loadFactor;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetLoadFactor(DoubleVectorConstraintBaseType newLoadFactor, NotificationChain msgs) {
+		DoubleVectorConstraintBaseType oldLoadFactor = loadFactor;
+		loadFactor = newLoadFactor;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR, oldLoadFactor, newLoadFactor);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLoadFactor(DoubleVectorConstraintBaseType newLoadFactor) {
+		if (newLoadFactor != loadFactor) {
+			NotificationChain msgs = null;
+			if (loadFactor != null)
+				msgs = ((InternalEObject) loadFactor).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR, null, msgs);
+			if (newLoadFactor != null)
+				msgs = ((InternalEObject) newLoadFactor).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR, null, msgs);
+			msgs = basicSetLoadFactor(newLoadFactor, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR,
+					newLoadFactor, newLoadFactor));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DoubleVectorConstraintBaseType getAltitude() {
 		return altitude;
 	}
 
@@ -859,8 +1058,8 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAltitude(DoubleConstraintBaseType newAltitude, NotificationChain msgs) {
-		DoubleConstraintBaseType oldAltitude = altitude;
+	public NotificationChain basicSetAltitude(DoubleVectorConstraintBaseType newAltitude, NotificationChain msgs) {
+		DoubleVectorConstraintBaseType oldAltitude = altitude;
 		altitude = newAltitude;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -879,7 +1078,7 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 */
 	@Override
-	public void setAltitude(DoubleConstraintBaseType newAltitude) {
+	public void setAltitude(DoubleVectorConstraintBaseType newAltitude) {
 		if (newAltitude != altitude) {
 			NotificationChain msgs = null;
 			if (altitude != null)
@@ -894,63 +1093,6 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ALTITUDE,
 					newAltitude, newAltitude));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DoubleConstraintBaseType getDeltaTemperatureISA() {
-		return deltaTemperatureISA;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetDeltaTemperatureISA(DoubleConstraintBaseType newDeltaTemperatureISA,
-			NotificationChain msgs) {
-		DoubleConstraintBaseType oldDeltaTemperatureISA = deltaTemperatureISA;
-		deltaTemperatureISA = newDeltaTemperatureISA;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DELTA_TEMPERATURE_ISA, oldDeltaTemperatureISA,
-					newDeltaTemperatureISA);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDeltaTemperatureISA(DoubleConstraintBaseType newDeltaTemperatureISA) {
-		if (newDeltaTemperatureISA != deltaTemperatureISA) {
-			NotificationChain msgs = null;
-			if (deltaTemperatureISA != null)
-				msgs = ((InternalEObject) deltaTemperatureISA).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DELTA_TEMPERATURE_ISA, null,
-						msgs);
-			if (newDeltaTemperatureISA != null)
-				msgs = ((InternalEObject) newDeltaTemperatureISA).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DELTA_TEMPERATURE_ISA, null,
-						msgs);
-			msgs = basicSetDeltaTemperatureISA(newDeltaTemperatureISA, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DELTA_TEMPERATURE_ISA, newDeltaTemperatureISA,
-					newDeltaTemperatureISA));
 	}
 
 	/**
@@ -1013,34 +1155,38 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CAS:
-			return basicSetCAS(null, msgs);
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__REFERENCE_END_CONDITION_UID:
+			return basicSetReferenceEndConditionUID(null, msgs);
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__END_CONDITION_RATIO:
+			return basicSetEndConditionRatio(null, msgs);
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CONTINUITY:
+			return basicSetContinuity(null, msgs);
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CALIBRATED_AIR_SPEED:
+			return basicSetCalibratedAirSpeed(null, msgs);
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__MACH_NUMBER:
 			return basicSetMachNumber(null, msgs);
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING:
-			return basicSetThrustSetting(null, msgs);
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CLIMB_ANGLE:
 			return basicSetClimbAngle(null, msgs);
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_CLIMB:
 			return basicSetRateOfClimb(null, msgs);
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN:
-			return basicSetRateOfTurn(null, msgs);
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_DESCENT:
-			return basicSetRateOfDescent(null, msgs);
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION:
-			return basicSetAcceleration(null, msgs);
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DESCENT_ANGLE:
-			return basicSetDescentAngle(null, msgs);
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR:
-			return basicSetLoadFactor(null, msgs);
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__STEP_CLIMB_SPECIFIC_EXCESS_POWER:
 			return basicSetStepClimbSpecificExcessPower(null, msgs);
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__STEP_CLIMB_ALTITUDE_DIFFERENCE:
 			return basicSetStepClimbAltitudeDifference(null, msgs);
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__HEADING:
+			return basicSetHeading(null, msgs);
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__TURN_ANGLE:
+			return basicSetTurnAngle(null, msgs);
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN:
+			return basicSetRateOfTurn(null, msgs);
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING:
+			return basicSetThrustSetting(null, msgs);
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION:
+			return basicSetAcceleration(null, msgs);
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR:
+			return basicSetLoadFactor(null, msgs);
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ALTITUDE:
 			return basicSetAltitude(null, msgs);
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DELTA_TEMPERATURE_ISA:
-			return basicSetDeltaTemperatureISA(null, msgs);
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__PRIORITY_SETTING:
 			return basicSetPrioritySetting(null, msgs);
 		}
@@ -1055,34 +1201,38 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CAS:
-			return getCAS();
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__REFERENCE_END_CONDITION_UID:
+			return getReferenceEndConditionUID();
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__END_CONDITION_RATIO:
+			return getEndConditionRatio();
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CONTINUITY:
+			return getContinuity();
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CALIBRATED_AIR_SPEED:
+			return getCalibratedAirSpeed();
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__MACH_NUMBER:
 			return getMachNumber();
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING:
-			return getThrustSetting();
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CLIMB_ANGLE:
 			return getClimbAngle();
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_CLIMB:
 			return getRateOfClimb();
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN:
-			return getRateOfTurn();
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_DESCENT:
-			return getRateOfDescent();
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION:
-			return getAcceleration();
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DESCENT_ANGLE:
-			return getDescentAngle();
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR:
-			return getLoadFactor();
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__STEP_CLIMB_SPECIFIC_EXCESS_POWER:
 			return getStepClimbSpecificExcessPower();
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__STEP_CLIMB_ALTITUDE_DIFFERENCE:
 			return getStepClimbAltitudeDifference();
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__HEADING:
+			return getHeading();
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__TURN_ANGLE:
+			return getTurnAngle();
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN:
+			return getRateOfTurn();
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING:
+			return getThrustSetting();
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION:
+			return getAcceleration();
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR:
+			return getLoadFactor();
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ALTITUDE:
 			return getAltitude();
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DELTA_TEMPERATURE_ISA:
-			return getDeltaTemperatureISA();
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__PRIORITY_SETTING:
 			return getPrioritySetting();
 		}
@@ -1097,47 +1247,53 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CAS:
-			setCAS((DoubleConstraintBaseType) newValue);
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__REFERENCE_END_CONDITION_UID:
+			setReferenceEndConditionUID((StringUIDBaseType) newValue);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__END_CONDITION_RATIO:
+			setEndConditionRatio((DoubleVectorBaseType) newValue);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CONTINUITY:
+			setContinuity((ContinuityType3) newValue);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CALIBRATED_AIR_SPEED:
+			setCalibratedAirSpeed((DoubleVectorConstraintBaseType) newValue);
 			return;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__MACH_NUMBER:
-			setMachNumber((DoubleConstraintBaseType) newValue);
-			return;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING:
-			setThrustSetting((DoubleConstraintBaseType) newValue);
+			setMachNumber((DoubleVectorConstraintBaseType) newValue);
 			return;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CLIMB_ANGLE:
-			setClimbAngle((DoubleConstraintBaseType) newValue);
+			setClimbAngle((DoubleVectorConstraintBaseType) newValue);
 			return;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_CLIMB:
 			setRateOfClimb((DoubleConstraintBaseType) newValue);
-			return;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN:
-			setRateOfTurn((DoubleConstraintBaseType) newValue);
-			return;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_DESCENT:
-			setRateOfDescent((DoubleConstraintBaseType) newValue);
-			return;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION:
-			setAcceleration((DoubleConstraintBaseType) newValue);
-			return;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DESCENT_ANGLE:
-			setDescentAngle((DoubleConstraintBaseType) newValue);
-			return;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR:
-			setLoadFactor((DoubleConstraintBaseType) newValue);
 			return;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__STEP_CLIMB_SPECIFIC_EXCESS_POWER:
 			setStepClimbSpecificExcessPower((DoubleConstraintBaseType) newValue);
 			return;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__STEP_CLIMB_ALTITUDE_DIFFERENCE:
-			setStepClimbAltitudeDifference((DoubleConstraintBaseType) newValue);
+			setStepClimbAltitudeDifference((DoubleVectorConstraintBaseType) newValue);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__HEADING:
+			setHeading((DoubleVectorConstraintBaseType) newValue);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__TURN_ANGLE:
+			setTurnAngle((DoubleVectorConstraintBaseType) newValue);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN:
+			setRateOfTurn((DoubleVectorConstraintBaseType) newValue);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING:
+			setThrustSetting((DoubleVectorConstraintBaseType) newValue);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION:
+			setAcceleration((DoubleVectorConstraintBaseType) newValue);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR:
+			setLoadFactor((DoubleVectorConstraintBaseType) newValue);
 			return;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ALTITUDE:
-			setAltitude((DoubleConstraintBaseType) newValue);
-			return;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DELTA_TEMPERATURE_ISA:
-			setDeltaTemperatureISA((DoubleConstraintBaseType) newValue);
+			setAltitude((DoubleVectorConstraintBaseType) newValue);
 			return;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__PRIORITY_SETTING:
 			setPrioritySetting((PrioritySettingType) newValue);
@@ -1154,47 +1310,53 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CAS:
-			setCAS((DoubleConstraintBaseType) null);
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__REFERENCE_END_CONDITION_UID:
+			setReferenceEndConditionUID((StringUIDBaseType) null);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__END_CONDITION_RATIO:
+			setEndConditionRatio((DoubleVectorBaseType) null);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CONTINUITY:
+			setContinuity((ContinuityType3) null);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CALIBRATED_AIR_SPEED:
+			setCalibratedAirSpeed((DoubleVectorConstraintBaseType) null);
 			return;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__MACH_NUMBER:
-			setMachNumber((DoubleConstraintBaseType) null);
-			return;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING:
-			setThrustSetting((DoubleConstraintBaseType) null);
+			setMachNumber((DoubleVectorConstraintBaseType) null);
 			return;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CLIMB_ANGLE:
-			setClimbAngle((DoubleConstraintBaseType) null);
+			setClimbAngle((DoubleVectorConstraintBaseType) null);
 			return;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_CLIMB:
 			setRateOfClimb((DoubleConstraintBaseType) null);
-			return;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN:
-			setRateOfTurn((DoubleConstraintBaseType) null);
-			return;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_DESCENT:
-			setRateOfDescent((DoubleConstraintBaseType) null);
-			return;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION:
-			setAcceleration((DoubleConstraintBaseType) null);
-			return;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DESCENT_ANGLE:
-			setDescentAngle((DoubleConstraintBaseType) null);
-			return;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR:
-			setLoadFactor((DoubleConstraintBaseType) null);
 			return;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__STEP_CLIMB_SPECIFIC_EXCESS_POWER:
 			setStepClimbSpecificExcessPower((DoubleConstraintBaseType) null);
 			return;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__STEP_CLIMB_ALTITUDE_DIFFERENCE:
-			setStepClimbAltitudeDifference((DoubleConstraintBaseType) null);
+			setStepClimbAltitudeDifference((DoubleVectorConstraintBaseType) null);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__HEADING:
+			setHeading((DoubleVectorConstraintBaseType) null);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__TURN_ANGLE:
+			setTurnAngle((DoubleVectorConstraintBaseType) null);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN:
+			setRateOfTurn((DoubleVectorConstraintBaseType) null);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING:
+			setThrustSetting((DoubleVectorConstraintBaseType) null);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION:
+			setAcceleration((DoubleVectorConstraintBaseType) null);
+			return;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR:
+			setLoadFactor((DoubleVectorConstraintBaseType) null);
 			return;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ALTITUDE:
-			setAltitude((DoubleConstraintBaseType) null);
-			return;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DELTA_TEMPERATURE_ISA:
-			setDeltaTemperatureISA((DoubleConstraintBaseType) null);
+			setAltitude((DoubleVectorConstraintBaseType) null);
 			return;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__PRIORITY_SETTING:
 			setPrioritySetting((PrioritySettingType) null);
@@ -1211,34 +1373,38 @@ public class ConstraintSettingsTypeImpl extends ComplexBaseTypeImpl implements C
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CAS:
-			return cAS != null;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__REFERENCE_END_CONDITION_UID:
+			return referenceEndConditionUID != null;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__END_CONDITION_RATIO:
+			return endConditionRatio != null;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CONTINUITY:
+			return continuity != null;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CALIBRATED_AIR_SPEED:
+			return calibratedAirSpeed != null;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__MACH_NUMBER:
 			return machNumber != null;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING:
-			return thrustSetting != null;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__CLIMB_ANGLE:
 			return climbAngle != null;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_CLIMB:
 			return rateOfClimb != null;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN:
-			return rateOfTurn != null;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_DESCENT:
-			return rateOfDescent != null;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION:
-			return acceleration != null;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DESCENT_ANGLE:
-			return descentAngle != null;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR:
-			return loadFactor != null;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__STEP_CLIMB_SPECIFIC_EXCESS_POWER:
 			return stepClimbSpecificExcessPower != null;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__STEP_CLIMB_ALTITUDE_DIFFERENCE:
 			return stepClimbAltitudeDifference != null;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__HEADING:
+			return heading != null;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__TURN_ANGLE:
+			return turnAngle != null;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__RATE_OF_TURN:
+			return rateOfTurn != null;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__THRUST_SETTING:
+			return thrustSetting != null;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ACCELERATION:
+			return acceleration != null;
+		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__LOAD_FACTOR:
+			return loadFactor != null;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__ALTITUDE:
 			return altitude != null;
-		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__DELTA_TEMPERATURE_ISA:
-			return deltaTemperatureISA != null;
 		case CpacsPackage.CONSTRAINT_SETTINGS_TYPE__PRIORITY_SETTING:
 			return prioritySetting != null;
 		}

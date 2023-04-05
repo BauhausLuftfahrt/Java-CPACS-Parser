@@ -6,6 +6,7 @@ import Cpacs.CpacsPackage;
 import Cpacs.DoubleBaseType;
 import Cpacs.GenericMassType;
 import Cpacs.MassInertiaType;
+import Cpacs.PointAbsRelType;
 import Cpacs.PointType;
 import Cpacs.StringBaseType;
 import Cpacs.StringUIDBaseType;
@@ -29,6 +30,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.GenericMassTypeImpl#getName <em>Name</em>}</li>
  *   <li>{@link Cpacs.impl.GenericMassTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link Cpacs.impl.GenericMassTypeImpl#getParentUID <em>Parent UID</em>}</li>
+ *   <li>{@link Cpacs.impl.GenericMassTypeImpl#getComponentUID <em>Component UID</em>}</li>
  *   <li>{@link Cpacs.impl.GenericMassTypeImpl#getMass <em>Mass</em>}</li>
  *   <li>{@link Cpacs.impl.GenericMassTypeImpl#getLocation <em>Location</em>}</li>
  *   <li>{@link Cpacs.impl.GenericMassTypeImpl#getOrientation <em>Orientation</em>}</li>
@@ -70,6 +72,16 @@ public class GenericMassTypeImpl extends ComplexBaseTypeImpl implements GenericM
 	protected StringUIDBaseType parentUID;
 
 	/**
+	 * The cached value of the '{@link #getComponentUID() <em>Component UID</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getComponentUID()
+	 * @generated
+	 * @ordered
+	 */
+	protected StringUIDBaseType componentUID;
+
+	/**
 	 * The cached value of the '{@link #getMass() <em>Mass</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -87,7 +99,7 @@ public class GenericMassTypeImpl extends ComplexBaseTypeImpl implements GenericM
 	 * @generated
 	 * @ordered
 	 */
-	protected PointType location;
+	protected PointAbsRelType location;
 
 	/**
 	 * The cached value of the '{@link #getOrientation() <em>Orientation</em>}' containment reference.
@@ -310,6 +322,58 @@ public class GenericMassTypeImpl extends ComplexBaseTypeImpl implements GenericM
 	 * @generated
 	 */
 	@Override
+	public StringUIDBaseType getComponentUID() {
+		return componentUID;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetComponentUID(StringUIDBaseType newComponentUID, NotificationChain msgs) {
+		StringUIDBaseType oldComponentUID = componentUID;
+		componentUID = newComponentUID;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.GENERIC_MASS_TYPE__COMPONENT_UID, oldComponentUID, newComponentUID);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setComponentUID(StringUIDBaseType newComponentUID) {
+		if (newComponentUID != componentUID) {
+			NotificationChain msgs = null;
+			if (componentUID != null)
+				msgs = ((InternalEObject) componentUID).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.GENERIC_MASS_TYPE__COMPONENT_UID, null, msgs);
+			if (newComponentUID != null)
+				msgs = ((InternalEObject) newComponentUID).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.GENERIC_MASS_TYPE__COMPONENT_UID, null, msgs);
+			msgs = basicSetComponentUID(newComponentUID, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.GENERIC_MASS_TYPE__COMPONENT_UID,
+					newComponentUID, newComponentUID));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public DoubleBaseType getMass() {
 		return mass;
 	}
@@ -362,7 +426,7 @@ public class GenericMassTypeImpl extends ComplexBaseTypeImpl implements GenericM
 	 * @generated
 	 */
 	@Override
-	public PointType getLocation() {
+	public PointAbsRelType getLocation() {
 		return location;
 	}
 
@@ -371,8 +435,8 @@ public class GenericMassTypeImpl extends ComplexBaseTypeImpl implements GenericM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLocation(PointType newLocation, NotificationChain msgs) {
-		PointType oldLocation = location;
+	public NotificationChain basicSetLocation(PointAbsRelType newLocation, NotificationChain msgs) {
+		PointAbsRelType oldLocation = location;
 		location = newLocation;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -391,7 +455,7 @@ public class GenericMassTypeImpl extends ComplexBaseTypeImpl implements GenericM
 	 * @generated
 	 */
 	@Override
-	public void setLocation(PointType newLocation) {
+	public void setLocation(PointAbsRelType newLocation) {
 		if (newLocation != location) {
 			NotificationChain msgs = null;
 			if (location != null)
@@ -549,6 +613,8 @@ public class GenericMassTypeImpl extends ComplexBaseTypeImpl implements GenericM
 			return basicSetDescription(null, msgs);
 		case CpacsPackage.GENERIC_MASS_TYPE__PARENT_UID:
 			return basicSetParentUID(null, msgs);
+		case CpacsPackage.GENERIC_MASS_TYPE__COMPONENT_UID:
+			return basicSetComponentUID(null, msgs);
 		case CpacsPackage.GENERIC_MASS_TYPE__MASS:
 			return basicSetMass(null, msgs);
 		case CpacsPackage.GENERIC_MASS_TYPE__LOCATION:
@@ -575,6 +641,8 @@ public class GenericMassTypeImpl extends ComplexBaseTypeImpl implements GenericM
 			return getDescription();
 		case CpacsPackage.GENERIC_MASS_TYPE__PARENT_UID:
 			return getParentUID();
+		case CpacsPackage.GENERIC_MASS_TYPE__COMPONENT_UID:
+			return getComponentUID();
 		case CpacsPackage.GENERIC_MASS_TYPE__MASS:
 			return getMass();
 		case CpacsPackage.GENERIC_MASS_TYPE__LOCATION:
@@ -606,11 +674,14 @@ public class GenericMassTypeImpl extends ComplexBaseTypeImpl implements GenericM
 		case CpacsPackage.GENERIC_MASS_TYPE__PARENT_UID:
 			setParentUID((StringUIDBaseType) newValue);
 			return;
+		case CpacsPackage.GENERIC_MASS_TYPE__COMPONENT_UID:
+			setComponentUID((StringUIDBaseType) newValue);
+			return;
 		case CpacsPackage.GENERIC_MASS_TYPE__MASS:
 			setMass((DoubleBaseType) newValue);
 			return;
 		case CpacsPackage.GENERIC_MASS_TYPE__LOCATION:
-			setLocation((PointType) newValue);
+			setLocation((PointAbsRelType) newValue);
 			return;
 		case CpacsPackage.GENERIC_MASS_TYPE__ORIENTATION:
 			setOrientation((PointType) newValue);
@@ -642,11 +713,14 @@ public class GenericMassTypeImpl extends ComplexBaseTypeImpl implements GenericM
 		case CpacsPackage.GENERIC_MASS_TYPE__PARENT_UID:
 			setParentUID((StringUIDBaseType) null);
 			return;
+		case CpacsPackage.GENERIC_MASS_TYPE__COMPONENT_UID:
+			setComponentUID((StringUIDBaseType) null);
+			return;
 		case CpacsPackage.GENERIC_MASS_TYPE__MASS:
 			setMass((DoubleBaseType) null);
 			return;
 		case CpacsPackage.GENERIC_MASS_TYPE__LOCATION:
-			setLocation((PointType) null);
+			setLocation((PointAbsRelType) null);
 			return;
 		case CpacsPackage.GENERIC_MASS_TYPE__ORIENTATION:
 			setOrientation((PointType) null);
@@ -675,6 +749,8 @@ public class GenericMassTypeImpl extends ComplexBaseTypeImpl implements GenericM
 			return description != null;
 		case CpacsPackage.GENERIC_MASS_TYPE__PARENT_UID:
 			return parentUID != null;
+		case CpacsPackage.GENERIC_MASS_TYPE__COMPONENT_UID:
+			return componentUID != null;
 		case CpacsPackage.GENERIC_MASS_TYPE__MASS:
 			return mass != null;
 		case CpacsPackage.GENERIC_MASS_TYPE__LOCATION:

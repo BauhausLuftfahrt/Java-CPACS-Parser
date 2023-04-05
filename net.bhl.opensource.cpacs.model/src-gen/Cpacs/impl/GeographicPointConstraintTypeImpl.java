@@ -2,9 +2,11 @@
  */
 package Cpacs.impl;
 
+import Cpacs.AltitudeType;
 import Cpacs.CpacsPackage;
-import Cpacs.DoubleConstraintBaseType;
 import Cpacs.GeographicPointConstraintType;
+import Cpacs.LatitudeType;
+import Cpacs.LongitudeType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -38,7 +40,7 @@ public class GeographicPointConstraintTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleConstraintBaseType longitude;
+	protected LongitudeType longitude;
 
 	/**
 	 * The cached value of the '{@link #getLatitude() <em>Latitude</em>}' containment reference.
@@ -48,7 +50,7 @@ public class GeographicPointConstraintTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleConstraintBaseType latitude;
+	protected LatitudeType latitude;
 
 	/**
 	 * The cached value of the '{@link #getAltitude() <em>Altitude</em>}' containment reference.
@@ -58,7 +60,7 @@ public class GeographicPointConstraintTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleConstraintBaseType altitude;
+	protected AltitudeType altitude;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,7 +87,7 @@ public class GeographicPointConstraintTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public DoubleConstraintBaseType getLongitude() {
+	public LongitudeType getLongitude() {
 		return longitude;
 	}
 
@@ -94,8 +96,8 @@ public class GeographicPointConstraintTypeImpl extends ComplexBaseTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLongitude(DoubleConstraintBaseType newLongitude, NotificationChain msgs) {
-		DoubleConstraintBaseType oldLongitude = longitude;
+	public NotificationChain basicSetLongitude(LongitudeType newLongitude, NotificationChain msgs) {
+		LongitudeType oldLongitude = longitude;
 		longitude = newLongitude;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -114,7 +116,7 @@ public class GeographicPointConstraintTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setLongitude(DoubleConstraintBaseType newLongitude) {
+	public void setLongitude(LongitudeType newLongitude) {
 		if (newLongitude != longitude) {
 			NotificationChain msgs = null;
 			if (longitude != null)
@@ -137,7 +139,7 @@ public class GeographicPointConstraintTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public DoubleConstraintBaseType getLatitude() {
+	public LatitudeType getLatitude() {
 		return latitude;
 	}
 
@@ -146,8 +148,8 @@ public class GeographicPointConstraintTypeImpl extends ComplexBaseTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLatitude(DoubleConstraintBaseType newLatitude, NotificationChain msgs) {
-		DoubleConstraintBaseType oldLatitude = latitude;
+	public NotificationChain basicSetLatitude(LatitudeType newLatitude, NotificationChain msgs) {
+		LatitudeType oldLatitude = latitude;
 		latitude = newLatitude;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -166,7 +168,7 @@ public class GeographicPointConstraintTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setLatitude(DoubleConstraintBaseType newLatitude) {
+	public void setLatitude(LatitudeType newLatitude) {
 		if (newLatitude != latitude) {
 			NotificationChain msgs = null;
 			if (latitude != null)
@@ -189,7 +191,7 @@ public class GeographicPointConstraintTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public DoubleConstraintBaseType getAltitude() {
+	public AltitudeType getAltitude() {
 		return altitude;
 	}
 
@@ -198,8 +200,8 @@ public class GeographicPointConstraintTypeImpl extends ComplexBaseTypeImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAltitude(DoubleConstraintBaseType newAltitude, NotificationChain msgs) {
-		DoubleConstraintBaseType oldAltitude = altitude;
+	public NotificationChain basicSetAltitude(AltitudeType newAltitude, NotificationChain msgs) {
+		AltitudeType oldAltitude = altitude;
 		altitude = newAltitude;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -218,7 +220,7 @@ public class GeographicPointConstraintTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setAltitude(DoubleConstraintBaseType newAltitude) {
+	public void setAltitude(AltitudeType newAltitude) {
 		if (newAltitude != altitude) {
 			NotificationChain msgs = null;
 			if (altitude != null)
@@ -280,13 +282,13 @@ public class GeographicPointConstraintTypeImpl extends ComplexBaseTypeImpl imple
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case CpacsPackage.GEOGRAPHIC_POINT_CONSTRAINT_TYPE__LONGITUDE:
-			setLongitude((DoubleConstraintBaseType) newValue);
+			setLongitude((LongitudeType) newValue);
 			return;
 		case CpacsPackage.GEOGRAPHIC_POINT_CONSTRAINT_TYPE__LATITUDE:
-			setLatitude((DoubleConstraintBaseType) newValue);
+			setLatitude((LatitudeType) newValue);
 			return;
 		case CpacsPackage.GEOGRAPHIC_POINT_CONSTRAINT_TYPE__ALTITUDE:
-			setAltitude((DoubleConstraintBaseType) newValue);
+			setAltitude((AltitudeType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -301,13 +303,13 @@ public class GeographicPointConstraintTypeImpl extends ComplexBaseTypeImpl imple
 	public void eUnset(int featureID) {
 		switch (featureID) {
 		case CpacsPackage.GEOGRAPHIC_POINT_CONSTRAINT_TYPE__LONGITUDE:
-			setLongitude((DoubleConstraintBaseType) null);
+			setLongitude((LongitudeType) null);
 			return;
 		case CpacsPackage.GEOGRAPHIC_POINT_CONSTRAINT_TYPE__LATITUDE:
-			setLatitude((DoubleConstraintBaseType) null);
+			setLatitude((LatitudeType) null);
 			return;
 		case CpacsPackage.GEOGRAPHIC_POINT_CONSTRAINT_TYPE__ALTITUDE:
-			setAltitude((DoubleConstraintBaseType) null);
+			setAltitude((AltitudeType) null);
 			return;
 		}
 		super.eUnset(featureID);

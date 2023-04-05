@@ -17,6 +17,7 @@ package Cpacs;
  *   <li>{@link Cpacs.MPowerUnitsType#getMEngineControl <em>MEngine Control</em>}</li>
  *   <li>{@link Cpacs.MPowerUnitsType#getMFuelSystem <em>MFuel System</em>}</li>
  *   <li>{@link Cpacs.MPowerUnitsType#getMInterGasSystem <em>MInter Gas System</em>}</li>
+ *   <li>{@link Cpacs.MPowerUnitsType#getMMiscellaneous <em>MMiscellaneous</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getMPowerUnitsType()
@@ -165,5 +166,28 @@ public interface MPowerUnitsType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setMInterGasSystem(MInterGasSystemType value);
+
+	/**
+	 * Returns the value of the '<em><b>MMiscellaneous</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>MMiscellaneous</em>' containment reference.
+	 * @see #setMMiscellaneous(SingleGenericMassType)
+	 * @see Cpacs.CpacsPackage#getMPowerUnitsType_MMiscellaneous()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='mMiscellaneous' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	SingleGenericMassType getMMiscellaneous();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MPowerUnitsType#getMMiscellaneous <em>MMiscellaneous</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>MMiscellaneous</em>' containment reference.
+	 * @see #getMMiscellaneous()
+	 * @generated
+	 */
+	void setMMiscellaneous(SingleGenericMassType value);
 
 } // MPowerUnitsType

@@ -100,7 +100,7 @@ public interface MassInertiaType extends ComplexBaseType {
 	 * @return the value of the '<em>Jxy</em>' containment reference.
 	 * @see #setJxy(DoubleBaseType)
 	 * @see Cpacs.CpacsPackage#getMassInertiaType_Jxy()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Jxy' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -123,7 +123,7 @@ public interface MassInertiaType extends ComplexBaseType {
 	 * @return the value of the '<em>Jxz</em>' containment reference.
 	 * @see #setJxz(DoubleBaseType)
 	 * @see Cpacs.CpacsPackage#getMassInertiaType_Jxz()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Jxz' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -146,7 +146,7 @@ public interface MassInertiaType extends ComplexBaseType {
 	 * @return the value of the '<em>Jyz</em>' containment reference.
 	 * @see #setJyz(DoubleBaseType)
 	 * @see Cpacs.CpacsPackage#getMassInertiaType_Jyz()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Jyz' namespace='##targetNamespace'"
 	 * @generated
 	 */

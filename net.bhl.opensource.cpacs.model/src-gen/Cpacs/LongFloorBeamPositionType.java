@@ -137,13 +137,13 @@ public interface LongFloorBeamPositionType extends ComplexBaseType {
 	 *                                 continuity)
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Continuity</em>' containment reference.
-	 * @see #setContinuity(ContinuityType2)
+	 * @see #setContinuity(ContinuityType)
 	 * @see Cpacs.CpacsPackage#getLongFloorBeamPositionType_Continuity()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='continuity' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	ContinuityType2 getContinuity();
+	ContinuityType getContinuity();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.LongFloorBeamPositionType#getContinuity <em>Continuity</em>}' containment reference.
@@ -153,7 +153,7 @@ public interface LongFloorBeamPositionType extends ComplexBaseType {
 	 * @see #getContinuity()
 	 * @generated
 	 */
-	void setContinuity(ContinuityType2 value);
+	void setContinuity(ContinuityType value);
 
 	/**
 	 * Returns the value of the '<em><b>Interpolation</b></em>' containment reference.
@@ -161,17 +161,17 @@ public interface LongFloorBeamPositionType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Definition of interpolation between different
-	 *                                 profiles: 0= no interpolation 1= interpolation of strcutural
+	 *                                 profiles: 0= no interpolation 1= interpolation of structural
 	 *                                 profile
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Interpolation</em>' containment reference.
-	 * @see #setInterpolation(InterpolationType1)
+	 * @see #setInterpolation(InterpolationType)
 	 * @see Cpacs.CpacsPackage#getLongFloorBeamPositionType_Interpolation()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='interpolation' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	InterpolationType1 getInterpolation();
+	InterpolationType getInterpolation();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.LongFloorBeamPositionType#getInterpolation <em>Interpolation</em>}' containment reference.
@@ -181,7 +181,7 @@ public interface LongFloorBeamPositionType extends ComplexBaseType {
 	 * @see #getInterpolation()
 	 * @generated
 	 */
-	void setInterpolation(InterpolationType1 value);
+	void setInterpolation(InterpolationType value);
 
 	/**
 	 * Returns the value of the '<em><b>UID</b></em>' attribute.

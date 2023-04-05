@@ -11,7 +11,7 @@ package Cpacs;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.CurveParamPointMapType#getPointIndex <em>Point Index</em>}</li>
+ *   <li>{@link Cpacs.CurveParamPointMapType#getPointIndices <em>Point Indices</em>}</li>
  *   <li>{@link Cpacs.CurveParamPointMapType#getParamOnCurve <em>Param On Curve</em>}</li>
  * </ul>
  *
@@ -21,30 +21,30 @@ package Cpacs;
  */
 public interface CurveParamPointMapType extends ComplexBaseType {
 	/**
-	 * Returns the value of the '<em><b>Point Index</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Point Indices</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * List of indices of points to be mapped. Each index must be in the range 0 ... npoints-1 .
+	 * List of indices of points to be mapped. Each index must be in the range [1, npoints].
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Point Index</em>' containment reference.
-	 * @see #setPointIndex(StringVectorBaseType)
-	 * @see Cpacs.CpacsPackage#getCurveParamPointMapType_PointIndex()
+	 * @return the value of the '<em>Point Indices</em>' containment reference.
+	 * @see #setPointIndices(StringVectorBaseType)
+	 * @see Cpacs.CpacsPackage#getCurveParamPointMapType_PointIndices()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='pointIndex' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='pointIndices' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getPointIndex();
+	StringVectorBaseType getPointIndices();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.CurveParamPointMapType#getPointIndex <em>Point Index</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.CurveParamPointMapType#getPointIndices <em>Point Indices</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Point Index</em>' containment reference.
-	 * @see #getPointIndex()
+	 * @param value the new value of the '<em>Point Indices</em>' containment reference.
+	 * @see #getPointIndices()
 	 * @generated
 	 */
-	void setPointIndex(StringVectorBaseType value);
+	void setPointIndices(StringVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Param On Curve</b></em>' containment reference.

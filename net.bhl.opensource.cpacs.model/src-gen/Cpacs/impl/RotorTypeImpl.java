@@ -8,9 +8,9 @@ import Cpacs.RotorHubType;
 import Cpacs.RotorType;
 import Cpacs.StringBaseType;
 import Cpacs.StringUIDBaseType;
-import Cpacs.SymmetryType2;
+import Cpacs.SymmetryXyXzYzType;
 import Cpacs.TransformationType;
-import Cpacs.TypeType;
+import Cpacs.TypeType3;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -80,7 +80,7 @@ public class RotorTypeImpl extends ComplexBaseTypeImpl implements RotorType {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final TypeType TYPE_EDEFAULT = TypeType.MAIN_ROTOR;
+	protected static final TypeType3 TYPE_EDEFAULT = TypeType3.MAIN_ROTOR;
 
 	/**
 	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
@@ -90,7 +90,7 @@ public class RotorTypeImpl extends ComplexBaseTypeImpl implements RotorType {
 	 * @generated
 	 * @ordered
 	 */
-	protected TypeType type = TYPE_EDEFAULT;
+	protected TypeType3 type = TYPE_EDEFAULT;
 
 	/**
 	 * This is true if the Type attribute has been set.
@@ -139,7 +139,7 @@ public class RotorTypeImpl extends ComplexBaseTypeImpl implements RotorType {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SymmetryType2 SYMMETRY_EDEFAULT = SymmetryType2.XY_PLANE;
+	protected static final SymmetryXyXzYzType SYMMETRY_EDEFAULT = SymmetryXyXzYzType.NONE;
 
 	/**
 	 * The cached value of the '{@link #getSymmetry() <em>Symmetry</em>}' attribute.
@@ -149,7 +149,7 @@ public class RotorTypeImpl extends ComplexBaseTypeImpl implements RotorType {
 	 * @generated
 	 * @ordered
 	 */
-	protected SymmetryType2 symmetry = SYMMETRY_EDEFAULT;
+	protected SymmetryXyXzYzType symmetry = SYMMETRY_EDEFAULT;
 
 	/**
 	 * This is true if the Symmetry attribute has been set.
@@ -360,7 +360,7 @@ public class RotorTypeImpl extends ComplexBaseTypeImpl implements RotorType {
 	 * @generated
 	 */
 	@Override
-	public TypeType getType() {
+	public TypeType3 getType() {
 		return type;
 	}
 
@@ -370,8 +370,8 @@ public class RotorTypeImpl extends ComplexBaseTypeImpl implements RotorType {
 	 * @generated
 	 */
 	@Override
-	public void setType(TypeType newType) {
-		TypeType oldType = type;
+	public void setType(TypeType3 newType) {
+		TypeType3 oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
 		typeESet = true;
@@ -387,7 +387,7 @@ public class RotorTypeImpl extends ComplexBaseTypeImpl implements RotorType {
 	 */
 	@Override
 	public void unsetType() {
-		TypeType oldType = type;
+		TypeType3 oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
 		typeESet = false;
@@ -570,7 +570,7 @@ public class RotorTypeImpl extends ComplexBaseTypeImpl implements RotorType {
 	 * @generated
 	 */
 	@Override
-	public SymmetryType2 getSymmetry() {
+	public SymmetryXyXzYzType getSymmetry() {
 		return symmetry;
 	}
 
@@ -580,8 +580,8 @@ public class RotorTypeImpl extends ComplexBaseTypeImpl implements RotorType {
 	 * @generated
 	 */
 	@Override
-	public void setSymmetry(SymmetryType2 newSymmetry) {
-		SymmetryType2 oldSymmetry = symmetry;
+	public void setSymmetry(SymmetryXyXzYzType newSymmetry) {
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		symmetry = newSymmetry == null ? SYMMETRY_EDEFAULT : newSymmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetryESet = true;
@@ -597,7 +597,7 @@ public class RotorTypeImpl extends ComplexBaseTypeImpl implements RotorType {
 	 */
 	@Override
 	public void unsetSymmetry() {
-		SymmetryType2 oldSymmetry = symmetry;
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetry = SYMMETRY_EDEFAULT;
 		symmetryESet = false;
@@ -711,7 +711,7 @@ public class RotorTypeImpl extends ComplexBaseTypeImpl implements RotorType {
 			setParentUID((StringUIDBaseType) newValue);
 			return;
 		case CpacsPackage.ROTOR_TYPE__TYPE:
-			setType((TypeType) newValue);
+			setType((TypeType3) newValue);
 			return;
 		case CpacsPackage.ROTOR_TYPE__NOMINAL_ROTATIONS_PER_MINUTE:
 			setNominalRotationsPerMinute((DoubleBaseType) newValue);
@@ -723,7 +723,7 @@ public class RotorTypeImpl extends ComplexBaseTypeImpl implements RotorType {
 			setRotorHub((RotorHubType) newValue);
 			return;
 		case CpacsPackage.ROTOR_TYPE__SYMMETRY:
-			setSymmetry((SymmetryType2) newValue);
+			setSymmetry((SymmetryXyXzYzType) newValue);
 			return;
 		case CpacsPackage.ROTOR_TYPE__UID:
 			setUID((String) newValue);

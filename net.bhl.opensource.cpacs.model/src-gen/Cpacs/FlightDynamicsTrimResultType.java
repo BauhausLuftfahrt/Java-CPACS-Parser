@@ -11,9 +11,9 @@ package Cpacs;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.FlightDynamicsTrimResultType#getMach <em>Mach</em>}</li>
- *   <li>{@link Cpacs.FlightDynamicsTrimResultType#getVTAS <em>VTAS</em>}</li>
- *   <li>{@link Cpacs.FlightDynamicsTrimResultType#getAlpha <em>Alpha</em>}</li>
+ *   <li>{@link Cpacs.FlightDynamicsTrimResultType#getMachNumber <em>Mach Number</em>}</li>
+ *   <li>{@link Cpacs.FlightDynamicsTrimResultType#getTrueAirSpeed <em>True Air Speed</em>}</li>
+ *   <li>{@link Cpacs.FlightDynamicsTrimResultType#getAngleOfAttack <em>Angle Of Attack</em>}</li>
  *   <li>{@link Cpacs.FlightDynamicsTrimResultType#getAltitude <em>Altitude</em>}</li>
  * </ul>
  *
@@ -23,78 +23,98 @@ package Cpacs;
  */
 public interface FlightDynamicsTrimResultType extends ComplexBaseType {
 	/**
-	 * Returns the value of the '<em><b>Mach</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Mach Number</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Mach</em>' containment reference.
-	 * @see #setMach(DoubleBaseType)
-	 * @see Cpacs.CpacsPackage#getFlightDynamicsTrimResultType_Mach()
+	 * <!-- begin-model-doc -->
+	 * 
+	 *                                 Mach number
+	 *                             
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Mach Number</em>' containment reference.
+	 * @see #setMachNumber(DoubleBaseType)
+	 * @see Cpacs.CpacsPackage#getFlightDynamicsTrimResultType_MachNumber()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='mach' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='machNumber' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleBaseType getMach();
+	DoubleBaseType getMachNumber();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.FlightDynamicsTrimResultType#getMach <em>Mach</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.FlightDynamicsTrimResultType#getMachNumber <em>Mach Number</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Mach</em>' containment reference.
-	 * @see #getMach()
+	 * @param value the new value of the '<em>Mach Number</em>' containment reference.
+	 * @see #getMachNumber()
 	 * @generated
 	 */
-	void setMach(DoubleBaseType value);
+	void setMachNumber(DoubleBaseType value);
 
 	/**
-	 * Returns the value of the '<em><b>VTAS</b></em>' containment reference.
+	 * Returns the value of the '<em><b>True Air Speed</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>VTAS</em>' containment reference.
-	 * @see #setVTAS(DoubleBaseType)
-	 * @see Cpacs.CpacsPackage#getFlightDynamicsTrimResultType_VTAS()
+	 * <!-- begin-model-doc -->
+	 * 
+	 *                                 True airspeed
+	 *                             
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>True Air Speed</em>' containment reference.
+	 * @see #setTrueAirSpeed(DoubleBaseType)
+	 * @see Cpacs.CpacsPackage#getFlightDynamicsTrimResultType_TrueAirSpeed()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='vTAS' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='trueAirSpeed' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleBaseType getVTAS();
+	DoubleBaseType getTrueAirSpeed();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.FlightDynamicsTrimResultType#getVTAS <em>VTAS</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.FlightDynamicsTrimResultType#getTrueAirSpeed <em>True Air Speed</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>VTAS</em>' containment reference.
-	 * @see #getVTAS()
+	 * @param value the new value of the '<em>True Air Speed</em>' containment reference.
+	 * @see #getTrueAirSpeed()
 	 * @generated
 	 */
-	void setVTAS(DoubleBaseType value);
+	void setTrueAirSpeed(DoubleBaseType value);
 
 	/**
-	 * Returns the value of the '<em><b>Alpha</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Angle Of Attack</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Alpha</em>' containment reference.
-	 * @see #setAlpha(DoubleBaseType)
-	 * @see Cpacs.CpacsPackage#getFlightDynamicsTrimResultType_Alpha()
+	 * <!-- begin-model-doc -->
+	 * 
+	 *                                 Angle of attack
+	 *                             
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Angle Of Attack</em>' containment reference.
+	 * @see #setAngleOfAttack(DoubleBaseType)
+	 * @see Cpacs.CpacsPackage#getFlightDynamicsTrimResultType_AngleOfAttack()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='alpha' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='angleOfAttack' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleBaseType getAlpha();
+	DoubleBaseType getAngleOfAttack();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.FlightDynamicsTrimResultType#getAlpha <em>Alpha</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.FlightDynamicsTrimResultType#getAngleOfAttack <em>Angle Of Attack</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Alpha</em>' containment reference.
-	 * @see #getAlpha()
+	 * @param value the new value of the '<em>Angle Of Attack</em>' containment reference.
+	 * @see #getAngleOfAttack()
 	 * @generated
 	 */
-	void setAlpha(DoubleBaseType value);
+	void setAngleOfAttack(DoubleBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Altitude</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * 
+	 *                                 Altitude
+	 *                             
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Altitude</em>' containment reference.
 	 * @see #setAltitude(DoubleBaseType)
 	 * @see Cpacs.CpacsPackage#getFlightDynamicsTrimResultType_Altitude()

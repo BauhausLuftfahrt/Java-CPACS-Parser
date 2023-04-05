@@ -84,10 +84,14 @@ public interface SparCellType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Upper Cap</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Upper Cap
+	 *                             
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Upper Cap</em>' containment reference.
 	 * @see #setUpperCap(CapType)
 	 * @see Cpacs.CpacsPackage#getSparCellType_UpperCap()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='upperCap' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -107,10 +111,14 @@ public interface SparCellType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Lower Cap</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Lower Cap
+	 *                             
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Lower Cap</em>' containment reference.
 	 * @see #setLowerCap(CapType)
 	 * @see Cpacs.CpacsPackage#getSparCellType_LowerCap()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='lowerCap' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -130,6 +138,10 @@ public interface SparCellType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Web1</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Web 1
+	 *                             
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Web1</em>' containment reference.
 	 * @see #setWeb1(WebType)
 	 * @see Cpacs.CpacsPackage#getSparCellType_Web1()
@@ -153,6 +165,10 @@ public interface SparCellType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Web2</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Web 2
+	 *                             
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Web2</em>' containment reference.
 	 * @see #setWeb2(WebType)
 	 * @see Cpacs.CpacsPackage#getSparCellType_Web2()
@@ -178,7 +194,7 @@ public interface SparCellType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * The angle between the wing middle plane and
-	 *                                 web1. Default is 90 degrees. Positive rotation is around the
+	 *                                 web 1 [deg]. Default is 90 degrees. Positive rotation is around the
 	 *                                 spar axis heading along with the positive eta-axis.
 	 *                             
 	 * <!-- end-model-doc -->

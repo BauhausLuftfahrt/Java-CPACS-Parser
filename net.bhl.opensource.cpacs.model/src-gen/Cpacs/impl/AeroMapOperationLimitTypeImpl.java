@@ -4,7 +4,7 @@ package Cpacs.impl;
 
 import Cpacs.AeroMapOperationLimitType;
 import Cpacs.CpacsPackage;
-import Cpacs.StringVectorBaseType;
+import Cpacs.DoubleVectorBaseType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -22,32 +22,32 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.AeroMapOperationLimitTypeImpl#getAngleOfSideslip <em>Angle Of Sideslip</em>}</li>
- *   <li>{@link Cpacs.impl.AeroMapOperationLimitTypeImpl#getAngleOfAttack <em>Angle Of Attack</em>}</li>
+ *   <li>{@link Cpacs.impl.AeroMapOperationLimitTypeImpl#getAngleOfAttackMin <em>Angle Of Attack Min</em>}</li>
+ *   <li>{@link Cpacs.impl.AeroMapOperationLimitTypeImpl#getAngleOfAttackMax <em>Angle Of Attack Max</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class AeroMapOperationLimitTypeImpl extends ComplexBaseTypeImpl implements AeroMapOperationLimitType {
 	/**
-	 * The cached value of the '{@link #getAngleOfSideslip() <em>Angle Of Sideslip</em>}' containment reference.
+	 * The cached value of the '{@link #getAngleOfAttackMin() <em>Angle Of Attack Min</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAngleOfSideslip()
+	 * @see #getAngleOfAttackMin()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType angleOfSideslip;
+	protected DoubleVectorBaseType angleOfAttackMin;
 
 	/**
-	 * The cached value of the '{@link #getAngleOfAttack() <em>Angle Of Attack</em>}' containment reference.
+	 * The cached value of the '{@link #getAngleOfAttackMax() <em>Angle Of Attack Max</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAngleOfAttack()
+	 * @see #getAngleOfAttackMax()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType angleOfAttack;
+	protected DoubleVectorBaseType angleOfAttackMax;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -74,8 +74,8 @@ public class AeroMapOperationLimitTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getAngleOfSideslip() {
-		return angleOfSideslip;
+	public DoubleVectorBaseType getAngleOfAttackMin() {
+		return angleOfAttackMin;
 	}
 
 	/**
@@ -83,13 +83,14 @@ public class AeroMapOperationLimitTypeImpl extends ComplexBaseTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAngleOfSideslip(StringVectorBaseType newAngleOfSideslip, NotificationChain msgs) {
-		StringVectorBaseType oldAngleOfSideslip = angleOfSideslip;
-		angleOfSideslip = newAngleOfSideslip;
+	public NotificationChain basicSetAngleOfAttackMin(DoubleVectorBaseType newAngleOfAttackMin,
+			NotificationChain msgs) {
+		DoubleVectorBaseType oldAngleOfAttackMin = angleOfAttackMin;
+		angleOfAttackMin = newAngleOfAttackMin;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_SIDESLIP, oldAngleOfSideslip,
-					newAngleOfSideslip);
+					CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MIN, oldAngleOfAttackMin,
+					newAngleOfAttackMin);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -104,24 +105,24 @@ public class AeroMapOperationLimitTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setAngleOfSideslip(StringVectorBaseType newAngleOfSideslip) {
-		if (newAngleOfSideslip != angleOfSideslip) {
+	public void setAngleOfAttackMin(DoubleVectorBaseType newAngleOfAttackMin) {
+		if (newAngleOfAttackMin != angleOfAttackMin) {
 			NotificationChain msgs = null;
-			if (angleOfSideslip != null)
-				msgs = ((InternalEObject) angleOfSideslip).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_SIDESLIP, null,
+			if (angleOfAttackMin != null)
+				msgs = ((InternalEObject) angleOfAttackMin).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MIN, null,
 						msgs);
-			if (newAngleOfSideslip != null)
-				msgs = ((InternalEObject) newAngleOfSideslip).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_SIDESLIP, null,
+			if (newAngleOfAttackMin != null)
+				msgs = ((InternalEObject) newAngleOfAttackMin).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MIN, null,
 						msgs);
-			msgs = basicSetAngleOfSideslip(newAngleOfSideslip, msgs);
+			msgs = basicSetAngleOfAttackMin(newAngleOfAttackMin, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_SIDESLIP, newAngleOfSideslip,
-					newAngleOfSideslip));
+					CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MIN, newAngleOfAttackMin,
+					newAngleOfAttackMin));
 	}
 
 	/**
@@ -130,8 +131,8 @@ public class AeroMapOperationLimitTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getAngleOfAttack() {
-		return angleOfAttack;
+	public DoubleVectorBaseType getAngleOfAttackMax() {
+		return angleOfAttackMax;
 	}
 
 	/**
@@ -139,12 +140,14 @@ public class AeroMapOperationLimitTypeImpl extends ComplexBaseTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAngleOfAttack(StringVectorBaseType newAngleOfAttack, NotificationChain msgs) {
-		StringVectorBaseType oldAngleOfAttack = angleOfAttack;
-		angleOfAttack = newAngleOfAttack;
+	public NotificationChain basicSetAngleOfAttackMax(DoubleVectorBaseType newAngleOfAttackMax,
+			NotificationChain msgs) {
+		DoubleVectorBaseType oldAngleOfAttackMax = angleOfAttackMax;
+		angleOfAttackMax = newAngleOfAttackMax;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK, oldAngleOfAttack, newAngleOfAttack);
+					CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MAX, oldAngleOfAttackMax,
+					newAngleOfAttackMax);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -159,23 +162,24 @@ public class AeroMapOperationLimitTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setAngleOfAttack(StringVectorBaseType newAngleOfAttack) {
-		if (newAngleOfAttack != angleOfAttack) {
+	public void setAngleOfAttackMax(DoubleVectorBaseType newAngleOfAttackMax) {
+		if (newAngleOfAttackMax != angleOfAttackMax) {
 			NotificationChain msgs = null;
-			if (angleOfAttack != null)
-				msgs = ((InternalEObject) angleOfAttack).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK, null,
+			if (angleOfAttackMax != null)
+				msgs = ((InternalEObject) angleOfAttackMax).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MAX, null,
 						msgs);
-			if (newAngleOfAttack != null)
-				msgs = ((InternalEObject) newAngleOfAttack).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK, null,
+			if (newAngleOfAttackMax != null)
+				msgs = ((InternalEObject) newAngleOfAttackMax).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MAX, null,
 						msgs);
-			msgs = basicSetAngleOfAttack(newAngleOfAttack, msgs);
+			msgs = basicSetAngleOfAttackMax(newAngleOfAttackMax, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK, newAngleOfAttack, newAngleOfAttack));
+					CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MAX, newAngleOfAttackMax,
+					newAngleOfAttackMax));
 	}
 
 	/**
@@ -186,10 +190,10 @@ public class AeroMapOperationLimitTypeImpl extends ComplexBaseTypeImpl implement
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_SIDESLIP:
-			return basicSetAngleOfSideslip(null, msgs);
-		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK:
-			return basicSetAngleOfAttack(null, msgs);
+		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MIN:
+			return basicSetAngleOfAttackMin(null, msgs);
+		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MAX:
+			return basicSetAngleOfAttackMax(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -202,10 +206,10 @@ public class AeroMapOperationLimitTypeImpl extends ComplexBaseTypeImpl implement
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_SIDESLIP:
-			return getAngleOfSideslip();
-		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK:
-			return getAngleOfAttack();
+		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MIN:
+			return getAngleOfAttackMin();
+		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MAX:
+			return getAngleOfAttackMax();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -218,11 +222,11 @@ public class AeroMapOperationLimitTypeImpl extends ComplexBaseTypeImpl implement
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_SIDESLIP:
-			setAngleOfSideslip((StringVectorBaseType) newValue);
+		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MIN:
+			setAngleOfAttackMin((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK:
-			setAngleOfAttack((StringVectorBaseType) newValue);
+		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MAX:
+			setAngleOfAttackMax((DoubleVectorBaseType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -236,11 +240,11 @@ public class AeroMapOperationLimitTypeImpl extends ComplexBaseTypeImpl implement
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_SIDESLIP:
-			setAngleOfSideslip((StringVectorBaseType) null);
+		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MIN:
+			setAngleOfAttackMin((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK:
-			setAngleOfAttack((StringVectorBaseType) null);
+		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MAX:
+			setAngleOfAttackMax((DoubleVectorBaseType) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -254,10 +258,10 @@ public class AeroMapOperationLimitTypeImpl extends ComplexBaseTypeImpl implement
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_SIDESLIP:
-			return angleOfSideslip != null;
-		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK:
-			return angleOfAttack != null;
+		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MIN:
+			return angleOfAttackMin != null;
+		case CpacsPackage.AERO_MAP_OPERATION_LIMIT_TYPE__ANGLE_OF_ATTACK_MAX:
+			return angleOfAttackMax != null;
 		}
 		return super.eIsSet(featureID);
 	}

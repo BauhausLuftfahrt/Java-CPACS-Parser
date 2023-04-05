@@ -4,9 +4,9 @@ package Cpacs.impl;
 
 import Cpacs.ConnectivityType;
 import Cpacs.CpacsPackage;
+import Cpacs.IntegerBaseType;
 import Cpacs.PointXYZType;
 import Cpacs.StiffnessType;
-import Cpacs.StringUIDBaseType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -24,8 +24,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.ConnectivityTypeImpl#getDamPoint1UID <em>Dam Point1 UID</em>}</li>
- *   <li>{@link Cpacs.impl.ConnectivityTypeImpl#getDamPoint2UID <em>Dam Point2 UID</em>}</li>
+ *   <li>{@link Cpacs.impl.ConnectivityTypeImpl#getLoadAppPoint1ID <em>Load App Point1 ID</em>}</li>
+ *   <li>{@link Cpacs.impl.ConnectivityTypeImpl#getLoadAppPoint2ID <em>Load App Point2 ID</em>}</li>
  *   <li>{@link Cpacs.impl.ConnectivityTypeImpl#getRotation <em>Rotation</em>}</li>
  *   <li>{@link Cpacs.impl.ConnectivityTypeImpl#getStiffness <em>Stiffness</em>}</li>
  * </ul>
@@ -34,24 +34,24 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class ConnectivityTypeImpl extends ComplexBaseTypeImpl implements ConnectivityType {
 	/**
-	 * The cached value of the '{@link #getDamPoint1UID() <em>Dam Point1 UID</em>}' containment reference.
+	 * The cached value of the '{@link #getLoadAppPoint1ID() <em>Load App Point1 ID</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDamPoint1UID()
+	 * @see #getLoadAppPoint1ID()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringUIDBaseType damPoint1UID;
+	protected IntegerBaseType loadAppPoint1ID;
 
 	/**
-	 * The cached value of the '{@link #getDamPoint2UID() <em>Dam Point2 UID</em>}' containment reference.
+	 * The cached value of the '{@link #getLoadAppPoint2ID() <em>Load App Point2 ID</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDamPoint2UID()
+	 * @see #getLoadAppPoint2ID()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringUIDBaseType damPoint2UID;
+	protected IntegerBaseType loadAppPoint2ID;
 
 	/**
 	 * The cached value of the '{@link #getRotation() <em>Rotation</em>}' containment reference.
@@ -98,8 +98,8 @@ public class ConnectivityTypeImpl extends ComplexBaseTypeImpl implements Connect
 	 * @generated
 	 */
 	@Override
-	public StringUIDBaseType getDamPoint1UID() {
-		return damPoint1UID;
+	public IntegerBaseType getLoadAppPoint1ID() {
+		return loadAppPoint1ID;
 	}
 
 	/**
@@ -107,12 +107,12 @@ public class ConnectivityTypeImpl extends ComplexBaseTypeImpl implements Connect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDamPoint1UID(StringUIDBaseType newDamPoint1UID, NotificationChain msgs) {
-		StringUIDBaseType oldDamPoint1UID = damPoint1UID;
-		damPoint1UID = newDamPoint1UID;
+	public NotificationChain basicSetLoadAppPoint1ID(IntegerBaseType newLoadAppPoint1ID, NotificationChain msgs) {
+		IntegerBaseType oldLoadAppPoint1ID = loadAppPoint1ID;
+		loadAppPoint1ID = newLoadAppPoint1ID;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT1_UID, oldDamPoint1UID, newDamPoint1UID);
+					CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT1_ID, oldLoadAppPoint1ID, newLoadAppPoint1ID);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -127,21 +127,21 @@ public class ConnectivityTypeImpl extends ComplexBaseTypeImpl implements Connect
 	 * @generated
 	 */
 	@Override
-	public void setDamPoint1UID(StringUIDBaseType newDamPoint1UID) {
-		if (newDamPoint1UID != damPoint1UID) {
+	public void setLoadAppPoint1ID(IntegerBaseType newLoadAppPoint1ID) {
+		if (newLoadAppPoint1ID != loadAppPoint1ID) {
 			NotificationChain msgs = null;
-			if (damPoint1UID != null)
-				msgs = ((InternalEObject) damPoint1UID).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT1_UID, null, msgs);
-			if (newDamPoint1UID != null)
-				msgs = ((InternalEObject) newDamPoint1UID).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT1_UID, null, msgs);
-			msgs = basicSetDamPoint1UID(newDamPoint1UID, msgs);
+			if (loadAppPoint1ID != null)
+				msgs = ((InternalEObject) loadAppPoint1ID).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT1_ID, null, msgs);
+			if (newLoadAppPoint1ID != null)
+				msgs = ((InternalEObject) newLoadAppPoint1ID).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT1_ID, null, msgs);
+			msgs = basicSetLoadAppPoint1ID(newLoadAppPoint1ID, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT1_UID,
-					newDamPoint1UID, newDamPoint1UID));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT1_ID,
+					newLoadAppPoint1ID, newLoadAppPoint1ID));
 	}
 
 	/**
@@ -150,8 +150,8 @@ public class ConnectivityTypeImpl extends ComplexBaseTypeImpl implements Connect
 	 * @generated
 	 */
 	@Override
-	public StringUIDBaseType getDamPoint2UID() {
-		return damPoint2UID;
+	public IntegerBaseType getLoadAppPoint2ID() {
+		return loadAppPoint2ID;
 	}
 
 	/**
@@ -159,12 +159,12 @@ public class ConnectivityTypeImpl extends ComplexBaseTypeImpl implements Connect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDamPoint2UID(StringUIDBaseType newDamPoint2UID, NotificationChain msgs) {
-		StringUIDBaseType oldDamPoint2UID = damPoint2UID;
-		damPoint2UID = newDamPoint2UID;
+	public NotificationChain basicSetLoadAppPoint2ID(IntegerBaseType newLoadAppPoint2ID, NotificationChain msgs) {
+		IntegerBaseType oldLoadAppPoint2ID = loadAppPoint2ID;
+		loadAppPoint2ID = newLoadAppPoint2ID;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT2_UID, oldDamPoint2UID, newDamPoint2UID);
+					CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT2_ID, oldLoadAppPoint2ID, newLoadAppPoint2ID);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -179,21 +179,21 @@ public class ConnectivityTypeImpl extends ComplexBaseTypeImpl implements Connect
 	 * @generated
 	 */
 	@Override
-	public void setDamPoint2UID(StringUIDBaseType newDamPoint2UID) {
-		if (newDamPoint2UID != damPoint2UID) {
+	public void setLoadAppPoint2ID(IntegerBaseType newLoadAppPoint2ID) {
+		if (newLoadAppPoint2ID != loadAppPoint2ID) {
 			NotificationChain msgs = null;
-			if (damPoint2UID != null)
-				msgs = ((InternalEObject) damPoint2UID).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT2_UID, null, msgs);
-			if (newDamPoint2UID != null)
-				msgs = ((InternalEObject) newDamPoint2UID).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT2_UID, null, msgs);
-			msgs = basicSetDamPoint2UID(newDamPoint2UID, msgs);
+			if (loadAppPoint2ID != null)
+				msgs = ((InternalEObject) loadAppPoint2ID).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT2_ID, null, msgs);
+			if (newLoadAppPoint2ID != null)
+				msgs = ((InternalEObject) newLoadAppPoint2ID).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT2_ID, null, msgs);
+			msgs = basicSetLoadAppPoint2ID(newLoadAppPoint2ID, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT2_UID,
-					newDamPoint2UID, newDamPoint2UID));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT2_ID,
+					newLoadAppPoint2ID, newLoadAppPoint2ID));
 	}
 
 	/**
@@ -308,10 +308,10 @@ public class ConnectivityTypeImpl extends ComplexBaseTypeImpl implements Connect
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT1_UID:
-			return basicSetDamPoint1UID(null, msgs);
-		case CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT2_UID:
-			return basicSetDamPoint2UID(null, msgs);
+		case CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT1_ID:
+			return basicSetLoadAppPoint1ID(null, msgs);
+		case CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT2_ID:
+			return basicSetLoadAppPoint2ID(null, msgs);
 		case CpacsPackage.CONNECTIVITY_TYPE__ROTATION:
 			return basicSetRotation(null, msgs);
 		case CpacsPackage.CONNECTIVITY_TYPE__STIFFNESS:
@@ -328,10 +328,10 @@ public class ConnectivityTypeImpl extends ComplexBaseTypeImpl implements Connect
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT1_UID:
-			return getDamPoint1UID();
-		case CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT2_UID:
-			return getDamPoint2UID();
+		case CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT1_ID:
+			return getLoadAppPoint1ID();
+		case CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT2_ID:
+			return getLoadAppPoint2ID();
 		case CpacsPackage.CONNECTIVITY_TYPE__ROTATION:
 			return getRotation();
 		case CpacsPackage.CONNECTIVITY_TYPE__STIFFNESS:
@@ -348,11 +348,11 @@ public class ConnectivityTypeImpl extends ComplexBaseTypeImpl implements Connect
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT1_UID:
-			setDamPoint1UID((StringUIDBaseType) newValue);
+		case CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT1_ID:
+			setLoadAppPoint1ID((IntegerBaseType) newValue);
 			return;
-		case CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT2_UID:
-			setDamPoint2UID((StringUIDBaseType) newValue);
+		case CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT2_ID:
+			setLoadAppPoint2ID((IntegerBaseType) newValue);
 			return;
 		case CpacsPackage.CONNECTIVITY_TYPE__ROTATION:
 			setRotation((PointXYZType) newValue);
@@ -372,11 +372,11 @@ public class ConnectivityTypeImpl extends ComplexBaseTypeImpl implements Connect
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT1_UID:
-			setDamPoint1UID((StringUIDBaseType) null);
+		case CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT1_ID:
+			setLoadAppPoint1ID((IntegerBaseType) null);
 			return;
-		case CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT2_UID:
-			setDamPoint2UID((StringUIDBaseType) null);
+		case CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT2_ID:
+			setLoadAppPoint2ID((IntegerBaseType) null);
 			return;
 		case CpacsPackage.CONNECTIVITY_TYPE__ROTATION:
 			setRotation((PointXYZType) null);
@@ -396,10 +396,10 @@ public class ConnectivityTypeImpl extends ComplexBaseTypeImpl implements Connect
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT1_UID:
-			return damPoint1UID != null;
-		case CpacsPackage.CONNECTIVITY_TYPE__DAM_POINT2_UID:
-			return damPoint2UID != null;
+		case CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT1_ID:
+			return loadAppPoint1ID != null;
+		case CpacsPackage.CONNECTIVITY_TYPE__LOAD_APP_POINT2_ID:
+			return loadAppPoint2ID != null;
 		case CpacsPackage.CONNECTIVITY_TYPE__ROTATION:
 			return rotation != null;
 		case CpacsPackage.CONNECTIVITY_TYPE__STIFFNESS:

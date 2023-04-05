@@ -3,12 +3,10 @@
 package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
-import Cpacs.MaterialDefinitionType;
-import Cpacs.TrackCarType;
-import Cpacs.TrackFairingType;
+import Cpacs.TrackJointPositionsType;
+import Cpacs.TrackSecondaryStructureType;
 import Cpacs.TrackStructureType;
-import Cpacs.TrackStrut1Type;
-import Cpacs.TrackStrut2Type;
+import Cpacs.TrackStrutsType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -26,11 +24,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link Cpacs.impl.TrackStructureTypeImpl#getStruts <em>Struts</em>}</li>
+ *   <li>{@link Cpacs.impl.TrackStructureTypeImpl#getJointPositions <em>Joint Positions</em>}</li>
  *   <li>{@link Cpacs.impl.TrackStructureTypeImpl#getControlSurfaceAttachment <em>Control Surface Attachment</em>}</li>
- *   <li>{@link Cpacs.impl.TrackStructureTypeImpl#getCar <em>Car</em>}</li>
- *   <li>{@link Cpacs.impl.TrackStructureTypeImpl#getStrut1 <em>Strut1</em>}</li>
- *   <li>{@link Cpacs.impl.TrackStructureTypeImpl#getStrut2 <em>Strut2</em>}</li>
- *   <li>{@link Cpacs.impl.TrackStructureTypeImpl#getStrut3 <em>Strut3</em>}</li>
+ *   <li>{@link Cpacs.impl.TrackStructureTypeImpl#getCarriage <em>Carriage</em>}</li>
  *   <li>{@link Cpacs.impl.TrackStructureTypeImpl#getSidePanels <em>Side Panels</em>}</li>
  *   <li>{@link Cpacs.impl.TrackStructureTypeImpl#getUpperPanel <em>Upper Panel</em>}</li>
  *   <li>{@link Cpacs.impl.TrackStructureTypeImpl#getLowerPanel <em>Lower Panel</em>}</li>
@@ -43,6 +40,26 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements TrackStructureType {
 	/**
+	 * The cached value of the '{@link #getStruts() <em>Struts</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStruts()
+	 * @generated
+	 * @ordered
+	 */
+	protected TrackStrutsType struts;
+
+	/**
+	 * The cached value of the '{@link #getJointPositions() <em>Joint Positions</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getJointPositions()
+	 * @generated
+	 * @ordered
+	 */
+	protected TrackJointPositionsType jointPositions;
+
+	/**
 	 * The cached value of the '{@link #getControlSurfaceAttachment() <em>Control Surface Attachment</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,47 +67,17 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 * @ordered
 	 */
-	protected MaterialDefinitionType controlSurfaceAttachment;
+	protected TrackSecondaryStructureType controlSurfaceAttachment;
 
 	/**
-	 * The cached value of the '{@link #getCar() <em>Car</em>}' containment reference.
+	 * The cached value of the '{@link #getCarriage() <em>Carriage</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCar()
+	 * @see #getCarriage()
 	 * @generated
 	 * @ordered
 	 */
-	protected TrackCarType car;
-
-	/**
-	 * The cached value of the '{@link #getStrut1() <em>Strut1</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getStrut1()
-	 * @generated
-	 * @ordered
-	 */
-	protected TrackStrut1Type strut1;
-
-	/**
-	 * The cached value of the '{@link #getStrut2() <em>Strut2</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getStrut2()
-	 * @generated
-	 * @ordered
-	 */
-	protected TrackStrut2Type strut2;
-
-	/**
-	 * The cached value of the '{@link #getStrut3() <em>Strut3</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getStrut3()
-	 * @generated
-	 * @ordered
-	 */
-	protected MaterialDefinitionType strut3;
+	protected TrackSecondaryStructureType carriage;
 
 	/**
 	 * The cached value of the '{@link #getSidePanels() <em>Side Panels</em>}' containment reference.
@@ -100,7 +87,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 * @ordered
 	 */
-	protected MaterialDefinitionType sidePanels;
+	protected TrackSecondaryStructureType sidePanels;
 
 	/**
 	 * The cached value of the '{@link #getUpperPanel() <em>Upper Panel</em>}' containment reference.
@@ -110,7 +97,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 * @ordered
 	 */
-	protected MaterialDefinitionType upperPanel;
+	protected TrackSecondaryStructureType upperPanel;
 
 	/**
 	 * The cached value of the '{@link #getLowerPanel() <em>Lower Panel</em>}' containment reference.
@@ -120,7 +107,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 * @ordered
 	 */
-	protected MaterialDefinitionType lowerPanel;
+	protected TrackSecondaryStructureType lowerPanel;
 
 	/**
 	 * The cached value of the '{@link #getRollerTrack() <em>Roller Track</em>}' containment reference.
@@ -130,7 +117,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 * @ordered
 	 */
-	protected MaterialDefinitionType rollerTrack;
+	protected TrackSecondaryStructureType rollerTrack;
 
 	/**
 	 * The cached value of the '{@link #getRibs() <em>Ribs</em>}' containment reference.
@@ -140,7 +127,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 * @ordered
 	 */
-	protected MaterialDefinitionType ribs;
+	protected TrackSecondaryStructureType ribs;
 
 	/**
 	 * The cached value of the '{@link #getFairing() <em>Fairing</em>}' containment reference.
@@ -150,7 +137,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 * @ordered
 	 */
-	protected TrackFairingType fairing;
+	protected TrackSecondaryStructureType fairing;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -177,7 +164,111 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public MaterialDefinitionType getControlSurfaceAttachment() {
+	public TrackStrutsType getStruts() {
+		return struts;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetStruts(TrackStrutsType newStruts, NotificationChain msgs) {
+		TrackStrutsType oldStruts = struts;
+		struts = newStruts;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.TRACK_STRUCTURE_TYPE__STRUTS, oldStruts, newStruts);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStruts(TrackStrutsType newStruts) {
+		if (newStruts != struts) {
+			NotificationChain msgs = null;
+			if (struts != null)
+				msgs = ((InternalEObject) struts).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.TRACK_STRUCTURE_TYPE__STRUTS, null, msgs);
+			if (newStruts != null)
+				msgs = ((InternalEObject) newStruts).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.TRACK_STRUCTURE_TYPE__STRUTS, null, msgs);
+			msgs = basicSetStruts(newStruts, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.TRACK_STRUCTURE_TYPE__STRUTS, newStruts,
+					newStruts));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TrackJointPositionsType getJointPositions() {
+		return jointPositions;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetJointPositions(TrackJointPositionsType newJointPositions, NotificationChain msgs) {
+		TrackJointPositionsType oldJointPositions = jointPositions;
+		jointPositions = newJointPositions;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.TRACK_STRUCTURE_TYPE__JOINT_POSITIONS, oldJointPositions, newJointPositions);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setJointPositions(TrackJointPositionsType newJointPositions) {
+		if (newJointPositions != jointPositions) {
+			NotificationChain msgs = null;
+			if (jointPositions != null)
+				msgs = ((InternalEObject) jointPositions).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.TRACK_STRUCTURE_TYPE__JOINT_POSITIONS, null, msgs);
+			if (newJointPositions != null)
+				msgs = ((InternalEObject) newJointPositions).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.TRACK_STRUCTURE_TYPE__JOINT_POSITIONS, null, msgs);
+			msgs = basicSetJointPositions(newJointPositions, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.TRACK_STRUCTURE_TYPE__JOINT_POSITIONS,
+					newJointPositions, newJointPositions));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TrackSecondaryStructureType getControlSurfaceAttachment() {
 		return controlSurfaceAttachment;
 	}
 
@@ -186,9 +277,9 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetControlSurfaceAttachment(MaterialDefinitionType newControlSurfaceAttachment,
+	public NotificationChain basicSetControlSurfaceAttachment(TrackSecondaryStructureType newControlSurfaceAttachment,
 			NotificationChain msgs) {
-		MaterialDefinitionType oldControlSurfaceAttachment = controlSurfaceAttachment;
+		TrackSecondaryStructureType oldControlSurfaceAttachment = controlSurfaceAttachment;
 		controlSurfaceAttachment = newControlSurfaceAttachment;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -208,7 +299,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public void setControlSurfaceAttachment(MaterialDefinitionType newControlSurfaceAttachment) {
+	public void setControlSurfaceAttachment(TrackSecondaryStructureType newControlSurfaceAttachment) {
 		if (newControlSurfaceAttachment != controlSurfaceAttachment) {
 			NotificationChain msgs = null;
 			if (controlSurfaceAttachment != null)
@@ -234,8 +325,8 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public TrackCarType getCar() {
-		return car;
+	public TrackSecondaryStructureType getCarriage() {
+		return carriage;
 	}
 
 	/**
@@ -243,12 +334,12 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCar(TrackCarType newCar, NotificationChain msgs) {
-		TrackCarType oldCar = car;
-		car = newCar;
+	public NotificationChain basicSetCarriage(TrackSecondaryStructureType newCarriage, NotificationChain msgs) {
+		TrackSecondaryStructureType oldCarriage = carriage;
+		carriage = newCarriage;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.TRACK_STRUCTURE_TYPE__CAR, oldCar, newCar);
+					CpacsPackage.TRACK_STRUCTURE_TYPE__CARRIAGE, oldCarriage, newCarriage);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -263,21 +354,21 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public void setCar(TrackCarType newCar) {
-		if (newCar != car) {
+	public void setCarriage(TrackSecondaryStructureType newCarriage) {
+		if (newCarriage != carriage) {
 			NotificationChain msgs = null;
-			if (car != null)
-				msgs = ((InternalEObject) car).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.TRACK_STRUCTURE_TYPE__CAR, null, msgs);
-			if (newCar != null)
-				msgs = ((InternalEObject) newCar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.TRACK_STRUCTURE_TYPE__CAR, null, msgs);
-			msgs = basicSetCar(newCar, msgs);
+			if (carriage != null)
+				msgs = ((InternalEObject) carriage).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.TRACK_STRUCTURE_TYPE__CARRIAGE, null, msgs);
+			if (newCarriage != null)
+				msgs = ((InternalEObject) newCarriage).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.TRACK_STRUCTURE_TYPE__CARRIAGE, null, msgs);
+			msgs = basicSetCarriage(newCarriage, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.TRACK_STRUCTURE_TYPE__CAR, newCar,
-					newCar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.TRACK_STRUCTURE_TYPE__CARRIAGE,
+					newCarriage, newCarriage));
 	}
 
 	/**
@@ -286,163 +377,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public TrackStrut1Type getStrut1() {
-		return strut1;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetStrut1(TrackStrut1Type newStrut1, NotificationChain msgs) {
-		TrackStrut1Type oldStrut1 = strut1;
-		strut1 = newStrut1;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT1, oldStrut1, newStrut1);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStrut1(TrackStrut1Type newStrut1) {
-		if (newStrut1 != strut1) {
-			NotificationChain msgs = null;
-			if (strut1 != null)
-				msgs = ((InternalEObject) strut1).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT1, null, msgs);
-			if (newStrut1 != null)
-				msgs = ((InternalEObject) newStrut1).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT1, null, msgs);
-			msgs = basicSetStrut1(newStrut1, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT1, newStrut1,
-					newStrut1));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public TrackStrut2Type getStrut2() {
-		return strut2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetStrut2(TrackStrut2Type newStrut2, NotificationChain msgs) {
-		TrackStrut2Type oldStrut2 = strut2;
-		strut2 = newStrut2;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT2, oldStrut2, newStrut2);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStrut2(TrackStrut2Type newStrut2) {
-		if (newStrut2 != strut2) {
-			NotificationChain msgs = null;
-			if (strut2 != null)
-				msgs = ((InternalEObject) strut2).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT2, null, msgs);
-			if (newStrut2 != null)
-				msgs = ((InternalEObject) newStrut2).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT2, null, msgs);
-			msgs = basicSetStrut2(newStrut2, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT2, newStrut2,
-					newStrut2));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public MaterialDefinitionType getStrut3() {
-		return strut3;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetStrut3(MaterialDefinitionType newStrut3, NotificationChain msgs) {
-		MaterialDefinitionType oldStrut3 = strut3;
-		strut3 = newStrut3;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT3, oldStrut3, newStrut3);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStrut3(MaterialDefinitionType newStrut3) {
-		if (newStrut3 != strut3) {
-			NotificationChain msgs = null;
-			if (strut3 != null)
-				msgs = ((InternalEObject) strut3).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT3, null, msgs);
-			if (newStrut3 != null)
-				msgs = ((InternalEObject) newStrut3).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT3, null, msgs);
-			msgs = basicSetStrut3(newStrut3, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT3, newStrut3,
-					newStrut3));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public MaterialDefinitionType getSidePanels() {
+	public TrackSecondaryStructureType getSidePanels() {
 		return sidePanels;
 	}
 
@@ -451,8 +386,8 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSidePanels(MaterialDefinitionType newSidePanels, NotificationChain msgs) {
-		MaterialDefinitionType oldSidePanels = sidePanels;
+	public NotificationChain basicSetSidePanels(TrackSecondaryStructureType newSidePanels, NotificationChain msgs) {
+		TrackSecondaryStructureType oldSidePanels = sidePanels;
 		sidePanels = newSidePanels;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -471,7 +406,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public void setSidePanels(MaterialDefinitionType newSidePanels) {
+	public void setSidePanels(TrackSecondaryStructureType newSidePanels) {
 		if (newSidePanels != sidePanels) {
 			NotificationChain msgs = null;
 			if (sidePanels != null)
@@ -494,7 +429,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public MaterialDefinitionType getUpperPanel() {
+	public TrackSecondaryStructureType getUpperPanel() {
 		return upperPanel;
 	}
 
@@ -503,8 +438,8 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUpperPanel(MaterialDefinitionType newUpperPanel, NotificationChain msgs) {
-		MaterialDefinitionType oldUpperPanel = upperPanel;
+	public NotificationChain basicSetUpperPanel(TrackSecondaryStructureType newUpperPanel, NotificationChain msgs) {
+		TrackSecondaryStructureType oldUpperPanel = upperPanel;
 		upperPanel = newUpperPanel;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -523,7 +458,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public void setUpperPanel(MaterialDefinitionType newUpperPanel) {
+	public void setUpperPanel(TrackSecondaryStructureType newUpperPanel) {
 		if (newUpperPanel != upperPanel) {
 			NotificationChain msgs = null;
 			if (upperPanel != null)
@@ -546,7 +481,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public MaterialDefinitionType getLowerPanel() {
+	public TrackSecondaryStructureType getLowerPanel() {
 		return lowerPanel;
 	}
 
@@ -555,8 +490,8 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLowerPanel(MaterialDefinitionType newLowerPanel, NotificationChain msgs) {
-		MaterialDefinitionType oldLowerPanel = lowerPanel;
+	public NotificationChain basicSetLowerPanel(TrackSecondaryStructureType newLowerPanel, NotificationChain msgs) {
+		TrackSecondaryStructureType oldLowerPanel = lowerPanel;
 		lowerPanel = newLowerPanel;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -575,7 +510,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public void setLowerPanel(MaterialDefinitionType newLowerPanel) {
+	public void setLowerPanel(TrackSecondaryStructureType newLowerPanel) {
 		if (newLowerPanel != lowerPanel) {
 			NotificationChain msgs = null;
 			if (lowerPanel != null)
@@ -598,7 +533,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public MaterialDefinitionType getRollerTrack() {
+	public TrackSecondaryStructureType getRollerTrack() {
 		return rollerTrack;
 	}
 
@@ -607,8 +542,8 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRollerTrack(MaterialDefinitionType newRollerTrack, NotificationChain msgs) {
-		MaterialDefinitionType oldRollerTrack = rollerTrack;
+	public NotificationChain basicSetRollerTrack(TrackSecondaryStructureType newRollerTrack, NotificationChain msgs) {
+		TrackSecondaryStructureType oldRollerTrack = rollerTrack;
 		rollerTrack = newRollerTrack;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -627,7 +562,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public void setRollerTrack(MaterialDefinitionType newRollerTrack) {
+	public void setRollerTrack(TrackSecondaryStructureType newRollerTrack) {
 		if (newRollerTrack != rollerTrack) {
 			NotificationChain msgs = null;
 			if (rollerTrack != null)
@@ -650,7 +585,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public MaterialDefinitionType getRibs() {
+	public TrackSecondaryStructureType getRibs() {
 		return ribs;
 	}
 
@@ -659,8 +594,8 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRibs(MaterialDefinitionType newRibs, NotificationChain msgs) {
-		MaterialDefinitionType oldRibs = ribs;
+	public NotificationChain basicSetRibs(TrackSecondaryStructureType newRibs, NotificationChain msgs) {
+		TrackSecondaryStructureType oldRibs = ribs;
 		ribs = newRibs;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -679,7 +614,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public void setRibs(MaterialDefinitionType newRibs) {
+	public void setRibs(TrackSecondaryStructureType newRibs) {
 		if (newRibs != ribs) {
 			NotificationChain msgs = null;
 			if (ribs != null)
@@ -702,7 +637,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public TrackFairingType getFairing() {
+	public TrackSecondaryStructureType getFairing() {
 		return fairing;
 	}
 
@@ -711,8 +646,8 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFairing(TrackFairingType newFairing, NotificationChain msgs) {
-		TrackFairingType oldFairing = fairing;
+	public NotificationChain basicSetFairing(TrackSecondaryStructureType newFairing, NotificationChain msgs) {
+		TrackSecondaryStructureType oldFairing = fairing;
 		fairing = newFairing;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -731,7 +666,7 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	 * @generated
 	 */
 	@Override
-	public void setFairing(TrackFairingType newFairing) {
+	public void setFairing(TrackSecondaryStructureType newFairing) {
 		if (newFairing != fairing) {
 			NotificationChain msgs = null;
 			if (fairing != null)
@@ -756,16 +691,14 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUTS:
+			return basicSetStruts(null, msgs);
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__JOINT_POSITIONS:
+			return basicSetJointPositions(null, msgs);
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__CONTROL_SURFACE_ATTACHMENT:
 			return basicSetControlSurfaceAttachment(null, msgs);
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__CAR:
-			return basicSetCar(null, msgs);
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT1:
-			return basicSetStrut1(null, msgs);
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT2:
-			return basicSetStrut2(null, msgs);
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT3:
-			return basicSetStrut3(null, msgs);
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__CARRIAGE:
+			return basicSetCarriage(null, msgs);
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__SIDE_PANELS:
 			return basicSetSidePanels(null, msgs);
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__UPPER_PANEL:
@@ -790,16 +723,14 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUTS:
+			return getStruts();
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__JOINT_POSITIONS:
+			return getJointPositions();
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__CONTROL_SURFACE_ATTACHMENT:
 			return getControlSurfaceAttachment();
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__CAR:
-			return getCar();
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT1:
-			return getStrut1();
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT2:
-			return getStrut2();
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT3:
-			return getStrut3();
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__CARRIAGE:
+			return getCarriage();
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__SIDE_PANELS:
 			return getSidePanels();
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__UPPER_PANEL:
@@ -824,38 +755,35 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUTS:
+			setStruts((TrackStrutsType) newValue);
+			return;
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__JOINT_POSITIONS:
+			setJointPositions((TrackJointPositionsType) newValue);
+			return;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__CONTROL_SURFACE_ATTACHMENT:
-			setControlSurfaceAttachment((MaterialDefinitionType) newValue);
+			setControlSurfaceAttachment((TrackSecondaryStructureType) newValue);
 			return;
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__CAR:
-			setCar((TrackCarType) newValue);
-			return;
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT1:
-			setStrut1((TrackStrut1Type) newValue);
-			return;
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT2:
-			setStrut2((TrackStrut2Type) newValue);
-			return;
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT3:
-			setStrut3((MaterialDefinitionType) newValue);
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__CARRIAGE:
+			setCarriage((TrackSecondaryStructureType) newValue);
 			return;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__SIDE_PANELS:
-			setSidePanels((MaterialDefinitionType) newValue);
+			setSidePanels((TrackSecondaryStructureType) newValue);
 			return;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__UPPER_PANEL:
-			setUpperPanel((MaterialDefinitionType) newValue);
+			setUpperPanel((TrackSecondaryStructureType) newValue);
 			return;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__LOWER_PANEL:
-			setLowerPanel((MaterialDefinitionType) newValue);
+			setLowerPanel((TrackSecondaryStructureType) newValue);
 			return;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__ROLLER_TRACK:
-			setRollerTrack((MaterialDefinitionType) newValue);
+			setRollerTrack((TrackSecondaryStructureType) newValue);
 			return;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__RIBS:
-			setRibs((MaterialDefinitionType) newValue);
+			setRibs((TrackSecondaryStructureType) newValue);
 			return;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__FAIRING:
-			setFairing((TrackFairingType) newValue);
+			setFairing((TrackSecondaryStructureType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -869,38 +797,35 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUTS:
+			setStruts((TrackStrutsType) null);
+			return;
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__JOINT_POSITIONS:
+			setJointPositions((TrackJointPositionsType) null);
+			return;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__CONTROL_SURFACE_ATTACHMENT:
-			setControlSurfaceAttachment((MaterialDefinitionType) null);
+			setControlSurfaceAttachment((TrackSecondaryStructureType) null);
 			return;
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__CAR:
-			setCar((TrackCarType) null);
-			return;
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT1:
-			setStrut1((TrackStrut1Type) null);
-			return;
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT2:
-			setStrut2((TrackStrut2Type) null);
-			return;
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT3:
-			setStrut3((MaterialDefinitionType) null);
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__CARRIAGE:
+			setCarriage((TrackSecondaryStructureType) null);
 			return;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__SIDE_PANELS:
-			setSidePanels((MaterialDefinitionType) null);
+			setSidePanels((TrackSecondaryStructureType) null);
 			return;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__UPPER_PANEL:
-			setUpperPanel((MaterialDefinitionType) null);
+			setUpperPanel((TrackSecondaryStructureType) null);
 			return;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__LOWER_PANEL:
-			setLowerPanel((MaterialDefinitionType) null);
+			setLowerPanel((TrackSecondaryStructureType) null);
 			return;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__ROLLER_TRACK:
-			setRollerTrack((MaterialDefinitionType) null);
+			setRollerTrack((TrackSecondaryStructureType) null);
 			return;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__RIBS:
-			setRibs((MaterialDefinitionType) null);
+			setRibs((TrackSecondaryStructureType) null);
 			return;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__FAIRING:
-			setFairing((TrackFairingType) null);
+			setFairing((TrackSecondaryStructureType) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -914,16 +839,14 @@ public class TrackStructureTypeImpl extends ComplexBaseTypeImpl implements Track
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUTS:
+			return struts != null;
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__JOINT_POSITIONS:
+			return jointPositions != null;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__CONTROL_SURFACE_ATTACHMENT:
 			return controlSurfaceAttachment != null;
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__CAR:
-			return car != null;
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT1:
-			return strut1 != null;
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT2:
-			return strut2 != null;
-		case CpacsPackage.TRACK_STRUCTURE_TYPE__STRUT3:
-			return strut3 != null;
+		case CpacsPackage.TRACK_STRUCTURE_TYPE__CARRIAGE:
+			return carriage != null;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__SIDE_PANELS:
 			return sidePanels != null;
 		case CpacsPackage.TRACK_STRUCTURE_TYPE__UPPER_PANEL:

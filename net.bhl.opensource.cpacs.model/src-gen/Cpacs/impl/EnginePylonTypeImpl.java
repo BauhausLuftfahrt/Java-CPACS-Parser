@@ -8,7 +8,7 @@ import Cpacs.PositioningsType;
 import Cpacs.PylonStructureType;
 import Cpacs.StringBaseType;
 import Cpacs.StringUIDBaseType;
-import Cpacs.SymmetryType6;
+import Cpacs.SymmetryXyXzYzType;
 import Cpacs.TransformationType;
 import Cpacs.WingSectionsType;
 import Cpacs.WingSegmentsType;
@@ -132,7 +132,7 @@ public class EnginePylonTypeImpl extends ComplexBaseTypeImpl implements EnginePy
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SymmetryType6 SYMMETRY_EDEFAULT = SymmetryType6.XY_PLANE;
+	protected static final SymmetryXyXzYzType SYMMETRY_EDEFAULT = SymmetryXyXzYzType.NONE;
 
 	/**
 	 * The cached value of the '{@link #getSymmetry() <em>Symmetry</em>}' attribute.
@@ -142,7 +142,7 @@ public class EnginePylonTypeImpl extends ComplexBaseTypeImpl implements EnginePy
 	 * @generated
 	 * @ordered
 	 */
-	protected SymmetryType6 symmetry = SYMMETRY_EDEFAULT;
+	protected SymmetryXyXzYzType symmetry = SYMMETRY_EDEFAULT;
 
 	/**
 	 * This is true if the Symmetry attribute has been set.
@@ -617,7 +617,7 @@ public class EnginePylonTypeImpl extends ComplexBaseTypeImpl implements EnginePy
 	 * @generated
 	 */
 	@Override
-	public SymmetryType6 getSymmetry() {
+	public SymmetryXyXzYzType getSymmetry() {
 		return symmetry;
 	}
 
@@ -627,8 +627,8 @@ public class EnginePylonTypeImpl extends ComplexBaseTypeImpl implements EnginePy
 	 * @generated
 	 */
 	@Override
-	public void setSymmetry(SymmetryType6 newSymmetry) {
-		SymmetryType6 oldSymmetry = symmetry;
+	public void setSymmetry(SymmetryXyXzYzType newSymmetry) {
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		symmetry = newSymmetry == null ? SYMMETRY_EDEFAULT : newSymmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetryESet = true;
@@ -644,7 +644,7 @@ public class EnginePylonTypeImpl extends ComplexBaseTypeImpl implements EnginePy
 	 */
 	@Override
 	public void unsetSymmetry() {
-		SymmetryType6 oldSymmetry = symmetry;
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetry = SYMMETRY_EDEFAULT;
 		symmetryESet = false;
@@ -779,7 +779,7 @@ public class EnginePylonTypeImpl extends ComplexBaseTypeImpl implements EnginePy
 			setLoadCarryingStructure((PylonStructureType) newValue);
 			return;
 		case CpacsPackage.ENGINE_PYLON_TYPE__SYMMETRY:
-			setSymmetry((SymmetryType6) newValue);
+			setSymmetry((SymmetryXyXzYzType) newValue);
 			return;
 		case CpacsPackage.ENGINE_PYLON_TYPE__UID:
 			setUID((String) newValue);

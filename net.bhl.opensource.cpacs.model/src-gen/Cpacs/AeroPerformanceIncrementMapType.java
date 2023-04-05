@@ -63,13 +63,13 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * Value of the command parameters of a control distributor. If not given explicitly in the control distributor, linear interpolation between the neighboring points is required.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Control Parameters</em>' containment reference.
-	 * @see #setControlParameters(StringVectorBaseType)
+	 * @see #setControlParameters(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceIncrementMapType_ControlParameters()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='controlParameters' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getControlParameters();
+	DoubleVectorBaseType getControlParameters();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceIncrementMapType#getControlParameters <em>Control Parameters</em>}' containment reference.
@@ -79,7 +79,7 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * @see #getControlParameters()
 	 * @generated
 	 */
-	void setControlParameters(StringVectorBaseType value);
+	void setControlParameters(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Control Distributor UID</b></em>' containment reference.
@@ -115,13 +115,13 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * Command inputs of a control distributor given as vector. If not given explicitly in the control distributor, linear interpolation between the neighboring points is required.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Command Inputs</em>' containment reference.
-	 * @see #setCommandInputs(StringVectorBaseType)
+	 * @see #setCommandInputs(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceIncrementMapType_CommandInputs()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='commandInputs' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getCommandInputs();
+	DoubleVectorBaseType getCommandInputs();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceIncrementMapType#getCommandInputs <em>Command Inputs</em>}' containment reference.
@@ -131,7 +131,7 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * @see #getCommandInputs()
 	 * @generated
 	 */
-	void setCommandInputs(StringVectorBaseType value);
+	void setCommandInputs(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Dcd</b></em>' containment reference.
@@ -141,13 +141,13 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * Increment of drag coefficient in aerodynamic coordinates
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Dcd</em>' containment reference.
-	 * @see #setDcd(StringArrayBaseType)
+	 * @see #setDcd(DoubleArrayBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceIncrementMapType_Dcd()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='dcd' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringArrayBaseType getDcd();
+	DoubleArrayBaseType getDcd();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceIncrementMapType#getDcd <em>Dcd</em>}' containment reference.
@@ -157,7 +157,7 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * @see #getDcd()
 	 * @generated
 	 */
-	void setDcd(StringArrayBaseType value);
+	void setDcd(DoubleArrayBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Dcs</b></em>' containment reference.
@@ -167,13 +167,13 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * Increment of coefficient of the side force vector in aerodynamic coordinates (perpendicular to lift and drag)
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Dcs</em>' containment reference.
-	 * @see #setDcs(StringArrayBaseType)
+	 * @see #setDcs(DoubleArrayBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceIncrementMapType_Dcs()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='dcs' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringArrayBaseType getDcs();
+	DoubleArrayBaseType getDcs();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceIncrementMapType#getDcs <em>Dcs</em>}' containment reference.
@@ -183,7 +183,7 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * @see #getDcs()
 	 * @generated
 	 */
-	void setDcs(StringArrayBaseType value);
+	void setDcs(DoubleArrayBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Dcl</b></em>' containment reference.
@@ -193,13 +193,13 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * Increment of lift coefficient in aerodynamic coordinates
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Dcl</em>' containment reference.
-	 * @see #setDcl(StringArrayBaseType)
+	 * @see #setDcl(DoubleArrayBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceIncrementMapType_Dcl()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='dcl' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringArrayBaseType getDcl();
+	DoubleArrayBaseType getDcl();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceIncrementMapType#getDcl <em>Dcl</em>}' containment reference.
@@ -209,7 +209,7 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * @see #getDcl()
 	 * @generated
 	 */
-	void setDcl(StringArrayBaseType value);
+	void setDcl(DoubleArrayBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Dcmd</b></em>' containment reference.
@@ -219,13 +219,13 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * Increment of cmd
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Dcmd</em>' containment reference.
-	 * @see #setDcmd(StringArrayBaseType)
+	 * @see #setDcmd(DoubleArrayBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceIncrementMapType_Dcmd()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='dcmd' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringArrayBaseType getDcmd();
+	DoubleArrayBaseType getDcmd();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceIncrementMapType#getDcmd <em>Dcmd</em>}' containment reference.
@@ -235,7 +235,7 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * @see #getDcmd()
 	 * @generated
 	 */
-	void setDcmd(StringArrayBaseType value);
+	void setDcmd(DoubleArrayBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Dcms</b></em>' containment reference.
@@ -245,13 +245,13 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * Increment of cms
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Dcms</em>' containment reference.
-	 * @see #setDcms(StringArrayBaseType)
+	 * @see #setDcms(DoubleArrayBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceIncrementMapType_Dcms()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='dcms' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringArrayBaseType getDcms();
+	DoubleArrayBaseType getDcms();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceIncrementMapType#getDcms <em>Dcms</em>}' containment reference.
@@ -261,7 +261,7 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * @see #getDcms()
 	 * @generated
 	 */
-	void setDcms(StringArrayBaseType value);
+	void setDcms(DoubleArrayBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Dcml</b></em>' containment reference.
@@ -271,13 +271,13 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * Increment of cml
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Dcml</em>' containment reference.
-	 * @see #setDcml(StringArrayBaseType)
+	 * @see #setDcml(DoubleArrayBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceIncrementMapType_Dcml()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='dcml' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringArrayBaseType getDcml();
+	DoubleArrayBaseType getDcml();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceIncrementMapType#getDcml <em>Dcml</em>}' containment reference.
@@ -287,7 +287,7 @@ public interface AeroPerformanceIncrementMapType extends ComplexBaseType {
 	 * @see #getDcml()
 	 * @generated
 	 */
-	void setDcml(StringArrayBaseType value);
+	void setDcml(DoubleArrayBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>UID</b></em>' attribute.

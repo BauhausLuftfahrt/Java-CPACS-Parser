@@ -14,6 +14,7 @@ package Cpacs;
  *   <li>{@link Cpacs.MFuselageStructureType#getMassDescription <em>Mass Description</em>}</li>
  *   <li>{@link Cpacs.MFuselageStructureType#getMSkinPanels <em>MSkin Panels</em>}</li>
  *   <li>{@link Cpacs.MFuselageStructureType#getMBulkheads <em>MBulkheads</em>}</li>
+ *   <li>{@link Cpacs.MFuselageStructureType#getMWalls <em>MWalls</em>}</li>
  *   <li>{@link Cpacs.MFuselageStructureType#getMDoors <em>MDoors</em>}</li>
  *   <li>{@link Cpacs.MFuselageStructureType#getMWindows <em>MWindows</em>}</li>
  *   <li>{@link Cpacs.MFuselageStructureType#getMCabinFloors <em>MCabin Floors</em>}</li>
@@ -22,6 +23,7 @@ package Cpacs;
  *   <li>{@link Cpacs.MFuselageStructureType#getMBellyFairings <em>MBelly Fairings</em>}</li>
  *   <li>{@link Cpacs.MFuselageStructureType#getMStringers <em>MStringers</em>}</li>
  *   <li>{@link Cpacs.MFuselageStructureType#getMFrames <em>MFrames</em>}</li>
+ *   <li>{@link Cpacs.MFuselageStructureType#getMMiscellaneous <em>MMiscellaneous</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getMFuselageStructureType()
@@ -101,6 +103,29 @@ public interface MFuselageStructureType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setMBulkheads(MBulkheadsType value);
+
+	/**
+	 * Returns the value of the '<em><b>MWalls</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>MWalls</em>' containment reference.
+	 * @see #setMWalls(MWallsType)
+	 * @see Cpacs.CpacsPackage#getMFuselageStructureType_MWalls()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='mWalls' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	MWallsType getMWalls();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MFuselageStructureType#getMWalls <em>MWalls</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>MWalls</em>' containment reference.
+	 * @see #getMWalls()
+	 * @generated
+	 */
+	void setMWalls(MWallsType value);
 
 	/**
 	 * Returns the value of the '<em><b>MDoors</b></em>' containment reference.
@@ -285,5 +310,28 @@ public interface MFuselageStructureType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setMFrames(MFramesType value);
+
+	/**
+	 * Returns the value of the '<em><b>MMiscellaneous</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>MMiscellaneous</em>' containment reference.
+	 * @see #setMMiscellaneous(SingleGenericMassType)
+	 * @see Cpacs.CpacsPackage#getMFuselageStructureType_MMiscellaneous()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='mMiscellaneous' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	SingleGenericMassType getMMiscellaneous();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MFuselageStructureType#getMMiscellaneous <em>MMiscellaneous</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>MMiscellaneous</em>' containment reference.
+	 * @see #getMMiscellaneous()
+	 * @generated
+	 */
+	void setMMiscellaneous(SingleGenericMassType value);
 
 } // MFuselageStructureType

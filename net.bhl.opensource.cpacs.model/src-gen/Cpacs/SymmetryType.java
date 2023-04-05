@@ -19,67 +19,88 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum SymmetryType implements Enumerator {
 	/**
-	 * The '<em><b>XY Plane</b></em>' literal object.
+	 * The '<em><b>None</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #XY_PLANE_VALUE
+	 * @see #NONE_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	XY_PLANE(0, "xYPlane", "x-y-plane"),
+	NONE(0, "none", "none"),
 
 	/**
-	 * The '<em><b>XZ Plane</b></em>' literal object.
+	 * The '<em><b>Inherit</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #XZ_PLANE_VALUE
+	 * @see #INHERIT_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	XZ_PLANE(1, "xZPlane", "x-z-plane"),
+	INHERIT(1, "inherit", "inherit"),
 
 	/**
-	 * The '<em><b>YZ Plane</b></em>' literal object.
+	 * The '<em><b>XAxis</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #YZ_PLANE_VALUE
+	 * @see #XAXIS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	YZ_PLANE(2, "yZPlane", "y-z-plane");
+	XAXIS(2, "xAxis", "x-axis"),
 
 	/**
-	 * The '<em><b>XY Plane</b></em>' literal value.
+	 * The '<em><b>YAxis</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #XY_PLANE
-	 * @model name="xYPlane" literal="x-y-plane"
+	 * @see #YAXIS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	public static final int XY_PLANE_VALUE = 0;
+	YAXIS(3, "yAxis", "y-axis");
 
 	/**
-	 * The '<em><b>XZ Plane</b></em>' literal value.
+	 * The '<em><b>None</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #XZ_PLANE
-	 * @model name="xZPlane" literal="x-z-plane"
+	 * @see #NONE
+	 * @model name="none"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int XZ_PLANE_VALUE = 1;
+	public static final int NONE_VALUE = 0;
 
 	/**
-	 * The '<em><b>YZ Plane</b></em>' literal value.
+	 * The '<em><b>Inherit</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #YZ_PLANE
-	 * @model name="yZPlane" literal="y-z-plane"
+	 * @see #INHERIT
+	 * @model name="inherit"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int YZ_PLANE_VALUE = 2;
+	public static final int INHERIT_VALUE = 1;
+
+	/**
+	 * The '<em><b>XAxis</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #XAXIS
+	 * @model name="xAxis" literal="x-axis"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int XAXIS_VALUE = 2;
+
+	/**
+	 * The '<em><b>YAxis</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #YAXIS
+	 * @model name="yAxis" literal="y-axis"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int YAXIS_VALUE = 3;
 
 	/**
 	 * An array of all the '<em><b>Symmetry Type</b></em>' enumerators.
@@ -87,7 +108,7 @@ public enum SymmetryType implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final SymmetryType[] VALUES_ARRAY = new SymmetryType[] { XY_PLANE, XZ_PLANE, YZ_PLANE, };
+	private static final SymmetryType[] VALUES_ARRAY = new SymmetryType[] { NONE, INHERIT, XAXIS, YAXIS, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Symmetry Type</b></em>' enumerators.
@@ -143,12 +164,14 @@ public enum SymmetryType implements Enumerator {
 	 */
 	public static SymmetryType get(int value) {
 		switch (value) {
-		case XY_PLANE_VALUE:
-			return XY_PLANE;
-		case XZ_PLANE_VALUE:
-			return XZ_PLANE;
-		case YZ_PLANE_VALUE:
-			return YZ_PLANE;
+		case NONE_VALUE:
+			return NONE;
+		case INHERIT_VALUE:
+			return INHERIT;
+		case XAXIS_VALUE:
+			return XAXIS;
+		case YAXIS_VALUE:
+			return YAXIS;
 		}
 		return null;
 	}

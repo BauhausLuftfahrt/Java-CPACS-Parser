@@ -4,11 +4,10 @@ package Cpacs.impl;
 
 import Cpacs.ComponentSegmentsType;
 import Cpacs.CpacsPackage;
-import Cpacs.DynamicAircraftModelType;
 import Cpacs.PositioningsType;
 import Cpacs.StringBaseType;
 import Cpacs.StringUIDBaseType;
-import Cpacs.SymmetryType5;
+import Cpacs.SymmetryXyXzYzType;
 import Cpacs.TransformationType;
 import Cpacs.WingSectionsType;
 import Cpacs.WingSegmentsType;
@@ -38,7 +37,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.WingTypeImpl#getPositionings <em>Positionings</em>}</li>
  *   <li>{@link Cpacs.impl.WingTypeImpl#getSegments <em>Segments</em>}</li>
  *   <li>{@link Cpacs.impl.WingTypeImpl#getComponentSegments <em>Component Segments</em>}</li>
- *   <li>{@link Cpacs.impl.WingTypeImpl#getDynamicAircraftModel <em>Dynamic Aircraft Model</em>}</li>
  *   <li>{@link Cpacs.impl.WingTypeImpl#getSymmetry <em>Symmetry</em>}</li>
  *   <li>{@link Cpacs.impl.WingTypeImpl#getUID <em>UID</em>}</li>
  * </ul>
@@ -127,16 +125,6 @@ public class WingTypeImpl extends ComplexBaseTypeImpl implements WingType {
 	protected ComponentSegmentsType componentSegments;
 
 	/**
-	 * The cached value of the '{@link #getDynamicAircraftModel() <em>Dynamic Aircraft Model</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDynamicAircraftModel()
-	 * @generated
-	 * @ordered
-	 */
-	protected DynamicAircraftModelType dynamicAircraftModel;
-
-	/**
 	 * The default value of the '{@link #getSymmetry() <em>Symmetry</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -144,7 +132,7 @@ public class WingTypeImpl extends ComplexBaseTypeImpl implements WingType {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SymmetryType5 SYMMETRY_EDEFAULT = SymmetryType5.XY_PLANE;
+	protected static final SymmetryXyXzYzType SYMMETRY_EDEFAULT = SymmetryXyXzYzType.NONE;
 
 	/**
 	 * The cached value of the '{@link #getSymmetry() <em>Symmetry</em>}' attribute.
@@ -154,7 +142,7 @@ public class WingTypeImpl extends ComplexBaseTypeImpl implements WingType {
 	 * @generated
 	 * @ordered
 	 */
-	protected SymmetryType5 symmetry = SYMMETRY_EDEFAULT;
+	protected SymmetryXyXzYzType symmetry = SYMMETRY_EDEFAULT;
 
 	/**
 	 * This is true if the Symmetry attribute has been set.
@@ -626,60 +614,7 @@ public class WingTypeImpl extends ComplexBaseTypeImpl implements WingType {
 	 * @generated
 	 */
 	@Override
-	public DynamicAircraftModelType getDynamicAircraftModel() {
-		return dynamicAircraftModel;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetDynamicAircraftModel(DynamicAircraftModelType newDynamicAircraftModel,
-			NotificationChain msgs) {
-		DynamicAircraftModelType oldDynamicAircraftModel = dynamicAircraftModel;
-		dynamicAircraftModel = newDynamicAircraftModel;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.WING_TYPE__DYNAMIC_AIRCRAFT_MODEL, oldDynamicAircraftModel, newDynamicAircraftModel);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDynamicAircraftModel(DynamicAircraftModelType newDynamicAircraftModel) {
-		if (newDynamicAircraftModel != dynamicAircraftModel) {
-			NotificationChain msgs = null;
-			if (dynamicAircraftModel != null)
-				msgs = ((InternalEObject) dynamicAircraftModel).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.WING_TYPE__DYNAMIC_AIRCRAFT_MODEL, null, msgs);
-			if (newDynamicAircraftModel != null)
-				msgs = ((InternalEObject) newDynamicAircraftModel).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.WING_TYPE__DYNAMIC_AIRCRAFT_MODEL, null, msgs);
-			msgs = basicSetDynamicAircraftModel(newDynamicAircraftModel, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.WING_TYPE__DYNAMIC_AIRCRAFT_MODEL,
-					newDynamicAircraftModel, newDynamicAircraftModel));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SymmetryType5 getSymmetry() {
+	public SymmetryXyXzYzType getSymmetry() {
 		return symmetry;
 	}
 
@@ -689,8 +624,8 @@ public class WingTypeImpl extends ComplexBaseTypeImpl implements WingType {
 	 * @generated
 	 */
 	@Override
-	public void setSymmetry(SymmetryType5 newSymmetry) {
-		SymmetryType5 oldSymmetry = symmetry;
+	public void setSymmetry(SymmetryXyXzYzType newSymmetry) {
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		symmetry = newSymmetry == null ? SYMMETRY_EDEFAULT : newSymmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetryESet = true;
@@ -706,7 +641,7 @@ public class WingTypeImpl extends ComplexBaseTypeImpl implements WingType {
 	 */
 	@Override
 	public void unsetSymmetry() {
-		SymmetryType5 oldSymmetry = symmetry;
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetry = SYMMETRY_EDEFAULT;
 		symmetryESet = false;
@@ -772,8 +707,6 @@ public class WingTypeImpl extends ComplexBaseTypeImpl implements WingType {
 			return basicSetSegments(null, msgs);
 		case CpacsPackage.WING_TYPE__COMPONENT_SEGMENTS:
 			return basicSetComponentSegments(null, msgs);
-		case CpacsPackage.WING_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			return basicSetDynamicAircraftModel(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -802,8 +735,6 @@ public class WingTypeImpl extends ComplexBaseTypeImpl implements WingType {
 			return getSegments();
 		case CpacsPackage.WING_TYPE__COMPONENT_SEGMENTS:
 			return getComponentSegments();
-		case CpacsPackage.WING_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			return getDynamicAircraftModel();
 		case CpacsPackage.WING_TYPE__SYMMETRY:
 			return getSymmetry();
 		case CpacsPackage.WING_TYPE__UID:
@@ -844,11 +775,8 @@ public class WingTypeImpl extends ComplexBaseTypeImpl implements WingType {
 		case CpacsPackage.WING_TYPE__COMPONENT_SEGMENTS:
 			setComponentSegments((ComponentSegmentsType) newValue);
 			return;
-		case CpacsPackage.WING_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			setDynamicAircraftModel((DynamicAircraftModelType) newValue);
-			return;
 		case CpacsPackage.WING_TYPE__SYMMETRY:
-			setSymmetry((SymmetryType5) newValue);
+			setSymmetry((SymmetryXyXzYzType) newValue);
 			return;
 		case CpacsPackage.WING_TYPE__UID:
 			setUID((String) newValue);
@@ -889,9 +817,6 @@ public class WingTypeImpl extends ComplexBaseTypeImpl implements WingType {
 		case CpacsPackage.WING_TYPE__COMPONENT_SEGMENTS:
 			setComponentSegments((ComponentSegmentsType) null);
 			return;
-		case CpacsPackage.WING_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			setDynamicAircraftModel((DynamicAircraftModelType) null);
-			return;
 		case CpacsPackage.WING_TYPE__SYMMETRY:
 			unsetSymmetry();
 			return;
@@ -926,8 +851,6 @@ public class WingTypeImpl extends ComplexBaseTypeImpl implements WingType {
 			return segments != null;
 		case CpacsPackage.WING_TYPE__COMPONENT_SEGMENTS:
 			return componentSegments != null;
-		case CpacsPackage.WING_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			return dynamicAircraftModel != null;
 		case CpacsPackage.WING_TYPE__SYMMETRY:
 			return isSetSymmetry();
 		case CpacsPackage.WING_TYPE__UID:

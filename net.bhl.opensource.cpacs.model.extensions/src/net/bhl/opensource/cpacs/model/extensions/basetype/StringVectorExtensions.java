@@ -30,10 +30,10 @@ public interface StringVectorExtensions {
 		String content = new String();
 
 		for (Double val : vector) {
-			content += val + StringVectorExtensions.STRING_VECTOR_DELIMITER;
+			content += val + STRING_VECTOR_DELIMITER;
 		}
 
-		return StringVectorExtensions.init(content.substring(0, content.length() - 1));
+		return init(content.substring(0, content.length() - 1));
 	}
 
 	/**
@@ -59,8 +59,7 @@ public interface StringVectorExtensions {
 		// in the string itself.
 
 		for (String element : baseType.getValue()
-				.split(baseType.getValue().contains(";") ? StringVectorExtensions.STRING_VECTOR_DELIMITER
-						: StringVectorExtensions.STRING_VECTOR_DELIMITER_ALT)) {
+				.split(baseType.getValue().contains(";") ? STRING_VECTOR_DELIMITER : STRING_VECTOR_DELIMITER_ALT)) {
 			values.add(Double.parseDouble(element));
 		}
 

@@ -11,11 +11,10 @@ package Cpacs;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link Cpacs.TrackStructureType#getStruts <em>Struts</em>}</li>
+ *   <li>{@link Cpacs.TrackStructureType#getJointPositions <em>Joint Positions</em>}</li>
  *   <li>{@link Cpacs.TrackStructureType#getControlSurfaceAttachment <em>Control Surface Attachment</em>}</li>
- *   <li>{@link Cpacs.TrackStructureType#getCar <em>Car</em>}</li>
- *   <li>{@link Cpacs.TrackStructureType#getStrut1 <em>Strut1</em>}</li>
- *   <li>{@link Cpacs.TrackStructureType#getStrut2 <em>Strut2</em>}</li>
- *   <li>{@link Cpacs.TrackStructureType#getStrut3 <em>Strut3</em>}</li>
+ *   <li>{@link Cpacs.TrackStructureType#getCarriage <em>Carriage</em>}</li>
  *   <li>{@link Cpacs.TrackStructureType#getSidePanels <em>Side Panels</em>}</li>
  *   <li>{@link Cpacs.TrackStructureType#getUpperPanel <em>Upper Panel</em>}</li>
  *   <li>{@link Cpacs.TrackStructureType#getLowerPanel <em>Lower Panel</em>}</li>
@@ -30,17 +29,63 @@ package Cpacs;
  */
 public interface TrackStructureType extends ComplexBaseType {
 	/**
+	 * Returns the value of the '<em><b>Struts</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Struts</em>' containment reference.
+	 * @see #setStruts(TrackStrutsType)
+	 * @see Cpacs.CpacsPackage#getTrackStructureType_Struts()
+	 * @model containment="true" required="true"
+	 *        extendedMetaData="kind='element' name='struts' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	TrackStrutsType getStruts();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.TrackStructureType#getStruts <em>Struts</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Struts</em>' containment reference.
+	 * @see #getStruts()
+	 * @generated
+	 */
+	void setStruts(TrackStrutsType value);
+
+	/**
+	 * Returns the value of the '<em><b>Joint Positions</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Joint Positions</em>' containment reference.
+	 * @see #setJointPositions(TrackJointPositionsType)
+	 * @see Cpacs.CpacsPackage#getTrackStructureType_JointPositions()
+	 * @model containment="true" required="true"
+	 *        extendedMetaData="kind='element' name='jointPositions' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	TrackJointPositionsType getJointPositions();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.TrackStructureType#getJointPositions <em>Joint Positions</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Joint Positions</em>' containment reference.
+	 * @see #getJointPositions()
+	 * @generated
+	 */
+	void setJointPositions(TrackJointPositionsType value);
+
+	/**
 	 * Returns the value of the '<em><b>Control Surface Attachment</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Control Surface Attachment</em>' containment reference.
-	 * @see #setControlSurfaceAttachment(MaterialDefinitionType)
+	 * @see #setControlSurfaceAttachment(TrackSecondaryStructureType)
 	 * @see Cpacs.CpacsPackage#getTrackStructureType_ControlSurfaceAttachment()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='controlSurfaceAttachment' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	MaterialDefinitionType getControlSurfaceAttachment();
+	TrackSecondaryStructureType getControlSurfaceAttachment();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.TrackStructureType#getControlSurfaceAttachment <em>Control Surface Attachment</em>}' containment reference.
@@ -50,112 +95,43 @@ public interface TrackStructureType extends ComplexBaseType {
 	 * @see #getControlSurfaceAttachment()
 	 * @generated
 	 */
-	void setControlSurfaceAttachment(MaterialDefinitionType value);
+	void setControlSurfaceAttachment(TrackSecondaryStructureType value);
 
 	/**
-	 * Returns the value of the '<em><b>Car</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Carriage</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Car</em>' containment reference.
-	 * @see #setCar(TrackCarType)
-	 * @see Cpacs.CpacsPackage#getTrackStructureType_Car()
+	 * @return the value of the '<em>Carriage</em>' containment reference.
+	 * @see #setCarriage(TrackSecondaryStructureType)
+	 * @see Cpacs.CpacsPackage#getTrackStructureType_Carriage()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='car' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='carriage' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	TrackCarType getCar();
+	TrackSecondaryStructureType getCarriage();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.TrackStructureType#getCar <em>Car</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.TrackStructureType#getCarriage <em>Carriage</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Car</em>' containment reference.
-	 * @see #getCar()
+	 * @param value the new value of the '<em>Carriage</em>' containment reference.
+	 * @see #getCarriage()
 	 * @generated
 	 */
-	void setCar(TrackCarType value);
-
-	/**
-	 * Returns the value of the '<em><b>Strut1</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Strut1</em>' containment reference.
-	 * @see #setStrut1(TrackStrut1Type)
-	 * @see Cpacs.CpacsPackage#getTrackStructureType_Strut1()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='strut1' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	TrackStrut1Type getStrut1();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.TrackStructureType#getStrut1 <em>Strut1</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Strut1</em>' containment reference.
-	 * @see #getStrut1()
-	 * @generated
-	 */
-	void setStrut1(TrackStrut1Type value);
-
-	/**
-	 * Returns the value of the '<em><b>Strut2</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Strut2</em>' containment reference.
-	 * @see #setStrut2(TrackStrut2Type)
-	 * @see Cpacs.CpacsPackage#getTrackStructureType_Strut2()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='strut2' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	TrackStrut2Type getStrut2();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.TrackStructureType#getStrut2 <em>Strut2</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Strut2</em>' containment reference.
-	 * @see #getStrut2()
-	 * @generated
-	 */
-	void setStrut2(TrackStrut2Type value);
-
-	/**
-	 * Returns the value of the '<em><b>Strut3</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Strut3</em>' containment reference.
-	 * @see #setStrut3(MaterialDefinitionType)
-	 * @see Cpacs.CpacsPackage#getTrackStructureType_Strut3()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='strut3' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	MaterialDefinitionType getStrut3();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.TrackStructureType#getStrut3 <em>Strut3</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Strut3</em>' containment reference.
-	 * @see #getStrut3()
-	 * @generated
-	 */
-	void setStrut3(MaterialDefinitionType value);
+	void setCarriage(TrackSecondaryStructureType value);
 
 	/**
 	 * Returns the value of the '<em><b>Side Panels</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Side Panels</em>' containment reference.
-	 * @see #setSidePanels(MaterialDefinitionType)
+	 * @see #setSidePanels(TrackSecondaryStructureType)
 	 * @see Cpacs.CpacsPackage#getTrackStructureType_SidePanels()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='sidePanels' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	MaterialDefinitionType getSidePanels();
+	TrackSecondaryStructureType getSidePanels();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.TrackStructureType#getSidePanels <em>Side Panels</em>}' containment reference.
@@ -165,20 +141,20 @@ public interface TrackStructureType extends ComplexBaseType {
 	 * @see #getSidePanels()
 	 * @generated
 	 */
-	void setSidePanels(MaterialDefinitionType value);
+	void setSidePanels(TrackSecondaryStructureType value);
 
 	/**
 	 * Returns the value of the '<em><b>Upper Panel</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Upper Panel</em>' containment reference.
-	 * @see #setUpperPanel(MaterialDefinitionType)
+	 * @see #setUpperPanel(TrackSecondaryStructureType)
 	 * @see Cpacs.CpacsPackage#getTrackStructureType_UpperPanel()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='upperPanel' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	MaterialDefinitionType getUpperPanel();
+	TrackSecondaryStructureType getUpperPanel();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.TrackStructureType#getUpperPanel <em>Upper Panel</em>}' containment reference.
@@ -188,20 +164,20 @@ public interface TrackStructureType extends ComplexBaseType {
 	 * @see #getUpperPanel()
 	 * @generated
 	 */
-	void setUpperPanel(MaterialDefinitionType value);
+	void setUpperPanel(TrackSecondaryStructureType value);
 
 	/**
 	 * Returns the value of the '<em><b>Lower Panel</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Lower Panel</em>' containment reference.
-	 * @see #setLowerPanel(MaterialDefinitionType)
+	 * @see #setLowerPanel(TrackSecondaryStructureType)
 	 * @see Cpacs.CpacsPackage#getTrackStructureType_LowerPanel()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='lowerPanel' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	MaterialDefinitionType getLowerPanel();
+	TrackSecondaryStructureType getLowerPanel();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.TrackStructureType#getLowerPanel <em>Lower Panel</em>}' containment reference.
@@ -211,20 +187,20 @@ public interface TrackStructureType extends ComplexBaseType {
 	 * @see #getLowerPanel()
 	 * @generated
 	 */
-	void setLowerPanel(MaterialDefinitionType value);
+	void setLowerPanel(TrackSecondaryStructureType value);
 
 	/**
 	 * Returns the value of the '<em><b>Roller Track</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Roller Track</em>' containment reference.
-	 * @see #setRollerTrack(MaterialDefinitionType)
+	 * @see #setRollerTrack(TrackSecondaryStructureType)
 	 * @see Cpacs.CpacsPackage#getTrackStructureType_RollerTrack()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='rollerTrack' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	MaterialDefinitionType getRollerTrack();
+	TrackSecondaryStructureType getRollerTrack();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.TrackStructureType#getRollerTrack <em>Roller Track</em>}' containment reference.
@@ -234,20 +210,20 @@ public interface TrackStructureType extends ComplexBaseType {
 	 * @see #getRollerTrack()
 	 * @generated
 	 */
-	void setRollerTrack(MaterialDefinitionType value);
+	void setRollerTrack(TrackSecondaryStructureType value);
 
 	/**
 	 * Returns the value of the '<em><b>Ribs</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ribs</em>' containment reference.
-	 * @see #setRibs(MaterialDefinitionType)
+	 * @see #setRibs(TrackSecondaryStructureType)
 	 * @see Cpacs.CpacsPackage#getTrackStructureType_Ribs()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='ribs' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	MaterialDefinitionType getRibs();
+	TrackSecondaryStructureType getRibs();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.TrackStructureType#getRibs <em>Ribs</em>}' containment reference.
@@ -257,20 +233,20 @@ public interface TrackStructureType extends ComplexBaseType {
 	 * @see #getRibs()
 	 * @generated
 	 */
-	void setRibs(MaterialDefinitionType value);
+	void setRibs(TrackSecondaryStructureType value);
 
 	/**
 	 * Returns the value of the '<em><b>Fairing</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fairing</em>' containment reference.
-	 * @see #setFairing(TrackFairingType)
+	 * @see #setFairing(TrackSecondaryStructureType)
 	 * @see Cpacs.CpacsPackage#getTrackStructureType_Fairing()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='fairing' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	TrackFairingType getFairing();
+	TrackSecondaryStructureType getFairing();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.TrackStructureType#getFairing <em>Fairing</em>}' containment reference.
@@ -280,6 +256,6 @@ public interface TrackStructureType extends ComplexBaseType {
 	 * @see #getFairing()
 	 * @generated
 	 */
-	void setFairing(TrackFairingType value);
+	void setFairing(TrackSecondaryStructureType value);
 
 } // TrackStructureType

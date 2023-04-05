@@ -27,7 +27,7 @@ public interface PointListRelXYZVectorType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Vector of rX coordinates. Relative
-	 *                                 circumferential coordinate on wing / fuselage profile
+	 *                                 circumferential coordinate on wing, fuselage or nacelle profile
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>RX</em>' containment reference.

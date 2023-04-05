@@ -3,7 +3,7 @@
 package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
-import Cpacs.SeatModuleType;
+import Cpacs.DeckComponent2DBaseType;
 import Cpacs.SeatModulesType;
 
 import java.util.Collection;
@@ -40,7 +40,7 @@ public class SeatModulesTypeImpl extends ComplexBaseTypeImpl implements SeatModu
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<SeatModuleType> seatModule;
+	protected EList<DeckComponent2DBaseType> seatModule;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,9 +67,9 @@ public class SeatModulesTypeImpl extends ComplexBaseTypeImpl implements SeatModu
 	 * @generated
 	 */
 	@Override
-	public EList<SeatModuleType> getSeatModule() {
+	public EList<DeckComponent2DBaseType> getSeatModule() {
 		if (seatModule == null) {
-			seatModule = new EObjectContainmentEList<SeatModuleType>(SeatModuleType.class, this,
+			seatModule = new EObjectContainmentEList<DeckComponent2DBaseType>(DeckComponent2DBaseType.class, this,
 					CpacsPackage.SEAT_MODULES_TYPE__SEAT_MODULE);
 		}
 		return seatModule;
@@ -114,7 +114,7 @@ public class SeatModulesTypeImpl extends ComplexBaseTypeImpl implements SeatModu
 		switch (featureID) {
 		case CpacsPackage.SEAT_MODULES_TYPE__SEAT_MODULE:
 			getSeatModule().clear();
-			getSeatModule().addAll((Collection<? extends SeatModuleType>) newValue);
+			getSeatModule().addAll((Collection<? extends DeckComponent2DBaseType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

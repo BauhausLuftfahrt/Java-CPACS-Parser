@@ -7,7 +7,7 @@ import Cpacs.DoubleBaseType;
 import Cpacs.RotorHubHingeType;
 import Cpacs.StringBaseType;
 import Cpacs.TransformationType;
-import Cpacs.TypeType4;
+import Cpacs.TypeType1;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -77,7 +77,7 @@ public class RotorHubHingeTypeImpl extends ComplexBaseTypeImpl implements RotorH
 	 * @generated
 	 * @ordered
 	 */
-	protected static final TypeType4 TYPE_EDEFAULT = TypeType4.FLAP;
+	protected static final TypeType1 TYPE_EDEFAULT = TypeType1.FLAP;
 
 	/**
 	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
@@ -87,7 +87,7 @@ public class RotorHubHingeTypeImpl extends ComplexBaseTypeImpl implements RotorH
 	 * @generated
 	 * @ordered
 	 */
-	protected TypeType4 type = TYPE_EDEFAULT;
+	protected TypeType1 type = TYPE_EDEFAULT;
 
 	/**
 	 * This is true if the Type attribute has been set.
@@ -339,7 +339,7 @@ public class RotorHubHingeTypeImpl extends ComplexBaseTypeImpl implements RotorH
 	 * @generated
 	 */
 	@Override
-	public TypeType4 getType() {
+	public TypeType1 getType() {
 		return type;
 	}
 
@@ -349,8 +349,8 @@ public class RotorHubHingeTypeImpl extends ComplexBaseTypeImpl implements RotorH
 	 * @generated
 	 */
 	@Override
-	public void setType(TypeType4 newType) {
-		TypeType4 oldType = type;
+	public void setType(TypeType1 newType) {
+		TypeType1 oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		boolean oldTypeESet = typeESet;
 		typeESet = true;
@@ -366,7 +366,7 @@ public class RotorHubHingeTypeImpl extends ComplexBaseTypeImpl implements RotorH
 	 */
 	@Override
 	public void unsetType() {
-		TypeType4 oldType = type;
+		TypeType1 oldType = type;
 		boolean oldTypeESet = typeESet;
 		type = TYPE_EDEFAULT;
 		typeESet = false;
@@ -690,7 +690,7 @@ public class RotorHubHingeTypeImpl extends ComplexBaseTypeImpl implements RotorH
 			setTransformation((TransformationType) newValue);
 			return;
 		case CpacsPackage.ROTOR_HUB_HINGE_TYPE__TYPE:
-			setType((TypeType4) newValue);
+			setType((TypeType1) newValue);
 			return;
 		case CpacsPackage.ROTOR_HUB_HINGE_TYPE__NEUTRAL_POSITION:
 			setNeutralPosition((DoubleBaseType) newValue);

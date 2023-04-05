@@ -5,6 +5,7 @@ package Cpacs.impl;
 import Cpacs.AircraftGlobalType;
 import Cpacs.AirportCompatabilityGlobalType;
 import Cpacs.CpacsPackage;
+import Cpacs.FlightEnvelopesType;
 import Cpacs.PayloadGlobalType;
 import Cpacs.PerformanceTargetsGlobalType;
 import Cpacs.RequirementType;
@@ -29,6 +30,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.AircraftGlobalTypeImpl#getPayload <em>Payload</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftGlobalTypeImpl#getAirportCompatability <em>Airport Compatability</em>}</li>
  *   <li>{@link Cpacs.impl.AircraftGlobalTypeImpl#getPerformanceTargets <em>Performance Targets</em>}</li>
+ *   <li>{@link Cpacs.impl.AircraftGlobalTypeImpl#getFlightEnvelopes <em>Flight Envelopes</em>}</li>
  * </ul>
  *
  * @generated
@@ -73,6 +75,16 @@ public class AircraftGlobalTypeImpl extends ComplexBaseTypeImpl implements Aircr
 	 * @ordered
 	 */
 	protected PerformanceTargetsGlobalType performanceTargets;
+
+	/**
+	 * The cached value of the '{@link #getFlightEnvelopes() <em>Flight Envelopes</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFlightEnvelopes()
+	 * @generated
+	 * @ordered
+	 */
+	protected FlightEnvelopesType flightEnvelopes;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -313,6 +325,58 @@ public class AircraftGlobalTypeImpl extends ComplexBaseTypeImpl implements Aircr
 	 * @generated
 	 */
 	@Override
+	public FlightEnvelopesType getFlightEnvelopes() {
+		return flightEnvelopes;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetFlightEnvelopes(FlightEnvelopesType newFlightEnvelopes, NotificationChain msgs) {
+		FlightEnvelopesType oldFlightEnvelopes = flightEnvelopes;
+		flightEnvelopes = newFlightEnvelopes;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.AIRCRAFT_GLOBAL_TYPE__FLIGHT_ENVELOPES, oldFlightEnvelopes, newFlightEnvelopes);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFlightEnvelopes(FlightEnvelopesType newFlightEnvelopes) {
+		if (newFlightEnvelopes != flightEnvelopes) {
+			NotificationChain msgs = null;
+			if (flightEnvelopes != null)
+				msgs = ((InternalEObject) flightEnvelopes).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_GLOBAL_TYPE__FLIGHT_ENVELOPES, null, msgs);
+			if (newFlightEnvelopes != null)
+				msgs = ((InternalEObject) newFlightEnvelopes).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AIRCRAFT_GLOBAL_TYPE__FLIGHT_ENVELOPES, null, msgs);
+			msgs = basicSetFlightEnvelopes(newFlightEnvelopes, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AIRCRAFT_GLOBAL_TYPE__FLIGHT_ENVELOPES,
+					newFlightEnvelopes, newFlightEnvelopes));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case CpacsPackage.AIRCRAFT_GLOBAL_TYPE__DESIGN_RANGE:
@@ -323,6 +387,8 @@ public class AircraftGlobalTypeImpl extends ComplexBaseTypeImpl implements Aircr
 			return basicSetAirportCompatability(null, msgs);
 		case CpacsPackage.AIRCRAFT_GLOBAL_TYPE__PERFORMANCE_TARGETS:
 			return basicSetPerformanceTargets(null, msgs);
+		case CpacsPackage.AIRCRAFT_GLOBAL_TYPE__FLIGHT_ENVELOPES:
+			return basicSetFlightEnvelopes(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -343,6 +409,8 @@ public class AircraftGlobalTypeImpl extends ComplexBaseTypeImpl implements Aircr
 			return getAirportCompatability();
 		case CpacsPackage.AIRCRAFT_GLOBAL_TYPE__PERFORMANCE_TARGETS:
 			return getPerformanceTargets();
+		case CpacsPackage.AIRCRAFT_GLOBAL_TYPE__FLIGHT_ENVELOPES:
+			return getFlightEnvelopes();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -366,6 +434,9 @@ public class AircraftGlobalTypeImpl extends ComplexBaseTypeImpl implements Aircr
 			return;
 		case CpacsPackage.AIRCRAFT_GLOBAL_TYPE__PERFORMANCE_TARGETS:
 			setPerformanceTargets((PerformanceTargetsGlobalType) newValue);
+			return;
+		case CpacsPackage.AIRCRAFT_GLOBAL_TYPE__FLIGHT_ENVELOPES:
+			setFlightEnvelopes((FlightEnvelopesType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -391,6 +462,9 @@ public class AircraftGlobalTypeImpl extends ComplexBaseTypeImpl implements Aircr
 		case CpacsPackage.AIRCRAFT_GLOBAL_TYPE__PERFORMANCE_TARGETS:
 			setPerformanceTargets((PerformanceTargetsGlobalType) null);
 			return;
+		case CpacsPackage.AIRCRAFT_GLOBAL_TYPE__FLIGHT_ENVELOPES:
+			setFlightEnvelopes((FlightEnvelopesType) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -411,6 +485,8 @@ public class AircraftGlobalTypeImpl extends ComplexBaseTypeImpl implements Aircr
 			return airportCompatability != null;
 		case CpacsPackage.AIRCRAFT_GLOBAL_TYPE__PERFORMANCE_TARGETS:
 			return performanceTargets != null;
+		case CpacsPackage.AIRCRAFT_GLOBAL_TYPE__FLIGHT_ENVELOPES:
+			return flightEnvelopes != null;
 		}
 		return super.eIsSet(featureID);
 	}

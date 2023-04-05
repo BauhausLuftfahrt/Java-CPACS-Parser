@@ -15,7 +15,7 @@ package Cpacs;
  *   <li>{@link Cpacs.LoadBreakdownType#getAeroLoads <em>Aero Loads</em>}</li>
  *   <li>{@link Cpacs.LoadBreakdownType#getPropulsionLoads <em>Propulsion Loads</em>}</li>
  *   <li>{@link Cpacs.LoadBreakdownType#getLandingGearLoads <em>Landing Gear Loads</em>}</li>
- *   <li>{@link Cpacs.LoadBreakdownType#getCalibrationLoads <em>Calibration Loads</em>}</li>
+ *   <li>{@link Cpacs.LoadBreakdownType#getRemainingLoads <em>Remaining Loads</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getLoadBreakdownType()
@@ -116,26 +116,26 @@ public interface LoadBreakdownType extends ComplexBaseType {
 	void setLandingGearLoads(SubLoadType value);
 
 	/**
-	 * Returns the value of the '<em><b>Calibration Loads</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Remaining Loads</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Calibration Loads</em>' containment reference.
-	 * @see #setCalibrationLoads(SubLoadType)
-	 * @see Cpacs.CpacsPackage#getLoadBreakdownType_CalibrationLoads()
+	 * @return the value of the '<em>Remaining Loads</em>' containment reference.
+	 * @see #setRemainingLoads(SubLoadType)
+	 * @see Cpacs.CpacsPackage#getLoadBreakdownType_RemainingLoads()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='calibrationLoads' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='remainingLoads' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	SubLoadType getCalibrationLoads();
+	SubLoadType getRemainingLoads();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.LoadBreakdownType#getCalibrationLoads <em>Calibration Loads</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.LoadBreakdownType#getRemainingLoads <em>Remaining Loads</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Calibration Loads</em>' containment reference.
-	 * @see #getCalibrationLoads()
+	 * @param value the new value of the '<em>Remaining Loads</em>' containment reference.
+	 * @see #getRemainingLoads()
 	 * @generated
 	 */
-	void setCalibrationLoads(SubLoadType value);
+	void setRemainingLoads(SubLoadType value);
 
 } // LoadBreakdownType

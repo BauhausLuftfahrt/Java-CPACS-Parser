@@ -22,6 +22,9 @@ public enum RefTypeType implements Enumerator {
 	 * The '<em><b>Abs Global</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Absolute values in global coordinate system
+	 * <!-- end-model-doc -->
 	 * @see #ABS_GLOBAL_VALUE
 	 * @generated
 	 * @ordered
@@ -32,6 +35,9 @@ public enum RefTypeType implements Enumerator {
 	 * The '<em><b>Abs Local</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Absolute values in local coordinate system (default)
+	 * <!-- end-model-doc -->
 	 * @see #ABS_LOCAL_VALUE
 	 * @generated
 	 * @ordered
@@ -42,6 +48,9 @@ public enum RefTypeType implements Enumerator {
 	 * The '<em><b>Abs Global</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Absolute values in global coordinate system
+	 * <!-- end-model-doc -->
 	 * @see #ABS_GLOBAL
 	 * @model name="absGlobal"
 	 * @generated
@@ -53,6 +62,9 @@ public enum RefTypeType implements Enumerator {
 	 * The '<em><b>Abs Local</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Absolute values in local coordinate system (default)
+	 * <!-- end-model-doc -->
 	 * @see #ABS_LOCAL
 	 * @model name="absLocal"
 	 * @generated

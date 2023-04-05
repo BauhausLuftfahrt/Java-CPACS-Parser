@@ -21,6 +21,7 @@ import Cpacs.MOverheadBinsType;
 import Cpacs.MPartStowDoorsType;
 import Cpacs.MVacuumWasteSystemsType;
 import Cpacs.MWasteWaterSystemsType;
+import Cpacs.SingleGenericMassType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -55,6 +56,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.MFurnishingTypeImpl#getMWasteWaterSystems <em>MWaste Water Systems</em>}</li>
  *   <li>{@link Cpacs.impl.MFurnishingTypeImpl#getMFreshWaterSystems <em>MFresh Water Systems</em>}</li>
  *   <li>{@link Cpacs.impl.MFurnishingTypeImpl#getMVacuumWasteSystems <em>MVacuum Waste Systems</em>}</li>
+ *   <li>{@link Cpacs.impl.MFurnishingTypeImpl#getMMiscellaneous <em>MMiscellaneous</em>}</li>
  * </ul>
  *
  * @generated
@@ -229,6 +231,16 @@ public class MFurnishingTypeImpl extends ComplexBaseTypeImpl implements MFurnish
 	 * @ordered
 	 */
 	protected MVacuumWasteSystemsType mVacuumWasteSystems;
+
+	/**
+	 * The cached value of the '{@link #getMMiscellaneous() <em>MMiscellaneous</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMMiscellaneous()
+	 * @generated
+	 * @ordered
+	 */
+	protected SingleGenericMassType mMiscellaneous;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1147,6 +1159,58 @@ public class MFurnishingTypeImpl extends ComplexBaseTypeImpl implements MFurnish
 	 * @generated
 	 */
 	@Override
+	public SingleGenericMassType getMMiscellaneous() {
+		return mMiscellaneous;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetMMiscellaneous(SingleGenericMassType newMMiscellaneous, NotificationChain msgs) {
+		SingleGenericMassType oldMMiscellaneous = mMiscellaneous;
+		mMiscellaneous = newMMiscellaneous;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MFURNISHING_TYPE__MMISCELLANEOUS, oldMMiscellaneous, newMMiscellaneous);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMMiscellaneous(SingleGenericMassType newMMiscellaneous) {
+		if (newMMiscellaneous != mMiscellaneous) {
+			NotificationChain msgs = null;
+			if (mMiscellaneous != null)
+				msgs = ((InternalEObject) mMiscellaneous).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MFURNISHING_TYPE__MMISCELLANEOUS, null, msgs);
+			if (newMMiscellaneous != null)
+				msgs = ((InternalEObject) newMMiscellaneous).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MFURNISHING_TYPE__MMISCELLANEOUS, null, msgs);
+			msgs = basicSetMMiscellaneous(newMMiscellaneous, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MFURNISHING_TYPE__MMISCELLANEOUS,
+					newMMiscellaneous, newMMiscellaneous));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case CpacsPackage.MFURNISHING_TYPE__MASS_DESCRIPTION:
@@ -1183,6 +1247,8 @@ public class MFurnishingTypeImpl extends ComplexBaseTypeImpl implements MFurnish
 			return basicSetMFreshWaterSystems(null, msgs);
 		case CpacsPackage.MFURNISHING_TYPE__MVACUUM_WASTE_SYSTEMS:
 			return basicSetMVacuumWasteSystems(null, msgs);
+		case CpacsPackage.MFURNISHING_TYPE__MMISCELLANEOUS:
+			return basicSetMMiscellaneous(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -1229,6 +1295,8 @@ public class MFurnishingTypeImpl extends ComplexBaseTypeImpl implements MFurnish
 			return getMFreshWaterSystems();
 		case CpacsPackage.MFURNISHING_TYPE__MVACUUM_WASTE_SYSTEMS:
 			return getMVacuumWasteSystems();
+		case CpacsPackage.MFURNISHING_TYPE__MMISCELLANEOUS:
+			return getMMiscellaneous();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -1291,6 +1359,9 @@ public class MFurnishingTypeImpl extends ComplexBaseTypeImpl implements MFurnish
 			return;
 		case CpacsPackage.MFURNISHING_TYPE__MVACUUM_WASTE_SYSTEMS:
 			setMVacuumWasteSystems((MVacuumWasteSystemsType) newValue);
+			return;
+		case CpacsPackage.MFURNISHING_TYPE__MMISCELLANEOUS:
+			setMMiscellaneous((SingleGenericMassType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -1355,6 +1426,9 @@ public class MFurnishingTypeImpl extends ComplexBaseTypeImpl implements MFurnish
 		case CpacsPackage.MFURNISHING_TYPE__MVACUUM_WASTE_SYSTEMS:
 			setMVacuumWasteSystems((MVacuumWasteSystemsType) null);
 			return;
+		case CpacsPackage.MFURNISHING_TYPE__MMISCELLANEOUS:
+			setMMiscellaneous((SingleGenericMassType) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -1401,6 +1475,8 @@ public class MFurnishingTypeImpl extends ComplexBaseTypeImpl implements MFurnish
 			return mFreshWaterSystems != null;
 		case CpacsPackage.MFURNISHING_TYPE__MVACUUM_WASTE_SYSTEMS:
 			return mVacuumWasteSystems != null;
+		case CpacsPackage.MFURNISHING_TYPE__MMISCELLANEOUS:
+			return mMiscellaneous != null;
 		}
 		return super.eIsSet(featureID);
 	}

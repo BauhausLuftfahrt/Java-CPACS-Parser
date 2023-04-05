@@ -13,7 +13,7 @@ package Cpacs;
  * <ul>
  *   <li>{@link Cpacs.AeroPerformanceBoundaryConditionsType#getAtmosphericModel <em>Atmospheric Model</em>}</li>
  *   <li>{@link Cpacs.AeroPerformanceBoundaryConditionsType#getDeltaTemperature <em>Delta Temperature</em>}</li>
- *   <li>{@link Cpacs.AeroPerformanceBoundaryConditionsType#getControlElements <em>Control Elements</em>}</li>
+ *   <li>{@link Cpacs.AeroPerformanceBoundaryConditionsType#getConfiguration <em>Configuration</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getAeroPerformanceBoundaryConditionsType()
@@ -25,10 +25,6 @@ public interface AeroPerformanceBoundaryConditionsType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Atmospheric Model</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Atmospheric Model. Available options: ISA. See documentation of  <CPACS> root element for further details.
-	 *                             
-	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Atmospheric Model</em>' containment reference.
 	 * @see #setAtmosphericModel(AtmosphericModelType1)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceBoundaryConditionsType_AtmosphericModel()
@@ -81,26 +77,31 @@ public interface AeroPerformanceBoundaryConditionsType extends ComplexBaseType {
 	void setDeltaTemperature(DoubleBaseType value);
 
 	/**
-	 * Returns the value of the '<em><b>Control Elements</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Configuration</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Control Elements</em>' containment reference.
-	 * @see #setControlElements(AeroPerformanceControlElementsType)
-	 * @see Cpacs.CpacsPackage#getAeroPerformanceBoundaryConditionsType_ControlElements()
+	 * <!-- begin-model-doc -->
+	 * 
+	 *                                 Configuration settings
+	 *                             
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Configuration</em>' containment reference.
+	 * @see #setConfiguration(ConfigurationType)
+	 * @see Cpacs.CpacsPackage#getAeroPerformanceBoundaryConditionsType_Configuration()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='controlElements' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='configuration' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	AeroPerformanceControlElementsType getControlElements();
+	ConfigurationType getConfiguration();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.AeroPerformanceBoundaryConditionsType#getControlElements <em>Control Elements</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.AeroPerformanceBoundaryConditionsType#getConfiguration <em>Configuration</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Control Elements</em>' containment reference.
-	 * @see #getControlElements()
+	 * @param value the new value of the '<em>Configuration</em>' containment reference.
+	 * @see #getConfiguration()
 	 * @generated
 	 */
-	void setControlElements(AeroPerformanceControlElementsType value);
+	void setConfiguration(ConfigurationType value);
 
 } // AeroPerformanceBoundaryConditionsType

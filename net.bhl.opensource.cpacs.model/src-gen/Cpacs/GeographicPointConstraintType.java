@@ -25,17 +25,14 @@ public interface GeographicPointConstraintType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Longitude</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Longitude coordinate 0-360
-	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Longitude</em>' containment reference.
-	 * @see #setLongitude(DoubleConstraintBaseType)
+	 * @see #setLongitude(LongitudeType)
 	 * @see Cpacs.CpacsPackage#getGeographicPointConstraintType_Longitude()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='longitude' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleConstraintBaseType getLongitude();
+	LongitudeType getLongitude();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.GeographicPointConstraintType#getLongitude <em>Longitude</em>}' containment reference.
@@ -45,23 +42,20 @@ public interface GeographicPointConstraintType extends ComplexBaseType {
 	 * @see #getLongitude()
 	 * @generated
 	 */
-	void setLongitude(DoubleConstraintBaseType value);
+	void setLongitude(LongitudeType value);
 
 	/**
 	 * Returns the value of the '<em><b>Latitude</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Latitude coordinate 0-360
-	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Latitude</em>' containment reference.
-	 * @see #setLatitude(DoubleConstraintBaseType)
+	 * @see #setLatitude(LatitudeType)
 	 * @see Cpacs.CpacsPackage#getGeographicPointConstraintType_Latitude()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='latitude' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleConstraintBaseType getLatitude();
+	LatitudeType getLatitude();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.GeographicPointConstraintType#getLatitude <em>Latitude</em>}' containment reference.
@@ -71,23 +65,20 @@ public interface GeographicPointConstraintType extends ComplexBaseType {
 	 * @see #getLatitude()
 	 * @generated
 	 */
-	void setLatitude(DoubleConstraintBaseType value);
+	void setLatitude(LatitudeType value);
 
 	/**
 	 * Returns the value of the '<em><b>Altitude</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Altitude in meters
-	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Altitude</em>' containment reference.
-	 * @see #setAltitude(DoubleConstraintBaseType)
+	 * @see #setAltitude(AltitudeType)
 	 * @see Cpacs.CpacsPackage#getGeographicPointConstraintType_Altitude()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='altitude' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleConstraintBaseType getAltitude();
+	AltitudeType getAltitude();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.GeographicPointConstraintType#getAltitude <em>Altitude</em>}' containment reference.
@@ -97,6 +88,6 @@ public interface GeographicPointConstraintType extends ComplexBaseType {
 	 * @see #getAltitude()
 	 * @generated
 	 */
-	void setAltitude(DoubleConstraintBaseType value);
+	void setAltitude(AltitudeType value);
 
 } // GeographicPointConstraintType

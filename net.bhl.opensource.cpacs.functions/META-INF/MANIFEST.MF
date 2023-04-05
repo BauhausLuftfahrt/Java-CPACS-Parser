@@ -9,6 +9,7 @@ Require-Bundle: org.eclipse.emf.ecore,
  net.bhl.opensource.cpacs.model,
  net.bhl.opensource.cpacs.model.extensions
 Export-Package: net.bhl.opensource.cpacs.functions
-Import-Package: org.apache.commons.io
+Import-Package: Cpacs,
+ org.apache.commons.io
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Vendor: Bauhaus Luftfahrt e.V.

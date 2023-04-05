@@ -3,7 +3,7 @@
 package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
-import Cpacs.NoseGearType;
+import Cpacs.LandingGearBaseType;
 import Cpacs.NoseGearsType;
 
 import java.util.Collection;
@@ -40,7 +40,7 @@ public class NoseGearsTypeImpl extends ComplexBaseTypeImpl implements NoseGearsT
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<NoseGearType> noseGear;
+	protected EList<LandingGearBaseType> noseGear;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,9 +67,9 @@ public class NoseGearsTypeImpl extends ComplexBaseTypeImpl implements NoseGearsT
 	 * @generated
 	 */
 	@Override
-	public EList<NoseGearType> getNoseGear() {
+	public EList<LandingGearBaseType> getNoseGear() {
 		if (noseGear == null) {
-			noseGear = new EObjectContainmentEList<NoseGearType>(NoseGearType.class, this,
+			noseGear = new EObjectContainmentEList<LandingGearBaseType>(LandingGearBaseType.class, this,
 					CpacsPackage.NOSE_GEARS_TYPE__NOSE_GEAR);
 		}
 		return noseGear;
@@ -114,7 +114,7 @@ public class NoseGearsTypeImpl extends ComplexBaseTypeImpl implements NoseGearsT
 		switch (featureID) {
 		case CpacsPackage.NOSE_GEARS_TYPE__NOSE_GEAR:
 			getNoseGear().clear();
-			getNoseGear().addAll((Collection<? extends NoseGearType>) newValue);
+			getNoseGear().addAll((Collection<? extends LandingGearBaseType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

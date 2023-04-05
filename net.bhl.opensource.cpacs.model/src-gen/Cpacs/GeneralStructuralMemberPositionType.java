@@ -295,13 +295,13 @@ public interface GeneralStructuralMemberPositionType extends ComplexBaseType {
 	 *                                 continuity)
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Continuity</em>' containment reference.
-	 * @see #setContinuity(ContinuityType1)
+	 * @see #setContinuity(ContinuityType2)
 	 * @see Cpacs.CpacsPackage#getGeneralStructuralMemberPositionType_Continuity()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='continuity' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	ContinuityType1 getContinuity();
+	ContinuityType2 getContinuity();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.GeneralStructuralMemberPositionType#getContinuity <em>Continuity</em>}' containment reference.
@@ -311,7 +311,7 @@ public interface GeneralStructuralMemberPositionType extends ComplexBaseType {
 	 * @see #getContinuity()
 	 * @generated
 	 */
-	void setContinuity(ContinuityType1 value);
+	void setContinuity(ContinuityType2 value);
 
 	/**
 	 * Returns the value of the '<em><b>Interpolation</b></em>' containment reference.
@@ -319,17 +319,17 @@ public interface GeneralStructuralMemberPositionType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Definition of interpolation between different
-	 *                                 profiles: 0= no interpolation 1= interpolation of strcutural
+	 *                                 profiles: 0= no interpolation 1= interpolation of structural
 	 *                                 profile
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Interpolation</em>' containment reference.
-	 * @see #setInterpolation(InterpolationType)
+	 * @see #setInterpolation(InterpolationType1)
 	 * @see Cpacs.CpacsPackage#getGeneralStructuralMemberPositionType_Interpolation()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='interpolation' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	InterpolationType getInterpolation();
+	InterpolationType1 getInterpolation();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.GeneralStructuralMemberPositionType#getInterpolation <em>Interpolation</em>}' containment reference.
@@ -339,7 +339,7 @@ public interface GeneralStructuralMemberPositionType extends ComplexBaseType {
 	 * @see #getInterpolation()
 	 * @generated
 	 */
-	void setInterpolation(InterpolationType value);
+	void setInterpolation(InterpolationType1 value);
 
 	/**
 	 * Returns the value of the '<em><b>UID</b></em>' attribute.

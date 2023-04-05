@@ -23,7 +23,7 @@ import org.eclipse.emf.common.util.EList;
 public interface MainGearsType extends ComplexBaseType {
 	/**
 	 * Returns the value of the '<em><b>Main Gear</b></em>' containment reference list.
-	 * The list contents are of type {@link Cpacs.MainGearType}.
+	 * The list contents are of type {@link Cpacs.LandingGearBaseType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Main Gear</em>' containment reference list.
@@ -32,6 +32,6 @@ public interface MainGearsType extends ComplexBaseType {
 	 *        extendedMetaData="kind='element' name='mainGear' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<MainGearType> getMainGear();
+	EList<LandingGearBaseType> getMainGear();
 
 } // MainGearsType

@@ -4,7 +4,7 @@ package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
 import Cpacs.DoubleConstraintBaseType;
-import Cpacs.RelationalOperatorType;
+import Cpacs.RelationalOperatorType2;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -34,7 +34,7 @@ public class DoubleConstraintBaseTypeImpl extends DoubleBaseTypeImpl implements 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final RelationalOperatorType RELATIONAL_OPERATOR_EDEFAULT = RelationalOperatorType.LT;
+	protected static final RelationalOperatorType2 RELATIONAL_OPERATOR_EDEFAULT = RelationalOperatorType2.LT;
 
 	/**
 	 * The cached value of the '{@link #getRelationalOperator() <em>Relational Operator</em>}' attribute.
@@ -44,7 +44,7 @@ public class DoubleConstraintBaseTypeImpl extends DoubleBaseTypeImpl implements 
 	 * @generated
 	 * @ordered
 	 */
-	protected RelationalOperatorType relationalOperator = RELATIONAL_OPERATOR_EDEFAULT;
+	protected RelationalOperatorType2 relationalOperator = RELATIONAL_OPERATOR_EDEFAULT;
 
 	/**
 	 * This is true if the Relational Operator attribute has been set.
@@ -80,7 +80,7 @@ public class DoubleConstraintBaseTypeImpl extends DoubleBaseTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public RelationalOperatorType getRelationalOperator() {
+	public RelationalOperatorType2 getRelationalOperator() {
 		return relationalOperator;
 	}
 
@@ -90,8 +90,8 @@ public class DoubleConstraintBaseTypeImpl extends DoubleBaseTypeImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setRelationalOperator(RelationalOperatorType newRelationalOperator) {
-		RelationalOperatorType oldRelationalOperator = relationalOperator;
+	public void setRelationalOperator(RelationalOperatorType2 newRelationalOperator) {
+		RelationalOperatorType2 oldRelationalOperator = relationalOperator;
 		relationalOperator = newRelationalOperator == null ? RELATIONAL_OPERATOR_EDEFAULT : newRelationalOperator;
 		boolean oldRelationalOperatorESet = relationalOperatorESet;
 		relationalOperatorESet = true;
@@ -108,7 +108,7 @@ public class DoubleConstraintBaseTypeImpl extends DoubleBaseTypeImpl implements 
 	 */
 	@Override
 	public void unsetRelationalOperator() {
-		RelationalOperatorType oldRelationalOperator = relationalOperator;
+		RelationalOperatorType2 oldRelationalOperator = relationalOperator;
 		boolean oldRelationalOperatorESet = relationalOperatorESet;
 		relationalOperator = RELATIONAL_OPERATOR_EDEFAULT;
 		relationalOperatorESet = false;
@@ -151,7 +151,7 @@ public class DoubleConstraintBaseTypeImpl extends DoubleBaseTypeImpl implements 
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case CpacsPackage.DOUBLE_CONSTRAINT_BASE_TYPE__RELATIONAL_OPERATOR:
-			setRelationalOperator((RelationalOperatorType) newValue);
+			setRelationalOperator((RelationalOperatorType2) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

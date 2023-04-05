@@ -24,7 +24,7 @@ public interface MMillitarySystemsType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Millitary systems mass description
+	 * Military systems mass description
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Mass Description</em>' containment reference.

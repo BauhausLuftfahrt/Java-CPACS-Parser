@@ -14,7 +14,9 @@ import Cpacs.MFuselageStructureType;
 import Cpacs.MSkinPanelsType;
 import Cpacs.MSpecialStructuresType;
 import Cpacs.MStringersType;
+import Cpacs.MWallsType;
 import Cpacs.MWindowsType;
+import Cpacs.SingleGenericMassType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -35,6 +37,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.MFuselageStructureTypeImpl#getMassDescription <em>Mass Description</em>}</li>
  *   <li>{@link Cpacs.impl.MFuselageStructureTypeImpl#getMSkinPanels <em>MSkin Panels</em>}</li>
  *   <li>{@link Cpacs.impl.MFuselageStructureTypeImpl#getMBulkheads <em>MBulkheads</em>}</li>
+ *   <li>{@link Cpacs.impl.MFuselageStructureTypeImpl#getMWalls <em>MWalls</em>}</li>
  *   <li>{@link Cpacs.impl.MFuselageStructureTypeImpl#getMDoors <em>MDoors</em>}</li>
  *   <li>{@link Cpacs.impl.MFuselageStructureTypeImpl#getMWindows <em>MWindows</em>}</li>
  *   <li>{@link Cpacs.impl.MFuselageStructureTypeImpl#getMCabinFloors <em>MCabin Floors</em>}</li>
@@ -43,6 +46,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.MFuselageStructureTypeImpl#getMBellyFairings <em>MBelly Fairings</em>}</li>
  *   <li>{@link Cpacs.impl.MFuselageStructureTypeImpl#getMStringers <em>MStringers</em>}</li>
  *   <li>{@link Cpacs.impl.MFuselageStructureTypeImpl#getMFrames <em>MFrames</em>}</li>
+ *   <li>{@link Cpacs.impl.MFuselageStructureTypeImpl#getMMiscellaneous <em>MMiscellaneous</em>}</li>
  * </ul>
  *
  * @generated
@@ -77,6 +81,16 @@ public class MFuselageStructureTypeImpl extends ComplexBaseTypeImpl implements M
 	 * @ordered
 	 */
 	protected MBulkheadsType mBulkheads;
+
+	/**
+	 * The cached value of the '{@link #getMWalls() <em>MWalls</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMWalls()
+	 * @generated
+	 * @ordered
+	 */
+	protected MWallsType mWalls;
 
 	/**
 	 * The cached value of the '{@link #getMDoors() <em>MDoors</em>}' containment reference.
@@ -157,6 +171,16 @@ public class MFuselageStructureTypeImpl extends ComplexBaseTypeImpl implements M
 	 * @ordered
 	 */
 	protected MFramesType mFrames;
+
+	/**
+	 * The cached value of the '{@link #getMMiscellaneous() <em>MMiscellaneous</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMMiscellaneous()
+	 * @generated
+	 * @ordered
+	 */
+	protected SingleGenericMassType mMiscellaneous;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -331,6 +355,58 @@ public class MFuselageStructureTypeImpl extends ComplexBaseTypeImpl implements M
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MBULKHEADS,
 					newMBulkheads, newMBulkheads));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MWallsType getMWalls() {
+		return mWalls;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetMWalls(MWallsType newMWalls, NotificationChain msgs) {
+		MWallsType oldMWalls = mWalls;
+		mWalls = newMWalls;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MWALLS, oldMWalls, newMWalls);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMWalls(MWallsType newMWalls) {
+		if (newMWalls != mWalls) {
+			NotificationChain msgs = null;
+			if (mWalls != null)
+				msgs = ((InternalEObject) mWalls).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MWALLS, null, msgs);
+			if (newMWalls != null)
+				msgs = ((InternalEObject) newMWalls).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MWALLS, null, msgs);
+			msgs = basicSetMWalls(newMWalls, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MWALLS,
+					newMWalls, newMWalls));
 	}
 
 	/**
@@ -760,6 +836,58 @@ public class MFuselageStructureTypeImpl extends ComplexBaseTypeImpl implements M
 	 * @generated
 	 */
 	@Override
+	public SingleGenericMassType getMMiscellaneous() {
+		return mMiscellaneous;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetMMiscellaneous(SingleGenericMassType newMMiscellaneous, NotificationChain msgs) {
+		SingleGenericMassType oldMMiscellaneous = mMiscellaneous;
+		mMiscellaneous = newMMiscellaneous;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MMISCELLANEOUS, oldMMiscellaneous, newMMiscellaneous);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMMiscellaneous(SingleGenericMassType newMMiscellaneous) {
+		if (newMMiscellaneous != mMiscellaneous) {
+			NotificationChain msgs = null;
+			if (mMiscellaneous != null)
+				msgs = ((InternalEObject) mMiscellaneous).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MMISCELLANEOUS, null, msgs);
+			if (newMMiscellaneous != null)
+				msgs = ((InternalEObject) newMMiscellaneous).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MMISCELLANEOUS, null, msgs);
+			msgs = basicSetMMiscellaneous(newMMiscellaneous, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MMISCELLANEOUS,
+					newMMiscellaneous, newMMiscellaneous));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MASS_DESCRIPTION:
@@ -768,6 +896,8 @@ public class MFuselageStructureTypeImpl extends ComplexBaseTypeImpl implements M
 			return basicSetMSkinPanels(null, msgs);
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MBULKHEADS:
 			return basicSetMBulkheads(null, msgs);
+		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MWALLS:
+			return basicSetMWalls(null, msgs);
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MDOORS:
 			return basicSetMDoors(null, msgs);
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MWINDOWS:
@@ -784,6 +914,8 @@ public class MFuselageStructureTypeImpl extends ComplexBaseTypeImpl implements M
 			return basicSetMStringers(null, msgs);
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MFRAMES:
 			return basicSetMFrames(null, msgs);
+		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MMISCELLANEOUS:
+			return basicSetMMiscellaneous(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -802,6 +934,8 @@ public class MFuselageStructureTypeImpl extends ComplexBaseTypeImpl implements M
 			return getMSkinPanels();
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MBULKHEADS:
 			return getMBulkheads();
+		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MWALLS:
+			return getMWalls();
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MDOORS:
 			return getMDoors();
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MWINDOWS:
@@ -818,6 +952,8 @@ public class MFuselageStructureTypeImpl extends ComplexBaseTypeImpl implements M
 			return getMStringers();
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MFRAMES:
 			return getMFrames();
+		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MMISCELLANEOUS:
+			return getMMiscellaneous();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -838,6 +974,9 @@ public class MFuselageStructureTypeImpl extends ComplexBaseTypeImpl implements M
 			return;
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MBULKHEADS:
 			setMBulkheads((MBulkheadsType) newValue);
+			return;
+		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MWALLS:
+			setMWalls((MWallsType) newValue);
 			return;
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MDOORS:
 			setMDoors((MDoorsType) newValue);
@@ -863,6 +1002,9 @@ public class MFuselageStructureTypeImpl extends ComplexBaseTypeImpl implements M
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MFRAMES:
 			setMFrames((MFramesType) newValue);
 			return;
+		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MMISCELLANEOUS:
+			setMMiscellaneous((SingleGenericMassType) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -883,6 +1025,9 @@ public class MFuselageStructureTypeImpl extends ComplexBaseTypeImpl implements M
 			return;
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MBULKHEADS:
 			setMBulkheads((MBulkheadsType) null);
+			return;
+		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MWALLS:
+			setMWalls((MWallsType) null);
 			return;
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MDOORS:
 			setMDoors((MDoorsType) null);
@@ -908,6 +1053,9 @@ public class MFuselageStructureTypeImpl extends ComplexBaseTypeImpl implements M
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MFRAMES:
 			setMFrames((MFramesType) null);
 			return;
+		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MMISCELLANEOUS:
+			setMMiscellaneous((SingleGenericMassType) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -926,6 +1074,8 @@ public class MFuselageStructureTypeImpl extends ComplexBaseTypeImpl implements M
 			return mSkinPanels != null;
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MBULKHEADS:
 			return mBulkheads != null;
+		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MWALLS:
+			return mWalls != null;
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MDOORS:
 			return mDoors != null;
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MWINDOWS:
@@ -942,6 +1092,8 @@ public class MFuselageStructureTypeImpl extends ComplexBaseTypeImpl implements M
 			return mStringers != null;
 		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MFRAMES:
 			return mFrames != null;
+		case CpacsPackage.MFUSELAGE_STRUCTURE_TYPE__MMISCELLANEOUS:
+			return mMiscellaneous != null;
 		}
 		return super.eIsSet(featureID);
 	}

@@ -14,7 +14,7 @@ package Cpacs;
  *   <li>{@link Cpacs.MissionType#getName <em>Name</em>}</li>
  *   <li>{@link Cpacs.MissionType#getDescription <em>Description</em>}</li>
  *   <li>{@link Cpacs.MissionType#getStartCondition <em>Start Condition</em>}</li>
- *   <li>{@link Cpacs.MissionType#getSegmentUIDSequence <em>Segment UID Sequence</em>}</li>
+ *   <li>{@link Cpacs.MissionType#getSegmentBlockUIDs <em>Segment Block UI Ds</em>}</li>
  *   <li>{@link Cpacs.MissionType#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -27,6 +27,9 @@ public interface MissionType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Name
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(StringBaseType)
 	 * @see Cpacs.CpacsPackage#getMissionType_Name()
@@ -50,6 +53,9 @@ public interface MissionType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Description
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(StringBaseType)
 	 * @see Cpacs.CpacsPackage#getMissionType_Description()
@@ -93,27 +99,32 @@ public interface MissionType extends ComplexBaseType {
 	void setStartCondition(MissionStartConditionType value);
 
 	/**
-	 * Returns the value of the '<em><b>Segment UID Sequence</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Segment Block UI Ds</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Segment UID Sequence</em>' containment reference.
-	 * @see #setSegmentUIDSequence(StringVectorBaseType)
-	 * @see Cpacs.CpacsPackage#getMissionType_SegmentUIDSequence()
+	 * <!-- begin-model-doc -->
+	 * 
+	 *                                 List of segmentBlock uID's forming the mission. Segments must first be grouped in segmentBlocks to be assigned to a mission.
+	 *                             
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Segment Block UI Ds</em>' containment reference.
+	 * @see #setSegmentBlockUIDs(UIDSequenceType)
+	 * @see Cpacs.CpacsPackage#getMissionType_SegmentBlockUIDs()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='segmentUIDSequence' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='segmentBlockUIDs' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getSegmentUIDSequence();
+	UIDSequenceType getSegmentBlockUIDs();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.MissionType#getSegmentUIDSequence <em>Segment UID Sequence</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.MissionType#getSegmentBlockUIDs <em>Segment Block UI Ds</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Segment UID Sequence</em>' containment reference.
-	 * @see #getSegmentUIDSequence()
+	 * @param value the new value of the '<em>Segment Block UI Ds</em>' containment reference.
+	 * @see #getSegmentBlockUIDs()
 	 * @generated
 	 */
-	void setSegmentUIDSequence(StringVectorBaseType value);
+	void setSegmentBlockUIDs(UIDSequenceType value);
 
 	/**
 	 * Returns the value of the '<em><b>UID</b></em>' attribute.

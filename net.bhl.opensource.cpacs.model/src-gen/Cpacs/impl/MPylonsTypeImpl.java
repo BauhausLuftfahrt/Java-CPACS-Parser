@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link Cpacs.impl.MPylonsTypeImpl#getMassDescription <em>Mass Description</em>}</li>
- *   <li>{@link Cpacs.impl.MPylonsTypeImpl#getMPylons <em>MPylons</em>}</li>
+ *   <li>{@link Cpacs.impl.MPylonsTypeImpl#getMPylon <em>MPylon</em>}</li>
  * </ul>
  *
  * @generated
@@ -48,14 +48,14 @@ public class MPylonsTypeImpl extends ComplexBaseTypeImpl implements MPylonsType 
 	protected GenericMassType massDescription;
 
 	/**
-	 * The cached value of the '{@link #getMPylons() <em>MPylons</em>}' containment reference list.
+	 * The cached value of the '{@link #getMPylon() <em>MPylon</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMPylons()
+	 * @see #getMPylon()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<SingleGenericMassType> mPylons;
+	protected EList<SingleGenericMassType> mPylon;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -134,12 +134,12 @@ public class MPylonsTypeImpl extends ComplexBaseTypeImpl implements MPylonsType 
 	 * @generated
 	 */
 	@Override
-	public EList<SingleGenericMassType> getMPylons() {
-		if (mPylons == null) {
-			mPylons = new EObjectContainmentEList<SingleGenericMassType>(SingleGenericMassType.class, this,
-					CpacsPackage.MPYLONS_TYPE__MPYLONS);
+	public EList<SingleGenericMassType> getMPylon() {
+		if (mPylon == null) {
+			mPylon = new EObjectContainmentEList<SingleGenericMassType>(SingleGenericMassType.class, this,
+					CpacsPackage.MPYLONS_TYPE__MPYLON);
 		}
-		return mPylons;
+		return mPylon;
 	}
 
 	/**
@@ -152,8 +152,8 @@ public class MPylonsTypeImpl extends ComplexBaseTypeImpl implements MPylonsType 
 		switch (featureID) {
 		case CpacsPackage.MPYLONS_TYPE__MASS_DESCRIPTION:
 			return basicSetMassDescription(null, msgs);
-		case CpacsPackage.MPYLONS_TYPE__MPYLONS:
-			return ((InternalEList<?>) getMPylons()).basicRemove(otherEnd, msgs);
+		case CpacsPackage.MPYLONS_TYPE__MPYLON:
+			return ((InternalEList<?>) getMPylon()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -168,8 +168,8 @@ public class MPylonsTypeImpl extends ComplexBaseTypeImpl implements MPylonsType 
 		switch (featureID) {
 		case CpacsPackage.MPYLONS_TYPE__MASS_DESCRIPTION:
 			return getMassDescription();
-		case CpacsPackage.MPYLONS_TYPE__MPYLONS:
-			return getMPylons();
+		case CpacsPackage.MPYLONS_TYPE__MPYLON:
+			return getMPylon();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -186,9 +186,9 @@ public class MPylonsTypeImpl extends ComplexBaseTypeImpl implements MPylonsType 
 		case CpacsPackage.MPYLONS_TYPE__MASS_DESCRIPTION:
 			setMassDescription((GenericMassType) newValue);
 			return;
-		case CpacsPackage.MPYLONS_TYPE__MPYLONS:
-			getMPylons().clear();
-			getMPylons().addAll((Collection<? extends SingleGenericMassType>) newValue);
+		case CpacsPackage.MPYLONS_TYPE__MPYLON:
+			getMPylon().clear();
+			getMPylon().addAll((Collection<? extends SingleGenericMassType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -205,8 +205,8 @@ public class MPylonsTypeImpl extends ComplexBaseTypeImpl implements MPylonsType 
 		case CpacsPackage.MPYLONS_TYPE__MASS_DESCRIPTION:
 			setMassDescription((GenericMassType) null);
 			return;
-		case CpacsPackage.MPYLONS_TYPE__MPYLONS:
-			getMPylons().clear();
+		case CpacsPackage.MPYLONS_TYPE__MPYLON:
+			getMPylon().clear();
 			return;
 		}
 		super.eUnset(featureID);
@@ -222,8 +222,8 @@ public class MPylonsTypeImpl extends ComplexBaseTypeImpl implements MPylonsType 
 		switch (featureID) {
 		case CpacsPackage.MPYLONS_TYPE__MASS_DESCRIPTION:
 			return massDescription != null;
-		case CpacsPackage.MPYLONS_TYPE__MPYLONS:
-			return mPylons != null && !mPylons.isEmpty();
+		case CpacsPackage.MPYLONS_TYPE__MPYLON:
+			return mPylon != null && !mPylon.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

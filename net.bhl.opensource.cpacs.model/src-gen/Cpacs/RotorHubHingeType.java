@@ -104,7 +104,7 @@ public interface RotorHubHingeType extends ComplexBaseType {
 
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link Cpacs.TypeType4}.
+	 * The literals are from the enumeration {@link Cpacs.TypeType1}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -114,29 +114,29 @@ public interface RotorHubHingeType extends ComplexBaseType {
 	 *                                 = z-axis in blade cs).
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Type</em>' attribute.
-	 * @see Cpacs.TypeType4
+	 * @see Cpacs.TypeType1
 	 * @see #isSetType()
 	 * @see #unsetType()
-	 * @see #setType(TypeType4)
+	 * @see #setType(TypeType1)
 	 * @see Cpacs.CpacsPackage#getRotorHubHingeType_Type()
 	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='type' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	TypeType4 getType();
+	TypeType1 getType();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.RotorHubHingeType#getType <em>Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type</em>' attribute.
-	 * @see Cpacs.TypeType4
+	 * @see Cpacs.TypeType1
 	 * @see #isSetType()
 	 * @see #unsetType()
 	 * @see #getType()
 	 * @generated
 	 */
-	void setType(TypeType4 value);
+	void setType(TypeType1 value);
 
 	/**
 	 * Unsets the value of the '{@link Cpacs.RotorHubHingeType#getType <em>Type</em>}' attribute.
@@ -144,7 +144,7 @@ public interface RotorHubHingeType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * @see #isSetType()
 	 * @see #getType()
-	 * @see #setType(TypeType4)
+	 * @see #setType(TypeType1)
 	 * @generated
 	 */
 	void unsetType();
@@ -156,7 +156,7 @@ public interface RotorHubHingeType extends ComplexBaseType {
 	 * @return whether the value of the '<em>Type</em>' attribute is set.
 	 * @see #unsetType()
 	 * @see #getType()
-	 * @see #setType(TypeType4)
+	 * @see #setType(TypeType1)
 	 * @generated
 	 */
 	boolean isSetType();

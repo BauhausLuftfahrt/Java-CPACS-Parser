@@ -27,7 +27,7 @@ public interface ZCouplingsType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Definiton of one z-coupling.
+	 * Definition of one z-coupling.
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>ZCoupling</em>' containment reference list.

@@ -29,13 +29,13 @@ public interface LinerType extends ComplexBaseType {
 	 * Type of liner
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Type</em>' containment reference.
-	 * @see #setType(TypeType1)
+	 * @see #setType(TypeType)
 	 * @see Cpacs.CpacsPackage#getLinerType_Type()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='type' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	TypeType1 getType();
+	TypeType getType();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.LinerType#getType <em>Type</em>}' containment reference.
@@ -45,7 +45,7 @@ public interface LinerType extends ComplexBaseType {
 	 * @see #getType()
 	 * @generated
 	 */
-	void setType(TypeType1 value);
+	void setType(TypeType value);
 
 	/**
 	 * Returns the value of the '<em><b>Intake Length</b></em>' containment reference.

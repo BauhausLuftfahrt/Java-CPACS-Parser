@@ -12,5 +12,5 @@ package Cpacs;
  * @model extendedMetaData="name='prioritySetting_._type' kind='simple'"
  * @generated
  */
-public interface PrioritySettingType extends StringBaseType {
+public interface PrioritySettingType extends StringVectorBaseType {
 } // PrioritySettingType

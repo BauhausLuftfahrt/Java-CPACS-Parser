@@ -29,7 +29,7 @@ public interface ZCouplingType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Reference to the control surface that is
-	 *                                 connected to this controll surface by the z-coupling..
+	 *                                 connected to this control surface by the z-coupling..
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>To Control Surface UID</em>' containment reference.

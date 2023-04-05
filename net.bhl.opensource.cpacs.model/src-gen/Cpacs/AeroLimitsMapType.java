@@ -13,6 +13,7 @@ package Cpacs;
  * <ul>
  *   <li>{@link Cpacs.AeroLimitsMapType#getAltitude <em>Altitude</em>}</li>
  *   <li>{@link Cpacs.AeroLimitsMapType#getMachNumber <em>Mach Number</em>}</li>
+ *   <li>{@link Cpacs.AeroLimitsMapType#getAngleOfSideslip <em>Angle Of Sideslip</em>}</li>
  *   <li>{@link Cpacs.AeroLimitsMapType#getOperationLimit <em>Operation Limit</em>}</li>
  *   <li>{@link Cpacs.AeroLimitsMapType#getIncrementMaps <em>Increment Maps</em>}</li>
  * </ul>
@@ -32,13 +33,13 @@ public interface AeroLimitsMapType extends ComplexBaseType {
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Altitude</em>' containment reference.
-	 * @see #setAltitude(StringVectorBaseType)
+	 * @see #setAltitude(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroLimitsMapType_Altitude()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='altitude' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getAltitude();
+	DoubleVectorBaseType getAltitude();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroLimitsMapType#getAltitude <em>Altitude</em>}' containment reference.
@@ -48,7 +49,7 @@ public interface AeroLimitsMapType extends ComplexBaseType {
 	 * @see #getAltitude()
 	 * @generated
 	 */
-	void setAltitude(StringVectorBaseType value);
+	void setAltitude(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Mach Number</b></em>' containment reference.
@@ -60,13 +61,13 @@ public interface AeroLimitsMapType extends ComplexBaseType {
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Mach Number</em>' containment reference.
-	 * @see #setMachNumber(StringVectorBaseType)
+	 * @see #setMachNumber(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroLimitsMapType_MachNumber()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='machNumber' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getMachNumber();
+	DoubleVectorBaseType getMachNumber();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroLimitsMapType#getMachNumber <em>Mach Number</em>}' containment reference.
@@ -76,7 +77,35 @@ public interface AeroLimitsMapType extends ComplexBaseType {
 	 * @see #getMachNumber()
 	 * @generated
 	 */
-	void setMachNumber(StringVectorBaseType value);
+	void setMachNumber(DoubleVectorBaseType value);
+
+	/**
+	 * Returns the value of the '<em><b>Angle Of Sideslip</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * 
+	 *                                 Angle of sideslip
+	 *                             
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Angle Of Sideslip</em>' containment reference.
+	 * @see #setAngleOfSideslip(DoubleVectorBaseType)
+	 * @see Cpacs.CpacsPackage#getAeroLimitsMapType_AngleOfSideslip()
+	 * @model containment="true" required="true"
+	 *        extendedMetaData="kind='element' name='angleOfSideslip' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	DoubleVectorBaseType getAngleOfSideslip();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.AeroLimitsMapType#getAngleOfSideslip <em>Angle Of Sideslip</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Angle Of Sideslip</em>' containment reference.
+	 * @see #getAngleOfSideslip()
+	 * @generated
+	 */
+	void setAngleOfSideslip(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Operation Limit</b></em>' containment reference.

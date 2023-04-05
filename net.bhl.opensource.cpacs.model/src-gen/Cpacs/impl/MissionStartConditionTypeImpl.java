@@ -4,11 +4,12 @@ package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
 import Cpacs.DoubleBaseType;
+import Cpacs.EnvironmentType;
 import Cpacs.GeographicPointType;
 import Cpacs.MissionStartConditionType;
-import Cpacs.OrientationType;
-import Cpacs.PointType;
-import Cpacs.StringUIDBaseType;
+import Cpacs.MissionStartRunwayType;
+import Cpacs.PointXYZType;
+import Cpacs.TimeBaseType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -26,46 +27,38 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.MissionStartConditionTypeImpl#getRunwayUID <em>Runway UID</em>}</li>
- *   <li>{@link Cpacs.impl.MissionStartConditionTypeImpl#getCAS <em>CAS</em>}</li>
- *   <li>{@link Cpacs.impl.MissionStartConditionTypeImpl#getMach <em>Mach</em>}</li>
+ *   <li>{@link Cpacs.impl.MissionStartConditionTypeImpl#getCalibratedAirSpeed <em>Calibrated Air Speed</em>}</li>
+ *   <li>{@link Cpacs.impl.MissionStartConditionTypeImpl#getMachNumber <em>Mach Number</em>}</li>
  *   <li>{@link Cpacs.impl.MissionStartConditionTypeImpl#getPositionXYZ <em>Position XYZ</em>}</li>
  *   <li>{@link Cpacs.impl.MissionStartConditionTypeImpl#getPositionGeo <em>Position Geo</em>}</li>
- *   <li>{@link Cpacs.impl.MissionStartConditionTypeImpl#getOrientation <em>Orientation</em>}</li>
+ *   <li>{@link Cpacs.impl.MissionStartConditionTypeImpl#getRunway <em>Runway</em>}</li>
+ *   <li>{@link Cpacs.impl.MissionStartConditionTypeImpl#getHeading <em>Heading</em>}</li>
+ *   <li>{@link Cpacs.impl.MissionStartConditionTypeImpl#getStartTimeUTC <em>Start Time UTC</em>}</li>
+ *   <li>{@link Cpacs.impl.MissionStartConditionTypeImpl#getEnvironment <em>Environment</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implements MissionStartConditionType {
 	/**
-	 * The cached value of the '{@link #getRunwayUID() <em>Runway UID</em>}' containment reference.
+	 * The cached value of the '{@link #getCalibratedAirSpeed() <em>Calibrated Air Speed</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRunwayUID()
+	 * @see #getCalibratedAirSpeed()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringUIDBaseType runwayUID;
+	protected DoubleBaseType calibratedAirSpeed;
 
 	/**
-	 * The cached value of the '{@link #getCAS() <em>CAS</em>}' containment reference.
+	 * The cached value of the '{@link #getMachNumber() <em>Mach Number</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCAS()
+	 * @see #getMachNumber()
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleBaseType cAS;
-
-	/**
-	 * The cached value of the '{@link #getMach() <em>Mach</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMach()
-	 * @generated
-	 * @ordered
-	 */
-	protected DoubleBaseType mach;
+	protected DoubleBaseType machNumber;
 
 	/**
 	 * The cached value of the '{@link #getPositionXYZ() <em>Position XYZ</em>}' containment reference.
@@ -75,7 +68,7 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 * @ordered
 	 */
-	protected PointType positionXYZ;
+	protected PointXYZType positionXYZ;
 
 	/**
 	 * The cached value of the '{@link #getPositionGeo() <em>Position Geo</em>}' containment reference.
@@ -88,14 +81,44 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	protected GeographicPointType positionGeo;
 
 	/**
-	 * The cached value of the '{@link #getOrientation() <em>Orientation</em>}' containment reference.
+	 * The cached value of the '{@link #getRunway() <em>Runway</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOrientation()
+	 * @see #getRunway()
 	 * @generated
 	 * @ordered
 	 */
-	protected OrientationType orientation;
+	protected MissionStartRunwayType runway;
+
+	/**
+	 * The cached value of the '{@link #getHeading() <em>Heading</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getHeading()
+	 * @generated
+	 * @ordered
+	 */
+	protected DoubleBaseType heading;
+
+	/**
+	 * The cached value of the '{@link #getStartTimeUTC() <em>Start Time UTC</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStartTimeUTC()
+	 * @generated
+	 * @ordered
+	 */
+	protected TimeBaseType startTimeUTC;
+
+	/**
+	 * The cached value of the '{@link #getEnvironment() <em>Environment</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEnvironment()
+	 * @generated
+	 * @ordered
+	 */
+	protected EnvironmentType environment;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -122,8 +145,8 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public StringUIDBaseType getRunwayUID() {
-		return runwayUID;
+	public DoubleBaseType getCalibratedAirSpeed() {
+		return calibratedAirSpeed;
 	}
 
 	/**
@@ -131,12 +154,13 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRunwayUID(StringUIDBaseType newRunwayUID, NotificationChain msgs) {
-		StringUIDBaseType oldRunwayUID = runwayUID;
-		runwayUID = newRunwayUID;
+	public NotificationChain basicSetCalibratedAirSpeed(DoubleBaseType newCalibratedAirSpeed, NotificationChain msgs) {
+		DoubleBaseType oldCalibratedAirSpeed = calibratedAirSpeed;
+		calibratedAirSpeed = newCalibratedAirSpeed;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY_UID, oldRunwayUID, newRunwayUID);
+					CpacsPackage.MISSION_START_CONDITION_TYPE__CALIBRATED_AIR_SPEED, oldCalibratedAirSpeed,
+					newCalibratedAirSpeed);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -151,21 +175,24 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setRunwayUID(StringUIDBaseType newRunwayUID) {
-		if (newRunwayUID != runwayUID) {
+	public void setCalibratedAirSpeed(DoubleBaseType newCalibratedAirSpeed) {
+		if (newCalibratedAirSpeed != calibratedAirSpeed) {
 			NotificationChain msgs = null;
-			if (runwayUID != null)
-				msgs = ((InternalEObject) runwayUID).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY_UID, null, msgs);
-			if (newRunwayUID != null)
-				msgs = ((InternalEObject) newRunwayUID).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY_UID, null, msgs);
-			msgs = basicSetRunwayUID(newRunwayUID, msgs);
+			if (calibratedAirSpeed != null)
+				msgs = ((InternalEObject) calibratedAirSpeed).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__CALIBRATED_AIR_SPEED, null,
+						msgs);
+			if (newCalibratedAirSpeed != null)
+				msgs = ((InternalEObject) newCalibratedAirSpeed).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__CALIBRATED_AIR_SPEED, null,
+						msgs);
+			msgs = basicSetCalibratedAirSpeed(newCalibratedAirSpeed, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY_UID,
-					newRunwayUID, newRunwayUID));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MISSION_START_CONDITION_TYPE__CALIBRATED_AIR_SPEED, newCalibratedAirSpeed,
+					newCalibratedAirSpeed));
 	}
 
 	/**
@@ -174,8 +201,8 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public DoubleBaseType getCAS() {
-		return cAS;
+	public DoubleBaseType getMachNumber() {
+		return machNumber;
 	}
 
 	/**
@@ -183,12 +210,12 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCAS(DoubleBaseType newCAS, NotificationChain msgs) {
-		DoubleBaseType oldCAS = cAS;
-		cAS = newCAS;
+	public NotificationChain basicSetMachNumber(DoubleBaseType newMachNumber, NotificationChain msgs) {
+		DoubleBaseType oldMachNumber = machNumber;
+		machNumber = newMachNumber;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.MISSION_START_CONDITION_TYPE__CAS, oldCAS, newCAS);
+					CpacsPackage.MISSION_START_CONDITION_TYPE__MACH_NUMBER, oldMachNumber, newMachNumber);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -203,21 +230,21 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setCAS(DoubleBaseType newCAS) {
-		if (newCAS != cAS) {
+	public void setMachNumber(DoubleBaseType newMachNumber) {
+		if (newMachNumber != machNumber) {
 			NotificationChain msgs = null;
-			if (cAS != null)
-				msgs = ((InternalEObject) cAS).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__CAS, null, msgs);
-			if (newCAS != null)
-				msgs = ((InternalEObject) newCAS).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__CAS, null, msgs);
-			msgs = basicSetCAS(newCAS, msgs);
+			if (machNumber != null)
+				msgs = ((InternalEObject) machNumber).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__MACH_NUMBER, null, msgs);
+			if (newMachNumber != null)
+				msgs = ((InternalEObject) newMachNumber).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__MACH_NUMBER, null, msgs);
+			msgs = basicSetMachNumber(newMachNumber, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_START_CONDITION_TYPE__CAS,
-					newCAS, newCAS));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MISSION_START_CONDITION_TYPE__MACH_NUMBER, newMachNumber, newMachNumber));
 	}
 
 	/**
@@ -226,59 +253,7 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public DoubleBaseType getMach() {
-		return mach;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetMach(DoubleBaseType newMach, NotificationChain msgs) {
-		DoubleBaseType oldMach = mach;
-		mach = newMach;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.MISSION_START_CONDITION_TYPE__MACH, oldMach, newMach);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setMach(DoubleBaseType newMach) {
-		if (newMach != mach) {
-			NotificationChain msgs = null;
-			if (mach != null)
-				msgs = ((InternalEObject) mach).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__MACH, null, msgs);
-			if (newMach != null)
-				msgs = ((InternalEObject) newMach).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__MACH, null, msgs);
-			msgs = basicSetMach(newMach, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_START_CONDITION_TYPE__MACH,
-					newMach, newMach));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PointType getPositionXYZ() {
+	public PointXYZType getPositionXYZ() {
 		return positionXYZ;
 	}
 
@@ -287,8 +262,8 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPositionXYZ(PointType newPositionXYZ, NotificationChain msgs) {
-		PointType oldPositionXYZ = positionXYZ;
+	public NotificationChain basicSetPositionXYZ(PointXYZType newPositionXYZ, NotificationChain msgs) {
+		PointXYZType oldPositionXYZ = positionXYZ;
 		positionXYZ = newPositionXYZ;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -307,7 +282,7 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setPositionXYZ(PointType newPositionXYZ) {
+	public void setPositionXYZ(PointXYZType newPositionXYZ) {
 		if (newPositionXYZ != positionXYZ) {
 			NotificationChain msgs = null;
 			if (positionXYZ != null)
@@ -382,8 +357,8 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public OrientationType getOrientation() {
-		return orientation;
+	public MissionStartRunwayType getRunway() {
+		return runway;
 	}
 
 	/**
@@ -391,12 +366,12 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOrientation(OrientationType newOrientation, NotificationChain msgs) {
-		OrientationType oldOrientation = orientation;
-		orientation = newOrientation;
+	public NotificationChain basicSetRunway(MissionStartRunwayType newRunway, NotificationChain msgs) {
+		MissionStartRunwayType oldRunway = runway;
+		runway = newRunway;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.MISSION_START_CONDITION_TYPE__ORIENTATION, oldOrientation, newOrientation);
+					CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY, oldRunway, newRunway);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -411,21 +386,177 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setOrientation(OrientationType newOrientation) {
-		if (newOrientation != orientation) {
+	public void setRunway(MissionStartRunwayType newRunway) {
+		if (newRunway != runway) {
 			NotificationChain msgs = null;
-			if (orientation != null)
-				msgs = ((InternalEObject) orientation).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__ORIENTATION, null, msgs);
-			if (newOrientation != null)
-				msgs = ((InternalEObject) newOrientation).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__ORIENTATION, null, msgs);
-			msgs = basicSetOrientation(newOrientation, msgs);
+			if (runway != null)
+				msgs = ((InternalEObject) runway).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY, null, msgs);
+			if (newRunway != null)
+				msgs = ((InternalEObject) newRunway).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY, null, msgs);
+			msgs = basicSetRunway(newRunway, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY,
+					newRunway, newRunway));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DoubleBaseType getHeading() {
+		return heading;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetHeading(DoubleBaseType newHeading, NotificationChain msgs) {
+		DoubleBaseType oldHeading = heading;
+		heading = newHeading;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MISSION_START_CONDITION_TYPE__HEADING, oldHeading, newHeading);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setHeading(DoubleBaseType newHeading) {
+		if (newHeading != heading) {
+			NotificationChain msgs = null;
+			if (heading != null)
+				msgs = ((InternalEObject) heading).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__HEADING, null, msgs);
+			if (newHeading != null)
+				msgs = ((InternalEObject) newHeading).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__HEADING, null, msgs);
+			msgs = basicSetHeading(newHeading, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_START_CONDITION_TYPE__HEADING,
+					newHeading, newHeading));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TimeBaseType getStartTimeUTC() {
+		return startTimeUTC;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetStartTimeUTC(TimeBaseType newStartTimeUTC, NotificationChain msgs) {
+		TimeBaseType oldStartTimeUTC = startTimeUTC;
+		startTimeUTC = newStartTimeUTC;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MISSION_START_CONDITION_TYPE__START_TIME_UTC, oldStartTimeUTC, newStartTimeUTC);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStartTimeUTC(TimeBaseType newStartTimeUTC) {
+		if (newStartTimeUTC != startTimeUTC) {
+			NotificationChain msgs = null;
+			if (startTimeUTC != null)
+				msgs = ((InternalEObject) startTimeUTC).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__START_TIME_UTC, null, msgs);
+			if (newStartTimeUTC != null)
+				msgs = ((InternalEObject) newStartTimeUTC).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__START_TIME_UTC, null, msgs);
+			msgs = basicSetStartTimeUTC(newStartTimeUTC, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.MISSION_START_CONDITION_TYPE__ORIENTATION, newOrientation, newOrientation));
+					CpacsPackage.MISSION_START_CONDITION_TYPE__START_TIME_UTC, newStartTimeUTC, newStartTimeUTC));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EnvironmentType getEnvironment() {
+		return environment;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetEnvironment(EnvironmentType newEnvironment, NotificationChain msgs) {
+		EnvironmentType oldEnvironment = environment;
+		environment = newEnvironment;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MISSION_START_CONDITION_TYPE__ENVIRONMENT, oldEnvironment, newEnvironment);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEnvironment(EnvironmentType newEnvironment) {
+		if (newEnvironment != environment) {
+			NotificationChain msgs = null;
+			if (environment != null)
+				msgs = ((InternalEObject) environment).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__ENVIRONMENT, null, msgs);
+			if (newEnvironment != null)
+				msgs = ((InternalEObject) newEnvironment).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_START_CONDITION_TYPE__ENVIRONMENT, null, msgs);
+			msgs = basicSetEnvironment(newEnvironment, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MISSION_START_CONDITION_TYPE__ENVIRONMENT, newEnvironment, newEnvironment));
 	}
 
 	/**
@@ -436,18 +567,22 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY_UID:
-			return basicSetRunwayUID(null, msgs);
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__CAS:
-			return basicSetCAS(null, msgs);
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__MACH:
-			return basicSetMach(null, msgs);
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__CALIBRATED_AIR_SPEED:
+			return basicSetCalibratedAirSpeed(null, msgs);
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__MACH_NUMBER:
+			return basicSetMachNumber(null, msgs);
 		case CpacsPackage.MISSION_START_CONDITION_TYPE__POSITION_XYZ:
 			return basicSetPositionXYZ(null, msgs);
 		case CpacsPackage.MISSION_START_CONDITION_TYPE__POSITION_GEO:
 			return basicSetPositionGeo(null, msgs);
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__ORIENTATION:
-			return basicSetOrientation(null, msgs);
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY:
+			return basicSetRunway(null, msgs);
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__HEADING:
+			return basicSetHeading(null, msgs);
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__START_TIME_UTC:
+			return basicSetStartTimeUTC(null, msgs);
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__ENVIRONMENT:
+			return basicSetEnvironment(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -460,18 +595,22 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY_UID:
-			return getRunwayUID();
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__CAS:
-			return getCAS();
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__MACH:
-			return getMach();
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__CALIBRATED_AIR_SPEED:
+			return getCalibratedAirSpeed();
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__MACH_NUMBER:
+			return getMachNumber();
 		case CpacsPackage.MISSION_START_CONDITION_TYPE__POSITION_XYZ:
 			return getPositionXYZ();
 		case CpacsPackage.MISSION_START_CONDITION_TYPE__POSITION_GEO:
 			return getPositionGeo();
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__ORIENTATION:
-			return getOrientation();
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY:
+			return getRunway();
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__HEADING:
+			return getHeading();
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__START_TIME_UTC:
+			return getStartTimeUTC();
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__ENVIRONMENT:
+			return getEnvironment();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -484,23 +623,29 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY_UID:
-			setRunwayUID((StringUIDBaseType) newValue);
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__CALIBRATED_AIR_SPEED:
+			setCalibratedAirSpeed((DoubleBaseType) newValue);
 			return;
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__CAS:
-			setCAS((DoubleBaseType) newValue);
-			return;
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__MACH:
-			setMach((DoubleBaseType) newValue);
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__MACH_NUMBER:
+			setMachNumber((DoubleBaseType) newValue);
 			return;
 		case CpacsPackage.MISSION_START_CONDITION_TYPE__POSITION_XYZ:
-			setPositionXYZ((PointType) newValue);
+			setPositionXYZ((PointXYZType) newValue);
 			return;
 		case CpacsPackage.MISSION_START_CONDITION_TYPE__POSITION_GEO:
 			setPositionGeo((GeographicPointType) newValue);
 			return;
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__ORIENTATION:
-			setOrientation((OrientationType) newValue);
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY:
+			setRunway((MissionStartRunwayType) newValue);
+			return;
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__HEADING:
+			setHeading((DoubleBaseType) newValue);
+			return;
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__START_TIME_UTC:
+			setStartTimeUTC((TimeBaseType) newValue);
+			return;
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__ENVIRONMENT:
+			setEnvironment((EnvironmentType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -514,23 +659,29 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY_UID:
-			setRunwayUID((StringUIDBaseType) null);
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__CALIBRATED_AIR_SPEED:
+			setCalibratedAirSpeed((DoubleBaseType) null);
 			return;
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__CAS:
-			setCAS((DoubleBaseType) null);
-			return;
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__MACH:
-			setMach((DoubleBaseType) null);
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__MACH_NUMBER:
+			setMachNumber((DoubleBaseType) null);
 			return;
 		case CpacsPackage.MISSION_START_CONDITION_TYPE__POSITION_XYZ:
-			setPositionXYZ((PointType) null);
+			setPositionXYZ((PointXYZType) null);
 			return;
 		case CpacsPackage.MISSION_START_CONDITION_TYPE__POSITION_GEO:
 			setPositionGeo((GeographicPointType) null);
 			return;
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__ORIENTATION:
-			setOrientation((OrientationType) null);
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY:
+			setRunway((MissionStartRunwayType) null);
+			return;
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__HEADING:
+			setHeading((DoubleBaseType) null);
+			return;
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__START_TIME_UTC:
+			setStartTimeUTC((TimeBaseType) null);
+			return;
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__ENVIRONMENT:
+			setEnvironment((EnvironmentType) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -544,18 +695,22 @@ public class MissionStartConditionTypeImpl extends ComplexBaseTypeImpl implement
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY_UID:
-			return runwayUID != null;
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__CAS:
-			return cAS != null;
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__MACH:
-			return mach != null;
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__CALIBRATED_AIR_SPEED:
+			return calibratedAirSpeed != null;
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__MACH_NUMBER:
+			return machNumber != null;
 		case CpacsPackage.MISSION_START_CONDITION_TYPE__POSITION_XYZ:
 			return positionXYZ != null;
 		case CpacsPackage.MISSION_START_CONDITION_TYPE__POSITION_GEO:
 			return positionGeo != null;
-		case CpacsPackage.MISSION_START_CONDITION_TYPE__ORIENTATION:
-			return orientation != null;
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__RUNWAY:
+			return runway != null;
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__HEADING:
+			return heading != null;
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__START_TIME_UTC:
+			return startTimeUTC != null;
+		case CpacsPackage.MISSION_START_CONDITION_TYPE__ENVIRONMENT:
+			return environment != null;
 		}
 		return super.eIsSet(featureID);
 	}

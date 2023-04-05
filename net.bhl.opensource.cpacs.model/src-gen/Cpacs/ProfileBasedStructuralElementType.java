@@ -103,7 +103,7 @@ public interface ProfileBasedStructuralElementType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Reference to the structural profile profile
-	 *                                                 uID.
+	 *                                                 uID
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Structural Profile UID</em>' containment reference.
 	 * @see #setStructuralProfileUID(StringUIDBaseType)

@@ -134,7 +134,7 @@ public interface PylonPinType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Blocked DOFs. Referes to the rotated
+	 * Blocked DOFs. Refers to the rotated
 	 *                                 coordinate system that is defined in 'orientation'.
 	 *                             
 	 * <!-- end-model-doc -->

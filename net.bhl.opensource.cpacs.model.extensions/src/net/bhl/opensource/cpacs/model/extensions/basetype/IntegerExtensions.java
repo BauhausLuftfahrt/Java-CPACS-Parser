@@ -7,8 +7,9 @@ package net.bhl.opensource.cpacs.model.extensions.basetype;
 
 import java.math.BigInteger;
 
-import Cpacs.CpacsFactory;
 import Cpacs.IntegerBaseType;
+import Cpacs.PosExcl0IntBaseType;
+import Cpacs.CpacsFactory;
 
 /**
  * @author Marc.Engelmann
@@ -27,4 +28,9 @@ public interface IntegerExtensions {
 		return intType;
 	}
 
+	static PosExcl0IntBaseType initPosExcl0(int content) {
+		PosExcl0IntBaseType intType = CpacsFactory.eINSTANCE.createPosExcl0IntBaseType();
+		intType.setValue(BigInteger.valueOf(content));
+		return intType;
+	}
 }

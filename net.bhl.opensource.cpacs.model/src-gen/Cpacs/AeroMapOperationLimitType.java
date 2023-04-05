@@ -11,8 +11,8 @@ package Cpacs;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.AeroMapOperationLimitType#getAngleOfSideslip <em>Angle Of Sideslip</em>}</li>
- *   <li>{@link Cpacs.AeroMapOperationLimitType#getAngleOfAttack <em>Angle Of Attack</em>}</li>
+ *   <li>{@link Cpacs.AeroMapOperationLimitType#getAngleOfAttackMin <em>Angle Of Attack Min</em>}</li>
+ *   <li>{@link Cpacs.AeroMapOperationLimitType#getAngleOfAttackMax <em>Angle Of Attack Max</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getAeroMapOperationLimitType()
@@ -21,55 +21,55 @@ package Cpacs;
  */
 public interface AeroMapOperationLimitType extends ComplexBaseType {
 	/**
-	 * Returns the value of the '<em><b>Angle Of Sideslip</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Angle Of Attack Min</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Sideslip angle defining the operation limit. Must be a vector of the same length as angleOfAttack, machNumber and altitude. [deg]
+	 * Minimum angle of attack defining the operation limit. Must be a vector of the same length as angleOfSideslip, machNumber and altitude. [deg]
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Angle Of Sideslip</em>' containment reference.
-	 * @see #setAngleOfSideslip(StringVectorBaseType)
-	 * @see Cpacs.CpacsPackage#getAeroMapOperationLimitType_AngleOfSideslip()
+	 * @return the value of the '<em>Angle Of Attack Min</em>' containment reference.
+	 * @see #setAngleOfAttackMin(DoubleVectorBaseType)
+	 * @see Cpacs.CpacsPackage#getAeroMapOperationLimitType_AngleOfAttackMin()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='angleOfSideslip' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='angleOfAttackMin' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getAngleOfSideslip();
+	DoubleVectorBaseType getAngleOfAttackMin();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.AeroMapOperationLimitType#getAngleOfSideslip <em>Angle Of Sideslip</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.AeroMapOperationLimitType#getAngleOfAttackMin <em>Angle Of Attack Min</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Angle Of Sideslip</em>' containment reference.
-	 * @see #getAngleOfSideslip()
+	 * @param value the new value of the '<em>Angle Of Attack Min</em>' containment reference.
+	 * @see #getAngleOfAttackMin()
 	 * @generated
 	 */
-	void setAngleOfSideslip(StringVectorBaseType value);
+	void setAngleOfAttackMin(DoubleVectorBaseType value);
 
 	/**
-	 * Returns the value of the '<em><b>Angle Of Attack</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Angle Of Attack Max</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Angle of attack defining the operation limit. Must be a vector of the same length as angleOfSideslip, machNumber and altitude. [deg]
+	 * Maximum angle of attack defining the operation limit. Must be a vector of the same length as angleOfSideslip, machNumber and altitude. [deg]
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Angle Of Attack</em>' containment reference.
-	 * @see #setAngleOfAttack(StringVectorBaseType)
-	 * @see Cpacs.CpacsPackage#getAeroMapOperationLimitType_AngleOfAttack()
+	 * @return the value of the '<em>Angle Of Attack Max</em>' containment reference.
+	 * @see #setAngleOfAttackMax(DoubleVectorBaseType)
+	 * @see Cpacs.CpacsPackage#getAeroMapOperationLimitType_AngleOfAttackMax()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='angleOfAttack' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='angleOfAttackMax' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getAngleOfAttack();
+	DoubleVectorBaseType getAngleOfAttackMax();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.AeroMapOperationLimitType#getAngleOfAttack <em>Angle Of Attack</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.AeroMapOperationLimitType#getAngleOfAttackMax <em>Angle Of Attack Max</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Angle Of Attack</em>' containment reference.
-	 * @see #getAngleOfAttack()
+	 * @param value the new value of the '<em>Angle Of Attack Max</em>' containment reference.
+	 * @see #getAngleOfAttackMax()
 	 * @generated
 	 */
-	void setAngleOfAttack(StringVectorBaseType value);
+	void setAngleOfAttackMax(DoubleVectorBaseType value);
 
 } // AeroMapOperationLimitType

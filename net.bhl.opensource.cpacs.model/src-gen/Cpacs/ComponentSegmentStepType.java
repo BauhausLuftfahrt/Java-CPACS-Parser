@@ -26,7 +26,7 @@ public interface ComponentSegmentStepType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * The control parameter is used to reference the 
+	 * The control parameter is used to reference the
 	 *                                 state of a control device, e.g. in the load
 	 *                                 case description. Can have any value and is NOT limited to the
 	 *                                 range of -1 to 1.

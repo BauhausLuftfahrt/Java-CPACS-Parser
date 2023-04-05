@@ -5,8 +5,8 @@
  *******************************************************************************/
 package net.bhl.opensource.cpacs.model.extensions.mass;
 
-import Cpacs.CpacsFactory;
 import Cpacs.GenericMassType;
+import Cpacs.CpacsFactory;
 import net.bhl.opensource.cpacs.model.extensions.basetype.DoubleExtensions;
 import net.bhl.opensource.cpacs.model.extensions.basetype.StringExtensions;
 import net.bhl.opensource.cpacs.model.extensions.basetype.StringUIDExtensions;
@@ -51,8 +51,8 @@ public interface GenericMassExtensions {
 		GenericMassType genericMassType = CpacsFactory.eINSTANCE.createGenericMassType();
 		genericMassType.setMass(DoubleExtensions.init(mass));
 
-		genericMassType.setLocation(CpacsFactory.eINSTANCE.createPointType());
-		genericMassType.getLocation().setUID(uID + "_location");
+		genericMassType.setLocation(CpacsFactory.eINSTANCE.createPointAbsRelType());
+//		genericMassType.getLocation().setUID(uID + "_location");
 		genericMassType.getLocation().setX(DoubleExtensions.init(xLocation + xTranslation));
 		genericMassType.getLocation().setY(DoubleExtensions.init(yLocation + yTranslation));
 		genericMassType.getLocation().setZ(DoubleExtensions.init(zLocation + zTranslation));
@@ -62,6 +62,7 @@ public interface GenericMassExtensions {
 
 		if (parentUID != null) {
 			genericMassType.setParentUID(StringUIDExtensions.init(parentUID, false));
+			genericMassType.getParentUID().setIsLink("True");
 		}
 
 //		genericMassType.setMassInertia(CpacsFactory.eINSTANCE.createMassInertiaType());

@@ -20,6 +20,7 @@ import Cpacs.MIntegratedModularAvionicsType;
 import Cpacs.MMillitarySystemsType;
 import Cpacs.MNavigationType;
 import Cpacs.MSystemsType;
+import Cpacs.SingleGenericMassType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -53,6 +54,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.MSystemsTypeImpl#getMIntegratedModularAvionics <em>MIntegrated Modular Avionics</em>}</li>
  *   <li>{@link Cpacs.impl.MSystemsTypeImpl#getMMillitarySystems <em>MMillitary Systems</em>}</li>
  *   <li>{@link Cpacs.impl.MSystemsTypeImpl#getMNavigation <em>MNavigation</em>}</li>
+ *   <li>{@link Cpacs.impl.MSystemsTypeImpl#getMMiscellaneous <em>MMiscellaneous</em>}</li>
  * </ul>
  *
  * @generated
@@ -217,6 +219,16 @@ public class MSystemsTypeImpl extends ComplexBaseTypeImpl implements MSystemsTyp
 	 * @ordered
 	 */
 	protected MNavigationType mNavigation;
+
+	/**
+	 * The cached value of the '{@link #getMMiscellaneous() <em>MMiscellaneous</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMMiscellaneous()
+	 * @generated
+	 * @ordered
+	 */
+	protected SingleGenericMassType mMiscellaneous;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1092,6 +1104,58 @@ public class MSystemsTypeImpl extends ComplexBaseTypeImpl implements MSystemsTyp
 	 * @generated
 	 */
 	@Override
+	public SingleGenericMassType getMMiscellaneous() {
+		return mMiscellaneous;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetMMiscellaneous(SingleGenericMassType newMMiscellaneous, NotificationChain msgs) {
+		SingleGenericMassType oldMMiscellaneous = mMiscellaneous;
+		mMiscellaneous = newMMiscellaneous;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MSYSTEMS_TYPE__MMISCELLANEOUS, oldMMiscellaneous, newMMiscellaneous);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMMiscellaneous(SingleGenericMassType newMMiscellaneous) {
+		if (newMMiscellaneous != mMiscellaneous) {
+			NotificationChain msgs = null;
+			if (mMiscellaneous != null)
+				msgs = ((InternalEObject) mMiscellaneous).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MSYSTEMS_TYPE__MMISCELLANEOUS, null, msgs);
+			if (newMMiscellaneous != null)
+				msgs = ((InternalEObject) newMMiscellaneous).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MSYSTEMS_TYPE__MMISCELLANEOUS, null, msgs);
+			msgs = basicSetMMiscellaneous(newMMiscellaneous, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MSYSTEMS_TYPE__MMISCELLANEOUS,
+					newMMiscellaneous, newMMiscellaneous));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case CpacsPackage.MSYSTEMS_TYPE__MASS_DESCRIPTION:
@@ -1126,6 +1190,8 @@ public class MSystemsTypeImpl extends ComplexBaseTypeImpl implements MSystemsTyp
 			return basicSetMMillitarySystems(null, msgs);
 		case CpacsPackage.MSYSTEMS_TYPE__MNAVIGATION:
 			return basicSetMNavigation(null, msgs);
+		case CpacsPackage.MSYSTEMS_TYPE__MMISCELLANEOUS:
+			return basicSetMMiscellaneous(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -1170,6 +1236,8 @@ public class MSystemsTypeImpl extends ComplexBaseTypeImpl implements MSystemsTyp
 			return getMMillitarySystems();
 		case CpacsPackage.MSYSTEMS_TYPE__MNAVIGATION:
 			return getMNavigation();
+		case CpacsPackage.MSYSTEMS_TYPE__MMISCELLANEOUS:
+			return getMMiscellaneous();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -1229,6 +1297,9 @@ public class MSystemsTypeImpl extends ComplexBaseTypeImpl implements MSystemsTyp
 			return;
 		case CpacsPackage.MSYSTEMS_TYPE__MNAVIGATION:
 			setMNavigation((MNavigationType) newValue);
+			return;
+		case CpacsPackage.MSYSTEMS_TYPE__MMISCELLANEOUS:
+			setMMiscellaneous((SingleGenericMassType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -1290,6 +1361,9 @@ public class MSystemsTypeImpl extends ComplexBaseTypeImpl implements MSystemsTyp
 		case CpacsPackage.MSYSTEMS_TYPE__MNAVIGATION:
 			setMNavigation((MNavigationType) null);
 			return;
+		case CpacsPackage.MSYSTEMS_TYPE__MMISCELLANEOUS:
+			setMMiscellaneous((SingleGenericMassType) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -1334,6 +1408,8 @@ public class MSystemsTypeImpl extends ComplexBaseTypeImpl implements MSystemsTyp
 			return mMillitarySystems != null;
 		case CpacsPackage.MSYSTEMS_TYPE__MNAVIGATION:
 			return mNavigation != null;
+		case CpacsPackage.MSYSTEMS_TYPE__MMISCELLANEOUS:
+			return mMiscellaneous != null;
 		}
 		return super.eIsSet(featureID);
 	}

@@ -2,13 +2,12 @@
  */
 package Cpacs.impl;
 
-import Cpacs.AeroDataSetsForLoadsType;
+import Cpacs.AeroCasesType;
 import Cpacs.CpacsPackage;
 import Cpacs.CrashLoadCasesType;
 import Cpacs.FlightLoadCasesType;
 import Cpacs.GroundLoadCasesType;
 import Cpacs.LoadCasesType;
-import Cpacs.LoadsEnvelopeType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -29,8 +28,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.LoadCasesTypeImpl#getCrashLoadCases <em>Crash Load Cases</em>}</li>
  *   <li>{@link Cpacs.impl.LoadCasesTypeImpl#getFlightLoadCases <em>Flight Load Cases</em>}</li>
  *   <li>{@link Cpacs.impl.LoadCasesTypeImpl#getGroundLoadCases <em>Ground Load Cases</em>}</li>
- *   <li>{@link Cpacs.impl.LoadCasesTypeImpl#getAeroDataSetsForLoads <em>Aero Data Sets For Loads</em>}</li>
- *   <li>{@link Cpacs.impl.LoadCasesTypeImpl#getLoadsEnvelope <em>Loads Envelope</em>}</li>
+ *   <li>{@link Cpacs.impl.LoadCasesTypeImpl#getAeroCases <em>Aero Cases</em>}</li>
  * </ul>
  *
  * @generated
@@ -67,24 +65,14 @@ public class LoadCasesTypeImpl extends ComplexBaseTypeImpl implements LoadCasesT
 	protected GroundLoadCasesType groundLoadCases;
 
 	/**
-	 * The cached value of the '{@link #getAeroDataSetsForLoads() <em>Aero Data Sets For Loads</em>}' containment reference.
+	 * The cached value of the '{@link #getAeroCases() <em>Aero Cases</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAeroDataSetsForLoads()
+	 * @see #getAeroCases()
 	 * @generated
 	 * @ordered
 	 */
-	protected AeroDataSetsForLoadsType aeroDataSetsForLoads;
-
-	/**
-	 * The cached value of the '{@link #getLoadsEnvelope() <em>Loads Envelope</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getLoadsEnvelope()
-	 * @generated
-	 * @ordered
-	 */
-	protected LoadsEnvelopeType loadsEnvelope;
+	protected AeroCasesType aeroCases;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -267,8 +255,8 @@ public class LoadCasesTypeImpl extends ComplexBaseTypeImpl implements LoadCasesT
 	 * @generated
 	 */
 	@Override
-	public AeroDataSetsForLoadsType getAeroDataSetsForLoads() {
-		return aeroDataSetsForLoads;
+	public AeroCasesType getAeroCases() {
+		return aeroCases;
 	}
 
 	/**
@@ -276,14 +264,12 @@ public class LoadCasesTypeImpl extends ComplexBaseTypeImpl implements LoadCasesT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAeroDataSetsForLoads(AeroDataSetsForLoadsType newAeroDataSetsForLoads,
-			NotificationChain msgs) {
-		AeroDataSetsForLoadsType oldAeroDataSetsForLoads = aeroDataSetsForLoads;
-		aeroDataSetsForLoads = newAeroDataSetsForLoads;
+	public NotificationChain basicSetAeroCases(AeroCasesType newAeroCases, NotificationChain msgs) {
+		AeroCasesType oldAeroCases = aeroCases;
+		aeroCases = newAeroCases;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.LOAD_CASES_TYPE__AERO_DATA_SETS_FOR_LOADS, oldAeroDataSetsForLoads,
-					newAeroDataSetsForLoads);
+					CpacsPackage.LOAD_CASES_TYPE__AERO_CASES, oldAeroCases, newAeroCases);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -298,74 +284,21 @@ public class LoadCasesTypeImpl extends ComplexBaseTypeImpl implements LoadCasesT
 	 * @generated
 	 */
 	@Override
-	public void setAeroDataSetsForLoads(AeroDataSetsForLoadsType newAeroDataSetsForLoads) {
-		if (newAeroDataSetsForLoads != aeroDataSetsForLoads) {
+	public void setAeroCases(AeroCasesType newAeroCases) {
+		if (newAeroCases != aeroCases) {
 			NotificationChain msgs = null;
-			if (aeroDataSetsForLoads != null)
-				msgs = ((InternalEObject) aeroDataSetsForLoads).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.LOAD_CASES_TYPE__AERO_DATA_SETS_FOR_LOADS, null, msgs);
-			if (newAeroDataSetsForLoads != null)
-				msgs = ((InternalEObject) newAeroDataSetsForLoads).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.LOAD_CASES_TYPE__AERO_DATA_SETS_FOR_LOADS, null, msgs);
-			msgs = basicSetAeroDataSetsForLoads(newAeroDataSetsForLoads, msgs);
+			if (aeroCases != null)
+				msgs = ((InternalEObject) aeroCases).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.LOAD_CASES_TYPE__AERO_CASES, null, msgs);
+			if (newAeroCases != null)
+				msgs = ((InternalEObject) newAeroCases).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.LOAD_CASES_TYPE__AERO_CASES, null, msgs);
+			msgs = basicSetAeroCases(newAeroCases, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.LOAD_CASES_TYPE__AERO_DATA_SETS_FOR_LOADS, newAeroDataSetsForLoads,
-					newAeroDataSetsForLoads));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public LoadsEnvelopeType getLoadsEnvelope() {
-		return loadsEnvelope;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetLoadsEnvelope(LoadsEnvelopeType newLoadsEnvelope, NotificationChain msgs) {
-		LoadsEnvelopeType oldLoadsEnvelope = loadsEnvelope;
-		loadsEnvelope = newLoadsEnvelope;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.LOAD_CASES_TYPE__LOADS_ENVELOPE, oldLoadsEnvelope, newLoadsEnvelope);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setLoadsEnvelope(LoadsEnvelopeType newLoadsEnvelope) {
-		if (newLoadsEnvelope != loadsEnvelope) {
-			NotificationChain msgs = null;
-			if (loadsEnvelope != null)
-				msgs = ((InternalEObject) loadsEnvelope).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.LOAD_CASES_TYPE__LOADS_ENVELOPE, null, msgs);
-			if (newLoadsEnvelope != null)
-				msgs = ((InternalEObject) newLoadsEnvelope).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.LOAD_CASES_TYPE__LOADS_ENVELOPE, null, msgs);
-			msgs = basicSetLoadsEnvelope(newLoadsEnvelope, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.LOAD_CASES_TYPE__LOADS_ENVELOPE,
-					newLoadsEnvelope, newLoadsEnvelope));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.LOAD_CASES_TYPE__AERO_CASES,
+					newAeroCases, newAeroCases));
 	}
 
 	/**
@@ -382,10 +315,8 @@ public class LoadCasesTypeImpl extends ComplexBaseTypeImpl implements LoadCasesT
 			return basicSetFlightLoadCases(null, msgs);
 		case CpacsPackage.LOAD_CASES_TYPE__GROUND_LOAD_CASES:
 			return basicSetGroundLoadCases(null, msgs);
-		case CpacsPackage.LOAD_CASES_TYPE__AERO_DATA_SETS_FOR_LOADS:
-			return basicSetAeroDataSetsForLoads(null, msgs);
-		case CpacsPackage.LOAD_CASES_TYPE__LOADS_ENVELOPE:
-			return basicSetLoadsEnvelope(null, msgs);
+		case CpacsPackage.LOAD_CASES_TYPE__AERO_CASES:
+			return basicSetAeroCases(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -404,10 +335,8 @@ public class LoadCasesTypeImpl extends ComplexBaseTypeImpl implements LoadCasesT
 			return getFlightLoadCases();
 		case CpacsPackage.LOAD_CASES_TYPE__GROUND_LOAD_CASES:
 			return getGroundLoadCases();
-		case CpacsPackage.LOAD_CASES_TYPE__AERO_DATA_SETS_FOR_LOADS:
-			return getAeroDataSetsForLoads();
-		case CpacsPackage.LOAD_CASES_TYPE__LOADS_ENVELOPE:
-			return getLoadsEnvelope();
+		case CpacsPackage.LOAD_CASES_TYPE__AERO_CASES:
+			return getAeroCases();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -429,11 +358,8 @@ public class LoadCasesTypeImpl extends ComplexBaseTypeImpl implements LoadCasesT
 		case CpacsPackage.LOAD_CASES_TYPE__GROUND_LOAD_CASES:
 			setGroundLoadCases((GroundLoadCasesType) newValue);
 			return;
-		case CpacsPackage.LOAD_CASES_TYPE__AERO_DATA_SETS_FOR_LOADS:
-			setAeroDataSetsForLoads((AeroDataSetsForLoadsType) newValue);
-			return;
-		case CpacsPackage.LOAD_CASES_TYPE__LOADS_ENVELOPE:
-			setLoadsEnvelope((LoadsEnvelopeType) newValue);
+		case CpacsPackage.LOAD_CASES_TYPE__AERO_CASES:
+			setAeroCases((AeroCasesType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -456,11 +382,8 @@ public class LoadCasesTypeImpl extends ComplexBaseTypeImpl implements LoadCasesT
 		case CpacsPackage.LOAD_CASES_TYPE__GROUND_LOAD_CASES:
 			setGroundLoadCases((GroundLoadCasesType) null);
 			return;
-		case CpacsPackage.LOAD_CASES_TYPE__AERO_DATA_SETS_FOR_LOADS:
-			setAeroDataSetsForLoads((AeroDataSetsForLoadsType) null);
-			return;
-		case CpacsPackage.LOAD_CASES_TYPE__LOADS_ENVELOPE:
-			setLoadsEnvelope((LoadsEnvelopeType) null);
+		case CpacsPackage.LOAD_CASES_TYPE__AERO_CASES:
+			setAeroCases((AeroCasesType) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -480,10 +403,8 @@ public class LoadCasesTypeImpl extends ComplexBaseTypeImpl implements LoadCasesT
 			return flightLoadCases != null;
 		case CpacsPackage.LOAD_CASES_TYPE__GROUND_LOAD_CASES:
 			return groundLoadCases != null;
-		case CpacsPackage.LOAD_CASES_TYPE__AERO_DATA_SETS_FOR_LOADS:
-			return aeroDataSetsForLoads != null;
-		case CpacsPackage.LOAD_CASES_TYPE__LOADS_ENVELOPE:
-			return loadsEnvelope != null;
+		case CpacsPackage.LOAD_CASES_TYPE__AERO_CASES:
+			return aeroCases != null;
 		}
 		return super.eIsSet(featureID);
 	}

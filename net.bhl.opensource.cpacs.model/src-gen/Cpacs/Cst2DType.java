@@ -8,7 +8,7 @@ package Cpacs;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * A 2D impelmentation for Class shape
+ * A 2D implementation for Class shape
  *                         transformations. For more details look at AIAA Journal of Aircraft
  *                         Vol.45 No.1 2008
  * <!-- end-model-doc -->

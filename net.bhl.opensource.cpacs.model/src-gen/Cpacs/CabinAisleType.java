@@ -15,7 +15,7 @@ package Cpacs;
  *   <li>{@link Cpacs.CabinAisleType#getDescription <em>Description</em>}</li>
  *   <li>{@link Cpacs.CabinAisleType#getX <em>X</em>}</li>
  *   <li>{@link Cpacs.CabinAisleType#getY <em>Y</em>}</li>
- *   <li>{@link Cpacs.CabinAisleType#getWFloor <em>WFloor</em>}</li>
+ *   <li>{@link Cpacs.CabinAisleType#getWidthY <em>Width Y</em>}</li>
  *   <li>{@link Cpacs.CabinAisleType#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -28,6 +28,9 @@ public interface CabinAisleType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Name
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(StringBaseType)
 	 * @see Cpacs.CpacsPackage#getCabinAisleType_Name()
@@ -51,6 +54,9 @@ public interface CabinAisleType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Description
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(StringBaseType)
 	 * @see Cpacs.CpacsPackage#getCabinAisleType_Description()
@@ -75,19 +81,19 @@ public interface CabinAisleType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Provides the longitudinal coordinates. The
+	 * Longitudinal coordinates. The
 	 *                                 number of coordinates can be chosen as appropriate, the minimum
 	 *                                 number is two. The coordinates are relative to the cabin origin.
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>X</em>' containment reference.
-	 * @see #setX(StringVectorBaseType)
+	 * @see #setX(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getCabinAisleType_X()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='x' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getX();
+	DoubleVectorBaseType getX();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.CabinAisleType#getX <em>X</em>}' containment reference.
@@ -97,26 +103,26 @@ public interface CabinAisleType extends ComplexBaseType {
 	 * @see #getX()
 	 * @generated
 	 */
-	void setX(StringVectorBaseType value);
+	void setX(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Y</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Provides the center points of the aisle. The
+	 * Center points of the aisle. The
 	 *                                 y-vector has to have same length as the x-vector. The aisle
 	 *                                 stretches equally left and right of the provided y-coordinate.
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Y</em>' containment reference.
-	 * @see #setY(StringVectorBaseType)
+	 * @see #setY(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getCabinAisleType_Y()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='y' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getY();
+	DoubleVectorBaseType getY();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.CabinAisleType#getY <em>Y</em>}' containment reference.
@@ -126,34 +132,34 @@ public interface CabinAisleType extends ComplexBaseType {
 	 * @see #getY()
 	 * @generated
 	 */
-	void setY(StringVectorBaseType value);
+	void setY(DoubleVectorBaseType value);
 
 	/**
-	 * Returns the value of the '<em><b>WFloor</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Width Y</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * the width of the aisle at floor level at each
-	 *                                 y-coordinate.
+	 * Width of the aisle at floor level at each
+	 *                                 y-coordinate
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>WFloor</em>' containment reference.
-	 * @see #setWFloor(StringVectorBaseType)
-	 * @see Cpacs.CpacsPackage#getCabinAisleType_WFloor()
+	 * @return the value of the '<em>Width Y</em>' containment reference.
+	 * @see #setWidthY(DoubleVectorBaseType)
+	 * @see Cpacs.CpacsPackage#getCabinAisleType_WidthY()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='wFloor' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='widthY' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getWFloor();
+	DoubleVectorBaseType getWidthY();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.CabinAisleType#getWFloor <em>WFloor</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.CabinAisleType#getWidthY <em>Width Y</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>WFloor</em>' containment reference.
-	 * @see #getWFloor()
+	 * @param value the new value of the '<em>Width Y</em>' containment reference.
+	 * @see #getWidthY()
 	 * @generated
 	 */
-	void setWFloor(StringVectorBaseType value);
+	void setWidthY(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>UID</b></em>' attribute.

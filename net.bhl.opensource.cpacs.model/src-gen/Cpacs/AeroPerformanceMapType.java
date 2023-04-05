@@ -40,13 +40,13 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Altitude</em>' containment reference.
-	 * @see #setAltitude(StringVectorBaseType)
+	 * @see #setAltitude(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceMapType_Altitude()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='altitude' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getAltitude();
+	DoubleVectorBaseType getAltitude();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceMapType#getAltitude <em>Altitude</em>}' containment reference.
@@ -56,7 +56,7 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 * @see #getAltitude()
 	 * @generated
 	 */
-	void setAltitude(StringVectorBaseType value);
+	void setAltitude(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Mach Number</b></em>' containment reference.
@@ -68,13 +68,13 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Mach Number</em>' containment reference.
-	 * @see #setMachNumber(StringVectorBaseType)
+	 * @see #setMachNumber(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceMapType_MachNumber()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='machNumber' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getMachNumber();
+	DoubleVectorBaseType getMachNumber();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceMapType#getMachNumber <em>Mach Number</em>}' containment reference.
@@ -84,7 +84,7 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 * @see #getMachNumber()
 	 * @generated
 	 */
-	void setMachNumber(StringVectorBaseType value);
+	void setMachNumber(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Angle Of Sideslip</b></em>' containment reference.
@@ -96,13 +96,13 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Angle Of Sideslip</em>' containment reference.
-	 * @see #setAngleOfSideslip(StringVectorBaseType)
+	 * @see #setAngleOfSideslip(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceMapType_AngleOfSideslip()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='angleOfSideslip' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getAngleOfSideslip();
+	DoubleVectorBaseType getAngleOfSideslip();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceMapType#getAngleOfSideslip <em>Angle Of Sideslip</em>}' containment reference.
@@ -112,7 +112,7 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 * @see #getAngleOfSideslip()
 	 * @generated
 	 */
-	void setAngleOfSideslip(StringVectorBaseType value);
+	void setAngleOfSideslip(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Angle Of Attack</b></em>' containment reference.
@@ -124,13 +124,13 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Angle Of Attack</em>' containment reference.
-	 * @see #setAngleOfAttack(StringVectorBaseType)
+	 * @see #setAngleOfAttack(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceMapType_AngleOfAttack()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='angleOfAttack' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getAngleOfAttack();
+	DoubleVectorBaseType getAngleOfAttack();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceMapType#getAngleOfAttack <em>Angle Of Attack</em>}' containment reference.
@@ -140,7 +140,7 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 * @see #getAngleOfAttack()
 	 * @generated
 	 */
-	void setAngleOfAttack(StringVectorBaseType value);
+	void setAngleOfAttack(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Cd</b></em>' containment reference.
@@ -153,13 +153,13 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Cd</em>' containment reference.
-	 * @see #setCd(StringVectorBaseType)
+	 * @see #setCd(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceMapType_Cd()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='cd' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getCd();
+	DoubleVectorBaseType getCd();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceMapType#getCd <em>Cd</em>}' containment reference.
@@ -169,7 +169,7 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 * @see #getCd()
 	 * @generated
 	 */
-	void setCd(StringVectorBaseType value);
+	void setCd(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Cs</b></em>' containment reference.
@@ -183,13 +183,13 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Cs</em>' containment reference.
-	 * @see #setCs(StringVectorBaseType)
+	 * @see #setCs(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceMapType_Cs()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='cs' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getCs();
+	DoubleVectorBaseType getCs();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceMapType#getCs <em>Cs</em>}' containment reference.
@@ -199,7 +199,7 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 * @see #getCs()
 	 * @generated
 	 */
-	void setCs(StringVectorBaseType value);
+	void setCs(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Cl</b></em>' containment reference.
@@ -212,13 +212,13 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Cl</em>' containment reference.
-	 * @see #setCl(StringVectorBaseType)
+	 * @see #setCl(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceMapType_Cl()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='cl' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getCl();
+	DoubleVectorBaseType getCl();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceMapType#getCl <em>Cl</em>}' containment reference.
@@ -228,20 +228,20 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 * @see #getCl()
 	 * @generated
 	 */
-	void setCl(StringVectorBaseType value);
+	void setCl(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Cmd</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cmd</em>' containment reference.
-	 * @see #setCmd(StringVectorBaseType)
+	 * @see #setCmd(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceMapType_Cmd()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='cmd' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getCmd();
+	DoubleVectorBaseType getCmd();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceMapType#getCmd <em>Cmd</em>}' containment reference.
@@ -251,20 +251,20 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 * @see #getCmd()
 	 * @generated
 	 */
-	void setCmd(StringVectorBaseType value);
+	void setCmd(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Cms</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cms</em>' containment reference.
-	 * @see #setCms(StringVectorBaseType)
+	 * @see #setCms(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceMapType_Cms()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='cms' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getCms();
+	DoubleVectorBaseType getCms();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceMapType#getCms <em>Cms</em>}' containment reference.
@@ -274,20 +274,20 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 * @see #getCms()
 	 * @generated
 	 */
-	void setCms(StringVectorBaseType value);
+	void setCms(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Cml</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cml</em>' containment reference.
-	 * @see #setCml(StringVectorBaseType)
+	 * @see #setCml(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getAeroPerformanceMapType_Cml()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='cml' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getCml();
+	DoubleVectorBaseType getCml();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.AeroPerformanceMapType#getCml <em>Cml</em>}' containment reference.
@@ -297,7 +297,7 @@ public interface AeroPerformanceMapType extends ComplexBaseType {
 	 * @see #getCml()
 	 * @generated
 	 */
-	void setCml(StringVectorBaseType value);
+	void setCml(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Damping Derivatives</b></em>' containment reference.

@@ -21,33 +21,33 @@ package Cpacs;
 public interface DoubleConstraintBaseType extends DoubleBaseType {
 	/**
 	 * Returns the value of the '<em><b>Relational Operator</b></em>' attribute.
-	 * The literals are from the enumeration {@link Cpacs.RelationalOperatorType}.
+	 * The literals are from the enumeration {@link Cpacs.RelationalOperatorType2}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Relational Operator</em>' attribute.
-	 * @see Cpacs.RelationalOperatorType
+	 * @see Cpacs.RelationalOperatorType2
 	 * @see #isSetRelationalOperator()
 	 * @see #unsetRelationalOperator()
-	 * @see #setRelationalOperator(RelationalOperatorType)
+	 * @see #setRelationalOperator(RelationalOperatorType2)
 	 * @see Cpacs.CpacsPackage#getDoubleConstraintBaseType_RelationalOperator()
 	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='attribute' name='relationalOperator' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	RelationalOperatorType getRelationalOperator();
+	RelationalOperatorType2 getRelationalOperator();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.DoubleConstraintBaseType#getRelationalOperator <em>Relational Operator</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Relational Operator</em>' attribute.
-	 * @see Cpacs.RelationalOperatorType
+	 * @see Cpacs.RelationalOperatorType2
 	 * @see #isSetRelationalOperator()
 	 * @see #unsetRelationalOperator()
 	 * @see #getRelationalOperator()
 	 * @generated
 	 */
-	void setRelationalOperator(RelationalOperatorType value);
+	void setRelationalOperator(RelationalOperatorType2 value);
 
 	/**
 	 * Unsets the value of the '{@link Cpacs.DoubleConstraintBaseType#getRelationalOperator <em>Relational Operator</em>}' attribute.
@@ -55,7 +55,7 @@ public interface DoubleConstraintBaseType extends DoubleBaseType {
 	 * <!-- end-user-doc -->
 	 * @see #isSetRelationalOperator()
 	 * @see #getRelationalOperator()
-	 * @see #setRelationalOperator(RelationalOperatorType)
+	 * @see #setRelationalOperator(RelationalOperatorType2)
 	 * @generated
 	 */
 	void unsetRelationalOperator();
@@ -67,7 +67,7 @@ public interface DoubleConstraintBaseType extends DoubleBaseType {
 	 * @return whether the value of the '<em>Relational Operator</em>' attribute is set.
 	 * @see #unsetRelationalOperator()
 	 * @see #getRelationalOperator()
-	 * @see #setRelationalOperator(RelationalOperatorType)
+	 * @see #setRelationalOperator(RelationalOperatorType2)
 	 * @generated
 	 */
 	boolean isSetRelationalOperator();

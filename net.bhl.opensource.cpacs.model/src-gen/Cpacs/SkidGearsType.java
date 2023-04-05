@@ -23,7 +23,7 @@ import org.eclipse.emf.common.util.EList;
 public interface SkidGearsType extends ComplexBaseType {
 	/**
 	 * Returns the value of the '<em><b>Skid Gear</b></em>' containment reference list.
-	 * The list contents are of type {@link Cpacs.SkidGearType}.
+	 * The list contents are of type {@link Cpacs.LandingGearBaseType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Skid Gear</em>' containment reference list.
@@ -32,6 +32,6 @@ public interface SkidGearsType extends ComplexBaseType {
 	 *        extendedMetaData="kind='element' name='skidGear' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<SkidGearType> getSkidGear();
+	EList<LandingGearBaseType> getSkidGear();
 
 } // SkidGearsType

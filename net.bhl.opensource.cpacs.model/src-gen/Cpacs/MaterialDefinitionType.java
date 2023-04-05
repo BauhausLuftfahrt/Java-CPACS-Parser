@@ -84,7 +84,7 @@ public interface MaterialDefinitionType extends ComplexBaseType {
 	 * <!-- begin-model-doc -->
 	 * Scaling factor of the composite thickness.
 	 *                                     Absolute thicknesses are defined in each composite material
-	 *                                     seperatly
+	 *                                     separately
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Thickness Scaling</em>' containment reference.
 	 * @see #setThicknessScaling(DoubleBaseType)

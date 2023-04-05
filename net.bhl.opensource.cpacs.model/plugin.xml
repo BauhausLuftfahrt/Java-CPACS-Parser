@@ -9,7 +9,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated model -->
       <package
-            uri="file:/C:/Users/marc.engelmann/git/cpacs/BHL_schema/cpacs.xsd"
+            uri="file:/C:/Users/marc.engelmann/Documents/GitHub/Java-CPACS-Parser/schema/cpacs.xsd"
             class="Cpacs.CpacsPackage"
             genModel="model/model.genmodel"/>
    </extension>

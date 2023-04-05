@@ -6,7 +6,7 @@ import Cpacs.CpacsPackage;
 import Cpacs.EnginePositionType;
 import Cpacs.StringBaseType;
 import Cpacs.StringUIDBaseType;
-import Cpacs.SymmetryType7;
+import Cpacs.SymmetryXyXzYzType;
 import Cpacs.TransformationType;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -95,7 +95,7 @@ public class EnginePositionTypeImpl extends ComplexBaseTypeImpl implements Engin
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SymmetryType7 SYMMETRY_EDEFAULT = SymmetryType7.XY_PLANE;
+	protected static final SymmetryXyXzYzType SYMMETRY_EDEFAULT = SymmetryXyXzYzType.NONE;
 
 	/**
 	 * The cached value of the '{@link #getSymmetry() <em>Symmetry</em>}' attribute.
@@ -105,7 +105,7 @@ public class EnginePositionTypeImpl extends ComplexBaseTypeImpl implements Engin
 	 * @generated
 	 * @ordered
 	 */
-	protected SymmetryType7 symmetry = SYMMETRY_EDEFAULT;
+	protected SymmetryXyXzYzType symmetry = SYMMETRY_EDEFAULT;
 
 	/**
 	 * This is true if the Symmetry attribute has been set.
@@ -421,7 +421,7 @@ public class EnginePositionTypeImpl extends ComplexBaseTypeImpl implements Engin
 	 * @generated
 	 */
 	@Override
-	public SymmetryType7 getSymmetry() {
+	public SymmetryXyXzYzType getSymmetry() {
 		return symmetry;
 	}
 
@@ -431,8 +431,8 @@ public class EnginePositionTypeImpl extends ComplexBaseTypeImpl implements Engin
 	 * @generated
 	 */
 	@Override
-	public void setSymmetry(SymmetryType7 newSymmetry) {
-		SymmetryType7 oldSymmetry = symmetry;
+	public void setSymmetry(SymmetryXyXzYzType newSymmetry) {
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		symmetry = newSymmetry == null ? SYMMETRY_EDEFAULT : newSymmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetryESet = true;
@@ -448,7 +448,7 @@ public class EnginePositionTypeImpl extends ComplexBaseTypeImpl implements Engin
 	 */
 	@Override
 	public void unsetSymmetry() {
-		SymmetryType7 oldSymmetry = symmetry;
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetry = SYMMETRY_EDEFAULT;
 		symmetryESet = false;
@@ -562,7 +562,7 @@ public class EnginePositionTypeImpl extends ComplexBaseTypeImpl implements Engin
 			setTransformation((TransformationType) newValue);
 			return;
 		case CpacsPackage.ENGINE_POSITION_TYPE__SYMMETRY:
-			setSymmetry((SymmetryType7) newValue);
+			setSymmetry((SymmetryXyXzYzType) newValue);
 			return;
 		case CpacsPackage.ENGINE_POSITION_TYPE__UID:
 			setUID((String) newValue);

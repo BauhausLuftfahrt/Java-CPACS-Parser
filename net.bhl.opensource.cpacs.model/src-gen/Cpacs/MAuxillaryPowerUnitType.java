@@ -24,7 +24,7 @@ public interface MAuxillaryPowerUnitType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Auxillary power unit masse description
+	 * Auxiliary power unit masse description
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Mass Description</em>' containment reference.

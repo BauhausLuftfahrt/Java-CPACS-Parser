@@ -4,7 +4,7 @@ package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
 import Cpacs.StringUIDBaseType;
-import Cpacs.StringVectorBaseType;
+import Cpacs.VariableConditionsType;
 import Cpacs.VariableSegmentType;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -25,7 +25,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link Cpacs.impl.VariableSegmentTypeImpl#getSegmentUID <em>Segment UID</em>}</li>
  *   <li>{@link Cpacs.impl.VariableSegmentTypeImpl#getVariableConditions <em>Variable Conditions</em>}</li>
- *   <li>{@link Cpacs.impl.VariableSegmentTypeImpl#getUID <em>UID</em>}</li>
  * </ul>
  *
  * @generated
@@ -49,27 +48,7 @@ public class VariableSegmentTypeImpl extends ComplexBaseTypeImpl implements Vari
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType variableConditions;
-
-	/**
-	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getUID()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String UID_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getUID() <em>UID</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getUID()
-	 * @generated
-	 * @ordered
-	 */
-	protected String uID = UID_EDEFAULT;
+	protected VariableConditionsType variableConditions;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,7 +127,7 @@ public class VariableSegmentTypeImpl extends ComplexBaseTypeImpl implements Vari
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getVariableConditions() {
+	public VariableConditionsType getVariableConditions() {
 		return variableConditions;
 	}
 
@@ -157,9 +136,9 @@ public class VariableSegmentTypeImpl extends ComplexBaseTypeImpl implements Vari
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetVariableConditions(StringVectorBaseType newVariableConditions,
+	public NotificationChain basicSetVariableConditions(VariableConditionsType newVariableConditions,
 			NotificationChain msgs) {
-		StringVectorBaseType oldVariableConditions = variableConditions;
+		VariableConditionsType oldVariableConditions = variableConditions;
 		variableConditions = newVariableConditions;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -179,7 +158,7 @@ public class VariableSegmentTypeImpl extends ComplexBaseTypeImpl implements Vari
 	 * @generated
 	 */
 	@Override
-	public void setVariableConditions(StringVectorBaseType newVariableConditions) {
+	public void setVariableConditions(VariableConditionsType newVariableConditions) {
 		if (newVariableConditions != variableConditions) {
 			NotificationChain msgs = null;
 			if (variableConditions != null)
@@ -195,30 +174,6 @@ public class VariableSegmentTypeImpl extends ComplexBaseTypeImpl implements Vari
 			eNotify(new ENotificationImpl(this, Notification.SET,
 					CpacsPackage.VARIABLE_SEGMENT_TYPE__VARIABLE_CONDITIONS, newVariableConditions,
 					newVariableConditions));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getUID() {
-		return uID;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setUID(String newUID) {
-		String oldUID = uID;
-		uID = newUID;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.VARIABLE_SEGMENT_TYPE__UID, oldUID,
-					uID));
 	}
 
 	/**
@@ -249,8 +204,6 @@ public class VariableSegmentTypeImpl extends ComplexBaseTypeImpl implements Vari
 			return getSegmentUID();
 		case CpacsPackage.VARIABLE_SEGMENT_TYPE__VARIABLE_CONDITIONS:
 			return getVariableConditions();
-		case CpacsPackage.VARIABLE_SEGMENT_TYPE__UID:
-			return getUID();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -267,10 +220,7 @@ public class VariableSegmentTypeImpl extends ComplexBaseTypeImpl implements Vari
 			setSegmentUID((StringUIDBaseType) newValue);
 			return;
 		case CpacsPackage.VARIABLE_SEGMENT_TYPE__VARIABLE_CONDITIONS:
-			setVariableConditions((StringVectorBaseType) newValue);
-			return;
-		case CpacsPackage.VARIABLE_SEGMENT_TYPE__UID:
-			setUID((String) newValue);
+			setVariableConditions((VariableConditionsType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -288,10 +238,7 @@ public class VariableSegmentTypeImpl extends ComplexBaseTypeImpl implements Vari
 			setSegmentUID((StringUIDBaseType) null);
 			return;
 		case CpacsPackage.VARIABLE_SEGMENT_TYPE__VARIABLE_CONDITIONS:
-			setVariableConditions((StringVectorBaseType) null);
-			return;
-		case CpacsPackage.VARIABLE_SEGMENT_TYPE__UID:
-			setUID(UID_EDEFAULT);
+			setVariableConditions((VariableConditionsType) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -309,27 +256,8 @@ public class VariableSegmentTypeImpl extends ComplexBaseTypeImpl implements Vari
 			return segmentUID != null;
 		case CpacsPackage.VARIABLE_SEGMENT_TYPE__VARIABLE_CONDITIONS:
 			return variableConditions != null;
-		case CpacsPackage.VARIABLE_SEGMENT_TYPE__UID:
-			return UID_EDEFAULT == null ? uID != null : !UID_EDEFAULT.equals(uID);
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy())
-			return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (uID: ");
-		result.append(uID);
-		result.append(')');
-		return result.toString();
 	}
 
 } //VariableSegmentTypeImpl

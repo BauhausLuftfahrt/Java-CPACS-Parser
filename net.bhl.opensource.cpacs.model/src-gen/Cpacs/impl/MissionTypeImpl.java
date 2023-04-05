@@ -6,7 +6,7 @@ import Cpacs.CpacsPackage;
 import Cpacs.MissionStartConditionType;
 import Cpacs.MissionType;
 import Cpacs.StringBaseType;
-import Cpacs.StringVectorBaseType;
+import Cpacs.UIDSequenceType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -27,7 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.MissionTypeImpl#getName <em>Name</em>}</li>
  *   <li>{@link Cpacs.impl.MissionTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link Cpacs.impl.MissionTypeImpl#getStartCondition <em>Start Condition</em>}</li>
- *   <li>{@link Cpacs.impl.MissionTypeImpl#getSegmentUIDSequence <em>Segment UID Sequence</em>}</li>
+ *   <li>{@link Cpacs.impl.MissionTypeImpl#getSegmentBlockUIDs <em>Segment Block UI Ds</em>}</li>
  *   <li>{@link Cpacs.impl.MissionTypeImpl#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -65,14 +65,14 @@ public class MissionTypeImpl extends ComplexBaseTypeImpl implements MissionType 
 	protected MissionStartConditionType startCondition;
 
 	/**
-	 * The cached value of the '{@link #getSegmentUIDSequence() <em>Segment UID Sequence</em>}' containment reference.
+	 * The cached value of the '{@link #getSegmentBlockUIDs() <em>Segment Block UI Ds</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSegmentUIDSequence()
+	 * @see #getSegmentBlockUIDs()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType segmentUIDSequence;
+	protected UIDSequenceType segmentBlockUIDs;
 
 	/**
 	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
@@ -275,8 +275,8 @@ public class MissionTypeImpl extends ComplexBaseTypeImpl implements MissionType 
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getSegmentUIDSequence() {
-		return segmentUIDSequence;
+	public UIDSequenceType getSegmentBlockUIDs() {
+		return segmentBlockUIDs;
 	}
 
 	/**
@@ -284,13 +284,12 @@ public class MissionTypeImpl extends ComplexBaseTypeImpl implements MissionType 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSegmentUIDSequence(StringVectorBaseType newSegmentUIDSequence,
-			NotificationChain msgs) {
-		StringVectorBaseType oldSegmentUIDSequence = segmentUIDSequence;
-		segmentUIDSequence = newSegmentUIDSequence;
+	public NotificationChain basicSetSegmentBlockUIDs(UIDSequenceType newSegmentBlockUIDs, NotificationChain msgs) {
+		UIDSequenceType oldSegmentBlockUIDs = segmentBlockUIDs;
+		segmentBlockUIDs = newSegmentBlockUIDs;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.MISSION_TYPE__SEGMENT_UID_SEQUENCE, oldSegmentUIDSequence, newSegmentUIDSequence);
+					CpacsPackage.MISSION_TYPE__SEGMENT_BLOCK_UI_DS, oldSegmentBlockUIDs, newSegmentBlockUIDs);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -305,21 +304,21 @@ public class MissionTypeImpl extends ComplexBaseTypeImpl implements MissionType 
 	 * @generated
 	 */
 	@Override
-	public void setSegmentUIDSequence(StringVectorBaseType newSegmentUIDSequence) {
-		if (newSegmentUIDSequence != segmentUIDSequence) {
+	public void setSegmentBlockUIDs(UIDSequenceType newSegmentBlockUIDs) {
+		if (newSegmentBlockUIDs != segmentBlockUIDs) {
 			NotificationChain msgs = null;
-			if (segmentUIDSequence != null)
-				msgs = ((InternalEObject) segmentUIDSequence).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_TYPE__SEGMENT_UID_SEQUENCE, null, msgs);
-			if (newSegmentUIDSequence != null)
-				msgs = ((InternalEObject) newSegmentUIDSequence).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_TYPE__SEGMENT_UID_SEQUENCE, null, msgs);
-			msgs = basicSetSegmentUIDSequence(newSegmentUIDSequence, msgs);
+			if (segmentBlockUIDs != null)
+				msgs = ((InternalEObject) segmentBlockUIDs).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_TYPE__SEGMENT_BLOCK_UI_DS, null, msgs);
+			if (newSegmentBlockUIDs != null)
+				msgs = ((InternalEObject) newSegmentBlockUIDs).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_TYPE__SEGMENT_BLOCK_UI_DS, null, msgs);
+			msgs = basicSetSegmentBlockUIDs(newSegmentBlockUIDs, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_TYPE__SEGMENT_UID_SEQUENCE,
-					newSegmentUIDSequence, newSegmentUIDSequence));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_TYPE__SEGMENT_BLOCK_UI_DS,
+					newSegmentBlockUIDs, newSegmentBlockUIDs));
 	}
 
 	/**
@@ -359,8 +358,8 @@ public class MissionTypeImpl extends ComplexBaseTypeImpl implements MissionType 
 			return basicSetDescription(null, msgs);
 		case CpacsPackage.MISSION_TYPE__START_CONDITION:
 			return basicSetStartCondition(null, msgs);
-		case CpacsPackage.MISSION_TYPE__SEGMENT_UID_SEQUENCE:
-			return basicSetSegmentUIDSequence(null, msgs);
+		case CpacsPackage.MISSION_TYPE__SEGMENT_BLOCK_UI_DS:
+			return basicSetSegmentBlockUIDs(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -379,8 +378,8 @@ public class MissionTypeImpl extends ComplexBaseTypeImpl implements MissionType 
 			return getDescription();
 		case CpacsPackage.MISSION_TYPE__START_CONDITION:
 			return getStartCondition();
-		case CpacsPackage.MISSION_TYPE__SEGMENT_UID_SEQUENCE:
-			return getSegmentUIDSequence();
+		case CpacsPackage.MISSION_TYPE__SEGMENT_BLOCK_UI_DS:
+			return getSegmentBlockUIDs();
 		case CpacsPackage.MISSION_TYPE__UID:
 			return getUID();
 		}
@@ -404,8 +403,8 @@ public class MissionTypeImpl extends ComplexBaseTypeImpl implements MissionType 
 		case CpacsPackage.MISSION_TYPE__START_CONDITION:
 			setStartCondition((MissionStartConditionType) newValue);
 			return;
-		case CpacsPackage.MISSION_TYPE__SEGMENT_UID_SEQUENCE:
-			setSegmentUIDSequence((StringVectorBaseType) newValue);
+		case CpacsPackage.MISSION_TYPE__SEGMENT_BLOCK_UI_DS:
+			setSegmentBlockUIDs((UIDSequenceType) newValue);
 			return;
 		case CpacsPackage.MISSION_TYPE__UID:
 			setUID((String) newValue);
@@ -431,8 +430,8 @@ public class MissionTypeImpl extends ComplexBaseTypeImpl implements MissionType 
 		case CpacsPackage.MISSION_TYPE__START_CONDITION:
 			setStartCondition((MissionStartConditionType) null);
 			return;
-		case CpacsPackage.MISSION_TYPE__SEGMENT_UID_SEQUENCE:
-			setSegmentUIDSequence((StringVectorBaseType) null);
+		case CpacsPackage.MISSION_TYPE__SEGMENT_BLOCK_UI_DS:
+			setSegmentBlockUIDs((UIDSequenceType) null);
 			return;
 		case CpacsPackage.MISSION_TYPE__UID:
 			setUID(UID_EDEFAULT);
@@ -455,8 +454,8 @@ public class MissionTypeImpl extends ComplexBaseTypeImpl implements MissionType 
 			return description != null;
 		case CpacsPackage.MISSION_TYPE__START_CONDITION:
 			return startCondition != null;
-		case CpacsPackage.MISSION_TYPE__SEGMENT_UID_SEQUENCE:
-			return segmentUIDSequence != null;
+		case CpacsPackage.MISSION_TYPE__SEGMENT_BLOCK_UI_DS:
+			return segmentBlockUIDs != null;
 		case CpacsPackage.MISSION_TYPE__UID:
 			return UID_EDEFAULT == null ? uID != null : !UID_EDEFAULT.equals(uID);
 		}

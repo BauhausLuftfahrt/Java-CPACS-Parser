@@ -19,7 +19,6 @@ package Cpacs;
  *   <li>{@link Cpacs.WingType#getPositionings <em>Positionings</em>}</li>
  *   <li>{@link Cpacs.WingType#getSegments <em>Segments</em>}</li>
  *   <li>{@link Cpacs.WingType#getComponentSegments <em>Component Segments</em>}</li>
- *   <li>{@link Cpacs.WingType#getDynamicAircraftModel <em>Dynamic Aircraft Model</em>}</li>
  *   <li>{@link Cpacs.WingType#getSymmetry <em>Symmetry</em>}</li>
  *   <li>{@link Cpacs.WingType#getUID <em>UID</em>}</li>
  * </ul>
@@ -226,57 +225,34 @@ public interface WingType extends ComplexBaseType {
 	void setComponentSegments(ComponentSegmentsType value);
 
 	/**
-	 * Returns the value of the '<em><b>Dynamic Aircraft Model</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Dynamic Aircraft Model</em>' containment reference.
-	 * @see #setDynamicAircraftModel(DynamicAircraftModelType)
-	 * @see Cpacs.CpacsPackage#getWingType_DynamicAircraftModel()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='dynamicAircraftModel' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	DynamicAircraftModelType getDynamicAircraftModel();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.WingType#getDynamicAircraftModel <em>Dynamic Aircraft Model</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Dynamic Aircraft Model</em>' containment reference.
-	 * @see #getDynamicAircraftModel()
-	 * @generated
-	 */
-	void setDynamicAircraftModel(DynamicAircraftModelType value);
-
-	/**
 	 * Returns the value of the '<em><b>Symmetry</b></em>' attribute.
-	 * The literals are from the enumeration {@link Cpacs.SymmetryType5}.
+	 * The literals are from the enumeration {@link Cpacs.SymmetryXyXzYzType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Symmetry</em>' attribute.
-	 * @see Cpacs.SymmetryType5
+	 * @see Cpacs.SymmetryXyXzYzType
 	 * @see #isSetSymmetry()
 	 * @see #unsetSymmetry()
-	 * @see #setSymmetry(SymmetryType5)
+	 * @see #setSymmetry(SymmetryXyXzYzType)
 	 * @see Cpacs.CpacsPackage#getWingType_Symmetry()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='attribute' name='symmetry' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	SymmetryType5 getSymmetry();
+	SymmetryXyXzYzType getSymmetry();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.WingType#getSymmetry <em>Symmetry</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Symmetry</em>' attribute.
-	 * @see Cpacs.SymmetryType5
+	 * @see Cpacs.SymmetryXyXzYzType
 	 * @see #isSetSymmetry()
 	 * @see #unsetSymmetry()
 	 * @see #getSymmetry()
 	 * @generated
 	 */
-	void setSymmetry(SymmetryType5 value);
+	void setSymmetry(SymmetryXyXzYzType value);
 
 	/**
 	 * Unsets the value of the '{@link Cpacs.WingType#getSymmetry <em>Symmetry</em>}' attribute.
@@ -284,7 +260,7 @@ public interface WingType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * @see #isSetSymmetry()
 	 * @see #getSymmetry()
-	 * @see #setSymmetry(SymmetryType5)
+	 * @see #setSymmetry(SymmetryXyXzYzType)
 	 * @generated
 	 */
 	void unsetSymmetry();
@@ -296,7 +272,7 @@ public interface WingType extends ComplexBaseType {
 	 * @return whether the value of the '<em>Symmetry</em>' attribute is set.
 	 * @see #unsetSymmetry()
 	 * @see #getSymmetry()
-	 * @see #setSymmetry(SymmetryType5)
+	 * @see #setSymmetry(SymmetryXyXzYzType)
 	 * @generated
 	 */
 	boolean isSetSymmetry();

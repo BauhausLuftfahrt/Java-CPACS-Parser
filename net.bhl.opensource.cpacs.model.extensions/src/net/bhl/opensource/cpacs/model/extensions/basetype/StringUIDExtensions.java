@@ -7,7 +7,7 @@ package net.bhl.opensource.cpacs.model.extensions.basetype;
 
 import Cpacs.CpacsFactory;
 import Cpacs.StringUIDBaseType;
-import Cpacs.SymmetryType14;
+import Cpacs.SymmetryType1;
 
 /**
  * @author Marc.Engelmann
@@ -21,7 +21,7 @@ public interface StringUIDExtensions {
 		StringUIDBaseType stringUID = CpacsFactory.eINSTANCE.createStringUIDBaseType();
 		stringUID.setValue(value);
 		stringUID.setIsLink(isLink ? "True" : "False");
-		stringUID.setSymmetry(SymmetryType14.FULL);
+		stringUID.setSymmetry(SymmetryType1.FULL);
 		return stringUID;
 	}
 }

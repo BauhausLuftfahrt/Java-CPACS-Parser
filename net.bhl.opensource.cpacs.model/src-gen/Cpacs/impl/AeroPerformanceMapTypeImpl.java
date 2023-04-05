@@ -6,7 +6,7 @@ import Cpacs.AeroPerformanceIncrementMapsType;
 import Cpacs.AeroPerformanceMapType;
 import Cpacs.CpacsPackage;
 import Cpacs.DampingDerivativesRatesType;
-import Cpacs.StringVectorBaseType;
+import Cpacs.DoubleVectorBaseType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -49,7 +49,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType altitude;
+	protected DoubleVectorBaseType altitude;
 
 	/**
 	 * The cached value of the '{@link #getMachNumber() <em>Mach Number</em>}' containment reference.
@@ -59,7 +59,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType machNumber;
+	protected DoubleVectorBaseType machNumber;
 
 	/**
 	 * The cached value of the '{@link #getAngleOfSideslip() <em>Angle Of Sideslip</em>}' containment reference.
@@ -69,7 +69,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType angleOfSideslip;
+	protected DoubleVectorBaseType angleOfSideslip;
 
 	/**
 	 * The cached value of the '{@link #getAngleOfAttack() <em>Angle Of Attack</em>}' containment reference.
@@ -79,7 +79,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType angleOfAttack;
+	protected DoubleVectorBaseType angleOfAttack;
 
 	/**
 	 * The cached value of the '{@link #getCd() <em>Cd</em>}' containment reference.
@@ -89,7 +89,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType cd;
+	protected DoubleVectorBaseType cd;
 
 	/**
 	 * The cached value of the '{@link #getCs() <em>Cs</em>}' containment reference.
@@ -99,7 +99,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType cs;
+	protected DoubleVectorBaseType cs;
 
 	/**
 	 * The cached value of the '{@link #getCl() <em>Cl</em>}' containment reference.
@@ -109,7 +109,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType cl;
+	protected DoubleVectorBaseType cl;
 
 	/**
 	 * The cached value of the '{@link #getCmd() <em>Cmd</em>}' containment reference.
@@ -119,7 +119,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType cmd;
+	protected DoubleVectorBaseType cmd;
 
 	/**
 	 * The cached value of the '{@link #getCms() <em>Cms</em>}' containment reference.
@@ -129,7 +129,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType cms;
+	protected DoubleVectorBaseType cms;
 
 	/**
 	 * The cached value of the '{@link #getCml() <em>Cml</em>}' containment reference.
@@ -139,7 +139,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType cml;
+	protected DoubleVectorBaseType cml;
 
 	/**
 	 * The cached value of the '{@link #getDampingDerivatives() <em>Damping Derivatives</em>}' containment reference.
@@ -186,7 +186,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getAltitude() {
+	public DoubleVectorBaseType getAltitude() {
 		return altitude;
 	}
 
@@ -195,8 +195,8 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAltitude(StringVectorBaseType newAltitude, NotificationChain msgs) {
-		StringVectorBaseType oldAltitude = altitude;
+	public NotificationChain basicSetAltitude(DoubleVectorBaseType newAltitude, NotificationChain msgs) {
+		DoubleVectorBaseType oldAltitude = altitude;
 		altitude = newAltitude;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -215,7 +215,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public void setAltitude(StringVectorBaseType newAltitude) {
+	public void setAltitude(DoubleVectorBaseType newAltitude) {
 		if (newAltitude != altitude) {
 			NotificationChain msgs = null;
 			if (altitude != null)
@@ -238,7 +238,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getMachNumber() {
+	public DoubleVectorBaseType getMachNumber() {
 		return machNumber;
 	}
 
@@ -247,8 +247,8 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMachNumber(StringVectorBaseType newMachNumber, NotificationChain msgs) {
-		StringVectorBaseType oldMachNumber = machNumber;
+	public NotificationChain basicSetMachNumber(DoubleVectorBaseType newMachNumber, NotificationChain msgs) {
+		DoubleVectorBaseType oldMachNumber = machNumber;
 		machNumber = newMachNumber;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -267,7 +267,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public void setMachNumber(StringVectorBaseType newMachNumber) {
+	public void setMachNumber(DoubleVectorBaseType newMachNumber) {
 		if (newMachNumber != machNumber) {
 			NotificationChain msgs = null;
 			if (machNumber != null)
@@ -290,7 +290,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getAngleOfSideslip() {
+	public DoubleVectorBaseType getAngleOfSideslip() {
 		return angleOfSideslip;
 	}
 
@@ -299,8 +299,8 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAngleOfSideslip(StringVectorBaseType newAngleOfSideslip, NotificationChain msgs) {
-		StringVectorBaseType oldAngleOfSideslip = angleOfSideslip;
+	public NotificationChain basicSetAngleOfSideslip(DoubleVectorBaseType newAngleOfSideslip, NotificationChain msgs) {
+		DoubleVectorBaseType oldAngleOfSideslip = angleOfSideslip;
 		angleOfSideslip = newAngleOfSideslip;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -319,7 +319,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public void setAngleOfSideslip(StringVectorBaseType newAngleOfSideslip) {
+	public void setAngleOfSideslip(DoubleVectorBaseType newAngleOfSideslip) {
 		if (newAngleOfSideslip != angleOfSideslip) {
 			NotificationChain msgs = null;
 			if (angleOfSideslip != null)
@@ -342,7 +342,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getAngleOfAttack() {
+	public DoubleVectorBaseType getAngleOfAttack() {
 		return angleOfAttack;
 	}
 
@@ -351,8 +351,8 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAngleOfAttack(StringVectorBaseType newAngleOfAttack, NotificationChain msgs) {
-		StringVectorBaseType oldAngleOfAttack = angleOfAttack;
+	public NotificationChain basicSetAngleOfAttack(DoubleVectorBaseType newAngleOfAttack, NotificationChain msgs) {
+		DoubleVectorBaseType oldAngleOfAttack = angleOfAttack;
 		angleOfAttack = newAngleOfAttack;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -371,7 +371,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public void setAngleOfAttack(StringVectorBaseType newAngleOfAttack) {
+	public void setAngleOfAttack(DoubleVectorBaseType newAngleOfAttack) {
 		if (newAngleOfAttack != angleOfAttack) {
 			NotificationChain msgs = null;
 			if (angleOfAttack != null)
@@ -394,7 +394,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getCd() {
+	public DoubleVectorBaseType getCd() {
 		return cd;
 	}
 
@@ -403,8 +403,8 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCd(StringVectorBaseType newCd, NotificationChain msgs) {
-		StringVectorBaseType oldCd = cd;
+	public NotificationChain basicSetCd(DoubleVectorBaseType newCd, NotificationChain msgs) {
+		DoubleVectorBaseType oldCd = cd;
 		cd = newCd;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -423,7 +423,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public void setCd(StringVectorBaseType newCd) {
+	public void setCd(DoubleVectorBaseType newCd) {
 		if (newCd != cd) {
 			NotificationChain msgs = null;
 			if (cd != null)
@@ -446,7 +446,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getCs() {
+	public DoubleVectorBaseType getCs() {
 		return cs;
 	}
 
@@ -455,8 +455,8 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCs(StringVectorBaseType newCs, NotificationChain msgs) {
-		StringVectorBaseType oldCs = cs;
+	public NotificationChain basicSetCs(DoubleVectorBaseType newCs, NotificationChain msgs) {
+		DoubleVectorBaseType oldCs = cs;
 		cs = newCs;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -475,7 +475,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public void setCs(StringVectorBaseType newCs) {
+	public void setCs(DoubleVectorBaseType newCs) {
 		if (newCs != cs) {
 			NotificationChain msgs = null;
 			if (cs != null)
@@ -498,7 +498,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getCl() {
+	public DoubleVectorBaseType getCl() {
 		return cl;
 	}
 
@@ -507,8 +507,8 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCl(StringVectorBaseType newCl, NotificationChain msgs) {
-		StringVectorBaseType oldCl = cl;
+	public NotificationChain basicSetCl(DoubleVectorBaseType newCl, NotificationChain msgs) {
+		DoubleVectorBaseType oldCl = cl;
 		cl = newCl;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -527,7 +527,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public void setCl(StringVectorBaseType newCl) {
+	public void setCl(DoubleVectorBaseType newCl) {
 		if (newCl != cl) {
 			NotificationChain msgs = null;
 			if (cl != null)
@@ -550,7 +550,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getCmd() {
+	public DoubleVectorBaseType getCmd() {
 		return cmd;
 	}
 
@@ -559,8 +559,8 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCmd(StringVectorBaseType newCmd, NotificationChain msgs) {
-		StringVectorBaseType oldCmd = cmd;
+	public NotificationChain basicSetCmd(DoubleVectorBaseType newCmd, NotificationChain msgs) {
+		DoubleVectorBaseType oldCmd = cmd;
 		cmd = newCmd;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -579,7 +579,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public void setCmd(StringVectorBaseType newCmd) {
+	public void setCmd(DoubleVectorBaseType newCmd) {
 		if (newCmd != cmd) {
 			NotificationChain msgs = null;
 			if (cmd != null)
@@ -602,7 +602,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getCms() {
+	public DoubleVectorBaseType getCms() {
 		return cms;
 	}
 
@@ -611,8 +611,8 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCms(StringVectorBaseType newCms, NotificationChain msgs) {
-		StringVectorBaseType oldCms = cms;
+	public NotificationChain basicSetCms(DoubleVectorBaseType newCms, NotificationChain msgs) {
+		DoubleVectorBaseType oldCms = cms;
 		cms = newCms;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -631,7 +631,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public void setCms(StringVectorBaseType newCms) {
+	public void setCms(DoubleVectorBaseType newCms) {
 		if (newCms != cms) {
 			NotificationChain msgs = null;
 			if (cms != null)
@@ -654,7 +654,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getCml() {
+	public DoubleVectorBaseType getCml() {
 		return cml;
 	}
 
@@ -663,8 +663,8 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCml(StringVectorBaseType newCml, NotificationChain msgs) {
-		StringVectorBaseType oldCml = cml;
+	public NotificationChain basicSetCml(DoubleVectorBaseType newCml, NotificationChain msgs) {
+		DoubleVectorBaseType oldCml = cml;
 		cml = newCml;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -683,7 +683,7 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	 * @generated
 	 */
 	@Override
-	public void setCml(StringVectorBaseType newCml) {
+	public void setCml(DoubleVectorBaseType newCml) {
 		if (newCml != cml) {
 			NotificationChain msgs = null;
 			if (cml != null)
@@ -891,34 +891,34 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__ALTITUDE:
-			setAltitude((StringVectorBaseType) newValue);
+			setAltitude((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__MACH_NUMBER:
-			setMachNumber((StringVectorBaseType) newValue);
+			setMachNumber((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__ANGLE_OF_SIDESLIP:
-			setAngleOfSideslip((StringVectorBaseType) newValue);
+			setAngleOfSideslip((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__ANGLE_OF_ATTACK:
-			setAngleOfAttack((StringVectorBaseType) newValue);
+			setAngleOfAttack((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__CD:
-			setCd((StringVectorBaseType) newValue);
+			setCd((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__CS:
-			setCs((StringVectorBaseType) newValue);
+			setCs((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__CL:
-			setCl((StringVectorBaseType) newValue);
+			setCl((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__CMD:
-			setCmd((StringVectorBaseType) newValue);
+			setCmd((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__CMS:
-			setCms((StringVectorBaseType) newValue);
+			setCms((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__CML:
-			setCml((StringVectorBaseType) newValue);
+			setCml((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__DAMPING_DERIVATIVES:
 			setDampingDerivatives((DampingDerivativesRatesType) newValue);
@@ -939,34 +939,34 @@ public class AeroPerformanceMapTypeImpl extends ComplexBaseTypeImpl implements A
 	public void eUnset(int featureID) {
 		switch (featureID) {
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__ALTITUDE:
-			setAltitude((StringVectorBaseType) null);
+			setAltitude((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__MACH_NUMBER:
-			setMachNumber((StringVectorBaseType) null);
+			setMachNumber((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__ANGLE_OF_SIDESLIP:
-			setAngleOfSideslip((StringVectorBaseType) null);
+			setAngleOfSideslip((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__ANGLE_OF_ATTACK:
-			setAngleOfAttack((StringVectorBaseType) null);
+			setAngleOfAttack((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__CD:
-			setCd((StringVectorBaseType) null);
+			setCd((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__CS:
-			setCs((StringVectorBaseType) null);
+			setCs((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__CL:
-			setCl((StringVectorBaseType) null);
+			setCl((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__CMD:
-			setCmd((StringVectorBaseType) null);
+			setCmd((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__CMS:
-			setCms((StringVectorBaseType) null);
+			setCms((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__CML:
-			setCml((StringVectorBaseType) null);
+			setCml((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_MAP_TYPE__DAMPING_DERIVATIVES:
 			setDampingDerivatives((DampingDerivativesRatesType) null);

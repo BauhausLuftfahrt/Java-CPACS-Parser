@@ -14,11 +14,12 @@ package Cpacs;
  *   <li>{@link Cpacs.MissionSegmentType#getName <em>Name</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentType#getDescription <em>Description</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentType#getSegmentType <em>Segment Type</em>}</li>
- *   <li>{@link Cpacs.MissionSegmentType#getMass <em>Mass</em>}</li>
- *   <li>{@link Cpacs.MissionSegmentType#getMassFraction <em>Mass Fraction</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentType#getCreditDistance <em>Credit Distance</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentType#getEnvironment <em>Environment</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentType#getFuelMass <em>Fuel Mass</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentType#getFuelMassFraction <em>Fuel Mass Fraction</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentType#getEndCondition <em>End Condition</em>}</li>
- *   <li>{@link Cpacs.MissionSegmentType#getConstraintSettings <em>Constraint Settings</em>}</li>
- *   <li>{@link Cpacs.MissionSegmentType#getConfiguration <em>Configuration</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentType#getConstraints <em>Constraints</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentType#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -31,6 +32,9 @@ public interface MissionSegmentType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Name
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(StringBaseType)
 	 * @see Cpacs.CpacsPackage#getMissionSegmentType_Name()
@@ -54,6 +58,9 @@ public interface MissionSegmentType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Description
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(StringBaseType)
 	 * @see Cpacs.CpacsPackage#getMissionSegmentType_Description()
@@ -78,7 +85,7 @@ public interface MissionSegmentType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Indicates the type of mission segment
+	 * Type of the mission segment (takeOff, clime, cruse, ...)
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Segment Type</em>' containment reference.
@@ -101,50 +108,109 @@ public interface MissionSegmentType extends ComplexBaseType {
 	void setSegmentType(SegmentTypeType value);
 
 	/**
-	 * Returns the value of the '<em><b>Mass</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Credit Distance</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Mass</em>' containment reference.
-	 * @see #setMass(DoubleBaseType)
-	 * @see Cpacs.CpacsPackage#getMissionSegmentType_Mass()
+	 * <!-- begin-model-doc -->
+	 * Indication whether the distance flown during the segment is to be taken into account in the segmentBlock's distance calculation.
+	 *                             
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Credit Distance</em>' containment reference.
+	 * @see #setCreditDistance(BooleanBaseType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentType_CreditDistance()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='mass' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='creditDistance' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleBaseType getMass();
+	BooleanBaseType getCreditDistance();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.MissionSegmentType#getMass <em>Mass</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.MissionSegmentType#getCreditDistance <em>Credit Distance</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Mass</em>' containment reference.
-	 * @see #getMass()
+	 * @param value the new value of the '<em>Credit Distance</em>' containment reference.
+	 * @see #getCreditDistance()
 	 * @generated
 	 */
-	void setMass(DoubleBaseType value);
+	void setCreditDistance(BooleanBaseType value);
 
 	/**
-	 * Returns the value of the '<em><b>Mass Fraction</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Environment</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Mass Fraction</em>' containment reference.
-	 * @see #setMassFraction(MassFractionType)
-	 * @see Cpacs.CpacsPackage#getMissionSegmentType_MassFraction()
+	 * <!-- begin-model-doc -->
+	 * Environmental conditions. If the environmentalCondition is not provided at segment level, the conditions of the
+	 *                             previous segment are inherited (this inheritance can continue until the startCondition, where the initial
+	 *                             environmentalConditions are provided).
+	 *                             
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Environment</em>' containment reference.
+	 * @see #setEnvironment(EnvironmentType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentType_Environment()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='massFraction' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='environment' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	MassFractionType getMassFraction();
+	EnvironmentType getEnvironment();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.MissionSegmentType#getMassFraction <em>Mass Fraction</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.MissionSegmentType#getEnvironment <em>Environment</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Mass Fraction</em>' containment reference.
-	 * @see #getMassFraction()
+	 * @param value the new value of the '<em>Environment</em>' containment reference.
+	 * @see #getEnvironment()
 	 * @generated
 	 */
-	void setMassFraction(MassFractionType value);
+	void setEnvironment(EnvironmentType value);
+
+	/**
+	 * Returns the value of the '<em><b>Fuel Mass</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Fuel mass
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Fuel Mass</em>' containment reference.
+	 * @see #setFuelMass(DoubleBaseType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentType_FuelMass()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='fuelMass' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	DoubleBaseType getFuelMass();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentType#getFuelMass <em>Fuel Mass</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fuel Mass</em>' containment reference.
+	 * @see #getFuelMass()
+	 * @generated
+	 */
+	void setFuelMass(DoubleBaseType value);
+
+	/**
+	 * Returns the value of the '<em><b>Fuel Mass Fraction</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fuel Mass Fraction</em>' containment reference.
+	 * @see #setFuelMassFraction(FuelMassFractionType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentType_FuelMassFraction()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='fuelMassFraction' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	FuelMassFractionType getFuelMassFraction();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentType#getFuelMassFraction <em>Fuel Mass Fraction</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fuel Mass Fraction</em>' containment reference.
+	 * @see #getFuelMassFraction()
+	 * @generated
+	 */
+	void setFuelMassFraction(FuelMassFractionType value);
 
 	/**
 	 * Returns the value of the '<em><b>End Condition</b></em>' containment reference.
@@ -170,50 +236,27 @@ public interface MissionSegmentType extends ComplexBaseType {
 	void setEndCondition(MissionSegmentEndConditionType value);
 
 	/**
-	 * Returns the value of the '<em><b>Constraint Settings</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Constraints</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Constraint Settings</em>' containment reference.
-	 * @see #setConstraintSettings(ConstraintSettingsType)
-	 * @see Cpacs.CpacsPackage#getMissionSegmentType_ConstraintSettings()
+	 * @return the value of the '<em>Constraints</em>' containment reference.
+	 * @see #setConstraints(ConstraintsType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentType_Constraints()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='constraintSettings' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='constraints' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	ConstraintSettingsType getConstraintSettings();
+	ConstraintsType getConstraints();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.MissionSegmentType#getConstraintSettings <em>Constraint Settings</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.MissionSegmentType#getConstraints <em>Constraints</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Constraint Settings</em>' containment reference.
-	 * @see #getConstraintSettings()
+	 * @param value the new value of the '<em>Constraints</em>' containment reference.
+	 * @see #getConstraints()
 	 * @generated
 	 */
-	void setConstraintSettings(ConstraintSettingsType value);
-
-	/**
-	 * Returns the value of the '<em><b>Configuration</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Configuration</em>' containment reference.
-	 * @see #setConfiguration(StringBaseType)
-	 * @see Cpacs.CpacsPackage#getMissionSegmentType_Configuration()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='configuration' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	StringBaseType getConfiguration();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.MissionSegmentType#getConfiguration <em>Configuration</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Configuration</em>' containment reference.
-	 * @see #getConfiguration()
-	 * @generated
-	 */
-	void setConfiguration(StringBaseType value);
+	void setConstraints(ConstraintsType value);
 
 	/**
 	 * Returns the value of the '<em><b>UID</b></em>' attribute.

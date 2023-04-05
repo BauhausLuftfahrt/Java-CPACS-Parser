@@ -31,6 +31,9 @@ public interface RotationCurveType extends EObject {
 	 * Returns the value of the '<em><b>Reference Section UID</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * UID of the section which serves as reference
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Reference Section UID</em>' containment reference.
 	 * @see #setReferenceSectionUID(StringUIDBaseType)
 	 * @see Cpacs.CpacsPackage#getRotationCurveType_ReferenceSectionUID()
@@ -54,6 +57,9 @@ public interface RotationCurveType extends EObject {
 	 * Returns the value of the '<em><b>Start Zeta</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Start zeta [-1,..,1]; relative curve coordante along the rotation curve from which it will be inserted in the nacelle.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Start Zeta</em>' containment reference.
 	 * @see #setStartZeta(DoubleBaseType)
 	 * @see Cpacs.CpacsPackage#getRotationCurveType_StartZeta()
@@ -77,6 +83,9 @@ public interface RotationCurveType extends EObject {
 	 * Returns the value of the '<em><b>End Zeta</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * End zeta [-1,..,1]; relative curve coordante along the rotation curve up to which it will be inserted in the nacelle.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>End Zeta</em>' containment reference.
 	 * @see #setEndZeta(DoubleBaseType)
 	 * @see Cpacs.CpacsPackage#getRotationCurveType_EndZeta()
@@ -100,6 +109,9 @@ public interface RotationCurveType extends EObject {
 	 * Returns the value of the '<em><b>Start Zeta Blending</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Start zeta for blending [-1..1]; relative curve coordinate along the nacelle profile at which blending from the nacelle profile to the rotation curve will begin.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Start Zeta Blending</em>' containment reference.
 	 * @see #setStartZetaBlending(DoubleBaseType)
 	 * @see Cpacs.CpacsPackage#getRotationCurveType_StartZetaBlending()
@@ -123,6 +135,9 @@ public interface RotationCurveType extends EObject {
 	 * Returns the value of the '<em><b>End Zeta Blending</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * End zeta for blending; relative curve coordinate along the nacelle profile at which blending from the rotation curve to the nacelle profile will end.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>End Zeta Blending</em>' containment reference.
 	 * @see #setEndZetaBlending(DoubleBaseType)
 	 * @see Cpacs.CpacsPackage#getRotationCurveType_EndZetaBlending()
@@ -146,6 +161,9 @@ public interface RotationCurveType extends EObject {
 	 * Returns the value of the '<em><b>Curve Profile UID</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * UID of the rotation curve profile; the profile should be defined in x=[0..1] to be transformed by the section which is referenced by referenceSectionUID.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Curve Profile UID</em>' containment reference.
 	 * @see #setCurveProfileUID(StringUIDBaseType)
 	 * @see Cpacs.CpacsPackage#getRotationCurveType_CurveProfileUID()

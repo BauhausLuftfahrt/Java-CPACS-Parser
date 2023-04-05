@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.FlightPerformanceCasesType#getPerformanceCase <em>Performance Case</em>}</li>
+ *   <li>{@link Cpacs.FlightPerformanceCasesType#getFlightPerformanceCase <em>Flight Performance Case</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getFlightPerformanceCasesType()
@@ -22,16 +22,16 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface FlightPerformanceCasesType extends ComplexBaseType {
 	/**
-	 * Returns the value of the '<em><b>Performance Case</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Flight Performance Case</b></em>' containment reference list.
 	 * The list contents are of type {@link Cpacs.FlightPerformanceCaseType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Performance Case</em>' containment reference list.
-	 * @see Cpacs.CpacsPackage#getFlightPerformanceCasesType_PerformanceCase()
+	 * @return the value of the '<em>Flight Performance Case</em>' containment reference list.
+	 * @see Cpacs.CpacsPackage#getFlightPerformanceCasesType_FlightPerformanceCase()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='performanceCase' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='flightPerformanceCase' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<FlightPerformanceCaseType> getPerformanceCase();
+	EList<FlightPerformanceCaseType> getFlightPerformanceCase();
 
 } // FlightPerformanceCasesType

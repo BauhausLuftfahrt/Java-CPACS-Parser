@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.WingRibCrossSectionTypeImpl#getRibCell <em>Rib Cell</em>}</li>
  *   <li>{@link Cpacs.impl.WingRibCrossSectionTypeImpl#getUpperCap <em>Upper Cap</em>}</li>
  *   <li>{@link Cpacs.impl.WingRibCrossSectionTypeImpl#getLowerCap <em>Lower Cap</em>}</li>
+ *   <li>{@link Cpacs.impl.WingRibCrossSectionTypeImpl#getRibPost <em>Rib Post</em>}</li>
  * </ul>
  *
  * @generated
@@ -84,6 +85,16 @@ public class WingRibCrossSectionTypeImpl extends ComplexBaseTypeImpl implements 
 	 * @ordered
 	 */
 	protected CapType lowerCap;
+
+	/**
+	 * The cached value of the '{@link #getRibPost() <em>Rib Post</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRibPost()
+	 * @generated
+	 * @ordered
+	 */
+	protected CapType ribPost;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -370,6 +381,58 @@ public class WingRibCrossSectionTypeImpl extends ComplexBaseTypeImpl implements 
 	 * @generated
 	 */
 	@Override
+	public CapType getRibPost() {
+		return ribPost;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetRibPost(CapType newRibPost, NotificationChain msgs) {
+		CapType oldRibPost = ribPost;
+		ribPost = newRibPost;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__RIB_POST, oldRibPost, newRibPost);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRibPost(CapType newRibPost) {
+		if (newRibPost != ribPost) {
+			NotificationChain msgs = null;
+			if (ribPost != null)
+				msgs = ((InternalEObject) ribPost).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__RIB_POST, null, msgs);
+			if (newRibPost != null)
+				msgs = ((InternalEObject) newRibPost).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__RIB_POST, null, msgs);
+			msgs = basicSetRibPost(newRibPost, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__RIB_POST,
+					newRibPost, newRibPost));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__MATERIAL:
@@ -382,6 +445,8 @@ public class WingRibCrossSectionTypeImpl extends ComplexBaseTypeImpl implements 
 			return basicSetUpperCap(null, msgs);
 		case CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__LOWER_CAP:
 			return basicSetLowerCap(null, msgs);
+		case CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__RIB_POST:
+			return basicSetRibPost(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -404,6 +469,8 @@ public class WingRibCrossSectionTypeImpl extends ComplexBaseTypeImpl implements 
 			return getUpperCap();
 		case CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__LOWER_CAP:
 			return getLowerCap();
+		case CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__RIB_POST:
+			return getRibPost();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -430,6 +497,9 @@ public class WingRibCrossSectionTypeImpl extends ComplexBaseTypeImpl implements 
 			return;
 		case CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__LOWER_CAP:
 			setLowerCap((CapType) newValue);
+			return;
+		case CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__RIB_POST:
+			setRibPost((CapType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -458,6 +528,9 @@ public class WingRibCrossSectionTypeImpl extends ComplexBaseTypeImpl implements 
 		case CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__LOWER_CAP:
 			setLowerCap((CapType) null);
 			return;
+		case CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__RIB_POST:
+			setRibPost((CapType) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -480,6 +553,8 @@ public class WingRibCrossSectionTypeImpl extends ComplexBaseTypeImpl implements 
 			return upperCap != null;
 		case CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__LOWER_CAP:
 			return lowerCap != null;
+		case CpacsPackage.WING_RIB_CROSS_SECTION_TYPE__RIB_POST:
+			return ribPost != null;
 		}
 		return super.eIsSet(featureID);
 	}

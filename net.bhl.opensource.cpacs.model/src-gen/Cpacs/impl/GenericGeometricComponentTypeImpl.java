@@ -7,7 +7,7 @@ import Cpacs.GenericGeometricComponentType;
 import Cpacs.LinkToFileType;
 import Cpacs.StringBaseType;
 import Cpacs.StringUIDBaseType;
-import Cpacs.SymmetryType13;
+import Cpacs.SymmetryXyXzYzType;
 import Cpacs.TransformationType;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -96,7 +96,7 @@ public class GenericGeometricComponentTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SymmetryType13 SYMMETRY_EDEFAULT = SymmetryType13.XY_PLANE;
+	protected static final SymmetryXyXzYzType SYMMETRY_EDEFAULT = SymmetryXyXzYzType.NONE;
 
 	/**
 	 * The cached value of the '{@link #getSymmetry() <em>Symmetry</em>}' attribute.
@@ -106,7 +106,7 @@ public class GenericGeometricComponentTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 * @ordered
 	 */
-	protected SymmetryType13 symmetry = SYMMETRY_EDEFAULT;
+	protected SymmetryXyXzYzType symmetry = SYMMETRY_EDEFAULT;
 
 	/**
 	 * This is true if the Symmetry attribute has been set.
@@ -430,7 +430,7 @@ public class GenericGeometricComponentTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public SymmetryType13 getSymmetry() {
+	public SymmetryXyXzYzType getSymmetry() {
 		return symmetry;
 	}
 
@@ -440,8 +440,8 @@ public class GenericGeometricComponentTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setSymmetry(SymmetryType13 newSymmetry) {
-		SymmetryType13 oldSymmetry = symmetry;
+	public void setSymmetry(SymmetryXyXzYzType newSymmetry) {
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		symmetry = newSymmetry == null ? SYMMETRY_EDEFAULT : newSymmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetryESet = true;
@@ -457,7 +457,7 @@ public class GenericGeometricComponentTypeImpl extends ComplexBaseTypeImpl imple
 	 */
 	@Override
 	public void unsetSymmetry() {
-		SymmetryType13 oldSymmetry = symmetry;
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetry = SYMMETRY_EDEFAULT;
 		symmetryESet = false;
@@ -573,7 +573,7 @@ public class GenericGeometricComponentTypeImpl extends ComplexBaseTypeImpl imple
 			setLinkToFile((LinkToFileType) newValue);
 			return;
 		case CpacsPackage.GENERIC_GEOMETRIC_COMPONENT_TYPE__SYMMETRY:
-			setSymmetry((SymmetryType13) newValue);
+			setSymmetry((SymmetryXyXzYzType) newValue);
 			return;
 		case CpacsPackage.GENERIC_GEOMETRIC_COMPONENT_TYPE__UID:
 			setUID((String) newValue);

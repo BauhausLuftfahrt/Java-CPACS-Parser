@@ -27,7 +27,7 @@ public interface WheelType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Radius of the wheel.
+	 * Wheel radius
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Radius</em>' containment reference.
 	 * @see #setRadius(DoubleBaseType)
@@ -53,7 +53,7 @@ public interface WheelType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Width of the wheel.
+	 * With of the wheel
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Width</em>' containment reference.
 	 * @see #setWidth(DoubleBaseType)
@@ -79,8 +79,8 @@ public interface WheelType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Definition if the wheel is braked or not. 0 =
-	 *                                 not braked; 1 = braked.
+	 * Brake: false =
+	 *                                 not braked; true = braked.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Braked</em>' containment reference.
 	 * @see #setBraked(BooleanBaseType)

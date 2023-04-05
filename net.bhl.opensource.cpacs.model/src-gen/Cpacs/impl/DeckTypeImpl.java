@@ -2,18 +2,25 @@
  */
 package Cpacs.impl;
 
-import Cpacs.CabGeometryType;
 import Cpacs.CabinAislesType;
-import Cpacs.CabinDoorsType;
-import Cpacs.CabinFloorElementsType;
-import Cpacs.CabinSeatElementsType;
+import Cpacs.CabinGeometryType;
 import Cpacs.CabinSpacesType;
+import Cpacs.CargoContainersType;
+import Cpacs.CeilingPanelsType;
+import Cpacs.ClassDividersType;
 import Cpacs.CpacsPackage;
+import Cpacs.DeckDoorsType;
 import Cpacs.DeckType;
-import Cpacs.DoubleBaseType;
+import Cpacs.DeckTypeType;
+import Cpacs.GalleysType;
+import Cpacs.GenericFloorModulesType;
+import Cpacs.LavatoriesType;
+import Cpacs.LuggageCompartmentsType;
+import Cpacs.SeatModulesType;
+import Cpacs.SidewallPanelsType;
 import Cpacs.StringBaseType;
 import Cpacs.StringUIDBaseType;
-import Cpacs.TypeType7;
+import Cpacs.TransformationType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -34,15 +41,22 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.DeckTypeImpl#getName <em>Name</em>}</li>
  *   <li>{@link Cpacs.impl.DeckTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link Cpacs.impl.DeckTypeImpl#getParentUID <em>Parent UID</em>}</li>
- *   <li>{@link Cpacs.impl.DeckTypeImpl#getX0 <em>X0</em>}</li>
- *   <li>{@link Cpacs.impl.DeckTypeImpl#getZ0 <em>Z0</em>}</li>
- *   <li>{@link Cpacs.impl.DeckTypeImpl#getType <em>Type</em>}</li>
- *   <li>{@link Cpacs.impl.DeckTypeImpl#getCabGeometry <em>Cab Geometry</em>}</li>
+ *   <li>{@link Cpacs.impl.DeckTypeImpl#getFloorStructureUID <em>Floor Structure UID</em>}</li>
+ *   <li>{@link Cpacs.impl.DeckTypeImpl#getTransformation <em>Transformation</em>}</li>
+ *   <li>{@link Cpacs.impl.DeckTypeImpl#getDeckType <em>Deck Type</em>}</li>
+ *   <li>{@link Cpacs.impl.DeckTypeImpl#getCabinGeometry <em>Cabin Geometry</em>}</li>
+ *   <li>{@link Cpacs.impl.DeckTypeImpl#getSeatModules <em>Seat Modules</em>}</li>
  *   <li>{@link Cpacs.impl.DeckTypeImpl#getAisles <em>Aisles</em>}</li>
  *   <li>{@link Cpacs.impl.DeckTypeImpl#getSpaces <em>Spaces</em>}</li>
- *   <li>{@link Cpacs.impl.DeckTypeImpl#getDoors <em>Doors</em>}</li>
- *   <li>{@link Cpacs.impl.DeckTypeImpl#getSeatElements <em>Seat Elements</em>}</li>
- *   <li>{@link Cpacs.impl.DeckTypeImpl#getFloorElements <em>Floor Elements</em>}</li>
+ *   <li>{@link Cpacs.impl.DeckTypeImpl#getSidewallPanels <em>Sidewall Panels</em>}</li>
+ *   <li>{@link Cpacs.impl.DeckTypeImpl#getLuggageCompartments <em>Luggage Compartments</em>}</li>
+ *   <li>{@link Cpacs.impl.DeckTypeImpl#getCeilingPanels <em>Ceiling Panels</em>}</li>
+ *   <li>{@link Cpacs.impl.DeckTypeImpl#getGalleys <em>Galleys</em>}</li>
+ *   <li>{@link Cpacs.impl.DeckTypeImpl#getGenericFloorModules <em>Generic Floor Modules</em>}</li>
+ *   <li>{@link Cpacs.impl.DeckTypeImpl#getLavatories <em>Lavatories</em>}</li>
+ *   <li>{@link Cpacs.impl.DeckTypeImpl#getClassDividers <em>Class Dividers</em>}</li>
+ *   <li>{@link Cpacs.impl.DeckTypeImpl#getCargoContainers <em>Cargo Containers</em>}</li>
+ *   <li>{@link Cpacs.impl.DeckTypeImpl#getDeckDoors <em>Deck Doors</em>}</li>
  *   <li>{@link Cpacs.impl.DeckTypeImpl#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -80,44 +94,54 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 	protected StringUIDBaseType parentUID;
 
 	/**
-	 * The cached value of the '{@link #getX0() <em>X0</em>}' containment reference.
+	 * The cached value of the '{@link #getFloorStructureUID() <em>Floor Structure UID</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getX0()
+	 * @see #getFloorStructureUID()
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleBaseType x0;
+	protected StringUIDBaseType floorStructureUID;
 
 	/**
-	 * The cached value of the '{@link #getZ0() <em>Z0</em>}' containment reference.
+	 * The cached value of the '{@link #getTransformation() <em>Transformation</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getZ0()
+	 * @see #getTransformation()
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleBaseType z0;
+	protected TransformationType transformation;
 
 	/**
-	 * The cached value of the '{@link #getType() <em>Type</em>}' containment reference.
+	 * The cached value of the '{@link #getDeckType() <em>Deck Type</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getType()
+	 * @see #getDeckType()
 	 * @generated
 	 * @ordered
 	 */
-	protected TypeType7 type;
+	protected DeckTypeType deckType;
 
 	/**
-	 * The cached value of the '{@link #getCabGeometry() <em>Cab Geometry</em>}' containment reference.
+	 * The cached value of the '{@link #getCabinGeometry() <em>Cabin Geometry</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCabGeometry()
+	 * @see #getCabinGeometry()
 	 * @generated
 	 * @ordered
 	 */
-	protected CabGeometryType cabGeometry;
+	protected CabinGeometryType cabinGeometry;
+
+	/**
+	 * The cached value of the '{@link #getSeatModules() <em>Seat Modules</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSeatModules()
+	 * @generated
+	 * @ordered
+	 */
+	protected SeatModulesType seatModules;
 
 	/**
 	 * The cached value of the '{@link #getAisles() <em>Aisles</em>}' containment reference.
@@ -140,34 +164,94 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 	protected CabinSpacesType spaces;
 
 	/**
-	 * The cached value of the '{@link #getDoors() <em>Doors</em>}' containment reference.
+	 * The cached value of the '{@link #getSidewallPanels() <em>Sidewall Panels</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDoors()
+	 * @see #getSidewallPanels()
 	 * @generated
 	 * @ordered
 	 */
-	protected CabinDoorsType doors;
+	protected SidewallPanelsType sidewallPanels;
 
 	/**
-	 * The cached value of the '{@link #getSeatElements() <em>Seat Elements</em>}' containment reference.
+	 * The cached value of the '{@link #getLuggageCompartments() <em>Luggage Compartments</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSeatElements()
+	 * @see #getLuggageCompartments()
 	 * @generated
 	 * @ordered
 	 */
-	protected CabinSeatElementsType seatElements;
+	protected LuggageCompartmentsType luggageCompartments;
 
 	/**
-	 * The cached value of the '{@link #getFloorElements() <em>Floor Elements</em>}' containment reference.
+	 * The cached value of the '{@link #getCeilingPanels() <em>Ceiling Panels</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFloorElements()
+	 * @see #getCeilingPanels()
 	 * @generated
 	 * @ordered
 	 */
-	protected CabinFloorElementsType floorElements;
+	protected CeilingPanelsType ceilingPanels;
+
+	/**
+	 * The cached value of the '{@link #getGalleys() <em>Galleys</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getGalleys()
+	 * @generated
+	 * @ordered
+	 */
+	protected GalleysType galleys;
+
+	/**
+	 * The cached value of the '{@link #getGenericFloorModules() <em>Generic Floor Modules</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getGenericFloorModules()
+	 * @generated
+	 * @ordered
+	 */
+	protected GenericFloorModulesType genericFloorModules;
+
+	/**
+	 * The cached value of the '{@link #getLavatories() <em>Lavatories</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLavatories()
+	 * @generated
+	 * @ordered
+	 */
+	protected LavatoriesType lavatories;
+
+	/**
+	 * The cached value of the '{@link #getClassDividers() <em>Class Dividers</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getClassDividers()
+	 * @generated
+	 * @ordered
+	 */
+	protected ClassDividersType classDividers;
+
+	/**
+	 * The cached value of the '{@link #getCargoContainers() <em>Cargo Containers</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCargoContainers()
+	 * @generated
+	 * @ordered
+	 */
+	protected CargoContainersType cargoContainers;
+
+	/**
+	 * The cached value of the '{@link #getDeckDoors() <em>Deck Doors</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDeckDoors()
+	 * @generated
+	 * @ordered
+	 */
+	protected DeckDoorsType deckDoors;
 
 	/**
 	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
@@ -369,8 +453,8 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 	 * @generated
 	 */
 	@Override
-	public DoubleBaseType getX0() {
-		return x0;
+	public StringUIDBaseType getFloorStructureUID() {
+		return floorStructureUID;
 	}
 
 	/**
@@ -378,165 +462,12 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetX0(DoubleBaseType newX0, NotificationChain msgs) {
-		DoubleBaseType oldX0 = x0;
-		x0 = newX0;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__X0,
-					oldX0, newX0);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setX0(DoubleBaseType newX0) {
-		if (newX0 != x0) {
-			NotificationChain msgs = null;
-			if (x0 != null)
-				msgs = ((InternalEObject) x0).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__X0,
-						null, msgs);
-			if (newX0 != null)
-				msgs = ((InternalEObject) newX0).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__X0,
-						null, msgs);
-			msgs = basicSetX0(newX0, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__X0, newX0, newX0));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DoubleBaseType getZ0() {
-		return z0;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetZ0(DoubleBaseType newZ0, NotificationChain msgs) {
-		DoubleBaseType oldZ0 = z0;
-		z0 = newZ0;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__Z0,
-					oldZ0, newZ0);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setZ0(DoubleBaseType newZ0) {
-		if (newZ0 != z0) {
-			NotificationChain msgs = null;
-			if (z0 != null)
-				msgs = ((InternalEObject) z0).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__Z0,
-						null, msgs);
-			if (newZ0 != null)
-				msgs = ((InternalEObject) newZ0).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__Z0,
-						null, msgs);
-			msgs = basicSetZ0(newZ0, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__Z0, newZ0, newZ0));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public TypeType7 getType() {
-		return type;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetType(TypeType7 newType, NotificationChain msgs) {
-		TypeType7 oldType = type;
-		type = newType;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__TYPE,
-					oldType, newType);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setType(TypeType7 newType) {
-		if (newType != type) {
-			NotificationChain msgs = null;
-			if (type != null)
-				msgs = ((InternalEObject) type).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__TYPE, null, msgs);
-			if (newType != null)
-				msgs = ((InternalEObject) newType).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__TYPE, null, msgs);
-			msgs = basicSetType(newType, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__TYPE, newType, newType));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CabGeometryType getCabGeometry() {
-		return cabGeometry;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetCabGeometry(CabGeometryType newCabGeometry, NotificationChain msgs) {
-		CabGeometryType oldCabGeometry = cabGeometry;
-		cabGeometry = newCabGeometry;
+	public NotificationChain basicSetFloorStructureUID(StringUIDBaseType newFloorStructureUID, NotificationChain msgs) {
+		StringUIDBaseType oldFloorStructureUID = floorStructureUID;
+		floorStructureUID = newFloorStructureUID;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DECK_TYPE__CAB_GEOMETRY, oldCabGeometry, newCabGeometry);
+					CpacsPackage.DECK_TYPE__FLOOR_STRUCTURE_UID, oldFloorStructureUID, newFloorStructureUID);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -551,21 +482,229 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 	 * @generated
 	 */
 	@Override
-	public void setCabGeometry(CabGeometryType newCabGeometry) {
-		if (newCabGeometry != cabGeometry) {
+	public void setFloorStructureUID(StringUIDBaseType newFloorStructureUID) {
+		if (newFloorStructureUID != floorStructureUID) {
 			NotificationChain msgs = null;
-			if (cabGeometry != null)
-				msgs = ((InternalEObject) cabGeometry).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__CAB_GEOMETRY, null, msgs);
-			if (newCabGeometry != null)
-				msgs = ((InternalEObject) newCabGeometry).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__CAB_GEOMETRY, null, msgs);
-			msgs = basicSetCabGeometry(newCabGeometry, msgs);
+			if (floorStructureUID != null)
+				msgs = ((InternalEObject) floorStructureUID).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__FLOOR_STRUCTURE_UID, null, msgs);
+			if (newFloorStructureUID != null)
+				msgs = ((InternalEObject) newFloorStructureUID).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__FLOOR_STRUCTURE_UID, null, msgs);
+			msgs = basicSetFloorStructureUID(newFloorStructureUID, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__CAB_GEOMETRY, newCabGeometry,
-					newCabGeometry));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__FLOOR_STRUCTURE_UID,
+					newFloorStructureUID, newFloorStructureUID));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TransformationType getTransformation() {
+		return transformation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetTransformation(TransformationType newTransformation, NotificationChain msgs) {
+		TransformationType oldTransformation = transformation;
+		transformation = newTransformation;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.DECK_TYPE__TRANSFORMATION, oldTransformation, newTransformation);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTransformation(TransformationType newTransformation) {
+		if (newTransformation != transformation) {
+			NotificationChain msgs = null;
+			if (transformation != null)
+				msgs = ((InternalEObject) transformation).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__TRANSFORMATION, null, msgs);
+			if (newTransformation != null)
+				msgs = ((InternalEObject) newTransformation).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__TRANSFORMATION, null, msgs);
+			msgs = basicSetTransformation(newTransformation, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__TRANSFORMATION,
+					newTransformation, newTransformation));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeckTypeType getDeckType() {
+		return deckType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetDeckType(DeckTypeType newDeckType, NotificationChain msgs) {
+		DeckTypeType oldDeckType = deckType;
+		deckType = newDeckType;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.DECK_TYPE__DECK_TYPE, oldDeckType, newDeckType);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDeckType(DeckTypeType newDeckType) {
+		if (newDeckType != deckType) {
+			NotificationChain msgs = null;
+			if (deckType != null)
+				msgs = ((InternalEObject) deckType).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__DECK_TYPE, null, msgs);
+			if (newDeckType != null)
+				msgs = ((InternalEObject) newDeckType).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__DECK_TYPE, null, msgs);
+			msgs = basicSetDeckType(newDeckType, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__DECK_TYPE, newDeckType,
+					newDeckType));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CabinGeometryType getCabinGeometry() {
+		return cabinGeometry;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetCabinGeometry(CabinGeometryType newCabinGeometry, NotificationChain msgs) {
+		CabinGeometryType oldCabinGeometry = cabinGeometry;
+		cabinGeometry = newCabinGeometry;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.DECK_TYPE__CABIN_GEOMETRY, oldCabinGeometry, newCabinGeometry);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCabinGeometry(CabinGeometryType newCabinGeometry) {
+		if (newCabinGeometry != cabinGeometry) {
+			NotificationChain msgs = null;
+			if (cabinGeometry != null)
+				msgs = ((InternalEObject) cabinGeometry).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__CABIN_GEOMETRY, null, msgs);
+			if (newCabinGeometry != null)
+				msgs = ((InternalEObject) newCabinGeometry).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__CABIN_GEOMETRY, null, msgs);
+			msgs = basicSetCabinGeometry(newCabinGeometry, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__CABIN_GEOMETRY,
+					newCabinGeometry, newCabinGeometry));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SeatModulesType getSeatModules() {
+		return seatModules;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetSeatModules(SeatModulesType newSeatModules, NotificationChain msgs) {
+		SeatModulesType oldSeatModules = seatModules;
+		seatModules = newSeatModules;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.DECK_TYPE__SEAT_MODULES, oldSeatModules, newSeatModules);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSeatModules(SeatModulesType newSeatModules) {
+		if (newSeatModules != seatModules) {
+			NotificationChain msgs = null;
+			if (seatModules != null)
+				msgs = ((InternalEObject) seatModules).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__SEAT_MODULES, null, msgs);
+			if (newSeatModules != null)
+				msgs = ((InternalEObject) newSeatModules).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__SEAT_MODULES, null, msgs);
+			msgs = basicSetSeatModules(newSeatModules, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__SEAT_MODULES, newSeatModules,
+					newSeatModules));
 	}
 
 	/**
@@ -678,8 +817,8 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 	 * @generated
 	 */
 	@Override
-	public CabinDoorsType getDoors() {
-		return doors;
+	public SidewallPanelsType getSidewallPanels() {
+		return sidewallPanels;
 	}
 
 	/**
@@ -687,12 +826,12 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDoors(CabinDoorsType newDoors, NotificationChain msgs) {
-		CabinDoorsType oldDoors = doors;
-		doors = newDoors;
+	public NotificationChain basicSetSidewallPanels(SidewallPanelsType newSidewallPanels, NotificationChain msgs) {
+		SidewallPanelsType oldSidewallPanels = sidewallPanels;
+		sidewallPanels = newSidewallPanels;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DECK_TYPE__DOORS, oldDoors, newDoors);
+					CpacsPackage.DECK_TYPE__SIDEWALL_PANELS, oldSidewallPanels, newSidewallPanels);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -707,20 +846,21 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 	 * @generated
 	 */
 	@Override
-	public void setDoors(CabinDoorsType newDoors) {
-		if (newDoors != doors) {
+	public void setSidewallPanels(SidewallPanelsType newSidewallPanels) {
+		if (newSidewallPanels != sidewallPanels) {
 			NotificationChain msgs = null;
-			if (doors != null)
-				msgs = ((InternalEObject) doors).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__DOORS, null, msgs);
-			if (newDoors != null)
-				msgs = ((InternalEObject) newDoors).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__DOORS, null, msgs);
-			msgs = basicSetDoors(newDoors, msgs);
+			if (sidewallPanels != null)
+				msgs = ((InternalEObject) sidewallPanels).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__SIDEWALL_PANELS, null, msgs);
+			if (newSidewallPanels != null)
+				msgs = ((InternalEObject) newSidewallPanels).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__SIDEWALL_PANELS, null, msgs);
+			msgs = basicSetSidewallPanels(newSidewallPanels, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__DOORS, newDoors, newDoors));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__SIDEWALL_PANELS,
+					newSidewallPanels, newSidewallPanels));
 	}
 
 	/**
@@ -729,8 +869,8 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 	 * @generated
 	 */
 	@Override
-	public CabinSeatElementsType getSeatElements() {
-		return seatElements;
+	public LuggageCompartmentsType getLuggageCompartments() {
+		return luggageCompartments;
 	}
 
 	/**
@@ -738,12 +878,13 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSeatElements(CabinSeatElementsType newSeatElements, NotificationChain msgs) {
-		CabinSeatElementsType oldSeatElements = seatElements;
-		seatElements = newSeatElements;
+	public NotificationChain basicSetLuggageCompartments(LuggageCompartmentsType newLuggageCompartments,
+			NotificationChain msgs) {
+		LuggageCompartmentsType oldLuggageCompartments = luggageCompartments;
+		luggageCompartments = newLuggageCompartments;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DECK_TYPE__SEAT_ELEMENTS, oldSeatElements, newSeatElements);
+					CpacsPackage.DECK_TYPE__LUGGAGE_COMPARTMENTS, oldLuggageCompartments, newLuggageCompartments);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -758,21 +899,21 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 	 * @generated
 	 */
 	@Override
-	public void setSeatElements(CabinSeatElementsType newSeatElements) {
-		if (newSeatElements != seatElements) {
+	public void setLuggageCompartments(LuggageCompartmentsType newLuggageCompartments) {
+		if (newLuggageCompartments != luggageCompartments) {
 			NotificationChain msgs = null;
-			if (seatElements != null)
-				msgs = ((InternalEObject) seatElements).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__SEAT_ELEMENTS, null, msgs);
-			if (newSeatElements != null)
-				msgs = ((InternalEObject) newSeatElements).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__SEAT_ELEMENTS, null, msgs);
-			msgs = basicSetSeatElements(newSeatElements, msgs);
+			if (luggageCompartments != null)
+				msgs = ((InternalEObject) luggageCompartments).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__LUGGAGE_COMPARTMENTS, null, msgs);
+			if (newLuggageCompartments != null)
+				msgs = ((InternalEObject) newLuggageCompartments).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__LUGGAGE_COMPARTMENTS, null, msgs);
+			msgs = basicSetLuggageCompartments(newLuggageCompartments, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__SEAT_ELEMENTS,
-					newSeatElements, newSeatElements));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__LUGGAGE_COMPARTMENTS,
+					newLuggageCompartments, newLuggageCompartments));
 	}
 
 	/**
@@ -781,8 +922,8 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 	 * @generated
 	 */
 	@Override
-	public CabinFloorElementsType getFloorElements() {
-		return floorElements;
+	public CeilingPanelsType getCeilingPanels() {
+		return ceilingPanels;
 	}
 
 	/**
@@ -790,12 +931,12 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFloorElements(CabinFloorElementsType newFloorElements, NotificationChain msgs) {
-		CabinFloorElementsType oldFloorElements = floorElements;
-		floorElements = newFloorElements;
+	public NotificationChain basicSetCeilingPanels(CeilingPanelsType newCeilingPanels, NotificationChain msgs) {
+		CeilingPanelsType oldCeilingPanels = ceilingPanels;
+		ceilingPanels = newCeilingPanels;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DECK_TYPE__FLOOR_ELEMENTS, oldFloorElements, newFloorElements);
+					CpacsPackage.DECK_TYPE__CEILING_PANELS, oldCeilingPanels, newCeilingPanels);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -810,21 +951,334 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 	 * @generated
 	 */
 	@Override
-	public void setFloorElements(CabinFloorElementsType newFloorElements) {
-		if (newFloorElements != floorElements) {
+	public void setCeilingPanels(CeilingPanelsType newCeilingPanels) {
+		if (newCeilingPanels != ceilingPanels) {
 			NotificationChain msgs = null;
-			if (floorElements != null)
-				msgs = ((InternalEObject) floorElements).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__FLOOR_ELEMENTS, null, msgs);
-			if (newFloorElements != null)
-				msgs = ((InternalEObject) newFloorElements).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__FLOOR_ELEMENTS, null, msgs);
-			msgs = basicSetFloorElements(newFloorElements, msgs);
+			if (ceilingPanels != null)
+				msgs = ((InternalEObject) ceilingPanels).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__CEILING_PANELS, null, msgs);
+			if (newCeilingPanels != null)
+				msgs = ((InternalEObject) newCeilingPanels).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__CEILING_PANELS, null, msgs);
+			msgs = basicSetCeilingPanels(newCeilingPanels, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__FLOOR_ELEMENTS,
-					newFloorElements, newFloorElements));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__CEILING_PANELS,
+					newCeilingPanels, newCeilingPanels));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GalleysType getGalleys() {
+		return galleys;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetGalleys(GalleysType newGalleys, NotificationChain msgs) {
+		GalleysType oldGalleys = galleys;
+		galleys = newGalleys;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.DECK_TYPE__GALLEYS, oldGalleys, newGalleys);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGalleys(GalleysType newGalleys) {
+		if (newGalleys != galleys) {
+			NotificationChain msgs = null;
+			if (galleys != null)
+				msgs = ((InternalEObject) galleys).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__GALLEYS, null, msgs);
+			if (newGalleys != null)
+				msgs = ((InternalEObject) newGalleys).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__GALLEYS, null, msgs);
+			msgs = basicSetGalleys(newGalleys, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__GALLEYS, newGalleys,
+					newGalleys));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GenericFloorModulesType getGenericFloorModules() {
+		return genericFloorModules;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetGenericFloorModules(GenericFloorModulesType newGenericFloorModules,
+			NotificationChain msgs) {
+		GenericFloorModulesType oldGenericFloorModules = genericFloorModules;
+		genericFloorModules = newGenericFloorModules;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.DECK_TYPE__GENERIC_FLOOR_MODULES, oldGenericFloorModules, newGenericFloorModules);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGenericFloorModules(GenericFloorModulesType newGenericFloorModules) {
+		if (newGenericFloorModules != genericFloorModules) {
+			NotificationChain msgs = null;
+			if (genericFloorModules != null)
+				msgs = ((InternalEObject) genericFloorModules).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__GENERIC_FLOOR_MODULES, null, msgs);
+			if (newGenericFloorModules != null)
+				msgs = ((InternalEObject) newGenericFloorModules).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__GENERIC_FLOOR_MODULES, null, msgs);
+			msgs = basicSetGenericFloorModules(newGenericFloorModules, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__GENERIC_FLOOR_MODULES,
+					newGenericFloorModules, newGenericFloorModules));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public LavatoriesType getLavatories() {
+		return lavatories;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetLavatories(LavatoriesType newLavatories, NotificationChain msgs) {
+		LavatoriesType oldLavatories = lavatories;
+		lavatories = newLavatories;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.DECK_TYPE__LAVATORIES, oldLavatories, newLavatories);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLavatories(LavatoriesType newLavatories) {
+		if (newLavatories != lavatories) {
+			NotificationChain msgs = null;
+			if (lavatories != null)
+				msgs = ((InternalEObject) lavatories).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__LAVATORIES, null, msgs);
+			if (newLavatories != null)
+				msgs = ((InternalEObject) newLavatories).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__LAVATORIES, null, msgs);
+			msgs = basicSetLavatories(newLavatories, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__LAVATORIES, newLavatories,
+					newLavatories));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ClassDividersType getClassDividers() {
+		return classDividers;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetClassDividers(ClassDividersType newClassDividers, NotificationChain msgs) {
+		ClassDividersType oldClassDividers = classDividers;
+		classDividers = newClassDividers;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.DECK_TYPE__CLASS_DIVIDERS, oldClassDividers, newClassDividers);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setClassDividers(ClassDividersType newClassDividers) {
+		if (newClassDividers != classDividers) {
+			NotificationChain msgs = null;
+			if (classDividers != null)
+				msgs = ((InternalEObject) classDividers).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__CLASS_DIVIDERS, null, msgs);
+			if (newClassDividers != null)
+				msgs = ((InternalEObject) newClassDividers).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__CLASS_DIVIDERS, null, msgs);
+			msgs = basicSetClassDividers(newClassDividers, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__CLASS_DIVIDERS,
+					newClassDividers, newClassDividers));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CargoContainersType getCargoContainers() {
+		return cargoContainers;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetCargoContainers(CargoContainersType newCargoContainers, NotificationChain msgs) {
+		CargoContainersType oldCargoContainers = cargoContainers;
+		cargoContainers = newCargoContainers;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.DECK_TYPE__CARGO_CONTAINERS, oldCargoContainers, newCargoContainers);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCargoContainers(CargoContainersType newCargoContainers) {
+		if (newCargoContainers != cargoContainers) {
+			NotificationChain msgs = null;
+			if (cargoContainers != null)
+				msgs = ((InternalEObject) cargoContainers).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__CARGO_CONTAINERS, null, msgs);
+			if (newCargoContainers != null)
+				msgs = ((InternalEObject) newCargoContainers).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__CARGO_CONTAINERS, null, msgs);
+			msgs = basicSetCargoContainers(newCargoContainers, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__CARGO_CONTAINERS,
+					newCargoContainers, newCargoContainers));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeckDoorsType getDeckDoors() {
+		return deckDoors;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetDeckDoors(DeckDoorsType newDeckDoors, NotificationChain msgs) {
+		DeckDoorsType oldDeckDoors = deckDoors;
+		deckDoors = newDeckDoors;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.DECK_TYPE__DECK_DOORS, oldDeckDoors, newDeckDoors);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDeckDoors(DeckDoorsType newDeckDoors) {
+		if (newDeckDoors != deckDoors) {
+			NotificationChain msgs = null;
+			if (deckDoors != null)
+				msgs = ((InternalEObject) deckDoors).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__DECK_DOORS, null, msgs);
+			if (newDeckDoors != null)
+				msgs = ((InternalEObject) newDeckDoors).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DECK_TYPE__DECK_DOORS, null, msgs);
+			msgs = basicSetDeckDoors(newDeckDoors, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DECK_TYPE__DECK_DOORS, newDeckDoors,
+					newDeckDoors));
 	}
 
 	/**
@@ -864,24 +1318,38 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 			return basicSetDescription(null, msgs);
 		case CpacsPackage.DECK_TYPE__PARENT_UID:
 			return basicSetParentUID(null, msgs);
-		case CpacsPackage.DECK_TYPE__X0:
-			return basicSetX0(null, msgs);
-		case CpacsPackage.DECK_TYPE__Z0:
-			return basicSetZ0(null, msgs);
-		case CpacsPackage.DECK_TYPE__TYPE:
-			return basicSetType(null, msgs);
-		case CpacsPackage.DECK_TYPE__CAB_GEOMETRY:
-			return basicSetCabGeometry(null, msgs);
+		case CpacsPackage.DECK_TYPE__FLOOR_STRUCTURE_UID:
+			return basicSetFloorStructureUID(null, msgs);
+		case CpacsPackage.DECK_TYPE__TRANSFORMATION:
+			return basicSetTransformation(null, msgs);
+		case CpacsPackage.DECK_TYPE__DECK_TYPE:
+			return basicSetDeckType(null, msgs);
+		case CpacsPackage.DECK_TYPE__CABIN_GEOMETRY:
+			return basicSetCabinGeometry(null, msgs);
+		case CpacsPackage.DECK_TYPE__SEAT_MODULES:
+			return basicSetSeatModules(null, msgs);
 		case CpacsPackage.DECK_TYPE__AISLES:
 			return basicSetAisles(null, msgs);
 		case CpacsPackage.DECK_TYPE__SPACES:
 			return basicSetSpaces(null, msgs);
-		case CpacsPackage.DECK_TYPE__DOORS:
-			return basicSetDoors(null, msgs);
-		case CpacsPackage.DECK_TYPE__SEAT_ELEMENTS:
-			return basicSetSeatElements(null, msgs);
-		case CpacsPackage.DECK_TYPE__FLOOR_ELEMENTS:
-			return basicSetFloorElements(null, msgs);
+		case CpacsPackage.DECK_TYPE__SIDEWALL_PANELS:
+			return basicSetSidewallPanels(null, msgs);
+		case CpacsPackage.DECK_TYPE__LUGGAGE_COMPARTMENTS:
+			return basicSetLuggageCompartments(null, msgs);
+		case CpacsPackage.DECK_TYPE__CEILING_PANELS:
+			return basicSetCeilingPanels(null, msgs);
+		case CpacsPackage.DECK_TYPE__GALLEYS:
+			return basicSetGalleys(null, msgs);
+		case CpacsPackage.DECK_TYPE__GENERIC_FLOOR_MODULES:
+			return basicSetGenericFloorModules(null, msgs);
+		case CpacsPackage.DECK_TYPE__LAVATORIES:
+			return basicSetLavatories(null, msgs);
+		case CpacsPackage.DECK_TYPE__CLASS_DIVIDERS:
+			return basicSetClassDividers(null, msgs);
+		case CpacsPackage.DECK_TYPE__CARGO_CONTAINERS:
+			return basicSetCargoContainers(null, msgs);
+		case CpacsPackage.DECK_TYPE__DECK_DOORS:
+			return basicSetDeckDoors(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -900,24 +1368,38 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 			return getDescription();
 		case CpacsPackage.DECK_TYPE__PARENT_UID:
 			return getParentUID();
-		case CpacsPackage.DECK_TYPE__X0:
-			return getX0();
-		case CpacsPackage.DECK_TYPE__Z0:
-			return getZ0();
-		case CpacsPackage.DECK_TYPE__TYPE:
-			return getType();
-		case CpacsPackage.DECK_TYPE__CAB_GEOMETRY:
-			return getCabGeometry();
+		case CpacsPackage.DECK_TYPE__FLOOR_STRUCTURE_UID:
+			return getFloorStructureUID();
+		case CpacsPackage.DECK_TYPE__TRANSFORMATION:
+			return getTransformation();
+		case CpacsPackage.DECK_TYPE__DECK_TYPE:
+			return getDeckType();
+		case CpacsPackage.DECK_TYPE__CABIN_GEOMETRY:
+			return getCabinGeometry();
+		case CpacsPackage.DECK_TYPE__SEAT_MODULES:
+			return getSeatModules();
 		case CpacsPackage.DECK_TYPE__AISLES:
 			return getAisles();
 		case CpacsPackage.DECK_TYPE__SPACES:
 			return getSpaces();
-		case CpacsPackage.DECK_TYPE__DOORS:
-			return getDoors();
-		case CpacsPackage.DECK_TYPE__SEAT_ELEMENTS:
-			return getSeatElements();
-		case CpacsPackage.DECK_TYPE__FLOOR_ELEMENTS:
-			return getFloorElements();
+		case CpacsPackage.DECK_TYPE__SIDEWALL_PANELS:
+			return getSidewallPanels();
+		case CpacsPackage.DECK_TYPE__LUGGAGE_COMPARTMENTS:
+			return getLuggageCompartments();
+		case CpacsPackage.DECK_TYPE__CEILING_PANELS:
+			return getCeilingPanels();
+		case CpacsPackage.DECK_TYPE__GALLEYS:
+			return getGalleys();
+		case CpacsPackage.DECK_TYPE__GENERIC_FLOOR_MODULES:
+			return getGenericFloorModules();
+		case CpacsPackage.DECK_TYPE__LAVATORIES:
+			return getLavatories();
+		case CpacsPackage.DECK_TYPE__CLASS_DIVIDERS:
+			return getClassDividers();
+		case CpacsPackage.DECK_TYPE__CARGO_CONTAINERS:
+			return getCargoContainers();
+		case CpacsPackage.DECK_TYPE__DECK_DOORS:
+			return getDeckDoors();
 		case CpacsPackage.DECK_TYPE__UID:
 			return getUID();
 		}
@@ -941,17 +1423,20 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 		case CpacsPackage.DECK_TYPE__PARENT_UID:
 			setParentUID((StringUIDBaseType) newValue);
 			return;
-		case CpacsPackage.DECK_TYPE__X0:
-			setX0((DoubleBaseType) newValue);
+		case CpacsPackage.DECK_TYPE__FLOOR_STRUCTURE_UID:
+			setFloorStructureUID((StringUIDBaseType) newValue);
 			return;
-		case CpacsPackage.DECK_TYPE__Z0:
-			setZ0((DoubleBaseType) newValue);
+		case CpacsPackage.DECK_TYPE__TRANSFORMATION:
+			setTransformation((TransformationType) newValue);
 			return;
-		case CpacsPackage.DECK_TYPE__TYPE:
-			setType((TypeType7) newValue);
+		case CpacsPackage.DECK_TYPE__DECK_TYPE:
+			setDeckType((DeckTypeType) newValue);
 			return;
-		case CpacsPackage.DECK_TYPE__CAB_GEOMETRY:
-			setCabGeometry((CabGeometryType) newValue);
+		case CpacsPackage.DECK_TYPE__CABIN_GEOMETRY:
+			setCabinGeometry((CabinGeometryType) newValue);
+			return;
+		case CpacsPackage.DECK_TYPE__SEAT_MODULES:
+			setSeatModules((SeatModulesType) newValue);
 			return;
 		case CpacsPackage.DECK_TYPE__AISLES:
 			setAisles((CabinAislesType) newValue);
@@ -959,14 +1444,32 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 		case CpacsPackage.DECK_TYPE__SPACES:
 			setSpaces((CabinSpacesType) newValue);
 			return;
-		case CpacsPackage.DECK_TYPE__DOORS:
-			setDoors((CabinDoorsType) newValue);
+		case CpacsPackage.DECK_TYPE__SIDEWALL_PANELS:
+			setSidewallPanels((SidewallPanelsType) newValue);
 			return;
-		case CpacsPackage.DECK_TYPE__SEAT_ELEMENTS:
-			setSeatElements((CabinSeatElementsType) newValue);
+		case CpacsPackage.DECK_TYPE__LUGGAGE_COMPARTMENTS:
+			setLuggageCompartments((LuggageCompartmentsType) newValue);
 			return;
-		case CpacsPackage.DECK_TYPE__FLOOR_ELEMENTS:
-			setFloorElements((CabinFloorElementsType) newValue);
+		case CpacsPackage.DECK_TYPE__CEILING_PANELS:
+			setCeilingPanels((CeilingPanelsType) newValue);
+			return;
+		case CpacsPackage.DECK_TYPE__GALLEYS:
+			setGalleys((GalleysType) newValue);
+			return;
+		case CpacsPackage.DECK_TYPE__GENERIC_FLOOR_MODULES:
+			setGenericFloorModules((GenericFloorModulesType) newValue);
+			return;
+		case CpacsPackage.DECK_TYPE__LAVATORIES:
+			setLavatories((LavatoriesType) newValue);
+			return;
+		case CpacsPackage.DECK_TYPE__CLASS_DIVIDERS:
+			setClassDividers((ClassDividersType) newValue);
+			return;
+		case CpacsPackage.DECK_TYPE__CARGO_CONTAINERS:
+			setCargoContainers((CargoContainersType) newValue);
+			return;
+		case CpacsPackage.DECK_TYPE__DECK_DOORS:
+			setDeckDoors((DeckDoorsType) newValue);
 			return;
 		case CpacsPackage.DECK_TYPE__UID:
 			setUID((String) newValue);
@@ -992,17 +1495,20 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 		case CpacsPackage.DECK_TYPE__PARENT_UID:
 			setParentUID((StringUIDBaseType) null);
 			return;
-		case CpacsPackage.DECK_TYPE__X0:
-			setX0((DoubleBaseType) null);
+		case CpacsPackage.DECK_TYPE__FLOOR_STRUCTURE_UID:
+			setFloorStructureUID((StringUIDBaseType) null);
 			return;
-		case CpacsPackage.DECK_TYPE__Z0:
-			setZ0((DoubleBaseType) null);
+		case CpacsPackage.DECK_TYPE__TRANSFORMATION:
+			setTransformation((TransformationType) null);
 			return;
-		case CpacsPackage.DECK_TYPE__TYPE:
-			setType((TypeType7) null);
+		case CpacsPackage.DECK_TYPE__DECK_TYPE:
+			setDeckType((DeckTypeType) null);
 			return;
-		case CpacsPackage.DECK_TYPE__CAB_GEOMETRY:
-			setCabGeometry((CabGeometryType) null);
+		case CpacsPackage.DECK_TYPE__CABIN_GEOMETRY:
+			setCabinGeometry((CabinGeometryType) null);
+			return;
+		case CpacsPackage.DECK_TYPE__SEAT_MODULES:
+			setSeatModules((SeatModulesType) null);
 			return;
 		case CpacsPackage.DECK_TYPE__AISLES:
 			setAisles((CabinAislesType) null);
@@ -1010,14 +1516,32 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 		case CpacsPackage.DECK_TYPE__SPACES:
 			setSpaces((CabinSpacesType) null);
 			return;
-		case CpacsPackage.DECK_TYPE__DOORS:
-			setDoors((CabinDoorsType) null);
+		case CpacsPackage.DECK_TYPE__SIDEWALL_PANELS:
+			setSidewallPanels((SidewallPanelsType) null);
 			return;
-		case CpacsPackage.DECK_TYPE__SEAT_ELEMENTS:
-			setSeatElements((CabinSeatElementsType) null);
+		case CpacsPackage.DECK_TYPE__LUGGAGE_COMPARTMENTS:
+			setLuggageCompartments((LuggageCompartmentsType) null);
 			return;
-		case CpacsPackage.DECK_TYPE__FLOOR_ELEMENTS:
-			setFloorElements((CabinFloorElementsType) null);
+		case CpacsPackage.DECK_TYPE__CEILING_PANELS:
+			setCeilingPanels((CeilingPanelsType) null);
+			return;
+		case CpacsPackage.DECK_TYPE__GALLEYS:
+			setGalleys((GalleysType) null);
+			return;
+		case CpacsPackage.DECK_TYPE__GENERIC_FLOOR_MODULES:
+			setGenericFloorModules((GenericFloorModulesType) null);
+			return;
+		case CpacsPackage.DECK_TYPE__LAVATORIES:
+			setLavatories((LavatoriesType) null);
+			return;
+		case CpacsPackage.DECK_TYPE__CLASS_DIVIDERS:
+			setClassDividers((ClassDividersType) null);
+			return;
+		case CpacsPackage.DECK_TYPE__CARGO_CONTAINERS:
+			setCargoContainers((CargoContainersType) null);
+			return;
+		case CpacsPackage.DECK_TYPE__DECK_DOORS:
+			setDeckDoors((DeckDoorsType) null);
 			return;
 		case CpacsPackage.DECK_TYPE__UID:
 			setUID(UID_EDEFAULT);
@@ -1040,24 +1564,38 @@ public class DeckTypeImpl extends ComplexBaseTypeImpl implements DeckType {
 			return description != null;
 		case CpacsPackage.DECK_TYPE__PARENT_UID:
 			return parentUID != null;
-		case CpacsPackage.DECK_TYPE__X0:
-			return x0 != null;
-		case CpacsPackage.DECK_TYPE__Z0:
-			return z0 != null;
-		case CpacsPackage.DECK_TYPE__TYPE:
-			return type != null;
-		case CpacsPackage.DECK_TYPE__CAB_GEOMETRY:
-			return cabGeometry != null;
+		case CpacsPackage.DECK_TYPE__FLOOR_STRUCTURE_UID:
+			return floorStructureUID != null;
+		case CpacsPackage.DECK_TYPE__TRANSFORMATION:
+			return transformation != null;
+		case CpacsPackage.DECK_TYPE__DECK_TYPE:
+			return deckType != null;
+		case CpacsPackage.DECK_TYPE__CABIN_GEOMETRY:
+			return cabinGeometry != null;
+		case CpacsPackage.DECK_TYPE__SEAT_MODULES:
+			return seatModules != null;
 		case CpacsPackage.DECK_TYPE__AISLES:
 			return aisles != null;
 		case CpacsPackage.DECK_TYPE__SPACES:
 			return spaces != null;
-		case CpacsPackage.DECK_TYPE__DOORS:
-			return doors != null;
-		case CpacsPackage.DECK_TYPE__SEAT_ELEMENTS:
-			return seatElements != null;
-		case CpacsPackage.DECK_TYPE__FLOOR_ELEMENTS:
-			return floorElements != null;
+		case CpacsPackage.DECK_TYPE__SIDEWALL_PANELS:
+			return sidewallPanels != null;
+		case CpacsPackage.DECK_TYPE__LUGGAGE_COMPARTMENTS:
+			return luggageCompartments != null;
+		case CpacsPackage.DECK_TYPE__CEILING_PANELS:
+			return ceilingPanels != null;
+		case CpacsPackage.DECK_TYPE__GALLEYS:
+			return galleys != null;
+		case CpacsPackage.DECK_TYPE__GENERIC_FLOOR_MODULES:
+			return genericFloorModules != null;
+		case CpacsPackage.DECK_TYPE__LAVATORIES:
+			return lavatories != null;
+		case CpacsPackage.DECK_TYPE__CLASS_DIVIDERS:
+			return classDividers != null;
+		case CpacsPackage.DECK_TYPE__CARGO_CONTAINERS:
+			return cargoContainers != null;
+		case CpacsPackage.DECK_TYPE__DECK_DOORS:
+			return deckDoors != null;
 		case CpacsPackage.DECK_TYPE__UID:
 			return UID_EDEFAULT == null ? uID != null : !UID_EDEFAULT.equals(uID);
 		}

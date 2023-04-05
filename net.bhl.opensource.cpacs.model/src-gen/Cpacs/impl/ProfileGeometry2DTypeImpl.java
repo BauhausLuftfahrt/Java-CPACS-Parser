@@ -7,7 +7,7 @@ import Cpacs.Cst2DType;
 import Cpacs.PointListXYVectorType;
 import Cpacs.ProfileGeometry2DType;
 import Cpacs.StringBaseType;
-import Cpacs.SymmetryType1;
+import Cpacs.SymmetryType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -84,7 +84,7 @@ public class ProfileGeometry2DTypeImpl extends ComplexBaseTypeImpl implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SymmetryType1 SYMMETRY_EDEFAULT = SymmetryType1.XAXIS;
+	protected static final SymmetryType SYMMETRY_EDEFAULT = SymmetryType.NONE;
 
 	/**
 	 * The cached value of the '{@link #getSymmetry() <em>Symmetry</em>}' attribute.
@@ -94,7 +94,7 @@ public class ProfileGeometry2DTypeImpl extends ComplexBaseTypeImpl implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected SymmetryType1 symmetry = SYMMETRY_EDEFAULT;
+	protected SymmetryType symmetry = SYMMETRY_EDEFAULT;
 
 	/**
 	 * This is true if the Symmetry attribute has been set.
@@ -358,7 +358,7 @@ public class ProfileGeometry2DTypeImpl extends ComplexBaseTypeImpl implements Pr
 	 * @generated
 	 */
 	@Override
-	public SymmetryType1 getSymmetry() {
+	public SymmetryType getSymmetry() {
 		return symmetry;
 	}
 
@@ -368,8 +368,8 @@ public class ProfileGeometry2DTypeImpl extends ComplexBaseTypeImpl implements Pr
 	 * @generated
 	 */
 	@Override
-	public void setSymmetry(SymmetryType1 newSymmetry) {
-		SymmetryType1 oldSymmetry = symmetry;
+	public void setSymmetry(SymmetryType newSymmetry) {
+		SymmetryType oldSymmetry = symmetry;
 		symmetry = newSymmetry == null ? SYMMETRY_EDEFAULT : newSymmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetryESet = true;
@@ -385,7 +385,7 @@ public class ProfileGeometry2DTypeImpl extends ComplexBaseTypeImpl implements Pr
 	 */
 	@Override
 	public void unsetSymmetry() {
-		SymmetryType1 oldSymmetry = symmetry;
+		SymmetryType oldSymmetry = symmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetry = SYMMETRY_EDEFAULT;
 		symmetryESet = false;
@@ -493,7 +493,7 @@ public class ProfileGeometry2DTypeImpl extends ComplexBaseTypeImpl implements Pr
 			setCst2D((Cst2DType) newValue);
 			return;
 		case CpacsPackage.PROFILE_GEOMETRY2_DTYPE__SYMMETRY:
-			setSymmetry((SymmetryType1) newValue);
+			setSymmetry((SymmetryType) newValue);
 			return;
 		case CpacsPackage.PROFILE_GEOMETRY2_DTYPE__UID:
 			setUID((String) newValue);

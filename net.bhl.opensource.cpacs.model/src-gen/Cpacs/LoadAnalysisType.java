@@ -12,6 +12,7 @@ package Cpacs;
  * </p>
  * <ul>
  *   <li>{@link Cpacs.LoadAnalysisType#getLoadCases <em>Load Cases</em>}</li>
+ *   <li>{@link Cpacs.LoadAnalysisType#getLoadEnvelopes <em>Load Envelopes</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getLoadAnalysisType()
@@ -41,5 +42,28 @@ public interface LoadAnalysisType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setLoadCases(LoadCasesType value);
+
+	/**
+	 * Returns the value of the '<em><b>Load Envelopes</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Load Envelopes</em>' containment reference.
+	 * @see #setLoadEnvelopes(LoadEnvelopesType)
+	 * @see Cpacs.CpacsPackage#getLoadAnalysisType_LoadEnvelopes()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='loadEnvelopes' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	LoadEnvelopesType getLoadEnvelopes();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.LoadAnalysisType#getLoadEnvelopes <em>Load Envelopes</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Load Envelopes</em>' containment reference.
+	 * @see #getLoadEnvelopes()
+	 * @generated
+	 */
+	void setLoadEnvelopes(LoadEnvelopesType value);
 
 } // LoadAnalysisType

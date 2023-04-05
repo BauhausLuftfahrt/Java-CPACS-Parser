@@ -12,5 +12,5 @@ package Cpacs;
  * @model extendedMetaData="name='wayPointType_._type' kind='simple'"
  * @generated
  */
-public interface WayPointTypeType extends StringBaseType {
+public interface WayPointTypeType extends StringVectorBaseType {
 } // WayPointTypeType

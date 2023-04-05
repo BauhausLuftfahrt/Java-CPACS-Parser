@@ -28,6 +28,11 @@ public interface NacelleGuideCurveType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * 
+	 *                                 Name
+	 *                             
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(StringBaseType)
 	 * @see Cpacs.CpacsPackage#getNacelleGuideCurveType_Name()
@@ -51,10 +56,15 @@ public interface NacelleGuideCurveType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * 
+	 *                                 Description
+	 *                             
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(StringBaseType)
 	 * @see Cpacs.CpacsPackage#getNacelleGuideCurveType_Description()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='description' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -74,6 +84,11 @@ public interface NacelleGuideCurveType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Guide Curve Profile UID</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * 
+	 *                                 UID of the guide curve profile
+	 *                             
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Guide Curve Profile UID</em>' containment reference.
 	 * @see #setGuideCurveProfileUID(StringUIDBaseType)
 	 * @see Cpacs.CpacsPackage#getNacelleGuideCurveType_GuideCurveProfileUID()
@@ -97,6 +112,11 @@ public interface NacelleGuideCurveType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Start Section UID</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * 
+	 *                                 UID of the start section
+	 *                             
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Start Section UID</em>' containment reference.
 	 * @see #setStartSectionUID(StringUIDBaseType)
 	 * @see Cpacs.CpacsPackage#getNacelleGuideCurveType_StartSectionUID()
@@ -120,6 +140,12 @@ public interface NacelleGuideCurveType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>From Zeta</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * 
+	 *                                 Curve coordinate of the referenced section profile at which the guide curve shall start.
+	 *                                 Valid values are in the interval -1,..,1.
+	 *                             
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>From Zeta</em>' containment reference.
 	 * @see #setFromZeta(DoubleBaseType)
 	 * @see Cpacs.CpacsPackage#getNacelleGuideCurveType_FromZeta()
@@ -143,6 +169,13 @@ public interface NacelleGuideCurveType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>To Zeta</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * 
+	 *                                 Curve coordinate of the profile following the referenced section profile.
+	 *                                 It defines where the guide curve ends.
+	 *                                 Valid values are in the interval -1,..,1.
+	 *                             
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>To Zeta</em>' containment reference.
 	 * @see #setToZeta(DoubleBaseType)
 	 * @see Cpacs.CpacsPackage#getNacelleGuideCurveType_ToZeta()

@@ -6,7 +6,7 @@ import Cpacs.CpacsPackage;
 import Cpacs.GuideCurveProfileGeometryType;
 import Cpacs.PointListRelXYZVectorType;
 import Cpacs.StringBaseType;
-import Cpacs.SymmetryType4;
+import Cpacs.SymmetryXyXzYzType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -72,7 +72,7 @@ public class GuideCurveProfileGeometryTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SymmetryType4 SYMMETRY_EDEFAULT = SymmetryType4.XY_PLANE;
+	protected static final SymmetryXyXzYzType SYMMETRY_EDEFAULT = SymmetryXyXzYzType.NONE;
 
 	/**
 	 * The cached value of the '{@link #getSymmetry() <em>Symmetry</em>}' attribute.
@@ -82,7 +82,7 @@ public class GuideCurveProfileGeometryTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 * @ordered
 	 */
-	protected SymmetryType4 symmetry = SYMMETRY_EDEFAULT;
+	protected SymmetryXyXzYzType symmetry = SYMMETRY_EDEFAULT;
 
 	/**
 	 * This is true if the Symmetry attribute has been set.
@@ -298,7 +298,7 @@ public class GuideCurveProfileGeometryTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public SymmetryType4 getSymmetry() {
+	public SymmetryXyXzYzType getSymmetry() {
 		return symmetry;
 	}
 
@@ -308,8 +308,8 @@ public class GuideCurveProfileGeometryTypeImpl extends ComplexBaseTypeImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setSymmetry(SymmetryType4 newSymmetry) {
-		SymmetryType4 oldSymmetry = symmetry;
+	public void setSymmetry(SymmetryXyXzYzType newSymmetry) {
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		symmetry = newSymmetry == null ? SYMMETRY_EDEFAULT : newSymmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetryESet = true;
@@ -325,7 +325,7 @@ public class GuideCurveProfileGeometryTypeImpl extends ComplexBaseTypeImpl imple
 	 */
 	@Override
 	public void unsetSymmetry() {
-		SymmetryType4 oldSymmetry = symmetry;
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetry = SYMMETRY_EDEFAULT;
 		symmetryESet = false;
@@ -427,7 +427,7 @@ public class GuideCurveProfileGeometryTypeImpl extends ComplexBaseTypeImpl imple
 			setPointList((PointListRelXYZVectorType) newValue);
 			return;
 		case CpacsPackage.GUIDE_CURVE_PROFILE_GEOMETRY_TYPE__SYMMETRY:
-			setSymmetry((SymmetryType4) newValue);
+			setSymmetry((SymmetryXyXzYzType) newValue);
 			return;
 		case CpacsPackage.GUIDE_CURVE_PROFILE_GEOMETRY_TYPE__UID:
 			setUID((String) newValue);

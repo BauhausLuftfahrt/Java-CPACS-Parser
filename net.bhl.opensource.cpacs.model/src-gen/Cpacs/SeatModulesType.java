@@ -23,15 +23,18 @@ import org.eclipse.emf.common.util.EList;
 public interface SeatModulesType extends ComplexBaseType {
 	/**
 	 * Returns the value of the '<em><b>Seat Module</b></em>' containment reference list.
-	 * The list contents are of type {@link Cpacs.SeatModuleType}.
+	 * The list contents are of type {@link Cpacs.DeckComponent2DBaseType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Seat module
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Seat Module</em>' containment reference list.
 	 * @see Cpacs.CpacsPackage#getSeatModulesType_SeatModule()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='seatModule' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<SeatModuleType> getSeatModule();
+	EList<DeckComponent2DBaseType> getSeatModule();
 
 } // SeatModulesType

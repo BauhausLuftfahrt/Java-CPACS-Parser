@@ -6,7 +6,7 @@ import Cpacs.CpacsPackage;
 import Cpacs.GenericSystemType;
 import Cpacs.GeometricBaseTypeType;
 import Cpacs.StringBaseType;
-import Cpacs.SymmetryType10;
+import Cpacs.SymmetryXyXzYzType;
 import Cpacs.TransformationType;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -103,7 +103,7 @@ public class GenericSystemTypeImpl extends ComplexBaseTypeImpl implements Generi
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SymmetryType10 SYMMETRY_EDEFAULT = SymmetryType10.XY_PLANE;
+	protected static final SymmetryXyXzYzType SYMMETRY_EDEFAULT = SymmetryXyXzYzType.NONE;
 
 	/**
 	 * The cached value of the '{@link #getSymmetry() <em>Symmetry</em>}' attribute.
@@ -113,7 +113,7 @@ public class GenericSystemTypeImpl extends ComplexBaseTypeImpl implements Generi
 	 * @generated
 	 * @ordered
 	 */
-	protected SymmetryType10 symmetry = SYMMETRY_EDEFAULT;
+	protected SymmetryXyXzYzType symmetry = SYMMETRY_EDEFAULT;
 
 	/**
 	 * This is true if the Symmetry attribute has been set.
@@ -378,7 +378,7 @@ public class GenericSystemTypeImpl extends ComplexBaseTypeImpl implements Generi
 	 * @generated
 	 */
 	@Override
-	public SymmetryType10 getSymmetry() {
+	public SymmetryXyXzYzType getSymmetry() {
 		return symmetry;
 	}
 
@@ -388,8 +388,8 @@ public class GenericSystemTypeImpl extends ComplexBaseTypeImpl implements Generi
 	 * @generated
 	 */
 	@Override
-	public void setSymmetry(SymmetryType10 newSymmetry) {
-		SymmetryType10 oldSymmetry = symmetry;
+	public void setSymmetry(SymmetryXyXzYzType newSymmetry) {
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		symmetry = newSymmetry == null ? SYMMETRY_EDEFAULT : newSymmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetryESet = true;
@@ -405,7 +405,7 @@ public class GenericSystemTypeImpl extends ComplexBaseTypeImpl implements Generi
 	 */
 	@Override
 	public void unsetSymmetry() {
-		SymmetryType10 oldSymmetry = symmetry;
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetry = SYMMETRY_EDEFAULT;
 		symmetryESet = false;
@@ -510,7 +510,7 @@ public class GenericSystemTypeImpl extends ComplexBaseTypeImpl implements Generi
 			setTransformation((TransformationType) newValue);
 			return;
 		case CpacsPackage.GENERIC_SYSTEM_TYPE__SYMMETRY:
-			setSymmetry((SymmetryType10) newValue);
+			setSymmetry((SymmetryXyXzYzType) newValue);
 			return;
 		case CpacsPackage.GENERIC_SYSTEM_TYPE__UID:
 			setUID((String) newValue);

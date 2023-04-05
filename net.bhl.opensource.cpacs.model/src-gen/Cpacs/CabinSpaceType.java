@@ -28,6 +28,9 @@ public interface CabinSpaceType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Name
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(StringBaseType)
 	 * @see Cpacs.CpacsPackage#getCabinSpaceType_Name()
@@ -51,6 +54,9 @@ public interface CabinSpaceType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Description
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(StringBaseType)
 	 * @see Cpacs.CpacsPackage#getCabinSpaceType_Description()
@@ -75,17 +81,17 @@ public interface CabinSpaceType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * x-coordinates. These describe an area, so they
+	 * Vector with x-coordinates. These describe an area, so they
 	 *                                 are not monotonous ascending.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>X</em>' containment reference.
-	 * @see #setX(StringVectorBaseType)
+	 * @see #setX(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getCabinSpaceType_X()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='x' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getX();
+	DoubleVectorBaseType getX();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.CabinSpaceType#getX <em>X</em>}' containment reference.
@@ -95,26 +101,26 @@ public interface CabinSpaceType extends ComplexBaseType {
 	 * @see #getX()
 	 * @generated
 	 */
-	void setX(StringVectorBaseType value);
+	void setX(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Y</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * y-coordinates at given x-coordinates. Warning:
+	 * Vector with y-coordinates at given x-coordinates. Warning:
 	 *                                 x-y do not represent a function as single x-positions can have
 	 *                                 multiple y-coordinates. Hence, no interpolation is possible.
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Y</em>' containment reference.
-	 * @see #setY(StringVectorBaseType)
+	 * @see #setY(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getCabinSpaceType_Y()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='y' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getY();
+	DoubleVectorBaseType getY();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.CabinSpaceType#getY <em>Y</em>}' containment reference.
@@ -124,15 +130,15 @@ public interface CabinSpaceType extends ComplexBaseType {
 	 * @see #getY()
 	 * @generated
 	 */
-	void setY(StringVectorBaseType value);
+	void setY(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Height</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * the height above the floor that is required to
-	 *                                 be empty of any objects.
+	 * Height above the floor that is required to
+	 *                                 be empty of any objects
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Height</em>' containment reference.
 	 * @see #setHeight(DoubleBaseType)

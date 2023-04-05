@@ -78,7 +78,7 @@ public interface RotorHubType extends ComplexBaseType {
 
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link Cpacs.TypeType3}.
+	 * The literals are from the enumeration {@link Cpacs.TypeType2}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -86,29 +86,29 @@ public interface RotorHubType extends ComplexBaseType {
 	 *                                 "rigid", "articulated", "hingeless"
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Type</em>' attribute.
-	 * @see Cpacs.TypeType3
+	 * @see Cpacs.TypeType2
 	 * @see #isSetType()
 	 * @see #unsetType()
-	 * @see #setType(TypeType3)
+	 * @see #setType(TypeType2)
 	 * @see Cpacs.CpacsPackage#getRotorHubType_Type()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='type' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	TypeType3 getType();
+	TypeType2 getType();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.RotorHubType#getType <em>Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type</em>' attribute.
-	 * @see Cpacs.TypeType3
+	 * @see Cpacs.TypeType2
 	 * @see #isSetType()
 	 * @see #unsetType()
 	 * @see #getType()
 	 * @generated
 	 */
-	void setType(TypeType3 value);
+	void setType(TypeType2 value);
 
 	/**
 	 * Unsets the value of the '{@link Cpacs.RotorHubType#getType <em>Type</em>}' attribute.
@@ -116,7 +116,7 @@ public interface RotorHubType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * @see #isSetType()
 	 * @see #getType()
-	 * @see #setType(TypeType3)
+	 * @see #setType(TypeType2)
 	 * @generated
 	 */
 	void unsetType();
@@ -128,7 +128,7 @@ public interface RotorHubType extends ComplexBaseType {
 	 * @return whether the value of the '<em>Type</em>' attribute is set.
 	 * @see #unsetType()
 	 * @see #getType()
-	 * @see #setType(TypeType3)
+	 * @see #setType(TypeType2)
 	 * @generated
 	 */
 	boolean isSetType();

@@ -4,9 +4,9 @@ package Cpacs.impl;
 
 import Cpacs.AeroPerformanceIncrementMapType;
 import Cpacs.CpacsPackage;
-import Cpacs.StringArrayBaseType;
+import Cpacs.DoubleArrayBaseType;
+import Cpacs.DoubleVectorBaseType;
 import Cpacs.StringUIDBaseType;
-import Cpacs.StringVectorBaseType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -59,7 +59,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType controlParameters;
+	protected DoubleVectorBaseType controlParameters;
 
 	/**
 	 * The cached value of the '{@link #getControlDistributorUID() <em>Control Distributor UID</em>}' containment reference.
@@ -79,7 +79,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType commandInputs;
+	protected DoubleVectorBaseType commandInputs;
 
 	/**
 	 * The cached value of the '{@link #getDcd() <em>Dcd</em>}' containment reference.
@@ -89,7 +89,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 * @ordered
 	 */
-	protected StringArrayBaseType dcd;
+	protected DoubleArrayBaseType dcd;
 
 	/**
 	 * The cached value of the '{@link #getDcs() <em>Dcs</em>}' containment reference.
@@ -99,7 +99,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 * @ordered
 	 */
-	protected StringArrayBaseType dcs;
+	protected DoubleArrayBaseType dcs;
 
 	/**
 	 * The cached value of the '{@link #getDcl() <em>Dcl</em>}' containment reference.
@@ -109,7 +109,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 * @ordered
 	 */
-	protected StringArrayBaseType dcl;
+	protected DoubleArrayBaseType dcl;
 
 	/**
 	 * The cached value of the '{@link #getDcmd() <em>Dcmd</em>}' containment reference.
@@ -119,7 +119,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 * @ordered
 	 */
-	protected StringArrayBaseType dcmd;
+	protected DoubleArrayBaseType dcmd;
 
 	/**
 	 * The cached value of the '{@link #getDcms() <em>Dcms</em>}' containment reference.
@@ -129,7 +129,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 * @ordered
 	 */
-	protected StringArrayBaseType dcms;
+	protected DoubleArrayBaseType dcms;
 
 	/**
 	 * The cached value of the '{@link #getDcml() <em>Dcml</em>}' containment reference.
@@ -139,7 +139,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 * @ordered
 	 */
-	protected StringArrayBaseType dcml;
+	protected DoubleArrayBaseType dcml;
 
 	/**
 	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
@@ -242,7 +242,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getControlParameters() {
+	public DoubleVectorBaseType getControlParameters() {
 		return controlParameters;
 	}
 
@@ -251,9 +251,9 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetControlParameters(StringVectorBaseType newControlParameters,
+	public NotificationChain basicSetControlParameters(DoubleVectorBaseType newControlParameters,
 			NotificationChain msgs) {
-		StringVectorBaseType oldControlParameters = controlParameters;
+		DoubleVectorBaseType oldControlParameters = controlParameters;
 		controlParameters = newControlParameters;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -273,7 +273,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public void setControlParameters(StringVectorBaseType newControlParameters) {
+	public void setControlParameters(DoubleVectorBaseType newControlParameters) {
 		if (newControlParameters != controlParameters) {
 			NotificationChain msgs = null;
 			if (controlParameters != null)
@@ -358,7 +358,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getCommandInputs() {
+	public DoubleVectorBaseType getCommandInputs() {
 		return commandInputs;
 	}
 
@@ -367,8 +367,8 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetCommandInputs(StringVectorBaseType newCommandInputs, NotificationChain msgs) {
-		StringVectorBaseType oldCommandInputs = commandInputs;
+	public NotificationChain basicSetCommandInputs(DoubleVectorBaseType newCommandInputs, NotificationChain msgs) {
+		DoubleVectorBaseType oldCommandInputs = commandInputs;
 		commandInputs = newCommandInputs;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -388,7 +388,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public void setCommandInputs(StringVectorBaseType newCommandInputs) {
+	public void setCommandInputs(DoubleVectorBaseType newCommandInputs) {
 		if (newCommandInputs != commandInputs) {
 			NotificationChain msgs = null;
 			if (commandInputs != null)
@@ -414,7 +414,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public StringArrayBaseType getDcd() {
+	public DoubleArrayBaseType getDcd() {
 		return dcd;
 	}
 
@@ -423,8 +423,8 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcd(StringArrayBaseType newDcd, NotificationChain msgs) {
-		StringArrayBaseType oldDcd = dcd;
+	public NotificationChain basicSetDcd(DoubleArrayBaseType newDcd, NotificationChain msgs) {
+		DoubleArrayBaseType oldDcd = dcd;
 		dcd = newDcd;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -443,7 +443,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public void setDcd(StringArrayBaseType newDcd) {
+	public void setDcd(DoubleArrayBaseType newDcd) {
 		if (newDcd != dcd) {
 			NotificationChain msgs = null;
 			if (dcd != null)
@@ -466,7 +466,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public StringArrayBaseType getDcs() {
+	public DoubleArrayBaseType getDcs() {
 		return dcs;
 	}
 
@@ -475,8 +475,8 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcs(StringArrayBaseType newDcs, NotificationChain msgs) {
-		StringArrayBaseType oldDcs = dcs;
+	public NotificationChain basicSetDcs(DoubleArrayBaseType newDcs, NotificationChain msgs) {
+		DoubleArrayBaseType oldDcs = dcs;
 		dcs = newDcs;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -495,7 +495,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public void setDcs(StringArrayBaseType newDcs) {
+	public void setDcs(DoubleArrayBaseType newDcs) {
 		if (newDcs != dcs) {
 			NotificationChain msgs = null;
 			if (dcs != null)
@@ -518,7 +518,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public StringArrayBaseType getDcl() {
+	public DoubleArrayBaseType getDcl() {
 		return dcl;
 	}
 
@@ -527,8 +527,8 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcl(StringArrayBaseType newDcl, NotificationChain msgs) {
-		StringArrayBaseType oldDcl = dcl;
+	public NotificationChain basicSetDcl(DoubleArrayBaseType newDcl, NotificationChain msgs) {
+		DoubleArrayBaseType oldDcl = dcl;
 		dcl = newDcl;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -547,7 +547,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public void setDcl(StringArrayBaseType newDcl) {
+	public void setDcl(DoubleArrayBaseType newDcl) {
 		if (newDcl != dcl) {
 			NotificationChain msgs = null;
 			if (dcl != null)
@@ -570,7 +570,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public StringArrayBaseType getDcmd() {
+	public DoubleArrayBaseType getDcmd() {
 		return dcmd;
 	}
 
@@ -579,8 +579,8 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcmd(StringArrayBaseType newDcmd, NotificationChain msgs) {
-		StringArrayBaseType oldDcmd = dcmd;
+	public NotificationChain basicSetDcmd(DoubleArrayBaseType newDcmd, NotificationChain msgs) {
+		DoubleArrayBaseType oldDcmd = dcmd;
 		dcmd = newDcmd;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -599,7 +599,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public void setDcmd(StringArrayBaseType newDcmd) {
+	public void setDcmd(DoubleArrayBaseType newDcmd) {
 		if (newDcmd != dcmd) {
 			NotificationChain msgs = null;
 			if (dcmd != null)
@@ -622,7 +622,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public StringArrayBaseType getDcms() {
+	public DoubleArrayBaseType getDcms() {
 		return dcms;
 	}
 
@@ -631,8 +631,8 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcms(StringArrayBaseType newDcms, NotificationChain msgs) {
-		StringArrayBaseType oldDcms = dcms;
+	public NotificationChain basicSetDcms(DoubleArrayBaseType newDcms, NotificationChain msgs) {
+		DoubleArrayBaseType oldDcms = dcms;
 		dcms = newDcms;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -651,7 +651,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public void setDcms(StringArrayBaseType newDcms) {
+	public void setDcms(DoubleArrayBaseType newDcms) {
 		if (newDcms != dcms) {
 			NotificationChain msgs = null;
 			if (dcms != null)
@@ -674,7 +674,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public StringArrayBaseType getDcml() {
+	public DoubleArrayBaseType getDcml() {
 		return dcml;
 	}
 
@@ -683,8 +683,8 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcml(StringArrayBaseType newDcml, NotificationChain msgs) {
-		StringArrayBaseType oldDcml = dcml;
+	public NotificationChain basicSetDcml(DoubleArrayBaseType newDcml, NotificationChain msgs) {
+		DoubleArrayBaseType oldDcml = dcml;
 		dcml = newDcml;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -703,7 +703,7 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 	 * @generated
 	 */
 	@Override
-	public void setDcml(StringArrayBaseType newDcml) {
+	public void setDcml(DoubleArrayBaseType newDcml) {
 		if (newDcml != dcml) {
 			NotificationChain msgs = null;
 			if (dcml != null)
@@ -822,31 +822,31 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 			setControlDeviceUID((StringUIDBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__CONTROL_PARAMETERS:
-			setControlParameters((StringVectorBaseType) newValue);
+			setControlParameters((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__CONTROL_DISTRIBUTOR_UID:
 			setControlDistributorUID((StringUIDBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__COMMAND_INPUTS:
-			setCommandInputs((StringVectorBaseType) newValue);
+			setCommandInputs((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__DCD:
-			setDcd((StringArrayBaseType) newValue);
+			setDcd((DoubleArrayBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__DCS:
-			setDcs((StringArrayBaseType) newValue);
+			setDcs((DoubleArrayBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__DCL:
-			setDcl((StringArrayBaseType) newValue);
+			setDcl((DoubleArrayBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__DCMD:
-			setDcmd((StringArrayBaseType) newValue);
+			setDcmd((DoubleArrayBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__DCMS:
-			setDcms((StringArrayBaseType) newValue);
+			setDcms((DoubleArrayBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__DCML:
-			setDcml((StringArrayBaseType) newValue);
+			setDcml((DoubleArrayBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__UID:
 			setUID((String) newValue);
@@ -867,31 +867,31 @@ public class AeroPerformanceIncrementMapTypeImpl extends ComplexBaseTypeImpl
 			setControlDeviceUID((StringUIDBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__CONTROL_PARAMETERS:
-			setControlParameters((StringVectorBaseType) null);
+			setControlParameters((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__CONTROL_DISTRIBUTOR_UID:
 			setControlDistributorUID((StringUIDBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__COMMAND_INPUTS:
-			setCommandInputs((StringVectorBaseType) null);
+			setCommandInputs((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__DCD:
-			setDcd((StringArrayBaseType) null);
+			setDcd((DoubleArrayBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__DCS:
-			setDcs((StringArrayBaseType) null);
+			setDcs((DoubleArrayBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__DCL:
-			setDcl((StringArrayBaseType) null);
+			setDcl((DoubleArrayBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__DCMD:
-			setDcmd((StringArrayBaseType) null);
+			setDcmd((DoubleArrayBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__DCMS:
-			setDcms((StringArrayBaseType) null);
+			setDcms((DoubleArrayBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__DCML:
-			setDcml((StringArrayBaseType) null);
+			setDcml((DoubleArrayBaseType) null);
 			return;
 		case CpacsPackage.AERO_PERFORMANCE_INCREMENT_MAP_TYPE__UID:
 			setUID(UID_EDEFAULT);

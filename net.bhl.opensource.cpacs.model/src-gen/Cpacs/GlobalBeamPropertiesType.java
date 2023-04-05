@@ -13,7 +13,7 @@ package Cpacs;
  * <ul>
  *   <li>{@link Cpacs.GlobalBeamPropertiesType#getMaterialUID <em>Material UID</em>}</li>
  *   <li>{@link Cpacs.GlobalBeamPropertiesType#getSource <em>Source</em>}</li>
- *   <li>{@link Cpacs.GlobalBeamPropertiesType#getConsistancy <em>Consistancy</em>}</li>
+ *   <li>{@link Cpacs.GlobalBeamPropertiesType#getConsistency <em>Consistency</em>}</li>
  *   <li>{@link Cpacs.GlobalBeamPropertiesType#getBeamCrossSection <em>Beam Cross Section</em>}</li>
  *   <li>{@link Cpacs.GlobalBeamPropertiesType#getBeamCOG <em>Beam COG</em>}</li>
  *   <li>{@link Cpacs.GlobalBeamPropertiesType#getBeamShearCenter <em>Beam Shear Center</em>}</li>
@@ -74,27 +74,27 @@ public interface GlobalBeamPropertiesType extends ComplexBaseType {
 	void setSource(StringBaseType value);
 
 	/**
-	 * Returns the value of the '<em><b>Consistancy</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Consistency</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Consistancy</em>' containment reference.
-	 * @see #setConsistancy(BooleanBaseType)
-	 * @see Cpacs.CpacsPackage#getGlobalBeamPropertiesType_Consistancy()
+	 * @return the value of the '<em>Consistency</em>' containment reference.
+	 * @see #setConsistency(BooleanBaseType)
+	 * @see Cpacs.CpacsPackage#getGlobalBeamPropertiesType_Consistency()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='consistancy' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='consistency' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	BooleanBaseType getConsistancy();
+	BooleanBaseType getConsistency();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.GlobalBeamPropertiesType#getConsistancy <em>Consistancy</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.GlobalBeamPropertiesType#getConsistency <em>Consistency</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Consistancy</em>' containment reference.
-	 * @see #getConsistancy()
+	 * @param value the new value of the '<em>Consistency</em>' containment reference.
+	 * @see #getConsistency()
 	 * @generated
 	 */
-	void setConsistancy(BooleanBaseType value);
+	void setConsistency(BooleanBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Beam Cross Section</b></em>' containment reference.

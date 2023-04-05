@@ -3,8 +3,8 @@
 package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
+import Cpacs.DoubleArrayBaseType;
 import Cpacs.OperationLimitIncrementsType;
-import Cpacs.StringArrayBaseType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -22,32 +22,32 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.OperationLimitIncrementsTypeImpl#getAngleOfSideslip <em>Angle Of Sideslip</em>}</li>
- *   <li>{@link Cpacs.impl.OperationLimitIncrementsTypeImpl#getAngleOfAttack <em>Angle Of Attack</em>}</li>
+ *   <li>{@link Cpacs.impl.OperationLimitIncrementsTypeImpl#getDeltaAngleOfAttackMin <em>Delta Angle Of Attack Min</em>}</li>
+ *   <li>{@link Cpacs.impl.OperationLimitIncrementsTypeImpl#getDeltaAngleOfAttackMax <em>Delta Angle Of Attack Max</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class OperationLimitIncrementsTypeImpl extends ComplexBaseTypeImpl implements OperationLimitIncrementsType {
 	/**
-	 * The cached value of the '{@link #getAngleOfSideslip() <em>Angle Of Sideslip</em>}' containment reference.
+	 * The cached value of the '{@link #getDeltaAngleOfAttackMin() <em>Delta Angle Of Attack Min</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAngleOfSideslip()
+	 * @see #getDeltaAngleOfAttackMin()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringArrayBaseType angleOfSideslip;
+	protected DoubleArrayBaseType deltaAngleOfAttackMin;
 
 	/**
-	 * The cached value of the '{@link #getAngleOfAttack() <em>Angle Of Attack</em>}' containment reference.
+	 * The cached value of the '{@link #getDeltaAngleOfAttackMax() <em>Delta Angle Of Attack Max</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAngleOfAttack()
+	 * @see #getDeltaAngleOfAttackMax()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringArrayBaseType angleOfAttack;
+	protected DoubleArrayBaseType deltaAngleOfAttackMax;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -74,8 +74,8 @@ public class OperationLimitIncrementsTypeImpl extends ComplexBaseTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public StringArrayBaseType getAngleOfSideslip() {
-		return angleOfSideslip;
+	public DoubleArrayBaseType getDeltaAngleOfAttackMin() {
+		return deltaAngleOfAttackMin;
 	}
 
 	/**
@@ -83,13 +83,14 @@ public class OperationLimitIncrementsTypeImpl extends ComplexBaseTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAngleOfSideslip(StringArrayBaseType newAngleOfSideslip, NotificationChain msgs) {
-		StringArrayBaseType oldAngleOfSideslip = angleOfSideslip;
-		angleOfSideslip = newAngleOfSideslip;
+	public NotificationChain basicSetDeltaAngleOfAttackMin(DoubleArrayBaseType newDeltaAngleOfAttackMin,
+			NotificationChain msgs) {
+		DoubleArrayBaseType oldDeltaAngleOfAttackMin = deltaAngleOfAttackMin;
+		deltaAngleOfAttackMin = newDeltaAngleOfAttackMin;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_SIDESLIP, oldAngleOfSideslip,
-					newAngleOfSideslip);
+					CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MIN, oldDeltaAngleOfAttackMin,
+					newDeltaAngleOfAttackMin);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -104,24 +105,22 @@ public class OperationLimitIncrementsTypeImpl extends ComplexBaseTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setAngleOfSideslip(StringArrayBaseType newAngleOfSideslip) {
-		if (newAngleOfSideslip != angleOfSideslip) {
+	public void setDeltaAngleOfAttackMin(DoubleArrayBaseType newDeltaAngleOfAttackMin) {
+		if (newDeltaAngleOfAttackMin != deltaAngleOfAttackMin) {
 			NotificationChain msgs = null;
-			if (angleOfSideslip != null)
-				msgs = ((InternalEObject) angleOfSideslip).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_SIDESLIP, null,
-						msgs);
-			if (newAngleOfSideslip != null)
-				msgs = ((InternalEObject) newAngleOfSideslip).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_SIDESLIP, null,
-						msgs);
-			msgs = basicSetAngleOfSideslip(newAngleOfSideslip, msgs);
+			if (deltaAngleOfAttackMin != null)
+				msgs = ((InternalEObject) deltaAngleOfAttackMin).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+						- CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MIN, null, msgs);
+			if (newDeltaAngleOfAttackMin != null)
+				msgs = ((InternalEObject) newDeltaAngleOfAttackMin).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+						- CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MIN, null, msgs);
+			msgs = basicSetDeltaAngleOfAttackMin(newDeltaAngleOfAttackMin, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_SIDESLIP, newAngleOfSideslip,
-					newAngleOfSideslip));
+					CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MIN, newDeltaAngleOfAttackMin,
+					newDeltaAngleOfAttackMin));
 	}
 
 	/**
@@ -130,8 +129,8 @@ public class OperationLimitIncrementsTypeImpl extends ComplexBaseTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public StringArrayBaseType getAngleOfAttack() {
-		return angleOfAttack;
+	public DoubleArrayBaseType getDeltaAngleOfAttackMax() {
+		return deltaAngleOfAttackMax;
 	}
 
 	/**
@@ -139,12 +138,14 @@ public class OperationLimitIncrementsTypeImpl extends ComplexBaseTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAngleOfAttack(StringArrayBaseType newAngleOfAttack, NotificationChain msgs) {
-		StringArrayBaseType oldAngleOfAttack = angleOfAttack;
-		angleOfAttack = newAngleOfAttack;
+	public NotificationChain basicSetDeltaAngleOfAttackMax(DoubleArrayBaseType newDeltaAngleOfAttackMax,
+			NotificationChain msgs) {
+		DoubleArrayBaseType oldDeltaAngleOfAttackMax = deltaAngleOfAttackMax;
+		deltaAngleOfAttackMax = newDeltaAngleOfAttackMax;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_ATTACK, oldAngleOfAttack, newAngleOfAttack);
+					CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MAX, oldDeltaAngleOfAttackMax,
+					newDeltaAngleOfAttackMax);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -159,23 +160,22 @@ public class OperationLimitIncrementsTypeImpl extends ComplexBaseTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setAngleOfAttack(StringArrayBaseType newAngleOfAttack) {
-		if (newAngleOfAttack != angleOfAttack) {
+	public void setDeltaAngleOfAttackMax(DoubleArrayBaseType newDeltaAngleOfAttackMax) {
+		if (newDeltaAngleOfAttackMax != deltaAngleOfAttackMax) {
 			NotificationChain msgs = null;
-			if (angleOfAttack != null)
-				msgs = ((InternalEObject) angleOfAttack).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_ATTACK, null,
-						msgs);
-			if (newAngleOfAttack != null)
-				msgs = ((InternalEObject) newAngleOfAttack).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_ATTACK, null,
-						msgs);
-			msgs = basicSetAngleOfAttack(newAngleOfAttack, msgs);
+			if (deltaAngleOfAttackMax != null)
+				msgs = ((InternalEObject) deltaAngleOfAttackMax).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+						- CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MAX, null, msgs);
+			if (newDeltaAngleOfAttackMax != null)
+				msgs = ((InternalEObject) newDeltaAngleOfAttackMax).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+						- CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MAX, null, msgs);
+			msgs = basicSetDeltaAngleOfAttackMax(newDeltaAngleOfAttackMax, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_ATTACK, newAngleOfAttack, newAngleOfAttack));
+					CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MAX, newDeltaAngleOfAttackMax,
+					newDeltaAngleOfAttackMax));
 	}
 
 	/**
@@ -186,10 +186,10 @@ public class OperationLimitIncrementsTypeImpl extends ComplexBaseTypeImpl implem
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_SIDESLIP:
-			return basicSetAngleOfSideslip(null, msgs);
-		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_ATTACK:
-			return basicSetAngleOfAttack(null, msgs);
+		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MIN:
+			return basicSetDeltaAngleOfAttackMin(null, msgs);
+		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MAX:
+			return basicSetDeltaAngleOfAttackMax(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -202,10 +202,10 @@ public class OperationLimitIncrementsTypeImpl extends ComplexBaseTypeImpl implem
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_SIDESLIP:
-			return getAngleOfSideslip();
-		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_ATTACK:
-			return getAngleOfAttack();
+		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MIN:
+			return getDeltaAngleOfAttackMin();
+		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MAX:
+			return getDeltaAngleOfAttackMax();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -218,11 +218,11 @@ public class OperationLimitIncrementsTypeImpl extends ComplexBaseTypeImpl implem
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_SIDESLIP:
-			setAngleOfSideslip((StringArrayBaseType) newValue);
+		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MIN:
+			setDeltaAngleOfAttackMin((DoubleArrayBaseType) newValue);
 			return;
-		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_ATTACK:
-			setAngleOfAttack((StringArrayBaseType) newValue);
+		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MAX:
+			setDeltaAngleOfAttackMax((DoubleArrayBaseType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -236,11 +236,11 @@ public class OperationLimitIncrementsTypeImpl extends ComplexBaseTypeImpl implem
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_SIDESLIP:
-			setAngleOfSideslip((StringArrayBaseType) null);
+		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MIN:
+			setDeltaAngleOfAttackMin((DoubleArrayBaseType) null);
 			return;
-		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_ATTACK:
-			setAngleOfAttack((StringArrayBaseType) null);
+		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MAX:
+			setDeltaAngleOfAttackMax((DoubleArrayBaseType) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -254,10 +254,10 @@ public class OperationLimitIncrementsTypeImpl extends ComplexBaseTypeImpl implem
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_SIDESLIP:
-			return angleOfSideslip != null;
-		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__ANGLE_OF_ATTACK:
-			return angleOfAttack != null;
+		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MIN:
+			return deltaAngleOfAttackMin != null;
+		case CpacsPackage.OPERATION_LIMIT_INCREMENTS_TYPE__DELTA_ANGLE_OF_ATTACK_MAX:
+			return deltaAngleOfAttackMax != null;
 		}
 		return super.eIsSet(featureID);
 	}

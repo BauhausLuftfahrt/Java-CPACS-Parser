@@ -5,7 +5,7 @@ package Cpacs.impl;
 import Cpacs.CpacsPackage;
 import Cpacs.DoubleBaseType;
 import Cpacs.LinerType;
-import Cpacs.TypeType1;
+import Cpacs.TypeType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -39,7 +39,7 @@ public class LinerTypeImpl extends ComplexBaseTypeImpl implements LinerType {
 	 * @generated
 	 * @ordered
 	 */
-	protected TypeType1 type;
+	protected TypeType type;
 
 	/**
 	 * The cached value of the '{@link #getIntakeLength() <em>Intake Length</em>}' containment reference.
@@ -86,7 +86,7 @@ public class LinerTypeImpl extends ComplexBaseTypeImpl implements LinerType {
 	 * @generated
 	 */
 	@Override
-	public TypeType1 getType() {
+	public TypeType getType() {
 		return type;
 	}
 
@@ -95,8 +95,8 @@ public class LinerTypeImpl extends ComplexBaseTypeImpl implements LinerType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetType(TypeType1 newType, NotificationChain msgs) {
-		TypeType1 oldType = type;
+	public NotificationChain basicSetType(TypeType newType, NotificationChain msgs) {
+		TypeType oldType = type;
 		type = newType;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -115,7 +115,7 @@ public class LinerTypeImpl extends ComplexBaseTypeImpl implements LinerType {
 	 * @generated
 	 */
 	@Override
-	public void setType(TypeType1 newType) {
+	public void setType(TypeType newType) {
 		if (newType != type) {
 			NotificationChain msgs = null;
 			if (type != null)
@@ -280,7 +280,7 @@ public class LinerTypeImpl extends ComplexBaseTypeImpl implements LinerType {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case CpacsPackage.LINER_TYPE__TYPE:
-			setType((TypeType1) newValue);
+			setType((TypeType) newValue);
 			return;
 		case CpacsPackage.LINER_TYPE__INTAKE_LENGTH:
 			setIntakeLength((DoubleBaseType) newValue);
@@ -301,7 +301,7 @@ public class LinerTypeImpl extends ComplexBaseTypeImpl implements LinerType {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 		case CpacsPackage.LINER_TYPE__TYPE:
-			setType((TypeType1) null);
+			setType((TypeType) null);
 			return;
 		case CpacsPackage.LINER_TYPE__INTAKE_LENGTH:
 			setIntakeLength((DoubleBaseType) null);

@@ -117,7 +117,7 @@ public interface SystemsType extends ComplexBaseType {
 	 * @return the value of the '<em>Control Distributors</em>' containment reference.
 	 * @see #setControlDistributors(ControlDistributorsType)
 	 * @see Cpacs.CpacsPackage#getSystemsType_ControlDistributors()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='controlDistributors' namespace='##targetNamespace'"
 	 * @generated
 	 */

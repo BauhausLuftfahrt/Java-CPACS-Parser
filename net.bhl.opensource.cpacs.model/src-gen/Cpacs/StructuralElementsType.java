@@ -192,6 +192,10 @@ public interface StructuralElementsType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Seat Modules</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Seat elements (Deprecation warning: This element will soon be removed from the official CPACS. Use the new seat modules located at cpacs/vehicles/deckElements!)
+	 *                             
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Seat Modules</em>' containment reference.
 	 * @see #setSeatModules(SeatModulesType)
 	 * @see Cpacs.CpacsPackage#getStructuralElementsType_SeatModules()

@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.CurveParamPointMapTypeImpl#getPointIndex <em>Point Index</em>}</li>
+ *   <li>{@link Cpacs.impl.CurveParamPointMapTypeImpl#getPointIndices <em>Point Indices</em>}</li>
  *   <li>{@link Cpacs.impl.CurveParamPointMapTypeImpl#getParamOnCurve <em>Param On Curve</em>}</li>
  * </ul>
  *
@@ -30,14 +30,14 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class CurveParamPointMapTypeImpl extends ComplexBaseTypeImpl implements CurveParamPointMapType {
 	/**
-	 * The cached value of the '{@link #getPointIndex() <em>Point Index</em>}' containment reference.
+	 * The cached value of the '{@link #getPointIndices() <em>Point Indices</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPointIndex()
+	 * @see #getPointIndices()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType pointIndex;
+	protected StringVectorBaseType pointIndices;
 
 	/**
 	 * The cached value of the '{@link #getParamOnCurve() <em>Param On Curve</em>}' containment reference.
@@ -74,8 +74,8 @@ public class CurveParamPointMapTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getPointIndex() {
-		return pointIndex;
+	public StringVectorBaseType getPointIndices() {
+		return pointIndices;
 	}
 
 	/**
@@ -83,12 +83,12 @@ public class CurveParamPointMapTypeImpl extends ComplexBaseTypeImpl implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPointIndex(StringVectorBaseType newPointIndex, NotificationChain msgs) {
-		StringVectorBaseType oldPointIndex = pointIndex;
-		pointIndex = newPointIndex;
+	public NotificationChain basicSetPointIndices(StringVectorBaseType newPointIndices, NotificationChain msgs) {
+		StringVectorBaseType oldPointIndices = pointIndices;
+		pointIndices = newPointIndices;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDEX, oldPointIndex, newPointIndex);
+					CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDICES, oldPointIndices, newPointIndices);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -103,21 +103,21 @@ public class CurveParamPointMapTypeImpl extends ComplexBaseTypeImpl implements C
 	 * @generated
 	 */
 	@Override
-	public void setPointIndex(StringVectorBaseType newPointIndex) {
-		if (newPointIndex != pointIndex) {
+	public void setPointIndices(StringVectorBaseType newPointIndices) {
+		if (newPointIndices != pointIndices) {
 			NotificationChain msgs = null;
-			if (pointIndex != null)
-				msgs = ((InternalEObject) pointIndex).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDEX, null, msgs);
-			if (newPointIndex != null)
-				msgs = ((InternalEObject) newPointIndex).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDEX, null, msgs);
-			msgs = basicSetPointIndex(newPointIndex, msgs);
+			if (pointIndices != null)
+				msgs = ((InternalEObject) pointIndices).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDICES, null, msgs);
+			if (newPointIndices != null)
+				msgs = ((InternalEObject) newPointIndices).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDICES, null, msgs);
+			msgs = basicSetPointIndices(newPointIndices, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDEX,
-					newPointIndex, newPointIndex));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDICES, newPointIndices, newPointIndices));
 	}
 
 	/**
@@ -180,8 +180,8 @@ public class CurveParamPointMapTypeImpl extends ComplexBaseTypeImpl implements C
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDEX:
-			return basicSetPointIndex(null, msgs);
+		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDICES:
+			return basicSetPointIndices(null, msgs);
 		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__PARAM_ON_CURVE:
 			return basicSetParamOnCurve(null, msgs);
 		}
@@ -196,8 +196,8 @@ public class CurveParamPointMapTypeImpl extends ComplexBaseTypeImpl implements C
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDEX:
-			return getPointIndex();
+		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDICES:
+			return getPointIndices();
 		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__PARAM_ON_CURVE:
 			return getParamOnCurve();
 		}
@@ -212,8 +212,8 @@ public class CurveParamPointMapTypeImpl extends ComplexBaseTypeImpl implements C
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDEX:
-			setPointIndex((StringVectorBaseType) newValue);
+		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDICES:
+			setPointIndices((StringVectorBaseType) newValue);
 			return;
 		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__PARAM_ON_CURVE:
 			setParamOnCurve((StringVectorBaseType) newValue);
@@ -230,8 +230,8 @@ public class CurveParamPointMapTypeImpl extends ComplexBaseTypeImpl implements C
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDEX:
-			setPointIndex((StringVectorBaseType) null);
+		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDICES:
+			setPointIndices((StringVectorBaseType) null);
 			return;
 		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__PARAM_ON_CURVE:
 			setParamOnCurve((StringVectorBaseType) null);
@@ -248,8 +248,8 @@ public class CurveParamPointMapTypeImpl extends ComplexBaseTypeImpl implements C
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDEX:
-			return pointIndex != null;
+		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__POINT_INDICES:
+			return pointIndices != null;
 		case CpacsPackage.CURVE_PARAM_POINT_MAP_TYPE__PARAM_ON_CURVE:
 			return paramOnCurve != null;
 		}

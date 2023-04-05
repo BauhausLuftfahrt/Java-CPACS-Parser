@@ -11,8 +11,8 @@ package Cpacs;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.OperationLimitIncrementsType#getAngleOfSideslip <em>Angle Of Sideslip</em>}</li>
- *   <li>{@link Cpacs.OperationLimitIncrementsType#getAngleOfAttack <em>Angle Of Attack</em>}</li>
+ *   <li>{@link Cpacs.OperationLimitIncrementsType#getDeltaAngleOfAttackMin <em>Delta Angle Of Attack Min</em>}</li>
+ *   <li>{@link Cpacs.OperationLimitIncrementsType#getDeltaAngleOfAttackMax <em>Delta Angle Of Attack Max</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getOperationLimitIncrementsType()
@@ -21,55 +21,55 @@ package Cpacs;
  */
 public interface OperationLimitIncrementsType extends ComplexBaseType {
 	/**
-	 * Returns the value of the '<em><b>Angle Of Sideslip</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Delta Angle Of Attack Min</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Sideslip angle [deg]
+	 * Minimum delta angle of attack [deg]
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Angle Of Sideslip</em>' containment reference.
-	 * @see #setAngleOfSideslip(StringArrayBaseType)
-	 * @see Cpacs.CpacsPackage#getOperationLimitIncrementsType_AngleOfSideslip()
+	 * @return the value of the '<em>Delta Angle Of Attack Min</em>' containment reference.
+	 * @see #setDeltaAngleOfAttackMin(DoubleArrayBaseType)
+	 * @see Cpacs.CpacsPackage#getOperationLimitIncrementsType_DeltaAngleOfAttackMin()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='angleOfSideslip' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='deltaAngleOfAttackMin' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringArrayBaseType getAngleOfSideslip();
+	DoubleArrayBaseType getDeltaAngleOfAttackMin();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.OperationLimitIncrementsType#getAngleOfSideslip <em>Angle Of Sideslip</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.OperationLimitIncrementsType#getDeltaAngleOfAttackMin <em>Delta Angle Of Attack Min</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Angle Of Sideslip</em>' containment reference.
-	 * @see #getAngleOfSideslip()
+	 * @param value the new value of the '<em>Delta Angle Of Attack Min</em>' containment reference.
+	 * @see #getDeltaAngleOfAttackMin()
 	 * @generated
 	 */
-	void setAngleOfSideslip(StringArrayBaseType value);
+	void setDeltaAngleOfAttackMin(DoubleArrayBaseType value);
 
 	/**
-	 * Returns the value of the '<em><b>Angle Of Attack</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Delta Angle Of Attack Max</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Angle of attack [deg]
+	 * Maximum delta angle of attack [deg]
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Angle Of Attack</em>' containment reference.
-	 * @see #setAngleOfAttack(StringArrayBaseType)
-	 * @see Cpacs.CpacsPackage#getOperationLimitIncrementsType_AngleOfAttack()
+	 * @return the value of the '<em>Delta Angle Of Attack Max</em>' containment reference.
+	 * @see #setDeltaAngleOfAttackMax(DoubleArrayBaseType)
+	 * @see Cpacs.CpacsPackage#getOperationLimitIncrementsType_DeltaAngleOfAttackMax()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='angleOfAttack' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='deltaAngleOfAttackMax' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringArrayBaseType getAngleOfAttack();
+	DoubleArrayBaseType getDeltaAngleOfAttackMax();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.OperationLimitIncrementsType#getAngleOfAttack <em>Angle Of Attack</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.OperationLimitIncrementsType#getDeltaAngleOfAttackMax <em>Delta Angle Of Attack Max</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Angle Of Attack</em>' containment reference.
-	 * @see #getAngleOfAttack()
+	 * @param value the new value of the '<em>Delta Angle Of Attack Max</em>' containment reference.
+	 * @see #getDeltaAngleOfAttackMax()
 	 * @generated
 	 */
-	void setAngleOfAttack(StringArrayBaseType value);
+	void setDeltaAngleOfAttackMax(DoubleArrayBaseType value);
 
 } // OperationLimitIncrementsType

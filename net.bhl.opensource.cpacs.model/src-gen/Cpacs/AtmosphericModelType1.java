@@ -9,7 +9,7 @@ package Cpacs;
  *
  *
  * @see Cpacs.CpacsPackage#getAtmosphericModelType1()
- * @model extendedMetaData="name='atmosphericModel_._1_._type' kind='simple'"
+ * @model extendedMetaData="name='atmosphericModelType' kind='simple'"
  * @generated
  */
 public interface AtmosphericModelType1 extends StringBaseType {

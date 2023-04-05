@@ -15,6 +15,7 @@ package Cpacs;
  *   <li>{@link Cpacs.ProfileGeometryType#getDescription <em>Description</em>}</li>
  *   <li>{@link Cpacs.ProfileGeometryType#getPointList <em>Point List</em>}</li>
  *   <li>{@link Cpacs.ProfileGeometryType#getCst2D <em>Cst2 D</em>}</li>
+ *   <li>{@link Cpacs.ProfileGeometryType#getStandardProfile <em>Standard Profile</em>}</li>
  *   <li>{@link Cpacs.ProfileGeometryType#getSymmetry <em>Symmetry</em>}</li>
  *   <li>{@link Cpacs.ProfileGeometryType#getUID <em>UID</em>}</li>
  * </ul>
@@ -123,34 +124,57 @@ public interface ProfileGeometryType extends ComplexBaseType {
 	void setCst2D(Cst2DType value);
 
 	/**
+	 * Returns the value of the '<em><b>Standard Profile</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Standard Profile</em>' containment reference.
+	 * @see #setStandardProfile(StandardProfileType)
+	 * @see Cpacs.CpacsPackage#getProfileGeometryType_StandardProfile()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='standardProfile' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	StandardProfileType getStandardProfile();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.ProfileGeometryType#getStandardProfile <em>Standard Profile</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Standard Profile</em>' containment reference.
+	 * @see #getStandardProfile()
+	 * @generated
+	 */
+	void setStandardProfile(StandardProfileType value);
+
+	/**
 	 * Returns the value of the '<em><b>Symmetry</b></em>' attribute.
-	 * The literals are from the enumeration {@link Cpacs.SymmetryType}.
+	 * The literals are from the enumeration {@link Cpacs.SymmetryXyXzYzType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Symmetry</em>' attribute.
-	 * @see Cpacs.SymmetryType
+	 * @see Cpacs.SymmetryXyXzYzType
 	 * @see #isSetSymmetry()
 	 * @see #unsetSymmetry()
-	 * @see #setSymmetry(SymmetryType)
+	 * @see #setSymmetry(SymmetryXyXzYzType)
 	 * @see Cpacs.CpacsPackage#getProfileGeometryType_Symmetry()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='attribute' name='symmetry' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	SymmetryType getSymmetry();
+	SymmetryXyXzYzType getSymmetry();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.ProfileGeometryType#getSymmetry <em>Symmetry</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Symmetry</em>' attribute.
-	 * @see Cpacs.SymmetryType
+	 * @see Cpacs.SymmetryXyXzYzType
 	 * @see #isSetSymmetry()
 	 * @see #unsetSymmetry()
 	 * @see #getSymmetry()
 	 * @generated
 	 */
-	void setSymmetry(SymmetryType value);
+	void setSymmetry(SymmetryXyXzYzType value);
 
 	/**
 	 * Unsets the value of the '{@link Cpacs.ProfileGeometryType#getSymmetry <em>Symmetry</em>}' attribute.
@@ -158,7 +182,7 @@ public interface ProfileGeometryType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * @see #isSetSymmetry()
 	 * @see #getSymmetry()
-	 * @see #setSymmetry(SymmetryType)
+	 * @see #setSymmetry(SymmetryXyXzYzType)
 	 * @generated
 	 */
 	void unsetSymmetry();
@@ -170,7 +194,7 @@ public interface ProfileGeometryType extends ComplexBaseType {
 	 * @return whether the value of the '<em>Symmetry</em>' attribute is set.
 	 * @see #unsetSymmetry()
 	 * @see #getSymmetry()
-	 * @see #setSymmetry(SymmetryType)
+	 * @see #setSymmetry(SymmetryXyXzYzType)
 	 * @generated
 	 */
 	boolean isSetSymmetry();

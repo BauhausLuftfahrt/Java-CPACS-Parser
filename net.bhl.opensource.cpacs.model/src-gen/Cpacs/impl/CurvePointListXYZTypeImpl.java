@@ -23,7 +23,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.CurvePointListXYZTypeImpl#getKinks <em>Kinks</em>}</li>
+ *   <li>{@link Cpacs.impl.CurvePointListXYZTypeImpl#getKinkIndices <em>Kink Indices</em>}</li>
  *   <li>{@link Cpacs.impl.CurvePointListXYZTypeImpl#getParameterMap <em>Parameter Map</em>}</li>
  * </ul>
  *
@@ -31,14 +31,14 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class CurvePointListXYZTypeImpl extends PointListXYZVectorTypeImpl implements CurvePointListXYZType {
 	/**
-	 * The cached value of the '{@link #getKinks() <em>Kinks</em>}' containment reference.
+	 * The cached value of the '{@link #getKinkIndices() <em>Kink Indices</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getKinks()
+	 * @see #getKinkIndices()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType kinks;
+	protected StringVectorBaseType kinkIndices;
 
 	/**
 	 * The cached value of the '{@link #getParameterMap() <em>Parameter Map</em>}' containment reference.
@@ -75,8 +75,8 @@ public class CurvePointListXYZTypeImpl extends PointListXYZVectorTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getKinks() {
-		return kinks;
+	public StringVectorBaseType getKinkIndices() {
+		return kinkIndices;
 	}
 
 	/**
@@ -84,12 +84,12 @@ public class CurvePointListXYZTypeImpl extends PointListXYZVectorTypeImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetKinks(StringVectorBaseType newKinks, NotificationChain msgs) {
-		StringVectorBaseType oldKinks = kinks;
-		kinks = newKinks;
+	public NotificationChain basicSetKinkIndices(StringVectorBaseType newKinkIndices, NotificationChain msgs) {
+		StringVectorBaseType oldKinkIndices = kinkIndices;
+		kinkIndices = newKinkIndices;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINKS, oldKinks, newKinks);
+					CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINK_INDICES, oldKinkIndices, newKinkIndices);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -104,21 +104,21 @@ public class CurvePointListXYZTypeImpl extends PointListXYZVectorTypeImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setKinks(StringVectorBaseType newKinks) {
-		if (newKinks != kinks) {
+	public void setKinkIndices(StringVectorBaseType newKinkIndices) {
+		if (newKinkIndices != kinkIndices) {
 			NotificationChain msgs = null;
-			if (kinks != null)
-				msgs = ((InternalEObject) kinks).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINKS, null, msgs);
-			if (newKinks != null)
-				msgs = ((InternalEObject) newKinks).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINKS, null, msgs);
-			msgs = basicSetKinks(newKinks, msgs);
+			if (kinkIndices != null)
+				msgs = ((InternalEObject) kinkIndices).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINK_INDICES, null, msgs);
+			if (newKinkIndices != null)
+				msgs = ((InternalEObject) newKinkIndices).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINK_INDICES, null, msgs);
+			msgs = basicSetKinkIndices(newKinkIndices, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINKS,
-					newKinks, newKinks));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINK_INDICES,
+					newKinkIndices, newKinkIndices));
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class CurvePointListXYZTypeImpl extends PointListXYZVectorTypeImpl implem
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINKS:
-			return basicSetKinks(null, msgs);
+		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINK_INDICES:
+			return basicSetKinkIndices(null, msgs);
 		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__PARAMETER_MAP:
 			return basicSetParameterMap(null, msgs);
 		}
@@ -197,8 +197,8 @@ public class CurvePointListXYZTypeImpl extends PointListXYZVectorTypeImpl implem
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINKS:
-			return getKinks();
+		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINK_INDICES:
+			return getKinkIndices();
 		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__PARAMETER_MAP:
 			return getParameterMap();
 		}
@@ -213,8 +213,8 @@ public class CurvePointListXYZTypeImpl extends PointListXYZVectorTypeImpl implem
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINKS:
-			setKinks((StringVectorBaseType) newValue);
+		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINK_INDICES:
+			setKinkIndices((StringVectorBaseType) newValue);
 			return;
 		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__PARAMETER_MAP:
 			setParameterMap((CurveParamPointMapType) newValue);
@@ -231,8 +231,8 @@ public class CurvePointListXYZTypeImpl extends PointListXYZVectorTypeImpl implem
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINKS:
-			setKinks((StringVectorBaseType) null);
+		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINK_INDICES:
+			setKinkIndices((StringVectorBaseType) null);
 			return;
 		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__PARAMETER_MAP:
 			setParameterMap((CurveParamPointMapType) null);
@@ -249,8 +249,8 @@ public class CurvePointListXYZTypeImpl extends PointListXYZVectorTypeImpl implem
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINKS:
-			return kinks != null;
+		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__KINK_INDICES:
+			return kinkIndices != null;
 		case CpacsPackage.CURVE_POINT_LIST_XYZ_TYPE__PARAMETER_MAP:
 			return parameterMap != null;
 		}

@@ -315,7 +315,7 @@ public interface TrailingEdgeDeviceType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Definiton of z-couplings. Those elements
+	 * Definition of z-couplings. Those elements
 	 *                                 couple two neighbouring flaps in z-direction.
 	 *                             
 	 * <!-- end-model-doc -->

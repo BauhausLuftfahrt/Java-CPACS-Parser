@@ -35,7 +35,7 @@ public interface HtpInterfaceDefType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * UID of the fuselage frame at the forward HTP
-	 *                                 attchment
+	 *                                 attachment
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Htp Frame1 UID</em>' containment reference.
@@ -63,7 +63,7 @@ public interface HtpInterfaceDefType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * UID of the fuselage frame at the backward HTP
-	 *                                 attchment
+	 *                                 attachment
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Htp Frame2 UID</em>' containment reference.
@@ -147,7 +147,7 @@ public interface HtpInterfaceDefType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * angle of the reinforcements at backward HTP
-	 *                                 attchment
+	 *                                 attachment
 	 *                                 (in degrees)
 	 *                             
 	 * <!-- end-model-doc -->
@@ -236,7 +236,7 @@ public interface HtpInterfaceDefType extends ComplexBaseType {
 	 * <!-- begin-model-doc -->
 	 * Defines allowed z-position for rear HTP
 	 *                                 attachment
-	 *                                 relativ to total frame height ==> check and potentially warning
+	 *                                 relative to total frame height ==> check and potentially warning
 	 *                                 message ==> check and potentially warning
 	 *                                 message
 	 *                             

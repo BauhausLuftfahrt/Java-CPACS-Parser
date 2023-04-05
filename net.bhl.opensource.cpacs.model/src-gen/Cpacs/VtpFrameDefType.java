@@ -31,7 +31,7 @@ public interface VtpFrameDefType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * UID of the fuselage frame at this VTP
-	 *                                 attchment
+	 *                                 attachment
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Vtp Frame UID</em>' containment reference.
 	 * @see #setVtpFrameUID(StringUIDBaseType)

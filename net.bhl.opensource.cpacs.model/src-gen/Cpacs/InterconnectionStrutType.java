@@ -57,7 +57,7 @@ public interface InterconnectionStrutType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Material settings of the strut (if strut is
-	 *                                 moddeled as a simple strut).
+	 *                                 modeled as a simple strut).
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Material</em>' containment reference.
 	 * @see #setMaterial(MaterialDefinitionType)

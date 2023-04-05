@@ -3,6 +3,7 @@
 package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
+import Cpacs.CurvePointType;
 import Cpacs.EtaXsiPointType;
 import Cpacs.SparPositionType;
 import Cpacs.WingRibPointType;
@@ -25,6 +26,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link Cpacs.impl.SparPositionTypeImpl#getSparPositionRib <em>Spar Position Rib</em>}</li>
  *   <li>{@link Cpacs.impl.SparPositionTypeImpl#getSparPositionEtaXsi <em>Spar Position Eta Xsi</em>}</li>
+ *   <li>{@link Cpacs.impl.SparPositionTypeImpl#getSparPositionCurve <em>Spar Position Curve</em>}</li>
  *   <li>{@link Cpacs.impl.SparPositionTypeImpl#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -50,6 +52,16 @@ public class SparPositionTypeImpl extends ComplexBaseTypeImpl implements SparPos
 	 * @ordered
 	 */
 	protected EtaXsiPointType sparPositionEtaXsi;
+
+	/**
+	 * The cached value of the '{@link #getSparPositionCurve() <em>Spar Position Curve</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSparPositionCurve()
+	 * @generated
+	 * @ordered
+	 */
+	protected CurvePointType sparPositionCurve;
 
 	/**
 	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
@@ -202,6 +214,58 @@ public class SparPositionTypeImpl extends ComplexBaseTypeImpl implements SparPos
 	 * @generated
 	 */
 	@Override
+	public CurvePointType getSparPositionCurve() {
+		return sparPositionCurve;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetSparPositionCurve(CurvePointType newSparPositionCurve, NotificationChain msgs) {
+		CurvePointType oldSparPositionCurve = sparPositionCurve;
+		sparPositionCurve = newSparPositionCurve;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.SPAR_POSITION_TYPE__SPAR_POSITION_CURVE, oldSparPositionCurve, newSparPositionCurve);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSparPositionCurve(CurvePointType newSparPositionCurve) {
+		if (newSparPositionCurve != sparPositionCurve) {
+			NotificationChain msgs = null;
+			if (sparPositionCurve != null)
+				msgs = ((InternalEObject) sparPositionCurve).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.SPAR_POSITION_TYPE__SPAR_POSITION_CURVE, null, msgs);
+			if (newSparPositionCurve != null)
+				msgs = ((InternalEObject) newSparPositionCurve).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.SPAR_POSITION_TYPE__SPAR_POSITION_CURVE, null, msgs);
+			msgs = basicSetSparPositionCurve(newSparPositionCurve, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.SPAR_POSITION_TYPE__SPAR_POSITION_CURVE,
+					newSparPositionCurve, newSparPositionCurve));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getUID() {
 		return uID;
 	}
@@ -231,6 +295,8 @@ public class SparPositionTypeImpl extends ComplexBaseTypeImpl implements SparPos
 			return basicSetSparPositionRib(null, msgs);
 		case CpacsPackage.SPAR_POSITION_TYPE__SPAR_POSITION_ETA_XSI:
 			return basicSetSparPositionEtaXsi(null, msgs);
+		case CpacsPackage.SPAR_POSITION_TYPE__SPAR_POSITION_CURVE:
+			return basicSetSparPositionCurve(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -247,6 +313,8 @@ public class SparPositionTypeImpl extends ComplexBaseTypeImpl implements SparPos
 			return getSparPositionRib();
 		case CpacsPackage.SPAR_POSITION_TYPE__SPAR_POSITION_ETA_XSI:
 			return getSparPositionEtaXsi();
+		case CpacsPackage.SPAR_POSITION_TYPE__SPAR_POSITION_CURVE:
+			return getSparPositionCurve();
 		case CpacsPackage.SPAR_POSITION_TYPE__UID:
 			return getUID();
 		}
@@ -266,6 +334,9 @@ public class SparPositionTypeImpl extends ComplexBaseTypeImpl implements SparPos
 			return;
 		case CpacsPackage.SPAR_POSITION_TYPE__SPAR_POSITION_ETA_XSI:
 			setSparPositionEtaXsi((EtaXsiPointType) newValue);
+			return;
+		case CpacsPackage.SPAR_POSITION_TYPE__SPAR_POSITION_CURVE:
+			setSparPositionCurve((CurvePointType) newValue);
 			return;
 		case CpacsPackage.SPAR_POSITION_TYPE__UID:
 			setUID((String) newValue);
@@ -288,6 +359,9 @@ public class SparPositionTypeImpl extends ComplexBaseTypeImpl implements SparPos
 		case CpacsPackage.SPAR_POSITION_TYPE__SPAR_POSITION_ETA_XSI:
 			setSparPositionEtaXsi((EtaXsiPointType) null);
 			return;
+		case CpacsPackage.SPAR_POSITION_TYPE__SPAR_POSITION_CURVE:
+			setSparPositionCurve((CurvePointType) null);
+			return;
 		case CpacsPackage.SPAR_POSITION_TYPE__UID:
 			setUID(UID_EDEFAULT);
 			return;
@@ -307,6 +381,8 @@ public class SparPositionTypeImpl extends ComplexBaseTypeImpl implements SparPos
 			return sparPositionRib != null;
 		case CpacsPackage.SPAR_POSITION_TYPE__SPAR_POSITION_ETA_XSI:
 			return sparPositionEtaXsi != null;
+		case CpacsPackage.SPAR_POSITION_TYPE__SPAR_POSITION_CURVE:
+			return sparPositionCurve != null;
 		case CpacsPackage.SPAR_POSITION_TYPE__UID:
 			return UID_EDEFAULT == null ? uID != null : !UID_EDEFAULT.equals(uID);
 		}

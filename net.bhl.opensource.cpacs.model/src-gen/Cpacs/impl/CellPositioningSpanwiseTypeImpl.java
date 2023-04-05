@@ -4,6 +4,7 @@ package Cpacs.impl;
 
 import Cpacs.CellPositioningSpanwiseType;
 import Cpacs.CpacsPackage;
+import Cpacs.DoubleBaseType;
 import Cpacs.EtaIsoLineType;
 import Cpacs.IntegerBaseType;
 import Cpacs.StringUIDBaseType;
@@ -28,6 +29,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.CellPositioningSpanwiseTypeImpl#getEta2 <em>Eta2</em>}</li>
  *   <li>{@link Cpacs.impl.CellPositioningSpanwiseTypeImpl#getRibNumber <em>Rib Number</em>}</li>
  *   <li>{@link Cpacs.impl.CellPositioningSpanwiseTypeImpl#getRibDefinitionUID <em>Rib Definition UID</em>}</li>
+ *   <li>{@link Cpacs.impl.CellPositioningSpanwiseTypeImpl#getContourCoordinate <em>Contour Coordinate</em>}</li>
  * </ul>
  *
  * @generated
@@ -72,6 +74,16 @@ public class CellPositioningSpanwiseTypeImpl extends ComplexBaseTypeImpl impleme
 	 * @ordered
 	 */
 	protected StringUIDBaseType ribDefinitionUID;
+
+	/**
+	 * The cached value of the '{@link #getContourCoordinate() <em>Contour Coordinate</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getContourCoordinate()
+	 * @generated
+	 * @ordered
+	 */
+	protected DoubleBaseType contourCoordinate;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -310,6 +322,62 @@ public class CellPositioningSpanwiseTypeImpl extends ComplexBaseTypeImpl impleme
 	 * @generated
 	 */
 	@Override
+	public DoubleBaseType getContourCoordinate() {
+		return contourCoordinate;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetContourCoordinate(DoubleBaseType newContourCoordinate, NotificationChain msgs) {
+		DoubleBaseType oldContourCoordinate = contourCoordinate;
+		contourCoordinate = newContourCoordinate;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__CONTOUR_COORDINATE, oldContourCoordinate,
+					newContourCoordinate);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContourCoordinate(DoubleBaseType newContourCoordinate) {
+		if (newContourCoordinate != contourCoordinate) {
+			NotificationChain msgs = null;
+			if (contourCoordinate != null)
+				msgs = ((InternalEObject) contourCoordinate).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__CONTOUR_COORDINATE, null,
+						msgs);
+			if (newContourCoordinate != null)
+				msgs = ((InternalEObject) newContourCoordinate).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__CONTOUR_COORDINATE, null,
+						msgs);
+			msgs = basicSetContourCoordinate(newContourCoordinate, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__CONTOUR_COORDINATE, newContourCoordinate,
+					newContourCoordinate));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__ETA1:
@@ -320,6 +388,8 @@ public class CellPositioningSpanwiseTypeImpl extends ComplexBaseTypeImpl impleme
 			return basicSetRibNumber(null, msgs);
 		case CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__RIB_DEFINITION_UID:
 			return basicSetRibDefinitionUID(null, msgs);
+		case CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__CONTOUR_COORDINATE:
+			return basicSetContourCoordinate(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -340,6 +410,8 @@ public class CellPositioningSpanwiseTypeImpl extends ComplexBaseTypeImpl impleme
 			return getRibNumber();
 		case CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__RIB_DEFINITION_UID:
 			return getRibDefinitionUID();
+		case CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__CONTOUR_COORDINATE:
+			return getContourCoordinate();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -363,6 +435,9 @@ public class CellPositioningSpanwiseTypeImpl extends ComplexBaseTypeImpl impleme
 			return;
 		case CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__RIB_DEFINITION_UID:
 			setRibDefinitionUID((StringUIDBaseType) newValue);
+			return;
+		case CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__CONTOUR_COORDINATE:
+			setContourCoordinate((DoubleBaseType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -388,6 +463,9 @@ public class CellPositioningSpanwiseTypeImpl extends ComplexBaseTypeImpl impleme
 		case CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__RIB_DEFINITION_UID:
 			setRibDefinitionUID((StringUIDBaseType) null);
 			return;
+		case CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__CONTOUR_COORDINATE:
+			setContourCoordinate((DoubleBaseType) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -408,6 +486,8 @@ public class CellPositioningSpanwiseTypeImpl extends ComplexBaseTypeImpl impleme
 			return ribNumber != null;
 		case CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__RIB_DEFINITION_UID:
 			return ribDefinitionUID != null;
+		case CpacsPackage.CELL_POSITIONING_SPANWISE_TYPE__CONTOUR_COORDINATE:
+			return contourCoordinate != null;
 		}
 		return super.eIsSet(featureID);
 	}

@@ -2,10 +2,11 @@
  */
 package Cpacs.impl;
 
+import Cpacs.ControllabilityReqsType;
 import Cpacs.CpacsPackage;
-import Cpacs.PerformanceCasesType;
+import Cpacs.FlightPerformanceRequirementsType;
 import Cpacs.PerformanceRequirementsType;
-import Cpacs.StringVectorBaseType;
+import Cpacs.TrimRequirementsType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -23,43 +24,43 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.PerformanceRequirementsTypeImpl#getRequiredPerformanceCases <em>Required Performance Cases</em>}</li>
- *   <li>{@link Cpacs.impl.PerformanceRequirementsTypeImpl#getOptionalPerformanceCases <em>Optional Performance Cases</em>}</li>
- *   <li>{@link Cpacs.impl.PerformanceRequirementsTypeImpl#getPerformanceCases <em>Performance Cases</em>}</li>
+ *   <li>{@link Cpacs.impl.PerformanceRequirementsTypeImpl#getFlightPerformanceRequirements <em>Flight Performance Requirements</em>}</li>
+ *   <li>{@link Cpacs.impl.PerformanceRequirementsTypeImpl#getControllabilityRequirements <em>Controllability Requirements</em>}</li>
+ *   <li>{@link Cpacs.impl.PerformanceRequirementsTypeImpl#getTrimRequirements <em>Trim Requirements</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl implements PerformanceRequirementsType {
 	/**
-	 * The cached value of the '{@link #getRequiredPerformanceCases() <em>Required Performance Cases</em>}' containment reference.
+	 * The cached value of the '{@link #getFlightPerformanceRequirements() <em>Flight Performance Requirements</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRequiredPerformanceCases()
+	 * @see #getFlightPerformanceRequirements()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType requiredPerformanceCases;
+	protected FlightPerformanceRequirementsType flightPerformanceRequirements;
 
 	/**
-	 * The cached value of the '{@link #getOptionalPerformanceCases() <em>Optional Performance Cases</em>}' containment reference.
+	 * The cached value of the '{@link #getControllabilityRequirements() <em>Controllability Requirements</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOptionalPerformanceCases()
+	 * @see #getControllabilityRequirements()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType optionalPerformanceCases;
+	protected ControllabilityReqsType controllabilityRequirements;
 
 	/**
-	 * The cached value of the '{@link #getPerformanceCases() <em>Performance Cases</em>}' containment reference.
+	 * The cached value of the '{@link #getTrimRequirements() <em>Trim Requirements</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPerformanceCases()
+	 * @see #getTrimRequirements()
 	 * @generated
 	 * @ordered
 	 */
-	protected PerformanceCasesType performanceCases;
+	protected TrimRequirementsType trimRequirements;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,8 +87,8 @@ public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getRequiredPerformanceCases() {
-		return requiredPerformanceCases;
+	public FlightPerformanceRequirementsType getFlightPerformanceRequirements() {
+		return flightPerformanceRequirements;
 	}
 
 	/**
@@ -95,14 +96,14 @@ public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRequiredPerformanceCases(StringVectorBaseType newRequiredPerformanceCases,
-			NotificationChain msgs) {
-		StringVectorBaseType oldRequiredPerformanceCases = requiredPerformanceCases;
-		requiredPerformanceCases = newRequiredPerformanceCases;
+	public NotificationChain basicSetFlightPerformanceRequirements(
+			FlightPerformanceRequirementsType newFlightPerformanceRequirements, NotificationChain msgs) {
+		FlightPerformanceRequirementsType oldFlightPerformanceRequirements = flightPerformanceRequirements;
+		flightPerformanceRequirements = newFlightPerformanceRequirements;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__REQUIRED_PERFORMANCE_CASES, oldRequiredPerformanceCases,
-					newRequiredPerformanceCases);
+					CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__FLIGHT_PERFORMANCE_REQUIREMENTS,
+					oldFlightPerformanceRequirements, newFlightPerformanceRequirements);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -117,24 +118,26 @@ public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setRequiredPerformanceCases(StringVectorBaseType newRequiredPerformanceCases) {
-		if (newRequiredPerformanceCases != requiredPerformanceCases) {
+	public void setFlightPerformanceRequirements(FlightPerformanceRequirementsType newFlightPerformanceRequirements) {
+		if (newFlightPerformanceRequirements != flightPerformanceRequirements) {
 			NotificationChain msgs = null;
-			if (requiredPerformanceCases != null)
-				msgs = ((InternalEObject) requiredPerformanceCases).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__REQUIRED_PERFORMANCE_CASES,
+			if (flightPerformanceRequirements != null)
+				msgs = ((InternalEObject) flightPerformanceRequirements).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE
+								- CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__FLIGHT_PERFORMANCE_REQUIREMENTS,
 						null, msgs);
-			if (newRequiredPerformanceCases != null)
-				msgs = ((InternalEObject) newRequiredPerformanceCases).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__REQUIRED_PERFORMANCE_CASES,
+			if (newFlightPerformanceRequirements != null)
+				msgs = ((InternalEObject) newFlightPerformanceRequirements).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE
+								- CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__FLIGHT_PERFORMANCE_REQUIREMENTS,
 						null, msgs);
-			msgs = basicSetRequiredPerformanceCases(newRequiredPerformanceCases, msgs);
+			msgs = basicSetFlightPerformanceRequirements(newFlightPerformanceRequirements, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__REQUIRED_PERFORMANCE_CASES, newRequiredPerformanceCases,
-					newRequiredPerformanceCases));
+					CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__FLIGHT_PERFORMANCE_REQUIREMENTS,
+					newFlightPerformanceRequirements, newFlightPerformanceRequirements));
 	}
 
 	/**
@@ -143,8 +146,8 @@ public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getOptionalPerformanceCases() {
-		return optionalPerformanceCases;
+	public ControllabilityReqsType getControllabilityRequirements() {
+		return controllabilityRequirements;
 	}
 
 	/**
@@ -152,14 +155,14 @@ public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOptionalPerformanceCases(StringVectorBaseType newOptionalPerformanceCases,
+	public NotificationChain basicSetControllabilityRequirements(ControllabilityReqsType newControllabilityRequirements,
 			NotificationChain msgs) {
-		StringVectorBaseType oldOptionalPerformanceCases = optionalPerformanceCases;
-		optionalPerformanceCases = newOptionalPerformanceCases;
+		ControllabilityReqsType oldControllabilityRequirements = controllabilityRequirements;
+		controllabilityRequirements = newControllabilityRequirements;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__OPTIONAL_PERFORMANCE_CASES, oldOptionalPerformanceCases,
-					newOptionalPerformanceCases);
+					CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__CONTROLLABILITY_REQUIREMENTS,
+					oldControllabilityRequirements, newControllabilityRequirements);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -174,24 +177,22 @@ public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setOptionalPerformanceCases(StringVectorBaseType newOptionalPerformanceCases) {
-		if (newOptionalPerformanceCases != optionalPerformanceCases) {
+	public void setControllabilityRequirements(ControllabilityReqsType newControllabilityRequirements) {
+		if (newControllabilityRequirements != controllabilityRequirements) {
 			NotificationChain msgs = null;
-			if (optionalPerformanceCases != null)
-				msgs = ((InternalEObject) optionalPerformanceCases).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__OPTIONAL_PERFORMANCE_CASES,
-						null, msgs);
-			if (newOptionalPerformanceCases != null)
-				msgs = ((InternalEObject) newOptionalPerformanceCases).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__OPTIONAL_PERFORMANCE_CASES,
-						null, msgs);
-			msgs = basicSetOptionalPerformanceCases(newOptionalPerformanceCases, msgs);
+			if (controllabilityRequirements != null)
+				msgs = ((InternalEObject) controllabilityRequirements).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+						- CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__CONTROLLABILITY_REQUIREMENTS, null, msgs);
+			if (newControllabilityRequirements != null)
+				msgs = ((InternalEObject) newControllabilityRequirements).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+						- CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__CONTROLLABILITY_REQUIREMENTS, null, msgs);
+			msgs = basicSetControllabilityRequirements(newControllabilityRequirements, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__OPTIONAL_PERFORMANCE_CASES, newOptionalPerformanceCases,
-					newOptionalPerformanceCases));
+					CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__CONTROLLABILITY_REQUIREMENTS,
+					newControllabilityRequirements, newControllabilityRequirements));
 	}
 
 	/**
@@ -200,8 +201,8 @@ public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public PerformanceCasesType getPerformanceCases() {
-		return performanceCases;
+	public TrimRequirementsType getTrimRequirements() {
+		return trimRequirements;
 	}
 
 	/**
@@ -209,14 +210,14 @@ public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPerformanceCases(PerformanceCasesType newPerformanceCases,
+	public NotificationChain basicSetTrimRequirements(TrimRequirementsType newTrimRequirements,
 			NotificationChain msgs) {
-		PerformanceCasesType oldPerformanceCases = performanceCases;
-		performanceCases = newPerformanceCases;
+		TrimRequirementsType oldTrimRequirements = trimRequirements;
+		trimRequirements = newTrimRequirements;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__PERFORMANCE_CASES, oldPerformanceCases,
-					newPerformanceCases);
+					CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__TRIM_REQUIREMENTS, oldTrimRequirements,
+					newTrimRequirements);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -231,24 +232,24 @@ public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setPerformanceCases(PerformanceCasesType newPerformanceCases) {
-		if (newPerformanceCases != performanceCases) {
+	public void setTrimRequirements(TrimRequirementsType newTrimRequirements) {
+		if (newTrimRequirements != trimRequirements) {
 			NotificationChain msgs = null;
-			if (performanceCases != null)
-				msgs = ((InternalEObject) performanceCases).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__PERFORMANCE_CASES, null,
+			if (trimRequirements != null)
+				msgs = ((InternalEObject) trimRequirements).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__TRIM_REQUIREMENTS, null,
 						msgs);
-			if (newPerformanceCases != null)
-				msgs = ((InternalEObject) newPerformanceCases).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__PERFORMANCE_CASES, null,
+			if (newTrimRequirements != null)
+				msgs = ((InternalEObject) newTrimRequirements).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__TRIM_REQUIREMENTS, null,
 						msgs);
-			msgs = basicSetPerformanceCases(newPerformanceCases, msgs);
+			msgs = basicSetTrimRequirements(newTrimRequirements, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__PERFORMANCE_CASES, newPerformanceCases,
-					newPerformanceCases));
+					CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__TRIM_REQUIREMENTS, newTrimRequirements,
+					newTrimRequirements));
 	}
 
 	/**
@@ -259,12 +260,12 @@ public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl impleme
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__REQUIRED_PERFORMANCE_CASES:
-			return basicSetRequiredPerformanceCases(null, msgs);
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__OPTIONAL_PERFORMANCE_CASES:
-			return basicSetOptionalPerformanceCases(null, msgs);
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__PERFORMANCE_CASES:
-			return basicSetPerformanceCases(null, msgs);
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__FLIGHT_PERFORMANCE_REQUIREMENTS:
+			return basicSetFlightPerformanceRequirements(null, msgs);
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__CONTROLLABILITY_REQUIREMENTS:
+			return basicSetControllabilityRequirements(null, msgs);
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__TRIM_REQUIREMENTS:
+			return basicSetTrimRequirements(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -277,12 +278,12 @@ public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl impleme
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__REQUIRED_PERFORMANCE_CASES:
-			return getRequiredPerformanceCases();
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__OPTIONAL_PERFORMANCE_CASES:
-			return getOptionalPerformanceCases();
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__PERFORMANCE_CASES:
-			return getPerformanceCases();
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__FLIGHT_PERFORMANCE_REQUIREMENTS:
+			return getFlightPerformanceRequirements();
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__CONTROLLABILITY_REQUIREMENTS:
+			return getControllabilityRequirements();
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__TRIM_REQUIREMENTS:
+			return getTrimRequirements();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -295,14 +296,14 @@ public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl impleme
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__REQUIRED_PERFORMANCE_CASES:
-			setRequiredPerformanceCases((StringVectorBaseType) newValue);
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__FLIGHT_PERFORMANCE_REQUIREMENTS:
+			setFlightPerformanceRequirements((FlightPerformanceRequirementsType) newValue);
 			return;
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__OPTIONAL_PERFORMANCE_CASES:
-			setOptionalPerformanceCases((StringVectorBaseType) newValue);
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__CONTROLLABILITY_REQUIREMENTS:
+			setControllabilityRequirements((ControllabilityReqsType) newValue);
 			return;
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__PERFORMANCE_CASES:
-			setPerformanceCases((PerformanceCasesType) newValue);
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__TRIM_REQUIREMENTS:
+			setTrimRequirements((TrimRequirementsType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -316,14 +317,14 @@ public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl impleme
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__REQUIRED_PERFORMANCE_CASES:
-			setRequiredPerformanceCases((StringVectorBaseType) null);
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__FLIGHT_PERFORMANCE_REQUIREMENTS:
+			setFlightPerformanceRequirements((FlightPerformanceRequirementsType) null);
 			return;
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__OPTIONAL_PERFORMANCE_CASES:
-			setOptionalPerformanceCases((StringVectorBaseType) null);
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__CONTROLLABILITY_REQUIREMENTS:
+			setControllabilityRequirements((ControllabilityReqsType) null);
 			return;
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__PERFORMANCE_CASES:
-			setPerformanceCases((PerformanceCasesType) null);
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__TRIM_REQUIREMENTS:
+			setTrimRequirements((TrimRequirementsType) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -337,12 +338,12 @@ public class PerformanceRequirementsTypeImpl extends ComplexBaseTypeImpl impleme
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__REQUIRED_PERFORMANCE_CASES:
-			return requiredPerformanceCases != null;
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__OPTIONAL_PERFORMANCE_CASES:
-			return optionalPerformanceCases != null;
-		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__PERFORMANCE_CASES:
-			return performanceCases != null;
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__FLIGHT_PERFORMANCE_REQUIREMENTS:
+			return flightPerformanceRequirements != null;
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__CONTROLLABILITY_REQUIREMENTS:
+			return controllabilityRequirements != null;
+		case CpacsPackage.PERFORMANCE_REQUIREMENTS_TYPE__TRIM_REQUIREMENTS:
+			return trimRequirements != null;
 		}
 		return super.eIsSet(featureID);
 	}

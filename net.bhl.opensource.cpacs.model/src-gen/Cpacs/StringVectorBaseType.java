@@ -129,7 +129,7 @@ public interface StringVectorBaseType extends StringBaseType {
 	 * @see #unsetMapType()
 	 * @see #setMapType(String)
 	 * @see Cpacs.CpacsPackage#getStringVectorBaseType_MapType()
-	 * @model default="vector" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 * @model default="vector" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='attribute' name='mapType' namespace='##targetNamespace'"
 	 * @generated
 	 */

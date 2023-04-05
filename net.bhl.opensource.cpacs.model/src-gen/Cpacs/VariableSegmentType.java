@@ -13,7 +13,6 @@ package Cpacs;
  * <ul>
  *   <li>{@link Cpacs.VariableSegmentType#getSegmentUID <em>Segment UID</em>}</li>
  *   <li>{@link Cpacs.VariableSegmentType#getVariableConditions <em>Variable Conditions</em>}</li>
- *   <li>{@link Cpacs.VariableSegmentType#getUID <em>UID</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getVariableSegmentType()
@@ -56,13 +55,13 @@ public interface VariableSegmentType extends ComplexBaseType {
 	 *                             endConditions for the segmentBlock)
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Variable Conditions</em>' containment reference.
-	 * @see #setVariableConditions(StringVectorBaseType)
+	 * @see #setVariableConditions(VariableConditionsType)
 	 * @see Cpacs.CpacsPackage#getVariableSegmentType_VariableConditions()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='variableConditions' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getVariableConditions();
+	VariableConditionsType getVariableConditions();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.VariableSegmentType#getVariableConditions <em>Variable Conditions</em>}' containment reference.
@@ -72,29 +71,6 @@ public interface VariableSegmentType extends ComplexBaseType {
 	 * @see #getVariableConditions()
 	 * @generated
 	 */
-	void setVariableConditions(StringVectorBaseType value);
-
-	/**
-	 * Returns the value of the '<em><b>UID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>UID</em>' attribute.
-	 * @see #setUID(String)
-	 * @see Cpacs.CpacsPackage#getVariableSegmentType_UID()
-	 * @model id="true" dataType="org.eclipse.emf.ecore.xml.type.ID" required="true"
-	 *        extendedMetaData="kind='attribute' name='uID' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	String getUID();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.VariableSegmentType#getUID <em>UID</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>UID</em>' attribute.
-	 * @see #getUID()
-	 * @generated
-	 */
-	void setUID(String value);
+	void setVariableConditions(VariableConditionsType value);
 
 } // VariableSegmentType

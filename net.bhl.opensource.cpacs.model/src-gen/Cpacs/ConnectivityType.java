@@ -11,8 +11,8 @@ package Cpacs;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.ConnectivityType#getDamPoint1UID <em>Dam Point1 UID</em>}</li>
- *   <li>{@link Cpacs.ConnectivityType#getDamPoint2UID <em>Dam Point2 UID</em>}</li>
+ *   <li>{@link Cpacs.ConnectivityType#getLoadAppPoint1ID <em>Load App Point1 ID</em>}</li>
+ *   <li>{@link Cpacs.ConnectivityType#getLoadAppPoint2ID <em>Load App Point2 ID</em>}</li>
  *   <li>{@link Cpacs.ConnectivityType#getRotation <em>Rotation</em>}</li>
  *   <li>{@link Cpacs.ConnectivityType#getStiffness <em>Stiffness</em>}</li>
  * </ul>
@@ -23,50 +23,50 @@ package Cpacs;
  */
 public interface ConnectivityType extends ComplexBaseType {
 	/**
-	 * Returns the value of the '<em><b>Dam Point1 UID</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Load App Point1 ID</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Dam Point1 UID</em>' containment reference.
-	 * @see #setDamPoint1UID(StringUIDBaseType)
-	 * @see Cpacs.CpacsPackage#getConnectivityType_DamPoint1UID()
+	 * @return the value of the '<em>Load App Point1 ID</em>' containment reference.
+	 * @see #setLoadAppPoint1ID(IntegerBaseType)
+	 * @see Cpacs.CpacsPackage#getConnectivityType_LoadAppPoint1ID()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='damPoint1UID' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='loadAppPoint1ID' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringUIDBaseType getDamPoint1UID();
+	IntegerBaseType getLoadAppPoint1ID();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.ConnectivityType#getDamPoint1UID <em>Dam Point1 UID</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.ConnectivityType#getLoadAppPoint1ID <em>Load App Point1 ID</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Dam Point1 UID</em>' containment reference.
-	 * @see #getDamPoint1UID()
+	 * @param value the new value of the '<em>Load App Point1 ID</em>' containment reference.
+	 * @see #getLoadAppPoint1ID()
 	 * @generated
 	 */
-	void setDamPoint1UID(StringUIDBaseType value);
+	void setLoadAppPoint1ID(IntegerBaseType value);
 
 	/**
-	 * Returns the value of the '<em><b>Dam Point2 UID</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Load App Point2 ID</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Dam Point2 UID</em>' containment reference.
-	 * @see #setDamPoint2UID(StringUIDBaseType)
-	 * @see Cpacs.CpacsPackage#getConnectivityType_DamPoint2UID()
+	 * @return the value of the '<em>Load App Point2 ID</em>' containment reference.
+	 * @see #setLoadAppPoint2ID(IntegerBaseType)
+	 * @see Cpacs.CpacsPackage#getConnectivityType_LoadAppPoint2ID()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='damPoint2UID' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='loadAppPoint2ID' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringUIDBaseType getDamPoint2UID();
+	IntegerBaseType getLoadAppPoint2ID();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.ConnectivityType#getDamPoint2UID <em>Dam Point2 UID</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.ConnectivityType#getLoadAppPoint2ID <em>Load App Point2 ID</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Dam Point2 UID</em>' containment reference.
-	 * @see #getDamPoint2UID()
+	 * @param value the new value of the '<em>Load App Point2 ID</em>' containment reference.
+	 * @see #getLoadAppPoint2ID()
 	 * @generated
 	 */
-	void setDamPoint2UID(StringUIDBaseType value);
+	void setLoadAppPoint2ID(IntegerBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Rotation</b></em>' containment reference.

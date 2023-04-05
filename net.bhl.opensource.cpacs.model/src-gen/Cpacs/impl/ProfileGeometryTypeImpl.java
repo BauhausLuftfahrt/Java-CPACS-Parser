@@ -6,8 +6,9 @@ import Cpacs.CpacsPackage;
 import Cpacs.Cst2DType;
 import Cpacs.CurvePointListXYZType;
 import Cpacs.ProfileGeometryType;
+import Cpacs.StandardProfileType;
 import Cpacs.StringBaseType;
-import Cpacs.SymmetryType;
+import Cpacs.SymmetryXyXzYzType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -29,6 +30,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.ProfileGeometryTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link Cpacs.impl.ProfileGeometryTypeImpl#getPointList <em>Point List</em>}</li>
  *   <li>{@link Cpacs.impl.ProfileGeometryTypeImpl#getCst2D <em>Cst2 D</em>}</li>
+ *   <li>{@link Cpacs.impl.ProfileGeometryTypeImpl#getStandardProfile <em>Standard Profile</em>}</li>
  *   <li>{@link Cpacs.impl.ProfileGeometryTypeImpl#getSymmetry <em>Symmetry</em>}</li>
  *   <li>{@link Cpacs.impl.ProfileGeometryTypeImpl#getUID <em>UID</em>}</li>
  * </ul>
@@ -77,6 +79,16 @@ public class ProfileGeometryTypeImpl extends ComplexBaseTypeImpl implements Prof
 	protected Cst2DType cst2D;
 
 	/**
+	 * The cached value of the '{@link #getStandardProfile() <em>Standard Profile</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStandardProfile()
+	 * @generated
+	 * @ordered
+	 */
+	protected StandardProfileType standardProfile;
+
+	/**
 	 * The default value of the '{@link #getSymmetry() <em>Symmetry</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -84,7 +96,7 @@ public class ProfileGeometryTypeImpl extends ComplexBaseTypeImpl implements Prof
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SymmetryType SYMMETRY_EDEFAULT = SymmetryType.XY_PLANE;
+	protected static final SymmetryXyXzYzType SYMMETRY_EDEFAULT = SymmetryXyXzYzType.NONE;
 
 	/**
 	 * The cached value of the '{@link #getSymmetry() <em>Symmetry</em>}' attribute.
@@ -94,7 +106,7 @@ public class ProfileGeometryTypeImpl extends ComplexBaseTypeImpl implements Prof
 	 * @generated
 	 * @ordered
 	 */
-	protected SymmetryType symmetry = SYMMETRY_EDEFAULT;
+	protected SymmetryXyXzYzType symmetry = SYMMETRY_EDEFAULT;
 
 	/**
 	 * This is true if the Symmetry attribute has been set.
@@ -358,7 +370,59 @@ public class ProfileGeometryTypeImpl extends ComplexBaseTypeImpl implements Prof
 	 * @generated
 	 */
 	@Override
-	public SymmetryType getSymmetry() {
+	public StandardProfileType getStandardProfile() {
+		return standardProfile;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetStandardProfile(StandardProfileType newStandardProfile, NotificationChain msgs) {
+		StandardProfileType oldStandardProfile = standardProfile;
+		standardProfile = newStandardProfile;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.PROFILE_GEOMETRY_TYPE__STANDARD_PROFILE, oldStandardProfile, newStandardProfile);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStandardProfile(StandardProfileType newStandardProfile) {
+		if (newStandardProfile != standardProfile) {
+			NotificationChain msgs = null;
+			if (standardProfile != null)
+				msgs = ((InternalEObject) standardProfile).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.PROFILE_GEOMETRY_TYPE__STANDARD_PROFILE, null, msgs);
+			if (newStandardProfile != null)
+				msgs = ((InternalEObject) newStandardProfile).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.PROFILE_GEOMETRY_TYPE__STANDARD_PROFILE, null, msgs);
+			msgs = basicSetStandardProfile(newStandardProfile, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.PROFILE_GEOMETRY_TYPE__STANDARD_PROFILE,
+					newStandardProfile, newStandardProfile));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SymmetryXyXzYzType getSymmetry() {
 		return symmetry;
 	}
 
@@ -368,8 +432,8 @@ public class ProfileGeometryTypeImpl extends ComplexBaseTypeImpl implements Prof
 	 * @generated
 	 */
 	@Override
-	public void setSymmetry(SymmetryType newSymmetry) {
-		SymmetryType oldSymmetry = symmetry;
+	public void setSymmetry(SymmetryXyXzYzType newSymmetry) {
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		symmetry = newSymmetry == null ? SYMMETRY_EDEFAULT : newSymmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetryESet = true;
@@ -385,7 +449,7 @@ public class ProfileGeometryTypeImpl extends ComplexBaseTypeImpl implements Prof
 	 */
 	@Override
 	public void unsetSymmetry() {
-		SymmetryType oldSymmetry = symmetry;
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetry = SYMMETRY_EDEFAULT;
 		symmetryESet = false;
@@ -444,6 +508,8 @@ public class ProfileGeometryTypeImpl extends ComplexBaseTypeImpl implements Prof
 			return basicSetPointList(null, msgs);
 		case CpacsPackage.PROFILE_GEOMETRY_TYPE__CST2_D:
 			return basicSetCst2D(null, msgs);
+		case CpacsPackage.PROFILE_GEOMETRY_TYPE__STANDARD_PROFILE:
+			return basicSetStandardProfile(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -464,6 +530,8 @@ public class ProfileGeometryTypeImpl extends ComplexBaseTypeImpl implements Prof
 			return getPointList();
 		case CpacsPackage.PROFILE_GEOMETRY_TYPE__CST2_D:
 			return getCst2D();
+		case CpacsPackage.PROFILE_GEOMETRY_TYPE__STANDARD_PROFILE:
+			return getStandardProfile();
 		case CpacsPackage.PROFILE_GEOMETRY_TYPE__SYMMETRY:
 			return getSymmetry();
 		case CpacsPackage.PROFILE_GEOMETRY_TYPE__UID:
@@ -492,8 +560,11 @@ public class ProfileGeometryTypeImpl extends ComplexBaseTypeImpl implements Prof
 		case CpacsPackage.PROFILE_GEOMETRY_TYPE__CST2_D:
 			setCst2D((Cst2DType) newValue);
 			return;
+		case CpacsPackage.PROFILE_GEOMETRY_TYPE__STANDARD_PROFILE:
+			setStandardProfile((StandardProfileType) newValue);
+			return;
 		case CpacsPackage.PROFILE_GEOMETRY_TYPE__SYMMETRY:
-			setSymmetry((SymmetryType) newValue);
+			setSymmetry((SymmetryXyXzYzType) newValue);
 			return;
 		case CpacsPackage.PROFILE_GEOMETRY_TYPE__UID:
 			setUID((String) newValue);
@@ -522,6 +593,9 @@ public class ProfileGeometryTypeImpl extends ComplexBaseTypeImpl implements Prof
 		case CpacsPackage.PROFILE_GEOMETRY_TYPE__CST2_D:
 			setCst2D((Cst2DType) null);
 			return;
+		case CpacsPackage.PROFILE_GEOMETRY_TYPE__STANDARD_PROFILE:
+			setStandardProfile((StandardProfileType) null);
+			return;
 		case CpacsPackage.PROFILE_GEOMETRY_TYPE__SYMMETRY:
 			unsetSymmetry();
 			return;
@@ -548,6 +622,8 @@ public class ProfileGeometryTypeImpl extends ComplexBaseTypeImpl implements Prof
 			return pointList != null;
 		case CpacsPackage.PROFILE_GEOMETRY_TYPE__CST2_D:
 			return cst2D != null;
+		case CpacsPackage.PROFILE_GEOMETRY_TYPE__STANDARD_PROFILE:
+			return standardProfile != null;
 		case CpacsPackage.PROFILE_GEOMETRY_TYPE__SYMMETRY:
 			return isSetSymmetry();
 		case CpacsPackage.PROFILE_GEOMETRY_TYPE__UID:

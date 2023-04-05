@@ -52,7 +52,7 @@ public interface MissionPerformanceMapDefinitionType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * List of specific performance maps used on dedicated mission segments
+	 * List of specific performance maps used on dedicated mission segments or pointPerformance requirements
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Specific Performance Maps</em>' containment reference.
 	 * @see #setSpecificPerformanceMaps(SpecificPerformanceMapsType)

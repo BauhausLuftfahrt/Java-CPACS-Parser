@@ -4,8 +4,8 @@ package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
 import Cpacs.GenericMassType;
+import Cpacs.MSparType;
 import Cpacs.MSparsType;
-import Cpacs.SingleGenericMassType;
 
 import java.util.Collection;
 
@@ -55,7 +55,7 @@ public class MSparsTypeImpl extends ComplexBaseTypeImpl implements MSparsType {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<SingleGenericMassType> mSpar;
+	protected EList<MSparType> mSpar;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -134,10 +134,9 @@ public class MSparsTypeImpl extends ComplexBaseTypeImpl implements MSparsType {
 	 * @generated
 	 */
 	@Override
-	public EList<SingleGenericMassType> getMSpar() {
+	public EList<MSparType> getMSpar() {
 		if (mSpar == null) {
-			mSpar = new EObjectContainmentEList<SingleGenericMassType>(SingleGenericMassType.class, this,
-					CpacsPackage.MSPARS_TYPE__MSPAR);
+			mSpar = new EObjectContainmentEList<MSparType>(MSparType.class, this, CpacsPackage.MSPARS_TYPE__MSPAR);
 		}
 		return mSpar;
 	}
@@ -188,7 +187,7 @@ public class MSparsTypeImpl extends ComplexBaseTypeImpl implements MSparsType {
 			return;
 		case CpacsPackage.MSPARS_TYPE__MSPAR:
 			getMSpar().clear();
-			getMSpar().addAll((Collection<? extends SingleGenericMassType>) newValue);
+			getMSpar().addAll((Collection<? extends MSparType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

@@ -11,21 +11,27 @@ package Cpacs;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.MissionSegmentEndConditionType#getCAS <em>CAS</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentEndConditionType#getCalibratedAirSpeed <em>Calibrated Air Speed</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentEndConditionType#getMachNumber <em>Mach Number</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentEndConditionType#getPositionXYZ <em>Position XYZ</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentEndConditionType#getPositionGeo <em>Position Geo</em>}</li>
- *   <li>{@link Cpacs.MissionSegmentEndConditionType#getRunwayUID <em>Runway UID</em>}</li>
- *   <li>{@link Cpacs.MissionSegmentEndConditionType#getOrientation <em>Orientation</em>}</li>
- *   <li>{@link Cpacs.MissionSegmentEndConditionType#getRange <em>Range</em>}</li>
- *   <li>{@link Cpacs.MissionSegmentEndConditionType#getDuration <em>Duration</em>}</li>
- *   <li>{@link Cpacs.MissionSegmentEndConditionType#getSpecificExcessPower <em>Specific Excess Power</em>}</li>
- *   <li>{@link Cpacs.MissionSegmentEndConditionType#getRateOfClimb <em>Rate Of Climb</em>}</li>
- *   <li>{@link Cpacs.MissionSegmentEndConditionType#getFlightPathAngle <em>Flight Path Angle</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentEndConditionType#getRunway <em>Runway</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentEndConditionType#getMassFraction <em>Mass Fraction</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentEndConditionType#getFuelFraction <em>Fuel Fraction</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentEndConditionType#getFuelRemaining <em>Fuel Remaining</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentEndConditionType#getFuelConsumed <em>Fuel Consumed</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentEndConditionType#getPowerFraction <em>Power Fraction</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentEndConditionType#getPowerRemaining <em>Power Remaining</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentEndConditionType#getPowerConsumed <em>Power Consumed</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentEndConditionType#getHeading <em>Heading</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentEndConditionType#getTurnAngle <em>Turn Angle</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentEndConditionType#getRange <em>Range</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentEndConditionType#getDuration <em>Duration</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentEndConditionType#getEndTimeUTC <em>End Time UTC</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentEndConditionType#getSpecificExcessPower <em>Specific Excess Power</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentEndConditionType#getRateOfClimb <em>Rate Of Climb</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentEndConditionType#getFlightPathAngle <em>Flight Path Angle</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentEndConditionType#getReleasedStores <em>Released Stores</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType()
@@ -34,46 +40,40 @@ package Cpacs;
  */
 public interface MissionSegmentEndConditionType extends ComplexBaseType {
 	/**
-	 * Returns the value of the '<em><b>CAS</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Calibrated Air Speed</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Calibrated airspeed at the end of the segment in [m/s]
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>CAS</em>' containment reference.
-	 * @see #setCAS(DoubleConstraintBaseType)
-	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_CAS()
+	 * @return the value of the '<em>Calibrated Air Speed</em>' containment reference.
+	 * @see #setCalibratedAirSpeed(CalibratedAirSpeedType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_CalibratedAirSpeed()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='CAS' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='calibratedAirSpeed' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleConstraintBaseType getCAS();
+	CalibratedAirSpeedType getCalibratedAirSpeed();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getCAS <em>CAS</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getCalibratedAirSpeed <em>Calibrated Air Speed</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>CAS</em>' containment reference.
-	 * @see #getCAS()
+	 * @param value the new value of the '<em>Calibrated Air Speed</em>' containment reference.
+	 * @see #getCalibratedAirSpeed()
 	 * @generated
 	 */
-	void setCAS(DoubleConstraintBaseType value);
+	void setCalibratedAirSpeed(CalibratedAirSpeedType value);
 
 	/**
 	 * Returns the value of the '<em><b>Mach Number</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Mach number at the end of the segment
-	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Mach Number</em>' containment reference.
-	 * @see #setMachNumber(DoubleConstraintBaseType)
+	 * @see #setMachNumber(MachNumberType)
 	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_MachNumber()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='machNumber' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleConstraintBaseType getMachNumber();
+	MachNumberType getMachNumber();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getMachNumber <em>Mach Number</em>}' containment reference.
@@ -83,14 +83,16 @@ public interface MissionSegmentEndConditionType extends ComplexBaseType {
 	 * @see #getMachNumber()
 	 * @generated
 	 */
-	void setMachNumber(DoubleConstraintBaseType value);
+	void setMachNumber(MachNumberType value);
 
 	/**
 	 * Returns the value of the '<em><b>Position XYZ</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Global coordinate at the end of the segment in xyz coordinates
+	 * 
+	 *                                     Position at the end of the segment in xyz coordinates
+	 *                                 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Position XYZ</em>' containment reference.
 	 * @see #setPositionXYZ(PointConstraintType)
@@ -116,7 +118,9 @@ public interface MissionSegmentEndConditionType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Global coordinate at the end of the segment in geographic coordinates (longitude, latitude, altitude)
+	 * 
+	 *                                     Position at the end of the segment in geo coordinates
+	 *                                 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Position Geo</em>' containment reference.
 	 * @see #setPositionGeo(GeographicPointConstraintType)
@@ -138,202 +142,40 @@ public interface MissionSegmentEndConditionType extends ComplexBaseType {
 	void setPositionGeo(GeographicPointConstraintType value);
 
 	/**
-	 * Returns the value of the '<em><b>Runway UID</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Runway</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * destination runway UID
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Runway UID</em>' containment reference.
-	 * @see #setRunwayUID(StringUIDBaseType)
-	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_RunwayUID()
+	 * @return the value of the '<em>Runway</em>' containment reference.
+	 * @see #setRunway(RunwayType1)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_Runway()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='runwayUID' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='runway' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringUIDBaseType getRunwayUID();
+	RunwayType1 getRunway();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getRunwayUID <em>Runway UID</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getRunway <em>Runway</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Runway UID</em>' containment reference.
-	 * @see #getRunwayUID()
+	 * @param value the new value of the '<em>Runway</em>' containment reference.
+	 * @see #getRunway()
 	 * @generated
 	 */
-	void setRunwayUID(StringUIDBaseType value);
-
-	/**
-	 * Returns the value of the '<em><b>Orientation</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Final orientation in segment
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Orientation</em>' containment reference.
-	 * @see #setOrientation(OrientationType)
-	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_Orientation()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='orientation' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	OrientationType getOrientation();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getOrientation <em>Orientation</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Orientation</em>' containment reference.
-	 * @see #getOrientation()
-	 * @generated
-	 */
-	void setOrientation(OrientationType value);
-
-	/**
-	 * Returns the value of the '<em><b>Range</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Flown distance in the segment (x, y, z)
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Range</em>' containment reference.
-	 * @see #setRange(PointConstraintType)
-	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_Range()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='range' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	PointConstraintType getRange();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getRange <em>Range</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Range</em>' containment reference.
-	 * @see #getRange()
-	 * @generated
-	 */
-	void setRange(PointConstraintType value);
-
-	/**
-	 * Returns the value of the '<em><b>Duration</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Duration of the segment
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Duration</em>' containment reference.
-	 * @see #setDuration(DoubleConstraintBaseType)
-	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_Duration()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='duration' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	DoubleConstraintBaseType getDuration();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getDuration <em>Duration</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Duration</em>' containment reference.
-	 * @see #getDuration()
-	 * @generated
-	 */
-	void setDuration(DoubleConstraintBaseType value);
-
-	/**
-	 * Returns the value of the '<em><b>Specific Excess Power</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Specific excess power at the end of the segment
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Specific Excess Power</em>' containment reference.
-	 * @see #setSpecificExcessPower(DoubleConstraintBaseType)
-	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_SpecificExcessPower()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='specificExcessPower' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	DoubleConstraintBaseType getSpecificExcessPower();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getSpecificExcessPower <em>Specific Excess Power</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Specific Excess Power</em>' containment reference.
-	 * @see #getSpecificExcessPower()
-	 * @generated
-	 */
-	void setSpecificExcessPower(DoubleConstraintBaseType value);
-
-	/**
-	 * Returns the value of the '<em><b>Rate Of Climb</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Rate of climb ending the segment
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Rate Of Climb</em>' containment reference.
-	 * @see #setRateOfClimb(DoubleConstraintBaseType)
-	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_RateOfClimb()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='rateOfClimb' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	DoubleConstraintBaseType getRateOfClimb();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getRateOfClimb <em>Rate Of Climb</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Rate Of Climb</em>' containment reference.
-	 * @see #getRateOfClimb()
-	 * @generated
-	 */
-	void setRateOfClimb(DoubleConstraintBaseType value);
-
-	/**
-	 * Returns the value of the '<em><b>Flight Path Angle</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Angle of flight path ending the segment
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Flight Path Angle</em>' containment reference.
-	 * @see #setFlightPathAngle(DoubleConstraintBaseType)
-	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_FlightPathAngle()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='flightPathAngle' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	DoubleConstraintBaseType getFlightPathAngle();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getFlightPathAngle <em>Flight Path Angle</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Flight Path Angle</em>' containment reference.
-	 * @see #getFlightPathAngle()
-	 * @generated
-	 */
-	void setFlightPathAngle(DoubleConstraintBaseType value);
+	void setRunway(RunwayType1 value);
 
 	/**
 	 * Returns the value of the '<em><b>Mass Fraction</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * MassFraction ending the segment
-	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Mass Fraction</em>' containment reference.
-	 * @see #setMassFraction(DoubleConstraintBaseType)
+	 * @see #setMassFraction(MassFractionType)
 	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_MassFraction()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='massFraction' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleConstraintBaseType getMassFraction();
+	MassFractionType getMassFraction();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getMassFraction <em>Mass Fraction</em>}' containment reference.
@@ -343,23 +185,20 @@ public interface MissionSegmentEndConditionType extends ComplexBaseType {
 	 * @see #getMassFraction()
 	 * @generated
 	 */
-	void setMassFraction(DoubleConstraintBaseType value);
+	void setMassFraction(MassFractionType value);
 
 	/**
 	 * Returns the value of the '<em><b>Fuel Fraction</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Fuel mass fraction ending the segment, as remaining fuel mass with respect to initial segment fuel mass
-	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Fuel Fraction</em>' containment reference.
-	 * @see #setFuelFraction(DoubleConstraintBaseType)
+	 * @see #setFuelFraction(FuelFractionType)
 	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_FuelFraction()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='fuelFraction' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleConstraintBaseType getFuelFraction();
+	FuelFractionType getFuelFraction();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getFuelFraction <em>Fuel Fraction</em>}' containment reference.
@@ -369,23 +208,20 @@ public interface MissionSegmentEndConditionType extends ComplexBaseType {
 	 * @see #getFuelFraction()
 	 * @generated
 	 */
-	void setFuelFraction(DoubleConstraintBaseType value);
+	void setFuelFraction(FuelFractionType value);
 
 	/**
 	 * Returns the value of the '<em><b>Fuel Remaining</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Remaining absolute fuel ending the segment
-	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Fuel Remaining</em>' containment reference.
-	 * @see #setFuelRemaining(DoubleConstraintBaseType)
+	 * @see #setFuelRemaining(FuelRemainingType)
 	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_FuelRemaining()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='fuelRemaining' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleConstraintBaseType getFuelRemaining();
+	FuelRemainingType getFuelRemaining();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getFuelRemaining <em>Fuel Remaining</em>}' containment reference.
@@ -395,23 +231,20 @@ public interface MissionSegmentEndConditionType extends ComplexBaseType {
 	 * @see #getFuelRemaining()
 	 * @generated
 	 */
-	void setFuelRemaining(DoubleConstraintBaseType value);
+	void setFuelRemaining(FuelRemainingType value);
 
 	/**
 	 * Returns the value of the '<em><b>Fuel Consumed</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Consumed fuel mass ending the segment
-	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Fuel Consumed</em>' containment reference.
-	 * @see #setFuelConsumed(DoubleConstraintBaseType)
+	 * @see #setFuelConsumed(FuelConsumedType)
 	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_FuelConsumed()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='fuelConsumed' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoubleConstraintBaseType getFuelConsumed();
+	FuelConsumedType getFuelConsumed();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getFuelConsumed <em>Fuel Consumed</em>}' containment reference.
@@ -421,6 +254,286 @@ public interface MissionSegmentEndConditionType extends ComplexBaseType {
 	 * @see #getFuelConsumed()
 	 * @generated
 	 */
-	void setFuelConsumed(DoubleConstraintBaseType value);
+	void setFuelConsumed(FuelConsumedType value);
+
+	/**
+	 * Returns the value of the '<em><b>Power Fraction</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Power Fraction</em>' containment reference.
+	 * @see #setPowerFraction(PowerFractionType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_PowerFraction()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='powerFraction' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	PowerFractionType getPowerFraction();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getPowerFraction <em>Power Fraction</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Power Fraction</em>' containment reference.
+	 * @see #getPowerFraction()
+	 * @generated
+	 */
+	void setPowerFraction(PowerFractionType value);
+
+	/**
+	 * Returns the value of the '<em><b>Power Remaining</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Power Remaining</em>' containment reference.
+	 * @see #setPowerRemaining(PowerRemainingType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_PowerRemaining()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='powerRemaining' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	PowerRemainingType getPowerRemaining();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getPowerRemaining <em>Power Remaining</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Power Remaining</em>' containment reference.
+	 * @see #getPowerRemaining()
+	 * @generated
+	 */
+	void setPowerRemaining(PowerRemainingType value);
+
+	/**
+	 * Returns the value of the '<em><b>Power Consumed</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Power Consumed</em>' containment reference.
+	 * @see #setPowerConsumed(PowerConsumedType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_PowerConsumed()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='powerConsumed' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	PowerConsumedType getPowerConsumed();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getPowerConsumed <em>Power Consumed</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Power Consumed</em>' containment reference.
+	 * @see #getPowerConsumed()
+	 * @generated
+	 */
+	void setPowerConsumed(PowerConsumedType value);
+
+	/**
+	 * Returns the value of the '<em><b>Heading</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Heading</em>' containment reference.
+	 * @see #setHeading(HeadingType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_Heading()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='heading' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	HeadingType getHeading();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getHeading <em>Heading</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Heading</em>' containment reference.
+	 * @see #getHeading()
+	 * @generated
+	 */
+	void setHeading(HeadingType value);
+
+	/**
+	 * Returns the value of the '<em><b>Turn Angle</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Turn Angle</em>' containment reference.
+	 * @see #setTurnAngle(TurnAngleType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_TurnAngle()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='turnAngle' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	TurnAngleType getTurnAngle();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getTurnAngle <em>Turn Angle</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Turn Angle</em>' containment reference.
+	 * @see #getTurnAngle()
+	 * @generated
+	 */
+	void setTurnAngle(TurnAngleType value);
+
+	/**
+	 * Returns the value of the '<em><b>Range</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Range</em>' containment reference.
+	 * @see #setRange(RangeType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_Range()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='range' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	RangeType getRange();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getRange <em>Range</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Range</em>' containment reference.
+	 * @see #getRange()
+	 * @generated
+	 */
+	void setRange(RangeType value);
+
+	/**
+	 * Returns the value of the '<em><b>Duration</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Duration</em>' containment reference.
+	 * @see #setDuration(DurationType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_Duration()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='duration' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	DurationType getDuration();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getDuration <em>Duration</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Duration</em>' containment reference.
+	 * @see #getDuration()
+	 * @generated
+	 */
+	void setDuration(DurationType value);
+
+	/**
+	 * Returns the value of the '<em><b>End Time UTC</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>End Time UTC</em>' containment reference.
+	 * @see #setEndTimeUTC(EndTimeUTCType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_EndTimeUTC()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='endTimeUTC' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	EndTimeUTCType getEndTimeUTC();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getEndTimeUTC <em>End Time UTC</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>End Time UTC</em>' containment reference.
+	 * @see #getEndTimeUTC()
+	 * @generated
+	 */
+	void setEndTimeUTC(EndTimeUTCType value);
+
+	/**
+	 * Returns the value of the '<em><b>Specific Excess Power</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Specific Excess Power</em>' containment reference.
+	 * @see #setSpecificExcessPower(SpecificExcessPowerType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_SpecificExcessPower()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='specificExcessPower' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	SpecificExcessPowerType getSpecificExcessPower();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getSpecificExcessPower <em>Specific Excess Power</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Specific Excess Power</em>' containment reference.
+	 * @see #getSpecificExcessPower()
+	 * @generated
+	 */
+	void setSpecificExcessPower(SpecificExcessPowerType value);
+
+	/**
+	 * Returns the value of the '<em><b>Rate Of Climb</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Rate Of Climb</em>' containment reference.
+	 * @see #setRateOfClimb(RateOfClimbType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_RateOfClimb()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='rateOfClimb' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	RateOfClimbType getRateOfClimb();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getRateOfClimb <em>Rate Of Climb</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Rate Of Climb</em>' containment reference.
+	 * @see #getRateOfClimb()
+	 * @generated
+	 */
+	void setRateOfClimb(RateOfClimbType value);
+
+	/**
+	 * Returns the value of the '<em><b>Flight Path Angle</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Flight Path Angle</em>' containment reference.
+	 * @see #setFlightPathAngle(FlightPathAngleType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_FlightPathAngle()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='flightPathAngle' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	FlightPathAngleType getFlightPathAngle();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getFlightPathAngle <em>Flight Path Angle</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Flight Path Angle</em>' containment reference.
+	 * @see #getFlightPathAngle()
+	 * @generated
+	 */
+	void setFlightPathAngle(FlightPathAngleType value);
+
+	/**
+	 * Returns the value of the '<em><b>Released Stores</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * List of stores released in the segment. The corresponding weightAndBalance vector for retrieving the new state as well as a potential change in aerodynamicPerformanceMap (if external stores are released) should be reflected within the configuration node at model level.
+	 *                             
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Released Stores</em>' containment reference.
+	 * @see #setReleasedStores(ReleasedStoresType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentEndConditionType_ReleasedStores()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='releasedStores' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	ReleasedStoresType getReleasedStores();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentEndConditionType#getReleasedStores <em>Released Stores</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Released Stores</em>' containment reference.
+	 * @see #getReleasedStores()
+	 * @generated
+	 */
+	void setReleasedStores(ReleasedStoresType value);
 
 } // MissionSegmentEndConditionType

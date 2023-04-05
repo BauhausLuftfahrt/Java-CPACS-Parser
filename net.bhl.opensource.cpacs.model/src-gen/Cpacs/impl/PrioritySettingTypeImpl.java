@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class PrioritySettingTypeImpl extends StringBaseTypeImpl implements PrioritySettingType {
+public class PrioritySettingTypeImpl extends StringVectorBaseTypeImpl implements PrioritySettingType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

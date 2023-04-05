@@ -15,6 +15,7 @@ package Cpacs;
  *   <li>{@link Cpacs.AircraftGlobalType#getPayload <em>Payload</em>}</li>
  *   <li>{@link Cpacs.AircraftGlobalType#getAirportCompatability <em>Airport Compatability</em>}</li>
  *   <li>{@link Cpacs.AircraftGlobalType#getPerformanceTargets <em>Performance Targets</em>}</li>
+ *   <li>{@link Cpacs.AircraftGlobalType#getFlightEnvelopes <em>Flight Envelopes</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getAircraftGlobalType()
@@ -30,7 +31,7 @@ public interface AircraftGlobalType extends ComplexBaseType {
 	 * 
 	 *                                 designRange equals the full payload max
 	 *                                 range, i.e. point B in payload range
-	 *                                 diagramm
+	 *                                 diagram
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Design Range</em>' containment reference.
@@ -120,5 +121,28 @@ public interface AircraftGlobalType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setPerformanceTargets(PerformanceTargetsGlobalType value);
+
+	/**
+	 * Returns the value of the '<em><b>Flight Envelopes</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Flight Envelopes</em>' containment reference.
+	 * @see #setFlightEnvelopes(FlightEnvelopesType)
+	 * @see Cpacs.CpacsPackage#getAircraftGlobalType_FlightEnvelopes()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='flightEnvelopes' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	FlightEnvelopesType getFlightEnvelopes();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.AircraftGlobalType#getFlightEnvelopes <em>Flight Envelopes</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Flight Envelopes</em>' containment reference.
+	 * @see #getFlightEnvelopes()
+	 * @generated
+	 */
+	void setFlightEnvelopes(FlightEnvelopesType value);
 
 } // AircraftGlobalType

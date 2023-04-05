@@ -55,7 +55,7 @@ public interface CutOutProfileType extends ComplexBaseType {
 	 * <!-- begin-model-doc -->
 	 * Relative spanwise position of the cut out
 	 *                                 profile. The eta coordinate refers to the control surface and
-	 *                                 desribes the cut out profile at the leading edge of the control
+	 *                                 describes the cut out profile at the leading edge of the control
 	 *                                 surface.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Eta</em>' containment reference.

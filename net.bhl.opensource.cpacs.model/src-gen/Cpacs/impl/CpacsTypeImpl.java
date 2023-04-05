@@ -8,7 +8,6 @@ import Cpacs.CpacsPackage;
 import Cpacs.CpacsType;
 import Cpacs.FlightsType;
 import Cpacs.HeaderType;
-import Cpacs.MissionDefinitionsType;
 import Cpacs.StudiesType;
 import Cpacs.ToolspecificType;
 import Cpacs.VehiclesType;
@@ -32,7 +31,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <ul>
  *   <li>{@link Cpacs.impl.CpacsTypeImpl#getHeader <em>Header</em>}</li>
  *   <li>{@link Cpacs.impl.CpacsTypeImpl#getVehicles <em>Vehicles</em>}</li>
- *   <li>{@link Cpacs.impl.CpacsTypeImpl#getMissionDefinitions <em>Mission Definitions</em>}</li>
  *   <li>{@link Cpacs.impl.CpacsTypeImpl#getAirports <em>Airports</em>}</li>
  *   <li>{@link Cpacs.impl.CpacsTypeImpl#getFlights <em>Flights</em>}</li>
  *   <li>{@link Cpacs.impl.CpacsTypeImpl#getAirlines <em>Airlines</em>}</li>
@@ -62,16 +60,6 @@ public class CpacsTypeImpl extends MinimalEObjectImpl.Container implements Cpacs
 	 * @ordered
 	 */
 	protected VehiclesType vehicles;
-
-	/**
-	 * The cached value of the '{@link #getMissionDefinitions() <em>Mission Definitions</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMissionDefinitions()
-	 * @generated
-	 * @ordered
-	 */
-	protected MissionDefinitionsType missionDefinitions;
 
 	/**
 	 * The cached value of the '{@link #getAirports() <em>Airports</em>}' containment reference.
@@ -244,59 +232,6 @@ public class CpacsTypeImpl extends MinimalEObjectImpl.Container implements Cpacs
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CPACS_TYPE__VEHICLES, newVehicles,
 					newVehicles));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public MissionDefinitionsType getMissionDefinitions() {
-		return missionDefinitions;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetMissionDefinitions(MissionDefinitionsType newMissionDefinitions,
-			NotificationChain msgs) {
-		MissionDefinitionsType oldMissionDefinitions = missionDefinitions;
-		missionDefinitions = newMissionDefinitions;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CPACS_TYPE__MISSION_DEFINITIONS, oldMissionDefinitions, newMissionDefinitions);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setMissionDefinitions(MissionDefinitionsType newMissionDefinitions) {
-		if (newMissionDefinitions != missionDefinitions) {
-			NotificationChain msgs = null;
-			if (missionDefinitions != null)
-				msgs = ((InternalEObject) missionDefinitions).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CPACS_TYPE__MISSION_DEFINITIONS, null, msgs);
-			if (newMissionDefinitions != null)
-				msgs = ((InternalEObject) newMissionDefinitions).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CPACS_TYPE__MISSION_DEFINITIONS, null, msgs);
-			msgs = basicSetMissionDefinitions(newMissionDefinitions, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CPACS_TYPE__MISSION_DEFINITIONS,
-					newMissionDefinitions, newMissionDefinitions));
 	}
 
 	/**
@@ -571,8 +506,6 @@ public class CpacsTypeImpl extends MinimalEObjectImpl.Container implements Cpacs
 			return basicSetHeader(null, msgs);
 		case CpacsPackage.CPACS_TYPE__VEHICLES:
 			return basicSetVehicles(null, msgs);
-		case CpacsPackage.CPACS_TYPE__MISSION_DEFINITIONS:
-			return basicSetMissionDefinitions(null, msgs);
 		case CpacsPackage.CPACS_TYPE__AIRPORTS:
 			return basicSetAirports(null, msgs);
 		case CpacsPackage.CPACS_TYPE__FLIGHTS:
@@ -599,8 +532,6 @@ public class CpacsTypeImpl extends MinimalEObjectImpl.Container implements Cpacs
 			return getHeader();
 		case CpacsPackage.CPACS_TYPE__VEHICLES:
 			return getVehicles();
-		case CpacsPackage.CPACS_TYPE__MISSION_DEFINITIONS:
-			return getMissionDefinitions();
 		case CpacsPackage.CPACS_TYPE__AIRPORTS:
 			return getAirports();
 		case CpacsPackage.CPACS_TYPE__FLIGHTS:
@@ -628,9 +559,6 @@ public class CpacsTypeImpl extends MinimalEObjectImpl.Container implements Cpacs
 			return;
 		case CpacsPackage.CPACS_TYPE__VEHICLES:
 			setVehicles((VehiclesType) newValue);
-			return;
-		case CpacsPackage.CPACS_TYPE__MISSION_DEFINITIONS:
-			setMissionDefinitions((MissionDefinitionsType) newValue);
 			return;
 		case CpacsPackage.CPACS_TYPE__AIRPORTS:
 			setAirports((AirportsType) newValue);
@@ -665,9 +593,6 @@ public class CpacsTypeImpl extends MinimalEObjectImpl.Container implements Cpacs
 		case CpacsPackage.CPACS_TYPE__VEHICLES:
 			setVehicles((VehiclesType) null);
 			return;
-		case CpacsPackage.CPACS_TYPE__MISSION_DEFINITIONS:
-			setMissionDefinitions((MissionDefinitionsType) null);
-			return;
 		case CpacsPackage.CPACS_TYPE__AIRPORTS:
 			setAirports((AirportsType) null);
 			return;
@@ -699,8 +624,6 @@ public class CpacsTypeImpl extends MinimalEObjectImpl.Container implements Cpacs
 			return header != null;
 		case CpacsPackage.CPACS_TYPE__VEHICLES:
 			return vehicles != null;
-		case CpacsPackage.CPACS_TYPE__MISSION_DEFINITIONS:
-			return missionDefinitions != null;
 		case CpacsPackage.CPACS_TYPE__AIRPORTS:
 			return airports != null;
 		case CpacsPackage.CPACS_TYPE__FLIGHTS:

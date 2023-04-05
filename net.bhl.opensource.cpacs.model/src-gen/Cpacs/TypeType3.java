@@ -19,88 +19,88 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum TypeType3 implements Enumerator {
 	/**
-	 * The '<em><b>Semi Rigid</b></em>' literal object.
+	 * The '<em><b>Main Rotor</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #SEMI_RIGID_VALUE
+	 * @see #MAIN_ROTOR_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	SEMI_RIGID(0, "semiRigid", "semiRigid"),
+	MAIN_ROTOR(0, "mainRotor", "mainRotor"),
 
 	/**
-	 * The '<em><b>Rigid</b></em>' literal object.
+	 * The '<em><b>Tail Rotor</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #RIGID_VALUE
+	 * @see #TAIL_ROTOR_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	RIGID(1, "rigid", "rigid"),
+	TAIL_ROTOR(1, "tailRotor", "tailRotor"),
 
 	/**
-	 * The '<em><b>Articulated</b></em>' literal object.
+	 * The '<em><b>Fenestron</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ARTICULATED_VALUE
+	 * @see #FENESTRON_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ARTICULATED(2, "articulated", "articulated"),
+	FENESTRON(2, "fenestron", "fenestron"),
 
 	/**
-	 * The '<em><b>Hingeless</b></em>' literal object.
+	 * The '<em><b>Propeller</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #HINGELESS_VALUE
+	 * @see #PROPELLER_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	HINGELESS(3, "hingeless", "hingeless");
+	PROPELLER(3, "propeller", "propeller");
 
 	/**
-	 * The '<em><b>Semi Rigid</b></em>' literal value.
+	 * The '<em><b>Main Rotor</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #SEMI_RIGID
-	 * @model name="semiRigid"
+	 * @see #MAIN_ROTOR
+	 * @model name="mainRotor"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int SEMI_RIGID_VALUE = 0;
+	public static final int MAIN_ROTOR_VALUE = 0;
 
 	/**
-	 * The '<em><b>Rigid</b></em>' literal value.
+	 * The '<em><b>Tail Rotor</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #RIGID
-	 * @model name="rigid"
+	 * @see #TAIL_ROTOR
+	 * @model name="tailRotor"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int RIGID_VALUE = 1;
+	public static final int TAIL_ROTOR_VALUE = 1;
 
 	/**
-	 * The '<em><b>Articulated</b></em>' literal value.
+	 * The '<em><b>Fenestron</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ARTICULATED
-	 * @model name="articulated"
+	 * @see #FENESTRON
+	 * @model name="fenestron"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ARTICULATED_VALUE = 2;
+	public static final int FENESTRON_VALUE = 2;
 
 	/**
-	 * The '<em><b>Hingeless</b></em>' literal value.
+	 * The '<em><b>Propeller</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #HINGELESS
-	 * @model name="hingeless"
+	 * @see #PROPELLER
+	 * @model name="propeller"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int HINGELESS_VALUE = 3;
+	public static final int PROPELLER_VALUE = 3;
 
 	/**
 	 * An array of all the '<em><b>Type Type3</b></em>' enumerators.
@@ -108,7 +108,7 @@ public enum TypeType3 implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final TypeType3[] VALUES_ARRAY = new TypeType3[] { SEMI_RIGID, RIGID, ARTICULATED, HINGELESS, };
+	private static final TypeType3[] VALUES_ARRAY = new TypeType3[] { MAIN_ROTOR, TAIL_ROTOR, FENESTRON, PROPELLER, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Type Type3</b></em>' enumerators.
@@ -164,14 +164,14 @@ public enum TypeType3 implements Enumerator {
 	 */
 	public static TypeType3 get(int value) {
 		switch (value) {
-		case SEMI_RIGID_VALUE:
-			return SEMI_RIGID;
-		case RIGID_VALUE:
-			return RIGID;
-		case ARTICULATED_VALUE:
-			return ARTICULATED;
-		case HINGELESS_VALUE:
-			return HINGELESS;
+		case MAIN_ROTOR_VALUE:
+			return MAIN_ROTOR;
+		case TAIL_ROTOR_VALUE:
+			return TAIL_ROTOR;
+		case FENESTRON_VALUE:
+			return FENESTRON;
+		case PROPELLER_VALUE:
+			return PROPELLER;
 		}
 		return null;
 	}

@@ -80,7 +80,7 @@ public interface EngineMountType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * position of the engine mount refering to the
+	 * position of the engine mount referring to the
 	 *                                 engine coordinate system.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Position</em>' containment reference.

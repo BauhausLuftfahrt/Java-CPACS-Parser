@@ -3,7 +3,7 @@
 package Cpacs.impl;
 
 import Cpacs.AlignmentStringFrameType;
-import Cpacs.ContinuityType;
+import Cpacs.ContinuityType1;
 import Cpacs.CpacsPackage;
 import Cpacs.DoubleBaseType;
 import Cpacs.InterpolationType2;
@@ -28,6 +28,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link Cpacs.impl.StringerFramePositionTypeImpl#getStructuralElementUID <em>Structural Element UID</em>}</li>
  *   <li>{@link Cpacs.impl.StringerFramePositionTypeImpl#getPositionX <em>Position X</em>}</li>
+ *   <li>{@link Cpacs.impl.StringerFramePositionTypeImpl#getSectionElementUID <em>Section Element UID</em>}</li>
  *   <li>{@link Cpacs.impl.StringerFramePositionTypeImpl#getReferenceY <em>Reference Y</em>}</li>
  *   <li>{@link Cpacs.impl.StringerFramePositionTypeImpl#getReferenceZ <em>Reference Z</em>}</li>
  *   <li>{@link Cpacs.impl.StringerFramePositionTypeImpl#getReferenceAngle <em>Reference Angle</em>}</li>
@@ -59,6 +60,16 @@ public class StringerFramePositionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @ordered
 	 */
 	protected DoubleBaseType positionX;
+
+	/**
+	 * The cached value of the '{@link #getSectionElementUID() <em>Section Element UID</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSectionElementUID()
+	 * @generated
+	 * @ordered
+	 */
+	protected StringUIDBaseType sectionElementUID;
 
 	/**
 	 * The cached value of the '{@link #getReferenceY() <em>Reference Y</em>}' containment reference.
@@ -108,7 +119,7 @@ public class StringerFramePositionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 * @ordered
 	 */
-	protected ContinuityType continuity;
+	protected ContinuityType1 continuity;
 
 	/**
 	 * The cached value of the '{@link #getInterpolation() <em>Interpolation</em>}' containment reference.
@@ -266,6 +277,62 @@ public class StringerFramePositionTypeImpl extends ComplexBaseTypeImpl implement
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.STRINGER_FRAME_POSITION_TYPE__POSITION_X,
 					newPositionX, newPositionX));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StringUIDBaseType getSectionElementUID() {
+		return sectionElementUID;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetSectionElementUID(StringUIDBaseType newSectionElementUID, NotificationChain msgs) {
+		StringUIDBaseType oldSectionElementUID = sectionElementUID;
+		sectionElementUID = newSectionElementUID;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.STRINGER_FRAME_POSITION_TYPE__SECTION_ELEMENT_UID, oldSectionElementUID,
+					newSectionElementUID);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSectionElementUID(StringUIDBaseType newSectionElementUID) {
+		if (newSectionElementUID != sectionElementUID) {
+			NotificationChain msgs = null;
+			if (sectionElementUID != null)
+				msgs = ((InternalEObject) sectionElementUID).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.STRINGER_FRAME_POSITION_TYPE__SECTION_ELEMENT_UID, null,
+						msgs);
+			if (newSectionElementUID != null)
+				msgs = ((InternalEObject) newSectionElementUID).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.STRINGER_FRAME_POSITION_TYPE__SECTION_ELEMENT_UID, null,
+						msgs);
+			msgs = basicSetSectionElementUID(newSectionElementUID, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.STRINGER_FRAME_POSITION_TYPE__SECTION_ELEMENT_UID, newSectionElementUID,
+					newSectionElementUID));
 	}
 
 	/**
@@ -484,7 +551,7 @@ public class StringerFramePositionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public ContinuityType getContinuity() {
+	public ContinuityType1 getContinuity() {
 		return continuity;
 	}
 
@@ -493,8 +560,8 @@ public class StringerFramePositionTypeImpl extends ComplexBaseTypeImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContinuity(ContinuityType newContinuity, NotificationChain msgs) {
-		ContinuityType oldContinuity = continuity;
+	public NotificationChain basicSetContinuity(ContinuityType1 newContinuity, NotificationChain msgs) {
+		ContinuityType1 oldContinuity = continuity;
 		continuity = newContinuity;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -513,7 +580,7 @@ public class StringerFramePositionTypeImpl extends ComplexBaseTypeImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setContinuity(ContinuityType newContinuity) {
+	public void setContinuity(ContinuityType1 newContinuity) {
 		if (newContinuity != continuity) {
 			NotificationChain msgs = null;
 			if (continuity != null)
@@ -618,6 +685,8 @@ public class StringerFramePositionTypeImpl extends ComplexBaseTypeImpl implement
 			return basicSetStructuralElementUID(null, msgs);
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__POSITION_X:
 			return basicSetPositionX(null, msgs);
+		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__SECTION_ELEMENT_UID:
+			return basicSetSectionElementUID(null, msgs);
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__REFERENCE_Y:
 			return basicSetReferenceY(null, msgs);
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__REFERENCE_Z:
@@ -646,6 +715,8 @@ public class StringerFramePositionTypeImpl extends ComplexBaseTypeImpl implement
 			return getStructuralElementUID();
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__POSITION_X:
 			return getPositionX();
+		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__SECTION_ELEMENT_UID:
+			return getSectionElementUID();
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__REFERENCE_Y:
 			return getReferenceY();
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__REFERENCE_Z:
@@ -678,6 +749,9 @@ public class StringerFramePositionTypeImpl extends ComplexBaseTypeImpl implement
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__POSITION_X:
 			setPositionX((DoubleBaseType) newValue);
 			return;
+		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__SECTION_ELEMENT_UID:
+			setSectionElementUID((StringUIDBaseType) newValue);
+			return;
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__REFERENCE_Y:
 			setReferenceY((DoubleBaseType) newValue);
 			return;
@@ -691,7 +765,7 @@ public class StringerFramePositionTypeImpl extends ComplexBaseTypeImpl implement
 			setAlignment((AlignmentStringFrameType) newValue);
 			return;
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__CONTINUITY:
-			setContinuity((ContinuityType) newValue);
+			setContinuity((ContinuityType1) newValue);
 			return;
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__INTERPOLATION:
 			setInterpolation((InterpolationType2) newValue);
@@ -717,6 +791,9 @@ public class StringerFramePositionTypeImpl extends ComplexBaseTypeImpl implement
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__POSITION_X:
 			setPositionX((DoubleBaseType) null);
 			return;
+		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__SECTION_ELEMENT_UID:
+			setSectionElementUID((StringUIDBaseType) null);
+			return;
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__REFERENCE_Y:
 			setReferenceY((DoubleBaseType) null);
 			return;
@@ -730,7 +807,7 @@ public class StringerFramePositionTypeImpl extends ComplexBaseTypeImpl implement
 			setAlignment((AlignmentStringFrameType) null);
 			return;
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__CONTINUITY:
-			setContinuity((ContinuityType) null);
+			setContinuity((ContinuityType1) null);
 			return;
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__INTERPOLATION:
 			setInterpolation((InterpolationType2) null);
@@ -754,6 +831,8 @@ public class StringerFramePositionTypeImpl extends ComplexBaseTypeImpl implement
 			return structuralElementUID != null;
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__POSITION_X:
 			return positionX != null;
+		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__SECTION_ELEMENT_UID:
+			return sectionElementUID != null;
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__REFERENCE_Y:
 			return referenceY != null;
 		case CpacsPackage.STRINGER_FRAME_POSITION_TYPE__REFERENCE_Z:

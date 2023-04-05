@@ -13,6 +13,7 @@ package Cpacs;
  * <ul>
  *   <li>{@link Cpacs.CapType#getArea <em>Area</em>}</li>
  *   <li>{@link Cpacs.CapType#getMaterial <em>Material</em>}</li>
+ *   <li>{@link Cpacs.CapType#getUID <em>UID</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getCapType()
@@ -25,7 +26,7 @@ public interface CapType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Area of the cap.
+	 * Area of the cap
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Area</em>' containment reference.
 	 * @see #setArea(DoubleBaseType)
@@ -50,9 +51,6 @@ public interface CapType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Material</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * Material properties.
-	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Material</em>' containment reference.
 	 * @see #setMaterial(MaterialDefinitionType)
 	 * @see Cpacs.CpacsPackage#getCapType_Material()
@@ -71,5 +69,28 @@ public interface CapType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setMaterial(MaterialDefinitionType value);
+
+	/**
+	 * Returns the value of the '<em><b>UID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>UID</em>' attribute.
+	 * @see #setUID(String)
+	 * @see Cpacs.CpacsPackage#getCapType_UID()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='uID' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	String getUID();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.CapType#getUID <em>UID</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>UID</em>' attribute.
+	 * @see #getUID()
+	 * @generated
+	 */
+	void setUID(String value);
 
 } // CapType

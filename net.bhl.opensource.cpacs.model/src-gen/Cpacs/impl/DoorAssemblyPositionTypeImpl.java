@@ -4,7 +4,7 @@ package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
 import Cpacs.DoorAssemblyPositionType;
-import Cpacs.DoorTypeType;
+import Cpacs.DoorTypeType1;
 import Cpacs.DoubleBaseType;
 import Cpacs.IntegerBaseType;
 import Cpacs.StringBaseType;
@@ -72,7 +72,7 @@ public class DoorAssemblyPositionTypeImpl extends ComplexBaseTypeImpl implements
 	 * @generated
 	 * @ordered
 	 */
-	protected DoorTypeType doorType;
+	protected DoorTypeType1 doorType;
 
 	/**
 	 * The cached value of the '{@link #getDoorElementUID() <em>Door Element UID</em>}' containment reference.
@@ -313,7 +313,7 @@ public class DoorAssemblyPositionTypeImpl extends ComplexBaseTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public DoorTypeType getDoorType() {
+	public DoorTypeType1 getDoorType() {
 		return doorType;
 	}
 
@@ -322,8 +322,8 @@ public class DoorAssemblyPositionTypeImpl extends ComplexBaseTypeImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDoorType(DoorTypeType newDoorType, NotificationChain msgs) {
-		DoorTypeType oldDoorType = doorType;
+	public NotificationChain basicSetDoorType(DoorTypeType1 newDoorType, NotificationChain msgs) {
+		DoorTypeType1 oldDoorType = doorType;
 		doorType = newDoorType;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -342,7 +342,7 @@ public class DoorAssemblyPositionTypeImpl extends ComplexBaseTypeImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setDoorType(DoorTypeType newDoorType) {
+	public void setDoorType(DoorTypeType1 newDoorType) {
 		if (newDoorType != doorType) {
 			NotificationChain msgs = null;
 			if (doorType != null)
@@ -948,7 +948,7 @@ public class DoorAssemblyPositionTypeImpl extends ComplexBaseTypeImpl implements
 			setDescription((StringBaseType) newValue);
 			return;
 		case CpacsPackage.DOOR_ASSEMBLY_POSITION_TYPE__DOOR_TYPE:
-			setDoorType((DoorTypeType) newValue);
+			setDoorType((DoorTypeType1) newValue);
 			return;
 		case CpacsPackage.DOOR_ASSEMBLY_POSITION_TYPE__DOOR_ELEMENT_UID:
 			setDoorElementUID((StringUIDBaseType) newValue);
@@ -999,7 +999,7 @@ public class DoorAssemblyPositionTypeImpl extends ComplexBaseTypeImpl implements
 			setDescription((StringBaseType) null);
 			return;
 		case CpacsPackage.DOOR_ASSEMBLY_POSITION_TYPE__DOOR_TYPE:
-			setDoorType((DoorTypeType) null);
+			setDoorType((DoorTypeType1) null);
 			return;
 		case CpacsPackage.DOOR_ASSEMBLY_POSITION_TYPE__DOOR_ELEMENT_UID:
 			setDoorElementUID((StringUIDBaseType) null);

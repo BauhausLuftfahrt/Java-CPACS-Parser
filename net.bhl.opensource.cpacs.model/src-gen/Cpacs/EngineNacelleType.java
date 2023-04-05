@@ -26,6 +26,9 @@ public interface EngineNacelleType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Fan Cowl</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Fan cowl
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Fan Cowl</em>' containment reference.
 	 * @see #setFanCowl(NacelleCowlType)
 	 * @see Cpacs.CpacsPackage#getEngineNacelleType_FanCowl()
@@ -49,6 +52,9 @@ public interface EngineNacelleType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Core Cowl</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Core cowl
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Core Cowl</em>' containment reference.
 	 * @see #setCoreCowl(NacelleCowlType)
 	 * @see Cpacs.CpacsPackage#getEngineNacelleType_CoreCowl()

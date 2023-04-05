@@ -2,7 +2,7 @@
  */
 package Cpacs.impl;
 
-import Cpacs.ContinuityType3;
+import Cpacs.ContinuityType4;
 import Cpacs.CpacsPackage;
 import Cpacs.DoubleBaseType;
 import Cpacs.GuideCurveType;
@@ -90,7 +90,7 @@ public class GuideCurveTypeImpl extends ComplexBaseTypeImpl implements GuideCurv
 	 * @generated
 	 * @ordered
 	 */
-	protected ContinuityType3 continuity;
+	protected ContinuityType4 continuity;
 
 	/**
 	 * The cached value of the '{@link #getFromRelativeCircumference() <em>From Relative Circumference</em>}' containment reference.
@@ -398,7 +398,7 @@ public class GuideCurveTypeImpl extends ComplexBaseTypeImpl implements GuideCurv
 	 * @generated
 	 */
 	@Override
-	public ContinuityType3 getContinuity() {
+	public ContinuityType4 getContinuity() {
 		return continuity;
 	}
 
@@ -407,8 +407,8 @@ public class GuideCurveTypeImpl extends ComplexBaseTypeImpl implements GuideCurv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContinuity(ContinuityType3 newContinuity, NotificationChain msgs) {
-		ContinuityType3 oldContinuity = continuity;
+	public NotificationChain basicSetContinuity(ContinuityType4 newContinuity, NotificationChain msgs) {
+		ContinuityType4 oldContinuity = continuity;
 		continuity = newContinuity;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -427,7 +427,7 @@ public class GuideCurveTypeImpl extends ComplexBaseTypeImpl implements GuideCurv
 	 * @generated
 	 */
 	@Override
-	public void setContinuity(ContinuityType3 newContinuity) {
+	public void setContinuity(ContinuityType4 newContinuity) {
 		if (newContinuity != continuity) {
 			NotificationChain msgs = null;
 			if (continuity != null)
@@ -822,7 +822,7 @@ public class GuideCurveTypeImpl extends ComplexBaseTypeImpl implements GuideCurv
 			setFromGuideCurveUID((StringUIDBaseType) newValue);
 			return;
 		case CpacsPackage.GUIDE_CURVE_TYPE__CONTINUITY:
-			setContinuity((ContinuityType3) newValue);
+			setContinuity((ContinuityType4) newValue);
 			return;
 		case CpacsPackage.GUIDE_CURVE_TYPE__FROM_RELATIVE_CIRCUMFERENCE:
 			setFromRelativeCircumference((DoubleBaseType) newValue);
@@ -867,7 +867,7 @@ public class GuideCurveTypeImpl extends ComplexBaseTypeImpl implements GuideCurv
 			setFromGuideCurveUID((StringUIDBaseType) null);
 			return;
 		case CpacsPackage.GUIDE_CURVE_TYPE__CONTINUITY:
-			setContinuity((ContinuityType3) null);
+			setContinuity((ContinuityType4) null);
 			return;
 		case CpacsPackage.GUIDE_CURVE_TYPE__FROM_RELATIVE_CIRCUMFERENCE:
 			setFromRelativeCircumference((DoubleBaseType) null);

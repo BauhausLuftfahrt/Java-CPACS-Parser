@@ -100,13 +100,13 @@ public interface MComponentSegmentType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MMiscellaneous</em>' containment reference.
-	 * @see #setMMiscellaneous(MMiscellaneousType)
+	 * @see #setMMiscellaneous(SingleGenericMassType)
 	 * @see Cpacs.CpacsPackage#getMComponentSegmentType_MMiscellaneous()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='mMiscellaneous' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	MMiscellaneousType getMMiscellaneous();
+	SingleGenericMassType getMMiscellaneous();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.MComponentSegmentType#getMMiscellaneous <em>MMiscellaneous</em>}' containment reference.
@@ -116,7 +116,7 @@ public interface MComponentSegmentType extends ComplexBaseType {
 	 * @see #getMMiscellaneous()
 	 * @generated
 	 */
-	void setMMiscellaneous(MMiscellaneousType value);
+	void setMMiscellaneous(SingleGenericMassType value);
 
 	/**
 	 * Returns the value of the '<em><b>MWing Box</b></em>' containment reference.

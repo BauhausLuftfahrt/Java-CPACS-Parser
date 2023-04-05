@@ -5,8 +5,9 @@
  *******************************************************************************/
 package net.bhl.opensource.cpacs.model.extensions.common;
 
-import Cpacs.CpacsFactory;
 import Cpacs.RefTypeType;
+import Cpacs.CpacsFactory;
+import Cpacs.Transformation2DType;
 import Cpacs.TransformationType;
 import net.bhl.opensource.cpacs.model.extensions.basetype.DoubleExtensions;
 
@@ -26,25 +27,25 @@ public interface TransformationExtensions {
 
 		TransformationType transformer = CpacsFactory.eINSTANCE.createTransformationType();
 
-		String transformationUID = parentUID + "_transformation";
+//		String transformationUID = parentUID + "_transformation";
 
-		transformer.setUID(transformationUID);
+//		transformer.setUID(transformationUID);
 
 		transformer.setScaling(CpacsFactory.eINSTANCE.createPointType());
-		transformer.getScaling().setUID(transformationUID + "_scaling");
+//		transformer.getScaling().setUID(transformationUID + "_scaling");
 		transformer.getScaling().setX(DoubleExtensions.init(1));
 		transformer.getScaling().setY(DoubleExtensions.init(1));
 		transformer.getScaling().setZ(DoubleExtensions.init(1));
 
 		transformer.setRotation(CpacsFactory.eINSTANCE.createPointType());
-		transformer.getRotation().setUID(transformationUID + "_rotation");
+//		transformer.getRotation().setUID(transformationUID + "_rotation");
 		transformer.getRotation().setX(DoubleExtensions.init(0));
 		transformer.getRotation().setY(DoubleExtensions.init(0));
 		transformer.getRotation().setZ(DoubleExtensions.init(0));
 
 		transformer.setTranslation(CpacsFactory.eINSTANCE.createPointAbsRelType());
 		transformer.getTranslation().setRefType(referenceType);
-		transformer.getTranslation().setUID(transformationUID + "_translation");
+//		transformer.getTranslation().setUID(transformationUID + "_translation");
 		transformer.getTranslation().setX(DoubleExtensions.init(0));
 		transformer.getTranslation().setY(DoubleExtensions.init(0));
 		transformer.getTranslation().setZ(DoubleExtensions.init(0));
@@ -54,9 +55,40 @@ public interface TransformationExtensions {
 	}
 
 	/**
+	 * @param referenceType
+	 * @param parentUID
+	 * @return
+	 */
+	static Transformation2DType init2D(String parentUID) {
+
+		Transformation2DType transformer = CpacsFactory.eINSTANCE.createTransformation2DType();
+
+//		String transformationUID = parentUID + "_transformation";
+
+//		transformer.setUID(transformationUID);
+
+		transformer.setScaling(CpacsFactory.eINSTANCE.createPointXYType());
+//		transformer.getScaling().setUID(transformationUID + "_scaling");
+		transformer.getScaling().setX(DoubleExtensions.init(1));
+		transformer.getScaling().setY(DoubleExtensions.init(1));
+
+		transformer.setRotation(CpacsFactory.eINSTANCE.createPointZType());
+//		transformer.getRotation().setUID(transformationUID + "_rotation");
+		transformer.getRotation().setZ(DoubleExtensions.init(0));
+
+		transformer.setTranslation(CpacsFactory.eINSTANCE.createPointXYType());
+//		transformer.getTranslation().setUID(transformationUID + "_translation");
+		transformer.getTranslation().setX(DoubleExtensions.init(0));
+		transformer.getTranslation().setY(DoubleExtensions.init(0));
+
+		return transformer;
+
+	}
+
+	/**
 	 * @return
 	 */
 	static TransformationType initGlobal(String parentUID) {
-		return init(RefTypeType.ABS_GLOBAL, parentUID);
+		return init(RefTypeType.ABS_LOCAL, parentUID);
 	}
 }

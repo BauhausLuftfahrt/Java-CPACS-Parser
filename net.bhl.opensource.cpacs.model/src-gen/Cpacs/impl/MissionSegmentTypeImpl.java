@@ -2,10 +2,12 @@
  */
 package Cpacs.impl;
 
-import Cpacs.ConstraintSettingsType;
+import Cpacs.BooleanBaseType;
+import Cpacs.ConstraintsType;
 import Cpacs.CpacsPackage;
 import Cpacs.DoubleBaseType;
-import Cpacs.MassFractionType;
+import Cpacs.EnvironmentType;
+import Cpacs.FuelMassFractionType;
 import Cpacs.MissionSegmentEndConditionType;
 import Cpacs.MissionSegmentType;
 import Cpacs.SegmentTypeType;
@@ -30,11 +32,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.MissionSegmentTypeImpl#getName <em>Name</em>}</li>
  *   <li>{@link Cpacs.impl.MissionSegmentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link Cpacs.impl.MissionSegmentTypeImpl#getSegmentType <em>Segment Type</em>}</li>
- *   <li>{@link Cpacs.impl.MissionSegmentTypeImpl#getMass <em>Mass</em>}</li>
- *   <li>{@link Cpacs.impl.MissionSegmentTypeImpl#getMassFraction <em>Mass Fraction</em>}</li>
+ *   <li>{@link Cpacs.impl.MissionSegmentTypeImpl#getCreditDistance <em>Credit Distance</em>}</li>
+ *   <li>{@link Cpacs.impl.MissionSegmentTypeImpl#getEnvironment <em>Environment</em>}</li>
+ *   <li>{@link Cpacs.impl.MissionSegmentTypeImpl#getFuelMass <em>Fuel Mass</em>}</li>
+ *   <li>{@link Cpacs.impl.MissionSegmentTypeImpl#getFuelMassFraction <em>Fuel Mass Fraction</em>}</li>
  *   <li>{@link Cpacs.impl.MissionSegmentTypeImpl#getEndCondition <em>End Condition</em>}</li>
- *   <li>{@link Cpacs.impl.MissionSegmentTypeImpl#getConstraintSettings <em>Constraint Settings</em>}</li>
- *   <li>{@link Cpacs.impl.MissionSegmentTypeImpl#getConfiguration <em>Configuration</em>}</li>
+ *   <li>{@link Cpacs.impl.MissionSegmentTypeImpl#getConstraints <em>Constraints</em>}</li>
  *   <li>{@link Cpacs.impl.MissionSegmentTypeImpl#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -72,24 +75,44 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 	protected SegmentTypeType segmentType;
 
 	/**
-	 * The cached value of the '{@link #getMass() <em>Mass</em>}' containment reference.
+	 * The cached value of the '{@link #getCreditDistance() <em>Credit Distance</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMass()
+	 * @see #getCreditDistance()
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleBaseType mass;
+	protected BooleanBaseType creditDistance;
 
 	/**
-	 * The cached value of the '{@link #getMassFraction() <em>Mass Fraction</em>}' containment reference.
+	 * The cached value of the '{@link #getEnvironment() <em>Environment</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMassFraction()
+	 * @see #getEnvironment()
 	 * @generated
 	 * @ordered
 	 */
-	protected MassFractionType massFraction;
+	protected EnvironmentType environment;
+
+	/**
+	 * The cached value of the '{@link #getFuelMass() <em>Fuel Mass</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFuelMass()
+	 * @generated
+	 * @ordered
+	 */
+	protected DoubleBaseType fuelMass;
+
+	/**
+	 * The cached value of the '{@link #getFuelMassFraction() <em>Fuel Mass Fraction</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFuelMassFraction()
+	 * @generated
+	 * @ordered
+	 */
+	protected FuelMassFractionType fuelMassFraction;
 
 	/**
 	 * The cached value of the '{@link #getEndCondition() <em>End Condition</em>}' containment reference.
@@ -102,24 +125,14 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 	protected MissionSegmentEndConditionType endCondition;
 
 	/**
-	 * The cached value of the '{@link #getConstraintSettings() <em>Constraint Settings</em>}' containment reference.
+	 * The cached value of the '{@link #getConstraints() <em>Constraints</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConstraintSettings()
+	 * @see #getConstraints()
 	 * @generated
 	 * @ordered
 	 */
-	protected ConstraintSettingsType constraintSettings;
-
-	/**
-	 * The cached value of the '{@link #getConfiguration() <em>Configuration</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConfiguration()
-	 * @generated
-	 * @ordered
-	 */
-	protected StringBaseType configuration;
+	protected ConstraintsType constraints;
 
 	/**
 	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
@@ -322,8 +335,8 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 	 * @generated
 	 */
 	@Override
-	public DoubleBaseType getMass() {
-		return mass;
+	public BooleanBaseType getCreditDistance() {
+		return creditDistance;
 	}
 
 	/**
@@ -331,12 +344,12 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMass(DoubleBaseType newMass, NotificationChain msgs) {
-		DoubleBaseType oldMass = mass;
-		mass = newMass;
+	public NotificationChain basicSetCreditDistance(BooleanBaseType newCreditDistance, NotificationChain msgs) {
+		BooleanBaseType oldCreditDistance = creditDistance;
+		creditDistance = newCreditDistance;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.MISSION_SEGMENT_TYPE__MASS, oldMass, newMass);
+					CpacsPackage.MISSION_SEGMENT_TYPE__CREDIT_DISTANCE, oldCreditDistance, newCreditDistance);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -351,21 +364,21 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 	 * @generated
 	 */
 	@Override
-	public void setMass(DoubleBaseType newMass) {
-		if (newMass != mass) {
+	public void setCreditDistance(BooleanBaseType newCreditDistance) {
+		if (newCreditDistance != creditDistance) {
 			NotificationChain msgs = null;
-			if (mass != null)
-				msgs = ((InternalEObject) mass).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__MASS, null, msgs);
-			if (newMass != null)
-				msgs = ((InternalEObject) newMass).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__MASS, null, msgs);
-			msgs = basicSetMass(newMass, msgs);
+			if (creditDistance != null)
+				msgs = ((InternalEObject) creditDistance).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__CREDIT_DISTANCE, null, msgs);
+			if (newCreditDistance != null)
+				msgs = ((InternalEObject) newCreditDistance).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__CREDIT_DISTANCE, null, msgs);
+			msgs = basicSetCreditDistance(newCreditDistance, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_SEGMENT_TYPE__MASS, newMass,
-					newMass));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_SEGMENT_TYPE__CREDIT_DISTANCE,
+					newCreditDistance, newCreditDistance));
 	}
 
 	/**
@@ -374,8 +387,8 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 	 * @generated
 	 */
 	@Override
-	public MassFractionType getMassFraction() {
-		return massFraction;
+	public EnvironmentType getEnvironment() {
+		return environment;
 	}
 
 	/**
@@ -383,12 +396,12 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMassFraction(MassFractionType newMassFraction, NotificationChain msgs) {
-		MassFractionType oldMassFraction = massFraction;
-		massFraction = newMassFraction;
+	public NotificationChain basicSetEnvironment(EnvironmentType newEnvironment, NotificationChain msgs) {
+		EnvironmentType oldEnvironment = environment;
+		environment = newEnvironment;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.MISSION_SEGMENT_TYPE__MASS_FRACTION, oldMassFraction, newMassFraction);
+					CpacsPackage.MISSION_SEGMENT_TYPE__ENVIRONMENT, oldEnvironment, newEnvironment);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -403,21 +416,126 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 	 * @generated
 	 */
 	@Override
-	public void setMassFraction(MassFractionType newMassFraction) {
-		if (newMassFraction != massFraction) {
+	public void setEnvironment(EnvironmentType newEnvironment) {
+		if (newEnvironment != environment) {
 			NotificationChain msgs = null;
-			if (massFraction != null)
-				msgs = ((InternalEObject) massFraction).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__MASS_FRACTION, null, msgs);
-			if (newMassFraction != null)
-				msgs = ((InternalEObject) newMassFraction).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__MASS_FRACTION, null, msgs);
-			msgs = basicSetMassFraction(newMassFraction, msgs);
+			if (environment != null)
+				msgs = ((InternalEObject) environment).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__ENVIRONMENT, null, msgs);
+			if (newEnvironment != null)
+				msgs = ((InternalEObject) newEnvironment).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__ENVIRONMENT, null, msgs);
+			msgs = basicSetEnvironment(newEnvironment, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_SEGMENT_TYPE__MASS_FRACTION,
-					newMassFraction, newMassFraction));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_SEGMENT_TYPE__ENVIRONMENT,
+					newEnvironment, newEnvironment));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DoubleBaseType getFuelMass() {
+		return fuelMass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetFuelMass(DoubleBaseType newFuelMass, NotificationChain msgs) {
+		DoubleBaseType oldFuelMass = fuelMass;
+		fuelMass = newFuelMass;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS, oldFuelMass, newFuelMass);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFuelMass(DoubleBaseType newFuelMass) {
+		if (newFuelMass != fuelMass) {
+			NotificationChain msgs = null;
+			if (fuelMass != null)
+				msgs = ((InternalEObject) fuelMass).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS, null, msgs);
+			if (newFuelMass != null)
+				msgs = ((InternalEObject) newFuelMass).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS, null, msgs);
+			msgs = basicSetFuelMass(newFuelMass, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS,
+					newFuelMass, newFuelMass));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FuelMassFractionType getFuelMassFraction() {
+		return fuelMassFraction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetFuelMassFraction(FuelMassFractionType newFuelMassFraction,
+			NotificationChain msgs) {
+		FuelMassFractionType oldFuelMassFraction = fuelMassFraction;
+		fuelMassFraction = newFuelMassFraction;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS_FRACTION, oldFuelMassFraction, newFuelMassFraction);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFuelMassFraction(FuelMassFractionType newFuelMassFraction) {
+		if (newFuelMassFraction != fuelMassFraction) {
+			NotificationChain msgs = null;
+			if (fuelMassFraction != null)
+				msgs = ((InternalEObject) fuelMassFraction).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS_FRACTION, null, msgs);
+			if (newFuelMassFraction != null)
+				msgs = ((InternalEObject) newFuelMassFraction).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS_FRACTION, null, msgs);
+			msgs = basicSetFuelMassFraction(newFuelMassFraction, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS_FRACTION,
+					newFuelMassFraction, newFuelMassFraction));
 	}
 
 	/**
@@ -479,8 +597,8 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 	 * @generated
 	 */
 	@Override
-	public ConstraintSettingsType getConstraintSettings() {
-		return constraintSettings;
+	public ConstraintsType getConstraints() {
+		return constraints;
 	}
 
 	/**
@@ -488,14 +606,12 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetConstraintSettings(ConstraintSettingsType newConstraintSettings,
-			NotificationChain msgs) {
-		ConstraintSettingsType oldConstraintSettings = constraintSettings;
-		constraintSettings = newConstraintSettings;
+	public NotificationChain basicSetConstraints(ConstraintsType newConstraints, NotificationChain msgs) {
+		ConstraintsType oldConstraints = constraints;
+		constraints = newConstraints;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINT_SETTINGS, oldConstraintSettings,
-					newConstraintSettings);
+					CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINTS, oldConstraints, newConstraints);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -510,74 +626,21 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 	 * @generated
 	 */
 	@Override
-	public void setConstraintSettings(ConstraintSettingsType newConstraintSettings) {
-		if (newConstraintSettings != constraintSettings) {
+	public void setConstraints(ConstraintsType newConstraints) {
+		if (newConstraints != constraints) {
 			NotificationChain msgs = null;
-			if (constraintSettings != null)
-				msgs = ((InternalEObject) constraintSettings).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINT_SETTINGS, null, msgs);
-			if (newConstraintSettings != null)
-				msgs = ((InternalEObject) newConstraintSettings).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINT_SETTINGS, null, msgs);
-			msgs = basicSetConstraintSettings(newConstraintSettings, msgs);
+			if (constraints != null)
+				msgs = ((InternalEObject) constraints).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINTS, null, msgs);
+			if (newConstraints != null)
+				msgs = ((InternalEObject) newConstraints).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINTS, null, msgs);
+			msgs = basicSetConstraints(newConstraints, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINT_SETTINGS, newConstraintSettings,
-					newConstraintSettings));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StringBaseType getConfiguration() {
-		return configuration;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetConfiguration(StringBaseType newConfiguration, NotificationChain msgs) {
-		StringBaseType oldConfiguration = configuration;
-		configuration = newConfiguration;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.MISSION_SEGMENT_TYPE__CONFIGURATION, oldConfiguration, newConfiguration);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setConfiguration(StringBaseType newConfiguration) {
-		if (newConfiguration != configuration) {
-			NotificationChain msgs = null;
-			if (configuration != null)
-				msgs = ((InternalEObject) configuration).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__CONFIGURATION, null, msgs);
-			if (newConfiguration != null)
-				msgs = ((InternalEObject) newConfiguration).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.MISSION_SEGMENT_TYPE__CONFIGURATION, null, msgs);
-			msgs = basicSetConfiguration(newConfiguration, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_SEGMENT_TYPE__CONFIGURATION,
-					newConfiguration, newConfiguration));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINTS,
+					newConstraints, newConstraints));
 	}
 
 	/**
@@ -617,16 +680,18 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 			return basicSetDescription(null, msgs);
 		case CpacsPackage.MISSION_SEGMENT_TYPE__SEGMENT_TYPE:
 			return basicSetSegmentType(null, msgs);
-		case CpacsPackage.MISSION_SEGMENT_TYPE__MASS:
-			return basicSetMass(null, msgs);
-		case CpacsPackage.MISSION_SEGMENT_TYPE__MASS_FRACTION:
-			return basicSetMassFraction(null, msgs);
+		case CpacsPackage.MISSION_SEGMENT_TYPE__CREDIT_DISTANCE:
+			return basicSetCreditDistance(null, msgs);
+		case CpacsPackage.MISSION_SEGMENT_TYPE__ENVIRONMENT:
+			return basicSetEnvironment(null, msgs);
+		case CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS:
+			return basicSetFuelMass(null, msgs);
+		case CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS_FRACTION:
+			return basicSetFuelMassFraction(null, msgs);
 		case CpacsPackage.MISSION_SEGMENT_TYPE__END_CONDITION:
 			return basicSetEndCondition(null, msgs);
-		case CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINT_SETTINGS:
-			return basicSetConstraintSettings(null, msgs);
-		case CpacsPackage.MISSION_SEGMENT_TYPE__CONFIGURATION:
-			return basicSetConfiguration(null, msgs);
+		case CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINTS:
+			return basicSetConstraints(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -645,16 +710,18 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 			return getDescription();
 		case CpacsPackage.MISSION_SEGMENT_TYPE__SEGMENT_TYPE:
 			return getSegmentType();
-		case CpacsPackage.MISSION_SEGMENT_TYPE__MASS:
-			return getMass();
-		case CpacsPackage.MISSION_SEGMENT_TYPE__MASS_FRACTION:
-			return getMassFraction();
+		case CpacsPackage.MISSION_SEGMENT_TYPE__CREDIT_DISTANCE:
+			return getCreditDistance();
+		case CpacsPackage.MISSION_SEGMENT_TYPE__ENVIRONMENT:
+			return getEnvironment();
+		case CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS:
+			return getFuelMass();
+		case CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS_FRACTION:
+			return getFuelMassFraction();
 		case CpacsPackage.MISSION_SEGMENT_TYPE__END_CONDITION:
 			return getEndCondition();
-		case CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINT_SETTINGS:
-			return getConstraintSettings();
-		case CpacsPackage.MISSION_SEGMENT_TYPE__CONFIGURATION:
-			return getConfiguration();
+		case CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINTS:
+			return getConstraints();
 		case CpacsPackage.MISSION_SEGMENT_TYPE__UID:
 			return getUID();
 		}
@@ -678,20 +745,23 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 		case CpacsPackage.MISSION_SEGMENT_TYPE__SEGMENT_TYPE:
 			setSegmentType((SegmentTypeType) newValue);
 			return;
-		case CpacsPackage.MISSION_SEGMENT_TYPE__MASS:
-			setMass((DoubleBaseType) newValue);
+		case CpacsPackage.MISSION_SEGMENT_TYPE__CREDIT_DISTANCE:
+			setCreditDistance((BooleanBaseType) newValue);
 			return;
-		case CpacsPackage.MISSION_SEGMENT_TYPE__MASS_FRACTION:
-			setMassFraction((MassFractionType) newValue);
+		case CpacsPackage.MISSION_SEGMENT_TYPE__ENVIRONMENT:
+			setEnvironment((EnvironmentType) newValue);
+			return;
+		case CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS:
+			setFuelMass((DoubleBaseType) newValue);
+			return;
+		case CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS_FRACTION:
+			setFuelMassFraction((FuelMassFractionType) newValue);
 			return;
 		case CpacsPackage.MISSION_SEGMENT_TYPE__END_CONDITION:
 			setEndCondition((MissionSegmentEndConditionType) newValue);
 			return;
-		case CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINT_SETTINGS:
-			setConstraintSettings((ConstraintSettingsType) newValue);
-			return;
-		case CpacsPackage.MISSION_SEGMENT_TYPE__CONFIGURATION:
-			setConfiguration((StringBaseType) newValue);
+		case CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINTS:
+			setConstraints((ConstraintsType) newValue);
 			return;
 		case CpacsPackage.MISSION_SEGMENT_TYPE__UID:
 			setUID((String) newValue);
@@ -717,20 +787,23 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 		case CpacsPackage.MISSION_SEGMENT_TYPE__SEGMENT_TYPE:
 			setSegmentType((SegmentTypeType) null);
 			return;
-		case CpacsPackage.MISSION_SEGMENT_TYPE__MASS:
-			setMass((DoubleBaseType) null);
+		case CpacsPackage.MISSION_SEGMENT_TYPE__CREDIT_DISTANCE:
+			setCreditDistance((BooleanBaseType) null);
 			return;
-		case CpacsPackage.MISSION_SEGMENT_TYPE__MASS_FRACTION:
-			setMassFraction((MassFractionType) null);
+		case CpacsPackage.MISSION_SEGMENT_TYPE__ENVIRONMENT:
+			setEnvironment((EnvironmentType) null);
+			return;
+		case CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS:
+			setFuelMass((DoubleBaseType) null);
+			return;
+		case CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS_FRACTION:
+			setFuelMassFraction((FuelMassFractionType) null);
 			return;
 		case CpacsPackage.MISSION_SEGMENT_TYPE__END_CONDITION:
 			setEndCondition((MissionSegmentEndConditionType) null);
 			return;
-		case CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINT_SETTINGS:
-			setConstraintSettings((ConstraintSettingsType) null);
-			return;
-		case CpacsPackage.MISSION_SEGMENT_TYPE__CONFIGURATION:
-			setConfiguration((StringBaseType) null);
+		case CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINTS:
+			setConstraints((ConstraintsType) null);
 			return;
 		case CpacsPackage.MISSION_SEGMENT_TYPE__UID:
 			setUID(UID_EDEFAULT);
@@ -753,16 +826,18 @@ public class MissionSegmentTypeImpl extends ComplexBaseTypeImpl implements Missi
 			return description != null;
 		case CpacsPackage.MISSION_SEGMENT_TYPE__SEGMENT_TYPE:
 			return segmentType != null;
-		case CpacsPackage.MISSION_SEGMENT_TYPE__MASS:
-			return mass != null;
-		case CpacsPackage.MISSION_SEGMENT_TYPE__MASS_FRACTION:
-			return massFraction != null;
+		case CpacsPackage.MISSION_SEGMENT_TYPE__CREDIT_DISTANCE:
+			return creditDistance != null;
+		case CpacsPackage.MISSION_SEGMENT_TYPE__ENVIRONMENT:
+			return environment != null;
+		case CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS:
+			return fuelMass != null;
+		case CpacsPackage.MISSION_SEGMENT_TYPE__FUEL_MASS_FRACTION:
+			return fuelMassFraction != null;
 		case CpacsPackage.MISSION_SEGMENT_TYPE__END_CONDITION:
 			return endCondition != null;
-		case CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINT_SETTINGS:
-			return constraintSettings != null;
-		case CpacsPackage.MISSION_SEGMENT_TYPE__CONFIGURATION:
-			return configuration != null;
+		case CpacsPackage.MISSION_SEGMENT_TYPE__CONSTRAINTS:
+			return constraints != null;
 		case CpacsPackage.MISSION_SEGMENT_TYPE__UID:
 			return UID_EDEFAULT == null ? uID != null : !UID_EDEFAULT.equals(uID);
 		}

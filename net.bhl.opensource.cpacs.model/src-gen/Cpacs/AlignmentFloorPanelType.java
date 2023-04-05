@@ -55,7 +55,7 @@ public interface AlignmentFloorPanelType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Offset from seat rail 2 refernce position in
+	 * Offset from seat rail 2 reference position in
 	 *                                 local y direction (in plane of panel, absolute value)
 	 *                             
 	 * <!-- end-model-doc -->
@@ -83,7 +83,7 @@ public interface AlignmentFloorPanelType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Offset from seat rail 1 refernce position in
+	 * Offset from seat rail 1 reference position in
 	 *                                 local z direction (in plane of panel, absolute value))
 	 *                             
 	 * <!-- end-model-doc -->

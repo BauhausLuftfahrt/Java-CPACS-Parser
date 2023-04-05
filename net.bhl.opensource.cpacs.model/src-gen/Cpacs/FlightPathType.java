@@ -56,13 +56,13 @@ public interface FlightPathType extends ComplexBaseType {
 	 * Vector of waypoint latitude values in [deg]
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Latitude</em>' containment reference.
-	 * @see #setLatitude(StringVectorBaseType)
+	 * @see #setLatitude(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getFlightPathType_Latitude()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='latitude' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getLatitude();
+	DoubleVectorBaseType getLatitude();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.FlightPathType#getLatitude <em>Latitude</em>}' containment reference.
@@ -72,7 +72,7 @@ public interface FlightPathType extends ComplexBaseType {
 	 * @see #getLatitude()
 	 * @generated
 	 */
-	void setLatitude(StringVectorBaseType value);
+	void setLatitude(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Longitude</b></em>' containment reference.
@@ -82,13 +82,13 @@ public interface FlightPathType extends ComplexBaseType {
 	 * Vector of waypoint longitude values in [deg]
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Longitude</em>' containment reference.
-	 * @see #setLongitude(StringVectorBaseType)
+	 * @see #setLongitude(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getFlightPathType_Longitude()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='longitude' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getLongitude();
+	DoubleVectorBaseType getLongitude();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.FlightPathType#getLongitude <em>Longitude</em>}' containment reference.
@@ -98,7 +98,7 @@ public interface FlightPathType extends ComplexBaseType {
 	 * @see #getLongitude()
 	 * @generated
 	 */
-	void setLongitude(StringVectorBaseType value);
+	void setLongitude(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Way Point Type</b></em>' containment reference.

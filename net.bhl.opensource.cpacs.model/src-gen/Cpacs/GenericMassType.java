@@ -14,6 +14,7 @@ package Cpacs;
  *   <li>{@link Cpacs.GenericMassType#getName <em>Name</em>}</li>
  *   <li>{@link Cpacs.GenericMassType#getDescription <em>Description</em>}</li>
  *   <li>{@link Cpacs.GenericMassType#getParentUID <em>Parent UID</em>}</li>
+ *   <li>{@link Cpacs.GenericMassType#getComponentUID <em>Component UID</em>}</li>
  *   <li>{@link Cpacs.GenericMassType#getMass <em>Mass</em>}</li>
  *   <li>{@link Cpacs.GenericMassType#getLocation <em>Location</em>}</li>
  *   <li>{@link Cpacs.GenericMassType#getOrientation <em>Orientation</em>}</li>
@@ -31,7 +32,7 @@ public interface GenericMassType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * name
+	 * Name
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(StringBaseType)
@@ -57,7 +58,7 @@ public interface GenericMassType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * description
+	 * Description
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(StringBaseType)
@@ -83,7 +84,9 @@ public interface GenericMassType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * parentUID
+	 * UID of the component which serves as parent element, i.e. whose coordinate system is to be used as a reference for the mass properties (CoG location, orientation and massInertia). Thus, two cases can occur: (1)
+	 *                                 it is set: local coordinate system of the parent; (2) it is not set: global CPACS coordinate system.
+	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Parent UID</em>' containment reference.
 	 * @see #setParentUID(StringUIDBaseType)
@@ -105,11 +108,38 @@ public interface GenericMassType extends ComplexBaseType {
 	void setParentUID(StringUIDBaseType value);
 
 	/**
+	 * Returns the value of the '<em><b>Component UID</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * UID of the geometric description of the component.
+	 *                             
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Component UID</em>' containment reference.
+	 * @see #setComponentUID(StringUIDBaseType)
+	 * @see Cpacs.CpacsPackage#getGenericMassType_ComponentUID()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='componentUID' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	StringUIDBaseType getComponentUID();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.GenericMassType#getComponentUID <em>Component UID</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Component UID</em>' containment reference.
+	 * @see #getComponentUID()
+	 * @generated
+	 */
+	void setComponentUID(StringUIDBaseType value);
+
+	/**
 	 * Returns the value of the '<em><b>Mass</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * mass value
+	 * Mass [kg]
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Mass</em>' containment reference.
 	 * @see #setMass(DoubleBaseType)
@@ -135,17 +165,20 @@ public interface GenericMassType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * mass loaction values (x,y,z)
+	 * Mass location.
+	 *                                 If the optional refType attribute is set, it explicitly specifies whether the location of the mass refers to the global CPACS coordinate system (absGobal) or the local coordinate system of the parent element (absLocal, given by the CPACS hierarchy OR by parentUID).
+	 *                                 If it is not set, the global CPACS coordinate system is considered as default.
+	 *                                 To ensure consistency, the same settings apply as well to orientation and massInertia.
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Location</em>' containment reference.
-	 * @see #setLocation(PointType)
+	 * @see #setLocation(PointAbsRelType)
 	 * @see Cpacs.CpacsPackage#getGenericMassType_Location()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='location' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	PointType getLocation();
+	PointAbsRelType getLocation();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.GenericMassType#getLocation <em>Location</em>}' containment reference.
@@ -155,14 +188,14 @@ public interface GenericMassType extends ComplexBaseType {
 	 * @see #getLocation()
 	 * @generated
 	 */
-	void setLocation(PointType value);
+	void setLocation(PointAbsRelType value);
 
 	/**
 	 * Returns the value of the '<em><b>Orientation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * mass orientation values
+	 * Orientation. The reference coordinate system (absGlobal or absLocal) is identical to location.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Orientation</em>' containment reference.
 	 * @see #setOrientation(PointType)
@@ -187,6 +220,9 @@ public interface GenericMassType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Mass Inertia</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Mass inertia. The reference coordinate system (absGlobal or absLocal) is identical to location.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Mass Inertia</em>' containment reference.
 	 * @see #setMassInertia(MassInertiaType)
 	 * @see Cpacs.CpacsPackage#getGenericMassType_MassInertia()

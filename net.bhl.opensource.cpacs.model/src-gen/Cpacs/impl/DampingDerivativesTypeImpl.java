@@ -4,7 +4,7 @@ package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
 import Cpacs.DampingDerivativesType;
-import Cpacs.StringVectorBaseType;
+import Cpacs.DoubleVectorBaseType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -22,208 +22,208 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcddpstar <em>Dcddpstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcddqstar <em>Dcddqstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcddrstar <em>Dcddrstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcsdpstar <em>Dcsdpstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcsdqstar <em>Dcsdqstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcsdrstar <em>Dcsdrstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcldpstar <em>Dcldpstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcldqstar <em>Dcldqstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcldrstar <em>Dcldrstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmddpstar <em>Dcmddpstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmddqstar <em>Dcmddqstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmddrstar <em>Dcmddrstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmsdpstar <em>Dcmsdpstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmsdqstar <em>Dcmsdqstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmsdrstar <em>Dcmsdrstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmldpstar <em>Dcmldpstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmldqstar <em>Dcmldqstar</em>}</li>
- *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmldrstar <em>Dcmldrstar</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcddpStar <em>Dcddp Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcddqStar <em>Dcddq Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcddrStar <em>Dcddr Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcsdpStar <em>Dcsdp Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcsdqStar <em>Dcsdq Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcsdrStar <em>Dcsdr Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcldpStar <em>Dcldp Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcldqStar <em>Dcldq Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcldrStar <em>Dcldr Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmddpStar <em>Dcmddp Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmddqStar <em>Dcmddq Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmddrStar <em>Dcmddr Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmsdpStar <em>Dcmsdp Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmsdqStar <em>Dcmsdq Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmsdrStar <em>Dcmsdr Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmldpStar <em>Dcmldp Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmldqStar <em>Dcmldq Star</em>}</li>
+ *   <li>{@link Cpacs.impl.DampingDerivativesTypeImpl#getDcmldrStar <em>Dcmldr Star</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements DampingDerivativesType {
 	/**
-	 * The cached value of the '{@link #getDcddpstar() <em>Dcddpstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcddpStar() <em>Dcddp Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcddpstar()
+	 * @see #getDcddpStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcddpstar;
+	protected DoubleVectorBaseType dcddpStar;
 
 	/**
-	 * The cached value of the '{@link #getDcddqstar() <em>Dcddqstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcddqStar() <em>Dcddq Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcddqstar()
+	 * @see #getDcddqStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcddqstar;
+	protected DoubleVectorBaseType dcddqStar;
 
 	/**
-	 * The cached value of the '{@link #getDcddrstar() <em>Dcddrstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcddrStar() <em>Dcddr Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcddrstar()
+	 * @see #getDcddrStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcddrstar;
+	protected DoubleVectorBaseType dcddrStar;
 
 	/**
-	 * The cached value of the '{@link #getDcsdpstar() <em>Dcsdpstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcsdpStar() <em>Dcsdp Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcsdpstar()
+	 * @see #getDcsdpStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcsdpstar;
+	protected DoubleVectorBaseType dcsdpStar;
 
 	/**
-	 * The cached value of the '{@link #getDcsdqstar() <em>Dcsdqstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcsdqStar() <em>Dcsdq Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcsdqstar()
+	 * @see #getDcsdqStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcsdqstar;
+	protected DoubleVectorBaseType dcsdqStar;
 
 	/**
-	 * The cached value of the '{@link #getDcsdrstar() <em>Dcsdrstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcsdrStar() <em>Dcsdr Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcsdrstar()
+	 * @see #getDcsdrStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcsdrstar;
+	protected DoubleVectorBaseType dcsdrStar;
 
 	/**
-	 * The cached value of the '{@link #getDcldpstar() <em>Dcldpstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcldpStar() <em>Dcldp Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcldpstar()
+	 * @see #getDcldpStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcldpstar;
+	protected DoubleVectorBaseType dcldpStar;
 
 	/**
-	 * The cached value of the '{@link #getDcldqstar() <em>Dcldqstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcldqStar() <em>Dcldq Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcldqstar()
+	 * @see #getDcldqStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcldqstar;
+	protected DoubleVectorBaseType dcldqStar;
 
 	/**
-	 * The cached value of the '{@link #getDcldrstar() <em>Dcldrstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcldrStar() <em>Dcldr Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcldrstar()
+	 * @see #getDcldrStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcldrstar;
+	protected DoubleVectorBaseType dcldrStar;
 
 	/**
-	 * The cached value of the '{@link #getDcmddpstar() <em>Dcmddpstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcmddpStar() <em>Dcmddp Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcmddpstar()
+	 * @see #getDcmddpStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcmddpstar;
+	protected DoubleVectorBaseType dcmddpStar;
 
 	/**
-	 * The cached value of the '{@link #getDcmddqstar() <em>Dcmddqstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcmddqStar() <em>Dcmddq Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcmddqstar()
+	 * @see #getDcmddqStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcmddqstar;
+	protected DoubleVectorBaseType dcmddqStar;
 
 	/**
-	 * The cached value of the '{@link #getDcmddrstar() <em>Dcmddrstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcmddrStar() <em>Dcmddr Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcmddrstar()
+	 * @see #getDcmddrStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcmddrstar;
+	protected DoubleVectorBaseType dcmddrStar;
 
 	/**
-	 * The cached value of the '{@link #getDcmsdpstar() <em>Dcmsdpstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcmsdpStar() <em>Dcmsdp Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcmsdpstar()
+	 * @see #getDcmsdpStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcmsdpstar;
+	protected DoubleVectorBaseType dcmsdpStar;
 
 	/**
-	 * The cached value of the '{@link #getDcmsdqstar() <em>Dcmsdqstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcmsdqStar() <em>Dcmsdq Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcmsdqstar()
+	 * @see #getDcmsdqStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcmsdqstar;
+	protected DoubleVectorBaseType dcmsdqStar;
 
 	/**
-	 * The cached value of the '{@link #getDcmsdrstar() <em>Dcmsdrstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcmsdrStar() <em>Dcmsdr Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcmsdrstar()
+	 * @see #getDcmsdrStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcmsdrstar;
+	protected DoubleVectorBaseType dcmsdrStar;
 
 	/**
-	 * The cached value of the '{@link #getDcmldpstar() <em>Dcmldpstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcmldpStar() <em>Dcmldp Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcmldpstar()
+	 * @see #getDcmldpStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcmldpstar;
+	protected DoubleVectorBaseType dcmldpStar;
 
 	/**
-	 * The cached value of the '{@link #getDcmldqstar() <em>Dcmldqstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcmldqStar() <em>Dcmldq Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcmldqstar()
+	 * @see #getDcmldqStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcmldqstar;
+	protected DoubleVectorBaseType dcmldqStar;
 
 	/**
-	 * The cached value of the '{@link #getDcmldrstar() <em>Dcmldrstar</em>}' containment reference.
+	 * The cached value of the '{@link #getDcmldrStar() <em>Dcmldr Star</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDcmldrstar()
+	 * @see #getDcmldrStar()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType dcmldrstar;
+	protected DoubleVectorBaseType dcmldrStar;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -250,8 +250,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcddpstar() {
-		return dcddpstar;
+	public DoubleVectorBaseType getDcddpStar() {
+		return dcddpStar;
 	}
 
 	/**
@@ -259,12 +259,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcddpstar(StringVectorBaseType newDcddpstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcddpstar = dcddpstar;
-		dcddpstar = newDcddpstar;
+	public NotificationChain basicSetDcddpStar(DoubleVectorBaseType newDcddpStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcddpStar = dcddpStar;
+		dcddpStar = newDcddpStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDPSTAR, oldDcddpstar, newDcddpstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDP_STAR, oldDcddpStar, newDcddpStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -279,21 +279,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcddpstar(StringVectorBaseType newDcddpstar) {
-		if (newDcddpstar != dcddpstar) {
+	public void setDcddpStar(DoubleVectorBaseType newDcddpStar) {
+		if (newDcddpStar != dcddpStar) {
 			NotificationChain msgs = null;
-			if (dcddpstar != null)
-				msgs = ((InternalEObject) dcddpstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDPSTAR, null, msgs);
-			if (newDcddpstar != null)
-				msgs = ((InternalEObject) newDcddpstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDPSTAR, null, msgs);
-			msgs = basicSetDcddpstar(newDcddpstar, msgs);
+			if (dcddpStar != null)
+				msgs = ((InternalEObject) dcddpStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDP_STAR, null, msgs);
+			if (newDcddpStar != null)
+				msgs = ((InternalEObject) newDcddpStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDP_STAR, null, msgs);
+			msgs = basicSetDcddpStar(newDcddpStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDPSTAR,
-					newDcddpstar, newDcddpstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDP_STAR,
+					newDcddpStar, newDcddpStar));
 	}
 
 	/**
@@ -302,8 +302,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcddqstar() {
-		return dcddqstar;
+	public DoubleVectorBaseType getDcddqStar() {
+		return dcddqStar;
 	}
 
 	/**
@@ -311,12 +311,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcddqstar(StringVectorBaseType newDcddqstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcddqstar = dcddqstar;
-		dcddqstar = newDcddqstar;
+	public NotificationChain basicSetDcddqStar(DoubleVectorBaseType newDcddqStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcddqStar = dcddqStar;
+		dcddqStar = newDcddqStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQSTAR, oldDcddqstar, newDcddqstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQ_STAR, oldDcddqStar, newDcddqStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -331,21 +331,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcddqstar(StringVectorBaseType newDcddqstar) {
-		if (newDcddqstar != dcddqstar) {
+	public void setDcddqStar(DoubleVectorBaseType newDcddqStar) {
+		if (newDcddqStar != dcddqStar) {
 			NotificationChain msgs = null;
-			if (dcddqstar != null)
-				msgs = ((InternalEObject) dcddqstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQSTAR, null, msgs);
-			if (newDcddqstar != null)
-				msgs = ((InternalEObject) newDcddqstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQSTAR, null, msgs);
-			msgs = basicSetDcddqstar(newDcddqstar, msgs);
+			if (dcddqStar != null)
+				msgs = ((InternalEObject) dcddqStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQ_STAR, null, msgs);
+			if (newDcddqStar != null)
+				msgs = ((InternalEObject) newDcddqStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQ_STAR, null, msgs);
+			msgs = basicSetDcddqStar(newDcddqStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQSTAR,
-					newDcddqstar, newDcddqstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQ_STAR,
+					newDcddqStar, newDcddqStar));
 	}
 
 	/**
@@ -354,8 +354,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcddrstar() {
-		return dcddrstar;
+	public DoubleVectorBaseType getDcddrStar() {
+		return dcddrStar;
 	}
 
 	/**
@@ -363,12 +363,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcddrstar(StringVectorBaseType newDcddrstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcddrstar = dcddrstar;
-		dcddrstar = newDcddrstar;
+	public NotificationChain basicSetDcddrStar(DoubleVectorBaseType newDcddrStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcddrStar = dcddrStar;
+		dcddrStar = newDcddrStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDRSTAR, oldDcddrstar, newDcddrstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDR_STAR, oldDcddrStar, newDcddrStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -383,21 +383,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcddrstar(StringVectorBaseType newDcddrstar) {
-		if (newDcddrstar != dcddrstar) {
+	public void setDcddrStar(DoubleVectorBaseType newDcddrStar) {
+		if (newDcddrStar != dcddrStar) {
 			NotificationChain msgs = null;
-			if (dcddrstar != null)
-				msgs = ((InternalEObject) dcddrstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDRSTAR, null, msgs);
-			if (newDcddrstar != null)
-				msgs = ((InternalEObject) newDcddrstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDRSTAR, null, msgs);
-			msgs = basicSetDcddrstar(newDcddrstar, msgs);
+			if (dcddrStar != null)
+				msgs = ((InternalEObject) dcddrStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDR_STAR, null, msgs);
+			if (newDcddrStar != null)
+				msgs = ((InternalEObject) newDcddrStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDR_STAR, null, msgs);
+			msgs = basicSetDcddrStar(newDcddrStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDRSTAR,
-					newDcddrstar, newDcddrstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDR_STAR,
+					newDcddrStar, newDcddrStar));
 	}
 
 	/**
@@ -406,8 +406,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcsdpstar() {
-		return dcsdpstar;
+	public DoubleVectorBaseType getDcsdpStar() {
+		return dcsdpStar;
 	}
 
 	/**
@@ -415,12 +415,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcsdpstar(StringVectorBaseType newDcsdpstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcsdpstar = dcsdpstar;
-		dcsdpstar = newDcsdpstar;
+	public NotificationChain basicSetDcsdpStar(DoubleVectorBaseType newDcsdpStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcsdpStar = dcsdpStar;
+		dcsdpStar = newDcsdpStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDPSTAR, oldDcsdpstar, newDcsdpstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDP_STAR, oldDcsdpStar, newDcsdpStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -435,21 +435,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcsdpstar(StringVectorBaseType newDcsdpstar) {
-		if (newDcsdpstar != dcsdpstar) {
+	public void setDcsdpStar(DoubleVectorBaseType newDcsdpStar) {
+		if (newDcsdpStar != dcsdpStar) {
 			NotificationChain msgs = null;
-			if (dcsdpstar != null)
-				msgs = ((InternalEObject) dcsdpstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDPSTAR, null, msgs);
-			if (newDcsdpstar != null)
-				msgs = ((InternalEObject) newDcsdpstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDPSTAR, null, msgs);
-			msgs = basicSetDcsdpstar(newDcsdpstar, msgs);
+			if (dcsdpStar != null)
+				msgs = ((InternalEObject) dcsdpStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDP_STAR, null, msgs);
+			if (newDcsdpStar != null)
+				msgs = ((InternalEObject) newDcsdpStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDP_STAR, null, msgs);
+			msgs = basicSetDcsdpStar(newDcsdpStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDPSTAR,
-					newDcsdpstar, newDcsdpstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDP_STAR,
+					newDcsdpStar, newDcsdpStar));
 	}
 
 	/**
@@ -458,8 +458,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcsdqstar() {
-		return dcsdqstar;
+	public DoubleVectorBaseType getDcsdqStar() {
+		return dcsdqStar;
 	}
 
 	/**
@@ -467,12 +467,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcsdqstar(StringVectorBaseType newDcsdqstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcsdqstar = dcsdqstar;
-		dcsdqstar = newDcsdqstar;
+	public NotificationChain basicSetDcsdqStar(DoubleVectorBaseType newDcsdqStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcsdqStar = dcsdqStar;
+		dcsdqStar = newDcsdqStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQSTAR, oldDcsdqstar, newDcsdqstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQ_STAR, oldDcsdqStar, newDcsdqStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -487,21 +487,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcsdqstar(StringVectorBaseType newDcsdqstar) {
-		if (newDcsdqstar != dcsdqstar) {
+	public void setDcsdqStar(DoubleVectorBaseType newDcsdqStar) {
+		if (newDcsdqStar != dcsdqStar) {
 			NotificationChain msgs = null;
-			if (dcsdqstar != null)
-				msgs = ((InternalEObject) dcsdqstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQSTAR, null, msgs);
-			if (newDcsdqstar != null)
-				msgs = ((InternalEObject) newDcsdqstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQSTAR, null, msgs);
-			msgs = basicSetDcsdqstar(newDcsdqstar, msgs);
+			if (dcsdqStar != null)
+				msgs = ((InternalEObject) dcsdqStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQ_STAR, null, msgs);
+			if (newDcsdqStar != null)
+				msgs = ((InternalEObject) newDcsdqStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQ_STAR, null, msgs);
+			msgs = basicSetDcsdqStar(newDcsdqStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQSTAR,
-					newDcsdqstar, newDcsdqstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQ_STAR,
+					newDcsdqStar, newDcsdqStar));
 	}
 
 	/**
@@ -510,8 +510,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcsdrstar() {
-		return dcsdrstar;
+	public DoubleVectorBaseType getDcsdrStar() {
+		return dcsdrStar;
 	}
 
 	/**
@@ -519,12 +519,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcsdrstar(StringVectorBaseType newDcsdrstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcsdrstar = dcsdrstar;
-		dcsdrstar = newDcsdrstar;
+	public NotificationChain basicSetDcsdrStar(DoubleVectorBaseType newDcsdrStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcsdrStar = dcsdrStar;
+		dcsdrStar = newDcsdrStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDRSTAR, oldDcsdrstar, newDcsdrstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDR_STAR, oldDcsdrStar, newDcsdrStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -539,21 +539,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcsdrstar(StringVectorBaseType newDcsdrstar) {
-		if (newDcsdrstar != dcsdrstar) {
+	public void setDcsdrStar(DoubleVectorBaseType newDcsdrStar) {
+		if (newDcsdrStar != dcsdrStar) {
 			NotificationChain msgs = null;
-			if (dcsdrstar != null)
-				msgs = ((InternalEObject) dcsdrstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDRSTAR, null, msgs);
-			if (newDcsdrstar != null)
-				msgs = ((InternalEObject) newDcsdrstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDRSTAR, null, msgs);
-			msgs = basicSetDcsdrstar(newDcsdrstar, msgs);
+			if (dcsdrStar != null)
+				msgs = ((InternalEObject) dcsdrStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDR_STAR, null, msgs);
+			if (newDcsdrStar != null)
+				msgs = ((InternalEObject) newDcsdrStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDR_STAR, null, msgs);
+			msgs = basicSetDcsdrStar(newDcsdrStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDRSTAR,
-					newDcsdrstar, newDcsdrstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDR_STAR,
+					newDcsdrStar, newDcsdrStar));
 	}
 
 	/**
@@ -562,8 +562,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcldpstar() {
-		return dcldpstar;
+	public DoubleVectorBaseType getDcldpStar() {
+		return dcldpStar;
 	}
 
 	/**
@@ -571,12 +571,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcldpstar(StringVectorBaseType newDcldpstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcldpstar = dcldpstar;
-		dcldpstar = newDcldpstar;
+	public NotificationChain basicSetDcldpStar(DoubleVectorBaseType newDcldpStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcldpStar = dcldpStar;
+		dcldpStar = newDcldpStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDPSTAR, oldDcldpstar, newDcldpstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDP_STAR, oldDcldpStar, newDcldpStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -591,21 +591,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcldpstar(StringVectorBaseType newDcldpstar) {
-		if (newDcldpstar != dcldpstar) {
+	public void setDcldpStar(DoubleVectorBaseType newDcldpStar) {
+		if (newDcldpStar != dcldpStar) {
 			NotificationChain msgs = null;
-			if (dcldpstar != null)
-				msgs = ((InternalEObject) dcldpstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDPSTAR, null, msgs);
-			if (newDcldpstar != null)
-				msgs = ((InternalEObject) newDcldpstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDPSTAR, null, msgs);
-			msgs = basicSetDcldpstar(newDcldpstar, msgs);
+			if (dcldpStar != null)
+				msgs = ((InternalEObject) dcldpStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDP_STAR, null, msgs);
+			if (newDcldpStar != null)
+				msgs = ((InternalEObject) newDcldpStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDP_STAR, null, msgs);
+			msgs = basicSetDcldpStar(newDcldpStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDPSTAR,
-					newDcldpstar, newDcldpstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDP_STAR,
+					newDcldpStar, newDcldpStar));
 	}
 
 	/**
@@ -614,8 +614,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcldqstar() {
-		return dcldqstar;
+	public DoubleVectorBaseType getDcldqStar() {
+		return dcldqStar;
 	}
 
 	/**
@@ -623,12 +623,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcldqstar(StringVectorBaseType newDcldqstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcldqstar = dcldqstar;
-		dcldqstar = newDcldqstar;
+	public NotificationChain basicSetDcldqStar(DoubleVectorBaseType newDcldqStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcldqStar = dcldqStar;
+		dcldqStar = newDcldqStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQSTAR, oldDcldqstar, newDcldqstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQ_STAR, oldDcldqStar, newDcldqStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -643,21 +643,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcldqstar(StringVectorBaseType newDcldqstar) {
-		if (newDcldqstar != dcldqstar) {
+	public void setDcldqStar(DoubleVectorBaseType newDcldqStar) {
+		if (newDcldqStar != dcldqStar) {
 			NotificationChain msgs = null;
-			if (dcldqstar != null)
-				msgs = ((InternalEObject) dcldqstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQSTAR, null, msgs);
-			if (newDcldqstar != null)
-				msgs = ((InternalEObject) newDcldqstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQSTAR, null, msgs);
-			msgs = basicSetDcldqstar(newDcldqstar, msgs);
+			if (dcldqStar != null)
+				msgs = ((InternalEObject) dcldqStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQ_STAR, null, msgs);
+			if (newDcldqStar != null)
+				msgs = ((InternalEObject) newDcldqStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQ_STAR, null, msgs);
+			msgs = basicSetDcldqStar(newDcldqStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQSTAR,
-					newDcldqstar, newDcldqstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQ_STAR,
+					newDcldqStar, newDcldqStar));
 	}
 
 	/**
@@ -666,8 +666,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcldrstar() {
-		return dcldrstar;
+	public DoubleVectorBaseType getDcldrStar() {
+		return dcldrStar;
 	}
 
 	/**
@@ -675,12 +675,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcldrstar(StringVectorBaseType newDcldrstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcldrstar = dcldrstar;
-		dcldrstar = newDcldrstar;
+	public NotificationChain basicSetDcldrStar(DoubleVectorBaseType newDcldrStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcldrStar = dcldrStar;
+		dcldrStar = newDcldrStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDRSTAR, oldDcldrstar, newDcldrstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDR_STAR, oldDcldrStar, newDcldrStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -695,21 +695,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcldrstar(StringVectorBaseType newDcldrstar) {
-		if (newDcldrstar != dcldrstar) {
+	public void setDcldrStar(DoubleVectorBaseType newDcldrStar) {
+		if (newDcldrStar != dcldrStar) {
 			NotificationChain msgs = null;
-			if (dcldrstar != null)
-				msgs = ((InternalEObject) dcldrstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDRSTAR, null, msgs);
-			if (newDcldrstar != null)
-				msgs = ((InternalEObject) newDcldrstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDRSTAR, null, msgs);
-			msgs = basicSetDcldrstar(newDcldrstar, msgs);
+			if (dcldrStar != null)
+				msgs = ((InternalEObject) dcldrStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDR_STAR, null, msgs);
+			if (newDcldrStar != null)
+				msgs = ((InternalEObject) newDcldrStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDR_STAR, null, msgs);
+			msgs = basicSetDcldrStar(newDcldrStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDRSTAR,
-					newDcldrstar, newDcldrstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDR_STAR,
+					newDcldrStar, newDcldrStar));
 	}
 
 	/**
@@ -718,8 +718,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcmddpstar() {
-		return dcmddpstar;
+	public DoubleVectorBaseType getDcmddpStar() {
+		return dcmddpStar;
 	}
 
 	/**
@@ -727,12 +727,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcmddpstar(StringVectorBaseType newDcmddpstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcmddpstar = dcmddpstar;
-		dcmddpstar = newDcmddpstar;
+	public NotificationChain basicSetDcmddpStar(DoubleVectorBaseType newDcmddpStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcmddpStar = dcmddpStar;
+		dcmddpStar = newDcmddpStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDPSTAR, oldDcmddpstar, newDcmddpstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDP_STAR, oldDcmddpStar, newDcmddpStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -747,21 +747,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcmddpstar(StringVectorBaseType newDcmddpstar) {
-		if (newDcmddpstar != dcmddpstar) {
+	public void setDcmddpStar(DoubleVectorBaseType newDcmddpStar) {
+		if (newDcmddpStar != dcmddpStar) {
 			NotificationChain msgs = null;
-			if (dcmddpstar != null)
-				msgs = ((InternalEObject) dcmddpstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDPSTAR, null, msgs);
-			if (newDcmddpstar != null)
-				msgs = ((InternalEObject) newDcmddpstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDPSTAR, null, msgs);
-			msgs = basicSetDcmddpstar(newDcmddpstar, msgs);
+			if (dcmddpStar != null)
+				msgs = ((InternalEObject) dcmddpStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDP_STAR, null, msgs);
+			if (newDcmddpStar != null)
+				msgs = ((InternalEObject) newDcmddpStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDP_STAR, null, msgs);
+			msgs = basicSetDcmddpStar(newDcmddpStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDPSTAR,
-					newDcmddpstar, newDcmddpstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDP_STAR,
+					newDcmddpStar, newDcmddpStar));
 	}
 
 	/**
@@ -770,8 +770,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcmddqstar() {
-		return dcmddqstar;
+	public DoubleVectorBaseType getDcmddqStar() {
+		return dcmddqStar;
 	}
 
 	/**
@@ -779,12 +779,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcmddqstar(StringVectorBaseType newDcmddqstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcmddqstar = dcmddqstar;
-		dcmddqstar = newDcmddqstar;
+	public NotificationChain basicSetDcmddqStar(DoubleVectorBaseType newDcmddqStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcmddqStar = dcmddqStar;
+		dcmddqStar = newDcmddqStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQSTAR, oldDcmddqstar, newDcmddqstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQ_STAR, oldDcmddqStar, newDcmddqStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -799,21 +799,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcmddqstar(StringVectorBaseType newDcmddqstar) {
-		if (newDcmddqstar != dcmddqstar) {
+	public void setDcmddqStar(DoubleVectorBaseType newDcmddqStar) {
+		if (newDcmddqStar != dcmddqStar) {
 			NotificationChain msgs = null;
-			if (dcmddqstar != null)
-				msgs = ((InternalEObject) dcmddqstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQSTAR, null, msgs);
-			if (newDcmddqstar != null)
-				msgs = ((InternalEObject) newDcmddqstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQSTAR, null, msgs);
-			msgs = basicSetDcmddqstar(newDcmddqstar, msgs);
+			if (dcmddqStar != null)
+				msgs = ((InternalEObject) dcmddqStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQ_STAR, null, msgs);
+			if (newDcmddqStar != null)
+				msgs = ((InternalEObject) newDcmddqStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQ_STAR, null, msgs);
+			msgs = basicSetDcmddqStar(newDcmddqStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQSTAR,
-					newDcmddqstar, newDcmddqstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQ_STAR,
+					newDcmddqStar, newDcmddqStar));
 	}
 
 	/**
@@ -822,8 +822,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcmddrstar() {
-		return dcmddrstar;
+	public DoubleVectorBaseType getDcmddrStar() {
+		return dcmddrStar;
 	}
 
 	/**
@@ -831,12 +831,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcmddrstar(StringVectorBaseType newDcmddrstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcmddrstar = dcmddrstar;
-		dcmddrstar = newDcmddrstar;
+	public NotificationChain basicSetDcmddrStar(DoubleVectorBaseType newDcmddrStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcmddrStar = dcmddrStar;
+		dcmddrStar = newDcmddrStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDRSTAR, oldDcmddrstar, newDcmddrstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDR_STAR, oldDcmddrStar, newDcmddrStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -851,21 +851,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcmddrstar(StringVectorBaseType newDcmddrstar) {
-		if (newDcmddrstar != dcmddrstar) {
+	public void setDcmddrStar(DoubleVectorBaseType newDcmddrStar) {
+		if (newDcmddrStar != dcmddrStar) {
 			NotificationChain msgs = null;
-			if (dcmddrstar != null)
-				msgs = ((InternalEObject) dcmddrstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDRSTAR, null, msgs);
-			if (newDcmddrstar != null)
-				msgs = ((InternalEObject) newDcmddrstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDRSTAR, null, msgs);
-			msgs = basicSetDcmddrstar(newDcmddrstar, msgs);
+			if (dcmddrStar != null)
+				msgs = ((InternalEObject) dcmddrStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDR_STAR, null, msgs);
+			if (newDcmddrStar != null)
+				msgs = ((InternalEObject) newDcmddrStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDR_STAR, null, msgs);
+			msgs = basicSetDcmddrStar(newDcmddrStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDRSTAR,
-					newDcmddrstar, newDcmddrstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDR_STAR,
+					newDcmddrStar, newDcmddrStar));
 	}
 
 	/**
@@ -874,8 +874,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcmsdpstar() {
-		return dcmsdpstar;
+	public DoubleVectorBaseType getDcmsdpStar() {
+		return dcmsdpStar;
 	}
 
 	/**
@@ -883,12 +883,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcmsdpstar(StringVectorBaseType newDcmsdpstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcmsdpstar = dcmsdpstar;
-		dcmsdpstar = newDcmsdpstar;
+	public NotificationChain basicSetDcmsdpStar(DoubleVectorBaseType newDcmsdpStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcmsdpStar = dcmsdpStar;
+		dcmsdpStar = newDcmsdpStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDPSTAR, oldDcmsdpstar, newDcmsdpstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDP_STAR, oldDcmsdpStar, newDcmsdpStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -903,21 +903,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcmsdpstar(StringVectorBaseType newDcmsdpstar) {
-		if (newDcmsdpstar != dcmsdpstar) {
+	public void setDcmsdpStar(DoubleVectorBaseType newDcmsdpStar) {
+		if (newDcmsdpStar != dcmsdpStar) {
 			NotificationChain msgs = null;
-			if (dcmsdpstar != null)
-				msgs = ((InternalEObject) dcmsdpstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDPSTAR, null, msgs);
-			if (newDcmsdpstar != null)
-				msgs = ((InternalEObject) newDcmsdpstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDPSTAR, null, msgs);
-			msgs = basicSetDcmsdpstar(newDcmsdpstar, msgs);
+			if (dcmsdpStar != null)
+				msgs = ((InternalEObject) dcmsdpStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDP_STAR, null, msgs);
+			if (newDcmsdpStar != null)
+				msgs = ((InternalEObject) newDcmsdpStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDP_STAR, null, msgs);
+			msgs = basicSetDcmsdpStar(newDcmsdpStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDPSTAR,
-					newDcmsdpstar, newDcmsdpstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDP_STAR,
+					newDcmsdpStar, newDcmsdpStar));
 	}
 
 	/**
@@ -926,8 +926,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcmsdqstar() {
-		return dcmsdqstar;
+	public DoubleVectorBaseType getDcmsdqStar() {
+		return dcmsdqStar;
 	}
 
 	/**
@@ -935,12 +935,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcmsdqstar(StringVectorBaseType newDcmsdqstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcmsdqstar = dcmsdqstar;
-		dcmsdqstar = newDcmsdqstar;
+	public NotificationChain basicSetDcmsdqStar(DoubleVectorBaseType newDcmsdqStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcmsdqStar = dcmsdqStar;
+		dcmsdqStar = newDcmsdqStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQSTAR, oldDcmsdqstar, newDcmsdqstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQ_STAR, oldDcmsdqStar, newDcmsdqStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -955,21 +955,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcmsdqstar(StringVectorBaseType newDcmsdqstar) {
-		if (newDcmsdqstar != dcmsdqstar) {
+	public void setDcmsdqStar(DoubleVectorBaseType newDcmsdqStar) {
+		if (newDcmsdqStar != dcmsdqStar) {
 			NotificationChain msgs = null;
-			if (dcmsdqstar != null)
-				msgs = ((InternalEObject) dcmsdqstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQSTAR, null, msgs);
-			if (newDcmsdqstar != null)
-				msgs = ((InternalEObject) newDcmsdqstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQSTAR, null, msgs);
-			msgs = basicSetDcmsdqstar(newDcmsdqstar, msgs);
+			if (dcmsdqStar != null)
+				msgs = ((InternalEObject) dcmsdqStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQ_STAR, null, msgs);
+			if (newDcmsdqStar != null)
+				msgs = ((InternalEObject) newDcmsdqStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQ_STAR, null, msgs);
+			msgs = basicSetDcmsdqStar(newDcmsdqStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQSTAR,
-					newDcmsdqstar, newDcmsdqstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQ_STAR,
+					newDcmsdqStar, newDcmsdqStar));
 	}
 
 	/**
@@ -978,8 +978,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcmsdrstar() {
-		return dcmsdrstar;
+	public DoubleVectorBaseType getDcmsdrStar() {
+		return dcmsdrStar;
 	}
 
 	/**
@@ -987,12 +987,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcmsdrstar(StringVectorBaseType newDcmsdrstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcmsdrstar = dcmsdrstar;
-		dcmsdrstar = newDcmsdrstar;
+	public NotificationChain basicSetDcmsdrStar(DoubleVectorBaseType newDcmsdrStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcmsdrStar = dcmsdrStar;
+		dcmsdrStar = newDcmsdrStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDRSTAR, oldDcmsdrstar, newDcmsdrstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDR_STAR, oldDcmsdrStar, newDcmsdrStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -1007,21 +1007,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcmsdrstar(StringVectorBaseType newDcmsdrstar) {
-		if (newDcmsdrstar != dcmsdrstar) {
+	public void setDcmsdrStar(DoubleVectorBaseType newDcmsdrStar) {
+		if (newDcmsdrStar != dcmsdrStar) {
 			NotificationChain msgs = null;
-			if (dcmsdrstar != null)
-				msgs = ((InternalEObject) dcmsdrstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDRSTAR, null, msgs);
-			if (newDcmsdrstar != null)
-				msgs = ((InternalEObject) newDcmsdrstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDRSTAR, null, msgs);
-			msgs = basicSetDcmsdrstar(newDcmsdrstar, msgs);
+			if (dcmsdrStar != null)
+				msgs = ((InternalEObject) dcmsdrStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDR_STAR, null, msgs);
+			if (newDcmsdrStar != null)
+				msgs = ((InternalEObject) newDcmsdrStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDR_STAR, null, msgs);
+			msgs = basicSetDcmsdrStar(newDcmsdrStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDRSTAR,
-					newDcmsdrstar, newDcmsdrstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDR_STAR,
+					newDcmsdrStar, newDcmsdrStar));
 	}
 
 	/**
@@ -1030,8 +1030,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcmldpstar() {
-		return dcmldpstar;
+	public DoubleVectorBaseType getDcmldpStar() {
+		return dcmldpStar;
 	}
 
 	/**
@@ -1039,12 +1039,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcmldpstar(StringVectorBaseType newDcmldpstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcmldpstar = dcmldpstar;
-		dcmldpstar = newDcmldpstar;
+	public NotificationChain basicSetDcmldpStar(DoubleVectorBaseType newDcmldpStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcmldpStar = dcmldpStar;
+		dcmldpStar = newDcmldpStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDPSTAR, oldDcmldpstar, newDcmldpstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDP_STAR, oldDcmldpStar, newDcmldpStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -1059,21 +1059,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcmldpstar(StringVectorBaseType newDcmldpstar) {
-		if (newDcmldpstar != dcmldpstar) {
+	public void setDcmldpStar(DoubleVectorBaseType newDcmldpStar) {
+		if (newDcmldpStar != dcmldpStar) {
 			NotificationChain msgs = null;
-			if (dcmldpstar != null)
-				msgs = ((InternalEObject) dcmldpstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDPSTAR, null, msgs);
-			if (newDcmldpstar != null)
-				msgs = ((InternalEObject) newDcmldpstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDPSTAR, null, msgs);
-			msgs = basicSetDcmldpstar(newDcmldpstar, msgs);
+			if (dcmldpStar != null)
+				msgs = ((InternalEObject) dcmldpStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDP_STAR, null, msgs);
+			if (newDcmldpStar != null)
+				msgs = ((InternalEObject) newDcmldpStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDP_STAR, null, msgs);
+			msgs = basicSetDcmldpStar(newDcmldpStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDPSTAR,
-					newDcmldpstar, newDcmldpstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDP_STAR,
+					newDcmldpStar, newDcmldpStar));
 	}
 
 	/**
@@ -1082,8 +1082,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcmldqstar() {
-		return dcmldqstar;
+	public DoubleVectorBaseType getDcmldqStar() {
+		return dcmldqStar;
 	}
 
 	/**
@@ -1091,12 +1091,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcmldqstar(StringVectorBaseType newDcmldqstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcmldqstar = dcmldqstar;
-		dcmldqstar = newDcmldqstar;
+	public NotificationChain basicSetDcmldqStar(DoubleVectorBaseType newDcmldqStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcmldqStar = dcmldqStar;
+		dcmldqStar = newDcmldqStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQSTAR, oldDcmldqstar, newDcmldqstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQ_STAR, oldDcmldqStar, newDcmldqStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -1111,21 +1111,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcmldqstar(StringVectorBaseType newDcmldqstar) {
-		if (newDcmldqstar != dcmldqstar) {
+	public void setDcmldqStar(DoubleVectorBaseType newDcmldqStar) {
+		if (newDcmldqStar != dcmldqStar) {
 			NotificationChain msgs = null;
-			if (dcmldqstar != null)
-				msgs = ((InternalEObject) dcmldqstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQSTAR, null, msgs);
-			if (newDcmldqstar != null)
-				msgs = ((InternalEObject) newDcmldqstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQSTAR, null, msgs);
-			msgs = basicSetDcmldqstar(newDcmldqstar, msgs);
+			if (dcmldqStar != null)
+				msgs = ((InternalEObject) dcmldqStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQ_STAR, null, msgs);
+			if (newDcmldqStar != null)
+				msgs = ((InternalEObject) newDcmldqStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQ_STAR, null, msgs);
+			msgs = basicSetDcmldqStar(newDcmldqStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQSTAR,
-					newDcmldqstar, newDcmldqstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQ_STAR,
+					newDcmldqStar, newDcmldqStar));
 	}
 
 	/**
@@ -1134,8 +1134,8 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getDcmldrstar() {
-		return dcmldrstar;
+	public DoubleVectorBaseType getDcmldrStar() {
+		return dcmldrStar;
 	}
 
 	/**
@@ -1143,12 +1143,12 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDcmldrstar(StringVectorBaseType newDcmldrstar, NotificationChain msgs) {
-		StringVectorBaseType oldDcmldrstar = dcmldrstar;
-		dcmldrstar = newDcmldrstar;
+	public NotificationChain basicSetDcmldrStar(DoubleVectorBaseType newDcmldrStar, NotificationChain msgs) {
+		DoubleVectorBaseType oldDcmldrStar = dcmldrStar;
+		dcmldrStar = newDcmldrStar;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDRSTAR, oldDcmldrstar, newDcmldrstar);
+					CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDR_STAR, oldDcmldrStar, newDcmldrStar);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -1163,21 +1163,21 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setDcmldrstar(StringVectorBaseType newDcmldrstar) {
-		if (newDcmldrstar != dcmldrstar) {
+	public void setDcmldrStar(DoubleVectorBaseType newDcmldrStar) {
+		if (newDcmldrStar != dcmldrStar) {
 			NotificationChain msgs = null;
-			if (dcmldrstar != null)
-				msgs = ((InternalEObject) dcmldrstar).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDRSTAR, null, msgs);
-			if (newDcmldrstar != null)
-				msgs = ((InternalEObject) newDcmldrstar).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDRSTAR, null, msgs);
-			msgs = basicSetDcmldrstar(newDcmldrstar, msgs);
+			if (dcmldrStar != null)
+				msgs = ((InternalEObject) dcmldrStar).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDR_STAR, null, msgs);
+			if (newDcmldrStar != null)
+				msgs = ((InternalEObject) newDcmldrStar).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDR_STAR, null, msgs);
+			msgs = basicSetDcmldrStar(newDcmldrStar, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDRSTAR,
-					newDcmldrstar, newDcmldrstar));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDR_STAR,
+					newDcmldrStar, newDcmldrStar));
 	}
 
 	/**
@@ -1188,42 +1188,42 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDPSTAR:
-			return basicSetDcddpstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQSTAR:
-			return basicSetDcddqstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDRSTAR:
-			return basicSetDcddrstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDPSTAR:
-			return basicSetDcsdpstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQSTAR:
-			return basicSetDcsdqstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDRSTAR:
-			return basicSetDcsdrstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDPSTAR:
-			return basicSetDcldpstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQSTAR:
-			return basicSetDcldqstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDRSTAR:
-			return basicSetDcldrstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDPSTAR:
-			return basicSetDcmddpstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQSTAR:
-			return basicSetDcmddqstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDRSTAR:
-			return basicSetDcmddrstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDPSTAR:
-			return basicSetDcmsdpstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQSTAR:
-			return basicSetDcmsdqstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDRSTAR:
-			return basicSetDcmsdrstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDPSTAR:
-			return basicSetDcmldpstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQSTAR:
-			return basicSetDcmldqstar(null, msgs);
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDRSTAR:
-			return basicSetDcmldrstar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDP_STAR:
+			return basicSetDcddpStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQ_STAR:
+			return basicSetDcddqStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDR_STAR:
+			return basicSetDcddrStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDP_STAR:
+			return basicSetDcsdpStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQ_STAR:
+			return basicSetDcsdqStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDR_STAR:
+			return basicSetDcsdrStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDP_STAR:
+			return basicSetDcldpStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQ_STAR:
+			return basicSetDcldqStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDR_STAR:
+			return basicSetDcldrStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDP_STAR:
+			return basicSetDcmddpStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQ_STAR:
+			return basicSetDcmddqStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDR_STAR:
+			return basicSetDcmddrStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDP_STAR:
+			return basicSetDcmsdpStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQ_STAR:
+			return basicSetDcmsdqStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDR_STAR:
+			return basicSetDcmsdrStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDP_STAR:
+			return basicSetDcmldpStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQ_STAR:
+			return basicSetDcmldqStar(null, msgs);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDR_STAR:
+			return basicSetDcmldrStar(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -1236,42 +1236,42 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDPSTAR:
-			return getDcddpstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQSTAR:
-			return getDcddqstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDRSTAR:
-			return getDcddrstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDPSTAR:
-			return getDcsdpstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQSTAR:
-			return getDcsdqstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDRSTAR:
-			return getDcsdrstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDPSTAR:
-			return getDcldpstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQSTAR:
-			return getDcldqstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDRSTAR:
-			return getDcldrstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDPSTAR:
-			return getDcmddpstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQSTAR:
-			return getDcmddqstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDRSTAR:
-			return getDcmddrstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDPSTAR:
-			return getDcmsdpstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQSTAR:
-			return getDcmsdqstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDRSTAR:
-			return getDcmsdrstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDPSTAR:
-			return getDcmldpstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQSTAR:
-			return getDcmldqstar();
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDRSTAR:
-			return getDcmldrstar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDP_STAR:
+			return getDcddpStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQ_STAR:
+			return getDcddqStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDR_STAR:
+			return getDcddrStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDP_STAR:
+			return getDcsdpStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQ_STAR:
+			return getDcsdqStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDR_STAR:
+			return getDcsdrStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDP_STAR:
+			return getDcldpStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQ_STAR:
+			return getDcldqStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDR_STAR:
+			return getDcldrStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDP_STAR:
+			return getDcmddpStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQ_STAR:
+			return getDcmddqStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDR_STAR:
+			return getDcmddrStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDP_STAR:
+			return getDcmsdpStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQ_STAR:
+			return getDcmsdqStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDR_STAR:
+			return getDcmsdrStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDP_STAR:
+			return getDcmldpStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQ_STAR:
+			return getDcmldqStar();
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDR_STAR:
+			return getDcmldrStar();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -1284,59 +1284,59 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDPSTAR:
-			setDcddpstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDP_STAR:
+			setDcddpStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQSTAR:
-			setDcddqstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQ_STAR:
+			setDcddqStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDRSTAR:
-			setDcddrstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDR_STAR:
+			setDcddrStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDPSTAR:
-			setDcsdpstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDP_STAR:
+			setDcsdpStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQSTAR:
-			setDcsdqstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQ_STAR:
+			setDcsdqStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDRSTAR:
-			setDcsdrstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDR_STAR:
+			setDcsdrStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDPSTAR:
-			setDcldpstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDP_STAR:
+			setDcldpStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQSTAR:
-			setDcldqstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQ_STAR:
+			setDcldqStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDRSTAR:
-			setDcldrstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDR_STAR:
+			setDcldrStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDPSTAR:
-			setDcmddpstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDP_STAR:
+			setDcmddpStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQSTAR:
-			setDcmddqstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQ_STAR:
+			setDcmddqStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDRSTAR:
-			setDcmddrstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDR_STAR:
+			setDcmddrStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDPSTAR:
-			setDcmsdpstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDP_STAR:
+			setDcmsdpStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQSTAR:
-			setDcmsdqstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQ_STAR:
+			setDcmsdqStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDRSTAR:
-			setDcmsdrstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDR_STAR:
+			setDcmsdrStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDPSTAR:
-			setDcmldpstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDP_STAR:
+			setDcmldpStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQSTAR:
-			setDcmldqstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQ_STAR:
+			setDcmldqStar((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDRSTAR:
-			setDcmldrstar((StringVectorBaseType) newValue);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDR_STAR:
+			setDcmldrStar((DoubleVectorBaseType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -1350,59 +1350,59 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDPSTAR:
-			setDcddpstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDP_STAR:
+			setDcddpStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQSTAR:
-			setDcddqstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQ_STAR:
+			setDcddqStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDRSTAR:
-			setDcddrstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDR_STAR:
+			setDcddrStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDPSTAR:
-			setDcsdpstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDP_STAR:
+			setDcsdpStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQSTAR:
-			setDcsdqstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQ_STAR:
+			setDcsdqStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDRSTAR:
-			setDcsdrstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDR_STAR:
+			setDcsdrStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDPSTAR:
-			setDcldpstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDP_STAR:
+			setDcldpStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQSTAR:
-			setDcldqstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQ_STAR:
+			setDcldqStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDRSTAR:
-			setDcldrstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDR_STAR:
+			setDcldrStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDPSTAR:
-			setDcmddpstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDP_STAR:
+			setDcmddpStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQSTAR:
-			setDcmddqstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQ_STAR:
+			setDcmddqStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDRSTAR:
-			setDcmddrstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDR_STAR:
+			setDcmddrStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDPSTAR:
-			setDcmsdpstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDP_STAR:
+			setDcmsdpStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQSTAR:
-			setDcmsdqstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQ_STAR:
+			setDcmsdqStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDRSTAR:
-			setDcmsdrstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDR_STAR:
+			setDcmsdrStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDPSTAR:
-			setDcmldpstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDP_STAR:
+			setDcmldpStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQSTAR:
-			setDcmldqstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQ_STAR:
+			setDcmldqStar((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDRSTAR:
-			setDcmldrstar((StringVectorBaseType) null);
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDR_STAR:
+			setDcmldrStar((DoubleVectorBaseType) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -1416,42 +1416,42 @@ public class DampingDerivativesTypeImpl extends ComplexBaseTypeImpl implements D
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDPSTAR:
-			return dcddpstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQSTAR:
-			return dcddqstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDRSTAR:
-			return dcddrstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDPSTAR:
-			return dcsdpstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQSTAR:
-			return dcsdqstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDRSTAR:
-			return dcsdrstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDPSTAR:
-			return dcldpstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQSTAR:
-			return dcldqstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDRSTAR:
-			return dcldrstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDPSTAR:
-			return dcmddpstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQSTAR:
-			return dcmddqstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDRSTAR:
-			return dcmddrstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDPSTAR:
-			return dcmsdpstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQSTAR:
-			return dcmsdqstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDRSTAR:
-			return dcmsdrstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDPSTAR:
-			return dcmldpstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQSTAR:
-			return dcmldqstar != null;
-		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDRSTAR:
-			return dcmldrstar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDP_STAR:
+			return dcddpStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDQ_STAR:
+			return dcddqStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCDDR_STAR:
+			return dcddrStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDP_STAR:
+			return dcsdpStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDQ_STAR:
+			return dcsdqStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCSDR_STAR:
+			return dcsdrStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDP_STAR:
+			return dcldpStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDQ_STAR:
+			return dcldqStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCLDR_STAR:
+			return dcldrStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDP_STAR:
+			return dcmddpStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDQ_STAR:
+			return dcmddqStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMDDR_STAR:
+			return dcmddrStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDP_STAR:
+			return dcmsdpStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDQ_STAR:
+			return dcmsdqStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMSDR_STAR:
+			return dcmsdrStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDP_STAR:
+			return dcmldpStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDQ_STAR:
+			return dcmldqStar != null;
+		case CpacsPackage.DAMPING_DERIVATIVES_TYPE__DCMLDR_STAR:
+			return dcmldrStar != null;
 		}
 		return super.eIsSet(featureID);
 	}

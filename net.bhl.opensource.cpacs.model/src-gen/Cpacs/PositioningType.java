@@ -112,7 +112,7 @@ public interface PositioningType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Sweepangle between inner and outer section.
-	 *                                 This angle equals a positive rotation of the positioing vector
+	 *                                 This angle equals a positive rotation of the positioning vector
 	 *                                 around the z-axis of the wing coordinate system.
 	 *                             
 	 * <!-- end-model-doc -->
@@ -141,7 +141,7 @@ public interface PositioningType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Dihedralangle between inner and outer section.
-	 *                                 This angle equals a positive rotation of the positioing vector
+	 *                                 This angle equals a positive rotation of the positioning vector
 	 *                                 around the x-axis of the wing coordinate system
 	 *                             
 	 * <!-- end-model-doc -->
@@ -171,7 +171,7 @@ public interface PositioningType extends ComplexBaseType {
 	 * <!-- begin-model-doc -->
 	 * Reference to starting section of the
 	 *                                 positioning vector. If missing, the positioning is made from the
-	 *                                 orgin of the wing coordinate system.
+	 *                                 origin of the wing coordinate system.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>From Section UID</em>' containment reference.
 	 * @see #setFromSectionUID(StringUIDBaseType)

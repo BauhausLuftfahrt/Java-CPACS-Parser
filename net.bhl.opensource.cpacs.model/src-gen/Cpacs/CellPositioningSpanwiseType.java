@@ -15,6 +15,7 @@ package Cpacs;
  *   <li>{@link Cpacs.CellPositioningSpanwiseType#getEta2 <em>Eta2</em>}</li>
  *   <li>{@link Cpacs.CellPositioningSpanwiseType#getRibNumber <em>Rib Number</em>}</li>
  *   <li>{@link Cpacs.CellPositioningSpanwiseType#getRibDefinitionUID <em>Rib Definition UID</em>}</li>
+ *   <li>{@link Cpacs.CellPositioningSpanwiseType#getContourCoordinate <em>Contour Coordinate</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getCellPositioningSpanwiseType()
@@ -27,8 +28,7 @@ public interface CellPositioningSpanwiseType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Relative spanwise position of the forward
-	 *                                         end.
+	 * Relative spanwise position of the forward end.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Eta1</em>' containment reference.
 	 * @see #setEta1(EtaIsoLineType)
@@ -55,7 +55,6 @@ public interface CellPositioningSpanwiseType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Relative spanwise position of the rear end.
-	 *                                     
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Eta2</em>' containment reference.
 	 * @see #setEta2(EtaIsoLineType)
@@ -81,9 +80,7 @@ public interface CellPositioningSpanwiseType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * RibNumber is the reference to the rib number
-	 *                                         of the rib set which is referenced by 'ribDefinitionUID'.
-	 *                                     
+	 * RibNumber is the reference to the rib number of the rib set which is referenced by 'ribDefinitionUID'.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Rib Number</em>' containment reference.
 	 * @see #setRibNumber(IntegerBaseType)
@@ -109,9 +106,7 @@ public interface CellPositioningSpanwiseType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Reference to a ribDefinition set. The single
-	 *                                         rib of this ribDefinition set is defined by using 'ribNumber'.
-	 *                                     
+	 * Reference to a ribDefinition set. The single rib of this ribDefinition set is defined by using 'ribNumber'.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Rib Definition UID</em>' containment reference.
 	 * @see #setRibDefinitionUID(StringUIDBaseType)
@@ -131,5 +126,31 @@ public interface CellPositioningSpanwiseType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setRibDefinitionUID(StringUIDBaseType value);
+
+	/**
+	 * Returns the value of the '<em><b>Contour Coordinate</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Spanwise contour coordinate as spanwise border. 0 equals root, 1 equals tip.
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Contour Coordinate</em>' containment reference.
+	 * @see #setContourCoordinate(DoubleBaseType)
+	 * @see Cpacs.CpacsPackage#getCellPositioningSpanwiseType_ContourCoordinate()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='contourCoordinate' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	DoubleBaseType getContourCoordinate();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.CellPositioningSpanwiseType#getContourCoordinate <em>Contour Coordinate</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Contour Coordinate</em>' containment reference.
+	 * @see #getContourCoordinate()
+	 * @generated
+	 */
+	void setContourCoordinate(DoubleBaseType value);
 
 } // CellPositioningSpanwiseType

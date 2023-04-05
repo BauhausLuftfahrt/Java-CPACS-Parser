@@ -3,8 +3,8 @@
 package Cpacs.impl;
 
 import Cpacs.AeroPerformanceBoundaryConditionsType;
-import Cpacs.AeroPerformanceControlElementsType;
 import Cpacs.AtmosphericModelType1;
+import Cpacs.ConfigurationType;
 import Cpacs.CpacsPackage;
 import Cpacs.DoubleBaseType;
 
@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link Cpacs.impl.AeroPerformanceBoundaryConditionsTypeImpl#getAtmosphericModel <em>Atmospheric Model</em>}</li>
  *   <li>{@link Cpacs.impl.AeroPerformanceBoundaryConditionsTypeImpl#getDeltaTemperature <em>Delta Temperature</em>}</li>
- *   <li>{@link Cpacs.impl.AeroPerformanceBoundaryConditionsTypeImpl#getControlElements <em>Control Elements</em>}</li>
+ *   <li>{@link Cpacs.impl.AeroPerformanceBoundaryConditionsTypeImpl#getConfiguration <em>Configuration</em>}</li>
  * </ul>
  *
  * @generated
@@ -54,14 +54,14 @@ public class AeroPerformanceBoundaryConditionsTypeImpl extends ComplexBaseTypeIm
 	protected DoubleBaseType deltaTemperature;
 
 	/**
-	 * The cached value of the '{@link #getControlElements() <em>Control Elements</em>}' containment reference.
+	 * The cached value of the '{@link #getConfiguration() <em>Configuration</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getControlElements()
+	 * @see #getConfiguration()
 	 * @generated
 	 * @ordered
 	 */
-	protected AeroPerformanceControlElementsType controlElements;
+	protected ConfigurationType configuration;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -205,8 +205,8 @@ public class AeroPerformanceBoundaryConditionsTypeImpl extends ComplexBaseTypeIm
 	 * @generated
 	 */
 	@Override
-	public AeroPerformanceControlElementsType getControlElements() {
-		return controlElements;
+	public ConfigurationType getConfiguration() {
+		return configuration;
 	}
 
 	/**
@@ -214,14 +214,13 @@ public class AeroPerformanceBoundaryConditionsTypeImpl extends ComplexBaseTypeIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetControlElements(AeroPerformanceControlElementsType newControlElements,
-			NotificationChain msgs) {
-		AeroPerformanceControlElementsType oldControlElements = controlElements;
-		controlElements = newControlElements;
+	public NotificationChain basicSetConfiguration(ConfigurationType newConfiguration, NotificationChain msgs) {
+		ConfigurationType oldConfiguration = configuration;
+		configuration = newConfiguration;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONTROL_ELEMENTS, oldControlElements,
-					newControlElements);
+					CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONFIGURATION, oldConfiguration,
+					newConfiguration);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -236,22 +235,24 @@ public class AeroPerformanceBoundaryConditionsTypeImpl extends ComplexBaseTypeIm
 	 * @generated
 	 */
 	@Override
-	public void setControlElements(AeroPerformanceControlElementsType newControlElements) {
-		if (newControlElements != controlElements) {
+	public void setConfiguration(ConfigurationType newConfiguration) {
+		if (newConfiguration != configuration) {
 			NotificationChain msgs = null;
-			if (controlElements != null)
-				msgs = ((InternalEObject) controlElements).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONTROL_ELEMENTS, null, msgs);
-			if (newControlElements != null)
-				msgs = ((InternalEObject) newControlElements).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
-						- CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONTROL_ELEMENTS, null, msgs);
-			msgs = basicSetControlElements(newControlElements, msgs);
+			if (configuration != null)
+				msgs = ((InternalEObject) configuration).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONFIGURATION,
+						null, msgs);
+			if (newConfiguration != null)
+				msgs = ((InternalEObject) newConfiguration).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONFIGURATION,
+						null, msgs);
+			msgs = basicSetConfiguration(newConfiguration, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONTROL_ELEMENTS, newControlElements,
-					newControlElements));
+					CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONFIGURATION, newConfiguration,
+					newConfiguration));
 	}
 
 	/**
@@ -266,8 +267,8 @@ public class AeroPerformanceBoundaryConditionsTypeImpl extends ComplexBaseTypeIm
 			return basicSetAtmosphericModel(null, msgs);
 		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__DELTA_TEMPERATURE:
 			return basicSetDeltaTemperature(null, msgs);
-		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONTROL_ELEMENTS:
-			return basicSetControlElements(null, msgs);
+		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONFIGURATION:
+			return basicSetConfiguration(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -284,8 +285,8 @@ public class AeroPerformanceBoundaryConditionsTypeImpl extends ComplexBaseTypeIm
 			return getAtmosphericModel();
 		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__DELTA_TEMPERATURE:
 			return getDeltaTemperature();
-		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONTROL_ELEMENTS:
-			return getControlElements();
+		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONFIGURATION:
+			return getConfiguration();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -304,8 +305,8 @@ public class AeroPerformanceBoundaryConditionsTypeImpl extends ComplexBaseTypeIm
 		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__DELTA_TEMPERATURE:
 			setDeltaTemperature((DoubleBaseType) newValue);
 			return;
-		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONTROL_ELEMENTS:
-			setControlElements((AeroPerformanceControlElementsType) newValue);
+		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONFIGURATION:
+			setConfiguration((ConfigurationType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -325,8 +326,8 @@ public class AeroPerformanceBoundaryConditionsTypeImpl extends ComplexBaseTypeIm
 		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__DELTA_TEMPERATURE:
 			setDeltaTemperature((DoubleBaseType) null);
 			return;
-		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONTROL_ELEMENTS:
-			setControlElements((AeroPerformanceControlElementsType) null);
+		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONFIGURATION:
+			setConfiguration((ConfigurationType) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -344,8 +345,8 @@ public class AeroPerformanceBoundaryConditionsTypeImpl extends ComplexBaseTypeIm
 			return atmosphericModel != null;
 		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__DELTA_TEMPERATURE:
 			return deltaTemperature != null;
-		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONTROL_ELEMENTS:
-			return controlElements != null;
+		case CpacsPackage.AERO_PERFORMANCE_BOUNDARY_CONDITIONS_TYPE__CONFIGURATION:
+			return configuration != null;
 		}
 		return super.eIsSet(featureID);
 	}

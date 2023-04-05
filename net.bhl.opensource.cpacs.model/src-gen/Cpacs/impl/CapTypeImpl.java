@@ -25,6 +25,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link Cpacs.impl.CapTypeImpl#getArea <em>Area</em>}</li>
  *   <li>{@link Cpacs.impl.CapTypeImpl#getMaterial <em>Material</em>}</li>
+ *   <li>{@link Cpacs.impl.CapTypeImpl#getUID <em>UID</em>}</li>
  * </ul>
  *
  * @generated
@@ -49,6 +50,26 @@ public class CapTypeImpl extends ComplexBaseTypeImpl implements CapType {
 	 * @ordered
 	 */
 	protected MaterialDefinitionType material;
+
+	/**
+	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUID()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String UID_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getUID() <em>UID</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUID()
+	 * @generated
+	 * @ordered
+	 */
+	protected String uID = UID_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -178,6 +199,29 @@ public class CapTypeImpl extends ComplexBaseTypeImpl implements CapType {
 	 * @generated
 	 */
 	@Override
+	public String getUID() {
+		return uID;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUID(String newUID) {
+		String oldUID = uID;
+		uID = newUID;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CAP_TYPE__UID, oldUID, uID));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case CpacsPackage.CAP_TYPE__AREA:
@@ -200,6 +244,8 @@ public class CapTypeImpl extends ComplexBaseTypeImpl implements CapType {
 			return getArea();
 		case CpacsPackage.CAP_TYPE__MATERIAL:
 			return getMaterial();
+		case CpacsPackage.CAP_TYPE__UID:
+			return getUID();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -217,6 +263,9 @@ public class CapTypeImpl extends ComplexBaseTypeImpl implements CapType {
 			return;
 		case CpacsPackage.CAP_TYPE__MATERIAL:
 			setMaterial((MaterialDefinitionType) newValue);
+			return;
+		case CpacsPackage.CAP_TYPE__UID:
+			setUID((String) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -236,6 +285,9 @@ public class CapTypeImpl extends ComplexBaseTypeImpl implements CapType {
 		case CpacsPackage.CAP_TYPE__MATERIAL:
 			setMaterial((MaterialDefinitionType) null);
 			return;
+		case CpacsPackage.CAP_TYPE__UID:
+			setUID(UID_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -252,8 +304,27 @@ public class CapTypeImpl extends ComplexBaseTypeImpl implements CapType {
 			return area != null;
 		case CpacsPackage.CAP_TYPE__MATERIAL:
 			return material != null;
+		case CpacsPackage.CAP_TYPE__UID:
+			return UID_EDEFAULT == null ? uID != null : !UID_EDEFAULT.equals(uID);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (uID: ");
+		result.append(uID);
+		result.append(')');
+		return result.toString();
 	}
 
 } //CapTypeImpl

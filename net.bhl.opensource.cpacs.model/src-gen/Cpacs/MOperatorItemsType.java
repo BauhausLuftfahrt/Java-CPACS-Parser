@@ -19,6 +19,13 @@ package Cpacs;
  *   <li>{@link Cpacs.MOperatorItemsType#getMEmergencyEquipments <em>MEmergency Equipments</em>}</li>
  *   <li>{@link Cpacs.MOperatorItemsType#getMCaterings <em>MCaterings</em>}</li>
  *   <li>{@link Cpacs.MOperatorItemsType#getMCrewMembers <em>MCrew Members</em>}</li>
+ *   <li>{@link Cpacs.MOperatorItemsType#getMAdditionalCenterTanks <em>MAdditional Center Tanks</em>}</li>
+ *   <li>{@link Cpacs.MOperatorItemsType#getMEngineAPUOils <em>MEngine APU Oils</em>}</li>
+ *   <li>{@link Cpacs.MOperatorItemsType#getMRemovableCrewRests <em>MRemovable Crew Rests</em>}</li>
+ *   <li>{@link Cpacs.MOperatorItemsType#getMToiletFluids <em>MToilet Fluids</em>}</li>
+ *   <li>{@link Cpacs.MOperatorItemsType#getMUnusableFuels <em>MUnusable Fuels</em>}</li>
+ *   <li>{@link Cpacs.MOperatorItemsType#getMWaterReservoirs <em>MWater Reservoirs</em>}</li>
+ *   <li>{@link Cpacs.MOperatorItemsType#getMMiscellaneous <em>MMiscellaneous</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getMOperatorItemsType()
@@ -213,5 +220,166 @@ public interface MOperatorItemsType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setMCrewMembers(MCrewMembersType value);
+
+	/**
+	 * Returns the value of the '<em><b>MAdditional Center Tanks</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>MAdditional Center Tanks</em>' containment reference.
+	 * @see #setMAdditionalCenterTanks(MAdditionalCenterTanksType)
+	 * @see Cpacs.CpacsPackage#getMOperatorItemsType_MAdditionalCenterTanks()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='mAdditionalCenterTanks' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	MAdditionalCenterTanksType getMAdditionalCenterTanks();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MOperatorItemsType#getMAdditionalCenterTanks <em>MAdditional Center Tanks</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>MAdditional Center Tanks</em>' containment reference.
+	 * @see #getMAdditionalCenterTanks()
+	 * @generated
+	 */
+	void setMAdditionalCenterTanks(MAdditionalCenterTanksType value);
+
+	/**
+	 * Returns the value of the '<em><b>MEngine APU Oils</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>MEngine APU Oils</em>' containment reference.
+	 * @see #setMEngineAPUOils(MEngineAPUOilsType)
+	 * @see Cpacs.CpacsPackage#getMOperatorItemsType_MEngineAPUOils()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='mEngineAPUOils' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	MEngineAPUOilsType getMEngineAPUOils();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MOperatorItemsType#getMEngineAPUOils <em>MEngine APU Oils</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>MEngine APU Oils</em>' containment reference.
+	 * @see #getMEngineAPUOils()
+	 * @generated
+	 */
+	void setMEngineAPUOils(MEngineAPUOilsType value);
+
+	/**
+	 * Returns the value of the '<em><b>MRemovable Crew Rests</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>MRemovable Crew Rests</em>' containment reference.
+	 * @see #setMRemovableCrewRests(MRemovableCrewRestsType)
+	 * @see Cpacs.CpacsPackage#getMOperatorItemsType_MRemovableCrewRests()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='mRemovableCrewRests' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	MRemovableCrewRestsType getMRemovableCrewRests();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MOperatorItemsType#getMRemovableCrewRests <em>MRemovable Crew Rests</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>MRemovable Crew Rests</em>' containment reference.
+	 * @see #getMRemovableCrewRests()
+	 * @generated
+	 */
+	void setMRemovableCrewRests(MRemovableCrewRestsType value);
+
+	/**
+	 * Returns the value of the '<em><b>MToilet Fluids</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>MToilet Fluids</em>' containment reference.
+	 * @see #setMToiletFluids(MToiletFluidsType)
+	 * @see Cpacs.CpacsPackage#getMOperatorItemsType_MToiletFluids()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='mToiletFluids' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	MToiletFluidsType getMToiletFluids();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MOperatorItemsType#getMToiletFluids <em>MToilet Fluids</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>MToilet Fluids</em>' containment reference.
+	 * @see #getMToiletFluids()
+	 * @generated
+	 */
+	void setMToiletFluids(MToiletFluidsType value);
+
+	/**
+	 * Returns the value of the '<em><b>MUnusable Fuels</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>MUnusable Fuels</em>' containment reference.
+	 * @see #setMUnusableFuels(MUnusableFuelsType)
+	 * @see Cpacs.CpacsPackage#getMOperatorItemsType_MUnusableFuels()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='mUnusableFuels' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	MUnusableFuelsType getMUnusableFuels();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MOperatorItemsType#getMUnusableFuels <em>MUnusable Fuels</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>MUnusable Fuels</em>' containment reference.
+	 * @see #getMUnusableFuels()
+	 * @generated
+	 */
+	void setMUnusableFuels(MUnusableFuelsType value);
+
+	/**
+	 * Returns the value of the '<em><b>MWater Reservoirs</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>MWater Reservoirs</em>' containment reference.
+	 * @see #setMWaterReservoirs(MWaterReservoirsType)
+	 * @see Cpacs.CpacsPackage#getMOperatorItemsType_MWaterReservoirs()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='mWaterReservoirs' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	MWaterReservoirsType getMWaterReservoirs();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MOperatorItemsType#getMWaterReservoirs <em>MWater Reservoirs</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>MWater Reservoirs</em>' containment reference.
+	 * @see #getMWaterReservoirs()
+	 * @generated
+	 */
+	void setMWaterReservoirs(MWaterReservoirsType value);
+
+	/**
+	 * Returns the value of the '<em><b>MMiscellaneous</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>MMiscellaneous</em>' containment reference.
+	 * @see #setMMiscellaneous(SingleGenericMassType)
+	 * @see Cpacs.CpacsPackage#getMOperatorItemsType_MMiscellaneous()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='mMiscellaneous' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	SingleGenericMassType getMMiscellaneous();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MOperatorItemsType#getMMiscellaneous <em>MMiscellaneous</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>MMiscellaneous</em>' containment reference.
+	 * @see #getMMiscellaneous()
+	 * @generated
+	 */
+	void setMMiscellaneous(SingleGenericMassType value);
 
 } // MOperatorItemsType

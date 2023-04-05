@@ -13,6 +13,7 @@ package Cpacs;
  * <ul>
  *   <li>{@link Cpacs.StringerFramePositionType#getStructuralElementUID <em>Structural Element UID</em>}</li>
  *   <li>{@link Cpacs.StringerFramePositionType#getPositionX <em>Position X</em>}</li>
+ *   <li>{@link Cpacs.StringerFramePositionType#getSectionElementUID <em>Section Element UID</em>}</li>
  *   <li>{@link Cpacs.StringerFramePositionType#getReferenceY <em>Reference Y</em>}</li>
  *   <li>{@link Cpacs.StringerFramePositionType#getReferenceZ <em>Reference Z</em>}</li>
  *   <li>{@link Cpacs.StringerFramePositionType#getReferenceAngle <em>Reference Angle</em>}</li>
@@ -60,12 +61,12 @@ public interface StringerFramePositionType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * x position in absolute value
-	 *                             
+	 *                                 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Position X</em>' containment reference.
 	 * @see #setPositionX(DoubleBaseType)
 	 * @see Cpacs.CpacsPackage#getStringerFramePositionType_PositionX()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='positionX' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -80,6 +81,33 @@ public interface StringerFramePositionType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setPositionX(DoubleBaseType value);
+
+	/**
+	 * Returns the value of the '<em><b>Section Element UID</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * UID reference to a fuselageSectionElement
+	 *                                 
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Section Element UID</em>' containment reference.
+	 * @see #setSectionElementUID(StringUIDBaseType)
+	 * @see Cpacs.CpacsPackage#getStringerFramePositionType_SectionElementUID()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='sectionElementUID' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	StringUIDBaseType getSectionElementUID();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.StringerFramePositionType#getSectionElementUID <em>Section Element UID</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Section Element UID</em>' containment reference.
+	 * @see #getSectionElementUID()
+	 * @generated
+	 */
+	void setSectionElementUID(StringUIDBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Reference Y</b></em>' containment reference.
@@ -195,13 +223,13 @@ public interface StringerFramePositionType extends ComplexBaseType {
 	 *                                 continuity)
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Continuity</em>' containment reference.
-	 * @see #setContinuity(ContinuityType)
+	 * @see #setContinuity(ContinuityType1)
 	 * @see Cpacs.CpacsPackage#getStringerFramePositionType_Continuity()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='continuity' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	ContinuityType getContinuity();
+	ContinuityType1 getContinuity();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.StringerFramePositionType#getContinuity <em>Continuity</em>}' containment reference.
@@ -211,7 +239,7 @@ public interface StringerFramePositionType extends ComplexBaseType {
 	 * @see #getContinuity()
 	 * @generated
 	 */
-	void setContinuity(ContinuityType value);
+	void setContinuity(ContinuityType1 value);
 
 	/**
 	 * Returns the value of the '<em><b>Interpolation</b></em>' containment reference.
@@ -219,7 +247,7 @@ public interface StringerFramePositionType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Definition of interpolation between different
-	 *                                 profiles: 0= no interpolation 1= interpolation of strcutural
+	 *                                 profiles: 0= no interpolation 1= interpolation of structural
 	 *                                 profile
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Interpolation</em>' containment reference.

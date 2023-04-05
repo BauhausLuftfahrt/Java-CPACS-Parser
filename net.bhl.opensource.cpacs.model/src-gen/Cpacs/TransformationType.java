@@ -57,7 +57,7 @@ public interface TransformationType extends ComplexBaseType {
 	 * <!-- begin-model-doc -->
 	 * Rotation data default: 0,0,0. The rotation
 	 *                                 angles are the three Euler angles to describe the orientation of
-	 *                                 the coordinate system. The order is allways xyz in CPACS.
+	 *                                 the coordinate system. The order is always xyz in CPACS.
 	 *                                 Therefore the first rotation is around the x-axis, the second
 	 *                                 rotation is around the rotated y-axis (y') and the third
 	 *                                 rotation is around the two times rotated z-axis (z'').
@@ -89,9 +89,8 @@ public interface TransformationType extends ComplexBaseType {
 	 * <!-- begin-model-doc -->
 	 * Translation data default: 0,0,0. Translations
 	 *                                 can either be made absolute in the global coordinate system
-	 *                                 (absGlobal), absolute in the local Coordinate system (absLocal)
-	 *                                 or relative (relative), normalized with the maximum dimensions
-	 *                                 of the parent.
+	 *                                 (absGlobal) or absolute in the local Coordinate system (absLocal).
+	 *                                 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Translation</em>' containment reference.
 	 * @see #setTranslation(PointAbsRelType)

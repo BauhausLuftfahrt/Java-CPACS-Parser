@@ -27,6 +27,7 @@ package Cpacs;
  *   <li>{@link Cpacs.MSystemsType#getMIntegratedModularAvionics <em>MIntegrated Modular Avionics</em>}</li>
  *   <li>{@link Cpacs.MSystemsType#getMMillitarySystems <em>MMillitary Systems</em>}</li>
  *   <li>{@link Cpacs.MSystemsType#getMNavigation <em>MNavigation</em>}</li>
+ *   <li>{@link Cpacs.MSystemsType#getMMiscellaneous <em>MMiscellaneous</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getMSystemsType()
@@ -404,5 +405,28 @@ public interface MSystemsType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setMNavigation(MNavigationType value);
+
+	/**
+	 * Returns the value of the '<em><b>MMiscellaneous</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>MMiscellaneous</em>' containment reference.
+	 * @see #setMMiscellaneous(SingleGenericMassType)
+	 * @see Cpacs.CpacsPackage#getMSystemsType_MMiscellaneous()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='mMiscellaneous' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	SingleGenericMassType getMMiscellaneous();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MSystemsType#getMMiscellaneous <em>MMiscellaneous</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>MMiscellaneous</em>' containment reference.
+	 * @see #getMMiscellaneous()
+	 * @generated
+	 */
+	void setMMiscellaneous(SingleGenericMassType value);
 
 } // MSystemsType

@@ -5,8 +5,8 @@ package Cpacs.impl;
 import Cpacs.CabinSpaceType;
 import Cpacs.CpacsPackage;
 import Cpacs.DoubleBaseType;
+import Cpacs.DoubleVectorBaseType;
 import Cpacs.StringBaseType;
-import Cpacs.StringVectorBaseType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -63,7 +63,7 @@ public class CabinSpaceTypeImpl extends ComplexBaseTypeImpl implements CabinSpac
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType x;
+	protected DoubleVectorBaseType x;
 
 	/**
 	 * The cached value of the '{@link #getY() <em>Y</em>}' containment reference.
@@ -73,7 +73,7 @@ public class CabinSpaceTypeImpl extends ComplexBaseTypeImpl implements CabinSpac
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType y;
+	protected DoubleVectorBaseType y;
 
 	/**
 	 * The cached value of the '{@link #getHeight() <em>Height</em>}' containment reference.
@@ -234,7 +234,7 @@ public class CabinSpaceTypeImpl extends ComplexBaseTypeImpl implements CabinSpac
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getX() {
+	public DoubleVectorBaseType getX() {
 		return x;
 	}
 
@@ -243,8 +243,8 @@ public class CabinSpaceTypeImpl extends ComplexBaseTypeImpl implements CabinSpac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetX(StringVectorBaseType newX, NotificationChain msgs) {
-		StringVectorBaseType oldX = x;
+	public NotificationChain basicSetX(DoubleVectorBaseType newX, NotificationChain msgs) {
+		DoubleVectorBaseType oldX = x;
 		x = newX;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -263,7 +263,7 @@ public class CabinSpaceTypeImpl extends ComplexBaseTypeImpl implements CabinSpac
 	 * @generated
 	 */
 	@Override
-	public void setX(StringVectorBaseType newX) {
+	public void setX(DoubleVectorBaseType newX) {
 		if (newX != x) {
 			NotificationChain msgs = null;
 			if (x != null)
@@ -285,7 +285,7 @@ public class CabinSpaceTypeImpl extends ComplexBaseTypeImpl implements CabinSpac
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getY() {
+	public DoubleVectorBaseType getY() {
 		return y;
 	}
 
@@ -294,8 +294,8 @@ public class CabinSpaceTypeImpl extends ComplexBaseTypeImpl implements CabinSpac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetY(StringVectorBaseType newY, NotificationChain msgs) {
-		StringVectorBaseType oldY = y;
+	public NotificationChain basicSetY(DoubleVectorBaseType newY, NotificationChain msgs) {
+		DoubleVectorBaseType oldY = y;
 		y = newY;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -314,7 +314,7 @@ public class CabinSpaceTypeImpl extends ComplexBaseTypeImpl implements CabinSpac
 	 * @generated
 	 */
 	@Override
-	public void setY(StringVectorBaseType newY) {
+	public void setY(DoubleVectorBaseType newY) {
 		if (newY != y) {
 			NotificationChain msgs = null;
 			if (y != null)
@@ -466,10 +466,10 @@ public class CabinSpaceTypeImpl extends ComplexBaseTypeImpl implements CabinSpac
 			setDescription((StringBaseType) newValue);
 			return;
 		case CpacsPackage.CABIN_SPACE_TYPE__X:
-			setX((StringVectorBaseType) newValue);
+			setX((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.CABIN_SPACE_TYPE__Y:
-			setY((StringVectorBaseType) newValue);
+			setY((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.CABIN_SPACE_TYPE__HEIGHT:
 			setHeight((DoubleBaseType) newValue);
@@ -496,10 +496,10 @@ public class CabinSpaceTypeImpl extends ComplexBaseTypeImpl implements CabinSpac
 			setDescription((StringBaseType) null);
 			return;
 		case CpacsPackage.CABIN_SPACE_TYPE__X:
-			setX((StringVectorBaseType) null);
+			setX((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.CABIN_SPACE_TYPE__Y:
-			setY((StringVectorBaseType) null);
+			setY((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.CABIN_SPACE_TYPE__HEIGHT:
 			setHeight((DoubleBaseType) null);

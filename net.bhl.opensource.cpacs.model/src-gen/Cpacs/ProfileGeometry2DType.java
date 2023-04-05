@@ -124,33 +124,33 @@ public interface ProfileGeometry2DType extends ComplexBaseType {
 
 	/**
 	 * Returns the value of the '<em><b>Symmetry</b></em>' attribute.
-	 * The literals are from the enumeration {@link Cpacs.SymmetryType1}.
+	 * The literals are from the enumeration {@link Cpacs.SymmetryType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Symmetry</em>' attribute.
-	 * @see Cpacs.SymmetryType1
+	 * @see Cpacs.SymmetryType
 	 * @see #isSetSymmetry()
 	 * @see #unsetSymmetry()
-	 * @see #setSymmetry(SymmetryType1)
+	 * @see #setSymmetry(SymmetryType)
 	 * @see Cpacs.CpacsPackage#getProfileGeometry2DType_Symmetry()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='attribute' name='symmetry' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	SymmetryType1 getSymmetry();
+	SymmetryType getSymmetry();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.ProfileGeometry2DType#getSymmetry <em>Symmetry</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Symmetry</em>' attribute.
-	 * @see Cpacs.SymmetryType1
+	 * @see Cpacs.SymmetryType
 	 * @see #isSetSymmetry()
 	 * @see #unsetSymmetry()
 	 * @see #getSymmetry()
 	 * @generated
 	 */
-	void setSymmetry(SymmetryType1 value);
+	void setSymmetry(SymmetryType value);
 
 	/**
 	 * Unsets the value of the '{@link Cpacs.ProfileGeometry2DType#getSymmetry <em>Symmetry</em>}' attribute.
@@ -158,7 +158,7 @@ public interface ProfileGeometry2DType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * @see #isSetSymmetry()
 	 * @see #getSymmetry()
-	 * @see #setSymmetry(SymmetryType1)
+	 * @see #setSymmetry(SymmetryType)
 	 * @generated
 	 */
 	void unsetSymmetry();
@@ -170,7 +170,7 @@ public interface ProfileGeometry2DType extends ComplexBaseType {
 	 * @return whether the value of the '<em>Symmetry</em>' attribute is set.
 	 * @see #unsetSymmetry()
 	 * @see #getSymmetry()
-	 * @see #setSymmetry(SymmetryType1)
+	 * @see #setSymmetry(SymmetryType)
 	 * @generated
 	 */
 	boolean isSetSymmetry();

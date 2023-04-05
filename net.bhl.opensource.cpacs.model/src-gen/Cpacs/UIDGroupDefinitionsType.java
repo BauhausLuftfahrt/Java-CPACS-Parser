@@ -18,7 +18,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getUIDGroupDefinitionsType()
- * @model extendedMetaData="name='UIDGroupDefinitionsType' kind='elementOnly'"
+ * @model extendedMetaData="name='uIDGroupDefinitionsType' kind='elementOnly'"
  * @generated
  */
 public interface UIDGroupDefinitionsType extends ComplexBaseType {

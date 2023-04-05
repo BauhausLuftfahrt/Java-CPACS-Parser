@@ -88,7 +88,7 @@ public interface PylonRibsPositioningType extends ComplexBaseType {
 	 * <!-- begin-model-doc -->
 	 * Ribs can be rotated in the side view. The
 	 *                                 defaults to 90°, which equals an orientation along the pylons
-	 *                                 z-axis. The angle is meassured around the positive y-direction
+	 *                                 z-axis. The angle is measured around the positive y-direction
 	 *                                 of the pylon.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Rib Rotation</em>' containment reference.

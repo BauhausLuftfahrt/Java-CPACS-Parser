@@ -11,12 +11,10 @@ package Cpacs;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link Cpacs.AircraftAnalysesType#getGlobal <em>Global</em>}</li>
  *   <li>{@link Cpacs.AircraftAnalysesType#getAeroPerformance <em>Aero Performance</em>}</li>
  *   <li>{@link Cpacs.AircraftAnalysesType#getAeroelastics <em>Aeroelastics</em>}</li>
- *   <li>{@link Cpacs.AircraftAnalysesType#getDynamicAircraftModel <em>Dynamic Aircraft Model</em>}</li>
  *   <li>{@link Cpacs.AircraftAnalysesType#getFlightDynamics <em>Flight Dynamics</em>}</li>
- *   <li>{@link Cpacs.AircraftAnalysesType#getFlyingQualities <em>Flying Qualities</em>}</li>
- *   <li>{@link Cpacs.AircraftAnalysesType#getFlightPerformance <em>Flight Performance</em>}</li>
  *   <li>{@link Cpacs.AircraftAnalysesType#getFlightSystems <em>Flight Systems</em>}</li>
  *   <li>{@link Cpacs.AircraftAnalysesType#getLandingGearPositionSafetyMargins <em>Landing Gear Position Safety Margins</em>}</li>
  *   <li>{@link Cpacs.AircraftAnalysesType#getLoadAnalysis <em>Load Analysis</em>}</li>
@@ -25,7 +23,6 @@ package Cpacs;
  *   <li>{@link Cpacs.AircraftAnalysesType#getNoise <em>Noise</em>}</li>
  *   <li>{@link Cpacs.AircraftAnalysesType#getTrajectories <em>Trajectories</em>}</li>
  *   <li>{@link Cpacs.AircraftAnalysesType#getWeightAndBalance <em>Weight And Balance</em>}</li>
- *   <li>{@link Cpacs.AircraftAnalysesType#getPaxFlow <em>Pax Flow</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getAircraftAnalysesType()
@@ -33,6 +30,29 @@ package Cpacs;
  * @generated
  */
 public interface AircraftAnalysesType extends ComplexBaseType {
+	/**
+	 * Returns the value of the '<em><b>Global</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Global</em>' containment reference.
+	 * @see #setGlobal(AircraftAnalysesGlobalType)
+	 * @see Cpacs.CpacsPackage#getAircraftAnalysesType_Global()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='global' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	AircraftAnalysesGlobalType getGlobal();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.AircraftAnalysesType#getGlobal <em>Global</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Global</em>' containment reference.
+	 * @see #getGlobal()
+	 * @generated
+	 */
+	void setGlobal(AircraftAnalysesGlobalType value);
+
 	/**
 	 * Returns the value of the '<em><b>Aero Performance</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -80,29 +100,6 @@ public interface AircraftAnalysesType extends ComplexBaseType {
 	void setAeroelastics(AeroelasticsType value);
 
 	/**
-	 * Returns the value of the '<em><b>Dynamic Aircraft Model</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Dynamic Aircraft Model</em>' containment reference.
-	 * @see #setDynamicAircraftModel(DynamicAircraftModelAnalysisType)
-	 * @see Cpacs.CpacsPackage#getAircraftAnalysesType_DynamicAircraftModel()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='dynamicAircraftModel' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	DynamicAircraftModelAnalysisType getDynamicAircraftModel();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.AircraftAnalysesType#getDynamicAircraftModel <em>Dynamic Aircraft Model</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Dynamic Aircraft Model</em>' containment reference.
-	 * @see #getDynamicAircraftModel()
-	 * @generated
-	 */
-	void setDynamicAircraftModel(DynamicAircraftModelAnalysisType value);
-
-	/**
 	 * Returns the value of the '<em><b>Flight Dynamics</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -124,52 +121,6 @@ public interface AircraftAnalysesType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setFlightDynamics(FlightDynamicsAnalysisType value);
-
-	/**
-	 * Returns the value of the '<em><b>Flying Qualities</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Flying Qualities</em>' containment reference.
-	 * @see #setFlyingQualities(FlyingQualitiesType)
-	 * @see Cpacs.CpacsPackage#getAircraftAnalysesType_FlyingQualities()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='flyingQualities' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	FlyingQualitiesType getFlyingQualities();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.AircraftAnalysesType#getFlyingQualities <em>Flying Qualities</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Flying Qualities</em>' containment reference.
-	 * @see #getFlyingQualities()
-	 * @generated
-	 */
-	void setFlyingQualities(FlyingQualitiesType value);
-
-	/**
-	 * Returns the value of the '<em><b>Flight Performance</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Flight Performance</em>' containment reference.
-	 * @see #setFlightPerformance(FlightPerformanceType)
-	 * @see Cpacs.CpacsPackage#getAircraftAnalysesType_FlightPerformance()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='flightPerformance' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	FlightPerformanceType getFlightPerformance();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.AircraftAnalysesType#getFlightPerformance <em>Flight Performance</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Flight Performance</em>' containment reference.
-	 * @see #getFlightPerformance()
-	 * @generated
-	 */
-	void setFlightPerformance(FlightPerformanceType value);
 
 	/**
 	 * Returns the value of the '<em><b>Flight Systems</b></em>' containment reference.
@@ -354,28 +305,5 @@ public interface AircraftAnalysesType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setWeightAndBalance(WeightAndBalanceType value);
-
-	/**
-	 * Returns the value of the '<em><b>Pax Flow</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Pax Flow</em>' attribute.
-	 * @see #setPaxFlow(String)
-	 * @see Cpacs.CpacsPackage#getAircraftAnalysesType_PaxFlow()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='paxFlow' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	String getPaxFlow();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.AircraftAnalysesType#getPaxFlow <em>Pax Flow</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Pax Flow</em>' attribute.
-	 * @see #getPaxFlow()
-	 * @generated
-	 */
-	void setPaxFlow(String value);
 
 } // AircraftAnalysesType

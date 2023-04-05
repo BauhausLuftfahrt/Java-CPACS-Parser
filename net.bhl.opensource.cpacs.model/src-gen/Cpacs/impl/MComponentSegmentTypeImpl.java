@@ -8,10 +8,10 @@ import Cpacs.MComponentSegmentType;
 import Cpacs.MFixedLeadingEdgesType;
 import Cpacs.MFixedTrailingEdgesType;
 import Cpacs.MLandingGearSupportsType;
-import Cpacs.MMiscellaneousType;
 import Cpacs.MMoveablesType;
 import Cpacs.MPylonAttachmentsType;
 import Cpacs.MWingBoxType;
+import Cpacs.SingleGenericMassType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -80,7 +80,7 @@ public class MComponentSegmentTypeImpl extends ComplexBaseTypeImpl implements MC
 	 * @generated
 	 * @ordered
 	 */
-	protected MMiscellaneousType mMiscellaneous;
+	protected SingleGenericMassType mMiscellaneous;
 
 	/**
 	 * The cached value of the '{@link #getMWingBox() <em>MWing Box</em>}' containment reference.
@@ -311,7 +311,7 @@ public class MComponentSegmentTypeImpl extends ComplexBaseTypeImpl implements MC
 	 * @generated
 	 */
 	@Override
-	public MMiscellaneousType getMMiscellaneous() {
+	public SingleGenericMassType getMMiscellaneous() {
 		return mMiscellaneous;
 	}
 
@@ -320,8 +320,8 @@ public class MComponentSegmentTypeImpl extends ComplexBaseTypeImpl implements MC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMMiscellaneous(MMiscellaneousType newMMiscellaneous, NotificationChain msgs) {
-		MMiscellaneousType oldMMiscellaneous = mMiscellaneous;
+	public NotificationChain basicSetMMiscellaneous(SingleGenericMassType newMMiscellaneous, NotificationChain msgs) {
+		SingleGenericMassType oldMMiscellaneous = mMiscellaneous;
 		mMiscellaneous = newMMiscellaneous;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -340,7 +340,7 @@ public class MComponentSegmentTypeImpl extends ComplexBaseTypeImpl implements MC
 	 * @generated
 	 */
 	@Override
-	public void setMMiscellaneous(MMiscellaneousType newMMiscellaneous) {
+	public void setMMiscellaneous(SingleGenericMassType newMMiscellaneous) {
 		if (newMMiscellaneous != mMiscellaneous) {
 			NotificationChain msgs = null;
 			if (mMiscellaneous != null)
@@ -649,7 +649,7 @@ public class MComponentSegmentTypeImpl extends ComplexBaseTypeImpl implements MC
 			setMLandingGearSupports((MLandingGearSupportsType) newValue);
 			return;
 		case CpacsPackage.MCOMPONENT_SEGMENT_TYPE__MMISCELLANEOUS:
-			setMMiscellaneous((MMiscellaneousType) newValue);
+			setMMiscellaneous((SingleGenericMassType) newValue);
 			return;
 		case CpacsPackage.MCOMPONENT_SEGMENT_TYPE__MWING_BOX:
 			setMWingBox((MWingBoxType) newValue);
@@ -685,7 +685,7 @@ public class MComponentSegmentTypeImpl extends ComplexBaseTypeImpl implements MC
 			setMLandingGearSupports((MLandingGearSupportsType) null);
 			return;
 		case CpacsPackage.MCOMPONENT_SEGMENT_TYPE__MMISCELLANEOUS:
-			setMMiscellaneous((MMiscellaneousType) null);
+			setMMiscellaneous((SingleGenericMassType) null);
 			return;
 		case CpacsPackage.MCOMPONENT_SEGMENT_TYPE__MWING_BOX:
 			setMWingBox((MWingBoxType) null);

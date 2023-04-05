@@ -97,23 +97,43 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseAdditionalParametersType(AdditionalParametersType object) {
-			return createAdditionalParametersTypeAdapter();
+		public Adapter caseAeroCaseAeroDataType(AeroCaseAeroDataType object) {
+			return createAeroCaseAeroDataTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseAdditionalParameterType(AdditionalParameterType object) {
-			return createAdditionalParameterTypeAdapter();
+		public Adapter caseAeroCaseCoefficientsType(AeroCaseCoefficientsType object) {
+			return createAeroCaseCoefficientsTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseAeroDataSetForLoadsType(AeroDataSetForLoadsType object) {
-			return createAeroDataSetForLoadsTypeAdapter();
+		public Adapter caseAeroCaseSpecificationType(AeroCaseSpecificationType object) {
+			return createAeroCaseSpecificationTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseAeroDataSetsForLoadsType(AeroDataSetsForLoadsType object) {
-			return createAeroDataSetsForLoadsTypeAdapter();
+		public Adapter caseAeroCasesType(AeroCasesType object) {
+			return createAeroCasesTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseAeroCaseType(AeroCaseType object) {
+			return createAeroCaseTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseAeroDataComponentsType(AeroDataComponentsType object) {
+			return createAeroDataComponentsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseAeroDataComponentType(AeroDataComponentType object) {
+			return createAeroDataComponentTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseAeroDataVehicleType(AeroDataVehicleType object) {
+			return createAeroDataVehicleTypeAdapter();
 		}
 
 		@Override
@@ -137,6 +157,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseAeroLimitsIncrementMapType(AeroLimitsIncrementMapType object) {
+			return createAeroLimitsIncrementMapTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseAeroLimitsMapType(AeroLimitsMapType object) {
 			return createAeroLimitsMapTypeAdapter();
 		}
@@ -154,16 +179,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseAeroPerformanceBoundaryConditionsType(AeroPerformanceBoundaryConditionsType object) {
 			return createAeroPerformanceBoundaryConditionsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseAeroPerformanceControlElementsType(AeroPerformanceControlElementsType object) {
-			return createAeroPerformanceControlElementsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseAeroPerformanceControlElementType(AeroPerformanceControlElementType object) {
-			return createAeroPerformanceControlElementTypeAdapter();
 		}
 
 		@Override
@@ -202,8 +217,23 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseAircraftAnalysesGlobalType(AircraftAnalysesGlobalType object) {
+			return createAircraftAnalysesGlobalTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseAircraftAnalysesType(AircraftAnalysesType object) {
 			return createAircraftAnalysesTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseAircraftControlElementsType(AircraftControlElementsType object) {
+			return createAircraftControlElementsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseAircraftControlElementType(AircraftControlElementType object) {
+			return createAircraftControlElementTypeAdapter();
 		}
 
 		@Override
@@ -282,13 +312,8 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseAngleAccelerationType(AngleAccelerationType object) {
-			return createAngleAccelerationTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseAngleDisplacementType(AngleDisplacementType object) {
-			return createAngleDisplacementTypeAdapter();
+		public Adapter caseAltitudeType(AltitudeType object) {
+			return createAltitudeTypeAdapter();
 		}
 
 		@Override
@@ -299,11 +324,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseAnisotropicSolidPropertiesType(AnisotropicSolidPropertiesType object) {
 			return createAnisotropicSolidPropertiesTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseAtmosphericConditionsType(AtmosphericConditionsType object) {
-			return createAtmosphericConditionsTypeAdapter();
 		}
 
 		@Override
@@ -332,13 +352,13 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseAttitudeAndMotionType(AttitudeAndMotionType object) {
-			return createAttitudeAndMotionTypeAdapter();
+		public Adapter caseAxleAssembliesType(AxleAssembliesType object) {
+			return createAxleAssembliesTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseAxlesType(AxlesType object) {
-			return createAxlesTypeAdapter();
+		public Adapter caseAxleAssemblyType(AxleAssemblyType object) {
+			return createAxleAssemblyTypeAdapter();
 		}
 
 		@Override
@@ -362,16 +382,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseBogieAxlesType(BogieAxlesType object) {
-			return createBogieAxlesTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseBogieAxleType(BogieAxleType object) {
-			return createBogieAxleTypeAdapter();
-		}
-
-		@Override
 		public Adapter caseBogieType(BogieType object) {
 			return createBogieTypeAdapter();
 		}
@@ -382,13 +392,13 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseBoundingElementUIDsType(BoundingElementUIDsType object) {
-			return createBoundingElementUIDsTypeAdapter();
+		public Adapter caseBoundingBoxType(BoundingBoxType object) {
+			return createBoundingBoxTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseCabGeometryType(CabGeometryType object) {
-			return createCabGeometryTypeAdapter();
+		public Adapter caseBoundingElementUIDsType(BoundingElementUIDsType object) {
+			return createBoundingElementUIDsTypeAdapter();
 		}
 
 		@Override
@@ -402,33 +412,18 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseCabinDoorsType(CabinDoorsType object) {
-			return createCabinDoorsTypeAdapter();
+		public Adapter caseCabinGeometryContoursType(CabinGeometryContoursType object) {
+			return createCabinGeometryContoursTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseCabinDoorType(CabinDoorType object) {
-			return createCabinDoorTypeAdapter();
+		public Adapter caseCabinGeometryContourType(CabinGeometryContourType object) {
+			return createCabinGeometryContourTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseCabinFloorElementsType(CabinFloorElementsType object) {
-			return createCabinFloorElementsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseCabinFloorElementType(CabinFloorElementType object) {
-			return createCabinFloorElementTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseCabinSeatElementsType(CabinSeatElementsType object) {
-			return createCabinSeatElementsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseCabinSeatElementType(CabinSeatElementType object) {
-			return createCabinSeatElementTypeAdapter();
+		public Adapter caseCabinGeometryType(CabinGeometryType object) {
+			return createCabinGeometryTypeAdapter();
 		}
 
 		@Override
@@ -442,8 +437,33 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseCalibratedAirSpeedType(CalibratedAirSpeedType object) {
+			return createCalibratedAirSpeedTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseCapType(CapType object) {
 			return createCapTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCargoContainerElementsType(CargoContainerElementsType object) {
+			return createCargoContainerElementsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCargoContainerElementType(CargoContainerElementType object) {
+			return createCargoContainerElementTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCargoContainersType(CargoContainersType object) {
+			return createCargoContainersTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCargoContainerType(CargoContainerType object) {
+			return createCargoContainerTypeAdapter();
 		}
 
 		@Override
@@ -459,6 +479,16 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseCargoDoorsAssemblyType(CargoDoorsAssemblyType object) {
 			return createCargoDoorsAssemblyTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCeilingPanelElementsType(CeilingPanelElementsType object) {
+			return createCeilingPanelElementsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCeilingPanelsType(CeilingPanelsType object) {
+			return createCeilingPanelsTypeAdapter();
 		}
 
 		@Override
@@ -528,8 +558,33 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseChangeLogType(ChangeLogType object) {
+			return createChangeLogTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseChargesCostType(ChargesCostType object) {
 			return createChargesCostTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseChordwisePartsType(ChordwisePartsType object) {
+			return createChordwisePartsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseChordwisePartType(ChordwisePartType object) {
+			return createChordwisePartTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseClassDividerElementsType(ClassDividerElementsType object) {
+			return createClassDividerElementsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseClassDividersType(ClassDividersType object) {
+			return createClassDividersTypeAdapter();
 		}
 
 		@Override
@@ -543,8 +598,53 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseCoefficientsType(CoefficientsType object) {
-			return createCoefficientsTypeAdapter();
+		public Adapter caseCoefficientReferenceType(CoefficientReferenceType object) {
+			return createCoefficientReferenceTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCoefficientsBreakdownComponentsType(CoefficientsBreakdownComponentsType object) {
+			return createCoefficientsBreakdownComponentsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCoefficientsBreakdownComponentType(CoefficientsBreakdownComponentType object) {
+			return createCoefficientsBreakdownComponentTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCoefficientsBreakdownSegmentType(CoefficientsBreakdownSegmentType object) {
+			return createCoefficientsBreakdownSegmentTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCoefficientsBreakdownStripsType(CoefficientsBreakdownStripsType object) {
+			return createCoefficientsBreakdownStripsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCoefficientsBreakdownStripType(CoefficientsBreakdownStripType object) {
+			return createCoefficientsBreakdownStripTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCoefficientsBreakdownType(CoefficientsBreakdownType object) {
+			return createCoefficientsBreakdownTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCoefficientsBreakdownWingSegmentsType(CoefficientsBreakdownWingSegmentsType object) {
+			return createCoefficientsBreakdownWingSegmentsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCoefficientsBreakdownWingsType(CoefficientsBreakdownWingsType object) {
+			return createCoefficientsBreakdownWingsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCoefficientsBreakdownWingType(CoefficientsBreakdownWingType object) {
+			return createCoefficientsBreakdownWingTypeAdapter();
 		}
 
 		@Override
@@ -588,11 +688,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseComponentCutLoadsEnvelopeType(ComponentCutLoadsEnvelopeType object) {
-			return createComponentCutLoadsEnvelopeTypeAdapter();
-		}
-
-		@Override
 		public Adapter caseComponentSegmentPathType(ComponentSegmentPathType object) {
 			return createComponentSegmentPathTypeAdapter();
 		}
@@ -633,6 +728,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseConfigurationType(ConfigurationType object) {
+			return createConfigurationTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseConnectivitiesType(ConnectivitiesType object) {
 			return createConnectivitiesTypeAdapter();
 		}
@@ -643,13 +743,13 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseConstraintSettingsPointPerformanceType(ConstraintSettingsPointPerformanceType object) {
-			return createConstraintSettingsPointPerformanceTypeAdapter();
+		public Adapter caseConstraintSettingsType(ConstraintSettingsType object) {
+			return createConstraintSettingsTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseConstraintSettingsType(ConstraintSettingsType object) {
-			return createConstraintSettingsTypeAdapter();
+		public Adapter caseConstraintsType(ConstraintsType object) {
+			return createConstraintsTypeAdapter();
 		}
 
 		@Override
@@ -683,8 +783,18 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseContinuityType4(ContinuityType4 object) {
+			return createContinuityType4Adapter();
+		}
+
+		@Override
 		public Adapter caseContourReferenceType(ContourReferenceType object) {
 			return createContourReferenceTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseContourType(ContourType object) {
+			return createContourTypeAdapter();
 		}
 
 		@Override
@@ -718,13 +828,13 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseControlInputsType(ControlInputsType object) {
-			return createControlInputsTypeAdapter();
+		public Adapter caseControllabilityReqsType(ControllabilityReqsType object) {
+			return createControllabilityReqsTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseControlInputType(ControlInputType object) {
-			return createControlInputTypeAdapter();
+		public Adapter caseControllabilityRequirementType(ControllabilityRequirementType object) {
+			return createControllabilityRequirementTypeAdapter();
 		}
 
 		@Override
@@ -775,16 +885,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseControlSurfaceContoursType(ControlSurfaceContoursType object) {
 			return createControlSurfaceContoursTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseControlSurfaceDeflectionsType(ControlSurfaceDeflectionsType object) {
-			return createControlSurfaceDeflectionsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseControlSurfaceDeflectionType(ControlSurfaceDeflectionType object) {
-			return createControlSurfaceDeflectionTypeAdapter();
 		}
 
 		@Override
@@ -880,6 +980,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseControlSurfaceWingCutOutType(ControlSurfaceWingCutOutType object) {
 			return createControlSurfaceWingCutOutTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseCornerRadiusType(CornerRadiusType object) {
+			return createCornerRadiusTypeAdapter();
 		}
 
 		@Override
@@ -1083,23 +1188,8 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseCutLoadIntegrationPointsType(CutLoadIntegrationPointsType object) {
-			return createCutLoadIntegrationPointsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseCutLoadsEnvelopeType(CutLoadsEnvelopeType object) {
-			return createCutLoadsEnvelopeTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseCutLoadsType(CutLoadsType object) {
-			return createCutLoadsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseCutLoadType(CutLoadType object) {
-			return createCutLoadTypeAdapter();
+		public Adapter caseCutLoadPointsType(CutLoadPointsType object) {
+			return createCutLoadPointsTypeAdapter();
 		}
 
 		@Override
@@ -1173,6 +1263,56 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseDeckComponent2DBaseType(DeckComponent2DBaseType object) {
+			return createDeckComponent2DBaseTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseDeckComponentBaseType(DeckComponentBaseType object) {
+			return createDeckComponentBaseTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseDeckDoorsType(DeckDoorsType object) {
+			return createDeckDoorsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseDeckDoorType(DeckDoorType object) {
+			return createDeckDoorTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseDeckElementBaseType(DeckElementBaseType object) {
+			return createDeckElementBaseTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseDeckElementGeometryType(DeckElementGeometryType object) {
+			return createDeckElementGeometryTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseDeckElementMassType(DeckElementMassType object) {
+			return createDeckElementMassTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseDeckElementsType(DeckElementsType object) {
+			return createDeckElementsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseDeckStructuralMountsType(DeckStructuralMountsType object) {
+			return createDeckStructuralMountsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseDeckStructuralMountType(DeckStructuralMountType object) {
+			return createDeckStructuralMountTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseDecksType(DecksType object) {
 			return createDecksTypeAdapter();
 		}
@@ -1180,6 +1320,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseDeckType(DeckType object) {
 			return createDeckTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseDeckTypeType(DeckTypeType object) {
+			return createDeckTypeTypeAdapter();
 		}
 
 		@Override
@@ -1205,11 +1350,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseDesignSpaceType(DesignSpaceType object) {
 			return createDesignSpaceTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseDesignSpeedType(DesignSpeedType object) {
-			return createDesignSpeedTypeAdapter();
 		}
 
 		@Override
@@ -1253,6 +1393,16 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseDoorOpeningLegacyType(DoorOpeningLegacyType object) {
+			return createDoorOpeningLegacyTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseDoorOpeningType(DoorOpeningType object) {
+			return createDoorOpeningTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseDoorsType(DoorsType object) {
 			return createDoorsTypeAdapter();
 		}
@@ -1273,6 +1423,16 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseDoorTypeType1(DoorTypeType1 object) {
+			return createDoorTypeType1Adapter();
+		}
+
+		@Override
+		public Adapter caseDoubleArrayBaseType(DoubleArrayBaseType object) {
+			return createDoubleArrayBaseTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseDoubleBaseType(DoubleBaseType object) {
 			return createDoubleBaseTypeAdapter();
 		}
@@ -1280,6 +1440,21 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseDoubleConstraintBaseType(DoubleConstraintBaseType object) {
 			return createDoubleConstraintBaseTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseDoubleVectorBaseType(DoubleVectorBaseType object) {
+			return createDoubleVectorBaseTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseDoubleVectorConstraintBaseType(DoubleVectorConstraintBaseType object) {
+			return createDoubleVectorConstraintBaseTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseDragContributionsType(DragContributionsType object) {
+			return createDragContributionsTypeAdapter();
 		}
 
 		@Override
@@ -1293,23 +1468,23 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseDurationType(DurationType object) {
+			return createDurationTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseDynamicAircraftModelAnalysisType(DynamicAircraftModelAnalysisType object) {
 			return createDynamicAircraftModelAnalysisTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseDynamicAircraftModelPointsType(DynamicAircraftModelPointsType object) {
-			return createDynamicAircraftModelPointsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseDynamicAircraftModelType(DynamicAircraftModelType object) {
-			return createDynamicAircraftModelTypeAdapter();
-		}
-
-		@Override
 		public Adapter caseEmissivityMapType(EmissivityMapType object) {
 			return createEmissivityMapTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseEndTimeUTCType(EndTimeUTCType object) {
+			return createEndTimeUTCTypeAdapter();
 		}
 
 		@Override
@@ -1383,11 +1558,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseEngineSettingType(EngineSettingType object) {
-			return createEngineSettingTypeAdapter();
-		}
-
-		@Override
 		public Adapter caseEngineSpinnerType(EngineSpinnerType object) {
 			return createEngineSpinnerTypeAdapter();
 		}
@@ -1400,6 +1570,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseEngineType(EngineType object) {
 			return createEngineTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseEnvironmentType(EnvironmentType object) {
+			return createEnvironmentTypeAdapter();
 		}
 
 		@Override
@@ -1443,23 +1618,8 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseFlightDynamicsFlightCasesType(FlightDynamicsFlightCasesType object) {
-			return createFlightDynamicsFlightCasesTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseFlightDynamicsFlightCaseType(FlightDynamicsFlightCaseType object) {
-			return createFlightDynamicsFlightCaseTypeAdapter();
-		}
-
-		@Override
 		public Adapter caseFlightDynamicsLinearModelType(FlightDynamicsLinearModelType object) {
 			return createFlightDynamicsLinearModelTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseFlightDynamicsModelType(FlightDynamicsModelType object) {
-			return createFlightDynamicsModelTypeAdapter();
 		}
 
 		@Override
@@ -1468,13 +1628,38 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseFlightEnvelopeSpeedType(FlightEnvelopeSpeedType object) {
+			return createFlightEnvelopeSpeedTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseFlightEnvelopesType(FlightEnvelopesType object) {
+			return createFlightEnvelopesTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseFlightEnvelopeType(FlightEnvelopeType object) {
+			return createFlightEnvelopeTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseFlightLoadCasesType(FlightLoadCasesType object) {
 			return createFlightLoadCasesTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseFlightLoadCaseType(FlightLoadCaseType object) {
-			return createFlightLoadCaseTypeAdapter();
+		public Adapter caseFlightLoadConditionsType(FlightLoadConditionsType object) {
+			return createFlightLoadConditionsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseFlightLoadDataType(FlightLoadDataType object) {
+			return createFlightLoadDataTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseFlightPathAngleType(FlightPathAngleType object) {
+			return createFlightPathAngleTypeAdapter();
 		}
 
 		@Override
@@ -1498,13 +1683,33 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseFlightPerformanceLevelType(FlightPerformanceLevelType object) {
+			return createFlightPerformanceLevelTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseFlightPerformanceRequirementsType(FlightPerformanceRequirementsType object) {
+			return createFlightPerformanceRequirementsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseFlightPerformanceRequirementType(FlightPerformanceRequirementType object) {
+			return createFlightPerformanceRequirementTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseFlightPerformanceTakeoffType(FlightPerformanceTakeoffType object) {
 			return createFlightPerformanceTakeoffTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseFlightPerformanceType(FlightPerformanceType object) {
-			return createFlightPerformanceTypeAdapter();
+		public Adapter caseFlightPerformanceTurnType(FlightPerformanceTurnType object) {
+			return createFlightPerformanceTurnTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseFlightPointsType(FlightPointsType object) {
+			return createFlightPointsTypeAdapter();
 		}
 
 		@Override
@@ -1538,18 +1743,13 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseFlowConditionType(FlowConditionType object) {
-			return createFlowConditionTypeAdapter();
+		public Adapter caseFlyingQualitiesCasesType(FlyingQualitiesCasesType object) {
+			return createFlyingQualitiesCasesTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseFlyingQualitiesType(FlyingQualitiesType object) {
-			return createFlyingQualitiesTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseFqCaseType(FqCaseType object) {
-			return createFqCaseTypeAdapter();
+		public Adapter caseFlyingQualitiesCaseType(FlyingQualitiesCaseType object) {
+			return createFlyingQualitiesCaseTypeAdapter();
 		}
 
 		@Override
@@ -1618,13 +1818,33 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseFuelConsumedType(FuelConsumedType object) {
+			return createFuelConsumedTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseFuelFractionType(FuelFractionType object) {
+			return createFuelFractionTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseFuelInTankType(FuelInTankType object) {
 			return createFuelInTankTypeAdapter();
 		}
 
 		@Override
+		public Adapter caseFuelMassFractionType(FuelMassFractionType object) {
+			return createFuelMassFractionTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseFuelPlanningTypeType(FuelPlanningTypeType object) {
 			return createFuelPlanningTypeTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseFuelRemainingType(FuelRemainingType object) {
+			return createFuelRemainingTypeAdapter();
 		}
 
 		@Override
@@ -1645,11 +1865,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseFuselageAeroPerformanceType(FuselageAeroPerformanceType object) {
 			return createFuselageAeroPerformanceTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseFuselageCoefficientsType(FuselageCoefficientsType object) {
-			return createFuselageCoefficientsTypeAdapter();
 		}
 
 		@Override
@@ -1693,11 +1908,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseFuselagesCoefficientsType(FuselagesCoefficientsType object) {
-			return createFuselagesCoefficientsTypeAdapter();
-		}
-
-		@Override
 		public Adapter caseFuselageSectionsType(FuselageSectionsType object) {
 			return createFuselageSectionsTypeAdapter();
 		}
@@ -1705,21 +1915,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseFuselageSectionType(FuselageSectionType object) {
 			return createFuselageSectionTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseFuselageSegmentCoefficientsType(FuselageSegmentCoefficientsType object) {
-			return createFuselageSegmentCoefficientsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseFuselageSegmentsCoefficientsType(FuselageSegmentsCoefficientsType object) {
-			return createFuselageSegmentsCoefficientsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseFuselageSegmentStripCoefficientsType(FuselageSegmentStripCoefficientsType object) {
-			return createFuselageSegmentStripCoefficientsTypeAdapter();
 		}
 
 		@Override
@@ -1748,8 +1943,18 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseGearComponentsType(GearComponentsType object) {
-			return createGearComponentsTypeAdapter();
+		public Adapter caseGalleyElementsType(GalleyElementsType object) {
+			return createGalleyElementsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseGalleyElementType(GalleyElementType object) {
+			return createGalleyElementTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseGalleysType(GalleysType object) {
+			return createGalleysTypeAdapter();
 		}
 
 		@Override
@@ -1778,18 +1983,18 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseGenericComponentCoefficientsType(GenericComponentCoefficientsType object) {
-			return createGenericComponentCoefficientsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseGenericComponentsCoefficientsType(GenericComponentsCoefficientsType object) {
-			return createGenericComponentsCoefficientsTypeAdapter();
-		}
-
-		@Override
 		public Adapter caseGenericCostType(GenericCostType object) {
 			return createGenericCostTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseGenericFloorElementsType(GenericFloorElementsType object) {
+			return createGenericFloorElementsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseGenericFloorModulesType(GenericFloorModulesType object) {
+			return createGenericFloorModulesTypeAdapter();
 		}
 
 		@Override
@@ -1800,6 +2005,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseGenericGeometryComponentsType(GenericGeometryComponentsType object) {
 			return createGenericGeometryComponentsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseGenericGeometryComponentType(GenericGeometryComponentType object) {
+			return createGenericGeometryComponentTypeAdapter();
 		}
 
 		@Override
@@ -1815,11 +2025,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseGenericSystemType(GenericSystemType object) {
 			return createGenericSystemTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseGeogenWingOutputOptionsType(GeogenWingOutputOptionsType object) {
-			return createGeogenWingOutputOptionsTypeAdapter();
 		}
 
 		@Override
@@ -1843,13 +2048,18 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseGroundLoadCasesType(GroundLoadCasesType object) {
-			return createGroundLoadCasesTypeAdapter();
+		public Adapter caseGlobalFlightPointType(GlobalFlightPointType object) {
+			return createGlobalFlightPointTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseGroundLoadCaseType(GroundLoadCaseType object) {
-			return createGroundLoadCaseTypeAdapter();
+		public Adapter caseGlobalPerformanceCasesType(GlobalPerformanceCasesType object) {
+			return createGlobalPerformanceCasesTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseGroundLoadCasesType(GroundLoadCasesType object) {
+			return createGroundLoadCasesTypeAdapter();
 		}
 
 		@Override
@@ -1873,23 +2083,18 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseHandbookAeroLastTransitionRegionType(HandbookAeroLastTransitionRegionType object) {
-			return createHandbookAeroLastTransitionRegionTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseHandbookAeroPolynomialCoefficientsType(HandbookAeroPolynomialCoefficientsType object) {
-			return createHandbookAeroPolynomialCoefficientsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseHandbookAeroTransitionRegionType(HandbookAeroTransitionRegionType object) {
-			return createHandbookAeroTransitionRegionTypeAdapter();
+		public Adapter caseGustShapeType(GustShapeType object) {
+			return createGustShapeTypeAdapter();
 		}
 
 		@Override
 		public Adapter caseHeaderType(HeaderType object) {
 			return createHeaderTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseHeadingType(HeadingType object) {
+			return createHeadingTypeAdapter();
 		}
 
 		@Override
@@ -1910,11 +2115,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseHtpStructElemDefType(HtpStructElemDefType object) {
 			return createHtpStructElemDefTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseIdentifierType(IdentifierType object) {
-			return createIdentifierTypeAdapter();
 		}
 
 		@Override
@@ -1963,6 +2163,16 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseInternalPressuresType(InternalPressuresType object) {
+			return createInternalPressuresTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseInternalPressureType(InternalPressureType object) {
+			return createInternalPressureTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseInterpolationType(InterpolationType object) {
 			return createInterpolationTypeAdapter();
 		}
@@ -1980,6 +2190,41 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseIsotropicPropertiesType(IsotropicPropertiesType object) {
 			return createIsotropicPropertiesTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLandingGearBaseType(LandingGearBaseType object) {
+			return createLandingGearBaseTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLandingGearBrakingStateType(LandingGearBrakingStateType object) {
+			return createLandingGearBrakingStateTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLandingGearComponentAssemblyType(LandingGearComponentAssemblyType object) {
+			return createLandingGearComponentAssemblyTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLandingGearControlFunctionsType(LandingGearControlFunctionsType object) {
+			return createLandingGearControlFunctionsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLandingGearControlType(LandingGearControlType object) {
+			return createLandingGearControlTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLandingGearExtensionFunctionStepType(LandingGearExtensionFunctionStepType object) {
+			return createLandingGearExtensionFunctionStepTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLandingGearExtensionFunctionType(LandingGearExtensionFunctionType object) {
+			return createLandingGearExtensionFunctionTypeAdapter();
 		}
 
 		@Override
@@ -2024,8 +2269,28 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseLandingGearSettingType(LandingGearSettingType object) {
-			return createLandingGearSettingTypeAdapter();
+		public Adapter caseLandingGearSteeringFunctionStepType(LandingGearSteeringFunctionStepType object) {
+			return createLandingGearSteeringFunctionStepTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLandingGearSteeringFunctionType(LandingGearSteeringFunctionType object) {
+			return createLandingGearSteeringFunctionTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLandingGearStrutAttachmentType(LandingGearStrutAttachmentType object) {
+			return createLandingGearStrutAttachmentTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLandingGearsType(LandingGearsType object) {
+			return createLandingGearsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLandingGearSupportBeamPositionType(LandingGearSupportBeamPositionType object) {
+			return createLandingGearSupportBeamPositionTypeAdapter();
 		}
 
 		@Override
@@ -2036,6 +2301,21 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseLateralCapType(LateralCapType object) {
 			return createLateralCapTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLatitudeType(LatitudeType object) {
+			return createLatitudeTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLavatoriesType(LavatoriesType object) {
+			return createLavatoriesTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLavatoryElementsType(LavatoryElementsType object) {
+			return createLavatoryElementsTypeAdapter();
 		}
 
 		@Override
@@ -2074,43 +2354,43 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseLoadApplicationPointSetsType(LoadApplicationPointSetsType object) {
+			return createLoadApplicationPointSetsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLoadApplicationPointSetType(LoadApplicationPointSetType object) {
+			return createLoadApplicationPointSetTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLoadApplicationPointsType(LoadApplicationPointsType object) {
+			return createLoadApplicationPointsTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseLoadBreakdownType(LoadBreakdownType object) {
 			return createLoadBreakdownTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseLoadCaseEnginesType(LoadCaseEnginesType object) {
-			return createLoadCaseEnginesTypeAdapter();
+		public Adapter caseLoadCaseAccelerationsType(LoadCaseAccelerationsType object) {
+			return createLoadCaseAccelerationsTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseLoadCaseLandingGearsType(LoadCaseLandingGearsType object) {
-			return createLoadCaseLandingGearsTypeAdapter();
+		public Adapter caseLoadCaseGustType(LoadCaseGustType object) {
+			return createLoadCaseGustTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseLoadCaseMassType(LoadCaseMassType object) {
-			return createLoadCaseMassTypeAdapter();
+		public Adapter caseLoadCaseLoadFactorsType(LoadCaseLoadFactorsType object) {
+			return createLoadCaseLoadFactorsTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseLoadCaseRotationType(LoadCaseRotationType object) {
-			return createLoadCaseRotationTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseLoadCaseRotationVelocityType(LoadCaseRotationVelocityType object) {
-			return createLoadCaseRotationVelocityTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseLoadCaseSettingsType(LoadCaseSettingsType object) {
-			return createLoadCaseSettingsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseLoadCaseStateType(LoadCaseStateType object) {
-			return createLoadCaseStateTypeAdapter();
+		public Adapter caseLoadCaseSpecificationType(LoadCaseSpecificationType object) {
+			return createLoadCaseSpecificationTypeAdapter();
 		}
 
 		@Override
@@ -2119,43 +2399,48 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseLoadCaseTranslationAccelerationType(LoadCaseTranslationAccelerationType object) {
-			return createLoadCaseTranslationAccelerationTypeAdapter();
+		public Adapter caseLoadCaseSuperpositionType(LoadCaseSuperpositionType object) {
+			return createLoadCaseSuperpositionTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseLoadCaseTranslationType(LoadCaseTranslationType object) {
-			return createLoadCaseTranslationTypeAdapter();
+		public Adapter caseLoadCaseType(LoadCaseType object) {
+			return createLoadCaseTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseLoadCaseTranslationVelocityType(LoadCaseTranslationVelocityType object) {
-			return createLoadCaseTranslationVelocityTypeAdapter();
+		public Adapter caseLoadEnvelopesType(LoadEnvelopesType object) {
+			return createLoadEnvelopesTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseLoadConditionType(LoadConditionType object) {
-			return createLoadConditionTypeAdapter();
+		public Adapter caseLoadEnvelopeType(LoadEnvelopeType object) {
+			return createLoadEnvelopeTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseLoadReferenceAxisPointsType(LoadReferenceAxisPointsType object) {
-			return createLoadReferenceAxisPointsTypeAdapter();
+		public Adapter caseLoadReferenceLineType(LoadReferenceLineType object) {
+			return createLoadReferenceLineTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseLoadReferenceAxisPointType(LoadReferenceAxisPointType object) {
-			return createLoadReferenceAxisPointTypeAdapter();
+		public Adapter caseLoadReferencePointType(LoadReferencePointType object) {
+			return createLoadReferencePointTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseLoadReferenceType(LoadReferenceType object) {
-			return createLoadReferenceTypeAdapter();
+		public Adapter caseLoadSetsType(LoadSetsType object) {
+			return createLoadSetsTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseLoadsEnvelopeType(LoadsEnvelopeType object) {
-			return createLoadsEnvelopeTypeAdapter();
+		public Adapter caseLoadSetType(LoadSetType object) {
+			return createLoadSetTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLogEntryType(LogEntryType object) {
+			return createLogEntryTypeAdapter();
 		}
 
 		@Override
@@ -2174,38 +2459,43 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseLongitudeType(LongitudeType object) {
+			return createLongitudeTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLowerHeightFractionType(LowerHeightFractionType object) {
+			return createLowerHeightFractionTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLuggageCompartmentElementsType(LuggageCompartmentElementsType object) {
+			return createLuggageCompartmentElementsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseLuggageCompartmentsType(LuggageCompartmentsType object) {
+			return createLuggageCompartmentsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseMachNumberType(MachNumberType object) {
+			return createMachNumberTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseMAdditionalCenterTanksType(MAdditionalCenterTanksType object) {
+			return createMAdditionalCenterTanksTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseMainActuatorType(MainActuatorType object) {
 			return createMainActuatorTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseMainGearGlobalType(MainGearGlobalType object) {
-			return createMainGearGlobalTypeAdapter();
-		}
-
-		@Override
 		public Adapter caseMainGearsType(MainGearsType object) {
 			return createMainGearsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseMainGearSupportBeamPositionType(MainGearSupportBeamPositionType object) {
-			return createMainGearSupportBeamPositionTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseMainGearSupportBeamType(MainGearSupportBeamType object) {
-			return createMainGearSupportBeamTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseMainGearType(MainGearType object) {
-			return createMainGearTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseMainGearWingAttachmentType(MainGearWingAttachmentType object) {
-			return createMainGearWingAttachmentTypeAdapter();
 		}
 
 		@Override
@@ -2450,6 +2740,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseMEngineAPUOilsType(MEngineAPUOilsType object) {
+			return createMEngineAPUOilsTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseMEngineControlType(MEngineControlType object) {
 			return createMEngineControlTypeAdapter();
 		}
@@ -2580,6 +2875,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseMissionEndRunwayType(MissionEndRunwayType object) {
+			return createMissionEndRunwayTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseMissionPerformanceMapDefinitionType(MissionPerformanceMapDefinitionType object) {
 			return createMissionPerformanceMapDefinitionTypeAdapter();
 		}
@@ -2617,6 +2917,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseMissionStartConditionType(MissionStartConditionType object) {
 			return createMissionStartConditionTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseMissionStartRunwayType(MissionStartRunwayType object) {
+			return createMissionStartRunwayTypeAdapter();
 		}
 
 		@Override
@@ -2665,11 +2970,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseMMiscellaneousType(MMiscellaneousType object) {
-			return createMMiscellaneousTypeAdapter();
-		}
-
-		@Override
 		public Adapter caseMMoveableLeadingEdgesType(MMoveableLeadingEdgesType object) {
 			return createMMoveableLeadingEdgesTypeAdapter();
 		}
@@ -2697,11 +2997,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseMNoseGearsType(MNoseGearsType object) {
 			return createMNoseGearsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseModelType(ModelType object) {
-			return createModelTypeAdapter();
 		}
 
 		@Override
@@ -2760,6 +3055,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseMRemovableCrewRestsType(MRemovableCrewRestsType object) {
+			return createMRemovableCrewRestsTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseMRibsType(MRibsType object) {
 			return createMRibsTypeAdapter();
 		}
@@ -2795,8 +3095,23 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseMSparCellsType(MSparCellsType object) {
+			return createMSparCellsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseMSparSkinsType(MSparSkinsType object) {
+			return createMSparSkinsTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseMSparsType(MSparsType object) {
 			return createMSparsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseMSparType(MSparType object) {
+			return createMSparTypeAdapter();
 		}
 
 		@Override
@@ -2825,6 +3140,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseMToiletFluidsType(MToiletFluidsType object) {
+			return createMToiletFluidsTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseMTrailingEdgeDevicesType(MTrailingEdgeDevicesType object) {
 			return createMTrailingEdgeDevicesTypeAdapter();
 		}
@@ -2845,13 +3165,28 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseMUnusableFuelsType(MUnusableFuelsType object) {
+			return createMUnusableFuelsTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseMVacuumWasteSystemsType(MVacuumWasteSystemsType object) {
 			return createMVacuumWasteSystemsTypeAdapter();
 		}
 
 		@Override
+		public Adapter caseMWallsType(MWallsType object) {
+			return createMWallsTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseMWasteWaterSystemsType(MWasteWaterSystemsType object) {
 			return createMWasteWaterSystemsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseMWaterReservoirsType(MWaterReservoirsType object) {
+			return createMWaterReservoirsTypeAdapter();
 		}
 
 		@Override
@@ -2910,13 +3245,13 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseNodalLoadsType(NodalLoadsType object) {
-			return createNodalLoadsTypeAdapter();
+		public Adapter caseNameType(NameType object) {
+			return createNameTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseNodalLoadType(NodalLoadType object) {
-			return createNodalLoadTypeAdapter();
+		public Adapter caseNameType1(NameType1 object) {
+			return createNameType1Adapter();
 		}
 
 		@Override
@@ -2925,18 +3260,8 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseNoseGearGlobalType(NoseGearGlobalType object) {
-			return createNoseGearGlobalTypeAdapter();
-		}
-
-		@Override
 		public Adapter caseNoseGearsType(NoseGearsType object) {
 			return createNoseGearsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseNoseGearType(NoseGearType object) {
-			return createNoseGearTypeAdapter();
 		}
 
 		@Override
@@ -2957,11 +3282,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseOperationLimitIncrementsType(OperationLimitIncrementsType object) {
 			return createOperationLimitIncrementsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseOrientationType(OrientationType object) {
-			return createOrientationTypeAdapter();
 		}
 
 		@Override
@@ -3010,18 +3330,13 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter casePerformanceCasesType(PerformanceCasesType object) {
-			return createPerformanceCasesTypeAdapter();
-		}
-
-		@Override
-		public Adapter casePerformanceCaseType(PerformanceCaseType object) {
-			return createPerformanceCaseTypeAdapter();
-		}
-
-		@Override
 		public Adapter casePerformanceMapSelectionType(PerformanceMapSelectionType object) {
 			return createPerformanceMapSelectionTypeAdapter();
+		}
+
+		@Override
+		public Adapter casePerformanceRequirementConfigurationsType(PerformanceRequirementConfigurationsType object) {
+			return createPerformanceRequirementConfigurationsTypeAdapter();
 		}
 
 		@Override
@@ -3037,6 +3352,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter casePhiType(PhiType object) {
 			return createPhiTypeAdapter();
+		}
+
+		@Override
+		public Adapter casePintleStrutsType(PintleStrutsType object) {
+			return createPintleStrutsTypeAdapter();
 		}
 
 		@Override
@@ -3100,13 +3420,23 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter casePointPerformancesType(PointPerformancesType object) {
-			return createPointPerformancesTypeAdapter();
+		public Adapter casePointPerformanceConstraintsType(PointPerformanceConstraintsType object) {
+			return createPointPerformanceConstraintsTypeAdapter();
 		}
 
 		@Override
-		public Adapter casePointPerformanceType(PointPerformanceType object) {
-			return createPointPerformanceTypeAdapter();
+		public Adapter casePointPerformanceDefinitionsType(PointPerformanceDefinitionsType object) {
+			return createPointPerformanceDefinitionsTypeAdapter();
+		}
+
+		@Override
+		public Adapter casePointPerformanceDefinitionType(PointPerformanceDefinitionType object) {
+			return createPointPerformanceDefinitionTypeAdapter();
+		}
+
+		@Override
+		public Adapter casePointPerformanceRequirementsType(PointPerformanceRequirementsType object) {
+			return createPointPerformanceRequirementsTypeAdapter();
 		}
 
 		@Override
@@ -3150,6 +3480,21 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter casePosExcl0DoubleBaseType(PosExcl0DoubleBaseType object) {
+			return createPosExcl0DoubleBaseTypeAdapter();
+		}
+
+		@Override
+		public Adapter casePosExcl0IntBaseType(PosExcl0IntBaseType object) {
+			return createPosExcl0IntBaseTypeAdapter();
+		}
+
+		@Override
+		public Adapter casePosIntVectorBaseType(PosIntVectorBaseType object) {
+			return createPosIntVectorBaseTypeAdapter();
+		}
+
+		@Override
 		public Adapter casePositioningsType(PositioningsType object) {
 			return createPositioningsTypeAdapter();
 		}
@@ -3157,6 +3502,21 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter casePositioningType(PositioningType object) {
 			return createPositioningTypeAdapter();
+		}
+
+		@Override
+		public Adapter casePowerConsumedType(PowerConsumedType object) {
+			return createPowerConsumedTypeAdapter();
+		}
+
+		@Override
+		public Adapter casePowerFractionType(PowerFractionType object) {
+			return createPowerFractionTypeAdapter();
+		}
+
+		@Override
+		public Adapter casePowerRemainingType(PowerRemainingType object) {
+			return createPowerRemainingTypeAdapter();
 		}
 
 		@Override
@@ -3275,13 +3635,23 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseQuasiSteadyRotationType(QuasiSteadyRotationType object) {
-			return createQuasiSteadyRotationTypeAdapter();
+		public Adapter caseRadiativeForcingType(RadiativeForcingType object) {
+			return createRadiativeForcingTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseRadiativeForcingType(RadiativeForcingType object) {
-			return createRadiativeForcingTypeAdapter();
+		public Adapter caseRangeType(RangeType object) {
+			return createRangeTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseRateOfClimbType(RateOfClimbType object) {
+			return createRateOfClimbTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseRectangleProfileType(RectangleProfileType object) {
+			return createRectangleProfileTypeAdapter();
 		}
 
 		@Override
@@ -3292,6 +3662,36 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseReferenceType(ReferenceType object) {
 			return createReferenceTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseRelativeStrutPositionType(RelativeStrutPositionType object) {
+			return createRelativeStrutPositionTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseReleasedStoresType(ReleasedStoresType object) {
+			return createReleasedStoresTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseReleasedStoreType(ReleasedStoreType object) {
+			return createReleasedStoreTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseRemainingContributionsType(RemainingContributionsType object) {
+			return createRemainingContributionsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseRemainingContributionType(RemainingContributionType object) {
+			return createRemainingContributionTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseRequirementClassificationType(RequirementClassificationType object) {
+			return createRequirementClassificationTypeAdapter();
 		}
 
 		@Override
@@ -3445,6 +3845,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseRunwayStartPositionType(RunwayStartPositionType object) {
+			return createRunwayStartPositionTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseRunwaysType(RunwaysType object) {
 			return createRunwaysTypeAdapter();
 		}
@@ -3455,18 +3860,23 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseRunwayType1(RunwayType1 object) {
+			return createRunwayType1Adapter();
+		}
+
+		@Override
+		public Adapter caseSeatElementsType(SeatElementsType object) {
+			return createSeatElementsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseSeatElementType(SeatElementType object) {
+			return createSeatElementTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseSeatModulesType(SeatModulesType object) {
 			return createSeatModulesTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseSeatModuleType(SeatModuleType object) {
-			return createSeatModuleTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseSectionDistributionModeType(SectionDistributionModeType object) {
-			return createSectionDistributionModeTypeAdapter();
 		}
 
 		@Override
@@ -3540,28 +3950,23 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseSidewallPanelElementsType(SidewallPanelElementsType object) {
+			return createSidewallPanelElementsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseSidewallPanelsType(SidewallPanelsType object) {
+			return createSidewallPanelsTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseSingleGenericMassType(SingleGenericMassType object) {
 			return createSingleGenericMassTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseSizingTypeType(SizingTypeType object) {
-			return createSizingTypeTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseSkidGearGlobalType(SkidGearGlobalType object) {
-			return createSkidGearGlobalTypeAdapter();
-		}
-
-		@Override
 		public Adapter caseSkidGearsType(SkidGearsType object) {
 			return createSkidGearsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseSkidGearType(SkidGearType object) {
-			return createSkidGearTypeAdapter();
 		}
 
 		@Override
@@ -3620,6 +4025,31 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseSpecificConfigurationSegmentsType(SpecificConfigurationSegmentsType object) {
+			return createSpecificConfigurationSegmentsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseSpecificConfigurationSegmentType(SpecificConfigurationSegmentType object) {
+			return createSpecificConfigurationSegmentTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseSpecificConfigurationUIDsType(SpecificConfigurationUIDsType object) {
+			return createSpecificConfigurationUIDsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseSpecificConfigurationUIDType(SpecificConfigurationUIDType object) {
+			return createSpecificConfigurationUIDTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseSpecificExcessPowerType(SpecificExcessPowerType object) {
+			return createSpecificExcessPowerTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseSpecificHeatMapType(SpecificHeatMapType object) {
 			return createSpecificHeatMapTypeAdapter();
 		}
@@ -3635,6 +4065,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseSpeedDesignatorsType(SpeedDesignatorsType object) {
+			return createSpeedDesignatorsTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseSpoilersType(SpoilersType object) {
 			return createSpoilersTypeAdapter();
 		}
@@ -3642,6 +4077,16 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseSpoilerType(SpoilerType object) {
 			return createSpoilerTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseStandardProfileSheetIDType(StandardProfileSheetIDType object) {
+			return createStandardProfileSheetIDTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseStandardProfileType(StandardProfileType object) {
+			return createStandardProfileTypeAdapter();
 		}
 
 		@Override
@@ -3677,6 +4122,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseStringerFramePositionType(StringerFramePositionType object) {
 			return createStringerFramePositionTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseStringerFramePositionUIDsType(StringerFramePositionUIDsType object) {
+			return createStringerFramePositionUIDsTypeAdapter();
 		}
 
 		@Override
@@ -3735,13 +4185,18 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseStrutType(StrutType object) {
-			return createStrutTypeAdapter();
+		public Adapter caseStrutAssemblyType(StrutAssemblyType object) {
+			return createStrutAssemblyTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseStrutWithActuatorType(StrutWithActuatorType object) {
-			return createStrutWithActuatorTypeAdapter();
+		public Adapter caseStrutPropertiesType(StrutPropertiesType object) {
+			return createStrutPropertiesTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseStrutType(StrutType object) {
+			return createStrutTypeAdapter();
 		}
 
 		@Override
@@ -3765,8 +4220,13 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseSymmetryType3(SymmetryType3 object) {
-			return createSymmetryType3Adapter();
+		public Adapter caseSuperEllipseProfileType(SuperEllipseProfileType object) {
+			return createSuperEllipseProfileTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseSupportBeamType(SupportBeamType object) {
+			return createSupportBeamTypeAdapter();
 		}
 
 		@Override
@@ -3810,6 +4270,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseTimeConstraintBaseType(TimeConstraintBaseType object) {
+			return createTimeConstraintBaseTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseToolspecificType(ToolspecificType object) {
 			return createToolspecificTypeAdapter();
 		}
@@ -3840,13 +4305,23 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseTrackCarType(TrackCarType object) {
-			return createTrackCarTypeAdapter();
+		public Adapter caseTrackJointCoordinatesType(TrackJointCoordinatesType object) {
+			return createTrackJointCoordinatesTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseTrackFairingType(TrackFairingType object) {
-			return createTrackFairingTypeAdapter();
+		public Adapter caseTrackJointPositionsType(TrackJointPositionsType object) {
+			return createTrackJointPositionsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseTrackJointPositionType(TrackJointPositionType object) {
+			return createTrackJointPositionTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseTrackSecondaryStructureType(TrackSecondaryStructureType object) {
+			return createTrackSecondaryStructureTypeAdapter();
 		}
 
 		@Override
@@ -3855,13 +4330,13 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseTrackStrut1Type(TrackStrut1Type object) {
-			return createTrackStrut1TypeAdapter();
+		public Adapter caseTrackStrutsType(TrackStrutsType object) {
+			return createTrackStrutsTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseTrackStrut2Type(TrackStrut2Type object) {
-			return createTrackStrut2TypeAdapter();
+		public Adapter caseTrackStrutType(TrackStrutType object) {
+			return createTrackStrutTypeAdapter();
 		}
 
 		@Override
@@ -3945,8 +4420,28 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseTrimParametersType(TrimParametersType object) {
-			return createTrimParametersTypeAdapter();
+		public Adapter caseTrimCaseType(TrimCaseType object) {
+			return createTrimCaseTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseTrimRequirementsType(TrimRequirementsType object) {
+			return createTrimRequirementsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseTrimRequirementType(TrimRequirementType object) {
+			return createTrimRequirementTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseTrimType(TrimType object) {
+			return createTrimTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseTurnAngleType(TurnAngleType object) {
+			return createTurnAngleTypeAdapter();
 		}
 
 		@Override
@@ -3955,28 +4450,13 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseTypeType1(TypeType1 object) {
-			return createTypeType1Adapter();
+		public Adapter caseTypeType(TypeType object) {
+			return createTypeTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseTypeType2(TypeType2 object) {
-			return createTypeType2Adapter();
-		}
-
-		@Override
-		public Adapter caseTypeType5(TypeType5 object) {
-			return createTypeType5Adapter();
-		}
-
-		@Override
-		public Adapter caseTypeType6(TypeType6 object) {
-			return createTypeType6Adapter();
-		}
-
-		@Override
-		public Adapter caseTypeType7(TypeType7 object) {
-			return createTypeType7Adapter();
+		public Adapter caseTypeType4(TypeType4 object) {
+			return createTypeType4Adapter();
 		}
 
 		@Override
@@ -3990,18 +4470,18 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseUpdatesType(UpdatesType object) {
-			return createUpdatesTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseUpdateType(UpdateType object) {
-			return createUpdateTypeAdapter();
+		public Adapter caseUIDSequenceType(UIDSequenceType object) {
+			return createUIDSequenceTypeAdapter();
 		}
 
 		@Override
 		public Adapter caseUpperLinksType(UpperLinksType object) {
 			return createUpperLinksTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseVariableConditionsType(VariableConditionsType object) {
+			return createVariableConditionsTypeAdapter();
 		}
 
 		@Override
@@ -4015,8 +4495,28 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseVehicleConfigurationsType(VehicleConfigurationsType object) {
+			return createVehicleConfigurationsTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseVehicleConfigurationType(VehicleConfigurationType object) {
+			return createVehicleConfigurationTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseVehiclesType(VehiclesType object) {
 			return createVehiclesTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseVersionInfosType(VersionInfosType object) {
+			return createVersionInfosTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseVersionInfoType(VersionInfoType object) {
+			return createVersionInfoTypeAdapter();
 		}
 
 		@Override
@@ -4110,11 +4610,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseWheelsType(WheelsType object) {
-			return createWheelsTypeAdapter();
-		}
-
-		@Override
 		public Adapter caseWheelType(WheelType object) {
 			return createWheelTypeAdapter();
 		}
@@ -4145,6 +4640,11 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseWingAttachmentPositioningType(WingAttachmentPositioningType object) {
+			return createWingAttachmentPositioningTypeAdapter();
+		}
+
+		@Override
 		public Adapter caseWingCellsType(WingCellsType object) {
 			return createWingCellsTypeAdapter();
 		}
@@ -4152,11 +4652,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseWingCellType(WingCellType object) {
 			return createWingCellTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseWingCoefficientsType(WingCoefficientsType object) {
-			return createWingCoefficientsTypeAdapter();
 		}
 
 		@Override
@@ -4275,11 +4770,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseWingsCoefficientsType(WingsCoefficientsType object) {
-			return createWingsCoefficientsTypeAdapter();
-		}
-
-		@Override
 		public Adapter caseWingSectionsType(WingSectionsType object) {
 			return createWingSectionsTypeAdapter();
 		}
@@ -4287,21 +4777,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseWingSectionType(WingSectionType object) {
 			return createWingSectionTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseWingSegmentCoefficientsType(WingSegmentCoefficientsType object) {
-			return createWingSegmentCoefficientsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseWingSegmentsCoefficientsType(WingSegmentsCoefficientsType object) {
-			return createWingSegmentsCoefficientsTypeAdapter();
-		}
-
-		@Override
-		public Adapter caseWingSegmentStripCoefficientsType(WingSegmentStripCoefficientsType object) {
-			return createWingSegmentStripCoefficientsTypeAdapter();
 		}
 
 		@Override
@@ -4493,58 +4968,114 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.AdditionalParametersType <em>Additional Parameters Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.AeroCaseAeroDataType <em>Aero Case Aero Data Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.AdditionalParametersType
+	 * @see Cpacs.AeroCaseAeroDataType
 	 * @generated
 	 */
-	public Adapter createAdditionalParametersTypeAdapter() {
+	public Adapter createAeroCaseAeroDataTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.AdditionalParameterType <em>Additional Parameter Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.AeroCaseCoefficientsType <em>Aero Case Coefficients Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.AdditionalParameterType
+	 * @see Cpacs.AeroCaseCoefficientsType
 	 * @generated
 	 */
-	public Adapter createAdditionalParameterTypeAdapter() {
+	public Adapter createAeroCaseCoefficientsTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.AeroDataSetForLoadsType <em>Aero Data Set For Loads Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.AeroCaseSpecificationType <em>Aero Case Specification Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.AeroDataSetForLoadsType
+	 * @see Cpacs.AeroCaseSpecificationType
 	 * @generated
 	 */
-	public Adapter createAeroDataSetForLoadsTypeAdapter() {
+	public Adapter createAeroCaseSpecificationTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.AeroDataSetsForLoadsType <em>Aero Data Sets For Loads Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.AeroCasesType <em>Aero Cases Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.AeroDataSetsForLoadsType
+	 * @see Cpacs.AeroCasesType
 	 * @generated
 	 */
-	public Adapter createAeroDataSetsForLoadsTypeAdapter() {
+	public Adapter createAeroCasesTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.AeroCaseType <em>Aero Case Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.AeroCaseType
+	 * @generated
+	 */
+	public Adapter createAeroCaseTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.AeroDataComponentsType <em>Aero Data Components Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.AeroDataComponentsType
+	 * @generated
+	 */
+	public Adapter createAeroDataComponentsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.AeroDataComponentType <em>Aero Data Component Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.AeroDataComponentType
+	 * @generated
+	 */
+	public Adapter createAeroDataComponentTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.AeroDataVehicleType <em>Aero Data Vehicle Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.AeroDataVehicleType
+	 * @generated
+	 */
+	public Adapter createAeroDataVehicleTypeAdapter() {
 		return null;
 	}
 
@@ -4605,6 +5136,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.AeroLimitsIncrementMapType <em>Aero Limits Increment Map Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.AeroLimitsIncrementMapType
+	 * @generated
+	 */
+	public Adapter createAeroLimitsIncrementMapTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.AeroLimitsMapType <em>Aero Limits Map Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -4657,34 +5202,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAeroPerformanceBoundaryConditionsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.AeroPerformanceControlElementsType <em>Aero Performance Control Elements Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.AeroPerformanceControlElementsType
-	 * @generated
-	 */
-	public Adapter createAeroPerformanceControlElementsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.AeroPerformanceControlElementType <em>Aero Performance Control Element Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.AeroPerformanceControlElementType
-	 * @generated
-	 */
-	public Adapter createAeroPerformanceControlElementTypeAdapter() {
 		return null;
 	}
 
@@ -4787,6 +5304,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.AircraftAnalysesGlobalType <em>Aircraft Analyses Global Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.AircraftAnalysesGlobalType
+	 * @generated
+	 */
+	public Adapter createAircraftAnalysesGlobalTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.AircraftAnalysesType <em>Aircraft Analyses Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -4797,6 +5328,34 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAircraftAnalysesTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.AircraftControlElementsType <em>Aircraft Control Elements Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.AircraftControlElementsType
+	 * @generated
+	 */
+	public Adapter createAircraftControlElementsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.AircraftControlElementType <em>Aircraft Control Element Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.AircraftControlElementType
+	 * @generated
+	 */
+	public Adapter createAircraftControlElementTypeAdapter() {
 		return null;
 	}
 
@@ -5011,30 +5570,16 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.AngleAccelerationType <em>Angle Acceleration Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.AltitudeType <em>Altitude Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.AngleAccelerationType
+	 * @see Cpacs.AltitudeType
 	 * @generated
 	 */
-	public Adapter createAngleAccelerationTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.AngleDisplacementType <em>Angle Displacement Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.AngleDisplacementType
-	 * @generated
-	 */
-	public Adapter createAngleDisplacementTypeAdapter() {
+	public Adapter createAltitudeTypeAdapter() {
 		return null;
 	}
 
@@ -5063,20 +5608,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAnisotropicSolidPropertiesTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.AtmosphericConditionsType <em>Atmospheric Conditions Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.AtmosphericConditionsType
-	 * @generated
-	 */
-	public Adapter createAtmosphericConditionsTypeAdapter() {
 		return null;
 	}
 
@@ -5151,30 +5682,30 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.AttitudeAndMotionType <em>Attitude And Motion Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.AxleAssembliesType <em>Axle Assemblies Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.AttitudeAndMotionType
+	 * @see Cpacs.AxleAssembliesType
 	 * @generated
 	 */
-	public Adapter createAttitudeAndMotionTypeAdapter() {
+	public Adapter createAxleAssembliesTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.AxlesType <em>Axles Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.AxleAssemblyType <em>Axle Assembly Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.AxlesType
+	 * @see Cpacs.AxleAssemblyType
 	 * @generated
 	 */
-	public Adapter createAxlesTypeAdapter() {
+	public Adapter createAxleAssemblyTypeAdapter() {
 		return null;
 	}
 
@@ -5235,34 +5766,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.BogieAxlesType <em>Bogie Axles Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.BogieAxlesType
-	 * @generated
-	 */
-	public Adapter createBogieAxlesTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.BogieAxleType <em>Bogie Axle Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.BogieAxleType
-	 * @generated
-	 */
-	public Adapter createBogieAxleTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.BogieType <em>Bogie Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -5291,6 +5794,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.BoundingBoxType <em>Bounding Box Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.BoundingBoxType
+	 * @generated
+	 */
+	public Adapter createBoundingBoxTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.BoundingElementUIDsType <em>Bounding Element UI Ds Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -5301,20 +5818,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createBoundingElementUIDsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.CabGeometryType <em>Cab Geometry Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.CabGeometryType
-	 * @generated
-	 */
-	public Adapter createCabGeometryTypeAdapter() {
 		return null;
 	}
 
@@ -5347,86 +5850,44 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.CabinDoorsType <em>Cabin Doors Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.CabinGeometryContoursType <em>Cabin Geometry Contours Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.CabinDoorsType
+	 * @see Cpacs.CabinGeometryContoursType
 	 * @generated
 	 */
-	public Adapter createCabinDoorsTypeAdapter() {
+	public Adapter createCabinGeometryContoursTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.CabinDoorType <em>Cabin Door Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.CabinGeometryContourType <em>Cabin Geometry Contour Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.CabinDoorType
+	 * @see Cpacs.CabinGeometryContourType
 	 * @generated
 	 */
-	public Adapter createCabinDoorTypeAdapter() {
+	public Adapter createCabinGeometryContourTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.CabinFloorElementsType <em>Cabin Floor Elements Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.CabinGeometryType <em>Cabin Geometry Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.CabinFloorElementsType
+	 * @see Cpacs.CabinGeometryType
 	 * @generated
 	 */
-	public Adapter createCabinFloorElementsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.CabinFloorElementType <em>Cabin Floor Element Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.CabinFloorElementType
-	 * @generated
-	 */
-	public Adapter createCabinFloorElementTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.CabinSeatElementsType <em>Cabin Seat Elements Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.CabinSeatElementsType
-	 * @generated
-	 */
-	public Adapter createCabinSeatElementsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.CabinSeatElementType <em>Cabin Seat Element Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.CabinSeatElementType
-	 * @generated
-	 */
-	public Adapter createCabinSeatElementTypeAdapter() {
+	public Adapter createCabinGeometryTypeAdapter() {
 		return null;
 	}
 
@@ -5459,6 +5920,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CalibratedAirSpeedType <em>Calibrated Air Speed Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CalibratedAirSpeedType
+	 * @generated
+	 */
+	public Adapter createCalibratedAirSpeedTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.CapType <em>Cap Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -5469,6 +5944,62 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createCapTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CargoContainerElementsType <em>Cargo Container Elements Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CargoContainerElementsType
+	 * @generated
+	 */
+	public Adapter createCargoContainerElementsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CargoContainerElementType <em>Cargo Container Element Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CargoContainerElementType
+	 * @generated
+	 */
+	public Adapter createCargoContainerElementTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CargoContainersType <em>Cargo Containers Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CargoContainersType
+	 * @generated
+	 */
+	public Adapter createCargoContainersTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CargoContainerType <em>Cargo Container Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CargoContainerType
+	 * @generated
+	 */
+	public Adapter createCargoContainerTypeAdapter() {
 		return null;
 	}
 
@@ -5511,6 +6042,34 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createCargoDoorsAssemblyTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CeilingPanelElementsType <em>Ceiling Panel Elements Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CeilingPanelElementsType
+	 * @generated
+	 */
+	public Adapter createCeilingPanelElementsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CeilingPanelsType <em>Ceiling Panels Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CeilingPanelsType
+	 * @generated
+	 */
+	public Adapter createCeilingPanelsTypeAdapter() {
 		return null;
 	}
 
@@ -5697,6 +6256,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.ChangeLogType <em>Change Log Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.ChangeLogType
+	 * @generated
+	 */
+	public Adapter createChangeLogTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.ChargesCostType <em>Charges Cost Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -5707,6 +6280,62 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createChargesCostTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.ChordwisePartsType <em>Chordwise Parts Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.ChordwisePartsType
+	 * @generated
+	 */
+	public Adapter createChordwisePartsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.ChordwisePartType <em>Chordwise Part Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.ChordwisePartType
+	 * @generated
+	 */
+	public Adapter createChordwisePartTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.ClassDividerElementsType <em>Class Divider Elements Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.ClassDividerElementsType
+	 * @generated
+	 */
+	public Adapter createClassDividerElementsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.ClassDividersType <em>Class Dividers Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.ClassDividersType
+	 * @generated
+	 */
+	public Adapter createClassDividersTypeAdapter() {
 		return null;
 	}
 
@@ -5739,16 +6368,142 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.CoefficientsType <em>Coefficients Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.CoefficientReferenceType <em>Coefficient Reference Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.CoefficientsType
+	 * @see Cpacs.CoefficientReferenceType
 	 * @generated
 	 */
-	public Adapter createCoefficientsTypeAdapter() {
+	public Adapter createCoefficientReferenceTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CoefficientsBreakdownComponentsType <em>Coefficients Breakdown Components Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CoefficientsBreakdownComponentsType
+	 * @generated
+	 */
+	public Adapter createCoefficientsBreakdownComponentsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CoefficientsBreakdownComponentType <em>Coefficients Breakdown Component Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CoefficientsBreakdownComponentType
+	 * @generated
+	 */
+	public Adapter createCoefficientsBreakdownComponentTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CoefficientsBreakdownSegmentType <em>Coefficients Breakdown Segment Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CoefficientsBreakdownSegmentType
+	 * @generated
+	 */
+	public Adapter createCoefficientsBreakdownSegmentTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CoefficientsBreakdownStripsType <em>Coefficients Breakdown Strips Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CoefficientsBreakdownStripsType
+	 * @generated
+	 */
+	public Adapter createCoefficientsBreakdownStripsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CoefficientsBreakdownStripType <em>Coefficients Breakdown Strip Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CoefficientsBreakdownStripType
+	 * @generated
+	 */
+	public Adapter createCoefficientsBreakdownStripTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CoefficientsBreakdownType <em>Coefficients Breakdown Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CoefficientsBreakdownType
+	 * @generated
+	 */
+	public Adapter createCoefficientsBreakdownTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CoefficientsBreakdownWingSegmentsType <em>Coefficients Breakdown Wing Segments Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CoefficientsBreakdownWingSegmentsType
+	 * @generated
+	 */
+	public Adapter createCoefficientsBreakdownWingSegmentsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CoefficientsBreakdownWingsType <em>Coefficients Breakdown Wings Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CoefficientsBreakdownWingsType
+	 * @generated
+	 */
+	public Adapter createCoefficientsBreakdownWingsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CoefficientsBreakdownWingType <em>Coefficients Breakdown Wing Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CoefficientsBreakdownWingType
+	 * @generated
+	 */
+	public Adapter createCoefficientsBreakdownWingTypeAdapter() {
 		return null;
 	}
 
@@ -5865,20 +6620,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.ComponentCutLoadsEnvelopeType <em>Component Cut Loads Envelope Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.ComponentCutLoadsEnvelopeType
-	 * @generated
-	 */
-	public Adapter createComponentCutLoadsEnvelopeTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.ComponentSegmentPathType <em>Component Segment Path Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -5991,6 +6732,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.ConfigurationType <em>Configuration Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.ConfigurationType
+	 * @generated
+	 */
+	public Adapter createConfigurationTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.ConnectivitiesType <em>Connectivities Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -6019,20 +6774,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.ConstraintSettingsPointPerformanceType <em>Constraint Settings Point Performance Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.ConstraintSettingsPointPerformanceType
-	 * @generated
-	 */
-	public Adapter createConstraintSettingsPointPerformanceTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.ConstraintSettingsType <em>Constraint Settings Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -6043,6 +6784,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createConstraintSettingsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.ConstraintsType <em>Constraints Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.ConstraintsType
+	 * @generated
+	 */
+	public Adapter createConstraintsTypeAdapter() {
 		return null;
 	}
 
@@ -6131,6 +6886,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.ContinuityType4 <em>Continuity Type4</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.ContinuityType4
+	 * @generated
+	 */
+	public Adapter createContinuityType4Adapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.ContourReferenceType <em>Contour Reference Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -6141,6 +6910,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createContourReferenceTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.ContourType <em>Contour Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.ContourType
+	 * @generated
+	 */
+	public Adapter createContourTypeAdapter() {
 		return null;
 	}
 
@@ -6229,30 +7012,30 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.ControlInputsType <em>Control Inputs Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.ControllabilityReqsType <em>Controllability Reqs Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.ControlInputsType
+	 * @see Cpacs.ControllabilityReqsType
 	 * @generated
 	 */
-	public Adapter createControlInputsTypeAdapter() {
+	public Adapter createControllabilityReqsTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.ControlInputType <em>Control Input Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.ControllabilityRequirementType <em>Controllability Requirement Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.ControlInputType
+	 * @see Cpacs.ControllabilityRequirementType
 	 * @generated
 	 */
-	public Adapter createControlInputTypeAdapter() {
+	public Adapter createControllabilityRequirementTypeAdapter() {
 		return null;
 	}
 
@@ -6393,34 +7176,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createControlSurfaceContoursTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.ControlSurfaceDeflectionsType <em>Control Surface Deflections Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.ControlSurfaceDeflectionsType
-	 * @generated
-	 */
-	public Adapter createControlSurfaceDeflectionsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.ControlSurfaceDeflectionType <em>Control Surface Deflection Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.ControlSurfaceDeflectionType
-	 * @generated
-	 */
-	public Adapter createControlSurfaceDeflectionTypeAdapter() {
 		return null;
 	}
 
@@ -6687,6 +7442,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createControlSurfaceWingCutOutTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.CornerRadiusType <em>Corner Radius Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.CornerRadiusType
+	 * @generated
+	 */
+	public Adapter createCornerRadiusTypeAdapter() {
 		return null;
 	}
 
@@ -7251,58 +8020,16 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.CutLoadIntegrationPointsType <em>Cut Load Integration Points Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.CutLoadPointsType <em>Cut Load Points Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.CutLoadIntegrationPointsType
+	 * @see Cpacs.CutLoadPointsType
 	 * @generated
 	 */
-	public Adapter createCutLoadIntegrationPointsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.CutLoadsEnvelopeType <em>Cut Loads Envelope Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.CutLoadsEnvelopeType
-	 * @generated
-	 */
-	public Adapter createCutLoadsEnvelopeTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.CutLoadsType <em>Cut Loads Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.CutLoadsType
-	 * @generated
-	 */
-	public Adapter createCutLoadsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.CutLoadType <em>Cut Load Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.CutLoadType
-	 * @generated
-	 */
-	public Adapter createCutLoadTypeAdapter() {
+	public Adapter createCutLoadPointsTypeAdapter() {
 		return null;
 	}
 
@@ -7503,6 +8230,146 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DeckComponent2DBaseType <em>Deck Component2 DBase Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DeckComponent2DBaseType
+	 * @generated
+	 */
+	public Adapter createDeckComponent2DBaseTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DeckComponentBaseType <em>Deck Component Base Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DeckComponentBaseType
+	 * @generated
+	 */
+	public Adapter createDeckComponentBaseTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DeckDoorsType <em>Deck Doors Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DeckDoorsType
+	 * @generated
+	 */
+	public Adapter createDeckDoorsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DeckDoorType <em>Deck Door Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DeckDoorType
+	 * @generated
+	 */
+	public Adapter createDeckDoorTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DeckElementBaseType <em>Deck Element Base Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DeckElementBaseType
+	 * @generated
+	 */
+	public Adapter createDeckElementBaseTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DeckElementGeometryType <em>Deck Element Geometry Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DeckElementGeometryType
+	 * @generated
+	 */
+	public Adapter createDeckElementGeometryTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DeckElementMassType <em>Deck Element Mass Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DeckElementMassType
+	 * @generated
+	 */
+	public Adapter createDeckElementMassTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DeckElementsType <em>Deck Elements Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DeckElementsType
+	 * @generated
+	 */
+	public Adapter createDeckElementsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DeckStructuralMountsType <em>Deck Structural Mounts Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DeckStructuralMountsType
+	 * @generated
+	 */
+	public Adapter createDeckStructuralMountsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DeckStructuralMountType <em>Deck Structural Mount Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DeckStructuralMountType
+	 * @generated
+	 */
+	public Adapter createDeckStructuralMountTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.DecksType <em>Decks Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -7527,6 +8394,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDeckTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DeckTypeType <em>Deck Type Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DeckTypeType
+	 * @generated
+	 */
+	public Adapter createDeckTypeTypeAdapter() {
 		return null;
 	}
 
@@ -7597,20 +8478,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDesignSpaceTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.DesignSpeedType <em>Design Speed Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.DesignSpeedType
-	 * @generated
-	 */
-	public Adapter createDesignSpeedTypeAdapter() {
 		return null;
 	}
 
@@ -7727,6 +8594,34 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DoorOpeningLegacyType <em>Door Opening Legacy Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DoorOpeningLegacyType
+	 * @generated
+	 */
+	public Adapter createDoorOpeningLegacyTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DoorOpeningType <em>Door Opening Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DoorOpeningType
+	 * @generated
+	 */
+	public Adapter createDoorOpeningTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.DoorsType <em>Doors Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -7783,6 +8678,34 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DoorTypeType1 <em>Door Type Type1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DoorTypeType1
+	 * @generated
+	 */
+	public Adapter createDoorTypeType1Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DoubleArrayBaseType <em>Double Array Base Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DoubleArrayBaseType
+	 * @generated
+	 */
+	public Adapter createDoubleArrayBaseTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.DoubleBaseType <em>Double Base Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -7807,6 +8730,48 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDoubleConstraintBaseTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DoubleVectorBaseType <em>Double Vector Base Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DoubleVectorBaseType
+	 * @generated
+	 */
+	public Adapter createDoubleVectorBaseTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DoubleVectorConstraintBaseType <em>Double Vector Constraint Base Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DoubleVectorConstraintBaseType
+	 * @generated
+	 */
+	public Adapter createDoubleVectorConstraintBaseTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DragContributionsType <em>Drag Contributions Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DragContributionsType
+	 * @generated
+	 */
+	public Adapter createDragContributionsTypeAdapter() {
 		return null;
 	}
 
@@ -7839,6 +8804,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.DurationType <em>Duration Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.DurationType
+	 * @generated
+	 */
+	public Adapter createDurationTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.DynamicAircraftModelAnalysisType <em>Dynamic Aircraft Model Analysis Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -7853,34 +8832,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.DynamicAircraftModelPointsType <em>Dynamic Aircraft Model Points Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.DynamicAircraftModelPointsType
-	 * @generated
-	 */
-	public Adapter createDynamicAircraftModelPointsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.DynamicAircraftModelType <em>Dynamic Aircraft Model Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.DynamicAircraftModelType
-	 * @generated
-	 */
-	public Adapter createDynamicAircraftModelTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.EmissivityMapType <em>Emissivity Map Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -7891,6 +8842,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createEmissivityMapTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.EndTimeUTCType <em>End Time UTC Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.EndTimeUTCType
+	 * @generated
+	 */
+	public Adapter createEndTimeUTCTypeAdapter() {
 		return null;
 	}
 
@@ -8091,20 +9056,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.EngineSettingType <em>Engine Setting Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.EngineSettingType
-	 * @generated
-	 */
-	public Adapter createEngineSettingTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.EngineSpinnerType <em>Engine Spinner Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -8143,6 +9094,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createEngineTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.EnvironmentType <em>Environment Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.EnvironmentType
+	 * @generated
+	 */
+	public Adapter createEnvironmentTypeAdapter() {
 		return null;
 	}
 
@@ -8259,34 +9224,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.FlightDynamicsFlightCasesType <em>Flight Dynamics Flight Cases Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.FlightDynamicsFlightCasesType
-	 * @generated
-	 */
-	public Adapter createFlightDynamicsFlightCasesTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.FlightDynamicsFlightCaseType <em>Flight Dynamics Flight Case Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.FlightDynamicsFlightCaseType
-	 * @generated
-	 */
-	public Adapter createFlightDynamicsFlightCaseTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.FlightDynamicsLinearModelType <em>Flight Dynamics Linear Model Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -8297,20 +9234,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createFlightDynamicsLinearModelTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.FlightDynamicsModelType <em>Flight Dynamics Model Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.FlightDynamicsModelType
-	 * @generated
-	 */
-	public Adapter createFlightDynamicsModelTypeAdapter() {
 		return null;
 	}
 
@@ -8329,6 +9252,48 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.FlightEnvelopeSpeedType <em>Flight Envelope Speed Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.FlightEnvelopeSpeedType
+	 * @generated
+	 */
+	public Adapter createFlightEnvelopeSpeedTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.FlightEnvelopesType <em>Flight Envelopes Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.FlightEnvelopesType
+	 * @generated
+	 */
+	public Adapter createFlightEnvelopesTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.FlightEnvelopeType <em>Flight Envelope Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.FlightEnvelopeType
+	 * @generated
+	 */
+	public Adapter createFlightEnvelopeTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.FlightLoadCasesType <em>Flight Load Cases Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -8343,16 +9308,44 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.FlightLoadCaseType <em>Flight Load Case Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.FlightLoadConditionsType <em>Flight Load Conditions Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.FlightLoadCaseType
+	 * @see Cpacs.FlightLoadConditionsType
 	 * @generated
 	 */
-	public Adapter createFlightLoadCaseTypeAdapter() {
+	public Adapter createFlightLoadConditionsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.FlightLoadDataType <em>Flight Load Data Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.FlightLoadDataType
+	 * @generated
+	 */
+	public Adapter createFlightLoadDataTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.FlightPathAngleType <em>Flight Path Angle Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.FlightPathAngleType
+	 * @generated
+	 */
+	public Adapter createFlightPathAngleTypeAdapter() {
 		return null;
 	}
 
@@ -8413,6 +9406,48 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.FlightPerformanceLevelType <em>Flight Performance Level Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.FlightPerformanceLevelType
+	 * @generated
+	 */
+	public Adapter createFlightPerformanceLevelTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.FlightPerformanceRequirementsType <em>Flight Performance Requirements Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.FlightPerformanceRequirementsType
+	 * @generated
+	 */
+	public Adapter createFlightPerformanceRequirementsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.FlightPerformanceRequirementType <em>Flight Performance Requirement Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.FlightPerformanceRequirementType
+	 * @generated
+	 */
+	public Adapter createFlightPerformanceRequirementTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.FlightPerformanceTakeoffType <em>Flight Performance Takeoff Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -8427,16 +9462,30 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.FlightPerformanceType <em>Flight Performance Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.FlightPerformanceTurnType <em>Flight Performance Turn Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.FlightPerformanceType
+	 * @see Cpacs.FlightPerformanceTurnType
 	 * @generated
 	 */
-	public Adapter createFlightPerformanceTypeAdapter() {
+	public Adapter createFlightPerformanceTurnTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.FlightPointsType <em>Flight Points Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.FlightPointsType
+	 * @generated
+	 */
+	public Adapter createFlightPointsTypeAdapter() {
 		return null;
 	}
 
@@ -8525,44 +9574,30 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.FlowConditionType <em>Flow Condition Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.FlyingQualitiesCasesType <em>Flying Qualities Cases Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.FlowConditionType
+	 * @see Cpacs.FlyingQualitiesCasesType
 	 * @generated
 	 */
-	public Adapter createFlowConditionTypeAdapter() {
+	public Adapter createFlyingQualitiesCasesTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.FlyingQualitiesType <em>Flying Qualities Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.FlyingQualitiesCaseType <em>Flying Qualities Case Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.FlyingQualitiesType
+	 * @see Cpacs.FlyingQualitiesCaseType
 	 * @generated
 	 */
-	public Adapter createFlyingQualitiesTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.FqCaseType <em>Fq Case Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.FqCaseType
-	 * @generated
-	 */
-	public Adapter createFqCaseTypeAdapter() {
+	public Adapter createFlyingQualitiesCaseTypeAdapter() {
 		return null;
 	}
 
@@ -8749,6 +9784,34 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.FuelConsumedType <em>Fuel Consumed Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.FuelConsumedType
+	 * @generated
+	 */
+	public Adapter createFuelConsumedTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.FuelFractionType <em>Fuel Fraction Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.FuelFractionType
+	 * @generated
+	 */
+	public Adapter createFuelFractionTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.FuelInTankType <em>Fuel In Tank Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -8763,6 +9826,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.FuelMassFractionType <em>Fuel Mass Fraction Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.FuelMassFractionType
+	 * @generated
+	 */
+	public Adapter createFuelMassFractionTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.FuelPlanningTypeType <em>Fuel Planning Type Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -8773,6 +9850,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createFuelPlanningTypeTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.FuelRemainingType <em>Fuel Remaining Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.FuelRemainingType
+	 * @generated
+	 */
+	public Adapter createFuelRemainingTypeAdapter() {
 		return null;
 	}
 
@@ -8829,20 +9920,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createFuselageAeroPerformanceTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.FuselageCoefficientsType <em>Fuselage Coefficients Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.FuselageCoefficientsType
-	 * @generated
-	 */
-	public Adapter createFuselageCoefficientsTypeAdapter() {
 		return null;
 	}
 
@@ -8959,20 +10036,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.FuselagesCoefficientsType <em>Fuselages Coefficients Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.FuselagesCoefficientsType
-	 * @generated
-	 */
-	public Adapter createFuselagesCoefficientsTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.FuselageSectionsType <em>Fuselage Sections Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -8997,48 +10060,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createFuselageSectionTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.FuselageSegmentCoefficientsType <em>Fuselage Segment Coefficients Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.FuselageSegmentCoefficientsType
-	 * @generated
-	 */
-	public Adapter createFuselageSegmentCoefficientsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.FuselageSegmentsCoefficientsType <em>Fuselage Segments Coefficients Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.FuselageSegmentsCoefficientsType
-	 * @generated
-	 */
-	public Adapter createFuselageSegmentsCoefficientsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.FuselageSegmentStripCoefficientsType <em>Fuselage Segment Strip Coefficients Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.FuselageSegmentStripCoefficientsType
-	 * @generated
-	 */
-	public Adapter createFuselageSegmentStripCoefficientsTypeAdapter() {
 		return null;
 	}
 
@@ -9113,16 +10134,44 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.GearComponentsType <em>Gear Components Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.GalleyElementsType <em>Galley Elements Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.GearComponentsType
+	 * @see Cpacs.GalleyElementsType
 	 * @generated
 	 */
-	public Adapter createGearComponentsTypeAdapter() {
+	public Adapter createGalleyElementsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.GalleyElementType <em>Galley Element Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.GalleyElementType
+	 * @generated
+	 */
+	public Adapter createGalleyElementTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.GalleysType <em>Galleys Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.GalleysType
+	 * @generated
+	 */
+	public Adapter createGalleysTypeAdapter() {
 		return null;
 	}
 
@@ -9197,34 +10246,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.GenericComponentCoefficientsType <em>Generic Component Coefficients Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.GenericComponentCoefficientsType
-	 * @generated
-	 */
-	public Adapter createGenericComponentCoefficientsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.GenericComponentsCoefficientsType <em>Generic Components Coefficients Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.GenericComponentsCoefficientsType
-	 * @generated
-	 */
-	public Adapter createGenericComponentsCoefficientsTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.GenericCostType <em>Generic Cost Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -9235,6 +10256,34 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createGenericCostTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.GenericFloorElementsType <em>Generic Floor Elements Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.GenericFloorElementsType
+	 * @generated
+	 */
+	public Adapter createGenericFloorElementsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.GenericFloorModulesType <em>Generic Floor Modules Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.GenericFloorModulesType
+	 * @generated
+	 */
+	public Adapter createGenericFloorModulesTypeAdapter() {
 		return null;
 	}
 
@@ -9263,6 +10312,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createGenericGeometryComponentsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.GenericGeometryComponentType <em>Generic Geometry Component Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.GenericGeometryComponentType
+	 * @generated
+	 */
+	public Adapter createGenericGeometryComponentTypeAdapter() {
 		return null;
 	}
 
@@ -9305,20 +10368,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createGenericSystemTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.GeogenWingOutputOptionsType <em>Geogen Wing Output Options Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.GeogenWingOutputOptionsType
-	 * @generated
-	 */
-	public Adapter createGeogenWingOutputOptionsTypeAdapter() {
 		return null;
 	}
 
@@ -9379,6 +10428,34 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.GlobalFlightPointType <em>Global Flight Point Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.GlobalFlightPointType
+	 * @generated
+	 */
+	public Adapter createGlobalFlightPointTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.GlobalPerformanceCasesType <em>Global Performance Cases Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.GlobalPerformanceCasesType
+	 * @generated
+	 */
+	public Adapter createGlobalPerformanceCasesTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.GroundLoadCasesType <em>Ground Load Cases Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -9389,20 +10466,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createGroundLoadCasesTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.GroundLoadCaseType <em>Ground Load Case Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.GroundLoadCaseType
-	 * @generated
-	 */
-	public Adapter createGroundLoadCaseTypeAdapter() {
 		return null;
 	}
 
@@ -9463,44 +10526,16 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.HandbookAeroLastTransitionRegionType <em>Handbook Aero Last Transition Region Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.GustShapeType <em>Gust Shape Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.HandbookAeroLastTransitionRegionType
+	 * @see Cpacs.GustShapeType
 	 * @generated
 	 */
-	public Adapter createHandbookAeroLastTransitionRegionTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.HandbookAeroPolynomialCoefficientsType <em>Handbook Aero Polynomial Coefficients Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.HandbookAeroPolynomialCoefficientsType
-	 * @generated
-	 */
-	public Adapter createHandbookAeroPolynomialCoefficientsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.HandbookAeroTransitionRegionType <em>Handbook Aero Transition Region Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.HandbookAeroTransitionRegionType
-	 * @generated
-	 */
-	public Adapter createHandbookAeroTransitionRegionTypeAdapter() {
+	public Adapter createGustShapeTypeAdapter() {
 		return null;
 	}
 
@@ -9515,6 +10550,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createHeaderTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.HeadingType <em>Heading Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.HeadingType
+	 * @generated
+	 */
+	public Adapter createHeadingTypeAdapter() {
 		return null;
 	}
 
@@ -9571,20 +10620,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createHtpStructElemDefTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.IdentifierType <em>Identifier Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.IdentifierType
-	 * @generated
-	 */
-	public Adapter createIdentifierTypeAdapter() {
 		return null;
 	}
 
@@ -9715,6 +10750,34 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.InternalPressuresType <em>Internal Pressures Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.InternalPressuresType
+	 * @generated
+	 */
+	public Adapter createInternalPressuresTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.InternalPressureType <em>Internal Pressure Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.InternalPressureType
+	 * @generated
+	 */
+	public Adapter createInternalPressureTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.InterpolationType <em>Interpolation Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -9767,6 +10830,104 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createIsotropicPropertiesTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LandingGearBaseType <em>Landing Gear Base Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LandingGearBaseType
+	 * @generated
+	 */
+	public Adapter createLandingGearBaseTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LandingGearBrakingStateType <em>Landing Gear Braking State Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LandingGearBrakingStateType
+	 * @generated
+	 */
+	public Adapter createLandingGearBrakingStateTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LandingGearComponentAssemblyType <em>Landing Gear Component Assembly Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LandingGearComponentAssemblyType
+	 * @generated
+	 */
+	public Adapter createLandingGearComponentAssemblyTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LandingGearControlFunctionsType <em>Landing Gear Control Functions Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LandingGearControlFunctionsType
+	 * @generated
+	 */
+	public Adapter createLandingGearControlFunctionsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LandingGearControlType <em>Landing Gear Control Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LandingGearControlType
+	 * @generated
+	 */
+	public Adapter createLandingGearControlTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LandingGearExtensionFunctionStepType <em>Landing Gear Extension Function Step Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LandingGearExtensionFunctionStepType
+	 * @generated
+	 */
+	public Adapter createLandingGearExtensionFunctionStepTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LandingGearExtensionFunctionType <em>Landing Gear Extension Function Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LandingGearExtensionFunctionType
+	 * @generated
+	 */
+	public Adapter createLandingGearExtensionFunctionTypeAdapter() {
 		return null;
 	}
 
@@ -9883,16 +11044,72 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LandingGearSettingType <em>Landing Gear Setting Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.LandingGearSteeringFunctionStepType <em>Landing Gear Steering Function Step Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.LandingGearSettingType
+	 * @see Cpacs.LandingGearSteeringFunctionStepType
 	 * @generated
 	 */
-	public Adapter createLandingGearSettingTypeAdapter() {
+	public Adapter createLandingGearSteeringFunctionStepTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LandingGearSteeringFunctionType <em>Landing Gear Steering Function Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LandingGearSteeringFunctionType
+	 * @generated
+	 */
+	public Adapter createLandingGearSteeringFunctionTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LandingGearStrutAttachmentType <em>Landing Gear Strut Attachment Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LandingGearStrutAttachmentType
+	 * @generated
+	 */
+	public Adapter createLandingGearStrutAttachmentTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LandingGearsType <em>Landing Gears Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LandingGearsType
+	 * @generated
+	 */
+	public Adapter createLandingGearsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LandingGearSupportBeamPositionType <em>Landing Gear Support Beam Position Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LandingGearSupportBeamPositionType
+	 * @generated
+	 */
+	public Adapter createLandingGearSupportBeamPositionTypeAdapter() {
 		return null;
 	}
 
@@ -9921,6 +11138,48 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createLateralCapTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LatitudeType <em>Latitude Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LatitudeType
+	 * @generated
+	 */
+	public Adapter createLatitudeTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LavatoriesType <em>Lavatories Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LavatoriesType
+	 * @generated
+	 */
+	public Adapter createLavatoriesTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LavatoryElementsType <em>Lavatory Elements Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LavatoryElementsType
+	 * @generated
+	 */
+	public Adapter createLavatoryElementsTypeAdapter() {
 		return null;
 	}
 
@@ -10023,6 +11282,48 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadApplicationPointSetsType <em>Load Application Point Sets Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LoadApplicationPointSetsType
+	 * @generated
+	 */
+	public Adapter createLoadApplicationPointSetsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadApplicationPointSetType <em>Load Application Point Set Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LoadApplicationPointSetType
+	 * @generated
+	 */
+	public Adapter createLoadApplicationPointSetTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadApplicationPointsType <em>Load Application Points Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LoadApplicationPointsType
+	 * @generated
+	 */
+	public Adapter createLoadApplicationPointsTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.LoadBreakdownType <em>Load Breakdown Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -10037,100 +11338,58 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseEnginesType <em>Load Case Engines Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseAccelerationsType <em>Load Case Accelerations Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.LoadCaseEnginesType
+	 * @see Cpacs.LoadCaseAccelerationsType
 	 * @generated
 	 */
-	public Adapter createLoadCaseEnginesTypeAdapter() {
+	public Adapter createLoadCaseAccelerationsTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseLandingGearsType <em>Load Case Landing Gears Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseGustType <em>Load Case Gust Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.LoadCaseLandingGearsType
+	 * @see Cpacs.LoadCaseGustType
 	 * @generated
 	 */
-	public Adapter createLoadCaseLandingGearsTypeAdapter() {
+	public Adapter createLoadCaseGustTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseMassType <em>Load Case Mass Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseLoadFactorsType <em>Load Case Load Factors Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.LoadCaseMassType
+	 * @see Cpacs.LoadCaseLoadFactorsType
 	 * @generated
 	 */
-	public Adapter createLoadCaseMassTypeAdapter() {
+	public Adapter createLoadCaseLoadFactorsTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseRotationType <em>Load Case Rotation Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseSpecificationType <em>Load Case Specification Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.LoadCaseRotationType
+	 * @see Cpacs.LoadCaseSpecificationType
 	 * @generated
 	 */
-	public Adapter createLoadCaseRotationTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseRotationVelocityType <em>Load Case Rotation Velocity Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.LoadCaseRotationVelocityType
-	 * @generated
-	 */
-	public Adapter createLoadCaseRotationVelocityTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseSettingsType <em>Load Case Settings Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.LoadCaseSettingsType
-	 * @generated
-	 */
-	public Adapter createLoadCaseSettingsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseStateType <em>Load Case State Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.LoadCaseStateType
-	 * @generated
-	 */
-	public Adapter createLoadCaseStateTypeAdapter() {
+	public Adapter createLoadCaseSpecificationTypeAdapter() {
 		return null;
 	}
 
@@ -10149,114 +11408,128 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseTranslationAccelerationType <em>Load Case Translation Acceleration Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseSuperpositionType <em>Load Case Superposition Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.LoadCaseTranslationAccelerationType
+	 * @see Cpacs.LoadCaseSuperpositionType
 	 * @generated
 	 */
-	public Adapter createLoadCaseTranslationAccelerationTypeAdapter() {
+	public Adapter createLoadCaseSuperpositionTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseTranslationType <em>Load Case Translation Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseType <em>Load Case Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.LoadCaseTranslationType
+	 * @see Cpacs.LoadCaseType
 	 * @generated
 	 */
-	public Adapter createLoadCaseTranslationTypeAdapter() {
+	public Adapter createLoadCaseTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadCaseTranslationVelocityType <em>Load Case Translation Velocity Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadEnvelopesType <em>Load Envelopes Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.LoadCaseTranslationVelocityType
+	 * @see Cpacs.LoadEnvelopesType
 	 * @generated
 	 */
-	public Adapter createLoadCaseTranslationVelocityTypeAdapter() {
+	public Adapter createLoadEnvelopesTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadConditionType <em>Load Condition Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadEnvelopeType <em>Load Envelope Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.LoadConditionType
+	 * @see Cpacs.LoadEnvelopeType
 	 * @generated
 	 */
-	public Adapter createLoadConditionTypeAdapter() {
+	public Adapter createLoadEnvelopeTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadReferenceAxisPointsType <em>Load Reference Axis Points Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadReferenceLineType <em>Load Reference Line Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.LoadReferenceAxisPointsType
+	 * @see Cpacs.LoadReferenceLineType
 	 * @generated
 	 */
-	public Adapter createLoadReferenceAxisPointsTypeAdapter() {
+	public Adapter createLoadReferenceLineTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadReferenceAxisPointType <em>Load Reference Axis Point Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadReferencePointType <em>Load Reference Point Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.LoadReferenceAxisPointType
+	 * @see Cpacs.LoadReferencePointType
 	 * @generated
 	 */
-	public Adapter createLoadReferenceAxisPointTypeAdapter() {
+	public Adapter createLoadReferencePointTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadReferenceType <em>Load Reference Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadSetsType <em>Load Sets Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.LoadReferenceType
+	 * @see Cpacs.LoadSetsType
 	 * @generated
 	 */
-	public Adapter createLoadReferenceTypeAdapter() {
+	public Adapter createLoadSetsTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.LoadsEnvelopeType <em>Loads Envelope Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.LoadSetType <em>Load Set Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.LoadsEnvelopeType
+	 * @see Cpacs.LoadSetType
 	 * @generated
 	 */
-	public Adapter createLoadsEnvelopeTypeAdapter() {
+	public Adapter createLoadSetTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LogEntryType <em>Log Entry Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LogEntryType
+	 * @generated
+	 */
+	public Adapter createLogEntryTypeAdapter() {
 		return null;
 	}
 
@@ -10303,6 +11576,90 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LongitudeType <em>Longitude Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LongitudeType
+	 * @generated
+	 */
+	public Adapter createLongitudeTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LowerHeightFractionType <em>Lower Height Fraction Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LowerHeightFractionType
+	 * @generated
+	 */
+	public Adapter createLowerHeightFractionTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LuggageCompartmentElementsType <em>Luggage Compartment Elements Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LuggageCompartmentElementsType
+	 * @generated
+	 */
+	public Adapter createLuggageCompartmentElementsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.LuggageCompartmentsType <em>Luggage Compartments Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.LuggageCompartmentsType
+	 * @generated
+	 */
+	public Adapter createLuggageCompartmentsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.MachNumberType <em>Mach Number Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.MachNumberType
+	 * @generated
+	 */
+	public Adapter createMachNumberTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.MAdditionalCenterTanksType <em>MAdditional Center Tanks Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.MAdditionalCenterTanksType
+	 * @generated
+	 */
+	public Adapter createMAdditionalCenterTanksTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.MainActuatorType <em>Main Actuator Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -10317,20 +11674,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.MainGearGlobalType <em>Main Gear Global Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.MainGearGlobalType
-	 * @generated
-	 */
-	public Adapter createMainGearGlobalTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.MainGearsType <em>Main Gears Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -10341,62 +11684,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMainGearsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.MainGearSupportBeamPositionType <em>Main Gear Support Beam Position Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.MainGearSupportBeamPositionType
-	 * @generated
-	 */
-	public Adapter createMainGearSupportBeamPositionTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.MainGearSupportBeamType <em>Main Gear Support Beam Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.MainGearSupportBeamType
-	 * @generated
-	 */
-	public Adapter createMainGearSupportBeamTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.MainGearType <em>Main Gear Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.MainGearType
-	 * @generated
-	 */
-	public Adapter createMainGearTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.MainGearWingAttachmentType <em>Main Gear Wing Attachment Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.MainGearWingAttachmentType
-	 * @generated
-	 */
-	public Adapter createMainGearWingAttachmentTypeAdapter() {
 		return null;
 	}
 
@@ -11073,6 +12360,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.MEngineAPUOilsType <em>MEngine APU Oils Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.MEngineAPUOilsType
+	 * @generated
+	 */
+	public Adapter createMEngineAPUOilsTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.MEngineControlType <em>MEngine Control Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -11437,6 +12738,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.MissionEndRunwayType <em>Mission End Runway Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.MissionEndRunwayType
+	 * @generated
+	 */
+	public Adapter createMissionEndRunwayTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.MissionPerformanceMapDefinitionType <em>Mission Performance Map Definition Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -11545,6 +12860,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMissionStartConditionTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.MissionStartRunwayType <em>Mission Start Runway Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.MissionStartRunwayType
+	 * @generated
+	 */
+	public Adapter createMissionStartRunwayTypeAdapter() {
 		return null;
 	}
 
@@ -11675,20 +13004,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.MMiscellaneousType <em>MMiscellaneous Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.MMiscellaneousType
-	 * @generated
-	 */
-	public Adapter createMMiscellaneousTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.MMoveableLeadingEdgesType <em>MMoveable Leading Edges Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -11769,20 +13084,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMNoseGearsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.ModelType <em>Model Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.ModelType
-	 * @generated
-	 */
-	public Adapter createModelTypeAdapter() {
 		return null;
 	}
 
@@ -11941,6 +13242,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.MRemovableCrewRestsType <em>MRemovable Crew Rests Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.MRemovableCrewRestsType
+	 * @generated
+	 */
+	public Adapter createMRemovableCrewRestsTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.MRibsType <em>MRibs Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -12039,6 +13354,34 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.MSparCellsType <em>MSpar Cells Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.MSparCellsType
+	 * @generated
+	 */
+	public Adapter createMSparCellsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.MSparSkinsType <em>MSpar Skins Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.MSparSkinsType
+	 * @generated
+	 */
+	public Adapter createMSparSkinsTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.MSparsType <em>MSpars Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -12049,6 +13392,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMSparsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.MSparType <em>MSpar Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.MSparType
+	 * @generated
+	 */
+	public Adapter createMSparTypeAdapter() {
 		return null;
 	}
 
@@ -12123,6 +13480,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.MToiletFluidsType <em>MToilet Fluids Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.MToiletFluidsType
+	 * @generated
+	 */
+	public Adapter createMToiletFluidsTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.MTrailingEdgeDevicesType <em>MTrailing Edge Devices Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -12179,6 +13550,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.MUnusableFuelsType <em>MUnusable Fuels Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.MUnusableFuelsType
+	 * @generated
+	 */
+	public Adapter createMUnusableFuelsTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.MVacuumWasteSystemsType <em>MVacuum Waste Systems Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -12193,6 +13578,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.MWallsType <em>MWalls Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.MWallsType
+	 * @generated
+	 */
+	public Adapter createMWallsTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.MWasteWaterSystemsType <em>MWaste Water Systems Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -12203,6 +13602,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMWasteWaterSystemsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.MWaterReservoirsType <em>MWater Reservoirs Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.MWaterReservoirsType
+	 * @generated
+	 */
+	public Adapter createMWaterReservoirsTypeAdapter() {
 		return null;
 	}
 
@@ -12361,30 +13774,30 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.NodalLoadsType <em>Nodal Loads Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.NameType <em>Name Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.NodalLoadsType
+	 * @see Cpacs.NameType
 	 * @generated
 	 */
-	public Adapter createNodalLoadsTypeAdapter() {
+	public Adapter createNameTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.NodalLoadType <em>Nodal Load Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.NameType1 <em>Name Type1</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.NodalLoadType
+	 * @see Cpacs.NameType1
 	 * @generated
 	 */
-	public Adapter createNodalLoadTypeAdapter() {
+	public Adapter createNameType1Adapter() {
 		return null;
 	}
 
@@ -12403,20 +13816,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.NoseGearGlobalType <em>Nose Gear Global Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.NoseGearGlobalType
-	 * @generated
-	 */
-	public Adapter createNoseGearGlobalTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.NoseGearsType <em>Nose Gears Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -12427,20 +13826,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createNoseGearsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.NoseGearType <em>Nose Gear Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.NoseGearType
-	 * @generated
-	 */
-	public Adapter createNoseGearTypeAdapter() {
 		return null;
 	}
 
@@ -12497,20 +13882,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createOperationLimitIncrementsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.OrientationType <em>Orientation Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.OrientationType
-	 * @generated
-	 */
-	public Adapter createOrientationTypeAdapter() {
 		return null;
 	}
 
@@ -12641,34 +14012,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.PerformanceCasesType <em>Performance Cases Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.PerformanceCasesType
-	 * @generated
-	 */
-	public Adapter createPerformanceCasesTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.PerformanceCaseType <em>Performance Case Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.PerformanceCaseType
-	 * @generated
-	 */
-	public Adapter createPerformanceCaseTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.PerformanceMapSelectionType <em>Performance Map Selection Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -12679,6 +14022,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPerformanceMapSelectionTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.PerformanceRequirementConfigurationsType <em>Performance Requirement Configurations Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.PerformanceRequirementConfigurationsType
+	 * @generated
+	 */
+	public Adapter createPerformanceRequirementConfigurationsTypeAdapter() {
 		return null;
 	}
 
@@ -12721,6 +14078,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPhiTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.PintleStrutsType <em>Pintle Struts Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.PintleStrutsType
+	 * @generated
+	 */
+	public Adapter createPintleStrutsTypeAdapter() {
 		return null;
 	}
 
@@ -12893,30 +14264,58 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.PointPerformancesType <em>Point Performances Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.PointPerformanceConstraintsType <em>Point Performance Constraints Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.PointPerformancesType
+	 * @see Cpacs.PointPerformanceConstraintsType
 	 * @generated
 	 */
-	public Adapter createPointPerformancesTypeAdapter() {
+	public Adapter createPointPerformanceConstraintsTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.PointPerformanceType <em>Point Performance Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.PointPerformanceDefinitionsType <em>Point Performance Definitions Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.PointPerformanceType
+	 * @see Cpacs.PointPerformanceDefinitionsType
 	 * @generated
 	 */
-	public Adapter createPointPerformanceTypeAdapter() {
+	public Adapter createPointPerformanceDefinitionsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.PointPerformanceDefinitionType <em>Point Performance Definition Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.PointPerformanceDefinitionType
+	 * @generated
+	 */
+	public Adapter createPointPerformanceDefinitionTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.PointPerformanceRequirementsType <em>Point Performance Requirements Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.PointPerformanceRequirementsType
+	 * @generated
+	 */
+	public Adapter createPointPerformanceRequirementsTypeAdapter() {
 		return null;
 	}
 
@@ -13033,6 +14432,48 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.PosExcl0DoubleBaseType <em>Pos Excl0 Double Base Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.PosExcl0DoubleBaseType
+	 * @generated
+	 */
+	public Adapter createPosExcl0DoubleBaseTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.PosExcl0IntBaseType <em>Pos Excl0 Int Base Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.PosExcl0IntBaseType
+	 * @generated
+	 */
+	public Adapter createPosExcl0IntBaseTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.PosIntVectorBaseType <em>Pos Int Vector Base Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.PosIntVectorBaseType
+	 * @generated
+	 */
+	public Adapter createPosIntVectorBaseTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.PositioningsType <em>Positionings Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -13057,6 +14498,48 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPositioningTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.PowerConsumedType <em>Power Consumed Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.PowerConsumedType
+	 * @generated
+	 */
+	public Adapter createPowerConsumedTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.PowerFractionType <em>Power Fraction Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.PowerFractionType
+	 * @generated
+	 */
+	public Adapter createPowerFractionTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.PowerRemainingType <em>Power Remaining Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.PowerRemainingType
+	 * @generated
+	 */
+	public Adapter createPowerRemainingTypeAdapter() {
 		return null;
 	}
 
@@ -13383,20 +14866,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.QuasiSteadyRotationType <em>Quasi Steady Rotation Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.QuasiSteadyRotationType
-	 * @generated
-	 */
-	public Adapter createQuasiSteadyRotationTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.RadiativeForcingType <em>Radiative Forcing Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -13407,6 +14876,48 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createRadiativeForcingTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.RangeType <em>Range Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.RangeType
+	 * @generated
+	 */
+	public Adapter createRangeTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.RateOfClimbType <em>Rate Of Climb Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.RateOfClimbType
+	 * @generated
+	 */
+	public Adapter createRateOfClimbTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.RectangleProfileType <em>Rectangle Profile Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.RectangleProfileType
+	 * @generated
+	 */
+	public Adapter createRectangleProfileTypeAdapter() {
 		return null;
 	}
 
@@ -13435,6 +14946,90 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createReferenceTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.RelativeStrutPositionType <em>Relative Strut Position Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.RelativeStrutPositionType
+	 * @generated
+	 */
+	public Adapter createRelativeStrutPositionTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.ReleasedStoresType <em>Released Stores Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.ReleasedStoresType
+	 * @generated
+	 */
+	public Adapter createReleasedStoresTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.ReleasedStoreType <em>Released Store Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.ReleasedStoreType
+	 * @generated
+	 */
+	public Adapter createReleasedStoreTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.RemainingContributionsType <em>Remaining Contributions Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.RemainingContributionsType
+	 * @generated
+	 */
+	public Adapter createRemainingContributionsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.RemainingContributionType <em>Remaining Contribution Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.RemainingContributionType
+	 * @generated
+	 */
+	public Adapter createRemainingContributionTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.RequirementClassificationType <em>Requirement Classification Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.RequirementClassificationType
+	 * @generated
+	 */
+	public Adapter createRequirementClassificationTypeAdapter() {
 		return null;
 	}
 
@@ -13859,6 +15454,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.RunwayStartPositionType <em>Runway Start Position Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.RunwayStartPositionType
+	 * @generated
+	 */
+	public Adapter createRunwayStartPositionTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.RunwaysType <em>Runways Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -13887,6 +15496,48 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.RunwayType1 <em>Runway Type1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.RunwayType1
+	 * @generated
+	 */
+	public Adapter createRunwayType1Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.SeatElementsType <em>Seat Elements Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.SeatElementsType
+	 * @generated
+	 */
+	public Adapter createSeatElementsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.SeatElementType <em>Seat Element Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.SeatElementType
+	 * @generated
+	 */
+	public Adapter createSeatElementTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.SeatModulesType <em>Seat Modules Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -13897,34 +15548,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSeatModulesTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.SeatModuleType <em>Seat Module Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.SeatModuleType
-	 * @generated
-	 */
-	public Adapter createSeatModuleTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.SectionDistributionModeType <em>Section Distribution Mode Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.SectionDistributionModeType
-	 * @generated
-	 */
-	public Adapter createSectionDistributionModeTypeAdapter() {
 		return null;
 	}
 
@@ -14125,6 +15748,34 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.SidewallPanelElementsType <em>Sidewall Panel Elements Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.SidewallPanelElementsType
+	 * @generated
+	 */
+	public Adapter createSidewallPanelElementsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.SidewallPanelsType <em>Sidewall Panels Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.SidewallPanelsType
+	 * @generated
+	 */
+	public Adapter createSidewallPanelsTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.SingleGenericMassType <em>Single Generic Mass Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -14139,34 +15790,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.SizingTypeType <em>Sizing Type Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.SizingTypeType
-	 * @generated
-	 */
-	public Adapter createSizingTypeTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.SkidGearGlobalType <em>Skid Gear Global Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.SkidGearGlobalType
-	 * @generated
-	 */
-	public Adapter createSkidGearGlobalTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.SkidGearsType <em>Skid Gears Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -14177,20 +15800,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSkidGearsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.SkidGearType <em>Skid Gear Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.SkidGearType
-	 * @generated
-	 */
-	public Adapter createSkidGearTypeAdapter() {
 		return null;
 	}
 
@@ -14349,6 +15958,76 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.SpecificConfigurationSegmentsType <em>Specific Configuration Segments Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.SpecificConfigurationSegmentsType
+	 * @generated
+	 */
+	public Adapter createSpecificConfigurationSegmentsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.SpecificConfigurationSegmentType <em>Specific Configuration Segment Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.SpecificConfigurationSegmentType
+	 * @generated
+	 */
+	public Adapter createSpecificConfigurationSegmentTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.SpecificConfigurationUIDsType <em>Specific Configuration UI Ds Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.SpecificConfigurationUIDsType
+	 * @generated
+	 */
+	public Adapter createSpecificConfigurationUIDsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.SpecificConfigurationUIDType <em>Specific Configuration UID Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.SpecificConfigurationUIDType
+	 * @generated
+	 */
+	public Adapter createSpecificConfigurationUIDTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.SpecificExcessPowerType <em>Specific Excess Power Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.SpecificExcessPowerType
+	 * @generated
+	 */
+	public Adapter createSpecificExcessPowerTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.SpecificHeatMapType <em>Specific Heat Map Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -14391,6 +16070,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.SpeedDesignatorsType <em>Speed Designators Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.SpeedDesignatorsType
+	 * @generated
+	 */
+	public Adapter createSpeedDesignatorsTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.SpoilersType <em>Spoilers Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -14415,6 +16108,34 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSpoilerTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.StandardProfileSheetIDType <em>Standard Profile Sheet ID Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.StandardProfileSheetIDType
+	 * @generated
+	 */
+	public Adapter createStandardProfileSheetIDTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.StandardProfileType <em>Standard Profile Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.StandardProfileType
+	 * @generated
+	 */
+	public Adapter createStandardProfileTypeAdapter() {
 		return null;
 	}
 
@@ -14513,6 +16234,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createStringerFramePositionTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.StringerFramePositionUIDsType <em>Stringer Frame Position UI Ds Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.StringerFramePositionUIDsType
+	 * @generated
+	 */
+	public Adapter createStringerFramePositionUIDsTypeAdapter() {
 		return null;
 	}
 
@@ -14671,6 +16406,34 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.StrutAssemblyType <em>Strut Assembly Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.StrutAssemblyType
+	 * @generated
+	 */
+	public Adapter createStrutAssemblyTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.StrutPropertiesType <em>Strut Properties Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.StrutPropertiesType
+	 * @generated
+	 */
+	public Adapter createStrutPropertiesTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.StrutType <em>Strut Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -14681,20 +16444,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createStrutTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.StrutWithActuatorType <em>Strut With Actuator Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.StrutWithActuatorType
-	 * @generated
-	 */
-	public Adapter createStrutWithActuatorTypeAdapter() {
 		return null;
 	}
 
@@ -14755,16 +16504,30 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.SymmetryType3 <em>Symmetry Type3</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.SuperEllipseProfileType <em>Super Ellipse Profile Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.SymmetryType3
+	 * @see Cpacs.SuperEllipseProfileType
 	 * @generated
 	 */
-	public Adapter createSymmetryType3Adapter() {
+	public Adapter createSuperEllipseProfileTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.SupportBeamType <em>Support Beam Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.SupportBeamType
+	 * @generated
+	 */
+	public Adapter createSupportBeamTypeAdapter() {
 		return null;
 	}
 
@@ -14881,6 +16644,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.TimeConstraintBaseType <em>Time Constraint Base Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.TimeConstraintBaseType
+	 * @generated
+	 */
+	public Adapter createTimeConstraintBaseTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.ToolspecificType <em>Toolspecific Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -14965,30 +16742,58 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.TrackCarType <em>Track Car Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.TrackJointCoordinatesType <em>Track Joint Coordinates Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.TrackCarType
+	 * @see Cpacs.TrackJointCoordinatesType
 	 * @generated
 	 */
-	public Adapter createTrackCarTypeAdapter() {
+	public Adapter createTrackJointCoordinatesTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.TrackFairingType <em>Track Fairing Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.TrackJointPositionsType <em>Track Joint Positions Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.TrackFairingType
+	 * @see Cpacs.TrackJointPositionsType
 	 * @generated
 	 */
-	public Adapter createTrackFairingTypeAdapter() {
+	public Adapter createTrackJointPositionsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.TrackJointPositionType <em>Track Joint Position Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.TrackJointPositionType
+	 * @generated
+	 */
+	public Adapter createTrackJointPositionTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.TrackSecondaryStructureType <em>Track Secondary Structure Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.TrackSecondaryStructureType
+	 * @generated
+	 */
+	public Adapter createTrackSecondaryStructureTypeAdapter() {
 		return null;
 	}
 
@@ -15007,30 +16812,30 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.TrackStrut1Type <em>Track Strut1 Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.TrackStrutsType <em>Track Struts Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.TrackStrut1Type
+	 * @see Cpacs.TrackStrutsType
 	 * @generated
 	 */
-	public Adapter createTrackStrut1TypeAdapter() {
+	public Adapter createTrackStrutsTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.TrackStrut2Type <em>Track Strut2 Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.TrackStrutType <em>Track Strut Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.TrackStrut2Type
+	 * @see Cpacs.TrackStrutType
 	 * @generated
 	 */
-	public Adapter createTrackStrut2TypeAdapter() {
+	public Adapter createTrackStrutTypeAdapter() {
 		return null;
 	}
 
@@ -15259,16 +17064,72 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.TrimParametersType <em>Trim Parameters Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.TrimCaseType <em>Trim Case Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.TrimParametersType
+	 * @see Cpacs.TrimCaseType
 	 * @generated
 	 */
-	public Adapter createTrimParametersTypeAdapter() {
+	public Adapter createTrimCaseTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.TrimRequirementsType <em>Trim Requirements Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.TrimRequirementsType
+	 * @generated
+	 */
+	public Adapter createTrimRequirementsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.TrimRequirementType <em>Trim Requirement Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.TrimRequirementType
+	 * @generated
+	 */
+	public Adapter createTrimRequirementTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.TrimType <em>Trim Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.TrimType
+	 * @generated
+	 */
+	public Adapter createTrimTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.TurnAngleType <em>Turn Angle Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.TurnAngleType
+	 * @generated
+	 */
+	public Adapter createTurnAngleTypeAdapter() {
 		return null;
 	}
 
@@ -15287,72 +17148,30 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.TypeType1 <em>Type Type1</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.TypeType <em>Type Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.TypeType1
+	 * @see Cpacs.TypeType
 	 * @generated
 	 */
-	public Adapter createTypeType1Adapter() {
+	public Adapter createTypeTypeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.TypeType2 <em>Type Type2</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.TypeType4 <em>Type Type4</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.TypeType2
+	 * @see Cpacs.TypeType4
 	 * @generated
 	 */
-	public Adapter createTypeType2Adapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.TypeType5 <em>Type Type5</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.TypeType5
-	 * @generated
-	 */
-	public Adapter createTypeType5Adapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.TypeType6 <em>Type Type6</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.TypeType6
-	 * @generated
-	 */
-	public Adapter createTypeType6Adapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.TypeType7 <em>Type Type7</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.TypeType7
-	 * @generated
-	 */
-	public Adapter createTypeType7Adapter() {
+	public Adapter createTypeType4Adapter() {
 		return null;
 	}
 
@@ -15385,30 +17204,16 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.UpdatesType <em>Updates Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link Cpacs.UIDSequenceType <em>UID Sequence Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Cpacs.UpdatesType
+	 * @see Cpacs.UIDSequenceType
 	 * @generated
 	 */
-	public Adapter createUpdatesTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.UpdateType <em>Update Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.UpdateType
-	 * @generated
-	 */
-	public Adapter createUpdateTypeAdapter() {
+	public Adapter createUIDSequenceTypeAdapter() {
 		return null;
 	}
 
@@ -15423,6 +17228,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createUpperLinksTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.VariableConditionsType <em>Variable Conditions Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.VariableConditionsType
+	 * @generated
+	 */
+	public Adapter createVariableConditionsTypeAdapter() {
 		return null;
 	}
 
@@ -15455,6 +17274,34 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.VehicleConfigurationsType <em>Vehicle Configurations Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.VehicleConfigurationsType
+	 * @generated
+	 */
+	public Adapter createVehicleConfigurationsTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.VehicleConfigurationType <em>Vehicle Configuration Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.VehicleConfigurationType
+	 * @generated
+	 */
+	public Adapter createVehicleConfigurationTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.VehiclesType <em>Vehicles Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -15465,6 +17312,34 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createVehiclesTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.VersionInfosType <em>Version Infos Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.VersionInfosType
+	 * @generated
+	 */
+	public Adapter createVersionInfosTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.VersionInfoType <em>Version Info Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.VersionInfoType
+	 * @generated
+	 */
+	public Adapter createVersionInfoTypeAdapter() {
 		return null;
 	}
 
@@ -15721,20 +17596,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.WheelsType <em>Wheels Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.WheelsType
-	 * @generated
-	 */
-	public Adapter createWheelsTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.WheelType <em>Wheel Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -15819,6 +17680,20 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Cpacs.WingAttachmentPositioningType <em>Wing Attachment Positioning Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Cpacs.WingAttachmentPositioningType
+	 * @generated
+	 */
+	public Adapter createWingAttachmentPositioningTypeAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.WingCellsType <em>Wing Cells Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -15843,20 +17718,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createWingCellTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.WingCoefficientsType <em>Wing Coefficients Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.WingCoefficientsType
-	 * @generated
-	 */
-	public Adapter createWingCoefficientsTypeAdapter() {
 		return null;
 	}
 
@@ -16183,20 +18044,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.WingsCoefficientsType <em>Wings Coefficients Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.WingsCoefficientsType
-	 * @generated
-	 */
-	public Adapter createWingsCoefficientsTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Cpacs.WingSectionsType <em>Wing Sections Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -16221,48 +18068,6 @@ public class CpacsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createWingSectionTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.WingSegmentCoefficientsType <em>Wing Segment Coefficients Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.WingSegmentCoefficientsType
-	 * @generated
-	 */
-	public Adapter createWingSegmentCoefficientsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.WingSegmentsCoefficientsType <em>Wing Segments Coefficients Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.WingSegmentsCoefficientsType
-	 * @generated
-	 */
-	public Adapter createWingSegmentsCoefficientsTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Cpacs.WingSegmentStripCoefficientsType <em>Wing Segment Strip Coefficients Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Cpacs.WingSegmentStripCoefficientsType
-	 * @generated
-	 */
-	public Adapter createWingSegmentStripCoefficientsTypeAdapter() {
 		return null;
 	}
 

@@ -36,8 +36,8 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
-import Cpacs.CpacsFactory;
 import Cpacs.CpacsType;
+import Cpacs.CpacsFactory;
 import Cpacs.StringBaseType;
 
 /**
@@ -337,12 +337,20 @@ public interface CPACSInitializer {
 			} else if (clazz.equals(boolean.class)) {
 
 				baseTypeObject.eSet(valueFeature, Boolean.valueOf(textContent));
+
 			} else {
+//				if(parentObject.eClass().getName().equals()) {
+//
+//				}
+
 				if (DEBUG_MODE) {
 					System.err
 							.println("CPACSInitializer: Missing class in implementation: " + baseTypeObject.getClass());
 				}
 			}
+
+//			System.out.println(parentObject.eClass().getName());
+//			System.out.println(UIDSequenceType.class);
 
 			// Then apply the EObject to the feature
 			try {
@@ -350,6 +358,15 @@ public interface CPACSInitializer {
 			} catch (ClassCastException e) {
 				if (DEBUG_MODE) {
 					System.err.println("CPACSInitializer: Could not cast to class for " + feature.getName());
+//					System.out.println(textContent);
+//					System.out.println(parentObject);
+//					System.out.println(feature);
+//					System.out.println(eClass);
+//					System.out.println(baseTypeObject);
+//					System.out.println(baseTypeObject.eClass());
+//					System.out.println(valueFeature);
+//					System.out.println(clazz);
+
 				}
 			}
 

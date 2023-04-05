@@ -53,7 +53,7 @@ public interface PressureBulkheadAssemblyPositionType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * UID of bulkhead element desription
+	 * UID of bulkhead element description
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Pressure Bulkhead Element UID</em>' containment reference.

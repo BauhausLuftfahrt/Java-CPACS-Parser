@@ -26,21 +26,21 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.FlightPerformanceCasesTypeImpl#getPerformanceCase <em>Performance Case</em>}</li>
+ *   <li>{@link Cpacs.impl.FlightPerformanceCasesTypeImpl#getFlightPerformanceCase <em>Flight Performance Case</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class FlightPerformanceCasesTypeImpl extends ComplexBaseTypeImpl implements FlightPerformanceCasesType {
 	/**
-	 * The cached value of the '{@link #getPerformanceCase() <em>Performance Case</em>}' containment reference list.
+	 * The cached value of the '{@link #getFlightPerformanceCase() <em>Flight Performance Case</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPerformanceCase()
+	 * @see #getFlightPerformanceCase()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<FlightPerformanceCaseType> performanceCase;
+	protected EList<FlightPerformanceCaseType> flightPerformanceCase;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,12 +67,13 @@ public class FlightPerformanceCasesTypeImpl extends ComplexBaseTypeImpl implemen
 	 * @generated
 	 */
 	@Override
-	public EList<FlightPerformanceCaseType> getPerformanceCase() {
-		if (performanceCase == null) {
-			performanceCase = new EObjectContainmentEList<FlightPerformanceCaseType>(FlightPerformanceCaseType.class,
-					this, CpacsPackage.FLIGHT_PERFORMANCE_CASES_TYPE__PERFORMANCE_CASE);
+	public EList<FlightPerformanceCaseType> getFlightPerformanceCase() {
+		if (flightPerformanceCase == null) {
+			flightPerformanceCase = new EObjectContainmentEList<FlightPerformanceCaseType>(
+					FlightPerformanceCaseType.class, this,
+					CpacsPackage.FLIGHT_PERFORMANCE_CASES_TYPE__FLIGHT_PERFORMANCE_CASE);
 		}
-		return performanceCase;
+		return flightPerformanceCase;
 	}
 
 	/**
@@ -83,8 +84,8 @@ public class FlightPerformanceCasesTypeImpl extends ComplexBaseTypeImpl implemen
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_PERFORMANCE_CASES_TYPE__PERFORMANCE_CASE:
-			return ((InternalEList<?>) getPerformanceCase()).basicRemove(otherEnd, msgs);
+		case CpacsPackage.FLIGHT_PERFORMANCE_CASES_TYPE__FLIGHT_PERFORMANCE_CASE:
+			return ((InternalEList<?>) getFlightPerformanceCase()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -97,8 +98,8 @@ public class FlightPerformanceCasesTypeImpl extends ComplexBaseTypeImpl implemen
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_PERFORMANCE_CASES_TYPE__PERFORMANCE_CASE:
-			return getPerformanceCase();
+		case CpacsPackage.FLIGHT_PERFORMANCE_CASES_TYPE__FLIGHT_PERFORMANCE_CASE:
+			return getFlightPerformanceCase();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -112,9 +113,9 @@ public class FlightPerformanceCasesTypeImpl extends ComplexBaseTypeImpl implemen
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_PERFORMANCE_CASES_TYPE__PERFORMANCE_CASE:
-			getPerformanceCase().clear();
-			getPerformanceCase().addAll((Collection<? extends FlightPerformanceCaseType>) newValue);
+		case CpacsPackage.FLIGHT_PERFORMANCE_CASES_TYPE__FLIGHT_PERFORMANCE_CASE:
+			getFlightPerformanceCase().clear();
+			getFlightPerformanceCase().addAll((Collection<? extends FlightPerformanceCaseType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -128,8 +129,8 @@ public class FlightPerformanceCasesTypeImpl extends ComplexBaseTypeImpl implemen
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_PERFORMANCE_CASES_TYPE__PERFORMANCE_CASE:
-			getPerformanceCase().clear();
+		case CpacsPackage.FLIGHT_PERFORMANCE_CASES_TYPE__FLIGHT_PERFORMANCE_CASE:
+			getFlightPerformanceCase().clear();
 			return;
 		}
 		super.eUnset(featureID);
@@ -143,8 +144,8 @@ public class FlightPerformanceCasesTypeImpl extends ComplexBaseTypeImpl implemen
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_PERFORMANCE_CASES_TYPE__PERFORMANCE_CASE:
-			return performanceCase != null && !performanceCase.isEmpty();
+		case CpacsPackage.FLIGHT_PERFORMANCE_CASES_TYPE__FLIGHT_PERFORMANCE_CASE:
+			return flightPerformanceCase != null && !flightPerformanceCase.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

@@ -11,7 +11,7 @@ package Cpacs;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.ControlSurfaceTrackTypeType#getEta <em>Eta</em>}</li>
+ *   <li>{@link Cpacs.ControlSurfaceTrackTypeType#getEtaPosition <em>Eta Position</em>}</li>
  *   <li>{@link Cpacs.ControlSurfaceTrackTypeType#getTrackType <em>Track Type</em>}</li>
  *   <li>{@link Cpacs.ControlSurfaceTrackTypeType#getTrackSubType <em>Track Sub Type</em>}</li>
  *   <li>{@link Cpacs.ControlSurfaceTrackTypeType#getActuator <em>Actuator</em>}</li>
@@ -25,31 +25,31 @@ package Cpacs;
  */
 public interface ControlSurfaceTrackTypeType extends ComplexBaseType {
 	/**
-	 * Returns the value of the '<em><b>Eta</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Eta Position</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Relative chordwise position of the track. Eta
 	 *                                 refers to the control surface.
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Eta</em>' containment reference.
-	 * @see #setEta(EtaIsoLineType)
-	 * @see Cpacs.CpacsPackage#getControlSurfaceTrackTypeType_Eta()
+	 * @return the value of the '<em>Eta Position</em>' containment reference.
+	 * @see #setEtaPosition(EtaIsoLineType)
+	 * @see Cpacs.CpacsPackage#getControlSurfaceTrackTypeType_EtaPosition()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='eta' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='etaPosition' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EtaIsoLineType getEta();
+	EtaIsoLineType getEtaPosition();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.ControlSurfaceTrackTypeType#getEta <em>Eta</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.ControlSurfaceTrackTypeType#getEtaPosition <em>Eta Position</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Eta</em>' containment reference.
-	 * @see #getEta()
+	 * @param value the new value of the '<em>Eta Position</em>' containment reference.
+	 * @see #getEtaPosition()
 	 * @generated
 	 */
-	void setEta(EtaIsoLineType value);
+	void setEtaPosition(EtaIsoLineType value);
 
 	/**
 	 * Returns the value of the '<em><b>Track Type</b></em>' containment reference.

@@ -29,7 +29,7 @@ public interface StringArrayBaseType extends StringBaseType {
 	 * @see #unsetMapType()
 	 * @see #setMapType(String)
 	 * @see Cpacs.CpacsPackage#getStringArrayBaseType_MapType()
-	 * @model default="array" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 * @model default="array" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='attribute' name='mapType' namespace='##targetNamespace'"
 	 * @generated
 	 */

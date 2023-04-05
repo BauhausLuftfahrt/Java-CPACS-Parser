@@ -4,7 +4,7 @@ package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
 import Cpacs.SideStrutsType;
-import Cpacs.StrutWithActuatorType;
+import Cpacs.StrutAssemblyType;
 
 import java.util.Collection;
 
@@ -14,6 +14,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -31,7 +33,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class SideStrutsTypeImpl extends ComplexBaseTypeImpl implements SideStrutsType {
+public class SideStrutsTypeImpl extends MinimalEObjectImpl.Container implements SideStrutsType {
 	/**
 	 * The cached value of the '{@link #getSideStrut() <em>Side Strut</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -40,7 +42,7 @@ public class SideStrutsTypeImpl extends ComplexBaseTypeImpl implements SideStrut
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<StrutWithActuatorType> sideStrut;
+	protected EList<StrutAssemblyType> sideStrut;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,9 +69,9 @@ public class SideStrutsTypeImpl extends ComplexBaseTypeImpl implements SideStrut
 	 * @generated
 	 */
 	@Override
-	public EList<StrutWithActuatorType> getSideStrut() {
+	public EList<StrutAssemblyType> getSideStrut() {
 		if (sideStrut == null) {
-			sideStrut = new EObjectContainmentEList<StrutWithActuatorType>(StrutWithActuatorType.class, this,
+			sideStrut = new EObjectContainmentEList<StrutAssemblyType>(StrutAssemblyType.class, this,
 					CpacsPackage.SIDE_STRUTS_TYPE__SIDE_STRUT);
 		}
 		return sideStrut;
@@ -114,7 +116,7 @@ public class SideStrutsTypeImpl extends ComplexBaseTypeImpl implements SideStrut
 		switch (featureID) {
 		case CpacsPackage.SIDE_STRUTS_TYPE__SIDE_STRUT:
 			getSideStrut().clear();
-			getSideStrut().addAll((Collection<? extends StrutWithActuatorType>) newValue);
+			getSideStrut().addAll((Collection<? extends StrutAssemblyType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

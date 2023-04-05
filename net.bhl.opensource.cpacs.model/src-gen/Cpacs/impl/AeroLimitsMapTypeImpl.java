@@ -6,7 +6,7 @@ import Cpacs.AeroLimitsIncrementMapsType;
 import Cpacs.AeroLimitsMapType;
 import Cpacs.AeroMapOperationLimitType;
 import Cpacs.CpacsPackage;
-import Cpacs.StringVectorBaseType;
+import Cpacs.DoubleVectorBaseType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -26,6 +26,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link Cpacs.impl.AeroLimitsMapTypeImpl#getAltitude <em>Altitude</em>}</li>
  *   <li>{@link Cpacs.impl.AeroLimitsMapTypeImpl#getMachNumber <em>Mach Number</em>}</li>
+ *   <li>{@link Cpacs.impl.AeroLimitsMapTypeImpl#getAngleOfSideslip <em>Angle Of Sideslip</em>}</li>
  *   <li>{@link Cpacs.impl.AeroLimitsMapTypeImpl#getOperationLimit <em>Operation Limit</em>}</li>
  *   <li>{@link Cpacs.impl.AeroLimitsMapTypeImpl#getIncrementMaps <em>Increment Maps</em>}</li>
  * </ul>
@@ -41,7 +42,7 @@ public class AeroLimitsMapTypeImpl extends ComplexBaseTypeImpl implements AeroLi
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType altitude;
+	protected DoubleVectorBaseType altitude;
 
 	/**
 	 * The cached value of the '{@link #getMachNumber() <em>Mach Number</em>}' containment reference.
@@ -51,7 +52,17 @@ public class AeroLimitsMapTypeImpl extends ComplexBaseTypeImpl implements AeroLi
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType machNumber;
+	protected DoubleVectorBaseType machNumber;
+
+	/**
+	 * The cached value of the '{@link #getAngleOfSideslip() <em>Angle Of Sideslip</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAngleOfSideslip()
+	 * @generated
+	 * @ordered
+	 */
+	protected DoubleVectorBaseType angleOfSideslip;
 
 	/**
 	 * The cached value of the '{@link #getOperationLimit() <em>Operation Limit</em>}' containment reference.
@@ -98,7 +109,7 @@ public class AeroLimitsMapTypeImpl extends ComplexBaseTypeImpl implements AeroLi
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getAltitude() {
+	public DoubleVectorBaseType getAltitude() {
 		return altitude;
 	}
 
@@ -107,8 +118,8 @@ public class AeroLimitsMapTypeImpl extends ComplexBaseTypeImpl implements AeroLi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAltitude(StringVectorBaseType newAltitude, NotificationChain msgs) {
-		StringVectorBaseType oldAltitude = altitude;
+	public NotificationChain basicSetAltitude(DoubleVectorBaseType newAltitude, NotificationChain msgs) {
+		DoubleVectorBaseType oldAltitude = altitude;
 		altitude = newAltitude;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -127,7 +138,7 @@ public class AeroLimitsMapTypeImpl extends ComplexBaseTypeImpl implements AeroLi
 	 * @generated
 	 */
 	@Override
-	public void setAltitude(StringVectorBaseType newAltitude) {
+	public void setAltitude(DoubleVectorBaseType newAltitude) {
 		if (newAltitude != altitude) {
 			NotificationChain msgs = null;
 			if (altitude != null)
@@ -150,7 +161,7 @@ public class AeroLimitsMapTypeImpl extends ComplexBaseTypeImpl implements AeroLi
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getMachNumber() {
+	public DoubleVectorBaseType getMachNumber() {
 		return machNumber;
 	}
 
@@ -159,8 +170,8 @@ public class AeroLimitsMapTypeImpl extends ComplexBaseTypeImpl implements AeroLi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMachNumber(StringVectorBaseType newMachNumber, NotificationChain msgs) {
-		StringVectorBaseType oldMachNumber = machNumber;
+	public NotificationChain basicSetMachNumber(DoubleVectorBaseType newMachNumber, NotificationChain msgs) {
+		DoubleVectorBaseType oldMachNumber = machNumber;
 		machNumber = newMachNumber;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -179,7 +190,7 @@ public class AeroLimitsMapTypeImpl extends ComplexBaseTypeImpl implements AeroLi
 	 * @generated
 	 */
 	@Override
-	public void setMachNumber(StringVectorBaseType newMachNumber) {
+	public void setMachNumber(DoubleVectorBaseType newMachNumber) {
 		if (newMachNumber != machNumber) {
 			NotificationChain msgs = null;
 			if (machNumber != null)
@@ -194,6 +205,58 @@ public class AeroLimitsMapTypeImpl extends ComplexBaseTypeImpl implements AeroLi
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AERO_LIMITS_MAP_TYPE__MACH_NUMBER,
 					newMachNumber, newMachNumber));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DoubleVectorBaseType getAngleOfSideslip() {
+		return angleOfSideslip;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetAngleOfSideslip(DoubleVectorBaseType newAngleOfSideslip, NotificationChain msgs) {
+		DoubleVectorBaseType oldAngleOfSideslip = angleOfSideslip;
+		angleOfSideslip = newAngleOfSideslip;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.AERO_LIMITS_MAP_TYPE__ANGLE_OF_SIDESLIP, oldAngleOfSideslip, newAngleOfSideslip);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAngleOfSideslip(DoubleVectorBaseType newAngleOfSideslip) {
+		if (newAngleOfSideslip != angleOfSideslip) {
+			NotificationChain msgs = null;
+			if (angleOfSideslip != null)
+				msgs = ((InternalEObject) angleOfSideslip).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AERO_LIMITS_MAP_TYPE__ANGLE_OF_SIDESLIP, null, msgs);
+			if (newAngleOfSideslip != null)
+				msgs = ((InternalEObject) newAngleOfSideslip).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AERO_LIMITS_MAP_TYPE__ANGLE_OF_SIDESLIP, null, msgs);
+			msgs = basicSetAngleOfSideslip(newAngleOfSideslip, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AERO_LIMITS_MAP_TYPE__ANGLE_OF_SIDESLIP,
+					newAngleOfSideslip, newAngleOfSideslip));
 	}
 
 	/**
@@ -314,6 +377,8 @@ public class AeroLimitsMapTypeImpl extends ComplexBaseTypeImpl implements AeroLi
 			return basicSetAltitude(null, msgs);
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__MACH_NUMBER:
 			return basicSetMachNumber(null, msgs);
+		case CpacsPackage.AERO_LIMITS_MAP_TYPE__ANGLE_OF_SIDESLIP:
+			return basicSetAngleOfSideslip(null, msgs);
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__OPERATION_LIMIT:
 			return basicSetOperationLimit(null, msgs);
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__INCREMENT_MAPS:
@@ -334,6 +399,8 @@ public class AeroLimitsMapTypeImpl extends ComplexBaseTypeImpl implements AeroLi
 			return getAltitude();
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__MACH_NUMBER:
 			return getMachNumber();
+		case CpacsPackage.AERO_LIMITS_MAP_TYPE__ANGLE_OF_SIDESLIP:
+			return getAngleOfSideslip();
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__OPERATION_LIMIT:
 			return getOperationLimit();
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__INCREMENT_MAPS:
@@ -351,10 +418,13 @@ public class AeroLimitsMapTypeImpl extends ComplexBaseTypeImpl implements AeroLi
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__ALTITUDE:
-			setAltitude((StringVectorBaseType) newValue);
+			setAltitude((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__MACH_NUMBER:
-			setMachNumber((StringVectorBaseType) newValue);
+			setMachNumber((DoubleVectorBaseType) newValue);
+			return;
+		case CpacsPackage.AERO_LIMITS_MAP_TYPE__ANGLE_OF_SIDESLIP:
+			setAngleOfSideslip((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__OPERATION_LIMIT:
 			setOperationLimit((AeroMapOperationLimitType) newValue);
@@ -375,10 +445,13 @@ public class AeroLimitsMapTypeImpl extends ComplexBaseTypeImpl implements AeroLi
 	public void eUnset(int featureID) {
 		switch (featureID) {
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__ALTITUDE:
-			setAltitude((StringVectorBaseType) null);
+			setAltitude((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__MACH_NUMBER:
-			setMachNumber((StringVectorBaseType) null);
+			setMachNumber((DoubleVectorBaseType) null);
+			return;
+		case CpacsPackage.AERO_LIMITS_MAP_TYPE__ANGLE_OF_SIDESLIP:
+			setAngleOfSideslip((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__OPERATION_LIMIT:
 			setOperationLimit((AeroMapOperationLimitType) null);
@@ -402,6 +475,8 @@ public class AeroLimitsMapTypeImpl extends ComplexBaseTypeImpl implements AeroLi
 			return altitude != null;
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__MACH_NUMBER:
 			return machNumber != null;
+		case CpacsPackage.AERO_LIMITS_MAP_TYPE__ANGLE_OF_SIDESLIP:
+			return angleOfSideslip != null;
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__OPERATION_LIMIT:
 			return operationLimit != null;
 		case CpacsPackage.AERO_LIMITS_MAP_TYPE__INCREMENT_MAPS:

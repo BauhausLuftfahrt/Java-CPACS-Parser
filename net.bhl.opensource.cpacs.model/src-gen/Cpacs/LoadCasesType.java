@@ -14,8 +14,7 @@ package Cpacs;
  *   <li>{@link Cpacs.LoadCasesType#getCrashLoadCases <em>Crash Load Cases</em>}</li>
  *   <li>{@link Cpacs.LoadCasesType#getFlightLoadCases <em>Flight Load Cases</em>}</li>
  *   <li>{@link Cpacs.LoadCasesType#getGroundLoadCases <em>Ground Load Cases</em>}</li>
- *   <li>{@link Cpacs.LoadCasesType#getAeroDataSetsForLoads <em>Aero Data Sets For Loads</em>}</li>
- *   <li>{@link Cpacs.LoadCasesType#getLoadsEnvelope <em>Loads Envelope</em>}</li>
+ *   <li>{@link Cpacs.LoadCasesType#getAeroCases <em>Aero Cases</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getLoadCasesType()
@@ -93,49 +92,26 @@ public interface LoadCasesType extends ComplexBaseType {
 	void setGroundLoadCases(GroundLoadCasesType value);
 
 	/**
-	 * Returns the value of the '<em><b>Aero Data Sets For Loads</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Aero Cases</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Aero Data Sets For Loads</em>' containment reference.
-	 * @see #setAeroDataSetsForLoads(AeroDataSetsForLoadsType)
-	 * @see Cpacs.CpacsPackage#getLoadCasesType_AeroDataSetsForLoads()
+	 * @return the value of the '<em>Aero Cases</em>' containment reference.
+	 * @see #setAeroCases(AeroCasesType)
+	 * @see Cpacs.CpacsPackage#getLoadCasesType_AeroCases()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='aeroDataSetsForLoads' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='aeroCases' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	AeroDataSetsForLoadsType getAeroDataSetsForLoads();
+	AeroCasesType getAeroCases();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.LoadCasesType#getAeroDataSetsForLoads <em>Aero Data Sets For Loads</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.LoadCasesType#getAeroCases <em>Aero Cases</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Aero Data Sets For Loads</em>' containment reference.
-	 * @see #getAeroDataSetsForLoads()
+	 * @param value the new value of the '<em>Aero Cases</em>' containment reference.
+	 * @see #getAeroCases()
 	 * @generated
 	 */
-	void setAeroDataSetsForLoads(AeroDataSetsForLoadsType value);
-
-	/**
-	 * Returns the value of the '<em><b>Loads Envelope</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Loads Envelope</em>' containment reference.
-	 * @see #setLoadsEnvelope(LoadsEnvelopeType)
-	 * @see Cpacs.CpacsPackage#getLoadCasesType_LoadsEnvelope()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='loadsEnvelope' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	LoadsEnvelopeType getLoadsEnvelope();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.LoadCasesType#getLoadsEnvelope <em>Loads Envelope</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Loads Envelope</em>' containment reference.
-	 * @see #getLoadsEnvelope()
-	 * @generated
-	 */
-	void setLoadsEnvelope(LoadsEnvelopeType value);
+	void setAeroCases(AeroCasesType value);
 
 } // LoadCasesType

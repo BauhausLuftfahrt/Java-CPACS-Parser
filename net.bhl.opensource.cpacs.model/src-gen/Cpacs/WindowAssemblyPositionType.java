@@ -55,7 +55,7 @@ public interface WindowAssemblyPositionType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * x position of window elemment on global x axis
+	 * x position of window element on global x axis
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Position X</em>' containment reference.
@@ -82,7 +82,7 @@ public interface WindowAssemblyPositionType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * z position of window elemment refernce point
+	 * z position of window element reference point
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Position Z</em>' containment reference.

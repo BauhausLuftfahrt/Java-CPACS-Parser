@@ -5,8 +5,8 @@
  *******************************************************************************/
 package net.bhl.opensource.cpacs.model.extensions.basetype;
 
-import Cpacs.CpacsFactory;
 import Cpacs.DoubleBaseType;
+import Cpacs.CpacsFactory;
 
 /**
  * @author Marc.Engelmann

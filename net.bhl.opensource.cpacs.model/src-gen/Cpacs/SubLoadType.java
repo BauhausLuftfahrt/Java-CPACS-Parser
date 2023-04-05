@@ -77,13 +77,13 @@ public interface SubLoadType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fx</em>' containment reference.
-	 * @see #setFx(StringVectorBaseType)
+	 * @see #setFx(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getSubLoadType_Fx()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='fx' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getFx();
+	DoubleVectorBaseType getFx();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.SubLoadType#getFx <em>Fx</em>}' containment reference.
@@ -93,20 +93,20 @@ public interface SubLoadType extends ComplexBaseType {
 	 * @see #getFx()
 	 * @generated
 	 */
-	void setFx(StringVectorBaseType value);
+	void setFx(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Fy</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fy</em>' containment reference.
-	 * @see #setFy(StringVectorBaseType)
+	 * @see #setFy(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getSubLoadType_Fy()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='fy' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getFy();
+	DoubleVectorBaseType getFy();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.SubLoadType#getFy <em>Fy</em>}' containment reference.
@@ -116,20 +116,20 @@ public interface SubLoadType extends ComplexBaseType {
 	 * @see #getFy()
 	 * @generated
 	 */
-	void setFy(StringVectorBaseType value);
+	void setFy(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Fz</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fz</em>' containment reference.
-	 * @see #setFz(StringVectorBaseType)
+	 * @see #setFz(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getSubLoadType_Fz()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='fz' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getFz();
+	DoubleVectorBaseType getFz();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.SubLoadType#getFz <em>Fz</em>}' containment reference.
@@ -139,20 +139,20 @@ public interface SubLoadType extends ComplexBaseType {
 	 * @see #getFz()
 	 * @generated
 	 */
-	void setFz(StringVectorBaseType value);
+	void setFz(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Mx</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mx</em>' containment reference.
-	 * @see #setMx(StringVectorBaseType)
+	 * @see #setMx(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getSubLoadType_Mx()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='mx' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getMx();
+	DoubleVectorBaseType getMx();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.SubLoadType#getMx <em>Mx</em>}' containment reference.
@@ -162,20 +162,20 @@ public interface SubLoadType extends ComplexBaseType {
 	 * @see #getMx()
 	 * @generated
 	 */
-	void setMx(StringVectorBaseType value);
+	void setMx(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>My</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>My</em>' containment reference.
-	 * @see #setMy(StringVectorBaseType)
+	 * @see #setMy(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getSubLoadType_My()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='my' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getMy();
+	DoubleVectorBaseType getMy();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.SubLoadType#getMy <em>My</em>}' containment reference.
@@ -185,20 +185,20 @@ public interface SubLoadType extends ComplexBaseType {
 	 * @see #getMy()
 	 * @generated
 	 */
-	void setMy(StringVectorBaseType value);
+	void setMy(DoubleVectorBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>Mz</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mz</em>' containment reference.
-	 * @see #setMz(StringVectorBaseType)
+	 * @see #setMz(DoubleVectorBaseType)
 	 * @see Cpacs.CpacsPackage#getSubLoadType_Mz()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='mz' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getMz();
+	DoubleVectorBaseType getMz();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.SubLoadType#getMz <em>Mz</em>}' containment reference.
@@ -208,6 +208,6 @@ public interface SubLoadType extends ComplexBaseType {
 	 * @see #getMz()
 	 * @generated
 	 */
-	void setMz(StringVectorBaseType value);
+	void setMz(DoubleVectorBaseType value);
 
 } // SubLoadType

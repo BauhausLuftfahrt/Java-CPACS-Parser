@@ -25,6 +25,9 @@ public interface NacelleCenterCowlType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>XOffset</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Offset of the rotation curve in x-direction
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>XOffset</em>' containment reference.
 	 * @see #setXOffset(DoubleBaseType)
 	 * @see Cpacs.CpacsPackage#getNacelleCenterCowlType_XOffset()
@@ -48,6 +51,9 @@ public interface NacelleCenterCowlType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Curve UID</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * UID of the curve profile (vehicles/profiles/curveProfiles/..)
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Curve UID</em>' containment reference.
 	 * @see #setCurveUID(StringUIDBaseType)
 	 * @see Cpacs.CpacsPackage#getNacelleCenterCowlType_CurveUID()

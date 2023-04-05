@@ -114,7 +114,7 @@ public interface SheetType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Continuity definition for profile geometry
-	 *                                 generation. 0= C0 (allows sharp edges, deafault), 1= C1 (defines
+	 *                                 generation. 0= C0 (allows sharp edges, default), 1= C1 (defines
 	 *                                 tangential continuity), 2= C2 (defines curvature continuity)
 	 *                                 2=all
 	 * <!-- end-model-doc -->
@@ -197,7 +197,7 @@ public interface SheetType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Continuity definition for profile geometry
-	 *                                 generation. 0= C0 (allows sharp edges, deafault), 1= C1 (defines
+	 *                                 generation. 0= C0 (allows sharp edges, default), 1= C1 (defines
 	 *                                 tangential continuity), 2= C2 (defines curvature continuity)
 	 *                                 2=all
 	 * <!-- end-model-doc -->

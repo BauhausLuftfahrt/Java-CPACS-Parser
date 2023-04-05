@@ -3,7 +3,7 @@
 package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
-import Cpacs.SkidGearType;
+import Cpacs.LandingGearBaseType;
 import Cpacs.SkidGearsType;
 
 import java.util.Collection;
@@ -40,7 +40,7 @@ public class SkidGearsTypeImpl extends ComplexBaseTypeImpl implements SkidGearsT
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<SkidGearType> skidGear;
+	protected EList<LandingGearBaseType> skidGear;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,9 +67,9 @@ public class SkidGearsTypeImpl extends ComplexBaseTypeImpl implements SkidGearsT
 	 * @generated
 	 */
 	@Override
-	public EList<SkidGearType> getSkidGear() {
+	public EList<LandingGearBaseType> getSkidGear() {
 		if (skidGear == null) {
-			skidGear = new EObjectContainmentEList<SkidGearType>(SkidGearType.class, this,
+			skidGear = new EObjectContainmentEList<LandingGearBaseType>(LandingGearBaseType.class, this,
 					CpacsPackage.SKID_GEARS_TYPE__SKID_GEAR);
 		}
 		return skidGear;
@@ -114,7 +114,7 @@ public class SkidGearsTypeImpl extends ComplexBaseTypeImpl implements SkidGearsT
 		switch (featureID) {
 		case CpacsPackage.SKID_GEARS_TYPE__SKID_GEAR:
 			getSkidGear().clear();
-			getSkidGear().addAll((Collection<? extends SkidGearType>) newValue);
+			getSkidGear().addAll((Collection<? extends LandingGearBaseType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

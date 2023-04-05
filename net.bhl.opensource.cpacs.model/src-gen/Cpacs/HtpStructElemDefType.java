@@ -140,7 +140,7 @@ public interface HtpStructElemDefType extends ComplexBaseType {
 	 * <!-- begin-model-doc -->
 	 * UID of structural element for upper HTP cutout
 	 *                                 reinforcement beams, also used for lower cutout reinforcement,
-	 *                                 when not explicitely defined
+	 *                                 when not explicitly defined
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Htp Cutout Reinf Upper Struct Elem UID</em>' containment reference.
 	 * @see #setHtpCutoutReinfUpperStructElemUID(StringUIDBaseType)

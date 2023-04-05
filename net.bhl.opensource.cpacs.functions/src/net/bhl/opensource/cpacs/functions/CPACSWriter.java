@@ -176,7 +176,12 @@ public interface CPACSWriter {
 					}
 
 					// If so, apply the value to the element
-					subElement.setTextContent(eObject.eGet(valueFeature).toString());
+					if (eObject.eGet(valueFeature) instanceof Double) {
+
+						subElement.setTextContent(round((Double) eObject.eGet(valueFeature), 8).toString());
+					} else {
+						subElement.setTextContent(eObject.eGet(valueFeature).toString());
+					}
 
 					// Then apply the attribute values to the element
 					for (EStructuralFeature baseObjectFeature : eObject.eClass().getEStructuralFeatures()) {
@@ -250,8 +255,14 @@ public interface CPACSWriter {
 					}
 				}
 
+				if (feature.getName().contentEquals("mapType")) {
+					if (eObj.eGet(feature).toString().contentEquals("vector")) {
+						return true;
+					}
+				}
+
 				if (feature.getName().contentEquals("refType")) {
-					if (eObj.eGet(feature).toString().contentEquals("absGlobal")) {
+					if (eObj.eGet(feature).toString().contentEquals("absLocal")) {
 						return true;
 					}
 				}
@@ -271,5 +282,9 @@ public interface CPACSWriter {
 		}
 
 		return false;
+	}
+
+	static Double round(Double value, int digits) {
+		return Math.round(value * Math.pow(10.0, digits)) / Math.pow(10.0, digits);
 	}
 }

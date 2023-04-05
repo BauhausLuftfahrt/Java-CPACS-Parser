@@ -15,7 +15,6 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link Cpacs.CpacsType#getHeader <em>Header</em>}</li>
  *   <li>{@link Cpacs.CpacsType#getVehicles <em>Vehicles</em>}</li>
- *   <li>{@link Cpacs.CpacsType#getMissionDefinitions <em>Mission Definitions</em>}</li>
  *   <li>{@link Cpacs.CpacsType#getAirports <em>Airports</em>}</li>
  *   <li>{@link Cpacs.CpacsType#getFlights <em>Flights</em>}</li>
  *   <li>{@link Cpacs.CpacsType#getAirlines <em>Airlines</em>}</li>
@@ -73,29 +72,6 @@ public interface CpacsType extends EObject {
 	 * @generated
 	 */
 	void setVehicles(VehiclesType value);
-
-	/**
-	 * Returns the value of the '<em><b>Mission Definitions</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Mission Definitions</em>' containment reference.
-	 * @see #setMissionDefinitions(MissionDefinitionsType)
-	 * @see Cpacs.CpacsPackage#getCpacsType_MissionDefinitions()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='missionDefinitions' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	MissionDefinitionsType getMissionDefinitions();
-
-	/**
-	 * Sets the value of the '{@link Cpacs.CpacsType#getMissionDefinitions <em>Mission Definitions</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Mission Definitions</em>' containment reference.
-	 * @see #getMissionDefinitions()
-	 * @generated
-	 */
-	void setMissionDefinitions(MissionDefinitionsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Airports</b></em>' containment reference.

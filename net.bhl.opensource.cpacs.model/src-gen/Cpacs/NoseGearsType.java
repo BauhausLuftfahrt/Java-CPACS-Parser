@@ -23,7 +23,7 @@ import org.eclipse.emf.common.util.EList;
 public interface NoseGearsType extends ComplexBaseType {
 	/**
 	 * Returns the value of the '<em><b>Nose Gear</b></em>' containment reference list.
-	 * The list contents are of type {@link Cpacs.NoseGearType}.
+	 * The list contents are of type {@link Cpacs.LandingGearBaseType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nose Gear</em>' containment reference list.
@@ -32,6 +32,6 @@ public interface NoseGearsType extends ComplexBaseType {
 	 *        extendedMetaData="kind='element' name='noseGear' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<NoseGearType> getNoseGear();
+	EList<LandingGearBaseType> getNoseGear();
 
 } // NoseGearsType

@@ -11,11 +11,14 @@ package Cpacs;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link Cpacs.MissionSegmentBlockType#getName <em>Name</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentBlockType#getDescription <em>Description</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentBlockType#getSegmentBlockConstraints <em>Segment Block Constraints</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentBlockType#getSegmentDirection <em>Segment Direction</em>}</li>
- *   <li>{@link Cpacs.MissionSegmentBlockType#getSegmentUIDSequence <em>Segment UID Sequence</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentBlockType#getSegmentUIDs <em>Segment UI Ds</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentBlockType#getVariableSegments <em>Variable Segments</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentBlockType#getFuelPlanningType <em>Fuel Planning Type</em>}</li>
+ *   <li>{@link Cpacs.MissionSegmentBlockType#getNumberOfRepetitions <em>Number Of Repetitions</em>}</li>
  *   <li>{@link Cpacs.MissionSegmentBlockType#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -24,6 +27,58 @@ package Cpacs;
  * @generated
  */
 public interface MissionSegmentBlockType extends ComplexBaseType {
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Name
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Name</em>' containment reference.
+	 * @see #setName(StringBaseType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentBlockType_Name()
+	 * @model containment="true" required="true"
+	 *        extendedMetaData="kind='element' name='name' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	StringBaseType getName();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentBlockType#getName <em>Name</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' containment reference.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(StringBaseType value);
+
+	/**
+	 * Returns the value of the '<em><b>Description</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Description
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Description</em>' containment reference.
+	 * @see #setDescription(StringBaseType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentBlockType_Description()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='description' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	StringBaseType getDescription();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentBlockType#getDescription <em>Description</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Description</em>' containment reference.
+	 * @see #getDescription()
+	 * @generated
+	 */
+	void setDescription(StringBaseType value);
+
 	/**
 	 * Returns the value of the '<em><b>Segment Block Constraints</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -52,7 +107,7 @@ public interface MissionSegmentBlockType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * either 'outbound' or 'inbound', only needed for radiusOfAction kind of missions
+	 * Segment direction. Either 'outbound' or 'inbound'. Only needed for radiusOfAction kind of missions.
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Segment Direction</em>' containment reference.
@@ -75,40 +130,36 @@ public interface MissionSegmentBlockType extends ComplexBaseType {
 	void setSegmentDirection(SegmentDirectionType value);
 
 	/**
-	 * Returns the value of the '<em><b>Segment UID Sequence</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Segment UI Ds</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Segment UID Sequence</em>' containment reference.
-	 * @see #setSegmentUIDSequence(StringVectorBaseType)
-	 * @see Cpacs.CpacsPackage#getMissionSegmentBlockType_SegmentUIDSequence()
+	 * <!-- begin-model-doc -->
+	 * List of segment uID's making up the segmentBlock. These should be ordered, such that the segment connections are correct.
+	 *                             
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Segment UI Ds</em>' containment reference.
+	 * @see #setSegmentUIDs(UIDSequenceType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentBlockType_SegmentUIDs()
 	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='segmentUIDSequence' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='segmentUIDs' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	StringVectorBaseType getSegmentUIDSequence();
+	UIDSequenceType getSegmentUIDs();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.MissionSegmentBlockType#getSegmentUIDSequence <em>Segment UID Sequence</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.MissionSegmentBlockType#getSegmentUIDs <em>Segment UI Ds</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Segment UID Sequence</em>' containment reference.
-	 * @see #getSegmentUIDSequence()
+	 * @param value the new value of the '<em>Segment UI Ds</em>' containment reference.
+	 * @see #getSegmentUIDs()
 	 * @generated
 	 */
-	void setSegmentUIDSequence(StringVectorBaseType value);
+	void setSegmentUIDs(UIDSequenceType value);
 
 	/**
 	 * Returns the value of the '<em><b>Variable Segments</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * 
-	 *   list of segments that are allowed to be varied within a mission optimisation.
-	 *                                 
-	 *   <ddue:para xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">This concept needs to be practically tested. Does it suffice to mention (a list of) segments that are free to change to fit the overall block constraints? What happens if a segment is variable, though it has some constraints? When to define a segment as variable (climb until endPosition z, then endPosition x should be left free. Is the segment then variable? Probably not.). Somehow the 'free' segment should be in between fully defined segments (i.e.: a cruise+descent in between endPosition z == ICA and endPosition z == 0 for landing to define max range. How to define this exactly?)</ddue:para>
-	 *                               
-	 * 
-	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Variable Segments</em>' containment reference.
 	 * @see #setVariableSegments(VariableSegmentsType)
 	 * @see Cpacs.CpacsPackage#getMissionSegmentBlockType_VariableSegments()
@@ -133,7 +184,9 @@ public interface MissionSegmentBlockType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Entry for defining which type of mass the segment fuel mass should be added.
+	 * Specifies to which type of mass the segment fuel mass
+	 *                             should be added (blockFuel = designFuel + additionalFuel; Total fuel requirement
+	 *                             = blockFuel + reserveFuel; designFuel = the fuel of the segmentBlock is part of the design mission)
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Fuel Planning Type</em>' containment reference.
@@ -154,6 +207,33 @@ public interface MissionSegmentBlockType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setFuelPlanningType(FuelPlanningTypeType value);
+
+	/**
+	 * Returns the value of the '<em><b>Number Of Repetitions</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Number of repetitions of this segment block, e.g. to perform repeated holding patterns
+	 *                             
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Number Of Repetitions</em>' containment reference.
+	 * @see #setNumberOfRepetitions(IntegerBaseType)
+	 * @see Cpacs.CpacsPackage#getMissionSegmentBlockType_NumberOfRepetitions()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='numberOfRepetitions' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	IntegerBaseType getNumberOfRepetitions();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MissionSegmentBlockType#getNumberOfRepetitions <em>Number Of Repetitions</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Number Of Repetitions</em>' containment reference.
+	 * @see #getNumberOfRepetitions()
+	 * @generated
+	 */
+	void setNumberOfRepetitions(IntegerBaseType value);
 
 	/**
 	 * Returns the value of the '<em><b>UID</b></em>' attribute.

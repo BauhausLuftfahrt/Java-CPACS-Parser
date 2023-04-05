@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class WayPointTypeTypeImpl extends StringBaseTypeImpl implements WayPointTypeType {
+public class WayPointTypeTypeImpl extends StringVectorBaseTypeImpl implements WayPointTypeType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

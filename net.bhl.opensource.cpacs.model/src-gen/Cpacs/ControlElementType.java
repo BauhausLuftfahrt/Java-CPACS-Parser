@@ -51,7 +51,7 @@ public interface ControlElementType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Vector of control device states resulting from the input commands. It must be of the same length as the inputCommands element. 
+	 * Vector of control device states resulting from the input commands. It must be of the same length as the inputCommands element.
 	 *                             The minimum and maximum values are defined according to the minimum and maximum values of the input commands.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Control Parameters</em>' containment reference.

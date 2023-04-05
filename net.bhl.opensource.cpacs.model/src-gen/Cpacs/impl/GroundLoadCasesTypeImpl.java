@@ -3,8 +3,8 @@
 package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
-import Cpacs.GroundLoadCaseType;
 import Cpacs.GroundLoadCasesType;
+import Cpacs.LoadCaseType;
 
 import java.util.Collection;
 
@@ -40,7 +40,7 @@ public class GroundLoadCasesTypeImpl extends ComplexBaseTypeImpl implements Grou
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<GroundLoadCaseType> groundLoadCase;
+	protected EList<LoadCaseType> groundLoadCase;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,9 +67,9 @@ public class GroundLoadCasesTypeImpl extends ComplexBaseTypeImpl implements Grou
 	 * @generated
 	 */
 	@Override
-	public EList<GroundLoadCaseType> getGroundLoadCase() {
+	public EList<LoadCaseType> getGroundLoadCase() {
 		if (groundLoadCase == null) {
-			groundLoadCase = new EObjectContainmentEList<GroundLoadCaseType>(GroundLoadCaseType.class, this,
+			groundLoadCase = new EObjectContainmentEList<LoadCaseType>(LoadCaseType.class, this,
 					CpacsPackage.GROUND_LOAD_CASES_TYPE__GROUND_LOAD_CASE);
 		}
 		return groundLoadCase;
@@ -114,7 +114,7 @@ public class GroundLoadCasesTypeImpl extends ComplexBaseTypeImpl implements Grou
 		switch (featureID) {
 		case CpacsPackage.GROUND_LOAD_CASES_TYPE__GROUND_LOAD_CASE:
 			getGroundLoadCase().clear();
-			getGroundLoadCase().addAll((Collection<? extends GroundLoadCaseType>) newValue);
+			getGroundLoadCase().addAll((Collection<? extends LoadCaseType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

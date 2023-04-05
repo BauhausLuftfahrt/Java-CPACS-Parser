@@ -5,7 +5,6 @@ package Cpacs.impl;
 import Cpacs.CompartmentsType;
 import Cpacs.CpacsPackage;
 import Cpacs.DecksType;
-import Cpacs.DynamicAircraftModelType;
 import Cpacs.FuselageCutOutsType;
 import Cpacs.FuselageFuelTanksType;
 import Cpacs.FuselageSectionsType;
@@ -15,7 +14,7 @@ import Cpacs.FuselageType;
 import Cpacs.PositioningsType;
 import Cpacs.StringBaseType;
 import Cpacs.StringUIDBaseType;
-import Cpacs.SymmetryType12;
+import Cpacs.SymmetryXyXzYzType;
 import Cpacs.TransformationType;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -44,7 +43,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.FuselageTypeImpl#getStructure <em>Structure</em>}</li>
  *   <li>{@link Cpacs.impl.FuselageTypeImpl#getCompartments <em>Compartments</em>}</li>
  *   <li>{@link Cpacs.impl.FuselageTypeImpl#getDecks <em>Decks</em>}</li>
- *   <li>{@link Cpacs.impl.FuselageTypeImpl#getDynamicAircraftModel <em>Dynamic Aircraft Model</em>}</li>
  *   <li>{@link Cpacs.impl.FuselageTypeImpl#getFuelTanks <em>Fuel Tanks</em>}</li>
  *   <li>{@link Cpacs.impl.FuselageTypeImpl#getCutOuts <em>Cut Outs</em>}</li>
  *   <li>{@link Cpacs.impl.FuselageTypeImpl#getSymmetry <em>Symmetry</em>}</li>
@@ -155,16 +153,6 @@ public class FuselageTypeImpl extends ComplexBaseTypeImpl implements FuselageTyp
 	protected DecksType decks;
 
 	/**
-	 * The cached value of the '{@link #getDynamicAircraftModel() <em>Dynamic Aircraft Model</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDynamicAircraftModel()
-	 * @generated
-	 * @ordered
-	 */
-	protected DynamicAircraftModelType dynamicAircraftModel;
-
-	/**
 	 * The cached value of the '{@link #getFuelTanks() <em>Fuel Tanks</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -192,7 +180,7 @@ public class FuselageTypeImpl extends ComplexBaseTypeImpl implements FuselageTyp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SymmetryType12 SYMMETRY_EDEFAULT = SymmetryType12.XY_PLANE;
+	protected static final SymmetryXyXzYzType SYMMETRY_EDEFAULT = SymmetryXyXzYzType.NONE;
 
 	/**
 	 * The cached value of the '{@link #getSymmetry() <em>Symmetry</em>}' attribute.
@@ -202,7 +190,7 @@ public class FuselageTypeImpl extends ComplexBaseTypeImpl implements FuselageTyp
 	 * @generated
 	 * @ordered
 	 */
-	protected SymmetryType12 symmetry = SYMMETRY_EDEFAULT;
+	protected SymmetryXyXzYzType symmetry = SYMMETRY_EDEFAULT;
 
 	/**
 	 * This is true if the Symmetry attribute has been set.
@@ -777,60 +765,6 @@ public class FuselageTypeImpl extends ComplexBaseTypeImpl implements FuselageTyp
 	 * @generated
 	 */
 	@Override
-	public DynamicAircraftModelType getDynamicAircraftModel() {
-		return dynamicAircraftModel;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetDynamicAircraftModel(DynamicAircraftModelType newDynamicAircraftModel,
-			NotificationChain msgs) {
-		DynamicAircraftModelType oldDynamicAircraftModel = dynamicAircraftModel;
-		dynamicAircraftModel = newDynamicAircraftModel;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.FUSELAGE_TYPE__DYNAMIC_AIRCRAFT_MODEL, oldDynamicAircraftModel,
-					newDynamicAircraftModel);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDynamicAircraftModel(DynamicAircraftModelType newDynamicAircraftModel) {
-		if (newDynamicAircraftModel != dynamicAircraftModel) {
-			NotificationChain msgs = null;
-			if (dynamicAircraftModel != null)
-				msgs = ((InternalEObject) dynamicAircraftModel).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.FUSELAGE_TYPE__DYNAMIC_AIRCRAFT_MODEL, null, msgs);
-			if (newDynamicAircraftModel != null)
-				msgs = ((InternalEObject) newDynamicAircraftModel).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.FUSELAGE_TYPE__DYNAMIC_AIRCRAFT_MODEL, null, msgs);
-			msgs = basicSetDynamicAircraftModel(newDynamicAircraftModel, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.FUSELAGE_TYPE__DYNAMIC_AIRCRAFT_MODEL,
-					newDynamicAircraftModel, newDynamicAircraftModel));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public FuselageFuelTanksType getFuelTanks() {
 		return fuelTanks;
 	}
@@ -935,7 +869,7 @@ public class FuselageTypeImpl extends ComplexBaseTypeImpl implements FuselageTyp
 	 * @generated
 	 */
 	@Override
-	public SymmetryType12 getSymmetry() {
+	public SymmetryXyXzYzType getSymmetry() {
 		return symmetry;
 	}
 
@@ -945,8 +879,8 @@ public class FuselageTypeImpl extends ComplexBaseTypeImpl implements FuselageTyp
 	 * @generated
 	 */
 	@Override
-	public void setSymmetry(SymmetryType12 newSymmetry) {
-		SymmetryType12 oldSymmetry = symmetry;
+	public void setSymmetry(SymmetryXyXzYzType newSymmetry) {
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		symmetry = newSymmetry == null ? SYMMETRY_EDEFAULT : newSymmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetryESet = true;
@@ -962,7 +896,7 @@ public class FuselageTypeImpl extends ComplexBaseTypeImpl implements FuselageTyp
 	 */
 	@Override
 	public void unsetSymmetry() {
-		SymmetryType12 oldSymmetry = symmetry;
+		SymmetryXyXzYzType oldSymmetry = symmetry;
 		boolean oldSymmetryESet = symmetryESet;
 		symmetry = SYMMETRY_EDEFAULT;
 		symmetryESet = false;
@@ -1032,8 +966,6 @@ public class FuselageTypeImpl extends ComplexBaseTypeImpl implements FuselageTyp
 			return basicSetCompartments(null, msgs);
 		case CpacsPackage.FUSELAGE_TYPE__DECKS:
 			return basicSetDecks(null, msgs);
-		case CpacsPackage.FUSELAGE_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			return basicSetDynamicAircraftModel(null, msgs);
 		case CpacsPackage.FUSELAGE_TYPE__FUEL_TANKS:
 			return basicSetFuelTanks(null, msgs);
 		case CpacsPackage.FUSELAGE_TYPE__CUT_OUTS:
@@ -1070,8 +1002,6 @@ public class FuselageTypeImpl extends ComplexBaseTypeImpl implements FuselageTyp
 			return getCompartments();
 		case CpacsPackage.FUSELAGE_TYPE__DECKS:
 			return getDecks();
-		case CpacsPackage.FUSELAGE_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			return getDynamicAircraftModel();
 		case CpacsPackage.FUSELAGE_TYPE__FUEL_TANKS:
 			return getFuelTanks();
 		case CpacsPackage.FUSELAGE_TYPE__CUT_OUTS:
@@ -1122,9 +1052,6 @@ public class FuselageTypeImpl extends ComplexBaseTypeImpl implements FuselageTyp
 		case CpacsPackage.FUSELAGE_TYPE__DECKS:
 			setDecks((DecksType) newValue);
 			return;
-		case CpacsPackage.FUSELAGE_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			setDynamicAircraftModel((DynamicAircraftModelType) newValue);
-			return;
 		case CpacsPackage.FUSELAGE_TYPE__FUEL_TANKS:
 			setFuelTanks((FuselageFuelTanksType) newValue);
 			return;
@@ -1132,7 +1059,7 @@ public class FuselageTypeImpl extends ComplexBaseTypeImpl implements FuselageTyp
 			setCutOuts((FuselageCutOutsType) newValue);
 			return;
 		case CpacsPackage.FUSELAGE_TYPE__SYMMETRY:
-			setSymmetry((SymmetryType12) newValue);
+			setSymmetry((SymmetryXyXzYzType) newValue);
 			return;
 		case CpacsPackage.FUSELAGE_TYPE__UID:
 			setUID((String) newValue);
@@ -1179,9 +1106,6 @@ public class FuselageTypeImpl extends ComplexBaseTypeImpl implements FuselageTyp
 		case CpacsPackage.FUSELAGE_TYPE__DECKS:
 			setDecks((DecksType) null);
 			return;
-		case CpacsPackage.FUSELAGE_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			setDynamicAircraftModel((DynamicAircraftModelType) null);
-			return;
 		case CpacsPackage.FUSELAGE_TYPE__FUEL_TANKS:
 			setFuelTanks((FuselageFuelTanksType) null);
 			return;
@@ -1226,8 +1150,6 @@ public class FuselageTypeImpl extends ComplexBaseTypeImpl implements FuselageTyp
 			return compartments != null;
 		case CpacsPackage.FUSELAGE_TYPE__DECKS:
 			return decks != null;
-		case CpacsPackage.FUSELAGE_TYPE__DYNAMIC_AIRCRAFT_MODEL:
-			return dynamicAircraftModel != null;
 		case CpacsPackage.FUSELAGE_TYPE__FUEL_TANKS:
 			return fuelTanks != null;
 		case CpacsPackage.FUSELAGE_TYPE__CUT_OUTS:

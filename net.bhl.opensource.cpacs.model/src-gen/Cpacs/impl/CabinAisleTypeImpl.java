@@ -4,8 +4,8 @@ package Cpacs.impl;
 
 import Cpacs.CabinAisleType;
 import Cpacs.CpacsPackage;
+import Cpacs.DoubleVectorBaseType;
 import Cpacs.StringBaseType;
-import Cpacs.StringVectorBaseType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -27,7 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Cpacs.impl.CabinAisleTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link Cpacs.impl.CabinAisleTypeImpl#getX <em>X</em>}</li>
  *   <li>{@link Cpacs.impl.CabinAisleTypeImpl#getY <em>Y</em>}</li>
- *   <li>{@link Cpacs.impl.CabinAisleTypeImpl#getWFloor <em>WFloor</em>}</li>
+ *   <li>{@link Cpacs.impl.CabinAisleTypeImpl#getWidthY <em>Width Y</em>}</li>
  *   <li>{@link Cpacs.impl.CabinAisleTypeImpl#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -62,7 +62,7 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType x;
+	protected DoubleVectorBaseType x;
 
 	/**
 	 * The cached value of the '{@link #getY() <em>Y</em>}' containment reference.
@@ -72,17 +72,17 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType y;
+	protected DoubleVectorBaseType y;
 
 	/**
-	 * The cached value of the '{@link #getWFloor() <em>WFloor</em>}' containment reference.
+	 * The cached value of the '{@link #getWidthY() <em>Width Y</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWFloor()
+	 * @see #getWidthY()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType wFloor;
+	protected DoubleVectorBaseType widthY;
 
 	/**
 	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
@@ -233,7 +233,7 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getX() {
+	public DoubleVectorBaseType getX() {
 		return x;
 	}
 
@@ -242,8 +242,8 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetX(StringVectorBaseType newX, NotificationChain msgs) {
-		StringVectorBaseType oldX = x;
+	public NotificationChain basicSetX(DoubleVectorBaseType newX, NotificationChain msgs) {
+		DoubleVectorBaseType oldX = x;
 		x = newX;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -262,7 +262,7 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 	 * @generated
 	 */
 	@Override
-	public void setX(StringVectorBaseType newX) {
+	public void setX(DoubleVectorBaseType newX) {
 		if (newX != x) {
 			NotificationChain msgs = null;
 			if (x != null)
@@ -284,7 +284,7 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getY() {
+	public DoubleVectorBaseType getY() {
 		return y;
 	}
 
@@ -293,8 +293,8 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetY(StringVectorBaseType newY, NotificationChain msgs) {
-		StringVectorBaseType oldY = y;
+	public NotificationChain basicSetY(DoubleVectorBaseType newY, NotificationChain msgs) {
+		DoubleVectorBaseType oldY = y;
 		y = newY;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -313,7 +313,7 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 	 * @generated
 	 */
 	@Override
-	public void setY(StringVectorBaseType newY) {
+	public void setY(DoubleVectorBaseType newY) {
 		if (newY != y) {
 			NotificationChain msgs = null;
 			if (y != null)
@@ -335,8 +335,8 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getWFloor() {
-		return wFloor;
+	public DoubleVectorBaseType getWidthY() {
+		return widthY;
 	}
 
 	/**
@@ -344,12 +344,12 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetWFloor(StringVectorBaseType newWFloor, NotificationChain msgs) {
-		StringVectorBaseType oldWFloor = wFloor;
-		wFloor = newWFloor;
+	public NotificationChain basicSetWidthY(DoubleVectorBaseType newWidthY, NotificationChain msgs) {
+		DoubleVectorBaseType oldWidthY = widthY;
+		widthY = newWidthY;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CABIN_AISLE_TYPE__WFLOOR, oldWFloor, newWFloor);
+					CpacsPackage.CABIN_AISLE_TYPE__WIDTH_Y, oldWidthY, newWidthY);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -364,21 +364,21 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 	 * @generated
 	 */
 	@Override
-	public void setWFloor(StringVectorBaseType newWFloor) {
-		if (newWFloor != wFloor) {
+	public void setWidthY(DoubleVectorBaseType newWidthY) {
+		if (newWidthY != widthY) {
 			NotificationChain msgs = null;
-			if (wFloor != null)
-				msgs = ((InternalEObject) wFloor).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CABIN_AISLE_TYPE__WFLOOR, null, msgs);
-			if (newWFloor != null)
-				msgs = ((InternalEObject) newWFloor).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CABIN_AISLE_TYPE__WFLOOR, null, msgs);
-			msgs = basicSetWFloor(newWFloor, msgs);
+			if (widthY != null)
+				msgs = ((InternalEObject) widthY).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CABIN_AISLE_TYPE__WIDTH_Y, null, msgs);
+			if (newWidthY != null)
+				msgs = ((InternalEObject) newWidthY).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CABIN_AISLE_TYPE__WIDTH_Y, null, msgs);
+			msgs = basicSetWidthY(newWidthY, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CABIN_AISLE_TYPE__WFLOOR, newWFloor,
-					newWFloor));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CABIN_AISLE_TYPE__WIDTH_Y, newWidthY,
+					newWidthY));
 	}
 
 	/**
@@ -420,8 +420,8 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 			return basicSetX(null, msgs);
 		case CpacsPackage.CABIN_AISLE_TYPE__Y:
 			return basicSetY(null, msgs);
-		case CpacsPackage.CABIN_AISLE_TYPE__WFLOOR:
-			return basicSetWFloor(null, msgs);
+		case CpacsPackage.CABIN_AISLE_TYPE__WIDTH_Y:
+			return basicSetWidthY(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -442,8 +442,8 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 			return getX();
 		case CpacsPackage.CABIN_AISLE_TYPE__Y:
 			return getY();
-		case CpacsPackage.CABIN_AISLE_TYPE__WFLOOR:
-			return getWFloor();
+		case CpacsPackage.CABIN_AISLE_TYPE__WIDTH_Y:
+			return getWidthY();
 		case CpacsPackage.CABIN_AISLE_TYPE__UID:
 			return getUID();
 		}
@@ -465,13 +465,13 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 			setDescription((StringBaseType) newValue);
 			return;
 		case CpacsPackage.CABIN_AISLE_TYPE__X:
-			setX((StringVectorBaseType) newValue);
+			setX((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.CABIN_AISLE_TYPE__Y:
-			setY((StringVectorBaseType) newValue);
+			setY((DoubleVectorBaseType) newValue);
 			return;
-		case CpacsPackage.CABIN_AISLE_TYPE__WFLOOR:
-			setWFloor((StringVectorBaseType) newValue);
+		case CpacsPackage.CABIN_AISLE_TYPE__WIDTH_Y:
+			setWidthY((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.CABIN_AISLE_TYPE__UID:
 			setUID((String) newValue);
@@ -495,13 +495,13 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 			setDescription((StringBaseType) null);
 			return;
 		case CpacsPackage.CABIN_AISLE_TYPE__X:
-			setX((StringVectorBaseType) null);
+			setX((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.CABIN_AISLE_TYPE__Y:
-			setY((StringVectorBaseType) null);
+			setY((DoubleVectorBaseType) null);
 			return;
-		case CpacsPackage.CABIN_AISLE_TYPE__WFLOOR:
-			setWFloor((StringVectorBaseType) null);
+		case CpacsPackage.CABIN_AISLE_TYPE__WIDTH_Y:
+			setWidthY((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.CABIN_AISLE_TYPE__UID:
 			setUID(UID_EDEFAULT);
@@ -526,8 +526,8 @@ public class CabinAisleTypeImpl extends ComplexBaseTypeImpl implements CabinAisl
 			return x != null;
 		case CpacsPackage.CABIN_AISLE_TYPE__Y:
 			return y != null;
-		case CpacsPackage.CABIN_AISLE_TYPE__WFLOOR:
-			return wFloor != null;
+		case CpacsPackage.CABIN_AISLE_TYPE__WIDTH_Y:
+			return widthY != null;
 		case CpacsPackage.CABIN_AISLE_TYPE__UID:
 			return UID_EDEFAULT == null ? uID != null : !UID_EDEFAULT.equals(uID);
 		}

@@ -5,6 +5,7 @@ package Cpacs.impl;
 import Cpacs.CpacsPackage;
 import Cpacs.DoubleBaseType;
 import Cpacs.MaterialDefinitionForProfileBasedType;
+import Cpacs.StandardProfileSheetIDType;
 import Cpacs.StringUIDBaseType;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -24,6 +25,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * </p>
  * <ul>
  *   <li>{@link Cpacs.impl.MaterialDefinitionForProfileBasedTypeImpl#getSheetUID <em>Sheet UID</em>}</li>
+ *   <li>{@link Cpacs.impl.MaterialDefinitionForProfileBasedTypeImpl#getStandardProfileSheetID <em>Standard Profile Sheet ID</em>}</li>
+ *   <li>{@link Cpacs.impl.MaterialDefinitionForProfileBasedTypeImpl#getLength <em>Length</em>}</li>
  *   <li>{@link Cpacs.impl.MaterialDefinitionForProfileBasedTypeImpl#getCompositeUID <em>Composite UID</em>}</li>
  *   <li>{@link Cpacs.impl.MaterialDefinitionForProfileBasedTypeImpl#getOrthotropyDirection <em>Orthotropy Direction</em>}</li>
  *   <li>{@link Cpacs.impl.MaterialDefinitionForProfileBasedTypeImpl#getThicknessScaling <em>Thickness Scaling</em>}</li>
@@ -44,6 +47,26 @@ public class MaterialDefinitionForProfileBasedTypeImpl extends ComplexBaseTypeIm
 	 * @ordered
 	 */
 	protected StringUIDBaseType sheetUID;
+
+	/**
+	 * The cached value of the '{@link #getStandardProfileSheetID() <em>Standard Profile Sheet ID</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStandardProfileSheetID()
+	 * @generated
+	 * @ordered
+	 */
+	protected StandardProfileSheetIDType standardProfileSheetID;
+
+	/**
+	 * The cached value of the '{@link #getLength() <em>Length</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLength()
+	 * @generated
+	 * @ordered
+	 */
+	protected DoubleBaseType length;
 
 	/**
 	 * The cached value of the '{@link #getCompositeUID() <em>Composite UID</em>}' containment reference.
@@ -166,6 +189,119 @@ public class MaterialDefinitionForProfileBasedTypeImpl extends ComplexBaseTypeIm
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
 					CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__SHEET_UID, newSheetUID, newSheetUID));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StandardProfileSheetIDType getStandardProfileSheetID() {
+		return standardProfileSheetID;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetStandardProfileSheetID(StandardProfileSheetIDType newStandardProfileSheetID,
+			NotificationChain msgs) {
+		StandardProfileSheetIDType oldStandardProfileSheetID = standardProfileSheetID;
+		standardProfileSheetID = newStandardProfileSheetID;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__STANDARD_PROFILE_SHEET_ID,
+					oldStandardProfileSheetID, newStandardProfileSheetID);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStandardProfileSheetID(StandardProfileSheetIDType newStandardProfileSheetID) {
+		if (newStandardProfileSheetID != standardProfileSheetID) {
+			NotificationChain msgs = null;
+			if (standardProfileSheetID != null)
+				msgs = ((InternalEObject) standardProfileSheetID).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE
+								- CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__STANDARD_PROFILE_SHEET_ID,
+						null, msgs);
+			if (newStandardProfileSheetID != null)
+				msgs = ((InternalEObject) newStandardProfileSheetID).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE
+								- CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__STANDARD_PROFILE_SHEET_ID,
+						null, msgs);
+			msgs = basicSetStandardProfileSheetID(newStandardProfileSheetID, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__STANDARD_PROFILE_SHEET_ID,
+					newStandardProfileSheetID, newStandardProfileSheetID));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DoubleBaseType getLength() {
+		return length;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetLength(DoubleBaseType newLength, NotificationChain msgs) {
+		DoubleBaseType oldLength = length;
+		length = newLength;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__LENGTH, oldLength, newLength);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLength(DoubleBaseType newLength) {
+		if (newLength != length) {
+			NotificationChain msgs = null;
+			if (length != null)
+				msgs = ((InternalEObject) length).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__LENGTH, null,
+						msgs);
+			if (newLength != null)
+				msgs = ((InternalEObject) newLength).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__LENGTH, null,
+						msgs);
+			msgs = basicSetLength(newLength, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__LENGTH, newLength, newLength));
 	}
 
 	/**
@@ -461,6 +597,10 @@ public class MaterialDefinitionForProfileBasedTypeImpl extends ComplexBaseTypeIm
 		switch (featureID) {
 		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__SHEET_UID:
 			return basicSetSheetUID(null, msgs);
+		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__STANDARD_PROFILE_SHEET_ID:
+			return basicSetStandardProfileSheetID(null, msgs);
+		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__LENGTH:
+			return basicSetLength(null, msgs);
 		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__COMPOSITE_UID:
 			return basicSetCompositeUID(null, msgs);
 		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__ORTHOTROPY_DIRECTION:
@@ -485,6 +625,10 @@ public class MaterialDefinitionForProfileBasedTypeImpl extends ComplexBaseTypeIm
 		switch (featureID) {
 		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__SHEET_UID:
 			return getSheetUID();
+		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__STANDARD_PROFILE_SHEET_ID:
+			return getStandardProfileSheetID();
+		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__LENGTH:
+			return getLength();
 		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__COMPOSITE_UID:
 			return getCompositeUID();
 		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__ORTHOTROPY_DIRECTION:
@@ -509,6 +653,12 @@ public class MaterialDefinitionForProfileBasedTypeImpl extends ComplexBaseTypeIm
 		switch (featureID) {
 		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__SHEET_UID:
 			setSheetUID((StringUIDBaseType) newValue);
+			return;
+		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__STANDARD_PROFILE_SHEET_ID:
+			setStandardProfileSheetID((StandardProfileSheetIDType) newValue);
+			return;
+		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__LENGTH:
+			setLength((DoubleBaseType) newValue);
 			return;
 		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__COMPOSITE_UID:
 			setCompositeUID((StringUIDBaseType) newValue);
@@ -540,6 +690,12 @@ public class MaterialDefinitionForProfileBasedTypeImpl extends ComplexBaseTypeIm
 		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__SHEET_UID:
 			setSheetUID((StringUIDBaseType) null);
 			return;
+		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__STANDARD_PROFILE_SHEET_ID:
+			setStandardProfileSheetID((StandardProfileSheetIDType) null);
+			return;
+		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__LENGTH:
+			setLength((DoubleBaseType) null);
+			return;
 		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__COMPOSITE_UID:
 			setCompositeUID((StringUIDBaseType) null);
 			return;
@@ -569,6 +725,10 @@ public class MaterialDefinitionForProfileBasedTypeImpl extends ComplexBaseTypeIm
 		switch (featureID) {
 		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__SHEET_UID:
 			return sheetUID != null;
+		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__STANDARD_PROFILE_SHEET_ID:
+			return standardProfileSheetID != null;
+		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__LENGTH:
+			return length != null;
 		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__COMPOSITE_UID:
 			return compositeUID != null;
 		case CpacsPackage.MATERIAL_DEFINITION_FOR_PROFILE_BASED_TYPE__ORTHOTROPY_DIRECTION:

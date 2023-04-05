@@ -111,7 +111,7 @@ public interface RotorType extends ComplexBaseType {
 
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link Cpacs.TypeType}.
+	 * The literals are from the enumeration {@link Cpacs.TypeType3}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -120,29 +120,29 @@ public interface RotorType extends ComplexBaseType {
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Type</em>' attribute.
-	 * @see Cpacs.TypeType
+	 * @see Cpacs.TypeType3
 	 * @see #isSetType()
 	 * @see #unsetType()
-	 * @see #setType(TypeType)
+	 * @see #setType(TypeType3)
 	 * @see Cpacs.CpacsPackage#getRotorType_Type()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='type' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	TypeType getType();
+	TypeType3 getType();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.RotorType#getType <em>Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type</em>' attribute.
-	 * @see Cpacs.TypeType
+	 * @see Cpacs.TypeType3
 	 * @see #isSetType()
 	 * @see #unsetType()
 	 * @see #getType()
 	 * @generated
 	 */
-	void setType(TypeType value);
+	void setType(TypeType3 value);
 
 	/**
 	 * Unsets the value of the '{@link Cpacs.RotorType#getType <em>Type</em>}' attribute.
@@ -150,7 +150,7 @@ public interface RotorType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * @see #isSetType()
 	 * @see #getType()
-	 * @see #setType(TypeType)
+	 * @see #setType(TypeType3)
 	 * @generated
 	 */
 	void unsetType();
@@ -162,7 +162,7 @@ public interface RotorType extends ComplexBaseType {
 	 * @return whether the value of the '<em>Type</em>' attribute is set.
 	 * @see #unsetType()
 	 * @see #getType()
-	 * @see #setType(TypeType)
+	 * @see #setType(TypeType3)
 	 * @generated
 	 */
 	boolean isSetType();
@@ -257,33 +257,33 @@ public interface RotorType extends ComplexBaseType {
 
 	/**
 	 * Returns the value of the '<em><b>Symmetry</b></em>' attribute.
-	 * The literals are from the enumeration {@link Cpacs.SymmetryType2}.
+	 * The literals are from the enumeration {@link Cpacs.SymmetryXyXzYzType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Symmetry</em>' attribute.
-	 * @see Cpacs.SymmetryType2
+	 * @see Cpacs.SymmetryXyXzYzType
 	 * @see #isSetSymmetry()
 	 * @see #unsetSymmetry()
-	 * @see #setSymmetry(SymmetryType2)
+	 * @see #setSymmetry(SymmetryXyXzYzType)
 	 * @see Cpacs.CpacsPackage#getRotorType_Symmetry()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='attribute' name='symmetry' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	SymmetryType2 getSymmetry();
+	SymmetryXyXzYzType getSymmetry();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.RotorType#getSymmetry <em>Symmetry</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Symmetry</em>' attribute.
-	 * @see Cpacs.SymmetryType2
+	 * @see Cpacs.SymmetryXyXzYzType
 	 * @see #isSetSymmetry()
 	 * @see #unsetSymmetry()
 	 * @see #getSymmetry()
 	 * @generated
 	 */
-	void setSymmetry(SymmetryType2 value);
+	void setSymmetry(SymmetryXyXzYzType value);
 
 	/**
 	 * Unsets the value of the '{@link Cpacs.RotorType#getSymmetry <em>Symmetry</em>}' attribute.
@@ -291,7 +291,7 @@ public interface RotorType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * @see #isSetSymmetry()
 	 * @see #getSymmetry()
-	 * @see #setSymmetry(SymmetryType2)
+	 * @see #setSymmetry(SymmetryXyXzYzType)
 	 * @generated
 	 */
 	void unsetSymmetry();
@@ -303,7 +303,7 @@ public interface RotorType extends ComplexBaseType {
 	 * @return whether the value of the '<em>Symmetry</em>' attribute is set.
 	 * @see #unsetSymmetry()
 	 * @see #getSymmetry()
-	 * @see #setSymmetry(SymmetryType2)
+	 * @see #setSymmetry(SymmetryXyXzYzType)
 	 * @generated
 	 */
 	boolean isSetSymmetry();

@@ -4,7 +4,6 @@ package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
 import Cpacs.DoubleBaseType;
-import Cpacs.StringUIDBaseType;
 import Cpacs.StrutType;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -24,15 +23,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * </p>
  * <ul>
  *   <li>{@link Cpacs.impl.StrutTypeImpl#getLength <em>Length</em>}</li>
- *   <li>{@link Cpacs.impl.StrutTypeImpl#getRadius <em>Radius</em>}</li>
- *   <li>{@link Cpacs.impl.StrutTypeImpl#getMaterialUID <em>Material UID</em>}</li>
- *   <li>{@link Cpacs.impl.StrutTypeImpl#getInnerRadius <em>Inner Radius</em>}</li>
- *   <li>{@link Cpacs.impl.StrutTypeImpl#getStructuralElementUID <em>Structural Element UID</em>}</li>
+ *   <li>{@link Cpacs.impl.StrutTypeImpl#getUID <em>UID</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class StrutTypeImpl extends ComplexBaseTypeImpl implements StrutType {
+public class StrutTypeImpl extends StrutPropertiesTypeImpl implements StrutType {
 	/**
 	 * The cached value of the '{@link #getLength() <em>Length</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -44,44 +40,24 @@ public class StrutTypeImpl extends ComplexBaseTypeImpl implements StrutType {
 	protected DoubleBaseType length;
 
 	/**
-	 * The cached value of the '{@link #getRadius() <em>Radius</em>}' containment reference.
+	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRadius()
+	 * @see #getUID()
 	 * @generated
 	 * @ordered
 	 */
-	protected DoubleBaseType radius;
+	protected static final String UID_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getMaterialUID() <em>Material UID</em>}' containment reference.
+	 * The cached value of the '{@link #getUID() <em>UID</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMaterialUID()
+	 * @see #getUID()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringUIDBaseType materialUID;
-
-	/**
-	 * The cached value of the '{@link #getInnerRadius() <em>Inner Radius</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getInnerRadius()
-	 * @generated
-	 * @ordered
-	 */
-	protected DoubleBaseType innerRadius;
-
-	/**
-	 * The cached value of the '{@link #getStructuralElementUID() <em>Structural Element UID</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getStructuralElementUID()
-	 * @generated
-	 * @ordered
-	 */
-	protected StringUIDBaseType structuralElementUID;
+	protected String uID = UID_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,27 +136,8 @@ public class StrutTypeImpl extends ComplexBaseTypeImpl implements StrutType {
 	 * @generated
 	 */
 	@Override
-	public DoubleBaseType getRadius() {
-		return radius;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetRadius(DoubleBaseType newRadius, NotificationChain msgs) {
-		DoubleBaseType oldRadius = radius;
-		radius = newRadius;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.STRUT_TYPE__RADIUS, oldRadius, newRadius);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
+	public String getUID() {
+		return uID;
 	}
 
 	/**
@@ -189,178 +146,11 @@ public class StrutTypeImpl extends ComplexBaseTypeImpl implements StrutType {
 	 * @generated
 	 */
 	@Override
-	public void setRadius(DoubleBaseType newRadius) {
-		if (newRadius != radius) {
-			NotificationChain msgs = null;
-			if (radius != null)
-				msgs = ((InternalEObject) radius).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.STRUT_TYPE__RADIUS, null, msgs);
-			if (newRadius != null)
-				msgs = ((InternalEObject) newRadius).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.STRUT_TYPE__RADIUS, null, msgs);
-			msgs = basicSetRadius(newRadius, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.STRUT_TYPE__RADIUS, newRadius,
-					newRadius));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StringUIDBaseType getMaterialUID() {
-		return materialUID;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetMaterialUID(StringUIDBaseType newMaterialUID, NotificationChain msgs) {
-		StringUIDBaseType oldMaterialUID = materialUID;
-		materialUID = newMaterialUID;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.STRUT_TYPE__MATERIAL_UID, oldMaterialUID, newMaterialUID);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setMaterialUID(StringUIDBaseType newMaterialUID) {
-		if (newMaterialUID != materialUID) {
-			NotificationChain msgs = null;
-			if (materialUID != null)
-				msgs = ((InternalEObject) materialUID).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.STRUT_TYPE__MATERIAL_UID, null, msgs);
-			if (newMaterialUID != null)
-				msgs = ((InternalEObject) newMaterialUID).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.STRUT_TYPE__MATERIAL_UID, null, msgs);
-			msgs = basicSetMaterialUID(newMaterialUID, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.STRUT_TYPE__MATERIAL_UID, newMaterialUID,
-					newMaterialUID));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DoubleBaseType getInnerRadius() {
-		return innerRadius;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetInnerRadius(DoubleBaseType newInnerRadius, NotificationChain msgs) {
-		DoubleBaseType oldInnerRadius = innerRadius;
-		innerRadius = newInnerRadius;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.STRUT_TYPE__INNER_RADIUS, oldInnerRadius, newInnerRadius);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInnerRadius(DoubleBaseType newInnerRadius) {
-		if (newInnerRadius != innerRadius) {
-			NotificationChain msgs = null;
-			if (innerRadius != null)
-				msgs = ((InternalEObject) innerRadius).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.STRUT_TYPE__INNER_RADIUS, null, msgs);
-			if (newInnerRadius != null)
-				msgs = ((InternalEObject) newInnerRadius).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.STRUT_TYPE__INNER_RADIUS, null, msgs);
-			msgs = basicSetInnerRadius(newInnerRadius, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.STRUT_TYPE__INNER_RADIUS, newInnerRadius,
-					newInnerRadius));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StringUIDBaseType getStructuralElementUID() {
-		return structuralElementUID;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetStructuralElementUID(StringUIDBaseType newStructuralElementUID,
-			NotificationChain msgs) {
-		StringUIDBaseType oldStructuralElementUID = structuralElementUID;
-		structuralElementUID = newStructuralElementUID;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.STRUT_TYPE__STRUCTURAL_ELEMENT_UID, oldStructuralElementUID, newStructuralElementUID);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStructuralElementUID(StringUIDBaseType newStructuralElementUID) {
-		if (newStructuralElementUID != structuralElementUID) {
-			NotificationChain msgs = null;
-			if (structuralElementUID != null)
-				msgs = ((InternalEObject) structuralElementUID).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.STRUT_TYPE__STRUCTURAL_ELEMENT_UID, null, msgs);
-			if (newStructuralElementUID != null)
-				msgs = ((InternalEObject) newStructuralElementUID).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.STRUT_TYPE__STRUCTURAL_ELEMENT_UID, null, msgs);
-			msgs = basicSetStructuralElementUID(newStructuralElementUID, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.STRUT_TYPE__STRUCTURAL_ELEMENT_UID,
-					newStructuralElementUID, newStructuralElementUID));
+	public void setUID(String newUID) {
+		String oldUID = uID;
+		uID = newUID;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.STRUT_TYPE__UID, oldUID, uID));
 	}
 
 	/**
@@ -373,14 +163,6 @@ public class StrutTypeImpl extends ComplexBaseTypeImpl implements StrutType {
 		switch (featureID) {
 		case CpacsPackage.STRUT_TYPE__LENGTH:
 			return basicSetLength(null, msgs);
-		case CpacsPackage.STRUT_TYPE__RADIUS:
-			return basicSetRadius(null, msgs);
-		case CpacsPackage.STRUT_TYPE__MATERIAL_UID:
-			return basicSetMaterialUID(null, msgs);
-		case CpacsPackage.STRUT_TYPE__INNER_RADIUS:
-			return basicSetInnerRadius(null, msgs);
-		case CpacsPackage.STRUT_TYPE__STRUCTURAL_ELEMENT_UID:
-			return basicSetStructuralElementUID(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -395,14 +177,8 @@ public class StrutTypeImpl extends ComplexBaseTypeImpl implements StrutType {
 		switch (featureID) {
 		case CpacsPackage.STRUT_TYPE__LENGTH:
 			return getLength();
-		case CpacsPackage.STRUT_TYPE__RADIUS:
-			return getRadius();
-		case CpacsPackage.STRUT_TYPE__MATERIAL_UID:
-			return getMaterialUID();
-		case CpacsPackage.STRUT_TYPE__INNER_RADIUS:
-			return getInnerRadius();
-		case CpacsPackage.STRUT_TYPE__STRUCTURAL_ELEMENT_UID:
-			return getStructuralElementUID();
+		case CpacsPackage.STRUT_TYPE__UID:
+			return getUID();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -418,17 +194,8 @@ public class StrutTypeImpl extends ComplexBaseTypeImpl implements StrutType {
 		case CpacsPackage.STRUT_TYPE__LENGTH:
 			setLength((DoubleBaseType) newValue);
 			return;
-		case CpacsPackage.STRUT_TYPE__RADIUS:
-			setRadius((DoubleBaseType) newValue);
-			return;
-		case CpacsPackage.STRUT_TYPE__MATERIAL_UID:
-			setMaterialUID((StringUIDBaseType) newValue);
-			return;
-		case CpacsPackage.STRUT_TYPE__INNER_RADIUS:
-			setInnerRadius((DoubleBaseType) newValue);
-			return;
-		case CpacsPackage.STRUT_TYPE__STRUCTURAL_ELEMENT_UID:
-			setStructuralElementUID((StringUIDBaseType) newValue);
+		case CpacsPackage.STRUT_TYPE__UID:
+			setUID((String) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -445,17 +212,8 @@ public class StrutTypeImpl extends ComplexBaseTypeImpl implements StrutType {
 		case CpacsPackage.STRUT_TYPE__LENGTH:
 			setLength((DoubleBaseType) null);
 			return;
-		case CpacsPackage.STRUT_TYPE__RADIUS:
-			setRadius((DoubleBaseType) null);
-			return;
-		case CpacsPackage.STRUT_TYPE__MATERIAL_UID:
-			setMaterialUID((StringUIDBaseType) null);
-			return;
-		case CpacsPackage.STRUT_TYPE__INNER_RADIUS:
-			setInnerRadius((DoubleBaseType) null);
-			return;
-		case CpacsPackage.STRUT_TYPE__STRUCTURAL_ELEMENT_UID:
-			setStructuralElementUID((StringUIDBaseType) null);
+		case CpacsPackage.STRUT_TYPE__UID:
+			setUID(UID_EDEFAULT);
 			return;
 		}
 		super.eUnset(featureID);
@@ -471,16 +229,27 @@ public class StrutTypeImpl extends ComplexBaseTypeImpl implements StrutType {
 		switch (featureID) {
 		case CpacsPackage.STRUT_TYPE__LENGTH:
 			return length != null;
-		case CpacsPackage.STRUT_TYPE__RADIUS:
-			return radius != null;
-		case CpacsPackage.STRUT_TYPE__MATERIAL_UID:
-			return materialUID != null;
-		case CpacsPackage.STRUT_TYPE__INNER_RADIUS:
-			return innerRadius != null;
-		case CpacsPackage.STRUT_TYPE__STRUCTURAL_ELEMENT_UID:
-			return structuralElementUID != null;
+		case CpacsPackage.STRUT_TYPE__UID:
+			return UID_EDEFAULT == null ? uID != null : !UID_EDEFAULT.equals(uID);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (uID: ");
+		result.append(uID);
+		result.append(')');
+		return result.toString();
 	}
 
 } //StrutTypeImpl

@@ -64,7 +64,7 @@ public interface WallSegmentType extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * By default, the wall is only extruded in positive direction. If doubleSidedExtrusion is true, the wall is additionaly extruded in negative direction as well. Default: false.
+	 * By default, the wall is only extruded in positive direction. If doubleSidedExtrusion is true, the wall is additionally extruded in negative direction as well. Default: false.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Double Sided Extrusion</em>' containment reference.
 	 * @see #setDoubleSidedExtrusion(BooleanBaseType)

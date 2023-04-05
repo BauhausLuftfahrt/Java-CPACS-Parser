@@ -22,7 +22,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getUIDGroupDefinitionType()
- * @model extendedMetaData="name='UIDGroupDefinitionType' kind='elementOnly'"
+ * @model extendedMetaData="name='uIDGroupDefinitionType' kind='elementOnly'"
  * @generated
  */
 public interface UIDGroupDefinitionType extends ComplexBaseType {

@@ -3,8 +3,8 @@
 package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
+import Cpacs.DoubleVectorBaseType;
 import Cpacs.StringBaseType;
-import Cpacs.StringVectorBaseType;
 import Cpacs.SubLoadType;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -64,7 +64,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType fx;
+	protected DoubleVectorBaseType fx;
 
 	/**
 	 * The cached value of the '{@link #getFy() <em>Fy</em>}' containment reference.
@@ -74,7 +74,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType fy;
+	protected DoubleVectorBaseType fy;
 
 	/**
 	 * The cached value of the '{@link #getFz() <em>Fz</em>}' containment reference.
@@ -84,7 +84,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType fz;
+	protected DoubleVectorBaseType fz;
 
 	/**
 	 * The cached value of the '{@link #getMx() <em>Mx</em>}' containment reference.
@@ -94,7 +94,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType mx;
+	protected DoubleVectorBaseType mx;
 
 	/**
 	 * The cached value of the '{@link #getMy() <em>My</em>}' containment reference.
@@ -104,7 +104,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType my;
+	protected DoubleVectorBaseType my;
 
 	/**
 	 * The cached value of the '{@link #getMz() <em>Mz</em>}' containment reference.
@@ -114,7 +114,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 * @ordered
 	 */
-	protected StringVectorBaseType mz;
+	protected DoubleVectorBaseType mz;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -244,7 +244,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getFx() {
+	public DoubleVectorBaseType getFx() {
 		return fx;
 	}
 
@@ -253,8 +253,8 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFx(StringVectorBaseType newFx, NotificationChain msgs) {
-		StringVectorBaseType oldFx = fx;
+	public NotificationChain basicSetFx(DoubleVectorBaseType newFx, NotificationChain msgs) {
+		DoubleVectorBaseType oldFx = fx;
 		fx = newFx;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -273,7 +273,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 */
 	@Override
-	public void setFx(StringVectorBaseType newFx) {
+	public void setFx(DoubleVectorBaseType newFx) {
 		if (newFx != fx) {
 			NotificationChain msgs = null;
 			if (fx != null)
@@ -295,7 +295,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getFy() {
+	public DoubleVectorBaseType getFy() {
 		return fy;
 	}
 
@@ -304,8 +304,8 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFy(StringVectorBaseType newFy, NotificationChain msgs) {
-		StringVectorBaseType oldFy = fy;
+	public NotificationChain basicSetFy(DoubleVectorBaseType newFy, NotificationChain msgs) {
+		DoubleVectorBaseType oldFy = fy;
 		fy = newFy;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -324,7 +324,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 */
 	@Override
-	public void setFy(StringVectorBaseType newFy) {
+	public void setFy(DoubleVectorBaseType newFy) {
 		if (newFy != fy) {
 			NotificationChain msgs = null;
 			if (fy != null)
@@ -346,7 +346,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getFz() {
+	public DoubleVectorBaseType getFz() {
 		return fz;
 	}
 
@@ -355,8 +355,8 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFz(StringVectorBaseType newFz, NotificationChain msgs) {
-		StringVectorBaseType oldFz = fz;
+	public NotificationChain basicSetFz(DoubleVectorBaseType newFz, NotificationChain msgs) {
+		DoubleVectorBaseType oldFz = fz;
 		fz = newFz;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -375,7 +375,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 */
 	@Override
-	public void setFz(StringVectorBaseType newFz) {
+	public void setFz(DoubleVectorBaseType newFz) {
 		if (newFz != fz) {
 			NotificationChain msgs = null;
 			if (fz != null)
@@ -397,7 +397,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getMx() {
+	public DoubleVectorBaseType getMx() {
 		return mx;
 	}
 
@@ -406,8 +406,8 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMx(StringVectorBaseType newMx, NotificationChain msgs) {
-		StringVectorBaseType oldMx = mx;
+	public NotificationChain basicSetMx(DoubleVectorBaseType newMx, NotificationChain msgs) {
+		DoubleVectorBaseType oldMx = mx;
 		mx = newMx;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -426,7 +426,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 */
 	@Override
-	public void setMx(StringVectorBaseType newMx) {
+	public void setMx(DoubleVectorBaseType newMx) {
 		if (newMx != mx) {
 			NotificationChain msgs = null;
 			if (mx != null)
@@ -448,7 +448,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getMy() {
+	public DoubleVectorBaseType getMy() {
 		return my;
 	}
 
@@ -457,8 +457,8 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMy(StringVectorBaseType newMy, NotificationChain msgs) {
-		StringVectorBaseType oldMy = my;
+	public NotificationChain basicSetMy(DoubleVectorBaseType newMy, NotificationChain msgs) {
+		DoubleVectorBaseType oldMy = my;
 		my = newMy;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -477,7 +477,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 */
 	@Override
-	public void setMy(StringVectorBaseType newMy) {
+	public void setMy(DoubleVectorBaseType newMy) {
 		if (newMy != my) {
 			NotificationChain msgs = null;
 			if (my != null)
@@ -499,7 +499,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 */
 	@Override
-	public StringVectorBaseType getMz() {
+	public DoubleVectorBaseType getMz() {
 		return mz;
 	}
 
@@ -508,8 +508,8 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMz(StringVectorBaseType newMz, NotificationChain msgs) {
-		StringVectorBaseType oldMz = mz;
+	public NotificationChain basicSetMz(DoubleVectorBaseType newMz, NotificationChain msgs) {
+		DoubleVectorBaseType oldMz = mz;
 		mz = newMz;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
@@ -528,7 +528,7 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 	 * @generated
 	 */
 	@Override
-	public void setMz(StringVectorBaseType newMz) {
+	public void setMz(DoubleVectorBaseType newMz) {
 		if (newMz != mz) {
 			NotificationChain msgs = null;
 			if (mz != null)
@@ -615,22 +615,22 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 			setDescription((StringBaseType) newValue);
 			return;
 		case CpacsPackage.SUB_LOAD_TYPE__FX:
-			setFx((StringVectorBaseType) newValue);
+			setFx((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.SUB_LOAD_TYPE__FY:
-			setFy((StringVectorBaseType) newValue);
+			setFy((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.SUB_LOAD_TYPE__FZ:
-			setFz((StringVectorBaseType) newValue);
+			setFz((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.SUB_LOAD_TYPE__MX:
-			setMx((StringVectorBaseType) newValue);
+			setMx((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.SUB_LOAD_TYPE__MY:
-			setMy((StringVectorBaseType) newValue);
+			setMy((DoubleVectorBaseType) newValue);
 			return;
 		case CpacsPackage.SUB_LOAD_TYPE__MZ:
-			setMz((StringVectorBaseType) newValue);
+			setMz((DoubleVectorBaseType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -651,22 +651,22 @@ public class SubLoadTypeImpl extends ComplexBaseTypeImpl implements SubLoadType 
 			setDescription((StringBaseType) null);
 			return;
 		case CpacsPackage.SUB_LOAD_TYPE__FX:
-			setFx((StringVectorBaseType) null);
+			setFx((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.SUB_LOAD_TYPE__FY:
-			setFy((StringVectorBaseType) null);
+			setFy((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.SUB_LOAD_TYPE__FZ:
-			setFz((StringVectorBaseType) null);
+			setFz((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.SUB_LOAD_TYPE__MX:
-			setMx((StringVectorBaseType) null);
+			setMx((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.SUB_LOAD_TYPE__MY:
-			setMy((StringVectorBaseType) null);
+			setMy((DoubleVectorBaseType) null);
 			return;
 		case CpacsPackage.SUB_LOAD_TYPE__MZ:
-			setMz((StringVectorBaseType) null);
+			setMz((DoubleVectorBaseType) null);
 			return;
 		}
 		super.eUnset(featureID);

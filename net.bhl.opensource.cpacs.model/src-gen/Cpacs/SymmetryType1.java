@@ -19,46 +19,67 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum SymmetryType1 implements Enumerator {
 	/**
-	 * The '<em><b>XAxis</b></em>' literal object.
+	 * The '<em><b>Def</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #XAXIS_VALUE
+	 * @see #DEF_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	XAXIS(0, "xAxis", "x-axis"),
+	DEF(0, "def", "def"),
 
 	/**
-	 * The '<em><b>YAxis</b></em>' literal object.
+	 * The '<em><b>Symm</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #YAXIS_VALUE
+	 * @see #SYMM_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	YAXIS(1, "yAxis", "y-axis");
+	SYMM(1, "symm", "symm"),
 
 	/**
-	 * The '<em><b>XAxis</b></em>' literal value.
+	 * The '<em><b>Full</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #XAXIS
-	 * @model name="xAxis" literal="x-axis"
+	 * @see #FULL_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	public static final int XAXIS_VALUE = 0;
+	FULL(2, "full", "full");
 
 	/**
-	 * The '<em><b>YAxis</b></em>' literal value.
+	 * The '<em><b>Def</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #YAXIS
-	 * @model name="yAxis" literal="y-axis"
+	 * @see #DEF
+	 * @model name="def"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int YAXIS_VALUE = 1;
+	public static final int DEF_VALUE = 0;
+
+	/**
+	 * The '<em><b>Symm</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #SYMM
+	 * @model name="symm"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int SYMM_VALUE = 1;
+
+	/**
+	 * The '<em><b>Full</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #FULL
+	 * @model name="full"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int FULL_VALUE = 2;
 
 	/**
 	 * An array of all the '<em><b>Symmetry Type1</b></em>' enumerators.
@@ -66,7 +87,7 @@ public enum SymmetryType1 implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final SymmetryType1[] VALUES_ARRAY = new SymmetryType1[] { XAXIS, YAXIS, };
+	private static final SymmetryType1[] VALUES_ARRAY = new SymmetryType1[] { DEF, SYMM, FULL, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Symmetry Type1</b></em>' enumerators.
@@ -122,10 +143,12 @@ public enum SymmetryType1 implements Enumerator {
 	 */
 	public static SymmetryType1 get(int value) {
 		switch (value) {
-		case XAXIS_VALUE:
-			return XAXIS;
-		case YAXIS_VALUE:
-			return YAXIS;
+		case DEF_VALUE:
+			return DEF;
+		case SYMM_VALUE:
+			return SYMM;
+		case FULL_VALUE:
+			return FULL;
 		}
 		return null;
 	}

@@ -4,9 +4,11 @@ package Cpacs.impl;
 
 import Cpacs.AxleType;
 import Cpacs.CpacsPackage;
+import Cpacs.DoubleBaseType;
 import Cpacs.IntegerBaseType;
-import Cpacs.StringUIDBaseType;
-import Cpacs.StrutType;
+import Cpacs.SideOfFirstWheelType;
+import Cpacs.StrutPropertiesType;
+import Cpacs.WheelType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -24,9 +26,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.AxleTypeImpl#getShaft <em>Shaft</em>}</li>
- *   <li>{@link Cpacs.impl.AxleTypeImpl#getWheelUID <em>Wheel UID</em>}</li>
+ *   <li>{@link Cpacs.impl.AxleTypeImpl#getLength <em>Length</em>}</li>
+ *   <li>{@link Cpacs.impl.AxleTypeImpl#getShaftProperties <em>Shaft Properties</em>}</li>
  *   <li>{@link Cpacs.impl.AxleTypeImpl#getNumberOfWheels <em>Number Of Wheels</em>}</li>
+ *   <li>{@link Cpacs.impl.AxleTypeImpl#getSideOfFirstWheel <em>Side Of First Wheel</em>}</li>
+ *   <li>{@link Cpacs.impl.AxleTypeImpl#getWheel <em>Wheel</em>}</li>
  *   <li>{@link Cpacs.impl.AxleTypeImpl#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -34,24 +38,24 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 	/**
-	 * The cached value of the '{@link #getShaft() <em>Shaft</em>}' containment reference.
+	 * The cached value of the '{@link #getLength() <em>Length</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getShaft()
+	 * @see #getLength()
 	 * @generated
 	 * @ordered
 	 */
-	protected StrutType shaft;
+	protected DoubleBaseType length;
 
 	/**
-	 * The cached value of the '{@link #getWheelUID() <em>Wheel UID</em>}' containment reference.
+	 * The cached value of the '{@link #getShaftProperties() <em>Shaft Properties</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWheelUID()
+	 * @see #getShaftProperties()
 	 * @generated
 	 * @ordered
 	 */
-	protected StringUIDBaseType wheelUID;
+	protected StrutPropertiesType shaftProperties;
 
 	/**
 	 * The cached value of the '{@link #getNumberOfWheels() <em>Number Of Wheels</em>}' containment reference.
@@ -62,6 +66,45 @@ public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 	 * @ordered
 	 */
 	protected IntegerBaseType numberOfWheels;
+
+	/**
+	 * The default value of the '{@link #getSideOfFirstWheel() <em>Side Of First Wheel</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSideOfFirstWheel()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final SideOfFirstWheelType SIDE_OF_FIRST_WHEEL_EDEFAULT = SideOfFirstWheelType.INBOARD;
+
+	/**
+	 * The cached value of the '{@link #getSideOfFirstWheel() <em>Side Of First Wheel</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSideOfFirstWheel()
+	 * @generated
+	 * @ordered
+	 */
+	protected SideOfFirstWheelType sideOfFirstWheel = SIDE_OF_FIRST_WHEEL_EDEFAULT;
+
+	/**
+	 * This is true if the Side Of First Wheel attribute has been set.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean sideOfFirstWheelESet;
+
+	/**
+	 * The cached value of the '{@link #getWheel() <em>Wheel</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWheel()
+	 * @generated
+	 * @ordered
+	 */
+	protected WheelType wheel;
 
 	/**
 	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
@@ -108,8 +151,8 @@ public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 	 * @generated
 	 */
 	@Override
-	public StrutType getShaft() {
-		return shaft;
+	public DoubleBaseType getLength() {
+		return length;
 	}
 
 	/**
@@ -117,12 +160,12 @@ public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetShaft(StrutType newShaft, NotificationChain msgs) {
-		StrutType oldShaft = shaft;
-		shaft = newShaft;
+	public NotificationChain basicSetLength(DoubleBaseType newLength, NotificationChain msgs) {
+		DoubleBaseType oldLength = length;
+		length = newLength;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.AXLE_TYPE__SHAFT, oldShaft, newShaft);
+					CpacsPackage.AXLE_TYPE__LENGTH, oldLength, newLength);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -137,20 +180,21 @@ public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 	 * @generated
 	 */
 	@Override
-	public void setShaft(StrutType newShaft) {
-		if (newShaft != shaft) {
+	public void setLength(DoubleBaseType newLength) {
+		if (newLength != length) {
 			NotificationChain msgs = null;
-			if (shaft != null)
-				msgs = ((InternalEObject) shaft).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AXLE_TYPE__SHAFT, null, msgs);
-			if (newShaft != null)
-				msgs = ((InternalEObject) newShaft).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AXLE_TYPE__SHAFT, null, msgs);
-			msgs = basicSetShaft(newShaft, msgs);
+			if (length != null)
+				msgs = ((InternalEObject) length).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AXLE_TYPE__LENGTH, null, msgs);
+			if (newLength != null)
+				msgs = ((InternalEObject) newLength).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AXLE_TYPE__LENGTH, null, msgs);
+			msgs = basicSetLength(newLength, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AXLE_TYPE__SHAFT, newShaft, newShaft));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AXLE_TYPE__LENGTH, newLength,
+					newLength));
 	}
 
 	/**
@@ -159,8 +203,8 @@ public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 	 * @generated
 	 */
 	@Override
-	public StringUIDBaseType getWheelUID() {
-		return wheelUID;
+	public StrutPropertiesType getShaftProperties() {
+		return shaftProperties;
 	}
 
 	/**
@@ -168,12 +212,12 @@ public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetWheelUID(StringUIDBaseType newWheelUID, NotificationChain msgs) {
-		StringUIDBaseType oldWheelUID = wheelUID;
-		wheelUID = newWheelUID;
+	public NotificationChain basicSetShaftProperties(StrutPropertiesType newShaftProperties, NotificationChain msgs) {
+		StrutPropertiesType oldShaftProperties = shaftProperties;
+		shaftProperties = newShaftProperties;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.AXLE_TYPE__WHEEL_UID, oldWheelUID, newWheelUID);
+					CpacsPackage.AXLE_TYPE__SHAFT_PROPERTIES, oldShaftProperties, newShaftProperties);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -188,21 +232,21 @@ public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 	 * @generated
 	 */
 	@Override
-	public void setWheelUID(StringUIDBaseType newWheelUID) {
-		if (newWheelUID != wheelUID) {
+	public void setShaftProperties(StrutPropertiesType newShaftProperties) {
+		if (newShaftProperties != shaftProperties) {
 			NotificationChain msgs = null;
-			if (wheelUID != null)
-				msgs = ((InternalEObject) wheelUID).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AXLE_TYPE__WHEEL_UID, null, msgs);
-			if (newWheelUID != null)
-				msgs = ((InternalEObject) newWheelUID).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.AXLE_TYPE__WHEEL_UID, null, msgs);
-			msgs = basicSetWheelUID(newWheelUID, msgs);
+			if (shaftProperties != null)
+				msgs = ((InternalEObject) shaftProperties).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AXLE_TYPE__SHAFT_PROPERTIES, null, msgs);
+			if (newShaftProperties != null)
+				msgs = ((InternalEObject) newShaftProperties).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AXLE_TYPE__SHAFT_PROPERTIES, null, msgs);
+			msgs = basicSetShaftProperties(newShaftProperties, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AXLE_TYPE__WHEEL_UID, newWheelUID,
-					newWheelUID));
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AXLE_TYPE__SHAFT_PROPERTIES,
+					newShaftProperties, newShaftProperties));
 	}
 
 	/**
@@ -263,6 +307,109 @@ public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 	 * @generated
 	 */
 	@Override
+	public SideOfFirstWheelType getSideOfFirstWheel() {
+		return sideOfFirstWheel;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSideOfFirstWheel(SideOfFirstWheelType newSideOfFirstWheel) {
+		SideOfFirstWheelType oldSideOfFirstWheel = sideOfFirstWheel;
+		sideOfFirstWheel = newSideOfFirstWheel == null ? SIDE_OF_FIRST_WHEEL_EDEFAULT : newSideOfFirstWheel;
+		boolean oldSideOfFirstWheelESet = sideOfFirstWheelESet;
+		sideOfFirstWheelESet = true;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AXLE_TYPE__SIDE_OF_FIRST_WHEEL,
+					oldSideOfFirstWheel, sideOfFirstWheel, !oldSideOfFirstWheelESet));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void unsetSideOfFirstWheel() {
+		SideOfFirstWheelType oldSideOfFirstWheel = sideOfFirstWheel;
+		boolean oldSideOfFirstWheelESet = sideOfFirstWheelESet;
+		sideOfFirstWheel = SIDE_OF_FIRST_WHEEL_EDEFAULT;
+		sideOfFirstWheelESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, CpacsPackage.AXLE_TYPE__SIDE_OF_FIRST_WHEEL,
+					oldSideOfFirstWheel, SIDE_OF_FIRST_WHEEL_EDEFAULT, oldSideOfFirstWheelESet));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isSetSideOfFirstWheel() {
+		return sideOfFirstWheelESet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public WheelType getWheel() {
+		return wheel;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetWheel(WheelType newWheel, NotificationChain msgs) {
+		WheelType oldWheel = wheel;
+		wheel = newWheel;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.AXLE_TYPE__WHEEL, oldWheel, newWheel);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWheel(WheelType newWheel) {
+		if (newWheel != wheel) {
+			NotificationChain msgs = null;
+			if (wheel != null)
+				msgs = ((InternalEObject) wheel).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AXLE_TYPE__WHEEL, null, msgs);
+			if (newWheel != null)
+				msgs = ((InternalEObject) newWheel).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.AXLE_TYPE__WHEEL, null, msgs);
+			msgs = basicSetWheel(newWheel, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.AXLE_TYPE__WHEEL, newWheel, newWheel));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getUID() {
 		return uID;
 	}
@@ -288,12 +435,14 @@ public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.AXLE_TYPE__SHAFT:
-			return basicSetShaft(null, msgs);
-		case CpacsPackage.AXLE_TYPE__WHEEL_UID:
-			return basicSetWheelUID(null, msgs);
+		case CpacsPackage.AXLE_TYPE__LENGTH:
+			return basicSetLength(null, msgs);
+		case CpacsPackage.AXLE_TYPE__SHAFT_PROPERTIES:
+			return basicSetShaftProperties(null, msgs);
 		case CpacsPackage.AXLE_TYPE__NUMBER_OF_WHEELS:
 			return basicSetNumberOfWheels(null, msgs);
+		case CpacsPackage.AXLE_TYPE__WHEEL:
+			return basicSetWheel(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -306,12 +455,16 @@ public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.AXLE_TYPE__SHAFT:
-			return getShaft();
-		case CpacsPackage.AXLE_TYPE__WHEEL_UID:
-			return getWheelUID();
+		case CpacsPackage.AXLE_TYPE__LENGTH:
+			return getLength();
+		case CpacsPackage.AXLE_TYPE__SHAFT_PROPERTIES:
+			return getShaftProperties();
 		case CpacsPackage.AXLE_TYPE__NUMBER_OF_WHEELS:
 			return getNumberOfWheels();
+		case CpacsPackage.AXLE_TYPE__SIDE_OF_FIRST_WHEEL:
+			return getSideOfFirstWheel();
+		case CpacsPackage.AXLE_TYPE__WHEEL:
+			return getWheel();
 		case CpacsPackage.AXLE_TYPE__UID:
 			return getUID();
 		}
@@ -326,14 +479,20 @@ public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.AXLE_TYPE__SHAFT:
-			setShaft((StrutType) newValue);
+		case CpacsPackage.AXLE_TYPE__LENGTH:
+			setLength((DoubleBaseType) newValue);
 			return;
-		case CpacsPackage.AXLE_TYPE__WHEEL_UID:
-			setWheelUID((StringUIDBaseType) newValue);
+		case CpacsPackage.AXLE_TYPE__SHAFT_PROPERTIES:
+			setShaftProperties((StrutPropertiesType) newValue);
 			return;
 		case CpacsPackage.AXLE_TYPE__NUMBER_OF_WHEELS:
 			setNumberOfWheels((IntegerBaseType) newValue);
+			return;
+		case CpacsPackage.AXLE_TYPE__SIDE_OF_FIRST_WHEEL:
+			setSideOfFirstWheel((SideOfFirstWheelType) newValue);
+			return;
+		case CpacsPackage.AXLE_TYPE__WHEEL:
+			setWheel((WheelType) newValue);
 			return;
 		case CpacsPackage.AXLE_TYPE__UID:
 			setUID((String) newValue);
@@ -350,14 +509,20 @@ public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.AXLE_TYPE__SHAFT:
-			setShaft((StrutType) null);
+		case CpacsPackage.AXLE_TYPE__LENGTH:
+			setLength((DoubleBaseType) null);
 			return;
-		case CpacsPackage.AXLE_TYPE__WHEEL_UID:
-			setWheelUID((StringUIDBaseType) null);
+		case CpacsPackage.AXLE_TYPE__SHAFT_PROPERTIES:
+			setShaftProperties((StrutPropertiesType) null);
 			return;
 		case CpacsPackage.AXLE_TYPE__NUMBER_OF_WHEELS:
 			setNumberOfWheels((IntegerBaseType) null);
+			return;
+		case CpacsPackage.AXLE_TYPE__SIDE_OF_FIRST_WHEEL:
+			unsetSideOfFirstWheel();
+			return;
+		case CpacsPackage.AXLE_TYPE__WHEEL:
+			setWheel((WheelType) null);
 			return;
 		case CpacsPackage.AXLE_TYPE__UID:
 			setUID(UID_EDEFAULT);
@@ -374,12 +539,16 @@ public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.AXLE_TYPE__SHAFT:
-			return shaft != null;
-		case CpacsPackage.AXLE_TYPE__WHEEL_UID:
-			return wheelUID != null;
+		case CpacsPackage.AXLE_TYPE__LENGTH:
+			return length != null;
+		case CpacsPackage.AXLE_TYPE__SHAFT_PROPERTIES:
+			return shaftProperties != null;
 		case CpacsPackage.AXLE_TYPE__NUMBER_OF_WHEELS:
 			return numberOfWheels != null;
+		case CpacsPackage.AXLE_TYPE__SIDE_OF_FIRST_WHEEL:
+			return isSetSideOfFirstWheel();
+		case CpacsPackage.AXLE_TYPE__WHEEL:
+			return wheel != null;
 		case CpacsPackage.AXLE_TYPE__UID:
 			return UID_EDEFAULT == null ? uID != null : !UID_EDEFAULT.equals(uID);
 		}
@@ -397,7 +566,12 @@ public class AxleTypeImpl extends ComplexBaseTypeImpl implements AxleType {
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (uID: ");
+		result.append(" (sideOfFirstWheel: ");
+		if (sideOfFirstWheelESet)
+			result.append(sideOfFirstWheel);
+		else
+			result.append("<unset>");
+		result.append(", uID: ");
 		result.append(uID);
 		result.append(')');
 		return result.toString();

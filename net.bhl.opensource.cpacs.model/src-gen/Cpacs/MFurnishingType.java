@@ -28,6 +28,7 @@ package Cpacs;
  *   <li>{@link Cpacs.MFurnishingType#getMWasteWaterSystems <em>MWaste Water Systems</em>}</li>
  *   <li>{@link Cpacs.MFurnishingType#getMFreshWaterSystems <em>MFresh Water Systems</em>}</li>
  *   <li>{@link Cpacs.MFurnishingType#getMVacuumWasteSystems <em>MVacuum Waste Systems</em>}</li>
+ *   <li>{@link Cpacs.MFurnishingType#getMMiscellaneous <em>MMiscellaneous</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getMFurnishingType()
@@ -429,5 +430,28 @@ public interface MFurnishingType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setMVacuumWasteSystems(MVacuumWasteSystemsType value);
+
+	/**
+	 * Returns the value of the '<em><b>MMiscellaneous</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>MMiscellaneous</em>' containment reference.
+	 * @see #setMMiscellaneous(SingleGenericMassType)
+	 * @see Cpacs.CpacsPackage#getMFurnishingType_MMiscellaneous()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='mMiscellaneous' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	SingleGenericMassType getMMiscellaneous();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.MFurnishingType#getMMiscellaneous <em>MMiscellaneous</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>MMiscellaneous</em>' containment reference.
+	 * @see #getMMiscellaneous()
+	 * @generated
+	 */
+	void setMMiscellaneous(SingleGenericMassType value);
 
 } // MFurnishingType

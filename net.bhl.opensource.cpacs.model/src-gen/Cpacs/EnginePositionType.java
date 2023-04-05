@@ -156,33 +156,33 @@ public interface EnginePositionType extends ComplexBaseType {
 
 	/**
 	 * Returns the value of the '<em><b>Symmetry</b></em>' attribute.
-	 * The literals are from the enumeration {@link Cpacs.SymmetryType7}.
+	 * The literals are from the enumeration {@link Cpacs.SymmetryXyXzYzType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Symmetry</em>' attribute.
-	 * @see Cpacs.SymmetryType7
+	 * @see Cpacs.SymmetryXyXzYzType
 	 * @see #isSetSymmetry()
 	 * @see #unsetSymmetry()
-	 * @see #setSymmetry(SymmetryType7)
+	 * @see #setSymmetry(SymmetryXyXzYzType)
 	 * @see Cpacs.CpacsPackage#getEnginePositionType_Symmetry()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='attribute' name='symmetry' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	SymmetryType7 getSymmetry();
+	SymmetryXyXzYzType getSymmetry();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.EnginePositionType#getSymmetry <em>Symmetry</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Symmetry</em>' attribute.
-	 * @see Cpacs.SymmetryType7
+	 * @see Cpacs.SymmetryXyXzYzType
 	 * @see #isSetSymmetry()
 	 * @see #unsetSymmetry()
 	 * @see #getSymmetry()
 	 * @generated
 	 */
-	void setSymmetry(SymmetryType7 value);
+	void setSymmetry(SymmetryXyXzYzType value);
 
 	/**
 	 * Unsets the value of the '{@link Cpacs.EnginePositionType#getSymmetry <em>Symmetry</em>}' attribute.
@@ -190,7 +190,7 @@ public interface EnginePositionType extends ComplexBaseType {
 	 * <!-- end-user-doc -->
 	 * @see #isSetSymmetry()
 	 * @see #getSymmetry()
-	 * @see #setSymmetry(SymmetryType7)
+	 * @see #setSymmetry(SymmetryXyXzYzType)
 	 * @generated
 	 */
 	void unsetSymmetry();
@@ -202,7 +202,7 @@ public interface EnginePositionType extends ComplexBaseType {
 	 * @return whether the value of the '<em>Symmetry</em>' attribute is set.
 	 * @see #unsetSymmetry()
 	 * @see #getSymmetry()
-	 * @see #setSymmetry(SymmetryType7)
+	 * @see #setSymmetry(SymmetryXyXzYzType)
 	 * @generated
 	 */
 	boolean isSetSymmetry();

@@ -18,12 +18,13 @@ package Cpacs;
  *   <li>{@link Cpacs.AircraftModelType#getWings <em>Wings</em>}</li>
  *   <li>{@link Cpacs.AircraftModelType#getEngines <em>Engines</em>}</li>
  *   <li>{@link Cpacs.AircraftModelType#getEnginePylons <em>Engine Pylons</em>}</li>
- *   <li>{@link Cpacs.AircraftModelType#getLandingGear <em>Landing Gear</em>}</li>
+ *   <li>{@link Cpacs.AircraftModelType#getLandingGears <em>Landing Gears</em>}</li>
  *   <li>{@link Cpacs.AircraftModelType#getSystems <em>Systems</em>}</li>
  *   <li>{@link Cpacs.AircraftModelType#getGenericGeometryComponents <em>Generic Geometry Components</em>}</li>
  *   <li>{@link Cpacs.AircraftModelType#getGlobal <em>Global</em>}</li>
  *   <li>{@link Cpacs.AircraftModelType#getAnalyses <em>Analyses</em>}</li>
  *   <li>{@link Cpacs.AircraftModelType#getPerformanceRequirements <em>Performance Requirements</em>}</li>
+ *   <li>{@link Cpacs.AircraftModelType#getConfigurations <em>Configurations</em>}</li>
  *   <li>{@link Cpacs.AircraftModelType#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -37,7 +38,7 @@ public interface AircraftModelType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Name of the aircraft model.
+	 * Name of the aircraft model
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
@@ -64,7 +65,7 @@ public interface AircraftModelType extends ComplexBaseType {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Description of the aircraft model.
+	 * Description of the aircraft model
 	 *                             
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
@@ -202,27 +203,27 @@ public interface AircraftModelType extends ComplexBaseType {
 	void setEnginePylons(EnginePylonsType value);
 
 	/**
-	 * Returns the value of the '<em><b>Landing Gear</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Landing Gears</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Landing Gear</em>' containment reference.
-	 * @see #setLandingGear(LandingGearType)
-	 * @see Cpacs.CpacsPackage#getAircraftModelType_LandingGear()
+	 * @return the value of the '<em>Landing Gears</em>' containment reference.
+	 * @see #setLandingGears(LandingGearsType)
+	 * @see Cpacs.CpacsPackage#getAircraftModelType_LandingGears()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='landingGear' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='landingGears' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	LandingGearType getLandingGear();
+	LandingGearsType getLandingGears();
 
 	/**
-	 * Sets the value of the '{@link Cpacs.AircraftModelType#getLandingGear <em>Landing Gear</em>}' containment reference.
+	 * Sets the value of the '{@link Cpacs.AircraftModelType#getLandingGears <em>Landing Gears</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Landing Gear</em>' containment reference.
-	 * @see #getLandingGear()
+	 * @param value the new value of the '<em>Landing Gears</em>' containment reference.
+	 * @see #getLandingGears()
 	 * @generated
 	 */
-	void setLandingGear(LandingGearType value);
+	void setLandingGears(LandingGearsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Systems</b></em>' containment reference.
@@ -338,6 +339,29 @@ public interface AircraftModelType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setPerformanceRequirements(PerformanceRequirementsType value);
+
+	/**
+	 * Returns the value of the '<em><b>Configurations</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Configurations</em>' containment reference.
+	 * @see #setConfigurations(VehicleConfigurationsType)
+	 * @see Cpacs.CpacsPackage#getAircraftModelType_Configurations()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='configurations' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	VehicleConfigurationsType getConfigurations();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.AircraftModelType#getConfigurations <em>Configurations</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Configurations</em>' containment reference.
+	 * @see #getConfigurations()
+	 * @generated
+	 */
+	void setConfigurations(VehicleConfigurationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>UID</b></em>' attribute.

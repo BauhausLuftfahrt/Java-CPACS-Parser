@@ -86,13 +86,13 @@ public interface DoorAssemblyPositionType extends ComplexBaseType {
 	 *                                 service, emergency, cargo)
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Door Type</em>' containment reference.
-	 * @see #setDoorType(DoorTypeType)
+	 * @see #setDoorType(DoorTypeType1)
 	 * @see Cpacs.CpacsPackage#getDoorAssemblyPositionType_DoorType()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='doorType' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	DoorTypeType getDoorType();
+	DoorTypeType1 getDoorType();
 
 	/**
 	 * Sets the value of the '{@link Cpacs.DoorAssemblyPositionType#getDoorType <em>Door Type</em>}' containment reference.
@@ -102,7 +102,7 @@ public interface DoorAssemblyPositionType extends ComplexBaseType {
 	 * @see #getDoorType()
 	 * @generated
 	 */
-	void setDoorType(DoorTypeType value);
+	void setDoorType(DoorTypeType1 value);
 
 	/**
 	 * Returns the value of the '<em><b>Door Element UID</b></em>' containment reference.

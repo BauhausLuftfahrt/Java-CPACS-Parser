@@ -13,6 +13,7 @@ package Cpacs;
  * <ul>
  *   <li>{@link Cpacs.SparPositionType#getSparPositionRib <em>Spar Position Rib</em>}</li>
  *   <li>{@link Cpacs.SparPositionType#getSparPositionEtaXsi <em>Spar Position Eta Xsi</em>}</li>
+ *   <li>{@link Cpacs.SparPositionType#getSparPositionCurve <em>Spar Position Curve</em>}</li>
  *   <li>{@link Cpacs.SparPositionType#getUID <em>UID</em>}</li>
  * </ul>
  *
@@ -73,6 +74,32 @@ public interface SparPositionType extends ComplexBaseType {
 	 * @generated
 	 */
 	void setSparPositionEtaXsi(EtaXsiPointType value);
+
+	/**
+	 * Returns the value of the '<em><b>Spar Position Curve</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Defines a spar position via a point on a curve
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Spar Position Curve</em>' containment reference.
+	 * @see #setSparPositionCurve(CurvePointType)
+	 * @see Cpacs.CpacsPackage#getSparPositionType_SparPositionCurve()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='sparPositionCurve' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	CurvePointType getSparPositionCurve();
+
+	/**
+	 * Sets the value of the '{@link Cpacs.SparPositionType#getSparPositionCurve <em>Spar Position Curve</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Spar Position Curve</em>' containment reference.
+	 * @see #getSparPositionCurve()
+	 * @generated
+	 */
+	void setSparPositionCurve(CurvePointType value);
 
 	/**
 	 * Returns the value of the '<em><b>UID</b></em>' attribute.

@@ -27,6 +27,9 @@ public interface NacelleSectionType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Name
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(StringBaseType)
 	 * @see Cpacs.CpacsPackage#getNacelleSectionType_Name()
@@ -50,6 +53,9 @@ public interface NacelleSectionType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Description
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(StringBaseType)
 	 * @see Cpacs.CpacsPackage#getNacelleSectionType_Description()
@@ -96,6 +102,9 @@ public interface NacelleSectionType extends ComplexBaseType {
 	 * Returns the value of the '<em><b>Profile UID</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * UID of the profile
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Profile UID</em>' containment reference.
 	 * @see #setProfileUID(StringUIDBaseType)
 	 * @see Cpacs.CpacsPackage#getNacelleSectionType_ProfileUID()

@@ -4,8 +4,9 @@ package Cpacs.impl;
 
 import Cpacs.CpacsPackage;
 import Cpacs.FlightDynamicsAnalysisType;
-import Cpacs.FlightDynamicsFlightCasesType;
-import Cpacs.FlightDynamicsModelType;
+import Cpacs.FlightPerformanceCasesType;
+import Cpacs.FlyingQualitiesCasesType;
+import Cpacs.TrimType;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -23,32 +24,43 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.FlightDynamicsAnalysisTypeImpl#getFlightCases <em>Flight Cases</em>}</li>
- *   <li>{@link Cpacs.impl.FlightDynamicsAnalysisTypeImpl#getModel <em>Model</em>}</li>
+ *   <li>{@link Cpacs.impl.FlightDynamicsAnalysisTypeImpl#getTrim <em>Trim</em>}</li>
+ *   <li>{@link Cpacs.impl.FlightDynamicsAnalysisTypeImpl#getFlyingQualities <em>Flying Qualities</em>}</li>
+ *   <li>{@link Cpacs.impl.FlightDynamicsAnalysisTypeImpl#getFlightPerformance <em>Flight Performance</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class FlightDynamicsAnalysisTypeImpl extends ComplexBaseTypeImpl implements FlightDynamicsAnalysisType {
 	/**
-	 * The cached value of the '{@link #getFlightCases() <em>Flight Cases</em>}' containment reference.
+	 * The cached value of the '{@link #getTrim() <em>Trim</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFlightCases()
+	 * @see #getTrim()
 	 * @generated
 	 * @ordered
 	 */
-	protected FlightDynamicsFlightCasesType flightCases;
+	protected TrimType trim;
 
 	/**
-	 * The cached value of the '{@link #getModel() <em>Model</em>}' containment reference.
+	 * The cached value of the '{@link #getFlyingQualities() <em>Flying Qualities</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getModel()
+	 * @see #getFlyingQualities()
 	 * @generated
 	 * @ordered
 	 */
-	protected FlightDynamicsModelType model;
+	protected FlyingQualitiesCasesType flyingQualities;
+
+	/**
+	 * The cached value of the '{@link #getFlightPerformance() <em>Flight Performance</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFlightPerformance()
+	 * @generated
+	 * @ordered
+	 */
+	protected FlightPerformanceCasesType flightPerformance;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -75,8 +87,8 @@ public class FlightDynamicsAnalysisTypeImpl extends ComplexBaseTypeImpl implemen
 	 * @generated
 	 */
 	@Override
-	public FlightDynamicsFlightCasesType getFlightCases() {
-		return flightCases;
+	public TrimType getTrim() {
+		return trim;
 	}
 
 	/**
@@ -84,12 +96,12 @@ public class FlightDynamicsAnalysisTypeImpl extends ComplexBaseTypeImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFlightCases(FlightDynamicsFlightCasesType newFlightCases, NotificationChain msgs) {
-		FlightDynamicsFlightCasesType oldFlightCases = flightCases;
-		flightCases = newFlightCases;
+	public NotificationChain basicSetTrim(TrimType newTrim, NotificationChain msgs) {
+		TrimType oldTrim = trim;
+		trim = newTrim;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_CASES, oldFlightCases, newFlightCases);
+					CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__TRIM, oldTrim, newTrim);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -104,21 +116,78 @@ public class FlightDynamicsAnalysisTypeImpl extends ComplexBaseTypeImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setFlightCases(FlightDynamicsFlightCasesType newFlightCases) {
-		if (newFlightCases != flightCases) {
+	public void setTrim(TrimType newTrim) {
+		if (newTrim != trim) {
 			NotificationChain msgs = null;
-			if (flightCases != null)
-				msgs = ((InternalEObject) flightCases).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_CASES, null, msgs);
-			if (newFlightCases != null)
-				msgs = ((InternalEObject) newFlightCases).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_CASES, null, msgs);
-			msgs = basicSetFlightCases(newFlightCases, msgs);
+			if (trim != null)
+				msgs = ((InternalEObject) trim).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__TRIM, null, msgs);
+			if (newTrim != null)
+				msgs = ((InternalEObject) newTrim).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__TRIM, null, msgs);
+			msgs = basicSetTrim(newTrim, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__TRIM,
+					newTrim, newTrim));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FlyingQualitiesCasesType getFlyingQualities() {
+		return flyingQualities;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetFlyingQualities(FlyingQualitiesCasesType newFlyingQualities,
+			NotificationChain msgs) {
+		FlyingQualitiesCasesType oldFlyingQualities = flyingQualities;
+		flyingQualities = newFlyingQualities;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLYING_QUALITIES, oldFlyingQualities,
+					newFlyingQualities);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFlyingQualities(FlyingQualitiesCasesType newFlyingQualities) {
+		if (newFlyingQualities != flyingQualities) {
+			NotificationChain msgs = null;
+			if (flyingQualities != null)
+				msgs = ((InternalEObject) flyingQualities).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLYING_QUALITIES, null,
+						msgs);
+			if (newFlyingQualities != null)
+				msgs = ((InternalEObject) newFlyingQualities).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLYING_QUALITIES, null,
+						msgs);
+			msgs = basicSetFlyingQualities(newFlyingQualities, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_CASES, newFlightCases, newFlightCases));
+					CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLYING_QUALITIES, newFlyingQualities,
+					newFlyingQualities));
 	}
 
 	/**
@@ -127,8 +196,8 @@ public class FlightDynamicsAnalysisTypeImpl extends ComplexBaseTypeImpl implemen
 	 * @generated
 	 */
 	@Override
-	public FlightDynamicsModelType getModel() {
-		return model;
+	public FlightPerformanceCasesType getFlightPerformance() {
+		return flightPerformance;
 	}
 
 	/**
@@ -136,12 +205,14 @@ public class FlightDynamicsAnalysisTypeImpl extends ComplexBaseTypeImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetModel(FlightDynamicsModelType newModel, NotificationChain msgs) {
-		FlightDynamicsModelType oldModel = model;
-		model = newModel;
+	public NotificationChain basicSetFlightPerformance(FlightPerformanceCasesType newFlightPerformance,
+			NotificationChain msgs) {
+		FlightPerformanceCasesType oldFlightPerformance = flightPerformance;
+		flightPerformance = newFlightPerformance;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__MODEL, oldModel, newModel);
+					CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_PERFORMANCE, oldFlightPerformance,
+					newFlightPerformance);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -156,21 +227,24 @@ public class FlightDynamicsAnalysisTypeImpl extends ComplexBaseTypeImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setModel(FlightDynamicsModelType newModel) {
-		if (newModel != model) {
+	public void setFlightPerformance(FlightPerformanceCasesType newFlightPerformance) {
+		if (newFlightPerformance != flightPerformance) {
 			NotificationChain msgs = null;
-			if (model != null)
-				msgs = ((InternalEObject) model).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__MODEL, null, msgs);
-			if (newModel != null)
-				msgs = ((InternalEObject) newModel).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__MODEL, null, msgs);
-			msgs = basicSetModel(newModel, msgs);
+			if (flightPerformance != null)
+				msgs = ((InternalEObject) flightPerformance).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_PERFORMANCE, null,
+						msgs);
+			if (newFlightPerformance != null)
+				msgs = ((InternalEObject) newFlightPerformance).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_PERFORMANCE, null,
+						msgs);
+			msgs = basicSetFlightPerformance(newFlightPerformance, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__MODEL,
-					newModel, newModel));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_PERFORMANCE, newFlightPerformance,
+					newFlightPerformance));
 	}
 
 	/**
@@ -181,10 +255,12 @@ public class FlightDynamicsAnalysisTypeImpl extends ComplexBaseTypeImpl implemen
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_CASES:
-			return basicSetFlightCases(null, msgs);
-		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__MODEL:
-			return basicSetModel(null, msgs);
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__TRIM:
+			return basicSetTrim(null, msgs);
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLYING_QUALITIES:
+			return basicSetFlyingQualities(null, msgs);
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_PERFORMANCE:
+			return basicSetFlightPerformance(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -197,10 +273,12 @@ public class FlightDynamicsAnalysisTypeImpl extends ComplexBaseTypeImpl implemen
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_CASES:
-			return getFlightCases();
-		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__MODEL:
-			return getModel();
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__TRIM:
+			return getTrim();
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLYING_QUALITIES:
+			return getFlyingQualities();
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_PERFORMANCE:
+			return getFlightPerformance();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -213,11 +291,14 @@ public class FlightDynamicsAnalysisTypeImpl extends ComplexBaseTypeImpl implemen
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_CASES:
-			setFlightCases((FlightDynamicsFlightCasesType) newValue);
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__TRIM:
+			setTrim((TrimType) newValue);
 			return;
-		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__MODEL:
-			setModel((FlightDynamicsModelType) newValue);
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLYING_QUALITIES:
+			setFlyingQualities((FlyingQualitiesCasesType) newValue);
+			return;
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_PERFORMANCE:
+			setFlightPerformance((FlightPerformanceCasesType) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -231,11 +312,14 @@ public class FlightDynamicsAnalysisTypeImpl extends ComplexBaseTypeImpl implemen
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_CASES:
-			setFlightCases((FlightDynamicsFlightCasesType) null);
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__TRIM:
+			setTrim((TrimType) null);
 			return;
-		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__MODEL:
-			setModel((FlightDynamicsModelType) null);
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLYING_QUALITIES:
+			setFlyingQualities((FlyingQualitiesCasesType) null);
+			return;
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_PERFORMANCE:
+			setFlightPerformance((FlightPerformanceCasesType) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -249,10 +333,12 @@ public class FlightDynamicsAnalysisTypeImpl extends ComplexBaseTypeImpl implemen
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_CASES:
-			return flightCases != null;
-		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__MODEL:
-			return model != null;
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__TRIM:
+			return trim != null;
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLYING_QUALITIES:
+			return flyingQualities != null;
+		case CpacsPackage.FLIGHT_DYNAMICS_ANALYSIS_TYPE__FLIGHT_PERFORMANCE:
+			return flightPerformance != null;
 		}
 		return super.eIsSet(featureID);
 	}

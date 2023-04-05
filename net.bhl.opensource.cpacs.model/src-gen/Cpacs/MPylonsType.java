@@ -14,7 +14,7 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  * <ul>
  *   <li>{@link Cpacs.MPylonsType#getMassDescription <em>Mass Description</em>}</li>
- *   <li>{@link Cpacs.MPylonsType#getMPylons <em>MPylons</em>}</li>
+ *   <li>{@link Cpacs.MPylonsType#getMPylon <em>MPylon</em>}</li>
  * </ul>
  *
  * @see Cpacs.CpacsPackage#getMPylonsType()
@@ -51,16 +51,16 @@ public interface MPylonsType extends ComplexBaseType {
 	void setMassDescription(GenericMassType value);
 
 	/**
-	 * Returns the value of the '<em><b>MPylons</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>MPylon</b></em>' containment reference list.
 	 * The list contents are of type {@link Cpacs.SingleGenericMassType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>MPylons</em>' containment reference list.
-	 * @see Cpacs.CpacsPackage#getMPylonsType_MPylons()
+	 * @return the value of the '<em>MPylon</em>' containment reference list.
+	 * @see Cpacs.CpacsPackage#getMPylonsType_MPylon()
 	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='mPylons' namespace='##targetNamespace'"
+	 *        extendedMetaData="kind='element' name='mPylon' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<SingleGenericMassType> getMPylons();
+	EList<SingleGenericMassType> getMPylon();
 
 } // MPylonsType

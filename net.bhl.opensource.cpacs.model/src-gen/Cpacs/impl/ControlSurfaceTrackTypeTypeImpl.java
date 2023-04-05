@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Cpacs.impl.ControlSurfaceTrackTypeTypeImpl#getEta <em>Eta</em>}</li>
+ *   <li>{@link Cpacs.impl.ControlSurfaceTrackTypeTypeImpl#getEtaPosition <em>Eta Position</em>}</li>
  *   <li>{@link Cpacs.impl.ControlSurfaceTrackTypeTypeImpl#getTrackType <em>Track Type</em>}</li>
  *   <li>{@link Cpacs.impl.ControlSurfaceTrackTypeTypeImpl#getTrackSubType <em>Track Sub Type</em>}</li>
  *   <li>{@link Cpacs.impl.ControlSurfaceTrackTypeTypeImpl#getActuator <em>Actuator</em>}</li>
@@ -38,14 +38,14 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class ControlSurfaceTrackTypeTypeImpl extends ComplexBaseTypeImpl implements ControlSurfaceTrackTypeType {
 	/**
-	 * The cached value of the '{@link #getEta() <em>Eta</em>}' containment reference.
+	 * The cached value of the '{@link #getEtaPosition() <em>Eta Position</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEta()
+	 * @see #getEtaPosition()
 	 * @generated
 	 * @ordered
 	 */
-	protected EtaIsoLineType eta;
+	protected EtaIsoLineType etaPosition;
 
 	/**
 	 * The cached value of the '{@link #getTrackType() <em>Track Type</em>}' containment reference.
@@ -132,8 +132,8 @@ public class ControlSurfaceTrackTypeTypeImpl extends ComplexBaseTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public EtaIsoLineType getEta() {
-		return eta;
+	public EtaIsoLineType getEtaPosition() {
+		return etaPosition;
 	}
 
 	/**
@@ -141,12 +141,12 @@ public class ControlSurfaceTrackTypeTypeImpl extends ComplexBaseTypeImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEta(EtaIsoLineType newEta, NotificationChain msgs) {
-		EtaIsoLineType oldEta = eta;
-		eta = newEta;
+	public NotificationChain basicSetEtaPosition(EtaIsoLineType newEtaPosition, NotificationChain msgs) {
+		EtaIsoLineType oldEtaPosition = etaPosition;
+		etaPosition = newEtaPosition;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA, oldEta, newEta);
+					CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA_POSITION, oldEtaPosition, newEtaPosition);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -161,21 +161,23 @@ public class ControlSurfaceTrackTypeTypeImpl extends ComplexBaseTypeImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setEta(EtaIsoLineType newEta) {
-		if (newEta != eta) {
+	public void setEtaPosition(EtaIsoLineType newEtaPosition) {
+		if (newEtaPosition != etaPosition) {
 			NotificationChain msgs = null;
-			if (eta != null)
-				msgs = ((InternalEObject) eta).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA, null, msgs);
-			if (newEta != null)
-				msgs = ((InternalEObject) newEta).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA, null, msgs);
-			msgs = basicSetEta(newEta, msgs);
+			if (etaPosition != null)
+				msgs = ((InternalEObject) etaPosition).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA_POSITION, null,
+						msgs);
+			if (newEtaPosition != null)
+				msgs = ((InternalEObject) newEtaPosition).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA_POSITION, null,
+						msgs);
+			msgs = basicSetEtaPosition(newEtaPosition, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA,
-					newEta, newEta));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA_POSITION, newEtaPosition, newEtaPosition));
 	}
 
 	/**
@@ -424,8 +426,8 @@ public class ControlSurfaceTrackTypeTypeImpl extends ComplexBaseTypeImpl impleme
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA:
-			return basicSetEta(null, msgs);
+		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA_POSITION:
+			return basicSetEtaPosition(null, msgs);
 		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__TRACK_TYPE:
 			return basicSetTrackType(null, msgs);
 		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__TRACK_SUB_TYPE:
@@ -446,8 +448,8 @@ public class ControlSurfaceTrackTypeTypeImpl extends ComplexBaseTypeImpl impleme
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA:
-			return getEta();
+		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA_POSITION:
+			return getEtaPosition();
 		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__TRACK_TYPE:
 			return getTrackType();
 		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__TRACK_SUB_TYPE:
@@ -470,8 +472,8 @@ public class ControlSurfaceTrackTypeTypeImpl extends ComplexBaseTypeImpl impleme
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA:
-			setEta((EtaIsoLineType) newValue);
+		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA_POSITION:
+			setEtaPosition((EtaIsoLineType) newValue);
 			return;
 		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__TRACK_TYPE:
 			setTrackType((TrackTypeType) newValue);
@@ -500,8 +502,8 @@ public class ControlSurfaceTrackTypeTypeImpl extends ComplexBaseTypeImpl impleme
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA:
-			setEta((EtaIsoLineType) null);
+		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA_POSITION:
+			setEtaPosition((EtaIsoLineType) null);
 			return;
 		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__TRACK_TYPE:
 			setTrackType((TrackTypeType) null);
@@ -530,8 +532,8 @@ public class ControlSurfaceTrackTypeTypeImpl extends ComplexBaseTypeImpl impleme
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA:
-			return eta != null;
+		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__ETA_POSITION:
+			return etaPosition != null;
 		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__TRACK_TYPE:
 			return trackType != null;
 		case CpacsPackage.CONTROL_SURFACE_TRACK_TYPE_TYPE__TRACK_SUB_TYPE:
