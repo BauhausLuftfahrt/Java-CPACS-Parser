@@ -5,9 +5,7 @@ Read and write CPACS files. Create an object structure out of CPACS and develop 
 Common Parametric Aircraft Configuration Schema (CPACS) is an open-source data exchange format for aircraft design. It supports all aspects of an aircraft and enables a swift and easy interdisciplinary file transfer. CPACS is developed by DLR. For more information, see [CPACS on GitHub](https://github.com/DLR-SL/CPACS) or the official website [www.cpacs.de](www.cpacs.de). 
 
 ## Description
-This tool enables the CPACS file format to be used natively within Java. The CPACS structure has been transformed into an EMF ecore model which can be used to build with CPACS natively. It supports auto-completion without the need to use specific strings to access CPACS paths within the xml structure. Additionally, use the built-in functions to read CPACS files and turn them into JAVA objects and save CPACS objects back to an xml file. Currently, CPACS **version 3.2** is implemented here.
-
-Due to issues regarding the CPACS schema definition, a list of modifications to the layout can be seen in the [modification list](/MODIFICATIONS.md).
+This tool enables the CPACS file format to be used natively within Java. The CPACS structure has been transformed into an EMF ecore model which can be used to build with CPACS natively. It supports auto-completion without the need to use specific strings to access CPACS paths within the xml structure. Additionally, use the built-in functions to read CPACS files and turn them into JAVA objects and save CPACS objects back to an xml file. Currently, CPACS **version 3.4** is implemented here.
 
 ## Usage
 * Download the latest Eclipse Modelling Tools version from www.eclipse.org and install it.
@@ -31,8 +29,7 @@ CpacsType cpacs = CPACSInitializer.run(inputFile);
 ```java
 // Set the string object at the desired location.
 String cpacsFileTitle = "Demo CPACS created with Java CPACS parser by Bauhaus Luftfahrt";
-double fileVersionNumber = 1.0;
-cpacs.setHeader(HeaderExtensions.init(cpacsFileTitle, fileVersionNumber);
+cpacs.setHeader(HeaderExtensions.init(cpacsFileTitle, "1.0");
 ```
 
 3. Lastly, save the CPACS object back to xml:
@@ -49,10 +46,15 @@ CPACSWriter.run(exportPath, cpacs);
 <cpacs>
     <header>
         <name>Demo CPACS created with Java CPACS parser by Bauhaus Luftfahrt</name>
-        <creator>Marc Engelmann</creator>
-        <timestamp>2021-02-16T10:02:03.670</timestamp>
         <version>1.0</version>
-        <cpacsVersion>3.2</cpacsVersion>
+        <versionInfos>
+            <versionInfo version="1.0">
+                <cpacsVersion>3.4</cpacsVersion>
+                <description>Demo CPACS created with Java CPACS parser by Bauhaus Luftfahrt</description>
+                <timestamp>2023-04-05T10:10:41.196</timestamp>
+                <creator>Marc Engelmann</creator>
+            </versionInfo>
+        </versionInfos>
     </header>
 </cpacs>
 ```
